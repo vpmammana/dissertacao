@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>
@@ -387,27 +388,35 @@ function teclado(e) {
 				let anterior = matriz_ganha_foco[x][1][y];
 				let proximo = x + 1;
 				if (proximo > matriz_ganha_foco.length -1) {proximo = 0;}
-				if (!matriz_ganha_foco[proximo][0].includes("nivel") || matriz_ganha_foco[proximo][1][0].getAttribute("data-id-pai") == "corpo_tese"){ x++; if(x > matriz_ganha_foco.length - 1) {x=0;}  y = guarda_ultimo_visitado[x];}
+				if (!matriz_ganha_foco[proximo][0].includes("nivel") || matriz_ganha_foco[proximo][0].includes("nivel_1"))
+					{ 
+						// este if ocorre quando nao nivel, ou se eh nivel e o pai eh corpo_tese. O resultado eh ir para direita nos blocos de niveis (se for nivel 1) ou nas arvores. se for nivel 2 ou 3 eh outro tratamento
+						x++; if(x > matriz_ganha_foco.length - 1) {x=0;}  y = guarda_ultimo_visitado[x];
+					}
 				else {
 
 				let conta=0;
-				let max_elementos = matriz_ganha_foco[proximo][1].length - 1;
+				let max_elementos = matriz_ganha_foco[proximo][1].length; // eu acho que esse menos 1 nao deveria estar aqui e deve dar problema na ultima secao
 				//console.log("max_elementos: "+max_elementos);
-				while (matriz_ganha_foco[proximo][1][conta].getAttribute("data-id-pai") != anterior.getAttribute("data-id-secao") && conta < max_elementos)
+				while (conta < max_elementos && matriz_ganha_foco[proximo][1][conta].getAttribute("data-id-pai") != anterior.getAttribute("data-id-secao"))
 					{
 						conta++;
 						//console.log(conta);
 					}
 				if (conta < max_elementos ) {x++; y=conta;} 
 				else {
+
+					guarda_ultimo_visitado[x] = y;
 					while (matriz_ganha_foco[x][0].includes("nivel")) 
 						{
-							if (!matriz_ganha_foco[x][0].includes("nivel_1")) {guarda_ultimo_visitado[x] = -1;} else {guarda_ultimo_visitado[x] = y; }
+							let proximo3 = x + 1;
+							if (proximo3 > matriz_ganha_foco.length -1) {proximo3 = 0;}
+							if (matriz_ganha_foco[proximo3][0].includes("nivel")) {guarda_ultimo_visitado[proximo3] = -1;} else {y=guarda_ultimo_visitado[proximo3]; }
 							x++;
 							if (x > matriz_ganha_foco.length - 1) { x=0;} 
 						}
-					 y=guarda_ultimo_visitado[x]; 
 				}
+				
 				}	
 			}
 		
@@ -538,8 +547,7 @@ for (let i = 0; i < collection.length; i++) {
 }
 
 function reduz_arvore(id_arvore, fator){
-
-document.getElementById(id_arvore).style.width = document.getElementById(id_arvore).clientWidth * fator;
+document.getElementById(id_arvore).style.width = document.getElementById(id_arvore).clientWidth * fator +"px" ;
 const filhos = document.getElementById(id_arvore).children;
 
 for (let m=0; m < filhos.length ; m++){
@@ -618,6 +626,7 @@ function calcula_correcao_dos_niveis(max_dir, min_esq, excedente_percentual){
 
 function acha_dir_max_min_esq_niveis(){
 
+
 console.log("TENTATIVA "+conta_tentativas_de_ajuste_de_tela);
 
 const colecao_niveis = document.getElementsByClassName("nivel");
@@ -641,7 +650,7 @@ if (largura_de_edicao < minima_largura_percentual_da_edicao * document.body.offs
 		}
 		if (conta_tentativas_de_ajuste_de_tela == 0 && fator_de_reducao_da_largura_da_arvore == 1)
 		{
-
+			alert();
 			fator_de_reducao_da_largura_da_arvore = 0.7;
 			reduz_arvore("flutua_para_direita",fator_de_reducao_da_largura_da_arvore);
 			reduz_arvore("seletor",fator_de_reducao_da_largura_da_arvore);

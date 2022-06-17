@@ -123,7 +123,7 @@ echo "<script>var padding_folha = ".$padding_folha.";</script>";
 
 $padding_arvore = 20;
 $padding_arvore_ts = 20;
-$divisao =  5;  // em que parte da largura da folha o nivel inferior comeca
+$divisao =  6;  // em que parte da largura da folha o nivel inferior comeca
 $separador_de_pais = 15; // espaco de separacao entre pais
 $max_tamanho_arvore = 1000;
 
@@ -290,7 +290,7 @@ if ($result->num_rows>0) {
 	$zti1 = $left_folha-$left_arvore+$padding_folha;
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore contem_trechos sub_ganha_foco' data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
 
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	

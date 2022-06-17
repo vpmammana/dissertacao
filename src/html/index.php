@@ -190,6 +190,24 @@ label{
 	padding: 2px;
 }
 
+.pode_mostrar_trechos {
+	display: block;
+	text-overflow: clip;
+	white-space: nowrap;
+	overflow: hidden !important;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+.pode_mostrar_trechos::-webkit-scrollbar {
+  display: none;
+}
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+
 </style>
 </head>
 <body>
@@ -497,7 +515,8 @@ arvore_com_trechos[i].addEventListener("mouseover",
 
 		id_da_folha_onde_esta_flutuando = this.id;
 		
-		hint.innerHTML="<b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b><br>" + arvore_com_trechos[i].getAttribute("data-titulo");
+if (arvore_com_trechos[i].classList.contains("pode_mostrar_trechos"))	{hint.innerHTML="<b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b><br>" + arvore_com_trechos[i].getAttribute("data-titulo");}
+else {hint.innerHTML="<b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b>";}
 //		id_secao_mouse.innerHTML="<b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b>";
 //		id_pai_mouse.innerHTML=arvore_com_trechos[i].getAttribute("data-id-pai");
 
@@ -517,10 +536,10 @@ arvore_com_trechos[i].addEventListener("mouseover",
 
 function percorre_arvore_trechos(mostra_trechos){
 
-const arvore_com_trechos = document.getElementsByClassName("contem_trechos");
+const arvore_com_trechos = document.getElementsByClassName("pode_mostrar_trechos");
 for (let i = 0; i < arvore_com_trechos.length; i++) {
 	     if (mostra_trechos) {
-		arvore_com_trechos[i].innerHTML="<div class='limita'>"+arvore_com_trechos[i].getAttribute("data-titulo")+"</div>";
+		arvore_com_trechos[i].innerHTML=arvore_com_trechos[i].getAttribute("data-titulo");
 	     } else
 	     {
 	arvore_com_trechos[i].innerHTML=arvore_com_trechos[i].getAttribute("data-id-secao");
@@ -650,7 +669,6 @@ if (largura_de_edicao < minima_largura_percentual_da_edicao * document.body.offs
 		}
 		if (conta_tentativas_de_ajuste_de_tela == 0 && fator_de_reducao_da_largura_da_arvore == 1)
 		{
-			alert();
 			fator_de_reducao_da_largura_da_arvore = 0.7;
 			reduz_arvore("flutua_para_direita",fator_de_reducao_da_largura_da_arvore);
 			reduz_arvore("seletor",fator_de_reducao_da_largura_da_arvore);

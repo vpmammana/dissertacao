@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .parent {
+        width: 200px;
+        height: 200px;
+        background-color: #8ae6a2;
+	overflow: hidden;
+        position: relative;
+      }      
+      .child {
+        width: 100px;
+        height: 300px;
+        background-color: #93a398;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent" style="top: 20px; left: 20px">
+      <div class="child" style="top: 10px; left: 20px"></div>
+    </div>
+  </body>
+</html>

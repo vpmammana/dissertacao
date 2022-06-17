@@ -1,0 +1,196 @@
+﻿#pai: corpo_tese	#tipo: capa	#capa_da_tese	#Capa da Tese#
+#pai: capa_da_tese	#tipo: titulo			#titulo_da_tese		#CARACTERIZAÇÃO DO PROGRAMA Workshop Aficionados por Software e Hardware (WASH)
+#pai: capa_da_tese	#tipo: sub_titulo		#sub_titulo_da_tese	#HISTÓRIA, MÉTODOS E RESULTADOS#
+#pai: capa_da_tese	#tipo: autor			#autor_da_tese		#Elaine da Silva Tozzi#
+#pai: capa_da_tese	#tipo: orientador		#orientador_da_tese	#Paulo Sérgio Camargo
+#pai: corpo_tese	#tipo: resumo			#resumo_da_tese		#RESUMO
+
+
+#pai: corpo_tese	 #tipo: topico			#estrutura_do_texto	#ESTRUTURA DO TEXTO	
+#pai: estrutura_do_texto #tipo: paragrafo		#paragrafo_1		#Este trabalho busca utilizar a forma mais canônica de estruturação de um texto científico [XXX Oftalmo DOI: 10.5935/0034-7280.20140055]:
+
+#pai: estrutura_do_texto #tipo: lista_numerada		#lista_IMRD		#Lista Numerada
+
+#pai: lista_IMRD 	 #tipo: item_lista_num 		#item_1_lista_IMRD	#introdução
+#pai: lista_IMRD 	 #tipo: item_lista_num 		#item_2_lista_IMRD	#métodos
+#pai: lista_IMRD 	 #tipo: item_lista_num 		#item_3_lista_IMRD	#resultados
+#pai: lista_IMRD 	 #tipo: item_lista_num 		#item_4_lista_IMRD	#discussão
+
+#pai: estrutura_do_texto #tipo: paragrafo		#paragrafo_2		#A referência [XXX Oftalmo DOI: 10.5935/0034-7280.20140055] busca identificar o caráter principal de cada um dos elementos acima por meio de uma pergunta, como segue:
+
+#pai: estrutura_do_texto #tipo: lista_numerada		#lista_IMRD_perg	#Lista Numerada com Perguntas
+
+#pai: lista_IMRD_perg 	 	#tipo: item_lista_num 		#item_1_lista_IMRD_perg		#Introdução - que pergunta foi feita?
+#pai: lista_IMRD_perg 	 	#tipo: item_lista_num 		#item_2_lista_IMRD_perg		#Métodos - como ela foi estudada?
+#pai: lista_IMRD_perg 	 	#tipo: item_lista_num 		#item_3_lista_IMRD_perg		#Resultados - o que foi achado?
+#pai: lista_IMRD_perg 		#tipo: item_lista_num 		#item_4_lista_IMRD_perg		#Discussão - o que estes achados significam?” 
+#pai: item_4_lista_IMRD_perg  	#tipo: chama_ref_item_list_num 	#ref_item_4_lista_IMRD_perg	#(fonte: [XXX Oftalmo DOI: 10.5935/0034-7280.20140055]:)
+
+#pai: estrutura_do_texto #tipo: paragrafo		#paragrafo_3		#Uma forma diferente de expressar esses mesmos conceitos é atribuir a pergunta “por que fiz?” à Introdução, atribuir a pergunta “como fiz?” aos Métodos e atribuir a pergunta “o que obtive?” aos Resultados, de forma que a pesquisa empregada permita observar o mesmo objeto em estudo por meio de 3 dimensões que se complementam. 
+
+#pai: estrutura_do_texto #tipo: paragrafo		#paragrafo_4		#A estrutura indicada acima pode ter variantes mais completas como a descrita em [XXX How to Write a Paper in Scientific Journal Style and Format]:
+
+#pai: estrutura_do_texto #tipo: lista_numerada		#lista_IMRD_completa	#Lista Numerada com Perguntas completa
+
+#pai: lista_IMRD_completa	 	#tipo: item_lista_num 		#item_1_lista_IMRD_completa	#Resumo - O que eu fiz de uma forma bem sintética (“in a nutshell”)?
+#pai: lista_IMRD_completa 	 	#tipo: item_lista_num 		#item_2_lista_IMRD_completa	#Introdução - Qual é o problema?
+#pai: lista_IMRD_completa 	 	#tipo: item_lista_num 		#item_3_lista_IMRD_completa	#Materiais e Métodos - Como eu resolvi o problema?
+#pai: lista_IMRD_completa 		#tipo: item_lista_num 		#item_4_lista_IMRD_completa	#Resultados - O que eu achei?
+#pai: lista_IMRD_completa 		#tipo: item_lista_num 		#item_5_lista_IMRD_completa	#Agradecimentos (opcional) - Quem me ajudou a fazer?
+#pai: lista_IMRD_completa 		#tipo: item_lista_num 		#item_5_lista_IMRD_completa	#Literatura citada - Quais trabalhos eu usei como referência?
+#pai: lista_IMRD_completa 		#tipo: item_lista_num 		#item_6_lista_IMRD_completa	#Apêndices - Informação Extra
+
+#pai: item_5_lista_IMRD_completa 	#tipo: chama_ref_item_list_num 	#ref_item_5_lista_IMRD_completa	#(tradução livre de [XXX How to Write a Paper in Scientific Journal Style and Format])
+
+
+#pai: estrutura_do_texto 		#tipo: paragrafo		#paragrafo_5			#A variante acima, embora voltada para publicações curtas, é válida para outros tipos de registros científicos e também é baseada na ideia das 3 dimensões descrita acima: “por que?”, “como?” e “o que?”. 
+
+#pai: estrutura_do_texto 		#tipo: paragrafo		#paragrafo_6			#De forma mais completa ainda, mas com a mesma estrutura básica: 
+#pai: paragrafo_6			#tipo: chama_ref 		#ref_paragrafo_6		#S.A.Meo [XXX Anatomy and physiology of a scientific paper] propõe o “MEO’s Fish Bone Model”
+
+#pai: estrutura_do_texto 		#tipo: imagem			#imagem_1			#/var/www/html/tese/dados/imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper.png
+#pai: estrutura_do_texto 		#tipo: legenda_imagem		#legenda_imagem_1		#Fig 1. - A estrutura de “espinha de peixe” de S.A. MEOs (fonte: S.A.Meo [XXX Anatomy and physiology of a scientific paper])
+
+
+#pai: estrutura_do_texto #tipo: paragrafo		#paragrafo_7		#Uma vez que a Fig. 1 é um pouco “congestionada” no sentido da densidade de informações apresentadas, cabe uma descrição de cada “costela” da espinha-de-peixe de MEOs, transcrita aqui na forma de uma tabela:
+
+
+#pai: estrutura_do_texto 		#tipo: tabela			#tabela_1			#/var/www/html/tese/dados/tabelas/tabela_estrutura_de_texto.html
+
+##############Título
+##############	Curto e sem ambiguidade
+##############Capaz de criar fascínio nos leitores
+##############Fácil de entender e catalogar
+##############Apresenta os conteúdos básicos do paper
+##############Evita abreviações
+##############	Resumo
+##############	Não pode ser longo demais
+##############Não pode ser curto demais
+##############Contém as informações “vitais”
+##############Sumariza os aspectos principais
+##############Contém os objetivos, métodos, resultados e conclusões
+##############	Introdução
+##############	Identificar o tema de interesse
+##############Literatura apresentada de forma leve e balanceada
+##############Apresenta hipóteses, questões e problemas
+##############Razões e lacunas da literatura
+##############Informações gerais e problemas
+##############	Métodos
+##############	Projeto do estudo e arranjos
+##############Descrição detalhada dos métodos
+##############Critérios de inclusão e de exclusão
+##############Manipulação experimental
+##############Análise estatística
+##############	Resultados
+##############	Descobertas chave
+##############Dados positivos & negativos
+##############Discussão sobre tabelas e figuras
+##############Interpretação suficiente
+##############Evite análise muito longa
+##############	Discussão
+##############	Comece pelas descobertas principais
+##############Responda as hipóteses
+##############Descreva os resultados que estão de acordo com as hipóteses
+##############Descreva os resultados que são contraditórios
+##############Forças e limitações
+##############	Conclusões
+##############	Claras e concisas
+##############Descobertas e suas importâncias
+##############Prove que as descobertas “valem a pena”
+##############Recomendações de pesquisa futura
+##############Proveja um final aprazível
+##############	Agradecimentos
+##############	Descreva a ajuda no projeto da pesquisa
+##############Descreva equipamentos e “kits”
+##############Descreva a ajuda na escrita do manuscrito
+##############Descreva a ajuda na revisão do manuscrito
+##############Descreva as fontes de financiamento para a pesquisa
+##############	Referências
+	
+
+	
+
+#pai: estrutura_do_texto	#tipo: paragrafo #paragrafo_8 #As 3 estruturas exemplificadas [XXX MEO, How to Write e Oftalmo] acima tratam, principalmente, de papers científicos, em que a concisão é especialmente necessária. Mas papers cientificos não são o único formato disponível para realizar uma comunicação científica. 
+
+
+#pai: estrutura_do_texto	#tipo: paragrafo #paragrafo_9 #Existem formatos mais extensos para documentação, tais como: relatórios, teses, comunicações rápidas. Alaide Mammana também explora estas nuances, muito embora a estrutura básica seja sempre “Introdução, Métodos, Resultados e Discussão”, como já reforçado aqui.
+
+#pai: paragrafo_9 #tipo: chama_ref #ref_paragrafo_9 #[XXX Alaide Mammana, Documentação científicas]
+
+#pai: estrutura_do_texto	#tipo: paragrafo #paragrafo_10 #O presente texto, por se tratar de uma dissertação, pode se valer desses formatos mais extensos, uma vez que se trata da “defesa” para obtenção de um título (mestrado), em que a presente candidata tem que demonstrar erudição nos temas abordados. O formato menos conciso permite à esta candidata expor melhor a sua busca por uma erudição, dado que comporta a revisão de conhecimentos já existentes de forma mais estendida.
+
+
+#pai: estrutura_do_texto #tipo: topico #estrutura_do_texto_Introducao #Descrição da Introdução
+
+
+#pai: estrutura_do_texto_Introducao #tipo: paragrafo #paragrafo_11 #Seguindo as sugestões presentes em S. MEO, optou-se por uma introdução curta, leve e objetiva. A introdução é estruturada para culminar, por meio de seus últimos parágrafos, na descrição do objeto de estudo. O caminho percorrido é o de descrever esse objeto do mais geral até o específico. 
+#pai: paragrafo_11 #tipo: chama_ref #ref_paragrafo_11 #[citar XXX]
+
+#pai: estrutura_do_texto_Introducao #tipo: paragrafo #paragrafo_12 #Para que que pudesse se expressar de forma organizada, buscando demonstrar sua erudição, sem perder a objetividade da “Introdução”, a presente candidata acatou a sugestão do orientador de incluir um capítulo de “Fundamentação Teórica”, no qual os temas pincelados na “Introdução” pudessem ser mais profundamente descritos, sem prejuízo para um formato “leve e balanceado” para a apresentação da literatura na introdução, um aspecto que, segundo S.A. Meo, e.g., deve ser perseguido pelo redator de textos científicos. Assim, a exposição na “Introdução” busca ser o mais sintética possível, com direcionamento para a “Fundamentação Teórica” sempre que for necessário aprofundar em algum conceito. 
+
+
+#pai: estrutura_do_texto_Introducao #tipo: paragrafo #paragrafo_13 #Para facilitar a leitura, a presente candidata optou, também, por colocar em subseções da “Introdução” a exposição dos problemas, hipóteses, das questões e dos objetos de interesse.
+
+
+#pai: estrutura_do_texto #tipo: topico #estrutura_do_texto_Materiais_e_Metodos #Descrição de Materiais e Métodos
+
+#pai: estrutura_do_texto_Materiais_e_Metodos #tipo: paragrafo #paragrafo_14 #Uma vez que a presente pesquisa tem por objeto a caracterização do Projeto WASH quanto à sua história (trajetória), métodos e resultados, a descrição do método do WASH deve ser considerada como resultado do método da pesquisa. Em outras palavras, uma das dimensões do método aqui empregado refere-se a caracterizar o método do WASH. Portanto, a pesquisa se baseia num método de caracterização de métodos. Assim, a descrição do método do WASH deve ser considerada uma decorrência da aplicação do método da pesquisa desta dissertação e, por esse motivo, encontra-se no capítulo de “Resultados” e não no capítulo de “Materiais e Métodos”. 
+
+#pai: estrutura_do_texto #tipo: topico #estrutura_do_texto_Resultados_e_Discussoes #Resultados e Discussões
+
+#pai: estrutura_do_texto_Resultados_e_Discussoes #tipo: paragrafo #paragrafo_15 #A candidata optou por juntar em um único capítulo os resultados e as discussões (“Resultados e Discussões”). Esta opção visa garantir uma melhor fluidez, dado que permite apresentar as opções de análise que levaram à proposta de melhorias no método do WASH, o produto final desta dissertação. 
+
+#pai: estrutura_do_texto #tipo: topico # estrutura_do_texto_Produto_Tecnologico #Produto Tecnológico
+
+#pai: estrutura_do_texto_Produto_Tecnologico #tipo: paragrafo #paragrafo_16 #A presente dissertação, por se tratar de um Mestrado Tecnológico, deve culminar com a apresentação de um “produto” de caráter prático, que no presente caso será uma revisão do Documento de Referência do Projeto WASH  constante do anexo da  Portaria CTI 178/2018). Por esse motivo foi acrescentado à estrutura do documento um capítulo de “Produto Tecnológico”. Biblioteca Cidadã Paulo Freire
+
+#pai: corpo_tese #tipo: topico #Introducao #INTRODUÇÃO
+
+#pai: Introducao #tipo: paragrafo #paragrafo_17 #Aos olhos de jovens observadores contemporâneos, parece natural a relativa desenvoltura com que as pessoas utilizam os computadores e os celulares nos dias de hoje. Já estão bastante difundidos os serviços de governo eletrônico, os sites de comércio eletrônico, os  aplicativos de entrega, as plataformas de ensino, de reuniões, a busca por  trabalho, oportunidades, voto eletrônico, banco e caixa eletrônico, por exemplo.
+
+#pai: paragrafo_17 #tipo: chama_ref #ref_paragrafo_17 #[XXX]. 
+
+#pai: Introducao #tipo: paragrafo #paragrafo_18 #Essas ferramentas são continuadamente revistas e melhoradas, assim como não param de se multiplicar para atender e se adaptar aos desafios impostos pela evolução da convivência em sociedade. Um exemplo dessa necessidade de adaptação foi recentemente evidenciado pela forma como a sociedade respondeu às imposições sanitárias relativas à pandemia de 2020, quando os cidadãos tiveram que se adaptar ao isolamento e encontrar formas para continuarem produtivos por meios das redes digitais.
+
+#pai: paragrafo_18 #tipo: chama_ref #ref_paragrafo_18 #[XXX].
+
+#pai: Introducao #tipo: paragrafo #paragrafo_19 #É possível afirmar que as pessoas têm usado com frequência e com relativa facilidade as ferramentas digitais instaladas em computadores e em celulares, sejam aplicativos de mensagens, buscadores (browsers), correio eletrônico, redes sociais, entre outras. Esse uso dá-se em vários contextos: profissional, educacional, de entretenimento, de interação social, além dos serviços de governo eletrônico.
+
+#pai: Introducao #tipo: paragrafo #paragrafo_20 #As novas gerações precisam, no entanto, saber que não foi sempre assim. Muito embora a percepção corrente de que o uso de computadores e celulares é indispensável para o convívio na sociedade, a rigor seu uso é relativamente recente.
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_21 #É possível identificar a evolução das telecomunicações a partir do século passado como origem das transformações tecnológicas que disponibilizaram tecnologias digitais em larga escala. Esse fato foi identificado, por exemplo, por PIERRE LEVY, em Cibercultura, 
+
+#pai: Introducao #tipo: citacao # citacao_1 #"durante uma entrevista nos anos 50, Albert Einstein (1879-1955) declarou que três grandes bombas haviam  explodido durante o século XX: a bomba demográfica, a bomba atômica e a bomba das telecomunicações. Esta última ‘bomba’ foi chamada por Roy Ascott ( pioneiro e teórico das artes em rede) de Segundo Dilúvio, o das informações. As telecomunicações geram esse novo dilúvio por conta da natureza exponencial, explosiva e caótica do seu crescimento. A quantidade de dados e links se multiplica, acelera, aumento de links, banco de dados, hipertextos nas redes, contos transversais, etc."
+
+#pai: citacao_1 #tipo: ref_citacao #ref_citacao_1 #[1]
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_22 #Ainda, segundo Pierre Levy,
+
+
+#pai: Introducao #tipo: citacao #citacao_2 #“O segundo dilúvio não terá fim. Não há nenhum fundo sólido sob o oceano de informações. Devemos aceitá-lo como nossa nova condição. Temos que ensinar nossos filhos a nadar, a flutuar, talvez a navegar”.
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_23 #Para desenvolver e dar acesso a estes recursos tecnológicos,  governos tiveram que prover a infraestrutura de ciência e tecnologia, comunicações e de redes digitais e os meios de acesso a essas redes, algumas vezes com a participação da iniciativa privada. Na outra ponta, tiveram que promover projetos, formular políticas públicas de C&T para o desenvolvimento e  disseminação do uso das tecnologias da informação e comunicação e para a capacitação dos cidadãos através de programas de caráter educacional e de formação profissional. No Brasil, a gênese desse esforço foi deflagrada pelo Estado no início da década de 60 [2], sendo que suas ações perduram até os dias de hoje. Uma revisão essa trajetória brasileira será apresentada no capítulo de “Fundamentação Teórica”.
+ 
+#pai: Introducao #tipo: paragrafo #paragrafo_24 #Se para alguns as redes digitais tinham o objetivo de atender os indivíduos em suas necessidade de relacionamento com o governo, afinal a própria internet nasceu no contexto governamental [XXX], elas foram mais longe, e alcançaram todas as demais dimensões do cidadão, tais como: consumidor, beneficiário de serviços de saúde, educando, trabalhador, empreendedor, contribuinte, eleitor, entre outras.  Essa expansão se deu como resultado de várias ações, mas sua universalização foi resultado principalmente do surgimento de novas formas de relacionamento social representadas pelas redes sociais digitais, que tornaram mais acessíveis novas ferramentas de apoio ao ensino em sala de aula, o ensino à distância, o comércio eletrônico, a eleição eletrônica, os “market-places”, os aplicativos de transporte, etc. 
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_25 #Estas transformações tiveram impactos econômicos e sociais profundos, inclusive nas relações de trabalho, seja na criação ou extinção de posto de trabalho, bem como em suas formas de contratação, jornada, remuneração, inclusive com a precarização dos direitos trabalhistas. Elas estão muito bem descritas  no relatório da Unesco  de 2004 “Social Transformation in an Information Society: Rethinking Access to You and the World” [3]. A amplitude destas  transformações por que passa a sociedade humana é sintetizada no que se chama  Sociedade da Informação ou  Era Digital ou Era da Informação. Uma breve revisão sobre esse conceito  é apresentada na fundamentação teórica. 
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_26 #O efeito destas transformações no emprego vem exigindo dos governos, das empresas e dos cidadãos uma constante e rápida readaptação  das relações do trabalho, comerciais, industriais e da produção de novos saberes e competências. Aqueles cidadãos que não se adaptam correm o risco constante de ficarem sem sustento. Inicialmente tais transformações eram associadas principalmente à substituição do trabalho humano decorrente da automação industrial. Mas a radicalização no uso de soluções digitais, inclusive de inteligência artificial, associadas ao aumento da conectividade, vêm substituindo capacidades “cognitivas” que antes eram exclusivas de humanos[4]. Uma das consequências mais radicais é o surgimento de novos meios de exploração humana, representados pela “Gigs Economy” [XXX], ou “Economia do Bico”, que precariza as relações trabalhistas por meio de plataformas que as impessoaliza a ponto de camuflar a exploração [XXX].
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_27 #Vários países têm buscado uma melhor preparação para enfrentar essas transformações, dotando o cidadão de meios cognitivos, de conhecimento e culturais para se readaptar. Para isso, têm procurado remodelar seus sistemas educacionais, uma vez que “ficar para trás” em relação aos demais países pode afetar a prosperidade de suas populações, sua autonomia e liberdade [XXX]. 
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_28 #Mais do que simplesmente treinar o cidadão quanto ao uso  de serviços digitais, a educação tem um papel fundamental para preparar os cidadãos para sua inserção autônoma e digna na sociedade transformada pelas tecnologias de informação e comunicação. O Estado tem o desafio de estabelecer políticas públicas e prover infraestrutura para que o cidadão possa ter acesso e se beneficiar, de forma autônoma, dos recursos digitais e de comunicação..
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_29 #A percepção da importância da educação para a prosperidade da sociedade é muito antiga e, no caso americano, remonta aos primórdios da independência americana. 
+
+
+#pai: Introducao #tipo: paragrafo #paragrafo_30 #No capítulo “Fundamentação Teórica” revisaremos as origens do conceito de “Science, Technology, Engineering and Mathematics” (STEM), mostrando que já em 1790 o  presidente George Washington, em seu primeiro discurso do “Estado da União” promovia a ciência e literatura como uma base da “felicidade pública” [XXX citar fonte]. Essa percepção de valor perdurou por toda a existência americana, estimulada, inclusive, como resposta às ameaças externas muito posteriores, tais como o sucesso soviético no programa espacial, representado pelo pioneirismo do lançamento do satélite Sputnik no final da década de 50, por exemplo. É no cenário da Guerra Fria que a política de educação em STEM e alfabetização  científica e tecnológica  é vista como bem comum para o Estado, mesmo muito antes do uso desse acrônimo de forma oficial. ( Relatório CRS para o Congresso, www.crs.gov, 2012) 
+

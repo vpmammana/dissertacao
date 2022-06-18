@@ -224,6 +224,8 @@ include "../php/carrega_arvore.php";
 ?>
 <script>
 
+var modo_edicao = false;
+
 var conta_tentativas_de_ajuste_de_tela=0;
 
 var minima_largura_percentual_da_edicao = 0.2;
@@ -374,10 +376,32 @@ const div_para_flutuar = document.getElementById(id_elemento);
 function teclado(e) {
 let gemeo_atual=null;
 	console.log("x: "+x+" y:"+y)
-	e.preventDefault();
-	e.stopPropagation();	
+	if (modo_edicao == false ){
+		e.preventDefault();
+		e.stopPropagation();	
+	}
 		matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
 		document.getElementById(matriz_ganha_foco[x][0]).style.border = velha_borda_de_nivel_focalizada;
+		
+		if (e.key == "1") {
+			modo_edicao = true;
+			document.getElementById("textarea_teclado").focus();
+			
+		;}
+		if (e.key == "2") {
+			modo_edicao = true;
+			document.getElementById("textarea_mouse").focus();
+			
+		;}
+
+		if (e.key == "Tab" && modo_edicao) {
+			modo_edicao = false;
+			return;
+			
+		;}
+		
+		if (modo_edicao == true) {return;}	
+		
 		if (e.key == "Home") {y=0;}
 		if (e.key == "PageDown") {
 			let proximo2 = x + 1;

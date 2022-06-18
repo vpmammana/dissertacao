@@ -24,7 +24,8 @@ background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
 textarea {
  width: 100%;
  box-sizing: border-box;
- font-size: 1.5rem;
+ font-size: 1rem;
+ height: 100%;
 }
 .edita_secoes {
 	background-color: gray;
@@ -229,7 +230,8 @@ var minima_largura_percentual_da_edicao = 0.2;
 
 var x = 0; // aumenta com seta para direita e diminui com seta para esquerda
 var y = 0; // aumenta com seta para baixo e diminui com seta para cima
-
+var x_arvore=0; // indica posicao do cursor azul presente na arvore de secoes, gerado pelo movimento nos niveis 
+var y_arvore=0;
 var max_dir = 0;
 var min_esq = 1000000000000000000;
 
@@ -242,6 +244,7 @@ var borda_focalizada = "3px solid yellow";
 
 var velho_focado; // parametros da ultima borda focalizada
 var velha_borda_focalizada;
+var velha_borda_de_nivel_focalizada;
 var baixa_opacidade = 0.3;
 var faixa_que_precisa_de_scroll = 2;
 var padding_de_screen = 10; // evita que os elementos flutuantes encostem nas bordas da tela
@@ -369,10 +372,12 @@ const div_para_flutuar = document.getElementById(id_elemento);
 
 
 function teclado(e) {
+let gemeo_atual=null;
 	console.log("x: "+x+" y:"+y)
 	e.preventDefault();
 	e.stopPropagation();	
 		matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
+		document.getElementById(matriz_ganha_foco[x][0]).style.border = velha_borda_de_nivel_focalizada;
 		if (e.key == "Home") {y=0;}
 		if (e.key == "PageDown") {
 			let proximo2 = x + 1;
@@ -398,18 +403,48 @@ function teclado(e) {
 		;}
 		console.log("saiu");	
 	
-		if (e.key == "ArrowUp"	)  {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} }
-		if (e.key == "ArrowDown")  {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}}
-		if (e.key == "ArrowLeft")  {do {x--;} while (guarda_ultimo_visitado[x] < 0); if (x<0) {x=matriz_ganha_foco.length -1;}  y=guarda_ultimo_visitado[x];}
+		if (e.key == "ArrowUp"	)  {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} guarda_ultimo_visitado[x] = y;}
+		if (e.key == "ArrowDown")  {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} guarda_ultimo_visitado[x] = y;}
+		if (e.key == "ArrowLeft")  
+			{
+				let vem_antes = x - 1;
+				if (vem_antes<0) {vem_antes = matriz_ganha_foco.length -1;}
+				if (guarda_ultimo_visitado[vem_antes] == -1 || !matriz_ganha_foco[x][0].includes("nivel") || matriz_ganha_foco[x][0].includes("nivel_1") || e.shiftKey) 
+				{
+					do {x--;} while (guarda_ultimo_visitado[x] == -1); 
+					if (x<0) {x=matriz_ganha_foco.length -1;}  
+					y=guarda_ultimo_visitado[x]; 
+					if (y == -2) {y=0;}
+				}
+				else 
+				{
+					//alert("retorno para o pai, dentro de um nivel");
+					let conta_volta=0;
+					let max_elementos_volta = matriz_ganha_foco[vem_antes][1].length; // eu acho que esse menos 1 nao deveria estar aqui e deve dar problema na ultima secao
+					//console.log("max_elementos_volta: "+max_elementos_volta);
+					while (conta_volta < max_elementos_volta && matriz_ganha_foco[x][1][y].getAttribute("data-id-pai") != matriz_ganha_foco[vem_antes][1][conta_volta].getAttribute("data-id-secao"))
+						{
+							conta_volta++;
+							//console.log(conta_volta);
+						}
+					if (conta_volta < max_elementos_volta ) {x--; y=conta_volta;} else { alert("Nao achou o pai."); y=0;}
+					if (x<0) {x=matriz_ganha_foco.length -1;} 					
+				}
+			} 
+// -2 significa "nao foi visitado ainda"
+// -1 signfica "nao tem filhos da secao do nivel superior selecionada, que no caso de ir para a esquerda significa subir de nivel ateh o nivel selecionado"
 		if (e.key == "ArrowRight") 
 			{
 				let anterior = matriz_ganha_foco[x][1][y];
+				if (matriz_ganha_foco[x][0].includes("nivel")) {
+					gemeo_atual = document.getElementById(anterior.getAttribute("data-gemeo"));
+				}
 				let proximo = x + 1;
 				if (proximo > matriz_ganha_foco.length -1) {proximo = 0;}
 				if (!matriz_ganha_foco[proximo][0].includes("nivel") || matriz_ganha_foco[proximo][0].includes("nivel_1"))
 					{ 
 						// este if ocorre quando nao nivel, ou se eh nivel e o pai eh corpo_tese. O resultado eh ir para direita nos blocos de niveis (se for nivel 1) ou nas arvores. se for nivel 2 ou 3 eh outro tratamento
-						x++; if(x > matriz_ganha_foco.length - 1) {x=0;}  y = guarda_ultimo_visitado[x];
+						{x++; if(x > matriz_ganha_foco.length - 1) {x=0;}  y = guarda_ultimo_visitado[x]; if (y == -2) {y=0;}}
 					}
 				else {
 
@@ -424,29 +459,33 @@ function teclado(e) {
 				if (conta < max_elementos ) {x++; y=conta;} 
 				else {
 
-					guarda_ultimo_visitado[x] = y;
+					//guarda_ultimo_visitado[x] = y;
 					while (matriz_ganha_foco[x][0].includes("nivel")) 
 						{
 							let proximo3 = x + 1;
 							if (proximo3 > matriz_ganha_foco.length -1) {proximo3 = 0;}
-							if (matriz_ganha_foco[proximo3][0].includes("nivel")) {guarda_ultimo_visitado[proximo3] = -1;} else {y=guarda_ultimo_visitado[proximo3]; }
+							if (matriz_ganha_foco[proximo3][0].includes("nivel")) {guarda_ultimo_visitado[proximo3] = -1;} else {y=guarda_ultimo_visitado[proximo3];if (y == -2) {y=0;} }
 							x++;
 							if (x > matriz_ganha_foco.length - 1) { x=0;} 
 						}
 				}
-				
 				}	
+			 		if (e.shiftKey) {y=guarda_ultimo_visitado[x]; if (y == -2) {y = 0;} } // se estiver apertando shift vai para ultimo visitado ao inves de ir para o primeiro filho do atual.	
+					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual.getAttribute("data-y"));} 
 			}
-		
+	
+ 
+	
 		if (x > matriz_ganha_foco.length - 1) { x=0;}
 		if (x < 0) { x=matriz_ganha_foco.length -1;}
-		guarda_ultimo_visitado[x] = y;
-		
+				
 
 			
  
 //		console.log("antes"  + x + " - " + matriz_ganha_foco[x][0] + " -> "+ matriz_ganha_foco[x][1][y].id + document.getElementById(matriz_ganha_foco[x][1][y].id).innerHTML );
-		velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;	
+		velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
+		velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;	
+		document.getElementById(matriz_ganha_foco[x][0]).style.border = borda_focalizada;	
 		matriz_ganha_foco[x][1][y].style.border = borda_focalizada;
 		if (matriz_ganha_foco[x][0].includes("nivel")) { matriz_ganha_foco[x][1][y].click(); scroll_nivel(document.getElementById(matriz_ganha_foco[x][0]), matriz_ganha_foco[x][1][y]);}
 		velho_focado = matriz_ganha_foco[x][1][y];
@@ -697,7 +736,12 @@ function acha_divs_que_ganham_foco(){
 guarda_ultimo_visitado.length = 0;
 const colecao_ganha_foco = document.getElementsByClassName("ganha_foco");
 	for (let i = 0; i < colecao_ganha_foco.length; i++) {
-	guarda_ultimo_visitado.push(0);	
+	guarda_ultimo_visitado.push(-2);
+// guarda_ultimo_visitado = -2 -> significa que ainda nao foi visitado
+// guarda_ultimo_visitado = -1 -> significa que nao tem filhos do nivel pai
+// guarda_ultimo_visitado > -1 -> eh o ultimo visitado
+
+	
 		var dupla_ganha_foco_e_filhos=[];
 		dupla_ganha_foco_e_filhos.push(colecao_ganha_foco[i].id);
 			const colecao_sub_ganha_foco = colecao_ganha_foco[i].getElementsByTagName("*");
@@ -715,7 +759,7 @@ const colecao_ganha_foco = document.getElementsByClassName("ganha_foco");
 }
 
 function scroll_arvore_especial(moldura_da_arvore, folha_da_arvore){
-
+//alert("scroll_arvore_especial"); libere este alert para saber qual DIV do DOM estah chamando este scroll
 let cabecalio = document.getElementById("cabecalio_seletor").clientHeight;
 
 var itz = parseInt(folha_da_arvore.style.top.replace("px","")) + folha_da_arvore.clientHeight;
@@ -743,36 +787,39 @@ moldura_da_arvore.scrollTop = itz - (itz2 - folha_da_arvore.clientHeight);
 }
 
 function scroll_nivel(moldura_nivel, secao){
+console.log("scroll_nivel "+moldura_nivel.id + " secao:" + secao.id ); //libere este alerta para saber qual nivel estah chamando este scroll
+
 //console.log("scroll_nivel ",secao," moldura: ",moldura_nivel);
 
-let cabecalio =  secao.getBoundingClientRect().height;
+//let cabecalio =  secao.getBoundingClientRect().height;  chama cabecalio porque representa um "ajuste" na posicao para tentar nao deixar a secao muito colada no topo da DIV quando scroll para cima, e por acaso height da secao funciona em alguns casos, mas nao quando a secao eh muito comprida
+let cabecalio = secao.parentElement.children[0].getBoundingClientRect().height; // esta escolha de cabecalio eh bem melhor, porque escolhe a altura do div class=titulo, que eh bem mais controlada
 
 //console.log(cabecalio + " - "+ secao.getBoundingClientRect().top + "quem eh: "+secao.parentElement.id);
-var itz = secao.getBoundingClientRect().bottom;
+var bottom_da_secao = secao.getBoundingClientRect().bottom;
 
-var itz2 =  moldura_nivel.clientHeight; 
+//var altura_da_moldura =  moldura_nivel.clientHeight; 
 
-var itz3 = parseInt(secao.getBoundingClientRect().top);
+var top_da_secao = parseInt(secao.getBoundingClientRect().top);
 
-var itz4 = moldura_nivel.getBoundingClientRect().top;
+var top_da_moldura = moldura_nivel.getBoundingClientRect().top;
 
-var itz5 = moldura_nivel.getBoundingClientRect().bottom;
+var bottom_da_moldura = moldura_nivel.getBoundingClientRect().bottom;
 
-//console.log("especiali itz: "+itz+" - itz2: "+ itz2);
+//console.log("especiali bottom_da_secao: "+bottom_da_secao+" - altura_da_moldura: "+ altura_da_moldura);
 
-if (itz3 - (itz4) < 0) {
-	moldura_nivel.scrollTop = moldura_nivel.scrollTop + (itz3 - itz4 - cabecalio);
+if (top_da_secao - (top_da_moldura) < 0) {
+	moldura_nivel.scrollTop = moldura_nivel.scrollTop + (top_da_secao - top_da_moldura - cabecalio);
 	
 }
 
-if ( (itz)> (itz5)) {
+if ( (bottom_da_secao)> (bottom_da_moldura)) {
 
-moldura_nivel.scrollTop = moldura_nivel.scrollTop + (itz - itz5 + secao.getBoundingClientRect().height);
+moldura_nivel.scrollTop = moldura_nivel.scrollTop + (bottom_da_secao - bottom_da_moldura + cabecalio);
 
 }
 
 	
-}
+} // fim scroll_nivel
 
 
 function scroll_arvore(moldura_da_arvore, folha_da_arvore){
@@ -798,6 +845,8 @@ document.getElementById("check_mostra_filhos").checked=mostra_filhos_check;
 inicializa_teclado();
 acha_divs_que_ganham_foco();
 velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
+velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;
+
 matriz_ganha_foco[x][1][y].style.border=borda_focalizada;
 
 limpa_pais(1);
@@ -827,6 +876,7 @@ for (let i = 0; i < collection2.length; i++) {
 			//console.log("crick chamou");
 			let arvore = document.getElementById("flutua_para_direita");
 			let gemeo = document.getElementById(that2.getAttribute("data-gemeo"));
+
 			velho_selecionado.style.backgroundColor = velho_selecionado.getAttribute("data-cor-nivel"); // volta aa cor original 
 			velho_selecionado.style.color = velho_selecionado.getAttribute("data-cor-letra"); // volta aa cor original 
 			gemeo.style.backgroundColor="blue";

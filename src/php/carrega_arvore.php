@@ -51,49 +51,66 @@ echo "<div class='menu_principal' id='menu_principal'>
 </div>
 <div class='hint_trechos' id='hint_trechos'></div>
 <div class='edita_secoes' id='edita_secoes_mouse'>
-	<div class='cabecalio_de_arvore'>
+	<div class='cabecalio_de_arvore' style='height: 10%'>
 		Use o mouse para selecionar:
 	</div>
-<table class='tabela_de_edicao'>
-	<tr>
-		<td style='width: 50%' >Identificador da seção:		<label id='edita_secoes_mouse_id_secao'	></label></td>
-		<td style='width: 50%' >Identificador do pai da seção:	<label id='edita_secoes_mouse_id_pai'	></label></td>
-	</tr>
-	<tr style='height: 30%'>
-		<td colspan='2' style='height: 30%'>
-		<textarea id='textarea_mouse' rows='10'>	
-		</textarea>
-		</td>
-	</tr>
-
-<table class='tabela_de_edicao'>
-	<tr>
-		<td><input type='button' value='grava'></td>
-		<td><input type='button' value='lixeira'></td>
-		<td><input type='button' value='separa'></td>
-		<td><input type='button' value='junta'></td>
-		<td><input type='button' value='sobe'></td>
-		<td><input type='button' value='desce'></td>
-	</tr>
-</table>	
-
+		<div style='height: 80%'>
+		<table class='tabela_de_edicao' style='height: 100%'>
+			<tr>
+				<td style='width: 50%' >Identificador da seção:		<label id='edita_secoes_mouse_id_secao'	></label></td>
+				<td style='width: 50%' >Identificador do pai da seção:	<label id='edita_secoes_mouse_id_pai'	></label></td>
+			</tr>
+			<tr style='height: 80%'>
+				<td colspan='2' >
+				<textarea id='textarea_mouse' > alo	
+				</textarea>
+				</td>
+			</tr>
+		</table>
+		</div>
+		<div style='height: 10%'>
+		<table class='tabela_de_edicao'>
+			<tr>
+				<td><input type='button' value='grava'></td>
+				<td><input type='button' value='lixeira'></td>
+				<td><input type='button' value='separa'></td>
+				<td><input type='button' value='junta'></td>
+				<td><input type='button' value='sobe'></td>
+				<td><input type='button' value='desce'></td>
+			</tr>
+		</table>	
+		</div>
 </div>
 <div class='edita_secoes' id='edita_secoes_teclado'>
 	<div class='cabecalio_de_arvore'>
 		Use o teclado para selecionar:
 	</div>
-<table class='tabela_de_edicao'>
-	<tr>
-		<td style='width: 50%'>Identificador da seção:<label id='edita_secoes_teclado_id_secao'></label></td>
-		<td style='width: 50%' >Identificador do pai da seção:<label id='edita_secoes_teclado_id_pai'></label></td>
-	</tr>
-	<tr style='height: 30%'>
-		<td colspan='2' style='height: 30%'>
-		<textarea id='textarea_teclado' rows='10'>	
-		</textarea>
-		</td>
-	</tr>
-</table>	
+	<div style='height: 80%'>
+	<table class='tabela_de_edicao' style='height: 100%'>
+		<tr>
+			<td style='width: 50%'>Identificador da seção:<label id='edita_secoes_teclado_id_secao'></label></td>
+			<td style='width: 50%' >Identificador do pai da seção:<label id='edita_secoes_teclado_id_pai'></label></td>
+		</tr>
+		<tr style='height: 80%'>
+			<td colspan='2'>
+			<textarea id='textarea_teclado' rows='10'>opa	
+			</textarea>
+			</td>
+		</tr>
+	</table>	
+	</div>
+		<div style='height: 10%'>
+		<table class='tabela_de_edicao'>
+			<tr>
+				<td><input type='button' value='grava'></td>
+				<td><input type='button' value='lixeira'></td>
+				<td><input type='button' value='separa'></td>
+				<td><input type='button' value='junta'></td>
+				<td><input type='button' value='sobe'></td>
+				<td><input type='button' value='desce'></td>
+			</tr>
+		</table>	
+	</div>
 </div>
 ";
 
@@ -229,6 +246,8 @@ $max_folha = 0;  // o maior right de todas as folhas (considerando right = left 
 $min_top_folha = 10000000; 
 $max_top_folha = 0;
 
+$conta_folhas =0;
+
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()){
 	$nivel             = $row["nivel"]; 
@@ -290,8 +309,8 @@ if ($result->num_rows>0) {
 	$zti1 = $left_folha-$left_arvore+$padding_folha;
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
-
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
+	$conta_folhas++;
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	
 	if ($nivel==0) {continue;}

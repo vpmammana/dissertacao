@@ -61,8 +61,8 @@ echo "<div class='menu_principal' id='menu_principal'>
 				<td style='width: 50%' >Identificador do pai da seção:	<label id='edita_secoes_mouse_id_pai'	></label></td>
 			</tr>
 			<tr style='height: 80%'>
-				<td colspan='2' >
-				<textarea id='textarea_mouse' > alo	
+		
+				<textarea data-id-chave-secao='-1' id='textarea_mouse' > 
 				</textarea>
 				</td>
 			</tr>
@@ -71,12 +71,15 @@ echo "<div class='menu_principal' id='menu_principal'>
 		<div style='height: 10%'>
 		<table class='tabela_de_edicao'>
 			<tr>
-				<td><input type='button' value='grava'></td>
+				<td><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_mouse`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.value);'></td>
 				<td><input type='button' value='lixeira'></td>
 				<td><input type='button' value='separa'></td>
 				<td><input type='button' value='junta'></td>
 				<td><input type='button' value='sobe'></td>
 				<td><input type='button' value='desce'></td>
+			</tr>
+			<tr>
+				<td id='edita_secoes_mouse_data' colspan='6'></td>
 			</tr>
 		</table>	
 		</div>
@@ -93,7 +96,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 		</tr>
 		<tr style='height: 80%'>
 			<td colspan='2'>
-			<textarea id='textarea_teclado' rows='10'>opa	
+			<textarea data-id-chave-secao='-1'  id='textarea_teclado' rows='10'>
 			</textarea>
 			</td>
 		</tr>
@@ -102,12 +105,15 @@ echo "<div class='menu_principal' id='menu_principal'>
 		<div style='height: 10%'>
 		<table class='tabela_de_edicao'>
 			<tr>
-				<td><input type='button' value='grava'></td>
+				<td><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_teclado`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.value);'></td>
 				<td><input type='button' value='lixeira'></td>
 				<td><input type='button' value='separa'></td>
 				<td><input type='button' value='junta'></td>
 				<td><input type='button' value='sobe'></td>
 				<td><input type='button' value='desce'></td>
+			</tr>
+			<tr>
+				<td id='edita_secoes_teclado_data' colspan='6'></td>
 			</tr>
 		</table>	
 	</div>
@@ -250,7 +256,8 @@ $conta_folhas =0;
 
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()){
-	$id_chave             = $row["id_chave_filho"]; 
+	$id_chave             = $row["id_chave_filho"];
+	$conta_versoes        = $row["conta_versoes"]; 
 	$nivel             = $row["nivel"]; 
 	$id_secao             = $row["id_filho"]; 
 	$id_pai             = $row["id_pai"]; 
@@ -313,7 +320,7 @@ if ($result->num_rows>0) {
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
 // data-id-chave eh a chave primaria da tabela secoes
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
 	$conta_folhas++;
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	
@@ -346,7 +353,7 @@ if ($result->num_rows>0) {
 
 		}
 // data-id-chave eh a chave primaria da tabela secoes
-	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$numeracao.$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
+	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$numeracao.$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
 
 
 

@@ -250,10 +250,13 @@ $conta_folhas =0;
 
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()){
+	$id_chave             = $row["id_chave_filho"]; 
 	$nivel             = $row["nivel"]; 
 	$id_secao             = $row["id_filho"]; 
 	$id_pai             = $row["id_pai"]; 
-	$titulo             = $row["titulo"]; // titulo eh a descricao da tabela secoes, ou seja, o texto completo
+//	$titulo             = $row titulo'  titulo eh a descricao da tabela secoes, ou seja, o texto completo
+	$titulo             = $row["ultima_versao"]; // ultima_versao eh a ultima versao da secao, obtida da tabela versoes
+	$data_versao        = $row["data"]; // data da ultima versao  
 	$id_tipo_secao      = $row["id_nested_tipo_secao"]; 
 	$nome_tipo_secao    = $row["nome_nested_tipo_secao"];
 	$tem_filho	    = $row["tem_filho"];
@@ -309,7 +312,8 @@ if ($result->num_rows>0) {
 	$zti1 = $left_folha-$left_arvore+$padding_folha;
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
+// data-id-chave eh a chave primaria da tabela secoes
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
 	$conta_folhas++;
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	
@@ -341,8 +345,8 @@ if ($result->num_rows>0) {
 			$largura_pai_efetivo = $largura_pai * 0.9;
 
 		}
-
-	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-gemeo='folha_arvore_".$id_secao."' data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$numeracao.$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
+// data-id-chave eh a chave primaria da tabela secoes
+	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$numeracao.$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
 
 
 

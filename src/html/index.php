@@ -19,7 +19,6 @@ background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
 
 .tabela_de_edicao{
 	width: 100%;
-	padding: 0px;
 	text-align: left;
 }
 
@@ -27,6 +26,25 @@ background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
 	border: 1px solid black;
 	border-spacing: 0;
 	border-collapse: collapse;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1rem;
+}
+
+.tabela_de_edicao_sem_borda{
+	width: 100%;
+	text-align: left;
+}
+
+.tabela_de_edicao_sem_borda *{
+	border: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1rem;
+}
+
+.retira_borda {
+	border: none !important;
 }
 
 textarea {
@@ -894,6 +912,21 @@ if (folha_da_arvore.getBoundingClientRect().top < moldura_da_arvore.getBoundingC
 	
 }
 
+function simula_key_down(){
+document.body.dispatchEvent(
+  new KeyboardEvent("keydown", {
+    key: "e",
+    keyCode: 69, // example values.
+    code: "KeyE", // put everything you need in this object.
+    which: 69,
+    shiftKey: false, // you don't need to include values
+    ctrlKey: false,  // if you aren't going to use them.
+    metaKey: false   // these are here for example's sake.
+  })
+);
+
+}
+
 function inicializa(){
 
 document.getElementById(radio_selecionado).checked=true;
@@ -904,6 +937,8 @@ velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
 velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;
 
 matriz_ganha_foco[x][1][y].style.border=borda_focalizada;
+
+simula_key_down();
 
 limpa_pais(1);
 flutua_para_direita("flutua_para_direita");

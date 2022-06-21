@@ -52,26 +52,26 @@ echo "<div class='menu_principal' id='menu_principal'>
 <div class='hint_trechos' id='hint_trechos'></div>
 <div class='edita_secoes' id='edita_secoes_mouse'>
 	<div class='cabecalio_de_arvore' >Use o mouse para selecionar:</div>
-		<div style='height: 80%'>
+		<div style='height: 70%'>
 		<table class='tabela_de_edicao' style='height: 100%'>
 			<tr style='height: 5%'>
 				<td style='width: 50%'  >Seção:	</td>
 				<td style='width: 50%'  >Pai:	</td>
 			</tr>
 			<tr style='height: 5%'>
-				<td  id='edita_secoes_mouse_id_secao'></td>
+				<td  id='edita_secoes_mouse_id_secao' style='font-weight: bold'></td>
 				<td  id='edita_secoes_mouse_id_pai'	></td>
 			</tr>
-			<tr style='height: 80%'>
+			<tr style='height: 90%'>
 				<td colspan='2'>
-					<textarea data-id-chave-secao='-1' id='textarea_mouse' >oi 
+					<textarea data-id-chave-secao='-1' id='textarea_mouse' >
 					</textarea>
 				</td>
 			</tr>
 		</table>
 		</div>
 		<div style='height: 10%'>
-		<table class='tabela_de_edicao'>
+		<table class='tabela_de_edicao_sem_borda'>
 			<tr>
 				<td><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_mouse`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.value);'></td>
 				<td><input type='button' value='lixeira'></td>
@@ -88,13 +88,17 @@ echo "<div class='menu_principal' id='menu_principal'>
 </div>
 <div class='edita_secoes' id='edita_secoes_teclado'>
 	<div class='cabecalio_de_arvore'>Use o teclado para selecionar:	</div>
-	<div style='height: 80%'>
+	<div style='height: 70%'>
 	<table class='tabela_de_edicao' style='height: 100%'>
-		<tr>
-			<td style='width: 50%'>Identificador da seção:<label id='edita_secoes_teclado_id_secao'></label></td>
-			<td style='width: 50%' >Identificador do pai da seção:<label id='edita_secoes_teclado_id_pai'></label></td>
-		</tr>
-		<tr style='height: 80%'>
+			<tr style='height: 5%'>
+				<td style='width: 50%'  >Seção:	</td>
+				<td style='width: 50%'  >Pai:	</td>
+			</tr>
+			<tr style='height: 5%'>
+				<td  id='edita_secoes_teclado_id_secao' style='font-weight: bold'></td>
+				<td  id='edita_secoes_teclado_id_pai'	></td>
+			</tr>
+		<tr style='height: 90%'>
 			<td colspan='2'>
 			<textarea data-id-chave-secao='-1'  id='textarea_teclado' rows='10'>
 			</textarea>

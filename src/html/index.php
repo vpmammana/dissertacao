@@ -252,6 +252,7 @@ include "../php/carrega_arvore.php";
 ?>
 <script>
 
+var gemeo_atual=null;
 var modo_edicao = false;
 
 var conta_tentativas_de_ajuste_de_tela=0;
@@ -417,8 +418,12 @@ const div_para_flutuar = document.getElementById(id_elemento);
 
 
 function teclado(e) {
-let gemeo_atual=null;
 	console.log("x: "+x+" y:"+y)
+
+	if (matriz_ganha_foco[x][0].includes("nivel")) {
+		gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+	}
+
 	if (modo_edicao == false ){
 		e.preventDefault();
 		e.stopPropagation();	
@@ -471,7 +476,14 @@ let gemeo_atual=null;
 		;}
 		console.log("saiu");	
 	
-		if (e.key == "ArrowUp"	)  {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} guarda_ultimo_visitado[x] = y;}
+		if (e.key == "ArrowUp"	)  
+			{
+				y--; 
+				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} 
+				guarda_ultimo_visitado[x] = y;
+         			if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual.getAttribute("data-y"))) {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}}
+
+			}
 		if (e.key == "ArrowDown")  {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} guarda_ultimo_visitado[x] = y;}
 		if (e.key == "ArrowLeft")  
 			{
@@ -504,9 +516,6 @@ let gemeo_atual=null;
 		if (e.key == "ArrowRight") 
 			{
 				let anterior = matriz_ganha_foco[x][1][y];
-				if (matriz_ganha_foco[x][0].includes("nivel")) {
-					gemeo_atual = document.getElementById(anterior.getAttribute("data-gemeo"));
-				}
 				let proximo = x + 1;
 				if (proximo > matriz_ganha_foco.length -1) {proximo = 0;}
 				if (!matriz_ganha_foco[proximo][0].includes("nivel") || matriz_ganha_foco[proximo][0].includes("nivel_1"))
@@ -539,10 +548,14 @@ let gemeo_atual=null;
 				}
 				}	
 			 		if (e.shiftKey) {y=guarda_ultimo_visitado[x]; if (y == -2) {y = 0;} } // se estiver apertando shift vai para ultimo visitado ao inves de ir para o primeiro filho do atual.	
-					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual.getAttribute("data-y"));} 
+					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual.getAttribute("data-y")); } 
 			}
 	
- 
+                if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}}
+
+		if (matriz_ganha_foco[x][0].includes("nivel")) {
+			gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+		}
 	
 		if (x > matriz_ganha_foco.length - 1) { x=0;}
 		if (x < 0) { x=matriz_ganha_foco.length -1;}
@@ -937,6 +950,9 @@ velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
 velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;
 
 matriz_ganha_foco[x][1][y].style.border=borda_focalizada;
+if (matriz_ganha_foco[x][0].includes("nivel")) {
+		gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+}
 
 simula_key_down();
 

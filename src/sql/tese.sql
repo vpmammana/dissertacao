@@ -349,7 +349,7 @@ WHERE node.lft BETWEEN parent.lft AND parent.rgt
         AND node.nome_nested_tipo_secao = tipo_secao
 ORDER BY parent.lft
 
-) ORDER BY FINAL.tfilho_esquerda) AS POS_FINAL;
+) ORDER BY FINAL.tfilho_esquerda) AS POS_FINAL order by POS_FINAL.esq;
 END
 //
 DROP PROCEDURE IF EXISTS mostra_arvore_niveis_pais_seleciona_tipos_com_filhos
@@ -458,7 +458,7 @@ SELECT POS_FINAL.nivel, POS_FINAL.id_chave_filho, POS_FINAL.id_filho, POS_FINAL.
 						where (T_filho.niveis - T_pai.niveis > 0 AND T_filho.tfilhoesquerda BETWEEN T_pai.esquerda AND T_pai.direita) OR (T_filho.niveis=0 AND T_filho.filho = T_pai.filho) ORDER BY T_filho.tfilhoesquerda) AS FINAL WHERE FINAL.idtiposecao IN 
 (
 SELECT DISTINCT T1.id from (SELECT parent.id_chave_nested_tipo_secao as id FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.nome_nested_tipo_secao in (SELECT T.nome FROM (SELECT node.nome_nested_tipo_secao as nome, (COUNT(parent.nome_nested_tipo_secao) - (min(sub_tree.depth) + 1)) AS depth FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent, nested_tipos_secoes AS sub_parent, ( SELECT node.nome_nested_tipo_secao, (COUNT(parent.nome_nested_tipo_secao) - 1) AS depth FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.nome_nested_tipo_secao = tipo_secao GROUP BY node.nome_nested_tipo_secao ORDER BY max(node.lft) ) AS sub_tree WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.lft BETWEEN sub_parent.lft AND sub_parent.rgt AND sub_parent.nome_nested_tipo_secao = sub_tree.nome_nested_tipo_secao GROUP BY node.nome_nested_tipo_secao HAVING depth <= 1 ORDER BY max(node.lft)) as T where T.depth>0)  ORDER BY parent.lft) as T1
-) ORDER BY FINAL.tfilho_esquerda) AS POS_FINAL;
+) ORDER BY FINAL.tfilho_esquerda) AS POS_FINAL order by POS_FINAL.esq;
 END
 //
 DELIMITER ;

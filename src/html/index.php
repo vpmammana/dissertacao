@@ -17,8 +17,16 @@ background-color: #923cb5;
 background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 
-.tabela_de_edicao {
+.tabela_de_edicao{
 	width: 100%;
+	padding: 0px;
+	text-align: left;
+}
+
+.tabela_de_edicao *{
+	border: 1px solid black;
+	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 textarea {
@@ -33,6 +41,7 @@ textarea {
 	position: absolute;
 	border: 3px solid lightblue;
 	overflow: auto;
+	font-size: 0.8rem;
 }
 .hint_trechos{
 	visibility: hidden;
@@ -549,14 +558,14 @@ let gemeo_atual=null;
 		if (matriz_ganha_foco[x][0].includes("nivel")){
 			id_secao_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-secao");
 			id_pai_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
-			data_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date");
+			data_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
 			textarea_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
 			textarea_teclado.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 		}
 		if (matriz_ganha_foco[x][0].includes("flutua_para_direita")){
 			id_secao_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-secao");
 			id_pai_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
-			data_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date");
+			data_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
 			textarea_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
 			textarea_mouse.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 		}

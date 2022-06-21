@@ -51,19 +51,21 @@ echo "<div class='menu_principal' id='menu_principal'>
 </div>
 <div class='hint_trechos' id='hint_trechos'></div>
 <div class='edita_secoes' id='edita_secoes_mouse'>
-	<div class='cabecalio_de_arvore' style='height: 10%'>
-		Use o mouse para selecionar:
-	</div>
+	<div class='cabecalio_de_arvore' >Use o mouse para selecionar:</div>
 		<div style='height: 80%'>
 		<table class='tabela_de_edicao' style='height: 100%'>
-			<tr>
-				<td style='width: 50%' >Identificador da seção:		<label id='edita_secoes_mouse_id_secao'	></label></td>
-				<td style='width: 50%' >Identificador do pai da seção:	<label id='edita_secoes_mouse_id_pai'	></label></td>
+			<tr style='height: 5%'>
+				<td style='width: 50%'  >Seção:	</td>
+				<td style='width: 50%'  >Pai:	</td>
+			</tr>
+			<tr style='height: 5%'>
+				<td  id='edita_secoes_mouse_id_secao'></td>
+				<td  id='edita_secoes_mouse_id_pai'	></td>
 			</tr>
 			<tr style='height: 80%'>
-		
-				<textarea data-id-chave-secao='-1' id='textarea_mouse' > 
-				</textarea>
+				<td colspan='2'>
+					<textarea data-id-chave-secao='-1' id='textarea_mouse' >oi 
+					</textarea>
 				</td>
 			</tr>
 		</table>
@@ -85,9 +87,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 		</div>
 </div>
 <div class='edita_secoes' id='edita_secoes_teclado'>
-	<div class='cabecalio_de_arvore'>
-		Use o teclado para selecionar:
-	</div>
+	<div class='cabecalio_de_arvore'>Use o teclado para selecionar:	</div>
 	<div style='height: 80%'>
 	<table class='tabela_de_edicao' style='height: 100%'>
 		<tr>

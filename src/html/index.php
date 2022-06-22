@@ -419,7 +419,7 @@ const div_para_flutuar = document.getElementById(id_elemento);
 
 function teclado(e) {
 	console.log("x: "+x+" y:"+y)
-
+	let edita_secoes_mouse_id_secao = document.getElementById("edita_secoes_mouse_id_secao").innerText;
 	if (matriz_ganha_foco[x][0].includes("nivel")) {
 		gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 	}
@@ -482,6 +482,8 @@ function teclado(e) {
 				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} 
 				guarda_ultimo_visitado[x] = y;
          			if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual.getAttribute("data-y"))) {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}}
+         			if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}}
+
 
 			}
 		if (e.key == "ArrowDown")  {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} guarda_ultimo_visitado[x] = y;}
@@ -551,7 +553,8 @@ function teclado(e) {
 					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual.getAttribute("data-y")); } 
 			}
 	
-                if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}}
+                if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
+         	if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita o contrario
 
 		if (matriz_ganha_foco[x][0].includes("nivel")) {
 			gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));

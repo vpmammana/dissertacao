@@ -51,7 +51,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 </div>
 <div class='hint_trechos' id='hint_trechos'></div>
 <div class='edita_secoes' id='edita_secoes_mouse'>
-	<div class='cabecalio_de_arvore' >Use o mouse para selecionar:</div>
+	<div class='cabecalio_de_arvore' style='font-size: 3rem; text-align: right; text-overflow: clip; display: block'><label style='color: red; display: run-in; margin-left: 30px; float: left; font-size: 1.5rem'>(tecle 2)</label>Box 2 <label style='color: yellow; display: run-in; margin-left: 0px; float: right'>&#8594;</label></div>
 		<div style='height: 70%'>
 		<table class='tabela_de_edicao' style='height: 100%'>
 			<tr style='height: 5%'>
@@ -87,7 +87,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 		</div>
 </div>
 <div class='edita_secoes' id='edita_secoes_teclado'>
-	<div class='cabecalio_de_arvore'>Use o teclado para selecionar:	</div>
+	<div class='cabecalio_de_arvore'   style='font-size: 3rem' ><label style='color: yellow; display: run-in; margin-left: 0px; float: left'>&#8592;</label> Box 1 <label style='color: red; display: run-in; margin-left: 30px; float: right; font-size: 1.5rem'>(tecle 1)</label></div>
 	<div style='height: 70%'>
 	<table class='tabela_de_edicao' style='height: 100%'>
 			<tr style='height: 5%'>
@@ -133,7 +133,7 @@ $top_niveis = 50; // posicao da extremidade superior dos niveis
 $left_geral = 20; // o ponto mais a esquerda dos niveis
 $top_arvore = 200; // posicao da extremidade superior da arvore
 $left_arvore = 1500; // extremida esquerda da arvore (vai ser alterado por flutua_para_direita)
-$altura_cabecalio = 20;
+$altura_cabecalio = 24;
 $altura_cabecalio_arvore = 30;
 $top_cabecalio = $top_niveis - $altura_cabecalio;
 $height_niveis= 1000;
@@ -369,7 +369,7 @@ if ($result->num_rows>0) {
 $velho_titulo = $titulo;
 	if ( array_key_exists($nivel, $niveis)) {} else 
 		{
-			$niveis[$nivel]="<div id='cabecalio_de_nivel_".$nivel."' class='cabecalio_de_nivel' style='background-color: ".$cor_nivel[$nivel+1]."; color: ".$cor_letra_nivel[$nivel+1]."; left: ".$left."px; width: ".$largura_niveis_array[$nivel]."px; height: ".$altura_cabecalio."px; top: ".$top_cabecalio."px'>Nível: ".$nivel."</div>"."<div id='nivel_".$nivel."' data-nivel='".$nivel."' class='nivel ganha_foco' style='background-color: ".$cor_nivel[$nivel+1]."; color: ".$cor_letra_nivel[$nivel+1].";  left: ".$left."px; width: ".$largura_niveis_array[$nivel]."px; top: ".$top_niveis."px; height: ".$height_niveis."px'>";
+			$niveis[$nivel]="<div id='cabecalio_de_nivel_".$nivel."' class='cabecalio_de_nivel' style='background-color: ".$cor_nivel[$nivel+1]."; color: ".$cor_letra_nivel[$nivel+1]."; left: ".$left."px; width: ".$largura_niveis_array[$nivel]."px; height: ".$altura_cabecalio."px; top: ".$top_cabecalio."px'>Nível: ".$nivel." (Escolha Box 1)</div>"."<div id='nivel_".$nivel."' data-nivel='".$nivel."' class='nivel ganha_foco' style='background-color: ".$cor_nivel[$nivel+1]."; color: ".$cor_letra_nivel[$nivel+1].";  left: ".$left."px; width: ".$largura_niveis_array[$nivel]."px; top: ".$top_niveis."px; height: ".$height_niveis."px'>";
 		}
 //	echo "<tr><td>".$nivel."</td><td>".$id_secao."</td><td>".$id_pai."</td><td>".$titulo."</td></tr>"; 
     }
@@ -401,7 +401,7 @@ if ($altura_moldura > $max_tamanho_arvore) {$altura_moldura = $max_tamanho_arvor
 $zti4 = $min_folha-$padding_arvore;
 $zti5 = $min_top_folha - $padding_arvore;
 
-echo "<div id='flutua_para_direita' class='moldura ganha_foco' style=' width: ".$largura_moldura."px; height: ".$altura_moldura."px; left: ".$zti4."px; top: ".$zti5."px'><div id='cabecalio_flutua_para_direita' class='cabecalio_de_arvore' style='width: ".$largura_moldura."px; height: ".$altura_cabecalio."px;'><label>Seções:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_trechos' onclick='percorre_arvore_trechos(this.checked)'>Mostra Trechos</input></div></div>".$arvore."</div>";
+echo "<div id='flutua_para_direita' class='moldura ganha_foco' style=' width: ".$largura_moldura."px; height: ".$altura_moldura."px; left: ".$zti4."px; top: ".$zti5."px'><div id='cabecalio_flutua_para_direita' class='cabecalio_de_arvore' style='width: ".$largura_moldura."px; height: ".$altura_cabecalio."px;'><label  style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha Box 2</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_trechos' onclick='percorre_arvore_trechos(this.checked)'>Mostra Trechos</input></div></div>".$arvore."</div>";
 //echo "</table>";
 
 $conn->close();
@@ -483,7 +483,7 @@ $zti8 =$min_folha_ts-$padding_arvore_ts;
 $zti9 =$min_top_folha_ts - $padding_arvore_ts - $altura_cabecalio_arvore;
 
 echo "
-<div id='seletor' class='moldura_ts ganha_foco' style=' width: ".$largura_moldura_ts."px; height: ".$altura_moldura_ts."px; left: ".$zti8."px; top: ".$zti9."px'><div id='cabecalio_seletor' class='cabecalio_de_arvore' style=' width: ".$largura_moldura_ts."px; height: ".$altura_cabecalio_arvore."px;'><label>Escolha o tipo de seção:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_filhos' >Mostra Filhos</input></div></div>
+<div id='seletor' class='moldura_ts ganha_foco' style=' width: ".$largura_moldura_ts."px; height: ".$altura_moldura_ts."px; left: ".$zti8."px; top: ".$zti9."px'><div id='cabecalio_seletor' class='cabecalio_de_arvore' style=' width: ".$largura_moldura_ts."px; height: ".$altura_cabecalio_arvore."px;'><label style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha o tipo de seção:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_filhos' >Mostra Filhos</input></div></div>
 ".$arvore_tipos."</div>";
 
 

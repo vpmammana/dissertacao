@@ -89,7 +89,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 <div class='edita_secoes' id='edita_secoes_teclado'>
 	<div class='cabecalio_de_arvore'   style='font-size: 3rem' ><label style='color: yellow; display: run-in; margin-left: 0px; float: left'>&#8592;</label> Box 1 <label style='color: red; display: run-in; margin-left: 30px; float: right; font-size: 1.5rem'>(tecle 1)</label></div>
 	<div style='height: 70%'>
-	<table class='tabela_de_edicao' style='height: 100%'>
+	<table class='tabela_de_edicao_sem_borda' style='height: 100%'>
 			<tr style='height: 5%'>
 				<td style='width: 50%'  >Seção:	</td>
 				<td style='width: 50%'  >Pai:	</td>
@@ -107,7 +107,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 	</table>	
 	</div>
 		<div style='height: 10%'>
-		<table class='tabela_de_edicao'>
+		<table class='tabela_de_edicao_sem_borda'>
 			<tr>
 				<td><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_teclado`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.value);'></td>
 				<td><input type='button' value='lixeira'></td>
@@ -324,7 +324,7 @@ if ($result->num_rows>0) {
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
 // data-id-chave eh a chave primaria da tabela secoes
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."'  data-gemeo='secao_".$id_secao."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
 	$conta_folhas++;
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	
@@ -401,7 +401,7 @@ if ($altura_moldura > $max_tamanho_arvore) {$altura_moldura = $max_tamanho_arvor
 $zti4 = $min_folha-$padding_arvore;
 $zti5 = $min_top_folha - $padding_arvore;
 
-echo "<div id='flutua_para_direita' class='moldura ganha_foco' style=' width: ".$largura_moldura."px; height: ".$altura_moldura."px; left: ".$zti4."px; top: ".$zti5."px'><div id='cabecalio_flutua_para_direita' class='cabecalio_de_arvore' style='width: ".$largura_moldura."px; height: ".$altura_cabecalio."px;'><label  style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha Box 2</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_trechos' onclick='percorre_arvore_trechos(this.checked)'>Mostra Trechos</input></div></div>".$arvore."</div>";
+echo "<div id='flutua_para_direita' class='moldura ganha_foco' style=' width: ".$largura_moldura."px; height: ".$altura_moldura."px; left: ".$zti4."px; top: ".$zti5."px'><div id='cabecalio_flutua_para_direita' class='cabecalio_de_arvore' style='width: ".$largura_moldura."px; height: ".$altura_cabecalio."px;'><label  style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha Box 2</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox'  id='check_mostra_trechos' onclick='percorre_arvore_trechos(this.checked)' checked>Mostra Trechos</input></div></div>".$arvore."</div>";
 //echo "</table>";
 
 $conn->close();

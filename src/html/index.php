@@ -145,6 +145,12 @@ label{
 	z-index: 1000;
 }
 
+.cursor_box {
+	position: absolute;
+	opacity: 0.4;
+	background-color: gray;
+}
+
 .moldura {
 	box-sizing: border-box;
 	position: absolute;
@@ -252,7 +258,9 @@ include "../php/carrega_arvore.php";
 ?>
 <script>
 
-var gemeo_atual=null;
+var gemeo_atual_na_arvore=null;
+var gemeo_atual_no_nivel=null;
+var velho_gemeo_no_nivel = null;
 var modo_edicao = false;
 
 var conta_tentativas_de_ajuste_de_tela=0;
@@ -421,7 +429,10 @@ function teclado(e) {
 	console.log("x: "+x+" y:"+y)
 	let edita_secoes_mouse_id_secao = document.getElementById("edita_secoes_mouse_id_secao").innerText;
 	if (matriz_ganha_foco[x][0].includes("nivel")) {
-		gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+	}
+	if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
+		gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 	}
 
 	if (modo_edicao == false ){
@@ -481,7 +492,7 @@ function teclado(e) {
 				y--; 
 				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} 
 				guarda_ultimo_visitado[x] = y;
-         			if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual.getAttribute("data-y"))) {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}}
+         			if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y"))) {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}}
          			if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y--; if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}}
 
 
@@ -550,19 +561,26 @@ function teclado(e) {
 				}
 				}	
 			 		if (e.shiftKey) {y=guarda_ultimo_visitado[x]; if (y == -2) {y = 0;} } // se estiver apertando shift vai para ultimo visitado ao inves de ir para o primeiro filho do atual.	
-					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual.getAttribute("data-y")); } 
+					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual_na_arvore.getAttribute("data-y")); } 
 			}
 	
-                if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
+       		if (x > matriz_ganha_foco.length - 1) { x=0;} // estes ifs estavam depois dos 4 abaixo, mas parece mais lógico que fiquem aqui 
+		if (x < 0) { x=matriz_ganha_foco.length -1;}
+
+	        if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
          	if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita o contrario
 
 		if (matriz_ganha_foco[x][0].includes("nivel")) {
-			gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+			gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+		}
+		if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
+			gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+			velho_gemeo_no_nivel.style.opacity = "1.0";
+			gemeo_atual_no_nivel.style.opacity = "0.3";
+			velho_gemeo_no_nivel = gemeo_atual_no_nivel;
 		}
 	
-		if (x > matriz_ganha_foco.length - 1) { x=0;}
-		if (x < 0) { x=matriz_ganha_foco.length -1;}
-				
+		// ifs estavam aqui
 
 			
  
@@ -572,6 +590,9 @@ function teclado(e) {
 		document.getElementById(matriz_ganha_foco[x][0]).style.border = borda_focalizada;	
 		matriz_ganha_foco[x][1][y].style.border = borda_focalizada;
 		if (matriz_ganha_foco[x][0].includes("nivel")) { matriz_ganha_foco[x][1][y].click(); scroll_nivel(document.getElementById(matriz_ganha_foco[x][0]), matriz_ganha_foco[x][1][y]);}
+
+
+
 		velho_focado = matriz_ganha_foco[x][1][y];
 		let paizao = document.getElementById(matriz_ganha_foco[x][0]);
 
@@ -951,12 +972,16 @@ inicializa_teclado();
 acha_divs_que_ganham_foco();
 velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
 velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;
+velho_gemeo_no_nivel = matriz_ganha_foco[x][1][y];
+
 
 matriz_ganha_foco[x][1][y].style.border=borda_focalizada;
 if (matriz_ganha_foco[x][0].includes("nivel")) {
-		gemeo_atual = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 }
-
+if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
+		gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+}
 simula_key_down();
 
 limpa_pais(1);
@@ -973,7 +998,7 @@ if (fator_de_reducao_da_largura_da_arvore != 1) {
 			flutua_para_direita("flutua_para_direita");
 			flutua_para_direita("seletor");
 }
-
+percorre_arvore_trechos(true)
 inicializa_folhas_de_trechos();
 //ajusta_scroll();
 const collection2 = document.getElementsByClassName("secao");
@@ -987,10 +1012,14 @@ for (let i = 0; i < collection2.length; i++) {
 			let arvore = document.getElementById("flutua_para_direita");
 			let gemeo = document.getElementById(that2.getAttribute("data-gemeo"));
 
-			velho_selecionado.style.backgroundColor = velho_selecionado.getAttribute("data-cor-nivel"); // volta aa cor original 
-			velho_selecionado.style.color = velho_selecionado.getAttribute("data-cor-letra"); // volta aa cor original 
-			gemeo.style.backgroundColor="blue";
-			gemeo.style.color="white";
+			velho_selecionado.style.opacity = "1.0"; // volta aa cor original 
+			gemeo.style.opacity             = "0.4";
+			
+
+//			velho_selecionado.style.backgroundColor = velho_selecionado.getAttribute("data-cor-nivel"); // volta aa cor original 
+//			velho_selecionado.style.color = velho_selecionado.getAttribute("data-cor-letra"); // volta aa cor original 
+//			gemeo.style.backgroundColor="blue";
+//			gemeo.style.color="white";
 			velho_selecionado = gemeo;
 			scroll_arvore(arvore,gemeo);
 

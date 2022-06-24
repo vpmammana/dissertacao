@@ -239,13 +239,56 @@ label{
   display: none;
 }
 
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    border-radius: 25px;
+    background-color: yellow;
+    border: 1px solid black;
+    height: 10%;
+    width: 30%;
+    font-size: 3vw;
+    z-index: 10000;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
+.uma_versao {
+	position: absolute;
+	width: 6rem;
+	height: 2.3rem;
+	background-color: yellow;
+	color: black;
+	border-radius: 0.4rem;
+	text-align: center;
+	display: block;	
+	font-size: 0.8rem;
+}
+
+.div_versoes {
+	font-size: 1rem;
+	width: inherit;
+	max-width: 100%;
+	height: 100%;
+	background-color: blue;
+	color: white;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	border: 1px solid black;
+	box-sizing: border-box;
+	position: relative;
+}
 
 </style>
 </head>
 <body>
+<div id="popup_gravando" class="popup">gravando...</div>
+
 <?php
 
 include "../php/identifica.php.cripto";
@@ -262,8 +305,11 @@ var gemeo_atual_na_arvore=null;
 var gemeo_atual_no_nivel=null;
 var velho_gemeo_no_nivel = null;
 var modo_edicao = false;
-
+var textarea_em_edicao = null;
+var versoes_em_edicao = null;
 var conta_tentativas_de_ajuste_de_tela=0;
+
+var popup_gravando = document.getElementById("popup_gravando");
 
 var minima_largura_percentual_da_edicao = 0.2;
 
@@ -316,15 +362,39 @@ function limpa_array(){
 	matriz_ganha_foco.length = 0;
 }
 
-function grava_trecho(id_chave_secao, trecho){ // grava uma nova versao de secao
+function grava_trecho(id_chave_secao, id_secao, trecho, div_versoes){ // grava uma nova versao de secao
 if (id_chave_secao <0) {alert("Você ainda não selecionou uma seção. Nada será feito."); return;}
+popup_gravando.style.visibility = "visible";
+setTimeout(function(){popup_gravando.style.visibility = "hidden";}, 2000);
 var resposta="";
 var url='../php/insere_novo_trecho.php?id_chave_secao='+id_chave_secao+'&trecho='+trecho;
 var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
-		     alert(resposta);
+		     //alert(resposta);
+
+
+			if (resposta.includes("Deu problema")){ alert(resposta);} else {
+
+			carrega_versoes_scroll(div_versoes.id,  id_chave_secao);
+			document.getElementById("secao_"+id_secao).setAttribute("data-titulo", trecho);
+			document.getElementById("folha_arvore_"+id_secao).setAttribute("data-titulo", trecho);
+			
+			if (document.getElementById("check_mostra_trechos").checked) {
+				document.getElementById("folha_arvore_"+id_secao).innerHTML = trecho;
+			};
+
+		 	     if (document.getElementById(radical_de_nucleo+id_secao) == null) // acha o ponto certo para inserir o novo trecho, sem ter que ficar buscando children  
+				{
+					document.getElementById("secao_"+id_secao).innerHTML = trecho;
+					
+				}
+				else
+				{
+					document.getElementById(radical_de_nucleo+id_secao).innerHTML = trecho;
+				}
+			}
                      }
            oReq.send();
 
@@ -424,6 +494,36 @@ const div_para_flutuar = document.getElementById(id_elemento);
 
 }
 
+function ajusta_bordas_do_selecionado(){
+	
+		velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
+		velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;	
+		document.getElementById(matriz_ganha_foco[x][0]).style.border = borda_focalizada;	
+		matriz_ganha_foco[x][1][y].style.border = borda_focalizada;
+		if (matriz_ganha_foco[x][0].includes("nivel")) { matriz_ganha_foco[x][1][y].click(); scroll_nivel(document.getElementById(matriz_ganha_foco[x][0]), matriz_ganha_foco[x][1][y]);}
+
+} // ajusta_bordas_do_selecionado
+
+function carrega_versoes_scroll(div_versoes, id_chave_secao){
+elemento = document.getElementById(div_versoes);
+let largura_do_botao_de_versao = '8';
+let unidade = 'rem';
+
+
+var resposta="";
+var url='../php/devolve_divs_versoes.php?id_chave_secao='+id_chave_secao+'&largura='+largura_do_botao_de_versao+'&unidade='+unidade;
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+		
+		     elemento.innerHTML = resposta; 
+	   }
+           oReq.send();
+
+	
+
+}
 
 function teclado(e) {
 	console.log("x: "+x+" y:"+y)
@@ -445,6 +545,11 @@ function teclado(e) {
 
 		if (e.key == "Tab" && modo_edicao) {
 			modo_edicao = false;
+			ajusta_bordas_do_selecionado();
+			if (textarea_em_edicao != null && versoes_em_edicao != null) {
+				grava_trecho(textarea_em_edicao.getAttribute(`data-id-chave-secao`),  textarea_em_edicao.getAttribute(`data-id-secao`), textarea_em_edicao.value, versoes_em_edicao);
+	
+			} else {alert("Ocorreu erro XPTO.");}
 			return;
 			
 		;}
@@ -453,12 +558,16 @@ function teclado(e) {
 
 		if (e.key == "1") {
 			modo_edicao = true;
-			document.getElementById("textarea_teclado").focus();
+			textarea_em_edicao = document.getElementById("textarea_teclado");
+			versoes_em_edicao = document.getElementById("versoes_teclado");
+			textarea_em_edicao.focus();
 			
 		;}
 		if (e.key == "2") {
 			modo_edicao = true;
-			document.getElementById("textarea_mouse").focus();
+			textarea_em_edicao = document.getElementById("textarea_mouse");
+			versoes_em_edicao = document.getElementById("versoes_mouse");
+			textarea_em_edicao.focus();
 			
 		;}
 		
@@ -585,12 +694,10 @@ function teclado(e) {
 			
  
 //		console.log("antes"  + x + " - " + matriz_ganha_foco[x][0] + " -> "+ matriz_ganha_foco[x][1][y].id + document.getElementById(matriz_ganha_foco[x][1][y].id).innerHTML );
-		velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
-		velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;	
-		document.getElementById(matriz_ganha_foco[x][0]).style.border = borda_focalizada;	
-		matriz_ganha_foco[x][1][y].style.border = borda_focalizada;
-		if (matriz_ganha_foco[x][0].includes("nivel")) { matriz_ganha_foco[x][1][y].click(); scroll_nivel(document.getElementById(matriz_ganha_foco[x][0]), matriz_ganha_foco[x][1][y]);}
 
+		ajusta_bordas_do_selecionado();
+	
+		
 
 
 		velho_focado = matriz_ganha_foco[x][1][y];
@@ -598,31 +705,36 @@ function teclado(e) {
 
 			if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {scroll_arvore_especial(paizao,matriz_ganha_foco[x][1][y]);}
 
-//		document.getElementById(matriz_ganha_foco[x][0]).focus();
+		//		document.getElementById(matriz_ganha_foco[x][0]).focus();
 
 		let textarea_teclado = document.getElementById("textarea_teclado");
 		let id_secao_teclado = document.getElementById("edita_secoes_teclado_id_secao");
 		let id_pai_teclado = document.getElementById("edita_secoes_teclado_id_pai");
-		let data_teclado = document.getElementById("edita_secoes_teclado_data");
+		//		let data_teclado = document.getElementById("edita_secoes_teclado_data");
 
 		let textarea_mouse = document.getElementById("textarea_mouse");
 		let id_secao_mouse = document.getElementById("edita_secoes_mouse_id_secao");
 		let id_pai_mouse = document.getElementById("edita_secoes_mouse_id_pai");
-		let data_mouse = document.getElementById("edita_secoes_mouse_data");
+		//		let data_mouse = document.getElementById("edita_secoes_mouse_data");
 
 		if (matriz_ganha_foco[x][0].includes("nivel")){
 			id_secao_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-secao");
 			id_pai_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
-			data_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
-			textarea_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
+			//			data_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
+			textarea_teclado.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
+			console.log("estou passando por aqui -> "+ textarea_teclado.id + " data-titulo -> " +  matriz_ganha_foco[x][1][y].getAttribute("data-titulo"));
 			textarea_teclado.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
+			textarea_teclado.setAttribute("data-id-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
+			carrega_versoes_scroll("versoes_teclado",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 		}
 		if (matriz_ganha_foco[x][0].includes("flutua_para_direita")){
 			id_secao_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-secao");
 			id_pai_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
-			data_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
-			textarea_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
+			//			data_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
+			textarea_mouse.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
 			textarea_mouse.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
+			textarea_mouse.setAttribute("data-id-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
+			carrega_versoes_scroll("versoes_mouse",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 		}
 
 } // fim teclado

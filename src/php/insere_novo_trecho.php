@@ -14,9 +14,9 @@ $database = "dissertacao";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 
-$sql = "insert into versoes (id_secao, trecho) values (".$param_id_chave_secao.", '".$param_trecho."');";
+$sql = "insert into versoes (id_secao, trecho) values (".$param_id_chave_secao.", '".mysqli_real_escape_string($conn, $param_trecho)."');";
 
-if ($conn->query($sql)===true){ echo "Nova versão gravada: ".$param_trecho;} else {echo "<br> Deu problema com o sql: ".$sql."<br> erro:".$conn->error."<br>";}
+if ($conn->query($sql)===true){ echo "Nova versão gravada escape: ".$param_trecho;} else {echo "<br> Deu problema com o sql: ".$sql."<br> erro:".$conn->error."<br>";}
 
 $conn->close();
 

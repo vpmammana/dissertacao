@@ -60,6 +60,7 @@ textarea {
 	border: 3px solid lightblue;
 	overflow: auto;
 	font-size: 0.8rem;
+	height: 100%;
 }
 .hint_trechos{
 	visibility: hidden;
@@ -134,6 +135,7 @@ label{
 	color: black;
 	position: absolute;
 }
+
 .cabecalio_de_arvore {
 	box-sizing: border-box;
 	border: 1px solid black;
@@ -259,18 +261,17 @@ label{
 }
 
 .uma_versao {
+	padding: 1px;
 	position: absolute;
-	width: 6rem;
-	height: 2.3rem;
 	background-color: yellow;
 	color: black;
 	border-radius: 0.4rem;
 	text-align: center;
 	display: block;	
-	font-size: 0.8rem;
 }
 
 .div_versoes {
+	padding: 1px;
 	font-size: 1rem;
 	width: inherit;
 	max-width: 100%;
@@ -300,6 +301,13 @@ $numero_de_colunas_de_radio_button = 10;
 include "../php/carrega_arvore.php";
 ?>
 <script>
+var largura_do_botao_de_versao = '8';
+var altura_do_botao_de_versao = '2';
+var fonte_do_botao_de_versao = '1';
+var separacao_do_botao_de_versao = '8';
+
+var fator_fonte_versao = 1.3;
+var unidade = 'rem';
 
 var gemeo_atual_na_arvore=null;
 var gemeo_atual_no_nivel=null;
@@ -362,7 +370,7 @@ function limpa_array(){
 	matriz_ganha_foco.length = 0;
 }
 
-function grava_trecho(id_chave_secao, id_secao, trecho, div_versoes){ // grava uma nova versao de secao
+function grava_trecho(id_chave_secao, id_secao, trecho, div_versoes, textarea){ // grava uma nova versao de secao
 if (id_chave_secao <0) {alert("Você ainda não selecionou uma seção. Nada será feito."); return;}
 popup_gravando.style.visibility = "visible";
 setTimeout(function(){popup_gravando.style.visibility = "hidden";}, 2000);
@@ -377,7 +385,7 @@ var oReq=new XMLHttpRequest();
 
 			if (resposta.includes("Deu problema")){ alert(resposta);} else {
 
-			carrega_versoes_scroll(div_versoes.id,  id_chave_secao);
+			carrega_versoes_scroll(div_versoes.id,  id_chave_secao, textarea);
 			document.getElementById("secao_"+id_secao).setAttribute("data-titulo", trecho);
 			document.getElementById("folha_arvore_"+id_secao).setAttribute("data-titulo", trecho);
 			
@@ -504,14 +512,12 @@ function ajusta_bordas_do_selecionado(){
 
 } // ajusta_bordas_do_selecionado
 
-function carrega_versoes_scroll(div_versoes, id_chave_secao){
+function carrega_versoes_scroll(div_versoes, id_chave_secao, textarea){
 elemento = document.getElementById(div_versoes);
-let largura_do_botao_de_versao = '8';
-let unidade = 'rem';
 
 
 var resposta="";
-var url='../php/devolve_divs_versoes.php?id_chave_secao='+id_chave_secao+'&largura='+largura_do_botao_de_versao+'&unidade='+unidade;
+var url='../php/devolve_divs_versoes.php?id_chave_secao='+id_chave_secao+'&largura='+largura_do_botao_de_versao+'&altura='+altura_do_botao_de_versao+'&fonte='+fonte_do_botao_de_versao+'&unidade='+unidade+'&fator_fonte='+fator_fonte_versao+'&separacao='+separacao_do_botao_de_versao+'&textarea='+textarea;
 var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
@@ -520,9 +526,6 @@ var oReq=new XMLHttpRequest();
 		     elemento.innerHTML = resposta; 
 	   }
            oReq.send();
-
-	
-
 }
 
 function teclado(e) {
@@ -547,7 +550,7 @@ function teclado(e) {
 			modo_edicao = false;
 			ajusta_bordas_do_selecionado();
 			if (textarea_em_edicao != null && versoes_em_edicao != null) {
-				grava_trecho(textarea_em_edicao.getAttribute(`data-id-chave-secao`),  textarea_em_edicao.getAttribute(`data-id-secao`), textarea_em_edicao.value, versoes_em_edicao);
+				grava_trecho(textarea_em_edicao.getAttribute(`data-id-chave-secao`),  textarea_em_edicao.getAttribute(`data-id-secao`), textarea_em_edicao.value, versoes_em_edicao, textarea_em_edicao);
 	
 			} else {alert("Ocorreu erro XPTO.");}
 			return;
@@ -725,7 +728,7 @@ function teclado(e) {
 			console.log("estou passando por aqui -> "+ textarea_teclado.id + " data-titulo -> " +  matriz_ganha_foco[x][1][y].getAttribute("data-titulo"));
 			textarea_teclado.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 			textarea_teclado.setAttribute("data-id-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
-			carrega_versoes_scroll("versoes_teclado",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
+			carrega_versoes_scroll("versoes_teclado",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"), "textarea_teclado");
 		}
 		if (matriz_ganha_foco[x][0].includes("flutua_para_direita")){
 			id_secao_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-secao");
@@ -734,7 +737,7 @@ function teclado(e) {
 			textarea_mouse.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
 			textarea_mouse.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 			textarea_mouse.setAttribute("data-id-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
-			carrega_versoes_scroll("versoes_mouse",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
+			carrega_versoes_scroll("versoes_mouse",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"), "textarea_mouse");
 		}
 
 } // fim teclado
@@ -1076,7 +1079,134 @@ document.body.dispatchEvent(
 
 }
 
+function refaz_tamanho_edita_secoes(div_edita_secoes, div_edita_secoes_2){
+	let div = document.getElementById(div_edita_secoes);   // box1
+	let div2 = document.getElementById(div_edita_secoes_2);// box2
+//console.log(div);
+//console.log(div2);
+//console.log(div.children[0]);
+//console.log(div2.children[0]);
+
+
+
+cabecalio = div.children[0];   // cabecalio do box1
+cabecalio2 = div2.children[0];  // cabecalio do box2
+
+	 cabecalio.style.fontSize = Math.round(div.clientHeight * 0.05) + "px"; // muda tamanho da fonte de Box 1
+	cabecalio2.style.fontSize = Math.round(div.clientHeight * 0.05) + "px"; // muda o tamanho da fonte de Box2
+
+//console.log(div.children[0].children[1]);  // tecle 1
+//console.log(div2.children[0].children[0]); // tecle 2
+
+      div.children[0].children[1].style.fontSize = Math.round(div.clientHeight * 0.05/2) + "px";// muda o tamanho da fonte de tecle 1  
+      div2.children[0].children[0].style.fontSize = Math.round(div2.clientHeight * 0.05/2) + "px";// muda o tamanho da fonte de tecle 2  
+
+
+const inputs = div.children[2].getElementsByTagName("input"); // prove um array com todos os botoes de box 1
+// console.log(inputs);
+
+let i;
+let altura_div = div.children[2].children[0].children[0].children[1].children[0].children[0].children[0].clientHeight;
+for (i = 0; i < inputs.length; i++){
+	inputs[i].style.fontSize = Math.round(div.clientHeight * 0.02) + "px"; // muda tamanho dos botoes de box 1
+}
+ // basta pegar o ultimo do loop
+
+
+const inputs2 = div2.children[2].getElementsByTagName("input"); // prove um array com todos os botoes de box 2
+console.log(inputs2);
+for (i = 0; i < inputs2.length; i++){
+	inputs2[i].style.fontSize = Math.round(div.clientHeight * 0.02) + "px";
+ 
+}
+
+let tds_primeira_1 = div.children[1].children[0].children[0].getElementsByTagName("td"); // tds da primeira tabela, box 1
+for (i = 0; i < tds_primeira_1.length; i++){
+	tds_primeira_1[i].style.fontSize = Math.round(div.clientHeight * 0.05/2) + "px"; // muda a fonte de todos os tds da primeira table do box 1
+}
+
+let tds_primeira_2 = div2.children[1].children[0].children[0].getElementsByTagName("td"); // tds da primeira tabela, box 2
+for (i = 0; i < tds_primeira_2.length; i++){
+	tds_primeira_2[i].style.fontSize = Math.round(div2.clientHeight * 0.05/2) + "px"; // muda a fonte de todos os tds da primeira table do box 2
+}
+let altura_div_versoes = 0;
+
+let font_percent = 0.02;
+let altura_percent = 0.03;
+	let cabecalio_div_versao =document.getElementsByClassName("cabecalio_versoes")[0];
+	let cabecalio_div_versao2 =document.getElementsByClassName("cabecalio_versoes")[1];
+
+let conta_divs_versao = 0;
+
+const divs_que_mostram_versoes = div.children[2].children[0].children[0].children[1].children[0].children[0].children;
+for (i = 0; i < divs_que_mostram_versoes.length; i++){
+	fonte_do_botao_de_versao = Math.round(div.clientHeight * font_percent);
+	largura_do_botao_de_versao = 15 *Math.round(div.clientHeight * font_percent * 0.5); // ja corrige para as proximas cargas, porque esta funcao so ajusta o tamanho dos divs de data de versao presentes no box 1
+	separacao_do_botao_de_versao = fonte_do_botao_de_versao;
+	altura_do_botao_de_versao = Math.round(div.clientHeight * altura_percent * 2);
+	unidade = "px";
+
+	cabecalio_div_versao.style.height =  Math.round(div.clientHeight * altura_percent) + "px";
+	cabecalio_div_versao.style.fontSize = fonte_do_botao_de_versao + "px";
+	cabecalio_div_versao.style.top =  "0px";
+	cabecalio_div_versao.style.left = "1px";
+// os itens abaixo não funcionam na primeira vez... acaba que a utilidade de rodar isso aqui eh so estabelecer o parametros que vao ser usados por devolve_divs_versoes.php porque as linhas abaixo vao dar crash de qualquer jeito
+
+	cabecalio_div_versao2.style.height =  Math.round(div.clientHeight * altura_percent) + "px";
+	cabecalio_div_versao2.style.fontSize = fonte_do_botao_de_versao + "px";
+	cabecalio_div_versao2.style.top =  "0px";
+	cabecalio_div_versao2.style.left = "1px";
+	
+	divs_que_mostram_versoes[i].style.fontSize = fonte_do_botao_de_versao + "px"; // divs amarelos que mostram as datas das versoes
+	divs_que_mostram_versoes[i].style.width = largura_do_botao_de_versao + "px"; // divs amarelos que mostram as datas das versoes
+	divs_que_mostram_versoes[i].style.height = altura_do_botao_de_versao + "px"; // divs amarelos que mostram as datas das versoes
+	divs_que_mostram_versoes[i].style.top = document.getElementsByClassName("cabecalio_versoes")[0].style.fontSize.replace("px","") * fator_fonte_versao + "px"; ;
+	divs_que_mostram_versoes[i].style.left = Math.round(i * (largura_do_botao_de_versao + separacao_do_botao_de_versao ) + largura_do_botao_de_versao) + "px"; 
+	altura_div_versoes = 	divs_que_mostram_versoes[i].clientHeight; 
+	conta_divs_versao++;
+}
+
+
+
+//const divs_que_mostram_versoes2 = div2.children[2].children[0].children[0].children[1].children[0].children[0].children;
+//for (i = 0; i < divs_que_mostram_versoes2.length; i++){
+//	divs_que_mostram_versoes2[i].style.fontSize = Math.round(div.clientHeight * 0.01) + "px";
+// 
+//}
+
+let linha_de_versoes = div.children[2].children[0].children[0].children[1]; 
+let linha_de_versoes2 = div2.children[2].children[0].children[0].children[1]; 
+linha_de_versoes.style.height = 2.2 * altura_div + "px"; 
+linha_de_versoes2.style.height = 2.2 * altura_div + "px"; 
+let ultima_table = div.children[2];
+let ultima_table2 = div2.children[2];
+let linha_1_box_1 = div.children[1].children[0].children[0].children[0];
+let linha_2_box_1 = div.children[1].children[0].children[0].children[1];
+let rebarba = div.getBoundingClientRect().bottom - ultima_table.getBoundingClientRect().bottom;
+let rebarba2 = div2.getBoundingClientRect().bottom - ultima_table2.getBoundingClientRect().bottom;
+
+console.log(linha_1_box_1.clientHeight);
+
+	let sobra = -rebarba + div.getBoundingClientRect().height - cabecalio.getBoundingClientRect().height - linha_1_box_1.getBoundingClientRect().height - linha_2_box_1.getBoundingClientRect().height - ultima_table.getBoundingClientRect().height; // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
+	let sobra2 = -rebarba2 + div.getBoundingClientRect().height - cabecalio.getBoundingClientRect().height - linha_1_box_1.getBoundingClientRect().height - linha_2_box_1.getBoundingClientRect().height - ultima_table.getBoundingClientRect().height; // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
+
+
+	document.getElementById("textarea_teclado").style.height= sobra + "px";
+	document.getElementById("textarea_mouse").style.height= sobra2 + "px";
+	document.getElementById("linha_chave_teclado").style.height= sobra + "px";
+	document.getElementById("linha_chave_mouse").style.height= sobra2 + "px";
+	document.getElementById("linha_chave_teclado").children[0].style.height= sobra + "px";
+	document.getElementById("linha_chave_mouse").style.height= sobra2 + "px";
+console.log(sobra);
+//	div.children[1].style.height = sobra * 0.7 + "px";
+//	div.children[2].style.height = sobra * 0.3 + "px";
+
+	
+}
+
+
 function inicializa(){
+
 
 document.getElementById(radio_selecionado).checked=true;
 document.getElementById("check_mostra_filhos").checked=mostra_filhos_check;
@@ -1164,6 +1294,8 @@ for (let i = 0; i < percorre_niveis.length; i++) {
 }
 
 acha_dir_max_min_esq_niveis();
+
+setTimeout( function () {refaz_tamanho_edita_secoes("edita_secoes_teclado", "edita_secoes_mouse");}, 1000);
 } // fim inicializa()
 
 

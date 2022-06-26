@@ -55,7 +55,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 <div class='edita_secoes' id='edita_secoes_mouse'>
 	<div class='cabecalio_de_arvore' style='font-size: 3rem; text-align: right; text-overflow: clip; display: block'><label style='color: red; display: run-in; margin-left: 30px; float: left; font-size: 1.5rem'>(tecle 2)</label>Box 2 <label style='color: yellow; display: run-in; margin-left: 0px; float: right'>&#8594;</label></div>
 		<div id='externo_mouse' style='height: 70%'>
-		<table class='tabela_de_edicao' style='height: 100%; max-width: 100%; width: 100%; border-collapse: collapse; padding: 0px'>
+		<table class='tabela_de_edicao' style='height: 100%; max-width: 100%; width: 100%; border-collapse: collapse; padding: 0px; border-spacing: 0' cellspacing='0'>
 			<tr style='height: 5%'>
 				<td style='width: 50%'  >Seção:	</td>
 				<td style='width: 50%'  >Pai:	</td>
@@ -64,8 +64,8 @@ echo "<div class='menu_principal' id='menu_principal'>
 				<td  id='edita_secoes_mouse_id_secao' style='font-weight: bold'></td>
 				<td  id='edita_secoes_mouse_id_pai'	></td>
 			</tr>
-			<tr id='linha_chave_mouse' style='height: 90%'>
-				<td colspan='2' style=' padding: 0px'>
+			<tr id='linha_chave_mouse' style='height: 90%; border-spacing: 0px; line-height: 0px'>
+				<td colspan='2' style=' padding: 0px; line-height: 0px'>
 					<textarea data-id-chave-secao='-1' id='textarea_mouse' >
 					</textarea>
 				</td>
@@ -73,8 +73,8 @@ echo "<div class='menu_principal' id='menu_principal'>
 		</table>
 		</div>
 		<div style='height: 20%'>
-		<table class='tabela_de_edicao_sem_borda' style='height: 100%; border: 1px solid black; width: 100%'>
-			<tr style='height: 20%; border: 1px solid black'>
+		<table class='tabela_de_edicao_sem_borda' cellspacing='0' style='height: 100%; border: 1px solid black; width: 100%; border-collapse: collapse; border-spacing: 0'>
+			<tr style='height: 20%; border: 1px solid black; line-height: 0px'>
 				<td><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_mouse`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`, document.getElementById(`versoes_mouse`), `textarea_mouse`),  temp_textarea.getAttribute(`data-id-secao`), temp_textarea.value);'></td>
 				<td><input type='button' value='lixeira'></td>
 				<td><input type='button' value='separa'></td>
@@ -91,7 +91,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 <div class='edita_secoes' id='edita_secoes_teclado'>
 	<div class='cabecalio_de_arvore'   style='font-size: 3rem; ' ><label style='color: yellow; display: run-in; margin-left: 0px; float: left'>&#8592;</label> Box 1 <label style='color: red; display: run-in; margin-left: 30px; float: right; font-size: 1.5rem'>(tecle 1)</label></div>
 	<div id='externo_teclado' style='height: 70%; padding: 0px'>
-	<table class='tabela_de_edicao' style='height: 100%; border-collapse: collapse'>
+	<table class='tabela_de_edicao' cellspacing='0' style='height: 100%; border-collapse: collapse; padding: 0px; border-spacing: 0'>
 			<tr style='height: 5%'>
 				<td style='width: 50%'  >Seção:	</td>
 				<td style='width: 50%'  >Pai:	</td>
@@ -100,7 +100,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 				<td  id='edita_secoes_teclado_id_secao' style='font-weight: bold'></td>
 				<td  id='edita_secoes_teclado_id_pai'	></td>
 			</tr>
-		<tr  id='linha_chave_teclado' style='height: 90%'>
+		<tr  id='linha_chave_teclado' style='height: 90%; padding: 0px; border-spacing: 0px; line-height: 0px'>
 			<td colspan='2' style=' padding: 0px' >
 			<textarea data-id-chave-secao='-1'  id='textarea_teclado'>
 			</textarea>
@@ -109,8 +109,8 @@ echo "<div class='menu_principal' id='menu_principal'>
 	</table>	
 	</div>
 	<div style='height: 20%'>
-		<table class='tabela_de_edicao_sem_borda' style='height: 100%; border: 1px solid black; width: 100%'>
-			<tr style='height: 20%; border: 1px solid black'>
+		<table class='tabela_de_edicao_sem_borda' style='height: 100%; border: 1px solid black; width: 100%; border-collapse: collapse; border-spacing: 0' cellspacing='0'>
+			<tr style='height: 20%; border: 1px solid black; line-height: 0px'>
 				<td ><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_teclado`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.getAttribute(`data-id-secao`, document.getElementById(`versoes_teclado`), `textarea_teclado`), temp_textarea.value);'></td>
 				<td ><input type='button' value='lixeira'></td>
 				<td ><input type='button' value='separa'></td>

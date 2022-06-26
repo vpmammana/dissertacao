@@ -301,6 +301,9 @@ $numero_de_colunas_de_radio_button = 10;
 include "../php/carrega_arvore.php";
 ?>
 <script>
+
+var debug = document.getElementById("edita_secoes_teclado");
+
 var largura_do_botao_de_versao = '8';
 var altura_do_botao_de_versao = '2';
 var fonte_do_botao_de_versao = '1';
@@ -1079,6 +1082,27 @@ document.body.dispatchEvent(
 
 }
 
+function altura_scroll(){
+// Creating invisible container
+  const outer = document.createElement('div');
+  outer.style.visibility = 'hidden';
+  outer.style.overflow = 'scroll'; // forcing scrollbar to appear
+  outer.style.msOverflowStyle = 'scrollbar'; // needed for WinJS apps
+  document.body.appendChild(outer);
+
+  // Creating inner element and placing it in the container
+  const inner = document.createElement('div');
+  outer.appendChild(inner);
+
+  // Calculating difference between container's full width and the child width
+  const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth);
+
+  // Removing temporary elements from the DOM
+  outer.parentNode.removeChild(outer);
+
+  return scrollbarWidth;
+}
+
 function refaz_tamanho_edita_secoes(div_edita_secoes, div_edita_secoes_2){
 	let div = document.getElementById(div_edita_secoes);   // box1
 	let div2 = document.getElementById(div_edita_secoes_2);// box2
@@ -1090,7 +1114,7 @@ function refaz_tamanho_edita_secoes(div_edita_secoes, div_edita_secoes_2){
 
 
 cabecalio = div.children[0];   // cabecalio do box1
-cabecalio2 = div2.children[0];  // cabecalio do box2
+cabecalio2 = div2.children[0];  // cabecalio do box2 que pode nao existir na primeira rodada, porque o box2 soh tera versao depois que o cursor for no flutua_para_direita
 
 	 cabecalio.style.fontSize = Math.round(div.clientHeight * 0.05) + "px"; // muda tamanho da fonte de Box 1
 	cabecalio2.style.fontSize = Math.round(div.clientHeight * 0.05) + "px"; // muda o tamanho da fonte de Box2
@@ -1105,10 +1129,16 @@ cabecalio2 = div2.children[0];  // cabecalio do box2
 const inputs = div.children[2].getElementsByTagName("input"); // prove um array com todos os botoes de box 1
 // console.log(inputs);
 
+let font_type_button = 0.03;
+let font_dos_tds = 0.025;
+
+let fonte_do_botao_grava_etc = Math.round(div.clientHeight * font_type_button);
+
+
 let i;
-let altura_div = div.children[2].children[0].children[0].children[1].children[0].children[0].children[0].clientHeight;
+let altura_div = div.children[2].children[0].children[0].children[1].children[0].children[0].children[0].offsetHeight; // esse aqui eh o cabecalio que nao existe para Box2 na primeira rodada
 for (i = 0; i < inputs.length; i++){
-	inputs[i].style.fontSize = Math.round(div.clientHeight * 0.02) + "px"; // muda tamanho dos botoes de box 1
+	inputs[i].style.fontSize = Math.round(div.clientHeight * font_type_button) + "px"; // muda tamanho dos botoes de box 1
 }
  // basta pegar o ultimo do loop
 
@@ -1116,22 +1146,21 @@ for (i = 0; i < inputs.length; i++){
 const inputs2 = div2.children[2].getElementsByTagName("input"); // prove um array com todos os botoes de box 2
 console.log(inputs2);
 for (i = 0; i < inputs2.length; i++){
-	inputs2[i].style.fontSize = Math.round(div.clientHeight * 0.02) + "px";
+	inputs2[i].style.fontSize = Math.round(div.clientHeight * font_type_button) + "px";
  
 }
 
 let tds_primeira_1 = div.children[1].children[0].children[0].getElementsByTagName("td"); // tds da primeira tabela, box 1
 for (i = 0; i < tds_primeira_1.length; i++){
-	tds_primeira_1[i].style.fontSize = Math.round(div.clientHeight * 0.05/2) + "px"; // muda a fonte de todos os tds da primeira table do box 1
+	tds_primeira_1[i].style.fontSize = Math.round(div.clientHeight * font_dos_tds) + "px"; // muda a fonte de todos os tds da primeira table do box 1
 }
 
 let tds_primeira_2 = div2.children[1].children[0].children[0].getElementsByTagName("td"); // tds da primeira tabela, box 2
 for (i = 0; i < tds_primeira_2.length; i++){
-	tds_primeira_2[i].style.fontSize = Math.round(div2.clientHeight * 0.05/2) + "px"; // muda a fonte de todos os tds da primeira table do box 2
+	tds_primeira_2[i].style.fontSize = Math.round(div2.clientHeight * font_dos_tds) + "px"; // muda a fonte de todos os tds da primeira table do box 2
 }
 let altura_div_versoes = 0;
-
-let font_percent = 0.02;
+let font_percent = 0.03;
 let altura_percent = 0.03;
 	let cabecalio_div_versao =document.getElementsByClassName("cabecalio_versoes")[0];
 	let cabecalio_div_versao2 =document.getElementsByClassName("cabecalio_versoes")[1];
@@ -1139,11 +1168,11 @@ let altura_percent = 0.03;
 let conta_divs_versao = 0;
 
 const divs_que_mostram_versoes = div.children[2].children[0].children[0].children[1].children[0].children[0].children;
-for (i = 0; i < divs_que_mostram_versoes.length; i++){
+for (i = 1; i < divs_que_mostram_versoes.length; i++){ // tem que comecar no i=1 para nao pegar o cabecalio
 	fonte_do_botao_de_versao = Math.round(div.clientHeight * font_percent);
 	largura_do_botao_de_versao = 15 *Math.round(div.clientHeight * font_percent * 0.5); // ja corrige para as proximas cargas, porque esta funcao so ajusta o tamanho dos divs de data de versao presentes no box 1
 	separacao_do_botao_de_versao = fonte_do_botao_de_versao;
-	altura_do_botao_de_versao = Math.round(div.clientHeight * altura_percent * 2);
+	altura_do_botao_de_versao = Math.round(div.clientHeight * altura_percent * 2 * 1.2);
 	unidade = "px";
 
 	cabecalio_div_versao.style.height =  Math.round(div.clientHeight * altura_percent) + "px";
@@ -1152,17 +1181,21 @@ for (i = 0; i < divs_que_mostram_versoes.length; i++){
 	cabecalio_div_versao.style.left = "1px";
 // os itens abaixo não funcionam na primeira vez... acaba que a utilidade de rodar isso aqui eh so estabelecer o parametros que vao ser usados por devolve_divs_versoes.php porque as linhas abaixo vao dar crash de qualquer jeito
 
-	cabecalio_div_versao2.style.height =  Math.round(div.clientHeight * altura_percent) + "px";
-	cabecalio_div_versao2.style.fontSize = fonte_do_botao_de_versao + "px";
-	cabecalio_div_versao2.style.top =  "0px";
-	cabecalio_div_versao2.style.left = "1px";
-	
+	if (cabecalio_div_versao2 != null) {
+		console.log(cabecalio_div_versao2);
+		cabecalio_div_versao2.style.height =  Math.round(div.clientHeight * altura_percent) + "px";
+		cabecalio_div_versao2.style.fontSize = fonte_do_botao_de_versao + "px";
+		cabecalio_div_versao2.style.top =  "0px";
+		cabecalio_div_versao2.style.left = "1px";
+	}
+
+
 	divs_que_mostram_versoes[i].style.fontSize = fonte_do_botao_de_versao + "px"; // divs amarelos que mostram as datas das versoes
 	divs_que_mostram_versoes[i].style.width = largura_do_botao_de_versao + "px"; // divs amarelos que mostram as datas das versoes
-	divs_que_mostram_versoes[i].style.height = altura_do_botao_de_versao + "px"; // divs amarelos que mostram as datas das versoes
+	divs_que_mostram_versoes[i].style.height = altura_do_botao_de_versao * 1.2 + "px"; // divs amarelos que mostram as datas das versoes
 	divs_que_mostram_versoes[i].style.top = document.getElementsByClassName("cabecalio_versoes")[0].style.fontSize.replace("px","") * fator_fonte_versao + "px"; ;
-	divs_que_mostram_versoes[i].style.left = Math.round(i * (largura_do_botao_de_versao + separacao_do_botao_de_versao ) + largura_do_botao_de_versao) + "px"; 
-	altura_div_versoes = 	divs_que_mostram_versoes[i].clientHeight; 
+	divs_que_mostram_versoes[i].style.left = Math.round((i-1) * (largura_do_botao_de_versao + separacao_do_botao_de_versao ) + largura_do_botao_de_versao) + "px"; 
+	altura_div_versoes = 	divs_que_mostram_versoes[i].offsetHeight;
 	conta_divs_versao++;
 }
 
@@ -1175,20 +1208,29 @@ for (i = 0; i < divs_que_mostram_versoes.length; i++){
 //}
 
 let linha_de_versoes = div.children[2].children[0].children[0].children[1]; 
-let linha_de_versoes2 = div2.children[2].children[0].children[0].children[1]; 
-linha_de_versoes.style.height = 2.2 * altura_div + "px"; 
-linha_de_versoes2.style.height = 2.2 * altura_div + "px"; 
+let linha_de_versoes2 = div2.children[2].children[0].children[0].children[1];
+//let alt_scroll = 0;
+//let alt_scroll2 = 0;
+let alt_scroll = altura_scroll();
+let alt_scroll2 = altura_scroll();
+linha_de_versoes.style.height =  Math.round(1.2 * altura_div_versoes + altura_div + alt_scroll) + "px"; 
+linha_de_versoes2.style.height = Math.round(1.2 * altura_div_versoes + altura_div + alt_scroll2) + "px"; 
 let ultima_table = div.children[2];
 let ultima_table2 = div2.children[2];
 let linha_1_box_1 = div.children[1].children[0].children[0].children[0];
 let linha_2_box_1 = div.children[1].children[0].children[0].children[1];
+let linha_1_box_2 = div2.children[1].children[0].children[0].children[0];
+let linha_2_box_2 = div2.children[1].children[0].children[0].children[1];
 let rebarba = div.getBoundingClientRect().bottom - ultima_table.getBoundingClientRect().bottom;
 let rebarba2 = div2.getBoundingClientRect().bottom - ultima_table2.getBoundingClientRect().bottom;
 
+
+
+let ajuste_padding = 35;
 console.log(linha_1_box_1.clientHeight);
 
-	let sobra = -rebarba + div.getBoundingClientRect().height - cabecalio.getBoundingClientRect().height - linha_1_box_1.getBoundingClientRect().height - linha_2_box_1.getBoundingClientRect().height - ultima_table.getBoundingClientRect().height; // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
-	let sobra2 = -rebarba2 + div.getBoundingClientRect().height - cabecalio.getBoundingClientRect().height - linha_1_box_1.getBoundingClientRect().height - linha_2_box_1.getBoundingClientRect().height - ultima_table.getBoundingClientRect().height; // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
+	let sobra = -ajuste_padding -rebarba + div.getBoundingClientRect().height - cabecalio.getBoundingClientRect().height - linha_1_box_1.getBoundingClientRect().height - linha_2_box_1.getBoundingClientRect().height - (ultima_table.getBoundingClientRect().height + alt_scroll); // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
+	let sobra2 =-ajuste_padding -rebarba2 + div2.getBoundingClientRect().height - cabecalio2.getBoundingClientRect().height - linha_1_box_2.getBoundingClientRect().height - linha_2_box_2.getBoundingClientRect().height - (ultima_table2.getBoundingClientRect().height - alt_scroll2); // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
 
 
 	document.getElementById("textarea_teclado").style.height= sobra + "px";
@@ -1200,6 +1242,14 @@ console.log(linha_1_box_1.clientHeight);
 console.log(sobra);
 //	div.children[1].style.height = sobra * 0.7 + "px";
 //	div.children[2].style.height = sobra * 0.3 + "px";
+
+// rebarba_chave busca dar conta de uma rebarba que surge entre o textarea e o td da table. Eu tentei mudar cellspacing e border-spacing para dar conta disso mas parece que os browsers reagem de forma diferente. Entao eh melhor medir essa rebarba e descontar da linha de versoes.
+
+let rebarba_chave  = 	document.getElementById("linha_chave_teclado").getBoundingClientRect().height - document.getElementById("textarea_teclado").getBoundingClientRect().height;
+let rebarba_chave2 = 	document.getElementById("linha_chave_mouse").getBoundingClientRect().height - document.getElementById("textarea_mouse").getBoundingClientRect().height;
+// alert(rebarba_chave2);
+linha_de_versoes.style.height =  linha_de_versoes.clientHeight - rebarba_chave  + "px"; 
+linha_de_versoes2.style.height = linha_de_versoes2.clientHeight- rebarba_chave2 + "px";
 
 	
 }

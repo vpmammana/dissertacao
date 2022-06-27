@@ -31,7 +31,7 @@ if(isset($_GET["unidade"])){
 
 if(isset($_GET["textarea"])){
   $param_textarea= $_GET["textarea"];
-} else $param_textarea = "rem";
+} else $param_textarea = "putz";
 
 
 include "identifica.php.cripto";
@@ -63,6 +63,11 @@ while ($row=$result->fetch_assoc()){
 } else {
 	echo "Deu problema com o select: ".$sql;
 }
+	$posicao_x = $conta_versoes * ($param_largura + $param_separacao) + $param_largura;
+$largura_blank = 20*$param_largura;
+$divs = $divs."<div id='blank_".$param_textarea."' class='uma_versao' data-trecho='blank' style='top: ".$altura_cabecalio.$param_unidade."; left: ".$posicao_x.$param_unidade."; width: ".$largura_blank.$param_unidade."; height: ".$param_altura.$param_unidade."; display: table-cell; vertical-align: middle; font-size: ".$param_fonte.$param_unidade."; visibility: hidden' >blank</div>";
+
+
 echo $divs;
 
 $conn->close();

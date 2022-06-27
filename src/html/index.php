@@ -53,6 +53,7 @@ textarea {
  font-size: 1rem;
  height: 100%;
 }
+
 .edita_secoes {
 	background-color: gray;
 	color: black;
@@ -303,11 +304,16 @@ include "../php/carrega_arvore.php";
 <script>
 
 var debug = document.getElementById("edita_secoes_teclado");
-
+var array_scroll_horizontal=[];
 var largura_do_botao_de_versao = '8';
 var altura_do_botao_de_versao = '2';
 var fonte_do_botao_de_versao = '1';
 var separacao_do_botao_de_versao = '8';
+
+var cor_de_edicao = "yellow";
+var cor_de_gravado = "white";
+var cor_de_problema = "red";
+
 
 var fator_fonte_versao = 1.3;
 var unidade = 'rem';
@@ -326,6 +332,7 @@ var minima_largura_percentual_da_edicao = 0.2;
 
 var x = 0; // aumenta com seta para direita e diminui com seta para esquerda
 var y = 0; // aumenta com seta para baixo e diminui com seta para cima
+var x_versao = 0;
 var x_arvore=0; // indica posicao do cursor azul presente na arvore de secoes, gerado pelo movimento nos niveis 
 var y_arvore=0;
 var max_dir = 0;
@@ -386,8 +393,8 @@ var oReq=new XMLHttpRequest();
 		     //alert(resposta);
 
 
-			if (resposta.includes("Deu problema")){ alert(resposta);} else {
-
+			if (resposta.includes("Deu problema")){ alert(resposta); textarea.setAttribute("data-alterado","problema"); textarea.style.backgroundColor = cor_de_problema;} else {
+			textarea.setAttribute("data-alterado","gravado"); textarea.style.backgroundColor = cor_de_gravado;
 			carrega_versoes_scroll(div_versoes.id,  id_chave_secao, textarea);
 			document.getElementById("secao_"+id_secao).setAttribute("data-titulo", trecho);
 			document.getElementById("folha_arvore_"+id_secao).setAttribute("data-titulo", trecho);
@@ -515,6 +522,23 @@ function ajusta_bordas_do_selecionado(){
 
 } // ajusta_bordas_do_selecionado
 
+function carrega_array_de_scroll_horizontal(elemento){
+array_scroll_horizontal.length = 0;
+
+const versoes_para_scroll = elemento.children;
+let i;
+for (i = 1; i < versoes_para_scroll.length - 1; i++){
+	array_scroll_horizontal.push(versoes_para_scroll[i]);
+}
+x_versao = versoes_para_scroll.length - 3; // menos 3 porque o array comeca em 0
+}
+
+function scroll_horizontal(elemento){
+//alert(x_versao+"  "+array_scroll_horizontal.length);
+elemento.scrollLeft = array_scroll_horizontal[x_versao].style.left.replace("px","") - elemento.clientWidth /2 + array_scroll_horizontal[x_versao].clientWidth/2;
+}
+
+
 function carrega_versoes_scroll(div_versoes, id_chave_secao, textarea){
 elemento = document.getElementById(div_versoes);
 
@@ -525,14 +549,15 @@ var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
-		
-		     elemento.innerHTML = resposta; 
+		     elemento.innerHTML = resposta;
+		     carrega_array_de_scroll_horizontal(elemento);
+		     scroll_horizontal(elemento); 
 	   }
            oReq.send();
 }
 
 function teclado(e) {
-	console.log("x: "+x+" y:"+y)
+	//console.log("x: "+x+" y:"+y)
 	let edita_secoes_mouse_id_secao = document.getElementById("edita_secoes_mouse_id_secao").innerText;
 	if (matriz_ganha_foco[x][0].includes("nivel")) {
 		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
@@ -548,7 +573,6 @@ function teclado(e) {
 		matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
 		document.getElementById(matriz_ganha_foco[x][0]).style.border = velha_borda_de_nivel_focalizada;
 		
-
 		if (e.key == "Tab" && modo_edicao) {
 			modo_edicao = false;
 			ajusta_bordas_do_selecionado();
@@ -584,13 +608,13 @@ function teclado(e) {
 			if (matriz_ganha_foco[proximo2][0].includes("nivel")){
 				let contador2=y;
 				let encontrou=0;
-				console.log("encontrou: "+encontrou + " contador2: "+contador2);
+				//console.log("encontrou: "+encontrou + " contador2: "+contador2);
 				while ((encontrou <= y ) && (contador2 < matriz_ganha_foco[x][1].length -1) ) {
 				let contador=0;
 					while (contador <= matriz_ganha_foco[proximo2][1].length - 1){
 					if (matriz_ganha_foco[proximo2][1][contador].getAttribute("data-id-pai") == matriz_ganha_foco[x][1][contador2].getAttribute("data-id-secao")){
 						encontrou = contador2;
-						console.log(contador +" @ " +matriz_ganha_foco[proximo2][1][contador].getAttribute("data-id-pai")+" _-_ "+contador2 + "&" +matriz_ganha_foco[x][1][contador2].getAttribute("data-id-secao") + " encontrou: "+ encontrou);
+						//console.log(contador +" @ " +matriz_ganha_foco[proximo2][1][contador].getAttribute("data-id-pai")+" _-_ "+contador2 + "&" +matriz_ganha_foco[x][1][contador2].getAttribute("data-id-secao") + " encontrou: "+ encontrou);
 					}	
 						contador++;
 					}
@@ -600,7 +624,7 @@ function teclado(e) {
 				if (contador2 <= matriz_ganha_foco[x][1].length - 1) {y=encontrou;}
 			}
 		;}
-		console.log("saiu");	
+		//console.log("saiu");	
 	
 		if (e.key == "ArrowUp"	)  
 			{
@@ -728,7 +752,7 @@ function teclado(e) {
 			id_pai_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
 			//			data_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
 			textarea_teclado.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
-			console.log("estou passando por aqui -> "+ textarea_teclado.id + " data-titulo -> " +  matriz_ganha_foco[x][1][y].getAttribute("data-titulo"));
+			//console.log("estou passando por aqui -> "+ textarea_teclado.id + " data-titulo -> " +  matriz_ganha_foco[x][1][y].getAttribute("data-titulo"));
 			textarea_teclado.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 			textarea_teclado.setAttribute("data-id-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
 			carrega_versoes_scroll("versoes_teclado",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"), "textarea_teclado");
@@ -838,7 +862,7 @@ document.getElementById(id_arvore).style.width = document.getElementById(id_arvo
 const filhos = document.getElementById(id_arvore).children;
 
 for (let m=0; m < filhos.length ; m++){
-	console.log(filhos[m].id);
+	//console.log(filhos[m].id);
 	
 	filhos[m].style.width = filhos[m].clientWidth * fator + "px";
 	filhos[m].style.height = filhos[m].clientheight * fator + "px";
@@ -914,7 +938,7 @@ function calcula_correcao_dos_niveis(max_dir, min_esq, excedente_percentual){
 function acha_dir_max_min_esq_niveis(){
 
 
-console.log("TENTATIVA "+conta_tentativas_de_ajuste_de_tela);
+//console.log("TENTATIVA "+conta_tentativas_de_ajuste_de_tela);
 
 const colecao_niveis = document.getElementsByClassName("nivel");
 	for (let i = 0; i < colecao_niveis.length; i++) {
@@ -1016,7 +1040,7 @@ moldura_da_arvore.scrollTop = itz - (itz2 - folha_da_arvore.clientHeight);
 }
 
 function scroll_nivel(moldura_nivel, secao){
-console.log("scroll_nivel "+moldura_nivel.id + " secao:" + secao.id ); //libere este alerta para saber qual nivel estah chamando este scroll
+//console.log("scroll_nivel "+moldura_nivel.id + " secao:" + secao.id ); //libere este alerta para saber qual nivel estah chamando este scroll
 
 //console.log("scroll_nivel ",secao," moldura: ",moldura_nivel);
 
@@ -1144,7 +1168,7 @@ for (i = 0; i < inputs.length; i++){
 
 
 const inputs2 = div2.children[2].getElementsByTagName("input"); // prove um array com todos os botoes de box 2
-console.log(inputs2);
+//console.log(inputs2);
 for (i = 0; i < inputs2.length; i++){
 	inputs2[i].style.fontSize = Math.round(div.clientHeight * font_type_button) + "px";
  
@@ -1160,8 +1184,8 @@ for (i = 0; i < tds_primeira_2.length; i++){
 	tds_primeira_2[i].style.fontSize = Math.round(div2.clientHeight * font_dos_tds) + "px"; // muda a fonte de todos os tds da primeira table do box 2
 }
 let altura_div_versoes = 0;
-let font_percent = 0.03;
-let altura_percent = 0.03;
+let font_percent = 0.025; // fonte usada no botao amarelo
+let altura_percent = 0.0255;
 	let cabecalio_div_versao =document.getElementsByClassName("cabecalio_versoes")[0];
 	let cabecalio_div_versao2 =document.getElementsByClassName("cabecalio_versoes")[1];
 
@@ -1182,7 +1206,7 @@ for (i = 1; i < divs_que_mostram_versoes.length; i++){ // tem que comecar no i=1
 // os itens abaixo não funcionam na primeira vez... acaba que a utilidade de rodar isso aqui eh so estabelecer o parametros que vao ser usados por devolve_divs_versoes.php porque as linhas abaixo vao dar crash de qualquer jeito
 
 	if (cabecalio_div_versao2 != null) {
-		console.log(cabecalio_div_versao2);
+		//console.log(cabecalio_div_versao2);
 		cabecalio_div_versao2.style.height =  Math.round(div.clientHeight * altura_percent) + "px";
 		cabecalio_div_versao2.style.fontSize = fonte_do_botao_de_versao + "px";
 		cabecalio_div_versao2.style.top =  "0px";
@@ -1227,7 +1251,7 @@ let rebarba2 = div2.getBoundingClientRect().bottom - ultima_table2.getBoundingCl
 
 
 let ajuste_padding = 35;
-console.log(linha_1_box_1.clientHeight);
+//console.log(linha_1_box_1.clientHeight);
 
 	let sobra = -ajuste_padding -rebarba + div.getBoundingClientRect().height - cabecalio.getBoundingClientRect().height - linha_1_box_1.getBoundingClientRect().height - linha_2_box_1.getBoundingClientRect().height - (ultima_table.getBoundingClientRect().height + alt_scroll); // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
 	let sobra2 =-ajuste_padding -rebarba2 + div2.getBoundingClientRect().height - cabecalio2.getBoundingClientRect().height - linha_1_box_2.getBoundingClientRect().height - linha_2_box_2.getBoundingClientRect().height - (ultima_table2.getBoundingClientRect().height - alt_scroll2); // menos cabecalio,  altura da primeira tabela e altura da ultima linha de versoes
@@ -1239,7 +1263,7 @@ console.log(linha_1_box_1.clientHeight);
 	document.getElementById("linha_chave_mouse").style.height= sobra2 + "px";
 	document.getElementById("linha_chave_teclado").children[0].style.height= sobra + "px";
 	document.getElementById("linha_chave_mouse").style.height= sobra2 + "px";
-console.log(sobra);
+//console.log(sobra);
 //	div.children[1].style.height = sobra * 0.7 + "px";
 //	div.children[2].style.height = sobra * 0.3 + "px";
 
@@ -1250,8 +1274,43 @@ let rebarba_chave2 = 	document.getElementById("linha_chave_mouse").getBoundingCl
 // alert(rebarba_chave2);
 linha_de_versoes.style.height =  linha_de_versoes.clientHeight - rebarba_chave  + "px"; 
 linha_de_versoes2.style.height = linha_de_versoes2.clientHeight- rebarba_chave2 + "px";
+    
+carrega_array_de_scroll_horizontal(elemento);
+scroll_horizontal(elemento); 
 
 	
+}
+
+function cria_listener_textarea(){
+
+const textareas = document.getElementsByClassName("edicao_versao");
+for (let i = 0; i < textareas.length; i++) {
+			textareas[i].addEventListener("keydown",function (e)
+				{
+					if (e.key == "ArrowRight" && modo_edicao && e.shiftKey && textarea_em_edicao.getAttribute("data-alterado")=="gravado"){
+						x_versao++; if (x_versao > array_scroll_horizontal.length - 1) {x_versao=array_scroll_horizontal.length - 1;}
+						scroll_horizontal(versoes_em_edicao);
+						return;
+					} 
+				
+					if (e.key == "ArrowLeft" && modo_edicao && e.shiftKey && textarea_em_edicao.getAttribute("data-alterado")=="gravado"){
+						x_versao--; if (x_versao <0) {x_versao=0;}
+						scroll_horizontal(versoes_em_edicao);
+						return;	
+					} 
+
+					if (e.shiftKey) 
+						{
+							return;
+						}
+					if (e.key == "ArrowLeft" && modo_edicao && e.shiftKey && textarea_em_edicao.getAttribute("data-alterado")=="gravado"){return;} //nao pode entrar em modo edicao se apertar shift
+
+					this.setAttribute("data-alterado","sem_gravar");
+					this.style.backgroundColor = cor_de_edicao; 
+				}
+			);
+
+  			} 
 }
 
 
@@ -1265,7 +1324,7 @@ acha_divs_que_ganham_foco();
 velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
 velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;
 velho_gemeo_no_nivel = matriz_ganha_foco[x][1][y];
-
+cria_listener_textarea();
 
 matriz_ganha_foco[x][1][y].style.border=borda_focalizada;
 if (matriz_ganha_foco[x][0].includes("nivel")) {

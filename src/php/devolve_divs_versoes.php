@@ -57,7 +57,7 @@ while ($row=$result->fetch_assoc()){
 	$nome_corrigido = preg_replace("/\.[0-9]*/","",$nome);
 //	$nome_corrigido = preg_replace("/ /","<br>",$nome_corrigido);
 
-	$divs = $divs."<div id='secao_".$id."_".$conta_versoes."' class='uma_versao' data-trecho='".$trecho."' style='top: ".$altura_cabecalio.$param_unidade."; left: ".$posicao_x.$param_unidade."; width: ".$param_largura.$param_unidade."; height: ".$param_altura.$param_unidade."; display: table-cell; vertical-align: middle; font-size: ".$param_fonte.$param_unidade."; ' onclick='document.getElementById(`".$param_textarea."`).value=this.getAttribute(`data-trecho`)'>".$nome_corrigido."</div>";
+	$divs = $divs."<div id='secao_".$id."_".$conta_versoes."' class='uma_versao' data-trecho='".$trecho."' style='top: ".$altura_cabecalio.$param_unidade."; left: ".$posicao_x.$param_unidade."; width: ".$param_largura.$param_unidade."; height: ".$param_altura.$param_unidade."; display: table-cell; vertical-align: middle; font-size: ".$param_fonte.$param_unidade.";' data-id-chave='".$id."' onclick='document.getElementById(`".$param_textarea."`).value=this.getAttribute(`data-trecho`)'>".$nome_corrigido."</div>";
 	$conta_versoes++;
 }
 } else {

@@ -3,6 +3,7 @@
 # VPM (2022-06-19) - tentativa de pegar id_chave da tabela secoes nos stored procedures mostra_arvore_niveis_pais_seleciona_tipo*
 # VPM (2022-06-19) - tentativa de obter campo trecho e nome_versao da tabela versoes.
 # VPM (2022-06-22) - criando forma de ver o documento inteiro, no mesmo visualizador de niveis pela criacao da stored procedure mostra_documento_completo
+# VPM (2022-06-28) - preparacao para criar um sistema de mudanca de subarvore dentro da arvore
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS retorna_valores_de_propriedades_do_tipo_secao
@@ -193,6 +194,30 @@ funcao:BEGIN
 		
 		INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(no_para_inserir, no_descricao, no_link, @myRight + 1, @myRight + 2, tipo_secao);
 	END IF;
+
+END
+//
+DROP PROCEDURE IF EXISTS transpoe_subarvore
+//
+CREATE PROCEDURE transpoe_subarvore(IN nome_no_para_transpor varchar(100), IN nome_no_onde_inserir varchar(100))
+funcao:BEGIN
+	SELECT @tmp_esq:= lft from secoes where nome_categoria = nome_no_para_transpor;
+	SELECT @tmp_dir:= rgt from secoes where nome_categoria = nome_no_para_transpor;
+ 
+	SELECT @largura_do_no:=rgt - lft + 1 from secoes where nome_categoria = nome_no_para_transpor;
+	
+	SELECT @esq_da_insercao:=lft from secoes where nome_categoria = nome_no_onde_inserir;
+
+	SELECT @distancia_para_insercao:=lft - @tmp_esq + 1 from secoes where nome_categoria = nome_no_onde_inserir; 
+
+	#cria novo espaco
+	UPDATE secoes set lft = lft + @largura_do_no where lft > @esq_da_insercao;
+	UPDATE secoes set rgt = rgt + @largura_do_no where rgt > @esq_da_insercao;
+	#move subtree
+	UPDATE secoes set lft = lft + @distancia_para_insercao, rgt = rgt + @distancia_para_insercao where lft >= @tmp_esq AND rgt <= @tmp_dir;
+	#apaga espaco da subtree original
+        UPDATE secoes set lft = lft - @largura_do_no where lft > @tmp_dir;
+	UPDATE secoes set rgt = rgt - @largura_do_no where rgt > @tmp_dir; 
 
 END
 //

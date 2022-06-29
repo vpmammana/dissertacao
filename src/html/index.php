@@ -563,6 +563,23 @@ var oReq=new XMLHttpRequest();
            oReq.send();
 }
 
+
+
+function transpoe_subarvore(secao_movel, secao_alvo){
+
+
+var resposta="";
+var url='../php/transpoe_subarvore.php?secao_movel='+secao_movel+'&secao_alvo='+secao_alvo;
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+		     alert(resposta);
+
+	   }
+           oReq.send();
+}
+
 function carrega_versoes_scroll(div_versoes, id_chave_secao, textarea){
 elemento = document.getElementById(div_versoes);
 

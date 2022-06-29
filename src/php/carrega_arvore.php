@@ -61,7 +61,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 				<td style='width: 50%'  >Pai:	</td>
 			</tr>
 			<tr style='height: 5%'>
-				<td  id='edita_secoes_mouse_id_secao' style='font-weight: bold'></td>
+				<td  id='edita_secoes_mouse_id_secao' style='font-weight: bold'>sem_selecao</td>
 				<td  id='edita_secoes_mouse_id_pai'	></td>
 			</tr>
 			<tr id='linha_chave_mouse' style='height: 90%; border-spacing: 0px; line-height: 0px'>
@@ -76,7 +76,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 		<table class='tabela_de_edicao_sem_borda' cellspacing='0' style='height: 100%; border: 1px solid black; width: 100%; border-collapse: collapse; border-spacing: 0'>
 			<tr style='height: 20%; border: 1px solid black; line-height: 0px'>
 				<td><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_mouse`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`, document.getElementById(`versoes_mouse`), `textarea_mouse`),  temp_textarea.getAttribute(`data-id-secao`), temp_textarea.value);'></td>
-				<td><input type='button' value='lixeira'></td>
+				<td><input type='button' value='lixeira' onclick='if (document.getElementById(`edita_secoes_mouse_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção na janela de Escolha do Box 2.`); return;} transpoe_subarvore(document.getElementById(`edita_secoes_mouse_id_secao`).innerText,`lixeira`)'></td>
 				<td><input type='button' value='separa'></td>
 				<td><input type='button' value='junta'></td>
 				<td><input type='button' value='sobe'></td>
@@ -97,7 +97,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 				<td style='width: 50%'  >Pai:	</td>
 			</tr>
 			<tr style='height: 5%'>
-				<td  id='edita_secoes_teclado_id_secao' style='font-weight: bold'></td>
+				<td  id='edita_secoes_teclado_id_secao' style='font-weight: bold'>sem_selecao</td>
 				<td  id='edita_secoes_teclado_id_pai'	></td>
 			</tr>
 		<tr  id='linha_chave_teclado' style='height: 90%; padding: 0px; border-spacing: 0px; line-height: 0px'>
@@ -112,7 +112,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 		<table class='tabela_de_edicao_sem_borda' style='height: 100%; border: 1px solid black; width: 100%; border-collapse: collapse; border-spacing: 0' cellspacing='0'>
 			<tr style='height: 20%; border: 1px solid black; line-height: 0px'>
 				<td ><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_teclado`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.getAttribute(`data-id-secao`, document.getElementById(`versoes_teclado`), `textarea_teclado`), temp_textarea.value);'></td>
-				<td ><input type='button' value='lixeira'></td>
+				<td ><input type='button' value='lixeira' value='lixeira' onclick='if (document.getElementById(`edita_secoes_teclado_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção nas janelas de níveis.`); return;} transpoe_subarvore(document.getElementById(`edita_secoes_teclado_id_secao`).innerText,`lixeira`)'></td>
 				<td ><input type='button' value='separa'></td>
 				<td ><input type='button' value='junta'></td>
 				<td ><input type='button' value='sobe'></td>
@@ -410,6 +410,7 @@ $zti5 = $min_top_folha - $padding_arvore;
 
 echo "<div id='flutua_para_direita' class='moldura ganha_foco' style=' width: ".$largura_moldura."px; height: ".$altura_moldura."px; left: ".$zti4."px; top: ".$zti5."px'><div id='cabecalio_flutua_para_direita' class='cabecalio_de_arvore' style='width: ".$largura_moldura."px; height: ".$altura_cabecalio."px;'><label  style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha Box 2</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox'  id='check_mostra_trechos' onclick='percorre_arvore_trechos(this.checked)' checked>Mostra Trechos</input></div></div>".$arvore."</div>";
 //echo "</table>";
+$conn->next_result();
 
 $conn->close();
 
@@ -492,8 +493,8 @@ $zti9 =$min_top_folha_ts - $padding_arvore_ts - $altura_cabecalio_arvore;
 echo "
 <div id='seletor' class='moldura_ts ganha_foco' style=' width: ".$largura_moldura_ts."px; height: ".$altura_moldura_ts."px; left: ".$zti8."px; top: ".$zti9."px'><div id='cabecalio_seletor' class='cabecalio_de_arvore' style=' width: ".$largura_moldura_ts."px; height: ".$altura_cabecalio_arvore."px;'><label style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha o tipo de seção:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_filhos' >Mostra Filhos</input></div></div>
 ".$arvore_tipos."</div>";
-
-
+$conn2->next_result();
+$conn2->close();
 ?>
 
 

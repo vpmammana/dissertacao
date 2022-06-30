@@ -357,7 +357,16 @@ var padding_de_screen = 10; // evita que os elementos flutuantes encostem nas bo
 
 var id_da_folha_onde_esta_flutuando;
 
-var matriz_ganha_foco=[];
+var matriz_ganha_foco=[]; // eh a matriz que guarda uma copia dos divs que serao percorridos pelo teclado.
+
+function desabilita_box(habilita, box){
+	let inputs_box1 = document.getElementById(box).getElementsByTagName("input");
+	let i;	
+	for (i=0; i < inputs_box1.length; i++){
+		inputs_box1[i].disabled = habilita;
+	}
+
+} //desabilita_box
 
 function coloca_setas_no_pai(){
 const colecao_de_secoes = document.getElementsByClassName("secao");
@@ -423,11 +432,11 @@ var oReq=new XMLHttpRequest();
 
 } // fim grava_trecho
 
-function recarrega(tipo, radio, ){
+function recarrega(tipo, radio){
 var arrStr = encodeURIComponent(JSON.stringify(largura_niveis_array));
 var param_filhos = document.getElementById("check_mostra_filhos").checked;
 
-window.location.search = "&tipo_secao="+tipo+"&filhos="+param_filhos+"&json="+arrStr+"&fator_reducao="+fator_de_reducao_da_largura_da_arvore;
+window.location.search = "&tipo_secao="+tipo+"&filhos="+param_filhos+"&n_niveis="+quantos_niveis_mostra+"&json="+arrStr+"&fator_reducao="+fator_de_reducao_da_largura_da_arvore;
 //var arrStr = encodeURIComponent(JSON.stringify(myArray));
 //var resposta="";
 //var param_filhos = document.getElementById("check_mostra_filhos").checked;
@@ -545,6 +554,24 @@ function scroll_horizontal(elemento){
 elemento.scrollLeft = array_scroll_horizontal[x_versao].style.left.replace("px","") - elemento.clientWidth /2 + array_scroll_horizontal[x_versao].clientWidth/2;
 }
 
+function insere_nova_secao_a_esq(nome_secao, id_tipo_secao, trecho){
+
+
+var resposta="";
+var url='../php/insere_esq.php?nome_secao='+nome_secao+'&id_tipo_secao='+id_tipo_secao+'&trecho='+trecho;
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+		     elemento.value = resposta.trim(); // estah voltando com o linebreak no comeco por causa do ?> no final do arquivo identifica.php.cripto
+		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
+		     //textarea.setAttribute("data-alterado","sem_gravar");
+		     //textarea.style.backgroundColor = cor_de_edicao; 
+
+	   }
+           oReq.send();
+}
+
 function carrega_versao_selecionada(id_chave_secao, textarea){
 elemento = textarea;
 
@@ -567,6 +594,7 @@ var oReq=new XMLHttpRequest();
 
 function transpoe_subarvore(secao_movel, secao_alvo){
 
+if (!confirm("Tem certeza que você quer transferir esta seção para a lixeira?")) {return;}
 
 var resposta="";
 var url='../php/transpoe_subarvore.php?secao_movel='+secao_movel+'&secao_alvo='+secao_alvo;
@@ -575,6 +603,7 @@ var oReq=new XMLHttpRequest();
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
 		     alert(resposta);
+		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
 
 	   }
            oReq.send();
@@ -616,6 +645,9 @@ function teclado(e) {
 
 		if (e.key == "Escape" && modo_edicao) {
 			if (confirm("Tem certeza que quer sair sem gravar?")) {
+			textarea_em_edicao.blur();// tira o foco do textarea
+			desabilita_box("true", "edita_secoes_mouse");
+			desabilita_box("true", "edita_secoes_teclado");
 			modo_edicao = false;
 			// ajusta_bordas_do_selecionado();
 			textarea_em_edicao.value = array_scroll_horizontal[array_scroll_horizontal.length - 1].getAttribute("data-trecho"); ;
@@ -628,6 +660,10 @@ function teclado(e) {
 		
 		if (e.key == "Tab" && modo_edicao) {
 			modo_edicao = false;
+			textarea_em_edicao.blur();// tira o foco do textarea 
+			desabilita_box("true", "edita_secoes_mouse");
+			desabilita_box("true", "edita_secoes_teclado");
+
 			ajusta_bordas_do_selecionado();
 			if (textarea_em_edicao != null && versoes_em_edicao != null) {
 				grava_trecho(textarea_em_edicao.getAttribute(`data-id-chave-secao`),  textarea_em_edicao.getAttribute(`data-id-secao`), textarea_em_edicao.value, versoes_em_edicao, textarea_em_edicao);
@@ -638,15 +674,20 @@ function teclado(e) {
 		;}
 		
 		if (modo_edicao == true) {return;}	
-
+		
+		if (e.key=="Home") {y=0;}
+		if (e.key=="End") {y=matriz_ganha_foco[x][1].length-1;}
+	
 		if (e.key == "1") {
+			if (matriz_ganha_foco[x][0].includes("seletor")) {alert("Para editar o Box 1 o cursor não pode estar na árvore 'Escolha do tipo de seção'.");} else {
+
 			if (document.getElementById("textarea_teclado").getAttribute("data-alterado")=="gravado") {	
 			modo_edicao = true;
 			textarea_em_edicao = document.getElementById("textarea_teclado");
 			versoes_em_edicao = document.getElementById("versoes_teclado");
 			textarea_em_edicao.focus();
 			} else {alert("Selecione uma seção nas janelas de níveis antes de tentar editar!");}
-			
+			}
 		;}
 		if (e.key == "2") {
 			if (matriz_ganha_foco[x][1][y].getAttribute("id_secao")== "corpo_tese") {alert("Você não pode editar a raiz (corpo_tese) do documento. A operação será interrompida e nada será feito."); return;}
@@ -655,6 +696,13 @@ function teclado(e) {
 			textarea_em_edicao = document.getElementById("textarea_mouse");
 			versoes_em_edicao = document.getElementById("versoes_mouse");
 			textarea_em_edicao.focus();
+			if (matriz_ganha_foco[x][0].includes("seletor")) {
+				desabilita_box("true", "edita_secoes_mouse");
+				document.getElementById("botao_nova_secao_acima").disabled = false;
+				document.getElementById("botao_nova_secao_abaixo").disabled = false;
+				
+				textarea_em_edicao.value = "";				
+			}
 			} else {alert("Selecione uma seção nas janela 'Escolha Box 2' antes de tentar editar!");}
 			
 		;}
@@ -763,7 +811,6 @@ function teclado(e) {
 	
        		if (x > matriz_ganha_foco.length - 1) { x=0;} // estes ifs estavam depois dos 4 abaixo, mas parece mais lógico que fiquem aqui 
 		if (x < 0) { x=matriz_ganha_foco.length -1;}
-
 	        if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
          	if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita o contrario
 
@@ -792,19 +839,31 @@ function teclado(e) {
 		
 
 
+		if (!matriz_ganha_foco[x][0].includes("seletor")) 
+			{
+				if (matriz_ganha_foco[x][0].includes("nivel")) {
+					restringe_tipos_que_ganham_foco(document.getElementById("secao_"+matriz_ganha_foco[x][1][y].getAttribute("data-id-pai")).getAttribute("data-nome-tipo-secao"));
+				}
+				if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
+					restringe_tipos_que_ganham_foco(document.getElementById("folha_arvore_"+matriz_ganha_foco[x][1][y].getAttribute("data-id-pai")).getAttribute("data-nome-tipo-secao"));
+				}
+			}
 		velho_focado = matriz_ganha_foco[x][1][y];
 		let paizao = document.getElementById(matriz_ganha_foco[x][0]);
 
-			if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {scroll_arvore_especial(paizao,matriz_ganha_foco[x][1][y]);}
+			if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {scroll_arvore_especial(paizao,matriz_ganha_foco[x][1][y]);}  // nao precisava desta complicacao de 2 ifs
+			if (matriz_ganha_foco[x][0].includes("seletor")) {scroll_arvore_especial(paizao,matriz_ganha_foco[x][1][y]);}
 
 		//		document.getElementById(matriz_ganha_foco[x][0]).focus();
 
 		let textarea_teclado = document.getElementById("textarea_teclado");
+		let botao_lixeira_teclado = document.getElementById("botao_lixeira_teclado");
 		let id_secao_teclado = document.getElementById("edita_secoes_teclado_id_secao");
 		let id_pai_teclado = document.getElementById("edita_secoes_teclado_id_pai");
 		//		let data_teclado = document.getElementById("edita_secoes_teclado_data");
 
 		let textarea_mouse = document.getElementById("textarea_mouse");
+		let botao_lixeira_mouse = document.getElementById("botao_lixeira_mouse");
 		let id_secao_mouse = document.getElementById("edita_secoes_mouse_id_secao");
 		let id_pai_mouse = document.getElementById("edita_secoes_mouse_id_pai");
 		//		let data_mouse = document.getElementById("edita_secoes_mouse_data");
@@ -814,6 +873,7 @@ function teclado(e) {
 			id_pai_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
 			//			data_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
 			textarea_teclado.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
+			if (matriz_ganha_foco[x][1][y].getAttribute("data-da-lixeira") == "nao" && tipo_secao_selecionado_no_check!='raiz') {botao_lixeira_teclado.disabled = false;} else {botao_lixeira_teclado.disabled = true;}
 			textarea_teclado.setAttribute("data-alterado","gravado"); // indica que o dado apresentado eh o que estah na base de dados
 			//console.log("estou passando por aqui -> "+ textarea_teclado.id + " data-titulo -> " +  matriz_ganha_foco[x][1][y].getAttribute("data-titulo"));
 			textarea_teclado.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
@@ -825,6 +885,7 @@ function teclado(e) {
 			id_pai_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
 			//			data_mouse.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
 			textarea_mouse.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
+			if (matriz_ganha_foco[x][1][y].getAttribute("data-da-lixeira") == "nao" && tipo_secao_selecionado_no_check!='raiz') {botao_lixeira_mouse.disabled = false;} else {botao_lixeira_mouse.disabled = true;}
 			textarea_mouse.setAttribute("data-alterado","gravado");
 			textarea_mouse.setAttribute("data-id-chave-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"));
 			textarea_mouse.setAttribute("data-id-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
@@ -1049,6 +1110,26 @@ if (largura_de_edicao > (minima_largura_percentual_da_edicao + 0.05 )* document.
 
 }
 
+function restringe_tipos_que_ganham_foco(tipo_pai){ // para a arvore de tipos, apenas os filhos do tipo que foi selecionado na arvore de secoes devem ser percorriveis
+
+	let i;
+	let indice_seletor = matriz_ganha_foco.length - 1; // descobre qual eh a arvore de tipos, que é sempre a última... por que? pela ordem de criacao das arvores... arvore_tipos eh a ultima criada pelo PHP 
+	guarda_ultimo_visitado[indice_seletor]=-2; // ainda nao foi visitado
+	matriz_ganha_foco[indice_seletor][1].length = 0;
+	if (!matriz_ganha_foco[indice_seletor][0].includes("seletor")) {alert("Erro 12312: não foi possível encontrar a janela de seleção de tipos"); return;}
+	let arvore_tipos_de_secoes = document.getElementsByClassName("arvore_de_tipos");
+	console.log(indice_seletor + " - "+tipo_pai);
+	for (i=0; i < arvore_tipos_de_secoes.length; i++){
+		if (arvore_tipos_de_secoes[i].getAttribute("data-id-pai") == tipo_pai){
+			matriz_ganha_foco[indice_seletor][1].push(arvore_tipos_de_secoes[i]);
+			console.log(matriz_ganha_foco[indice_seletor][1]);
+			
+		}
+
+	}		
+	
+}
+
 function acha_divs_que_ganham_foco(){
 guarda_ultimo_visitado.length = 0;
 const colecao_ganha_foco = document.getElementsByClassName("ganha_foco");
@@ -1101,7 +1182,7 @@ moldura_da_arvore.scrollTop = itz - (itz2 - folha_da_arvore.clientHeight);
 }
 
 	
-}
+} // fim scroll_arvore_especial
 
 function scroll_nivel(moldura_nivel, secao){
 //console.log("scroll_nivel "+moldura_nivel.id + " secao:" + secao.id ); //libere este alerta para saber qual nivel estah chamando este scroll
@@ -1377,6 +1458,9 @@ for (let i = 0; i < textareas.length; i++) {
 					if (modo_edicao) {
 					this.setAttribute("data-alterado","sem_gravar");
 					this.style.backgroundColor = cor_de_edicao; 
+					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
+					console.log("grava_"+textarea_em_edicao.id);
+					console.log(document.getElementById("grava_"+textarea_em_edicao.id).disabled);
 					}
 				}
 			);
@@ -1387,7 +1471,10 @@ for (let i = 0; i < textareas.length; i++) {
 
 function inicializa(){
 
+desabilita_box("true", "edita_secoes_mouse");
+desabilita_box("true", "edita_secoes_teclado");
 
+document.getElementById("radio_niveis_"+quantos_niveis_mostra).checked=true;
 document.getElementById(radio_selecionado).checked=true;
 document.getElementById("check_mostra_filhos").checked=mostra_filhos_check;
 inicializa_teclado();

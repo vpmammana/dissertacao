@@ -4,6 +4,7 @@
 # VPM (2022-06-19) - tentativa de obter campo trecho e nome_versao da tabela versoes.
 # VPM (2022-06-22) - criando forma de ver o documento inteiro, no mesmo visualizador de niveis pela criacao da stored procedure mostra_documento_completo
 # VPM (2022-06-28) - preparacao para criar um sistema de mudanca de subarvore dentro da arvore
+# VPM (2022-06-29) - criacao das funcoes de insercao de novos nós, antes e depois do atual
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS retorna_valores_de_propriedades_do_tipo_secao
@@ -15,6 +16,7 @@ END
 //
 DROP PROCEDURE IF EXISTS mostra_trilha_da_arvore_descricao_concatenada
 //
+# a procedure abaixo estaria com problemas? coloca o nivel 2 por ultimo. Ainda bem que eu nao uso
 CREATE PROCEDURE mostra_trilha_da_arvore_descricao_concatenada(IN no_de_busca varchar(20))
 BEGIN
 	SELECT group_concat(T.nomcat SEPARATOR "-") from (
@@ -28,6 +30,7 @@ END
 //
 DROP PROCEDURE IF EXISTS mostra_trilha_da_arvore_codigo_concatenado
 //
+# a procedure abaixo estaria com problemas? coloca o nivel 2 por ultimo. Ainda bem que eu nao uso
 CREATE PROCEDURE mostra_trilha_da_arvore_codigo_concatenado(IN no_de_busca varchar(20))
 BEGIN
 	SELECT group_concat(T.nomcat SEPARATOR "-") from (
@@ -39,9 +42,10 @@ BEGIN
 	ORDER BY parent.lft) as T;
 END
 //
+# este estah funcionando.
 DROP PROCEDURE IF EXISTS mostra_trilha_da_arvore
 //
-CREATE PROCEDURE mostra_trilha_da_arvore(IN no_de_busca varchar(20))
+CREATE PROCEDURE mostra_trilha_da_arvore(IN no_de_busca varchar(100))
 BEGIN
 	SELECT parent.nome_categoria
 	FROM secoes AS node,
@@ -197,6 +201,42 @@ funcao:BEGIN
 
 END
 //
+# insere antes (a esquerda) do no atual
+DROP PROCEDURE IF EXISTS insere_a_esquerda_do_atual
+//
+CREATE PROCEDURE insere_a_esquerda_do_atual(IN nome_no VARCHAR(100), IN id_do_tipo_de_secao INT, IN in_descricao VARCHAR(3000))
+funcao:BEGIN
+	SELECT @tmp_esq:= lft from secoes where nome_categoria = nome_no;
+	SELECT @time_stampa :=  CURRENT_TIMESTAMP(3);
+	SELECT @time_stampa_short :=  CURRENT_TIMESTAMP;
+	
+	#cria novo espaco
+	UPDATE secoes set lft = lft + 2 where lft >= @tmp_esq;
+	UPDATE secoes set rgt = rgt + 2 where rgt >= @tmp_esq;
+	#cria novo no
+ 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", @time_stampa), in_descricao, "",  @tmp_esq, @tmp_esq + 1, id_do_tipo_de_secao);
+	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_descricao);
+
+END
+//
+# insere depois (a direita) do no atual
+DROP PROCEDURE IF EXISTS insere_a_direita_do_atual
+//
+CREATE PROCEDURE insere_a_direita_do_atual(IN nome_no VARCHAR(100), IN id_do_tipo_de_secao INT, IN in_descricao VARCHAR(3000))
+funcao:BEGIN
+	SELECT @tmp_dir:= rgt from secoes where nome_categoria = nome_no;
+	SELECT @time_stampa :=  CURRENT_TIMESTAMP(3);
+	SELECT @time_stampa_short :=  CURRENT_TIMESTAMP;
+	
+	#cria novo espaco
+	UPDATE secoes set lft = lft + 2 where lft > @tmp_dir;
+	UPDATE secoes set rgt = rgt + 2 where rgt > @tmp_dir;
+	#cria novo no
+ 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", @time_stampa), in_descricao, "",  @tmp_dir + 1, @tmp_dir + 2, id_do_tipo_de_secao);
+	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_descricao);
+
+END
+//
 DROP PROCEDURE IF EXISTS transpoe_subarvore
 //
 CREATE PROCEDURE transpoe_subarvore(IN nome_no_para_transpor varchar(100), IN nome_no_onde_inserir varchar(100))
@@ -242,6 +282,32 @@ BEGIN
 	        secoes AS parent
 	WHERE node.lft BETWEEN parent.lft AND parent.rgt
 	GROUP BY node.nome_categoria
+	ORDER BY MAX(node.lft);
+END
+//
+DROP PROCEDURE IF EXISTS mostra_arvore_niveis_tipos_secoes_com_pai
+//
+CREATE PROCEDURE mostra_arvore_niveis_tipos_secoes_com_pai()
+BEGIN
+	SELECT 
+		COUNT(parent.nome_nested_tipo_secao) - 1 as nivel, 
+		@nome:=node.nome_nested_tipo_secao AS nome_secao_tipo_secao, 
+		node.id_chave_nested_tipo_secao as id_tipo_secao,
+		(
+			select 
+				nome_nested_tipo_secao 
+			from 
+				nested_tipos_secoes 
+			where 
+				lft < (select lft from nested_tipos_secoes where nome_nested_tipo_secao=@nome) and rgt > (select rgt from nested_tipos_secoes where nome_nested_tipo_secao=@nome) 
+			order by lft DESC limit 1
+		) as pai 
+	FROM 
+		nested_tipos_secoes AS node, nested_tipos_secoes AS parent  
+	WHERE 
+		node.lft BETWEEN parent.lft AND parent.rgt 
+	GROUP BY 
+		node.nome_nested_tipo_secao, node.id_chave_nested_tipo_secao 
 	ORDER BY MAX(node.lft);
 END
 //

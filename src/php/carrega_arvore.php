@@ -8,6 +8,10 @@ if(isset($_GET["filhos"])){
   $param_filhos= $_GET["filhos"];
 } else $param_filhos = "false";
 
+if(isset($_GET["n_niveis"])){
+  $param_n_niveis= $_GET["n_niveis"];
+} else $param_n_niveis = "3";
+
 if(isset($_GET["json"])){
   $param_json= $_GET["json"];
 } else $param_json = "[0, 300, 650, 650, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500]";
@@ -22,6 +26,7 @@ $radical_de_nucleo ="nucleo_nivel_secao_"; // radicao do identificar de um nucle
 
 echo "
 <script>
+var quantos_niveis_mostra = ".$param_n_niveis.";
 var radical_de_nucleo = '".$radical_de_nucleo."';
 var mostra_filhos_check = ".$param_filhos.";
 var fator_de_reducao_da_largura_da_arvore = ".$param_fator_reducao.";
@@ -36,20 +41,29 @@ for ($p=0; $p < sizeof($largura_niveis_array); $p++){
 echo "</script>";
 echo "<div class='menu_principal' id='menu_principal'>
 <table>
-<br>
 <tr>
 <td>
-<input type='button' value='mostra edição'>
+<input type='radio' id='radio_niveis_1' name='numero_de_niveis' value='1' 		onclick='quantos_niveis_mostra = this.value;recarrega(document.getElementById(radio_selecionado).value, radio_selecionado)'>1 nível</input> 
 </td>
 <td>
-<input type='button' value='mostra árvore de seções'>
+<input type='radio' id='radio_niveis_2' name='numero_de_niveis' value='2' 		onclick='quantos_niveis_mostra = this.value; recarrega(document.getElementById(radio_selecionado).value, radio_selecionado)'>2 níveis</input>
 </td>
 <td>
-<input type='button' value='mostra árvore de tipos de seções'>
+<input type='radio' id='radio_niveis_3' name='numero_de_niveis' value='3' 	checked onclick='quantos_niveis_mostra = this.value; recarrega(document.getElementById(radio_selecionado).value, radio_selecionado)'>3 níveis</input>
+</td>
+</tr>
+<tr>
+<td>
+<input type='radio' id='radio_niveis_4' name='numero_de_niveis' value='4' 		onclick='quantos_niveis_mostra = this.value; recarrega(document.getElementById(radio_selecionado).value, radio_selecionado)'>4 níveis</input>
+</td>
+<td>
+<input type='radio' id='radio_niveis_5' name='numero_de_niveis' value='5' 		onclick='quantos_niveis_mostra = this.value; recarrega(document.getElementById(radio_selecionado).value, radio_selecionado)'>5 níveis</input>
+</td>
+<td>
+<input type='radio' id='radio_niveis_6' name='numero_de_niveis' value='6' 		onclick='quantos_niveis_mostra = this.value; recarrega(document.getElementById(radio_selecionado).value, radio_selecionado)'>6 níveis</input>
 </td>
 </tr>
 </table>
-<br>
 </div>
 <div class='hint_trechos' id='hint_trechos'></div>
 <div class='edita_secoes' id='edita_secoes_mouse'>
@@ -75,10 +89,10 @@ echo "<div class='menu_principal' id='menu_principal'>
 		<div style='height: 20%'>
 		<table class='tabela_de_edicao_sem_borda' cellspacing='0' style='height: 100%; border: 1px solid black; width: 100%; border-collapse: collapse; border-spacing: 0'>
 			<tr style='height: 20%; border: 1px solid black; line-height: 0px'>
-				<td><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_mouse`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`, document.getElementById(`versoes_mouse`), `textarea_mouse`),  temp_textarea.getAttribute(`data-id-secao`), temp_textarea.value);'></td>
-				<td><input type='button' value='lixeira' onclick='if (document.getElementById(`edita_secoes_mouse_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção na janela de Escolha do Box 2.`); return;} transpoe_subarvore(document.getElementById(`edita_secoes_mouse_id_secao`).innerText,`lixeira`)'></td>
-				<td><input type='button' value='separa'></td>
-				<td><input type='button' value='junta'></td>
+				<td><input id='grava_textarea_mouse' type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_mouse`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`, document.getElementById(`versoes_mouse`), `textarea_mouse`),  temp_textarea.getAttribute(`data-id-secao`), temp_textarea.value); this.disabled=true'></td>
+				<td><input id='botao_lixeira_mouse' type='button' value='lixeira' onclick='if (document.getElementById(`edita_secoes_mouse_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção na janela de Escolha do Box 2.`); return;} transpoe_subarvore(document.getElementById(`edita_secoes_mouse_id_secao`).innerText,`lixeira`)'></td>
+				<td><input id='botao_nova_secao_acima' type='button' value='novo acima' disabled onclick='if (document.getElementById(`edita_secoes_mouse_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção na janela de Escolha do Box 2.`); return;} if (!matriz_ganha_foco[x][0].includes(`seletor`)) {alert(`Você não está com o tipo de seção selecionada!`); return;} insere_nova_secao_a_esq(document.getElementById(`edita_secoes_mouse_id_secao`).innerText,matriz_ganha_foco[x][1][y].getAttribute(`data-id-tipo-secao`), document.getElementById(`textarea_mouse`).value)'></td>
+				<td><input id='botao_nova_secao_abaixo' disabled type='button' value='novo abaixo'></td>
 				<td><input type='button' value='sobe'></td>
 				<td><input type='button' value='desce'></td>
 			</tr>
@@ -111,8 +125,8 @@ echo "<div class='menu_principal' id='menu_principal'>
 	<div style='height: 20%'>
 		<table class='tabela_de_edicao_sem_borda' style='height: 100%; border: 1px solid black; width: 100%; border-collapse: collapse; border-spacing: 0' cellspacing='0'>
 			<tr style='height: 20%; border: 1px solid black; line-height: 0px'>
-				<td ><input type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_teclado`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.getAttribute(`data-id-secao`, document.getElementById(`versoes_teclado`), `textarea_teclado`), temp_textarea.value);'></td>
-				<td ><input type='button' value='lixeira' value='lixeira' onclick='if (document.getElementById(`edita_secoes_teclado_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção nas janelas de níveis.`); return;} transpoe_subarvore(document.getElementById(`edita_secoes_teclado_id_secao`).innerText,`lixeira`)'></td>
+				<td ><input id='grava_textarea_teclado' type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_teclado`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.getAttribute(`data-id-secao`, document.getElementById(`versoes_teclado`), `textarea_teclado`), temp_textarea.value); this.disabled=true'></td>
+				<td ><input id='botao_lixeira_teclado' type='button' value='lixeira' value='lixeira' onclick='if (document.getElementById(`edita_secoes_teclado_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção nas janelas de níveis.`); return;} transpoe_subarvore(document.getElementById(`edita_secoes_teclado_id_secao`).innerText,`lixeira`)'></td>
 				<td ><input type='button' value='separa'></td>
 				<td ><input type='button' value='junta'></td>
 				<td ><input type='button' value='sobe'></td>
@@ -128,7 +142,7 @@ echo "<div class='menu_principal' id='menu_principal'>
 
 include "identifica.php.cripto";
 
-$max_niveis=5;
+$max_niveis=10;
 $padding_niveis = 100;
 
 $top_niveis = 50; // posicao da extremidade superior dos niveis
@@ -280,7 +294,7 @@ if ($result->num_rows>0) {
 	//$style="justify-content: space-between; font-size: 0.9rem;";
 	$largura_pai = $largura_niveis_array[$nivel] * 0.95;	
 	$conn3= new mysqli("localhost", $username, $pass, $database);
-
+	if ($nivel > $param_n_niveis) {continue;} // determina quantos niveis vai mostrar, independentemente de quantos existam
 	$sql3="call retorna_valores_de_propriedades_do_tipo_secao('".$nome_tipo_secao."');";
 	$result3=$conn3->query("$sql3");
 	$style="";
@@ -296,6 +310,9 @@ if ($result->num_rows>0) {
 	}
 
 	$conn3->close();
+
+	if ($nivel == 1 and $id_secao == "lixeira") {$eh_da_lixeira = "sim";} 
+	if ($nivel == 1 and $id_secao != "lixeira") {$eh_da_lixeira = "nao";} // precisa saber se eh uma secao que estah dentro da lixeira para que nao possa ser jogada na lixeira de novo
 
 	if ($velho_nome_tipo_secao != $nome_tipo_secao) {
 		$contagem_paragrafos=1;
@@ -329,11 +346,11 @@ if ($result->num_rows>0) {
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
 // data-id-chave eh a chave primaria da tabela secoes
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."'  data-gemeo='secao_".$id_secao."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."' data-nome-tipo-secao='".$nome_tipo_secao."' data-gemeo='secao_".$id_secao."' data-da-lixeira='".$eh_da_lixeira."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
 	$conta_folhas++;
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	
-	if ($nivel==0) {continue;}
+	if ($nivel==0) { echo "<div  style='visibility: hidden' id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  class='secao sub_ganha_foco contem_trechos' ></div>";  continue;}
 //&#10148;
 
 	if ($nome_tipo_secao=="item_lista_num") {
@@ -364,7 +381,7 @@ if ($result->num_rows>0) {
 
 		}
 // data-id-chave eh a chave primaria da tabela secoes
-	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
+	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
 
 
 
@@ -434,7 +451,7 @@ $top_folha_ts = $top_arvore_ts + $altura_cabecalio_arvore;
 
 
 //$sql="select nome_nested_tipo_secao, id_chave_nested_tipo_secao from nested_tipos_secoes order by id_chave_nested_tipo_secao";
-$sql = "call mostra_arvore_niveis_tipos_secoes();";
+$sql = "call mostra_arvore_niveis_tipos_secoes_com_pai();";
 
 $conn2= new mysqli("localhost", $username, $pass, $database);
 
@@ -449,6 +466,7 @@ if ($result->num_rows>0) {
         $id             = $row["id_tipo_secao"];
         $nome             = $row["nome_secao_tipo_secao"];
         $nivel             = $row["nivel"];
+	$pai 			= $row["pai"];
 
         if ($nome == $param_tipo_secao) {$checado="checked";} else {$checado="";}
         if ($top_folha_ts < $min_top_folha_ts) {$min_top_folha_ts = $top_folha_ts;}
@@ -469,7 +487,7 @@ if ($result->num_rows>0) {
 	$zti6 = $left_folha_ts-$left_arvore_ts+$padding_folha_ts;
 	$zti7 = $top_folha_ts-$top_arvore_ts+$padding_folha_ts;
 
-        $arvore_tipos = $arvore_tipos."<div id='folha_arvore_tipos_secoes_".$id."' class='folha_de_arvore sub_ganha_foco' data-cor-nivel='".$cor_nivel_tipos_secoes[$nivel]."' data-cor-letra='".$cor_letra_nivel_tipos_secoes[$nivel]."' style=' background-color: ".$cor_nivel_tipos_secoes[$nivel]."; color: ".$cor_letra_nivel_tipos_secoes[$nivel]."; width: ".$largura_folha_ts."px; left: ".$zti6."px; top: ".$zti7."px;'>".$miolo_folha."</div>";
+        $arvore_tipos = $arvore_tipos."<div id='folha_arvore_tipos_secoes_".$id."' data-id-tipo-secao='".$id."' class='folha_de_arvore sub_ganha_foco arvore_de_tipos' data-cor-nivel='".$cor_nivel_tipos_secoes[$nivel]."' data-id-pai='".$pai."' data-cor-letra='".$cor_letra_nivel_tipos_secoes[$nivel]."' style=' background-color: ".$cor_nivel_tipos_secoes[$nivel]."; color: ".$cor_letra_nivel_tipos_secoes[$nivel]."; width: ".$largura_folha_ts."px; left: ".$zti6."px; top: ".$zti7."px;'>".$miolo_folha."</div>";
         $top_folha_ts = $top_folha_ts + ($altura_folha_ts + $padding_folha_ts);
 
 

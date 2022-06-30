@@ -306,6 +306,8 @@ include "../php/carrega_arvore.php";
 ?>
 <script>
 
+var ultimo_visitado_flutua_para_direita = -2; // ainda nao foi visitado
+
 var debug = document.getElementById("edita_secoes_teclado");
 var array_scroll_horizontal=[];
 var largura_do_botao_de_versao = '8';
@@ -680,13 +682,14 @@ function teclado(e) {
 	
 		if (e.key == "1") {
 			if (matriz_ganha_foco[x][0].includes("seletor")) {alert("Para editar o Box 1 o cursor não pode estar na árvore 'Escolha do tipo de seção'.");} else {
-
 			if (document.getElementById("textarea_teclado").getAttribute("data-alterado")=="gravado") {	
 			modo_edicao = true;
 			textarea_em_edicao = document.getElementById("textarea_teclado");
 			versoes_em_edicao = document.getElementById("versoes_teclado");
+			carrega_versoes_scroll("versoes_teclado",  textarea_em_edicao.getAttribute("data-id-chave-secao"), "textarea_teclado");
 			textarea_em_edicao.focus();
 			} else {alert("Selecione uma seção nas janelas de níveis antes de tentar editar!");}
+			return;
 			}
 		;}
 		if (e.key == "2") {
@@ -695,6 +698,7 @@ function teclado(e) {
 			modo_edicao = true;
 			textarea_em_edicao = document.getElementById("textarea_mouse");
 			versoes_em_edicao = document.getElementById("versoes_mouse");
+			carrega_versoes_scroll("versoes_mouse",  textarea_em_edicao.getAttribute("data-id-chave-secao"), "textarea_mouse");
 			textarea_em_edicao.focus();
 			if (matriz_ganha_foco[x][0].includes("seletor")) {
 				desabilita_box("true", "edita_secoes_mouse");
@@ -704,7 +708,7 @@ function teclado(e) {
 				textarea_em_edicao.value = "";				
 			}
 			} else {alert("Selecione uma seção nas janela 'Escolha Box 2' antes de tentar editar!");}
-			
+			return;	
 		;}
 		
 		if (e.key == "Home") {y=0;}
@@ -742,12 +746,17 @@ function teclado(e) {
 
 
 			}
-		if (e.key == "ArrowDown")  {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} guarda_ultimo_visitado[x] = y;}
+		if (e.key == "ArrowDown")  {
+			y++; 
+			if (y > matriz_ganha_foco[x][1].length -1) {y=0;} 
+			guarda_ultimo_visitado[x] = y;
+			if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} if (y < 0) {y = matriz_ganha_foco[x][1].length - 1;}} // se cair em cima de uma secao selecionada por Box2, tem que baixar mais e rodar, caso o y fique fora do length 
+		}
 		if (e.key == "ArrowLeft")  
 			{
 				let vem_antes = x - 1;
 				if (vem_antes<0) {vem_antes = matriz_ganha_foco.length -1;}
-				if (guarda_ultimo_visitado[vem_antes] == -1 || !matriz_ganha_foco[x][0].includes("nivel") || matriz_ganha_foco[x][0].includes("nivel_1") || e.shiftKey) 
+				if ((guarda_ultimo_visitado[vem_antes] == -1 || !matriz_ganha_foco[x][0].includes("nivel") || matriz_ganha_foco[x][0].includes("nivel_1") || e.shiftKey) && !matriz_ganha_foco[vem_antes][0].includes("flutua_para_direita")) 
 				{
 					do {x--;} while (guarda_ultimo_visitado[x] == -1); 
 					if (x<0) {x=matriz_ganha_foco.length -1;}  
@@ -765,21 +774,42 @@ function teclado(e) {
 							conta_volta++;
 							//console.log(conta_volta);
 						}
-					if (conta_volta < max_elementos_volta ) {x--; y=conta_volta;} else { alert("Nao achou o pai."); y=0;}
+					if (conta_volta < max_elementos_volta)  
+						{
+							x--; 
+							y=conta_volta;
+						}
+					if (conta_volta >= max_elementos_volta && !matriz_ganha_foco[vem_antes][0].includes("flutua_para_direita")) 
+						{ 
+							alert("Nao achou o pai."); 
+							y=0;
+						}
+					if (matriz_ganha_foco[vem_antes][0].includes("flutua_para_direita")) {
+						x--;
+						if (ultimo_visitado_flutua_para_direita > -1) {y = ultimo_visitado_flutua_para_direita;} else {y=0;}
+					}
 					if (x<0) {x=matriz_ganha_foco.length -1;} 					
+
 				}
 			} 
 // -2 significa "nao foi visitado ainda"
 // -1 signfica "nao tem filhos da secao do nivel superior selecionada, que no caso de ir para a esquerda significa subir de nivel ateh o nivel selecionado"
 		if (e.key == "ArrowRight") 
 			{
+				let x_anterior = x;
+				let y_anterior = y;
 				let anterior = matriz_ganha_foco[x][1][y];
 				let proximo = x + 1;
 				if (proximo > matriz_ganha_foco.length -1) {proximo = 0;}
 				if (!matriz_ganha_foco[proximo][0].includes("nivel") || matriz_ganha_foco[proximo][0].includes("nivel_1"))
 					{ 
 						// este if ocorre quando nao nivel, ou se eh nivel e o pai eh corpo_tese. O resultado eh ir para direita nos blocos de niveis (se for nivel 1) ou nas arvores. se for nivel 2 ou 3 eh outro tratamento
-						{x++; if(x > matriz_ganha_foco.length - 1) {x=0;}  y = guarda_ultimo_visitado[x]; if (y == -2) {y=0;}}
+						{
+							x++; 
+							if(x > matriz_ganha_foco.length - 1) {x=0;}  
+							y = guarda_ultimo_visitado[x]; 
+							if (y == -2) {y=0;}
+						}
 					}
 				else {
 
@@ -807,12 +837,13 @@ function teclado(e) {
 				}	
 			 		if (e.shiftKey) {y=guarda_ultimo_visitado[x]; if (y == -2) {y = 0;} } // se estiver apertando shift vai para ultimo visitado ao inves de ir para o primeiro filho do atual.	
 					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual_na_arvore.getAttribute("data-y")); } 
+					if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {guarda_ultimo_visitado[x_anterior] = y_anterior;}
 			}
 	
        		if (x > matriz_ganha_foco.length - 1) { x=0;} // estes ifs estavam depois dos 4 abaixo, mas parece mais lógico que fiquem aqui 
 		if (x < 0) { x=matriz_ganha_foco.length -1;}
 	        if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
-         	if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita o contrario
+         	if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y--; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} if (y < 0) {y = matriz_ganha_foco[x][1].length - 1;}} // evita o contrario. note que precisa tambem cuidar do caso do ArrowDown, porque nesse caso, este if faz voltar para cima e nao desce nunca mais... entao no ArrowDown, se perceber que vai cair na secao selecionada pelo Box2, tem que pular para baixo
 
 		if (matriz_ganha_foco[x][0].includes("nivel")) {
 			gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
@@ -836,7 +867,7 @@ function teclado(e) {
 
 		ajusta_bordas_do_selecionado();
 	
-		
+		if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {ultimo_visitado_flutua_para_direita = y;}
 
 
 		if (!matriz_ganha_foco[x][0].includes("seletor")) 
@@ -1459,6 +1490,7 @@ for (let i = 0; i < textareas.length; i++) {
 					this.setAttribute("data-alterado","sem_gravar");
 					this.style.backgroundColor = cor_de_edicao; 
 					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
+					if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
 					console.log("grava_"+textarea_em_edicao.id);
 					console.log(document.getElementById("grava_"+textarea_em_edicao.id).disabled);
 					}

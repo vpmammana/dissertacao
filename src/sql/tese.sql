@@ -5,6 +5,7 @@
 # VPM (2022-06-22) - criando forma de ver o documento inteiro, no mesmo visualizador de niveis pela criacao da stored procedure mostra_documento_completo
 # VPM (2022-06-28) - preparacao para criar um sistema de mudanca de subarvore dentro da arvore
 # VPM (2022-06-29) - criacao das funcoes de insercao de novos nós, antes e depois do atual
+# VPM (2022-07-02) - criacao de procedure para gravar trecho quando insere novo filho insere_a_direita_dos_filhos_com_trecho
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS retorna_valores_de_propriedades_do_tipo_secao
@@ -199,6 +200,15 @@ funcao:BEGIN
 		INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(no_para_inserir, no_descricao, no_link, @myRight + 1, @myRight + 2, tipo_secao);
 	END IF;
 
+END
+//
+# insere antes (a esquerda) do no atual
+DROP PROCEDURE IF EXISTS insere_abaixo_do_atual
+//
+CREATE PROCEDURE insere_abaixo_do_atual(IN nome_no_pai VARCHAR(100), IN nome_do_tipo_de_secao VARCHAR(200), IN in_trecho VARCHAR(3000))
+funcao:BEGIN
+	call insere_a_direita_dos_filhos(nome_no_pai, CONCAT("automatico_",CURRENT_TIMESTAMP(6)), in_trecho,'', (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = nome_do_tipo_de_secao));
+	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_trecho);
 END
 //
 # insere antes (a esquerda) do no atual

@@ -574,6 +574,23 @@ var oReq=new XMLHttpRequest();
            oReq.send();
 }
 
+function insere_nova_secao_abaixo(nome_secao_pai, nome_tipo_secao, trecho){
+
+var resposta="";
+var url='../php/insere_abaixo.php?nome_secao_pai='+nome_secao_pai+'&nome_tipo_secao='+nome_tipo_secao+'&trecho='+trecho;
+//alert(url);
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+		     elemento.value = resposta.trim(); // estah voltando com o linebreak no comeco por causa do ?> no final do arquivo identifica.php.cripto
+		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
+		     //textarea.setAttribute("data-alterado","sem_gravar");
+		     //textarea.style.backgroundColor = cor_de_edicao; 
+
+	   }
+           oReq.send();
+}
 
 function insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho){
 
@@ -739,6 +756,10 @@ let futuro_y =0;
 				desabilita_box("true", "edita_secoes_mouse");
 				document.getElementById("botao_nova_secao_acima").disabled = false;
 				document.getElementById("botao_nova_secao_abaixo").disabled = false;
+				if (matriz_ganha_foco[x][1][y].getAttribute("data-primeiro-filho") != "sem_filhos_registrados") 
+				{
+				document.getElementById("botao_nova_secao_dentro").disabled = false;
+				}
 				
 				textarea_em_edicao.value = "";				
 			}
@@ -1198,6 +1219,9 @@ function restringe_tipos_que_ganham_foco(tipo_pai){ // para a arvore de tipos, a
 	for (i=0; i < arvore_tipos_de_secoes.length; i++){
 		if (arvore_tipos_de_secoes[i].getAttribute("data-id-pai") == tipo_pai){
 			matriz_ganha_foco[indice_seletor][1].push(arvore_tipos_de_secoes[i]);
+			if ( i < arvore_tipos_de_secoes.length -1 && arvore_tipos_de_secoes[i+1].getAttribute("data-id-pai") == arvore_tipos_de_secoes[i].getAttribute("data-id-secao")) {
+				arvore_tipos_de_secoes[i].setAttribute("data-primeiro-filho", arvore_tipos_de_secoes[i+1].getAttribute("data-id-secao"));
+			}
 			//console.log(matriz_ganha_foco[indice_seletor][1]);
 			
 		}

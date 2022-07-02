@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Manual do RedarTex
+	</title>
+</head>
+<style>
+
+table, td, tr, th {
+	border-collapse: collapse;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: gray;
+	
+}
+
+
+
+a {
+	font-weight: bold;
+}
+
+a:link {
+    color: white
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: yellow
+}
+
+
+    .lista_de_conteudo {
+        font-size: 20px;
+    }
+
+h2 {
+
+    background-color: green;
+    font-size:2rem;
+}
+
+#conteudo {
+                width: 85%;
+                height: 99%;
+                float: right;
+                overflow-y: scroll;
+                max-height: 99%;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 1.2rem;
+		background-color: lightgray;
+                }
+
+#menu {
+                width: 15%;
+                height: 99%;
+                margin: 0;
+                padding: 0px;
+                float: left;
+                background-color: black;
+                color: white;
+                font-family: arial;
+                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                border-right: 1px solid gray;
+                overflow-y: scroll;
+                }
+
+
+</style>
+<body>
+
+<div id="menu" >teste</div>
+
+<div id="conteudo">
+<h1>Manual do RedarTex</h1>
+
+<p>O presente documento é o manual do editor de textos <i>RedarTex</i>, criado por Victor Mammana</p>
+
+<h2>Introdução</h2>
+
+<p>Redigir um texto científico requer uma disciplina na organização das seções que toma bastante tempo do autor. Além disso, é necessária uma disciplina tipográfica que acaba atrapalhando o processo criativo, dado que tira energia do autor no momento em que ele deveria estar focalizado no conteúdo.</p>
+
+<p>O objetivo do <i>RedarTex</i> é otimizar esse trabalho, retirando as distrações que acabam emperrando o processo criativo.</p>
+
+<p>A descrição abaixo tem o papel de especificação do sistema e por isso pode parecer um pouco complicada para o usuário final. A utilização do sistema é de certa forma auto-explicativa, mas alguma características demandam um pouco de prática, como a navegação com as setas. Essa navegação foi desenhada para ser otimizada, no sentido de reduzir o número de passos para chegar nas explicações, bem como o número de teclas necessárias para operar.</p>
+
+<h2>Teclas</h2>
+
+<p>O <i>RedarTex</i> usa as seguintes teclas:</p>
+
+<table>
+<tr>
+<th>
+Tecla
+</th>
+<th>
+Função
+</th>
+</tr>
+<tr>
+<td>
+Seta para Direita
+</td>
+<td>
+Acessa o próximo nível à direita. Se estiver no último nível, acessará a <b>Árvore de Seções</b>. Se estiver na <b>Árvore de Seções</b>, acessará a <b>Árvore de Tipos de Seções</b>. Ao acessar o próximo nível, o cursor recai sobre a primeira seção numa hierarquia inferior (filho). Se o cursor está numa seção que não tem hierarquia inferior (e.g. "paragrafo"), então o cursor vai direto para a <b>Árvore de Seções</b>. Se a seção onde estava o cursor, antes de teclar a seta, é do tipo parágrafo, então não há filhos e ao teclar seta para direita, o cursor irá para a árvore de seções. Se a seção onde estava o cursor, antes de teclar a seta, era do tipo tópico, e se esse tópico tiver filhos, então ao teclar a seta para a direita, o cursor recairá sobre o filho. Se a tecla Shift estiver pressionada, então o cursor recairá sobre o último visitado naquele nível. 
+</td>
+</tr>
+<tr>
+<td>
+Seta para Esquerda
+</td>
+<td>
+Acessa o nível anterior à esquerda. Se estiver no primeiro nível ("nivel_1"), acessará a <b>Árvore de Tipos de Seções</b>. Se estiver na <b>Árvore de Tipos de Seções</b>, acessará a <b>Árvore de Seções</b>. O cursor recairá sobre o "pai" da seção. Se o cursor estava na <b>Árvore de Seções</b>, então o cursor recairá sobre a última seçào visitada naquele nível. Se o cursor estava na <b>Árvore de Tipos de Seções</b>, ao teclar seta para esquerda o cursor recairá sobre a última seção visitada na <b>Árvore de Seções</b>. 
+</td>
+</tr>
+<tr>
+<td>
+Seta horizontais (direita/esquerda) + Shift
+</td>
+<td>
+Quando aperta o shift juntamente com a seta e o cursor está em qualquer um dos "niveis", o cursor recai sobre o último visitado. Quando está em <b>Árvore de Seções</b>, ou em árvore de tipos de seçòes, o comportamento não se altera em relação a não pressionar shift.
+</td>
+</tr>
+<tr>
+<td>
+Seta verticais (para cima e para baixo)
+</td>
+<td>
+As setas para cima e para baixo movem o cursor num mesmo nível acessando a seção anterior ou inferior, respectivamente. Se o cursor já estiver na primeira seção e a seta para cima for acionada, o cursos se moverá para a última seção daquele nível. Se o cursor estiver na última seção daquele nível e a seta para baixo for acionada, o cursor se moverá para a primeira seção daquele nível. Se o cursor estiver numa janela de nível, o conteúdo da seção é mostrado no Box 1. Se o cursor estiver na janela de árvore de seções, então o conteúdo da seção é mostrado no Box 2.
+</td>
+</tr>
+<tr>
+<td>
+Home
+</td>
+<td>
+A tecla Home leva para a primeira seção do nível selecionado.
+</td>
+</tr>
+<tr>
+<td>
+PageDown
+</td>
+<td>
+A tecla PageDown leva para a primeira seção tópico que tenha um filho do nível selecionado.
+</td>
+</tr>
+<tr>
+<td>
+"1"
+</td>
+<td>
+A tecla "1" faz entrar no modo de edição através do Box 1. O Box 1 é uma janela para alterar o texto da seção. Basta teclar "1" e começar a digitar para que o texto seja alterado. Mas o texto não estará salvo. Para salvar é preciso teclar "Tab". Se quiser abandonar as alterações é preciso teclar "Esc". Quando o sistema entra em modo edição pelo acionamento da tecla "1", as setas não mais permitem movimentar o cursor pelas seções. Quando qualquer tecla for acionada nesse modo, a janela ficará amarela, indicando que está em edição. Portanto, nesse modo as setas passam a servir para movimentar o cursor dentro do campo de edição do Box 1. Abaixo do texto de edição do Box 1 estão pequenas caixinhas que mostram as várias versões gravadas daquela seção. Ao entrar no Box 1 com "1" é possível navegar pelas versões usando shift-setas, desde que o box não tenha começado a ser editado. Se vc quer navegar nas versões com shift-setas, e já estiver editando o texto, isso só será possível se vc teclar Esc, saindo do modo edição e entrando de novo com "1", mas sem digitar alguma tecla que leve o sistema a editar o texto da seção.
+</td>
+</tr>
+<tr>
+<td>
+"2"
+</td>
+<td>
+A tecla "2" faz entrar no modo de edição através do Box 2. O Box 2 é uma janela para alterar o texto da seção. Basta teclar "2" e começar a digitar para que o texto seja alterado. Mas o texto não estará salvo. Para salvar é preciso teclar "Tab". Se quiser abandonar as alterações é preciso teclar "Esc". Se o cursor estiver na <b>Árvore de Tipos de Seções</b> quando a tecla "2" for acionada, então o Box 2 entra em modo de inserção de uma nova seção, que pode ocorrer antes, depois ou abaixo da seção atual, dependendo do botão da tela que for acionado com o mouse. Quando o sistema entra em modo edição pelo acionamento da tecla "2", as setas não mais permitem movimentar o cursor pelas seções. As setas passam a servir para movimentar o cursor dentro do campo de edição do Box 2. Os efeitos de edição descritos no box 1 acima valem para o Box 2, exceto na questão de inserção de uma nova seção.
+
+</td>
+</tr>
+<tr>
+<td>
+Tab
+</td>
+<td>
+Se o sistema estiver em modo de edição, ou seja, se a tecla "1"  ou a tecla "2" foram acionadas e o texto dos Box 1 ou 2 foi alterado, então a tecla "Tab" gravará uma nova versão do trecho, sem prejuízo para as demais. 
+</td>
+</tr>
+<tr>
+<td>
+Escape ou Esc
+</td>
+<td>
+Permite sair do modo edição sem gravar. Ou seja, se o sistema estiver em modo edição, ou seja, se as teclas "1" ou "2" foram acionadas para permitir a edição nos Box 1 ou 2, ao acionar a tecla "Esc" o sistema sai do modo edição e o cursor pode voltar a ser movimentado com as setas. 
+</td>
+</tr>
+
+
+</table>
+
+<h2>Cliques</h2>
+
+<p>Existem algumas ações que só estão disponíveis mediante cliques.</p>
+
+<p>Você pode clicar na bolinha branca que fica à esquerda do nome do tipo de seção, na <b>Árvore de Tipos de Seções</b>. Ao fazer isso, o sistema muda o modo de visualização. Por exemplo, ao clicar ao lado de "capa", apenas as seções relacionadas à "capa" serão mostradas. Se clicar em "topicos" apenas a estrutura de tópicos será mostrada. Para mostrar a estrutura de tópicos juntamente com seus parágrafos, é preciso selecionar o checkbox "Mostrar Filhos" na janela de <b>Árvore de Tipos de Seções</b>..</p>
+
+<p>Ao passar o mouse sobre uma seção, uma janela "fantasma" aparecerá por um tempo curto, mostrando algumas das características daquela seção.</p>
+
+</div>
+
+
+</body>
+
+<script>
+var titulos=document.getElementsByTagName('h2');
+menuzinho=document.getElementById('menu');
+
+randomico = Math.random() * 1000;
+
+for (i=0; i < titulos.length; i++) {
+    
+    var titulo = titulos[i];
+    titulo.id = 'item_'+i+'_'+randomico;
+    menuzinho.innerHTML=menuzinho.innerHTML+'<br><a class=lista_de_conteudo href=#'+titulo.id+'>'+parseInt(i+1)+') '+titulo.innerHTML+'</a><br>';
+
+
+
+}
+
+</script>
+
+
+</html>

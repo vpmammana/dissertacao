@@ -574,6 +574,25 @@ var oReq=new XMLHttpRequest();
            oReq.send();
 }
 
+
+function insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho){
+
+
+var resposta="";
+var url='../php/insere_dir.php?nome_secao='+nome_secao+'&id_tipo_secao='+id_tipo_secao+'&trecho='+trecho;
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+		     elemento.value = resposta.trim(); // estah voltando com o linebreak no comeco por causa do ?> no final do arquivo identifica.php.cripto
+		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
+		     //textarea.setAttribute("data-alterado","sem_gravar");
+		     //textarea.style.backgroundColor = cor_de_edicao; 
+
+	   }
+           oReq.send();
+}
+
 function carrega_versao_selecionada(id_chave_secao, textarea){
 elemento = textarea;
 
@@ -629,10 +648,28 @@ var oReq=new XMLHttpRequest();
 }
 
 function teclado(e) {
+
+console.log("alo");
+let futuro_y =0;
 	//console.log("x: "+x+" y:"+y)
+	//if (e.ctrlKey) {alert("control");}
+
+	matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
+	console.log(matriz_ganha_foco[x][1][y]);
+	document.getElementById(matriz_ganha_foco[x][0]).style.border = velha_borda_de_nivel_focalizada;
+
 	let edita_secoes_mouse_id_secao = document.getElementById("edita_secoes_mouse_id_secao").innerText;
 	if (matriz_ganha_foco[x][0].includes("nivel")) {
 		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+			if (e.key == " " && !modo_edicao) {
+	
+				console.log("primeira chamada");
+				futuro_y = gemeo_atual_na_arvore.getAttribute("data-y");
+				y--;
+				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} 
+				guarda_ultimo_visitado[x]=y;
+			}
+
 	}
 	if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
 		gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
@@ -642,8 +679,6 @@ function teclado(e) {
 		e.preventDefault();
 		e.stopPropagation();	
 	}
-		matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
-		document.getElementById(matriz_ganha_foco[x][0]).style.border = velha_borda_de_nivel_focalizada;
 
 		if (e.key == "Escape" && modo_edicao) {
 			if (confirm("Tem certeza que quer sair sem gravar?")) {
@@ -758,7 +793,7 @@ function teclado(e) {
 				if (vem_antes<0) {vem_antes = matriz_ganha_foco.length -1;}
 				if ((guarda_ultimo_visitado[vem_antes] == -1 || !matriz_ganha_foco[x][0].includes("nivel") || matriz_ganha_foco[x][0].includes("nivel_1") || e.shiftKey) && !matriz_ganha_foco[vem_antes][0].includes("flutua_para_direita")) 
 				{
-					do {x--;} while (guarda_ultimo_visitado[x] == -1); 
+					do {x--;} while (guarda_ultimo_visitado[x] < 0); 
 					if (x<0) {x=matriz_ganha_foco.length -1;}  
 					y=guarda_ultimo_visitado[x]; 
 					if (y == -2) {y=0;}
@@ -842,27 +877,25 @@ function teclado(e) {
 	
        		if (x > matriz_ganha_foco.length - 1) { x=0;} // estes ifs estavam depois dos 4 abaixo, mas parece mais lógico que fiquem aqui 
 		if (x < 0) { x=matriz_ganha_foco.length -1;}
-	        if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y"))) {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
+	        if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y")) && e.key != " ") {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
          	if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y--; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} if (y < 0) {y = matriz_ganha_foco[x][1].length - 1;}} // evita o contrario. note que precisa tambem cuidar do caso do ArrowDown, porque nesse caso, este if faz voltar para cima e nao desce nunca mais... entao no ArrowDown, se perceber que vai cair na secao selecionada pelo Box2, tem que pular para baixo
+
+// a partir daqui jah decidiu qual eh o valor de x e y
 
 		if (matriz_ganha_foco[x][0].includes("nivel")) {
 			gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 		}
 		if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
-			console.log(x + " - " + y);
+			//console.log(x + " - " + y);
 
 			gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
-			console.log(gemeo_atual_no_nivel);			
+			//console.log(gemeo_atual_no_nivel);			
 			velho_gemeo_no_nivel.style.opacity = "1.0";
 			if (gemeo_atual_no_nivel != null) {gemeo_atual_no_nivel.style.opacity = "0.3";velho_gemeo_no_nivel = gemeo_atual_no_nivel;} // existe uma situacao para flutua_para_direita em que dah null, quando escolhe raiz
 			
 			
 		}
 	
-		// ifs estavam aqui
-
-			
- 
 //		console.log("antes"  + x + " - " + matriz_ganha_foco[x][0] + " -> "+ matriz_ganha_foco[x][1][y].id + document.getElementById(matriz_ganha_foco[x][1][y].id).innerHTML );
 
 		ajusta_bordas_do_selecionado();
@@ -922,6 +955,18 @@ function teclado(e) {
 			textarea_mouse.setAttribute("data-id-secao", matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
 			carrega_versoes_scroll("versoes_mouse",  matriz_ganha_foco[x][1][y].getAttribute("data-id-chave"), "textarea_mouse");
 		}
+	if (matriz_ganha_foco[x][0].includes("nivel")) {
+		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+			if (e.key == " " && !modo_edicao) {
+				console.log("segunda chamada");
+				matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
+				document.getElementById(matriz_ganha_foco[x][0]).style.border = velha_borda_de_nivel_focalizada;
+				y = futuro_y;
+				x = matriz_ganha_foco.length -2; // -2 eh a flutua_para_direita. Por que? pela ordem de criacao
+				teclado(e); 
+			}
+
+	}
 
 } // fim teclado
 
@@ -1149,11 +1194,11 @@ function restringe_tipos_que_ganham_foco(tipo_pai){ // para a arvore de tipos, a
 	matriz_ganha_foco[indice_seletor][1].length = 0;
 	if (!matriz_ganha_foco[indice_seletor][0].includes("seletor")) {alert("Erro 12312: não foi possível encontrar a janela de seleção de tipos"); return;}
 	let arvore_tipos_de_secoes = document.getElementsByClassName("arvore_de_tipos");
-	console.log(indice_seletor + " - "+tipo_pai);
+	//console.log(indice_seletor + " - "+tipo_pai);
 	for (i=0; i < arvore_tipos_de_secoes.length; i++){
 		if (arvore_tipos_de_secoes[i].getAttribute("data-id-pai") == tipo_pai){
 			matriz_ganha_foco[indice_seletor][1].push(arvore_tipos_de_secoes[i]);
-			console.log(matriz_ganha_foco[indice_seletor][1]);
+			//console.log(matriz_ganha_foco[indice_seletor][1]);
 			
 		}
 

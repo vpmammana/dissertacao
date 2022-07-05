@@ -7,12 +7,27 @@
 </head>
 <style>
 
+table {
+	margin: 0 auto;
+}
+
+.citacao {
+	font-size: 1rem;
+	font-weight: bold;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 table, td, tr, th {
+	padding: 10px;
+	
+}
+
+.tabela td,th {
+	background-color: gray;
 	border-collapse: collapse;
 	border: 1px solid black;
-	padding: 10px;
-	background-color: gray;
-	
 }
 
 
@@ -52,6 +67,8 @@ h2 {
                 max-height: 99%;
                 box-sizing: border-box;
                 padding: 10px;
+		padding-left: 100px;
+		padding-right: 100px;
                 font-size: 1.2rem;
 		background-color: lightgray;
                 }
@@ -73,6 +90,14 @@ h2 {
                 overflow-y: scroll;
                 }
 
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	margin-bottom: 0px;
+}
+
 
 </style>
 <body>
@@ -80,23 +105,245 @@ h2 {
 <div id="menu" >teste</div>
 
 <div id="conteudo">
-<h1>Manual do RedarTex</h1>
+<h1>Forma vs. Conteúdo - Manual do <i>RedarTex</i></h1>
 
-<p>O presente documento é o manual do editor de textos <i>RedarTex</i>, criado por Victor Mammana</p>
+<p>O presente documento é o manual do editor de textos <i>RedarTex</i>, criado por Victor Mammana.</p>
 
 <h2>Introdução</h2>
 
-<p>Redigir um texto científico requer uma disciplina na organização das seções que toma bastante tempo do autor. Além disso, é necessária uma disciplina tipográfica que acaba atrapalhando o processo criativo, dado que tira energia do autor no momento em que ele deveria estar focalizado no conteúdo.</p>
+<p>Redigir um texto científico requer a organização de suas seções de forma a falicitar a compreensão pelo leitor, o que toma bastante tempo do autor.  O problema é que o autor demora para consolidar uma compreensão de como o seu texto será organizado, causando uma extenuante espiral de criação e destruição de seções, parágrafos, capítulos.</p>
 
-<p>O objetivo do <i>RedarTex</i> é otimizar esse trabalho, retirando as distrações que acabam emperrando o processo criativo.</p>
+<p>Além disso, é necessária uma disciplina tipográfica que acaba atrapalhando o processo criativo, dado que dele tira muita energia, que é desviada para garantir a aparência do documento (tipo de letra, tamanho das letras, tipo de parágrafo, etc.).</p> 
 
-<p>A descrição abaixo tem o papel de especificação do sistema e por isso pode parecer um pouco complicada para o usuário final. A utilização do sistema é de certa forma auto-explicativa, mas alguma características demandam um pouco de prática, como a navegação com as setas. Essa navegação foi desenhada para ser otimizada, no sentido de reduzir o número de passos para chegar nas explicações, bem como o número de teclas necessárias para operar.</p>
+<p>Esta desfocalização ocorre justamente no momento em que toda a energia deveria estar focalizada no conteúdo. É comum, em editores convencionais, o autor se perder na organização de capítulos, seções, sub-seções e sub-sub-seções de seu texto.</p>
+
+<p>Por seu lado, a tipografia de documento é um assunto que requer muito conhecimento e deixá-lo a cargo do autor normalmente deixa o texto com baixa qualidade visual, sem tirar proveito da padronização, que facilita a leitura.</p>
+
+<p>Uma solução clássica para evitar que o autor tenha que perder energia com a <i>tipografia</i> de seu documento é o uso do processador <b>TeX</b>.</p>
+
+<p>Segundo a Wikipedia:</p>
+
+<table width='30%'>
+<tr>
+<td>
+<i>
+O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald Knuth[1] e lançado em 1978. (...) o TeX foi projetado tendo em vista dois objetivos principais: permitir que qualquer pessoa produza livros de alta qualidade com o mínimo esforço e fornecer um sistema que produza exatamente os mesmos resultados em todos os computadores em qualquer momento.[2] O TeX é um software livre, o que o torna mais acessível a um número maior de pessoas. 
+</i>
+</td>
+</tr>
+</table>
+
+<p>Mas existe uma barreira de aprendizagem muito alta para o uso do <b>TeX</b>, ou de seu sistema de macros <b>LaTeX</b>.</p>
+
+<p>Normalmente, a pessoa que não vai seguir carreira acadêmica faz apenas duas teses na vida: a dissertação de mestrado e a tese de doutorado. Mesmo considerando as dores de cair na armadilha de usar um editor tipo "Word" na dissertação de mestrado, situação que geralmente produz textos fora dos padrões editoriais, é comum que os autores caiam novamente nela. Isso porque, se for para o doutoramento, o autor se deparará com o mesmo dilema do mestrado: "<i>será que vale a pena perder tempo aprendendo o TeX, se eu só vou usar mais uma vez?</i>". A verdade é que a demanda do doutorado não é estímulo suficiente para motivar o pós-graduando a vencer a barreira de aprendizado do <b>Tex</b>, porque essa ferramenta dificilmente será usada novamente. O custo de aprender a usá-la acaba não compensando.</p>
+
+<h2>Por que o <i>RedarTex</i> foi criado?</h2>
+
+<p>O objetivo do <i>RedarTex</i> é criar um meio de diminuir essa barreira de aprendizagem, retirando as distrações que acabam emperrando o processo criativo de elaboração do texto, mas garantindo uma alta qualidade tipográfica no texto final da dissertação ou tese.</p>
+
+<p>Um segundo objetivo do <i>RedarTex</i> é prover um meio de organizar as seções, criando um sistema otimizado de navegação pelas seções do texto.</p>
+
+<p>Um terceiro objetivo do <i>RedarTex</i> é integrar ferramentas de Análise de Linguagem Natural em português para auxiliar a redação do texto e a identificação de erros de português, provendo índices de originalidade e melhorando a qualidade dos textos produzidos pela academia brasileira. Este terceiro objetivo ainda está em desenvolvimento.</p>
+
+<p>A descrição abaixo tem o papel de especificação do sistema e por isso pode parecer um pouco complicada para o usuário final. Nesse caso, basta ler muitas vezes...</p>
+
+<p> A utilização do sistema é de certa forma auto-explicativa, mas alguma características demandam um pouco de prática, como a navegação com as setas. Essa navegação foi desenhada para ser otimizada, no sentido de reduzir o número de passos (estados) para chegar nas funcionalidades desejadas, bem como o número de teclas necessárias para operar.</p>
+
+<h2>Conceito de Nível</h2>
+
+<p>O uso de níveis hierárquicos em textos científicos é uma forma de criar uma taxonomia de abordagens de assuntos, que organiza o discurso para facilitar sua compreensão por parte do leitor.</p>
+
+<p>A taxonomia é uma aplicação da teoria de conjuntos, através da qual se buscam formas de organizar o conhecimento em conjuntos disjuntos, ou seja, conjuntos que não têm elementos em comum.</p>
+
+<p>Podemos pensar nos capítulos de uma tese como esses conjuntos disjuntos, todos contidos no conjunto "tese". </p>
+
+<img src="../../imagens/Conjuntos.png" width="30%">
+<table width="30%"><tr><td><label class='citacao'>A tese é um conjunto disjunto de capítulos. O capítulo, por sua vez, é um conjunto disjunto de seções.</label></td><tr></table>
+
+<p>Essa "taxonomia de abordagem de assuntos" pressupõe uma estrutura hierárquica, que vai sendo construída recursivamente até os níveis mais baixos e elementares. Na imagem abaixo o conteúdo do capítulo "Introdução" é mostrado.</p>
+
+<img src="../../imagens/Secoes.png" width="30%">
+<table width="30%"><tr><td><label class='citacao'>As seções são conjuntos de sub-seções, da mesma forma como os capítulos são conjuntos de seções e a tese (ou dissertação) é um conjunto de capítulos.</label></td><tr></table>
+
+<p>Assim, os capítulos contém seções, que precisam respeitar a forma de abordagem pertinente a aquele capítulo, e as seções contém sub-seções que, por sua vez, também respeitam essa restrição. As sub-seções, por sua vez, podem conter sub-sub-seções e assim recursivamente. Outra restrição complementar é a que determina que "não é permitido usar a abordagem de um capítulo (por exemplo, <i>Materiais e Métodos</i>) numa seção de outro capítulo (por exemplo, <i>Introdução</i>").</p>
+
+<p>Isso significa, também, que a abordagem adotada para tratar um assunto num determinado capítulo não se repetirá em outro capítulo.</p>
+
+<p> Uma consequência importante dessas restrições é que a intersecção de dois capítulos diferentes vai resultar em um "conjunto vazio de abordagens de assuntos", ou seja, não existem abordagens de assuntos que se repitam dentre dois capítulos diferentes, mesmo que o assunto em si se repita. </p>
+
+<p>É comum que um mesmo assunto seja tratado em dois capítulos diferentes, porque os capítulos precisam dialogar, mas a abordagem desses assuntos é que não se repete. Por exemplo: imagine uma tese sobre a história do Projeto WASH. É natural que o programa OLPC seja citado várias vezes em capítulos diferentes, mas as abordagens têm que ser diferentes, sob pena de ferir um princípio da Taxonomia. </p>
+
+<p>Essa taxonomia de "formas de abordagem de assuntos" ajuda muito o leitor a organizar seus pensamentos quando está lendo: ele sabe que a forma de tratar um determinado assunto na Introdução não se repitirá nos demais capítulos, por exemplo. Isso traz ganhos em termos de concisão, rastreabilidade, organização e coerência, evitando redundâncias e conflitos de informação (e.g. seria desastroso se um conceito que se consolidou na "Introdução" fosse desconstruído na "Conclusão", deixando a tese incoerente).</p> 
+
+<p>Os índices usados tanto em dissertações como em teses são o meio de organizar visualmente essa "taxonomia", facilitando a busca não sequencial de informações no texto. Abaixo é reproduzido um trecho de índice obtido no site "Educação UmComo", o qual aqui será citado como exemplo:</p>
+
+<img src="../../imagens/sumario_18271_1_600.webp" width="30%">
+<table width="30%"><tr><td><label class='citacao'>Exemplo de índice onde pode ser visualizada a estrutura hierárquica de capítulos, seções, sub-seções e sub-sub-seções. (fonte: Educação UmComo)</label></td><tr></table>
+
+<p>Na imagem acima vemos os dois primeiros capítulos como nível 1:</p>
+
+<ul>
+<li>Exemplo de Capítulo: <i>"INTRODUÇÃO"</i></li>
+<li>Exemplo de Capítulo: <i>"PRESSUPOSTOS TEÓRICOS RELATIVOS À DEFICIÊNCIA"</i></li>
+</ul>
+
+<p>Na imagem acima as seções estão como nível 2:</p>
+
+<ul>
+<li>Exemplo de seção: <i>"Apresentação"</i> (no Capítulo 1)</li>
+<li>Exemplo de seção: <i>"Objetivos"</i> (no Capítulo 1)</li>
+<li>Exemplo de seção: <i>"Os tipos de deficiência"</i> (no Capítulo 2)</li>
+<li>etc.</i></li>
+</ul>
+
+<p>Na imagem acima as sub-seções estão como nível 3, a exemplo de:</p>
+
+<ul>
+<li>Exemplo de sub-seção: <i>"Objetivo Geral"</i> (no Capítulo 1, Seção 4)</i></li>
+<li>Exemplo de sub-seção: <i>"A deficiência física"</i> (no Capítulo 2, Seção 2)</i></li>
+<li>Exemplo de sub-seção: <i>"Transtornos da linguagem"</i> (no Capítulo 2, Seção 4)</i></li>
+<li>etc.</li>
+</ul>
+
+<p>Na exemplo da imagem acima o texto comporta sub-sub-seções, que estão como nível 4:</p>
+
+<ul>
+<li>Exemplo de sub-sub-seção: <i>"A comunicação aumentativa e alternativa"</i> (no Capítulo 2, Seção 2, Sub-Seção 1)</li>
+<li>Exemplo de sub-sub-seção: <i>"O Sistema Braille"</i> (no Capítulo 2, Seção 2, Sub-Secão 3)</li>
+<li>etc.</li>
+</ul>
+
+<p>É importante notar que o exemplo citado se utiliza de numeração nas seções e sub-seções, além da numeração nos Capítulos. Desta forma, os capítulos têm um númeral antes do nome do capítulo, as seções têm 2 numerais separados por um ponto, as sub-seções têm 3 numerais separados por pontos e as sub-sub-seções têm 3 numerais, também separados por pontos. </p>
+
+<p>Para exemplificar a relação entre os níveis, seções, sub-seções num texto de uma dissertação editada pelo <i>RedarTex</i> foi elaborada a tabela abaixo:</p>
+
+<table class="tabela">
+<tr>
+<th>Nível</th>
+<th>Capítulo ou Seção</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Capítulo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Seção</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sub-Seção</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sub-sub-Seção</td>
+</tr>
+</table>
+
+<p>A imagem abaixo mostra a organização de capítulos, seções e sub-seções no caso de uma dissertação.</p>
+
+<img src="../../imagens/JanelaPrincipal_captions_2.png" width="40%">
+<table  width="40%"><tr><td><label class='citacao'>A estrutura hierárquica do texto pode ser vista nas <b>Janelas de Nível</b>, que ficam à esquerda.</label></td><tr></table>
+<p>O <i>RedarTex</i> suporta o encadeamento de sub-seções, com níveis maiores que 3, mas o autor não recomenda ainda o uso desse recurso, porque não foram testadas as consequências da exebição de muitos níveis em telas de computador pequenas, o que pode prejudicar a usabilidade.</p>
+
+
+
+
+<h2>Descrição da Interface</h2>
+
+<p>Abaixo vemos um "print" da janela principal do <i>RedarTex</i></p>
+
+<img src="../../imagens/JanelaPrincipal_captions.png" width="40%">
+<table  width="40%"><tr><td><label class='citacao'>Visão da interface do <i>RedarTex</i> onde estão presentes os seguintes elementos principais: <b>Janelas de Níveis</b> (retângulos verdes), <b>Árvore de Seções</b> e <b>Árvore de Tipos de Seções</b>.</label></td><tr></table>
+
+<p>Na imagem acima vemos 5 regiões principais:</p>
+
+<ul>
+<li><b>Janelas de Nível</b>: engloba as janelas que mostram as seções, organizadas em níveis. A <b>Janela de Nível 1</b> tem o nível mais alto das seções, que no caso de uma dissertação, por exemplo, são os capítulos da dissertação. No formato dissertação normalmente há uma quebra de página nas seções do nível 1.</li>
+<li><b>Árvore de Seções</b>: é uma forma diferente de ver as mesmas seções que são mostradas nas <b>Janelas de Nível</b>. Aqui todas as seções são mostrados numa mesma janela, organizadas por níveis no formato de árvore. Quanto mais à direita a seção, mais baixo é o nível, sendo que "raiz" é o nível 0.</li>
+<li><b>Box 1</b>: mostra a seção que foi selecionada pelo cursor quando este estava em um <b>Janela de Nível</b>. Se o cursor muda de uma <b>Janela de Nível</b> para a <b>Árvore de Seções</b> ou para a <b>Árvore de Tipos de Seções</b>, o <b>Box 1</b> continuará mostrando o conteúdo da última seção visitada em qualquer uma das <b>Janelas de Nível</b>.</li>
+<li><b>Box 2</b>: mosra a seção que foi selecionada pelo cursor quando este estava na <b>Árvore de Seções</b>.</li>
+<li><b>Árvore de Tipos de Seções</b>: mostra a hierarquia de tipos de seções, indicando quais as opções de filhos para uma determinada seção.</li>
+</ul>
+
+<h2>Navegação na Interface</h2>
+
+<p>O <i>RedarTex</i> foi desenhado para ser utilizado por meio do teclado. O motivo é reduzir o custo de operação associado aos "erros" de posicionamento característicos do uso do Mouse.</p>
+
+<p>O mouse é um instrumento muito mais custoso em termos de usabilidade, uma vez que posicionar o cursor em um elemento da tela, seja um botão ou menu, requer correções sucessivas de posicionamento.</p>
+
+<p>Experimente você mesmo: quando o usuário move o mouse para posicionar o cursor sobre um elemento da tela, é comum "passar do ponto", ou seja, o cursor vai além do elemento onde se desejava posicioná-lo. O usuário é obrigado a "voltar um pouquinho" e, não raramente, "passa do ponto" novamente, requerendo um novo ajuste. Esse processo diminui muito a eficiência de interação, trazendo custos motores e cognitivos para o usuário.</p>
+
+<p>O teclado é muito mais eficiente na interação com a tela, desde que o usuário dedique um pouco de tempo para "aprender as teclas".</p>
+
+<p>Quanto menos teclas para decorar melhor a experiência de interação.</p>
+
+<p>Da mesma forma, a experiência para o usuário fica melhor se forem reduzidos os "estados" que precisam ser percorridos para acionar uma determinada função.</p>
+
+<p>No <i>RedarTex</i> buscou-se otimizar essa interação, restringindo a operação ao uso das seguintes teclas, cujas funções serão detalhadas mais a frente:</p>
+
+<ul>
+<li>Setas (cima, baixo, direita, esquerda)</li>
+<li>Setas com Shift apertado</li>
+<li>PageDown</li>
+<li>Home</li>
+<li>Tab</li>
+<li>teclas "1" e "2"</li>
+<li>Escape ou ESC</li>
+<li>Espaço</li>
+</ul>
+
+<h2>Fluxo de navegação na interface</h2>
+
+<p>O fluxo de navegação nas janelas do <i>RedarTex</i> é controlado pelas setas direita e esquerda. O fluxo fica preso em um laço: quando o usuário atinge a última janela, volta para a primeira. Esse fluxo circular pode se dar tanto no sentido horário quanto no sentido anti-horário.</p>
+
+<table width="76%">
+<tr>
+<th>Ao teclar a <b>seta para direita</b> a navegação ocorre no sentido <br>ANTI-HORÁRIO </th>
+<th>Ao teclar a <b>seta para esquerda</b> a navegação ocorre no sentido HORÁRIO </th>
+</tr>
+<tr>
+<td>
+<img src="../../imagens/JanelaPrincipal_anti_horario.png" width="100%">
+<table width="100%"><tr><td><label class='citacao'>Sentido de navegação usando a seta para a direita.</label></td><tr></table>
+</td>
+<td>
+<img src="../../imagens/JanelaPrincipal_horario.png" width="100%">
+<table width="100%"><tr><td><label class='citacao'>Sentido de navegação usando a seta para a esquerda.</label></td><tr></table>
+</td>
+</tr>
+</table>
+
+
+
+A sequência, no sentido anti-horário, começando nas <b>Janelas de Nível</b> é:
+
+<ul>
+<li>Janelas de Nível</li>
+<li>Árvore de Seções</li>
+<li>Árvores de Tipos de Seções</li>
+</ul>
+
+<p>A sequência acima é obtida teclando a seta para direita.</p>
+
+A sequência, no sentido horário, começando nas <b>Janelas de Nível</b> é:
+
+<ul>
+<li>Janelas de Nível</li>
+<li>Árvores de Tipos de Seções</li>
+<li>Árvore de Seções</li>
+</ul>
+
+<p>A sequência acima é obtida teclando a seta para esquerda.</p>
+
+<p>É importante notar que o número de <b>Janelas de Nível</b> mostrado na tela depende das características do documento apresentado e de qual <i>radio button</i> da <b>Árvore de Tipos de Seções</b> está selecionado. Uma explicação detalhada sobre esses <i>radio buttons</i> é feita adiante. </p>
+
 
 <h2>Teclas</h2>
 
 <p>O <i>RedarTex</i> usa as seguintes teclas:</p>
 
-<table>
+<table class='tabela' width='80%'>
 <tr>
 <th>
 Tecla
@@ -110,7 +357,7 @@ Função
 Seta para Direita
 </td>
 <td>
-Acessa o próximo nível à direita. Se estiver no último nível, acessará a <b>Árvore de Seções</b>. Se estiver na <b>Árvore de Seções</b>, acessará a <b>Árvore de Tipos de Seções</b>. Ao acessar o próximo nível, o cursor recai sobre a primeira seção numa hierarquia inferior (filho). Se o cursor está numa seção que não tem hierarquia inferior (e.g. "paragrafo"), então o cursor vai direto para a <b>Árvore de Seções</b>. Se a seção onde estava o cursor, antes de teclar a seta, é do tipo parágrafo, então não há filhos e ao teclar seta para direita, o cursor irá para a árvore de seções. Se a seção onde estava o cursor, antes de teclar a seta, era do tipo tópico, e se esse tópico tiver filhos, então ao teclar a seta para a direita, o cursor recairá sobre o filho. Se a tecla Shift estiver pressionada, então o cursor recairá sobre o último visitado naquele nível. 
+Acessa o nível inferior em relação à <b>Janela de Nível</b> atualmente selecionada, mudando o cursor para a próxima <b>Janela de Nível</b> à direita, se houver um filho no nível inferior. Se estiver no nível mais baixo, ou se a seção atual não tiver filhos no nível inferior, acessará a <b>Árvore de Seções</b>. Se estiver na <b>Árvore de Seções</b>, acessará a <b>Árvore de Tipos de Seções</b>. Ao acessar o próximo nível, o cursor recai sobre a primeira seção numa hierarquia inferior (filho). Se o cursor está numa seção que não tem hierarquia inferior (e.g. "paragrafo"), então o cursor vai direto para a <b>Árvore de Seções</b>. Se a seção onde estava o cursor, antes de teclar a seta, é do tipo parágrafo, então não há filhos e ao teclar seta para direita, o cursor irá para a árvore de seções. Se a seção onde estava o cursor, antes de teclar a seta, era do tipo tópico, e se esse tópico tiver filhos, então ao teclar a seta para a direita, o cursor recairá sobre o filho. Se a tecla Shift estiver pressionada, então o cursor recairá sobre o último visitado naquele nível. 
 </td>
 </tr>
 <tr>
@@ -118,7 +365,7 @@ Acessa o próximo nível à direita. Se estiver no último nível, acessará a <b>Árvo
 Seta para Esquerda
 </td>
 <td>
-Acessa o nível anterior à esquerda. Se estiver no primeiro nível ("nivel_1"), acessará a <b>Árvore de Tipos de Seções</b>. Se estiver na <b>Árvore de Tipos de Seções</b>, acessará a <b>Árvore de Seções</b>. O cursor recairá sobre o "pai" da seção. Se o cursor estava na <b>Árvore de Seções</b>, então o cursor recairá sobre a última seçào visitada naquele nível. Se o cursor estava na <b>Árvore de Tipos de Seções</b>, ao teclar seta para esquerda o cursor recairá sobre a última seção visitada na <b>Árvore de Seções</b>. 
+Acessa o nível superior ao atualmente selecionado, mudando o cursor para a <b>Janela de Nível</b> à esquerda, caso o nível atualmente selecionado não seja o mais alto. Se estiver no primeiro nível ("nivel_1"), acessará a <b>Árvore de Tipos de Seções</b>. Se estiver na <b>Árvore de Tipos de Seções</b>, acessará a <b>Árvore de Seções</b>. O cursor recairá sobre o "pai" da seção. Se o cursor estava na <b>Árvore de Seções</b>, então o cursor recairá sobre a última seçào visitada naquela particular <b>Janela de Nível</b>. Se o cursor estava na <b>Árvore de Tipos de Seções</b>, ao teclar seta para esquerda o cursor recairá sobre a última seção visitada na <b>Árvore de Seções</b>. 
 </td>
 </tr>
 <tr>
@@ -202,13 +449,130 @@ Se o editor não estiver no modo ediçào, ou seja, se não foram usadas as teclas "
 
 <p>Existem algumas ações que só estão disponíveis mediante cliques.</p>
 
-<p>Você pode clicar na bolinha branca que fica à esquerda do nome do tipo de seção, na <b>Árvore de Tipos de Seções</b>. Ao fazer isso, o sistema muda o modo de visualização. Por exemplo, ao clicar ao lado de "capa", apenas as seções relacionadas à "capa" serão mostradas. Se clicar em "topicos" apenas a estrutura de tópicos será mostrada. Para mostrar a estrutura de tópicos juntamente com seus parágrafos, é preciso selecionar o checkbox "Mostrar Filhos" na janela de <b>Árvore de Tipos de Seções</b>..</p>
+<p>Você pode clicar na bolinha branca que fica à esquerda do nome do tipo de seção, na <b>Árvore de Tipos de Seções</b>. Ao fazer isso, o sistema muda o modo de visualização. Por exemplo, ao clicar ao lado de "capa", apenas as seções relacionadas à "capa" serão mostradas. Se clicar em "topicos" apenas a estrutura de tópicos será mostrada. Para mostrar a estrutura de tópicos juntamente com seus parágrafos, é preciso selecionar o checkbox "Mostrar Filhos" na janela de <b>Árvore de Tipos de Seções</b>.</p>
 
 <p>Ao passar o mouse sobre uma seção, uma janela "fantasma" aparecerá por um tempo curto, mostrando algumas das características daquela seção.</p>
 
-</div>
 
 
+<h2>Seletor de tipos de seções: <i>Radio Button</i></h2>
+
+O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade de definição de uma hierarquia de tipos de seções. A janela da <b>Árvore de Tipos de Seções</b> mostra como é essa hierarquia:
+
+	<img src="../../imagens/Arvore_de_tipos_de_secoes.png" width="10%">
+
+<p>Na imagem vemos todos os tipos de seções que podem estar presentes, ou não, eu um texto editado pelo <i>RedarTex</i>.</p> 
+
+<p>Esta estrutura tem base em publicações sobre estruturação de textos científicos, em particular teses.</p>
+
+<p>Os tipos de seções são representados por retângulos azuis contendo um nome e uma bola branca do lado esquerdo. Essa bola branca é do tipo <i>radio button</i> e é "clicável".</p>
+
+	<img src="../../imagens/radio_button_tipos.png" width="10%">
+<p>Na imagem acima está indicado um conjunto de <i>radio buttons</i> de alguns netos da <i>raiz</i> </p>
+
+<p>A <b>raiz</b> é o pai de todos os tipos de seções.</p>
+
+<p>Todos os tipos de seções são filhos ou netos de <b>raiz</b>. A estrutura de texto atualmente em uso no <i>RedarTex</i> não apresenta bisnetos de <b>raiz</b> por uma questão de simplicidade, embora o sistema preveja essa possibilidade.</p>
+
+<p>São exemplos de filhos de raiz:</p>
+
+<ul>
+<li>capa</li>
+<li>agradecimento</li>
+<li>índice</li>
+<li>tópico</li>
+</ul>
+
+<p>São exemplos de netos de raiz:</p>
+
+<ul>
+<li>título</li>
+<li>paragrafo_resumo</li>
+<li>item_indice</li>	
+<li>parágrafo</li>
+</ul>
+
+<p></p>
+
+<p>Nesta janela vemos também o <i>checkbox</i> <b>Mostra Folhas</b>.</p>
+<p>Para explicar esse <i>checkbox</i> é preciso entender o conceito de folha no contexto da estrutura de dados <b>Árvore</b>. Uma explicação sobre <b>Mostra Folhas</b> será feita mais adiante, mas antes é preciso entender qual é o efeito de "clicar" no <i>radio button</i> da janela da <b>Árvore de Tipos de Seções</b>.</p>
+
+<h2>O que acontece quando "clico" no <i>Radio Button</i>?</h2>
+
+<p>Vimos que do lado esquerdo de cada tipo de seção da <b>Árvore de Tipos de Seções</b> existe uma bola branca "clicável" do tipo <i>radio button</i>.</p>
+
+<p>O resultado de "clicar" num radio button dessa árvore depende do estado do <i>checkbox</i> <b>Mostra Folhas</b>.</p>
+
+<p>Para compreender melhor o efeito vamos considerar que o <i>checkbox</i> <b>Mostra Folhas</b> não esteja marcado, como mostrado na figura abaixo: 
+
+	<img src="../../imagens/Mostra_filhos_sem_marcacao.png" width="10%">
+
+<p>Vamos agora ver o resultado de "clicar" no <i>radio button</i> que fica logo ao lado do tipo de seção <i>topico</i>.</p>
+
+	<img src="../../imagens/radio_button_topico.png" width="40%">
+
+<p>Na imagem acima, o pequeno círculo amarelo à direita mostra o <i>radio button</i> do tipo de seção <i>topico</i> que foi clicado quando o <i>checkbox</i> <b>Mostra Folhas</b> não estava marcado. Vemos que o <i>RedarTex</i> está mostrando a estrutura de tópicos do texto.</p>
+
+<p>Mais adiante veremos o que acontece se o <i>radio button</i> de um tipo de seção for clicado quando o <b>Mostra Folhas</b> estiver marcado, mas antes de entrar nisso, é preciso compreender os conceitos de árvore, raiz e folhas.</p>
+
+<h2>Conceituação: Árvore, raiz e folhas</h2>
+
+<p>Árvore é uma estrutura de dados que permite organizar a informação de forma hierárquica. Esse tipo de estrutura de dados é particularmente útil quando se quer "categorizar" dados. A definição de árvore é bem simples. Considerando que uma árvore é um conjunto de elementos abstratos, podemos definir árvore como:</p>
+
+<table width="30%">
+<tr>
+<td>Árvore é um conjunto de elementos que são hierarquizados pela ideia de "paternidade": todo elemento tem um único pai, exceto o elemento raiz.</td>
+</tr>
+</table>
+
+<p>Uma folha, em linguagem de estrutura de dados, é o filho que não tem filhos. </p>
+
+<table width="30%">
+<tr>
+<td>
+<p><b>Como um texto científico tem suas seções hierarquizadas em níveis (já mostramos isso no começo deste manual), a estrutura de <i>árvore</i> é a escolha natural para representá-lo.</b> </p>
+</td>
+</tr>
+</table>
+
+<p>No <i>RedarTex</i> um típico caso de "seção" que não tem filhos é o <i>parágrafo</i>. O <i>parágrafo</i> é um exemplo de nível mais baixo de <i>Seção</i>, porque não existem seções dentro do <i>parágrafo</i> e é por isso que ele é compreendido como uma <i>folha</i> da <i>árvore</i></p>
+
+<p>Em outras palavras, o <i>parágrafo</i> não tem filhos e por isso é o fim da "árvore de seções".</p>
+
+<p>Outro exemplo de "seção" que não tem filhos é o tipo de seção <i>imagem</i>:</p>
+
+	<img src="../../imagens/Filhos_e_folhas.png" width="10%">
+<p>O tipo de seção <i>imagem</i> permite colocar uma figura no texto e, portanto, não permite seções dentro dele e é por essa razão que é considerado uma <i>folha</i> da árvore.</p>
+
+<h2>Efeito do <i>Mostra Folhas</i></h2>
+
+<p>Quando o <i>checkbox</i> <b>Mostra Folhas</b> é marcado, as folhas são mostradas nas <b>Janelas de Nível</b>.</p>
+
+<p>Compare as duas imagens abaixo. A da esquerda foi obtida após clicar no <i>radio button</i> do tipo de seção <i>tópico</i>, presente na janela <b>Árvore de Tipos de Seções</b>,.
+
+<table width="76%">
+<tr>
+<th>Resultado de clicar no <i>radio button</i> localizado ao lado de <i>topico</i>, quando <b>Mostra Folhas</b> está marcado.</th>
+<th>Resultado de clicar no <i>radio button</i> localizado ao lado de <i>topico</i>, quando <b>Mostra Folhas</b> NÃO está marcado.</th>
+</tr>
+<tr>
+<td>
+<img src="../../imagens/JanelaPrincipal_RADIO_check.png" width="100%">
+</td>
+<td>
+<img src="../../imagens/radio_button_topico.png" width="100%">
+</td>
+</tr>
+<tr>
+<td>As folhas (no caso são parágrafos) estão sendo mostradas, o que permite fazer a leitura do texto.</td>
+<td>As folhas (parágrafos) não estão sendo mostradas, o que facilita a visualização da estrutura hierárquica do texto.</td>
+</tr>
+</table>
+
+
+<p>Importante observar que as <i>folhas</i> sempre são mostradas na janela <b>Árvore de Seções</b> e o <i>checkbox</i> <b>Mostra Folhas</b> não afeta o comportamento da janela <b>Árvore de Seções</b>.</p>
+
+</DIV>
 </body>
 
 <script>

@@ -509,7 +509,7 @@ $zti8 =$min_folha_ts-$padding_arvore_ts;
 $zti9 =$min_top_folha_ts - $padding_arvore_ts - $altura_cabecalio_arvore;
 
 echo "
-<div id='seletor' class='moldura_ts ganha_foco' style=' width: ".$largura_moldura_ts."px; height: ".$altura_moldura_ts."px; left: ".$zti8."px; top: ".$zti9."px'><div id='cabecalio_seletor' class='cabecalio_de_arvore' style=' width: ".$largura_moldura_ts."px; height: ".$altura_cabecalio_arvore."px;'><label style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha o tipo de seção:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_filhos' >Mostra Filhos</input></div></div>
+<div id='seletor' class='moldura_ts ganha_foco' style=' width: ".$largura_moldura_ts."px; height: ".$altura_moldura_ts."px; left: ".$zti8."px; top: ".$zti9."px'><div id='cabecalio_seletor' class='cabecalio_de_arvore' style=' width: ".$largura_moldura_ts."px; height: ".$altura_cabecalio_arvore."px;'><label style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha o tipo de seção:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_filhos' >Mostra Folhas</input></div></div>
 ".$arvore_tipos."</div>";
 $conn2->next_result();
 $conn2->close();

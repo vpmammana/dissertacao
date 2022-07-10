@@ -7,6 +7,11 @@
 </head>
 <style>
 
+body {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 table {
 	margin: 0 auto;
 }
@@ -34,6 +39,8 @@ table, td, tr, th {
 
 a {
 	font-weight: bold;
+	text-align: left;
+	text-justify: none;
 }
 
 a:link {
@@ -102,7 +109,7 @@ img {
 </style>
 <body>
 
-<div id="menu" >teste</div>
+<div id="menu" >Clique abaixo para entrar no aplicativo<br><a href='https://observatorio.wash.net.br/dev_vitor/tese_2022_06_17/src/html/index.php?&tipo_secao=topico&filhos=true&n_niveis=3&json=%5B0%2C367%2C734%2C734%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%2C500%5D&fator_reducao=0.7'>Aplicativo</a><br><br></div>
 
 <div id="conteudo">
 <h1>Forma vs. Conteúdo - Manual do <i>RedarTex</i></h1>
@@ -123,7 +130,7 @@ img {
 
 <p>Segundo a Wikipedia:</p>
 
-<table width='30%'>
+<table width='50%'>
 <tr>
 <td>
 <i>
@@ -147,29 +154,165 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 
 <p>A descrição abaixo tem o papel de especificação do sistema e por isso pode parecer um pouco complicada para o usuário final. Nesse caso, basta ler muitas vezes...</p>
 
-<p> A utilização do sistema é de certa forma auto-explicativa, mas alguma características demandam um pouco de prática, como a navegação com as setas. Essa navegação foi desenhada para ser otimizada, no sentido de reduzir o número de passos (estados) para chegar nas funcionalidades desejadas, bem como o número de teclas necessárias para operar.</p>
+<p> A utilização do sistema é de certa forma auto-explicativa, mas algumas características demandam um pouco de prática, como a navegação com as setas. Essa navegação foi desenhada para ser otimizada, no sentido de reduzir o número de passos (estados) para chegar nas funcionalidades desejadas, bem como o número de teclas necessárias para operar.</p>
+
+<h2>Por que existem capítulos, seções e sub-seções?</h2>
+
+<p>Será que as pessoas já se perguntaram por que é comum organizar textos em capítulos, seções, sub-seções, sub-sub-seções, etc.?</p>
+
+<p>Há vários motivos para isso, mas os principais são:</p>
+
+<ul>
+<li>Agrupar ideias, assuntos ou abordagens semelhantes</li>
+<li>Facilitar a leitura não sequencial do texto, permitindo encontrar o ponto que se quer ler naquele momento</li>
+</ul>
+
+<h2>Conceito de Seção</h2>
+
+<p>O dicionário nos traz as seguintes definições de <i>seção</i> que são importantes para este documento (foram excluídas as que não são pertinentes ao tema aqui tratado):</p>
+
+<table width='50%'>
+<tr>
+<td>
+<i>
+Seção:
+<ol>
+<li>porção tirada de um todo; segmento.</li> 
+<li>Ação ou efeito de secionar, de dividir em partes.</li>
+<li>Aquilo que se retira de um todo; segmento: </li>
+<li>O que divide uma narrativa, texto ou obra escrita.</li>
+<li>[Botânica] Listagem taxonômica de uma subdivisão de gênero ou subgênero.</li>
+</ol>
+</i>
+</td>
+</tr>
+</table>
+
+<p>Portanto, <i>seção</i> para o presente texto é um "pedaço" do texto científico. Um <i>parágrafo</i> é uma <i>seção</i> do texto, assim como um <i>capítulo</i> é também uma <i>seção</i> do texto. As <i>seções</i> de um texto costumam conter outras <i>seções</i>, criando uma hierarquização. Por exemplo: os <i>capítulos</i> contém <i>parágrafos</i>. </p>
+
+<p>São exemplos de <i>seções</i> de um texto:</p>
+
+<ul>
+<li>Capítulos</li>
+<li>Índices</li>
+<li>Parágrafos</li>
+<li>Referências</li>
+<li>Seções</li>
+<li>Sub-Seções</li>
+<li>Sub-sub-Seções</li>
+<li>Imagens</li>
+<li>Gráficos</li>
+<li>Tabelas</li>
+<li>etc.</li>
+</ul>
+
+<p>É curioso que a palavra "Seções" apareceu na lista acima. Esta é uma situação que pode gerar confusão porque existe um segmento do texto científico (portanto, uma <i>seção</i> do texto), que normalmente está situado um nível hierárquico abaixo do capítulo, que é comumente chamado de "Seção". Então, neste caso, "Seção" (espécie) é uma das <i>seções</i> (gênero) do texto.</p>
+
+<p>As palavras "gênero" e "espécie" usadas acima estão sendo empregadas no contexto taxonômico: gênero é um conjunto de espécies. Portanto, os itens da lista acima são todos <i>espécies</i> do gênero <i>seções</i>.</p>
+
+<p>Os capítulos, seções, sub-seções, etc. estão estruturados em níveis hierárquicos. Comumente o Capítulo contém as seções que, por sua vez, contém as sub-seções e assim por diante. Um capítulo não pode conter diretamente sub-seções. É necessário obedecer a ordem hierárquica, assim como um General comanda o Coronel, que comando o tenente.</p>
+
 
 <h2>Conceito de Nível</h2>
 
-<p>O uso de níveis hierárquicos em textos científicos é uma forma de criar uma taxonomia de abordagens de assuntos, que organiza o discurso para facilitar sua compreensão por parte do leitor.</p>
+<p>O uso de níveis hierárquicos em textos científicos é consequência de que este tipo de texto é estruturado na forma de uma "taxonomia de abordagens de assuntos". Garantir que o texto científico está organizado na forma de uma "taxonomia" facilita sua compreensão por parte do leitor.</p>
 
-<p>A taxonomia é uma aplicação da teoria de conjuntos, através da qual se buscam formas de organizar o conhecimento em conjuntos disjuntos, ou seja, conjuntos que não têm elementos em comum.</p>
+<p>Antes de abordar o termo "taxonomia", é preciso compreender o conceito de "abordagem de um assunto". Segundo o dicionário, abordagem é também:</p>
 
-<p>Podemos pensar nos capítulos de uma tese como esses conjuntos disjuntos, todos contidos no conjunto "tese". </p>
+<table width='50%'>
+<tr>
+<td>
+<i>
+Abordagem: visão de um assunto; ponto de vista sobre uma questão; maneira ou método de enfocar ou interpretar algo.
+</i>
+</td>
+</tr>
+</table>
 
-<img src="../../imagens/Conjuntos.png" width="30%">
-<table width="30%"><tr><td><label class='citacao'>A tese é um conjunto disjunto de capítulos. O capítulo, por sua vez, é um conjunto disjunto de seções.</label></td><tr></table>
+<p>Assim, abordagem de um assunto é a maneira como esse assunto é interpretado ou analisado. Podemos ter um mesmo assunto abordado de diferentes maneiras. Isso é importante para o texto científico porque um mesmo assunto pode aparecer muitas vezes ao longo do texto, mas é recomendável que uma determinada abordagem daquele assunto apareça uma vez só, para evitar redundância, incoerência ou prolixia.</p>
+
+<p>É justamente a organização taxonômica das "abordagens de assuntos" que vai evitar que essas se repitam indevidamente ao longo do mesmo. Dito isso, é preciso compreender que o capítulo de "Introdução" aborda os assuntos de um jeito, diferentemente dos demais capítulos, assim como o capítulo de "Materiais e Métodos" tem o seu jeito peculiar de abordar os assuntos, e assim por diante.</p>
+
+<p>Mas como a taxonomia ajuda o autor a organizar seu texto?</p>
+
+<p>A taxonomia é uma aplicação da <b>teoria de conjuntos</b> originária da matemática, através da qual se buscam formas de organizar o conhecimento em <i>"conjuntos disjuntos dois a dois"</i>, ou seja, conjuntos que não têm elementos em comum.</p>
+
+<p>Considere os conjuntos de letras abaixo:</p>
+
+<table class="tabela">
+<tr>
+<th>Nome do Conjunto</th>
+<th>Conteúdo do Conjunto</th>
+</tr>
+<tr>
+<td>Conjunto 1</td>
+<td>A, H, M, N, S</td>
+</tr>
+<tr>
+<td>Conjunto 2</td>
+<td>B, O</td>
+</tr>
+<tr>
+<td>Conjunto 3</td>
+<td>C, Y, J</td>
+</tr>
+</table>
+
+<p>Os conjuntos 1, 2 e 3 definidos acima são "disjuntos dois-a-dois", porque não têm elementos repetidos.</p>
+
+<p>Agora vamos analisar uma situção em que os conjuntos não são disjuntos dois a dois. Considere a tabela abaixo:</p>
+
+<table class="tabela">
+<tr>
+<th>Nome do Conjunto</th>
+<th>Conteúdo do Conjunto</th>
+</tr>
+<tr>
+<td>Conjunto 4</td>
+<td>A, H, M, N, S</td>
+</tr>
+<tr>
+<td>Conjunto 5</td>
+<td>B, T, O, M</td>
+</tr>
+<tr>
+<td>Conjunto 6</td>
+<td>C, Y, J</td>
+</tr>
+</table>
+
+<p>Os três conjuntos acima não são disjuntos dois a dois, porque o Conjunto 4 e o Conjunto 5 contém a letra M e, portanto, a interseccão dos dois não é nula.</p>
+
+<p>Agora que sabemos que uma taxonomia é uma forma de organizar o conhecimento em conjuntos disjuntos dois a dois, vamos ver na prática como isso funciona.</p>
+<p>  Vamos pensar num jeito de organizar veículos automotores em conjuntos. Vamos dividir os veículos entre "carros" e "motocicletas". Essa é um taxonomia funcional, porque carros têm exatamente 4 rodas e motos têm exatamente 2 rodas, portanto é impossível que uma elemento do conjunto carros apareça no conjunto motos, porque um dado veículo não tem como ter exatamente 4 rodas e exatamente 2 rodas ao mesmo tempo. O termo "exatamente" está sendo usado aqui no sentido de "nem mais nem menos" do que um determinado valor. </p>
+
+<p>Agora vamos pensar em uma outra forma de agrupar veículos automotores em conjuntos: "carros", "motocicletas" e "veículos azuis". Essa não é uma taxonomia funcional, porque podemos ter a repetição do elemento "carro azul" tanto no grupo "carros", porque "carro azul" tem exatamente 4 rodas, quanto no grupo "veículos azuis", porque "carro azul" é azul. Assim, a informação dividida nos três grupos indicados  não forma conjuntos disjuntos dois a dois, dado que pelo menos 1 elemento aparece em dois conjuntos diferentes.</p>
+
+<p>Assim, voltando aos textos científicos, podemos pensar nos capítulos de uma tese como conjuntos disjuntos dois a dois, todos contidos no conjunto "tese". </p>
+
+<img src="../../imagens/Conjuntos.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>A tese é um conjunto de capítulos. Os capitulos são conjuntos <i> disjuntos dois a dois</i> de seções, nos quais uma determinada abordagem de um assunto presente naquele capítulo não se repete em outro capítulo. O capítulo, por sua vez, é um conjunto de seções disjuntas duas a duas.</label></td><tr></table>
 
 <p>Essa "taxonomia de abordagem de assuntos" pressupõe uma estrutura hierárquica, que vai sendo construída recursivamente até os níveis mais baixos e elementares. Na imagem abaixo o conteúdo do capítulo "Introdução" é mostrado.</p>
 
-<img src="../../imagens/Secoes.png" width="30%">
-<table width="30%"><tr><td><label class='citacao'>As seções são conjuntos de sub-seções, da mesma forma como os capítulos são conjuntos de seções e a tese (ou dissertação) é um conjunto de capítulos.</label></td><tr></table>
+<img src="../../imagens/Secoes.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>As seções são <i>conjuntos disjuntos dois a dois</i> de sub-seções, da mesma forma como os capítulos são <i>conjuntos disjuntos dois a dois</i> de seções e a tese (ou dissertação) é um <i>conjunto disjunto dois a dois</i> de capítulos.</label></td><tr></table>
 
-<p>Assim, os capítulos contém seções, que precisam respeitar a forma de abordagem pertinente a aquele capítulo, e as seções contém sub-seções que, por sua vez, também respeitam essa restrição. As sub-seções, por sua vez, podem conter sub-sub-seções e assim recursivamente. Outra restrição complementar é a que determina que "não é permitido usar a abordagem de um capítulo (por exemplo, <i>Materiais e Métodos</i>) numa seção de outro capítulo (por exemplo, <i>Introdução</i>").</p>
+<p>Assim, os capítulos contém seções, que precisam respeitar a forma de abordagem pertinente a aquele capítulo, e as seções contém sub-seções que, por sua vez, também respeitam essa restrição. As sub-seções, por sua vez, podem conter sub-sub-seções e assim recursivamente.</p> 
+
+
+<p>Outra restrição complementar é a que determina que "não é permitido usar a abordagem de um capítulo (por exemplo, <i>Materiais e Métodos</i>) numa seção de outro capítulo (por exemplo, <i>Introdução</i>").</p>
 
 <p>Isso significa, também, que a abordagem adotada para tratar um assunto num determinado capítulo não se repetirá em outro capítulo.</p>
 
-<p> Uma consequência importante dessas restrições é que a intersecção de dois capítulos diferentes vai resultar em um "conjunto vazio de abordagens de assuntos", ou seja, não existem abordagens de assuntos que se repitam dentre dois capítulos diferentes, mesmo que o assunto em si se repita. </p>
+<p>Veja essa restrição de "não repetição" representada no diagrama abaixo:</p>
+
+<img src="Diagrama_taxonomia_de_textos.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>O diagrama mostra um texto completo (e.g. "tese") com 4 capítulos: "Introdução", "Materiais e Métodos", "Resultados e Análise" e "Conclusões". O assunto <b>OLPC</b> aparece repetido 4 vezes, uma vez em cada capítulo. As setas amarelas representam repetições aceitáveis, porque as abordagens são diferentes. A seta vermelha mostra uma repetição que não está de acordo com a taxonomia do texto, porque a abordagem é idêntica.</label></td><tr></table>
+
+<p>O diagrama acima mostra que o assunto OLPC pode aparecer repetidamente ao longo das Seções dos capítulos do texto, desde que a repetição se dê através de abordagens diferentes (setas amarelas). Se a repetição ocorrer com a mesma abordagem (seta vermelha), então ela deve ser evitada.</p>
+
+<p> Uma consequência importante dessas restrições é que a intersecção de dois capítulos diferentes vai resultar em um "conjunto vazio de abordagens de assuntos", ou seja, não existem abordagens de assuntos que se repetem dentre dois capítulos diferentes, mesmo que o assunto em si se repita. </p>
 
 <p>É comum que um mesmo assunto seja tratado em dois capítulos diferentes, porque os capítulos precisam dialogar, mas a abordagem desses assuntos é que não se repete. Por exemplo: imagine uma tese sobre a história do Projeto WASH. É natural que o programa OLPC seja citado várias vezes em capítulos diferentes, mas as abordagens têm que ser diferentes, sob pena de ferir um princípio da Taxonomia. </p>
 
@@ -177,8 +320,8 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 
 <p>Os índices usados tanto em dissertações como em teses são o meio de organizar visualmente essa "taxonomia", facilitando a busca não sequencial de informações no texto. Abaixo é reproduzido um trecho de índice obtido no site "Educação UmComo", o qual aqui será citado como exemplo:</p>
 
-<img src="../../imagens/sumario_18271_1_600.webp" width="30%">
-<table width="30%"><tr><td><label class='citacao'>Exemplo de índice onde pode ser visualizada a estrutura hierárquica de capítulos, seções, sub-seções e sub-sub-seções. (fonte: Educação UmComo)</label></td><tr></table>
+<img src="../../imagens/sumario_18271_1_600.webp" width="60%">
+<table width="60%"><tr><td><label class='citacao'>Exemplo de índice onde pode ser visualizada a estrutura hierárquica de capítulos, seções, sub-seções e sub-sub-seções. (fonte: Educação UmComo)</label></td><tr></table>
 
 <p>Na imagem acima vemos os dois primeiros capítulos como nível 1:</p>
 
@@ -205,7 +348,7 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 <li>etc.</li>
 </ul>
 
-<p>Na exemplo da imagem acima o texto comporta sub-sub-seções, que estão como nível 4:</p>
+<p>No exemplo da imagem acima o texto comporta sub-sub-seções, que estão como nível 4:</p>
 
 <ul>
 <li>Exemplo de sub-sub-seção: <i>"A comunicação aumentativa e alternativa"</i> (no Capítulo 2, Seção 2, Sub-Seção 1)</li>
@@ -213,9 +356,11 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 <li>etc.</li>
 </ul>
 
-<p>É importante notar que o exemplo citado se utiliza de numeração nas seções e sub-seções, além da numeração nos Capítulos. Desta forma, os capítulos têm um númeral antes do nome do capítulo, as seções têm 2 numerais separados por um ponto, as sub-seções têm 3 numerais separados por pontos e as sub-sub-seções têm 3 numerais, também separados por pontos. </p>
+<p>É importante notar que o exemplo citado se utiliza de numeração nas seções e sub-seções, além da numeração nos Capítulos. Desta forma, os capítulos têm um númeral antes do nome do capítulo, as seções têm 2 numerais separados por um ponto, as sub-seções têm 3 numerais separados por pontos e as sub-sub-seções têm 4 numerais, também separados por pontos. </p>
 
-<p>Para exemplificar a relação entre os níveis, seções, sub-seções num texto de uma dissertação editada pelo <i>RedarTex</i> foi elaborada a tabela abaixo:</p>
+<h2>Estrutura de níveis do <i>RedarTex</i></h2>
+
+<p>A tabela abaixo associa um número a cada nível do texto:</p>
 
 <table class="tabela">
 <tr>
@@ -240,10 +385,10 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 </tr>
 </table>
 
-<p>A imagem abaixo mostra a organização de capítulos, seções e sub-seções no caso de uma dissertação.</p>
+<p>A imagem abaixo mostra como os níveis estão organizados na interface do <i>RedarTex</i>.</p>
 
-<img src="../../imagens/JanelaPrincipal_captions_2.png" width="40%">
-<table  width="40%"><tr><td><label class='citacao'>A estrutura hierárquica do texto pode ser vista nas <b>Janelas de Nível</b>, que ficam à esquerda.</label></td><tr></table>
+<img src="../../imagens/JanelaPrincipal_captions_2.png" width="70%">
+<table  width="70%"><tr><td><label class='citacao'>A estrutura hierárquica do texto pode ser vista nas <b>Janelas de Nível</b>, que ficam à esquerda.</label></td><tr></table>
 <p>O <i>RedarTex</i> suporta o encadeamento de sub-seções, com níveis maiores que 3, mas o autor não recomenda ainda o uso desse recurso, porque não foram testadas as consequências da exebição de muitos níveis em telas de computador pequenas, o que pode prejudicar a usabilidade.</p>
 
 
@@ -253,8 +398,8 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 
 <p>Abaixo vemos um "print" da janela principal do <i>RedarTex</i></p>
 
-<img src="../../imagens/JanelaPrincipal_captions.png" width="40%">
-<table  width="40%"><tr><td><label class='citacao'>Visão da interface do <i>RedarTex</i> onde estão presentes os seguintes elementos principais: <b>Janelas de Níveis</b> (retângulos verdes), <b>Árvore de Seções</b> e <b>Árvore de Tipos de Seções</b>.</label></td><tr></table>
+<img src="../../imagens/JanelaPrincipal_captions.png" width="70%">
+<table  width="70%"><tr><td><label class='citacao'>Visão da interface do <i>RedarTex</i> onde estão presentes os seguintes elementos principais: <b>Janelas de Níveis</b> (retângulos verdes), <b>Árvore de Seções</b> e <b>Árvore de Tipos de Seções</b>.</label></td><tr></table>
 
 <p>Na imagem acima vemos 5 regiões principais:</p>
 
@@ -297,7 +442,7 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 
 <p>O fluxo de navegação nas janelas do <i>RedarTex</i> é controlado pelas setas direita e esquerda. O fluxo fica preso em um laço: quando o usuário atinge a última janela, volta para a primeira. Esse fluxo circular pode se dar tanto no sentido horário quanto no sentido anti-horário.</p>
 
-<table width="76%">
+<table width="85%">
 <tr>
 <th>Ao teclar a <b>seta para direita</b> a navegação ocorre no sentido <br>ANTI-HORÁRIO </th>
 <th>Ao teclar a <b>seta para esquerda</b> a navegação ocorre no sentido HORÁRIO </th>
@@ -459,7 +604,7 @@ Se o editor não estiver no modo ediçào, ou seja, se não foram usadas as teclas "
 
 O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade de definição de uma hierarquia de tipos de seções. A janela da <b>Árvore de Tipos de Seções</b> mostra como é essa hierarquia:
 
-	<img src="../../imagens/Arvore_de_tipos_de_secoes.png" width="10%">
+	<img src="../../imagens/Arvore_de_tipos_de_secoes.png" width="20%">
 
 <p>Na imagem vemos todos os tipos de seções que podem estar presentes, ou não, eu um texto editado pelo <i>RedarTex</i>.</p> 
 
@@ -467,7 +612,7 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 <p>Os tipos de seções são representados por retângulos azuis contendo um nome e uma bola branca do lado esquerdo. Essa bola branca é do tipo <i>radio button</i> e é "clicável".</p>
 
-	<img src="../../imagens/radio_button_tipos.png" width="10%">
+	<img src="../../imagens/radio_button_tipos.png" width="20%">
 <p>Na imagem acima está indicado um conjunto de <i>radio buttons</i> de alguns netos da <i>raiz</i> </p>
 
 <p>A <b>raiz</b> é o pai de todos os tipos de seções.</p>
@@ -505,7 +650,7 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 <p>Para compreender melhor o efeito vamos considerar que o <i>checkbox</i> <b>Mostra Folhas</b> não esteja marcado, como mostrado na figura abaixo: 
 
-	<img src="../../imagens/Mostra_filhos_sem_marcacao.png" width="10%">
+	<img src="../../imagens/Mostra_filhos_sem_marcacao.png" width="20%">
 
 <p>Vamos agora ver o resultado de "clicar" no <i>radio button</i> que fica logo ao lado do tipo de seção <i>topico</i>.</p>
 
@@ -541,7 +686,7 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 <p>Outro exemplo de "seção" que não tem filhos é o tipo de seção <i>imagem</i>:</p>
 
-	<img src="../../imagens/Filhos_e_folhas.png" width="10%">
+	<img src="../../imagens/Filhos_e_folhas.png" width="20%">
 <p>O tipo de seção <i>imagem</i> permite colocar uma figura no texto e, portanto, não permite seções dentro dele e é por essa razão que é considerado uma <i>folha</i> da árvore.</p>
 
 <h2>Efeito do <i>Mostra Folhas</i></h2>

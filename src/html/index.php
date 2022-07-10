@@ -745,7 +745,7 @@ let futuro_y =0;
 			}
 		;}
 		if (e.key == "2") {
-			if (matriz_ganha_foco[x][1][y].getAttribute("id_secao")== "corpo_tese") {alert("Você não pode editar a raiz (corpo_tese) do documento. A operação será interrompida e nada será feito."); return;}
+			if (matriz_ganha_foco[x][1][y].getAttribute("data-id-secao")== "corpo_tese") {alert("Você não pode editar a raiz (corpo_tese) do documento. A operação será interrompida e nada será feito."); return;}
 			if (document.getElementById("textarea_mouse").getAttribute("data-alterado")=="gravado") {	
 			modo_edicao = true;
 			textarea_em_edicao = document.getElementById("textarea_mouse");
@@ -754,6 +754,10 @@ let futuro_y =0;
 			textarea_em_edicao.focus();
 			if (matriz_ganha_foco[x][0].includes("seletor")) {
 				desabilita_box("true", "edita_secoes_mouse");
+				if (matriz_ganha_foco[x][1][y].getAttribute("data-id-secao")== "imagem") 
+						{
+							document.getElementById("botao_sobe_imagem").disabled = false;
+						}		
 				document.getElementById("botao_nova_secao_acima").disabled = false;
 				document.getElementById("botao_nova_secao_abaixo").disabled = false;
 				if (matriz_ganha_foco[x][1][y].getAttribute("data-primeiro-filho") != "sem_filhos_registrados") 

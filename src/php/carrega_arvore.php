@@ -383,6 +383,13 @@ if ($result->num_rows>0) {
 			$largura_pai_efetivo = $largura_pai * 0.9;
 
 		}
+		if ($nome_tipo_secao =="imagem")
+			{
+				$div_padding = "<div class='div_para_imagem'><img src='../../imagens/".$titulo."' width='100%'></div>";
+				$para = "<div style='display: none'>";
+				$barra_para = "</div>";
+				$barra_div_padding="";
+			}
 // data-id-chave eh a chave primaria da tabela secoes
 	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
 

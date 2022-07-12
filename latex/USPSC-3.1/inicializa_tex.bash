@@ -194,16 +194,56 @@ find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Universidade de 
 # voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
 #./troca_universidade.bash
 
+#Troca o nome da Universidade
+touch troca_universidade_m.bash
+chmod u+x troca_universidade_m.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/UNIVERSIDADE DE S\\\\\~AO PAULO/@[universidademaiuscula]@/g\" "$0;}' > troca_universidade_m.bash
+# voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
+#./troca_universidade_m.bash
+
+
+#Troca o nome da Universidade
+touch troca_universidade2.bash
+chmod u+x troca_universidade2.bash
+find * | grep -i "\.tex" | awk -v aspas="\"" '{print "sed -i \"s/Universidade Estadual Paulista .J\\\\\\"quote"ulio de Mesquita Filho./@[universidade]@/g\" "$0;}' > troca_universidade2.bash
+# voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
+#./troca_universidade2.bash
+
+
 #Troca o nome da unidadefaculdade
 touch troca_unidadefaculdade.bash
 chmod u+x troca_unidadefaculdade.bash
 find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Escola de Engenharia de S\\\\\~ao Carlos/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade.bash
 #./troca_unidadefaculdade.bash
 
+#Troca o nome da unidadefaculdade
+touch troca_unidadefaculdade2.bash
+chmod u+x troca_unidadefaculdade2.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Faculdade [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade2.bash
+#./troca_unidadefaculdade2.bash
+
+#Troca o nome da unidadefaculdade
+touch troca_unidadefaculdade3.bash
+chmod u+x troca_unidadefaculdade3.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Instituto de [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade3.bash
+#./troca_unidadefaculdade3.bash
+
+#Troca o nome da unidadefaculdade
+touch troca_unidadefaculdade4.bash
+chmod u+x troca_unidadefaculdade4.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/INSTITUTO DE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' > troca_unidadefaculdade4.bash
+#./troca_unidadefaculdade4.bash
+
+#Troca o nome da unidadefaculdade
+touch troca_programa_pos.bash
+chmod u+x troca_programa_pos.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Programa de P\\\\\\"quote"os-Gradua\\\\\c[{]c[}]\\\\\~ao em [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' > troca_programa_pos.bash
+#./troca_programa_pos.bash
+
 #Troca o nome da curso
-#touch troca_curso.bash
-#chmod u+x troca_curso.bash
-#find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Curso de Engenharia [A-Za-z\\'[{][}]\~\^\"\`( de )( e )(Manufatura)]*/@[curso]@/g\" "$0;}' > troca_curso.bash
+touch troca_curso.bash
+chmod u+x troca_curso.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Curso [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[curso]@/g\" "$0;}' > troca_curso.bash
 #./troca_curso.bash
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  11 JUL 2022 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  12 JUL 2022 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1383,23 +1383,64 @@ Package: ABNT6023-2018
 \@input{USPSC-pre-textual-IAU.aux}
 \openout2 = `USPSC-pre-textual-IAU.aux'.
 
-(./USPSC-pre-textual-IAU.tex)
+(./USPSC-pre-textual-IAU.tex
+! Illegal parameter number in definition of \@gtempa.
+<to be read again> 
+                   1
+l.58 \ifthenelse{\equal{#1}{DAUT}}
+                                  {
+? quit
+OK, entering \batchmode...
+! Illegal parameter number in definition of \@tempa.
+<to be read again> 
+                   1
+l.58 \ifthenelse{\equal{#1}{DAUT}}
+                                  {
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+)
+Runaway argument?
+{ \area {Arquitetura, Urbanismo e Tecnologia} \tipotrabalho {Tese (Do\ETC.
+! File ended while scanning use of \@secondoftwo.
+<inserted text> 
+                \par 
+l.168 \siglaunidade{IAU}
+                        
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \programa{DAUT}
+                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Package hyperref Info: Option `colorlinks' set `true' on input line 200.
 \USPSC-modelo-IAU@idxfile=\write5
 \openout5 = `USPSC-modelo-IAU.idx'.
-
 
 Writing index file USPSC-modelo-IAU.idx 
 
 Package chemmacros Info: You haven't chosen a formula method so I'm assuming
 (chemmacros)             the default method `chemformula'.
 
+
 (/usr/share/texlive/texmf-dist/tex/latex/chemformula/chemformula.sty
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip276
-
 For additional information on amsmath, use the `?' option.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 LaTeX Info: Redefining \boldsymbol on input line 28.
@@ -1527,16 +1568,15 @@ Package: chemformula 2020/02/01 v4.15i typeset chemical compounds and reactions
 \l__chemformula_additions_symbol_space_skip=\skip285
 \l__chemformula_plus_space_skip=\skip286
 \l__chemformula_minus_space_skip=\skip287
-)
-(./USPSC-modelo-IAU.aux (./USPSC-TA-PreTextual/USPSC-Errata.aux)
-(./USPSC-TA-PreTextual/USPSC-Dedicatoria.aux)
-(./USPSC-TA-PreTextual/USPSC-Agradecimentos.aux)
-(./USPSC-TA-PreTextual/USPSC-Epigrafe.aux)
-(./USPSC-TA-PreTextual/USPSC-Resumo.aux)
-(./USPSC-TA-PreTextual/USPSC-Abstract.aux)
-(./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.aux)
-(./USPSC-TA-PreTextual/USPSC-Simbolos.aux)
-(./USPSC-TA-Textual/USPSC-Cap1-Introducao.aux))
+) (./USPSC-modelo-IAU.aux (./USPSC-TA-PreTextual/USPSC-Errata.aux) (./USPSC-TA-
+PreTextual/USPSC-Dedicatoria.aux) (./USPSC-TA-PreTextual/USPSC-Agradecimentos.a
+ux) (./USPSC-TA-PreTextual/USPSC-Epigrafe.aux) (./USPSC-TA-PreTextual/USPSC-Res
+umo.aux) (./USPSC-TA-PreTextual/USPSC-Abstract.aux) (./USPSC-TA-PreTextual/USPS
+C-AbreviaturasSiglas.aux) (./USPSC-TA-PreTextual/USPSC-Simbolos.aux) (./USPSC-T
+A-Textual/USPSC-Cap1-Introducao.aux) (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvim
+ento.aux) (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux) (./USPSC-TA-PosTextual/
+USPSC-Apendices.aux) (./USPSC-TA-PosTextual/USPSC-Anexos.aux) (./USPSC-TA-PosTe
+xtual/USPSC-IndicesRemissivos.aux))
 \openout1 = `USPSC-modelo-IAU.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
@@ -1557,8 +1597,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 221.
 LaTeX Font Info:    ... okay on input line 221.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
 1.
-
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1574,7 +1613,8 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \MPnumerator=\count406
 \makeMPintoPDFobject=\count407
 \everyMPtoPDFconversion=\toks54
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
@@ -1608,10 +1648,9 @@ LaTeX Info: Redefining \nameref on input line 221.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 221.
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 
 Package chemgreek Info: Activating mapping `default' on line 221.
-
 
 
 Package chemmacros Warning: You haven't loaded any package for upright Greek
@@ -1630,6 +1669,7 @@ LaTeX Info: Redefining \showhyphens on input line 221.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -1644,8 +1684,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
 47.
-
-(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1661,36 +1700,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Underfull \hbox (badness 2088) in paragraph at lines 263--263
-[]\T1/lmr/m/n/12 (+20) Tese apresentada ao Programa de PÛs-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
-[]\T1/lmr/m/n/12 (+20) ¡rea de concentraÁ„o: Arquitetura,
- []
-
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 63.
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
 63.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 263.
-
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+ (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 263.
-
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+ (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1708,7 +1735,7 @@ l.263
 
 
 ]
-<USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf, id=23, 597.55246pt x 845.077
+<USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf, id=24, 597.55246pt x 845.077
 18pt>
 File: USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf>
@@ -1720,7 +1747,7 @@ File: USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf Graphic file (type pdf)
 Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf  used
  on input line 264.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf, id=26, page=1, 597.55246pt x
+<USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf, id=27, page=1, 597.55246pt x
  845.07718pt>
 File: USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf, page 1>
@@ -1760,18 +1787,15 @@ e1 used on input line 264.
 
 LaTeX Warning: Citation `nbr14724' on page 3 undefined on input line 4.
 
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 11.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 25.
-[3
+ [3
 
 
 ] [4
 
 ])
-<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=50, 597.55246pt x 845.07718
+<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=53, 597.55246pt x 845.07718
 pt>
 File: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf>
@@ -1783,7 +1807,7 @@ File: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf Graphic file (type pdf)
 Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf  used o
 n input line 298.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=53, page=1, 597.55246pt x 8
+<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=56, page=1, 597.55246pt x 8
 45.07718pt>
 File: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, page 1>
@@ -1813,7 +1837,7 @@ Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf , page1
  [5
 
  <./USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf>]
-<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=65, 597.55246pt x 845.07718pt
+<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=68, 597.55246pt x 845.07718pt
 >
 File: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf>
@@ -1825,7 +1849,7 @@ File: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf Graphic file (type pdf)
 Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf  used on 
 input line 303.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=68, page=1, 597.55246pt x 845
+<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=71, page=1, 597.55246pt x 845
 .07718pt>
 File: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, page 1>
@@ -1855,16 +1879,14 @@ sed on input line 303.
  [6 <./USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf>]
 \openout2 = `USPSC-TA-PreTextual/USPSC-Dedicatoria.aux'.
 
-
-(./USPSC-TA-PreTextual/USPSC-Dedicatoria.tex [7
+ (./USPSC-TA-PreTextual/USPSC-Dedicatoria.tex [7
 
 ] [8
 
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Agradecimentos.aux'.
 
-
-(./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex [9
+ (./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex [9
 
 
 
@@ -1873,8 +1895,7 @@ sed on input line 303.
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Epigrafe.aux'.
 
-
-(./USPSC-TA-PreTextual/USPSC-Epigrafe.tex [11
+ (./USPSC-TA-PreTextual/USPSC-Epigrafe.tex [11
 
 
 ] [12
@@ -1882,15 +1903,11 @@ sed on input line 303.
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Resumo.aux'.
 
-
-(./USPSC-TA-PreTextual/USPSC-Resumo.tex
-
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 7.
-
+ (./USPSC-TA-PreTextual/USPSC-Resumo.tex
 
 LaTeX Warning: Citation `nbr6028' on page 13 undefined on input line 15.
 
-[13
+ [13
 
 
 ] [14
@@ -1898,11 +1915,7 @@ LaTeX Warning: Citation `nbr6028' on page 13 undefined on input line 15.
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Abstract.aux'.
 
- (./USPSC-TA-PreTextual/USPSC-Abstract.tex
-
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 7.
-
-[15
+ (./USPSC-TA-PreTextual/USPSC-Abstract.tex [15
 
 
 ] [16
@@ -1911,16 +1924,14 @@ LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 7.
 
 ] [18
 
-] (./USPSC-modelo-IAU.lot) [19]
-[20
+] (./USPSC-modelo-IAU.lot) [19] [20
 
 ] (./USPSC-modelo-IAU.loq) [21] [22
 
 ]
 \openout2 = `USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.aux'.
 
-
-(./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.tex [23
+ (./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.tex [23
 
 
 ] [24
@@ -1928,8 +1939,7 @@ LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 7.
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Simbolos.aux'.
 
-
-(./USPSC-TA-PreTextual/USPSC-Simbolos.tex [25
+ (./USPSC-TA-PreTextual/USPSC-Simbolos.tex [25
 
 
 
@@ -1947,8 +1957,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27
 
-]
-[28]
+] [28]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap1-Introducao.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap1-Introducao.tex
@@ -1966,12 +1975,8 @@ LaTeX Warning: Citation `aguia2020' on page 29 undefined on input line 10.
 
 
 
-]
-
-LaTeX Warning: Reference `tab-ibge' on page 31 undefined on input line 18.
-
-[31pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
-) has been already used, duplicate ignored
+] [31pdfTeX warning (ext4): destination with the same identifier (name{table.2.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1995,9 +2000,6 @@ Underfull \hbox (badness 2753) in paragraph at lines 63--63
 LaTeX Warning: Citation `van1986' on page 32 undefined on input line 71.
 
 
-LaTeX Warning: Reference `fig_circulo' on page 32 undefined on input line 82.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
@@ -2013,8 +2015,8 @@ LaTeX Warning: Citation `equipeabntex2' on page 32 undefined on input line 116.
 
 LaTeX Warning: Citation `nbr6024' on page 32 undefined on input line 123.
 
-[32pdfTeX warning (ext4): destination with the same identifier (name{quadro.2.1
-}) has been already used, duplicate ignored
+ [32pdfTeX warning (ext4): destination with the same identifier (name{quadro.2.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2028,29 +2030,16 @@ has been already used, duplicate ignored
 l.126 \subsection
                  {Divis√µes do documento: subse√ß√£o}\label{sec-divisoes-sub...
 ]
-
-LaTeX Warning: Reference `sec-divisoes-b' on page 33 undefined on input line 12
-9.
-
-
-LaTeX Warning: Reference `sec-divisoes-subsection' on page 33 undefined on inpu
-t line 129.
-
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 33.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-LaTeX Warning: Reference `sec-exemplo-subsec' on page 33 undefined on input lin
-e 145.
-
-[33]) [34]
+ [33]) [34]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.tex) [35
@@ -2061,7 +2050,7 @@ e 145.
 No file USPSC-modelo-IAU.bbl.
 \openout2 = `USPSC-TA-PosTextual/USPSC-Apendices.aux'.
 
-(./USPSC-TA-PosTextual/USPSC-Apendices.tex [36
+ (./USPSC-TA-PosTextual/USPSC-Apendices.tex [36
 
 
 
@@ -2070,7 +2059,7 @@ No file USPSC-modelo-IAU.bbl.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[37
+ [37
 
 ] [38]
 
@@ -2079,29 +2068,20 @@ LaTeX Warning: Citation `nbr14724' on page 39 undefined on input line 10.
 
 LaTeX Warning: Citation `aguia2020' on page 39 undefined on input line 12.
 
-[39
+ [39
 
 ] [40
 
-]
-
-LaTeX Warning: Reference `tab-centralizada' on page 41 undefined on input line 
-15.
-
-[41pdfTeX warning (ext4): destination with the same identifier (name{table.B.2}
-) has been already used, duplicate ignored
+] [41pdfTeX warning (ext4): destination with the same identifier (name{table.B.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 \chapter
              {Exemplo de tabela com grade}] [42
 
-]
-
-LaTeX Warning: Reference `tab-grade' on page 43 undefined on input line 37.
-
-) [43pdfTeX warning (ext4): destination with the same identifier (name{table.C.
-3}) has been already used, duplicate ignored
+]) [43pdfTeX warning (ext4): destination with the same identifier (name{table.C
+.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2109,8 +2089,7 @@ l.423 ...lude{USPSC-TA-PosTextual/USPSC-Apendices}
                                                   ]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Anexos.aux'.
 
-
-(./USPSC-TA-PosTextual/USPSC-Anexos.tex [44
+ (./USPSC-TA-PosTextual/USPSC-Anexos.tex [44
 
 
 
@@ -2119,24 +2098,23 @@ l.423 ...lude{USPSC-TA-PosTextual/USPSC-Apendices}
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[45
+ [45
 
 ] [46]
 
 LaTeX Warning: Citation `nbr14724' on page 47 undefined on input line 13.
 
-[47
+ [47
 
 ] [48
 
 ]
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=355, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=367, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
 e 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
-
 
 LaTeX Warning: Citation `comandos' on page 49 undefined on input line 22.
 
@@ -2152,10 +2130,7 @@ aTeX.png>]
 
  (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.tex)
 No file USPSC-modelo-IAU.ind.
-
-Package lastpage Warning: Rerun to get the references right on input line 437.
-
-
+ 
 AED: lastpage setting LastPage
 \tf@lof=\write6
 \openout6 = `USPSC-modelo-IAU.lof'.
@@ -2171,55 +2146,47 @@ AED: lastpage setting LastPage
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
-(./USPSC-modelo-IAU.aux (./USPSC-TA-PreTextual/USPSC-Errata.aux)
-(./USPSC-TA-PreTextual/USPSC-Dedicatoria.aux)
-(./USPSC-TA-PreTextual/USPSC-Agradecimentos.aux)
-(./USPSC-TA-PreTextual/USPSC-Epigrafe.aux)
-(./USPSC-TA-PreTextual/USPSC-Resumo.aux)
-(./USPSC-TA-PreTextual/USPSC-Abstract.aux)
-(./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.aux)
-(./USPSC-TA-PreTextual/USPSC-Simbolos.aux)
-(./USPSC-TA-Textual/USPSC-Cap1-Introducao.aux)
-(./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.aux)
-(./USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux)
-(./USPSC-TA-PosTextual/USPSC-Apendices.aux)
-(./USPSC-TA-PosTextual/USPSC-Anexos.aux)
-(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux))
+ (./USPSC-modelo-IAU.aux (./USPSC-TA-PreTextual/USPSC-Errata.aux) (./USPSC-TA-P
+reTextual/USPSC-Dedicatoria.aux) (./USPSC-TA-PreTextual/USPSC-Agradecimentos.au
+x) (./USPSC-TA-PreTextual/USPSC-Epigrafe.aux) (./USPSC-TA-PreTextual/USPSC-Resu
+mo.aux) (./USPSC-TA-PreTextual/USPSC-Abstract.aux) (./USPSC-TA-PreTextual/USPSC
+-AbreviaturasSiglas.aux) (./USPSC-TA-PreTextual/USPSC-Simbolos.aux) (./USPSC-TA
+-Textual/USPSC-Cap1-Introducao.aux) (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvime
+nto.aux) (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux) (./USPSC-TA-PosTextual/U
+SPSC-Apendices.aux) (./USPSC-TA-PosTextual/USPSC-Anexos.aux) (./USPSC-TA-PosTex
+tual/USPSC-IndicesRemissivos.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 437.
 
-
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
  ) 
 Here is how much of TeX's memory you used:
- 31386 strings out of 483090
- 603057 string characters out of 5963929
- 1041626 words of memory out of 5000000
- 45453 multiletter control sequences out of 15000+600000
- 629745 words of font info for 119 fonts, out of 8000000 for 9000
+ 31406 strings out of 483090
+ 603773 string characters out of 5963929
+ 1047395 words of memory out of 5000000
+ 45459 multiletter control sequences out of 15000+600000
+ 629927 words of font info for 121 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  73i,18n,108p,1031b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
-2.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmtt12.pfb>
-Output written on USPSC-modelo-IAU.pdf (51 pages, 511543 bytes).
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc} </home/cemaden/.texlive2019/texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+mi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmtt12.pfb>
+Output written on USPSC-modelo-IAU.pdf (51 pages, 514328 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
+ 573 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
  111 named destinations out of 1000 (max. 500000)
  30582 words of extra memory for PDF output out of 35830 (max. 10000000)
 

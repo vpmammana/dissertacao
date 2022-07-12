@@ -6,36 +6,36 @@
 % ---
 
 \chapter{Desenvolvimento}\label{cap_exemplos}
-Este capítulo é parte principal do trabalho acadêmico e deve conter a exposição ordenada e detalhada do assunto. Divide-se em seções e subseções, em conformidade com a abordagem do tema e do método, abrangendo: revisão bibliográfica, materiais e métodos, técnicas utilizadas, resultados obtidos e discussão.
+Este capítulo \'e parte principal do trabalho acad\^emico e deve conter a exposição ordenada e detalhada do assunto. Divide-se em seções e subseções, em conformidade com a abordagem do tema e do m\'etodo, abrangendo: revisão bibliogr\'afica, materiais e m\'etodos, t\'ecnicas utilizadas, resultados obtidos e discussão.
 
-O conteúdo deste documento visa apresentar um tutorial para utilização do Pacote USPSC, composto da Classe USPSC, tutorial e modelos, utilizando a estrutura de trabalhos acadêmicos, mas por questões didáticas adotou-se capítulo, seções e subseções diferentes das usualmente utilizadas.
+O conteúdo deste documento visa apresentar um tutorial para utilização do Pacote USPSC, composto da Classe USPSC, tutorial e modelos, utilizando a estrutura de trabalhos acad\^emicos, mas por questões did\'aticas adotou-se capítulo, seções e subseções diferentes das usualmente utilizadas.
 
 
-\section{Pacote USPSC: Classe USPSC e modelos de trabalhos acadêmicos}\label{Pacote}
-A versão 3.1 do Pacote USPSC traz os modelos simplificados de trabalhos acadêmicos \textbf{USPSC-modelo.tex} e \textbf{USPSC-TCC-modelo.tex} e o \textbf{Tutorial do Pacote USPSC para modelos de trabalhos acad\^emicos em LaTeX - vers\~ao 3.1}, contendo as instruções precisas e detalhadas para melhor utilização dos recursos do Pacote USPSC. Para tanto, foram acrescidos diversos arquivos, para atender as especificidades do tutorial que possui os elementos pré-textuais distintos para teses, dissertações, TCCs e outros trabalhos acadêmicos, conforme descrito em  \textbf{\ref{Pacote} Pacote USPSC: Classe USPSC e modelos de trabalhos acadêmicos}. A estrutura deste tutorial é igual à estrutura de trabalhos acadêmicos estabelecida pela ABNT NBR 14724, conforme a \autoref{fig_EstruturaTrabAcad}.
+\section{Pacote USPSC: Classe USPSC e modelos de trabalhos acad\^emicos}\label{Pacote}
+A versão 3.1 do Pacote USPSC traz os modelos simplificados de trabalhos acad\^emicos \textbf{USPSC-modelo.tex} e \textbf{USPSC-TCC-modelo.tex} e o \textbf{Tutorial do Pacote USPSC para modelos de trabalhos acad\^emicos em LaTeX - vers\~ao 3.1}, contendo as instruções precisas e detalhadas para melhor utilização dos recursos do Pacote USPSC. Para tanto, foram acrescidos diversos arquivos, para atender as especificidades do tutorial que possui os elementos pr\'e-textuais distintos para teses, dissertações, TCCs e outros trabalhos acad\^emicos, conforme descrito em  \textbf{\ref{Pacote} Pacote USPSC: Classe USPSC e modelos de trabalhos acad\^emicos}. A estrutura deste tutorial \'e igual `a estrutura de trabalhos acad\^emicos estabelecida pela ABNT NBR 14724, conforme a \autoref{fig_EstruturaTrabAcad}.
 
-Todas as alterações e novas implementações foram relacionadas em \textbf{\ref{Introdução} INTRODUÇÃO} e neste capítulo serão descritas detalhadamente, quando necessário. 
+Todas as alterações e novas implementações foram relacionadas em \textbf{\ref{Introdução} INTRODUÇÃO} e neste capítulo serão descritas detalhadamente, quando necess\'ario. 
 
-A classe USPSC é uma derivada da classe \textbf{\abnTeX\ v1.9.5} para as Unidades de ensino e pesquisa do Campus USP de São Carlos:
-Escola de Engenharia de São Carlos (EESC), Instituto de Arquitetura e Urbanismo (IAU), Instituto de Ciências Matemáticas e de Computação (ICMC), Instituto de Física de São Carlos (IFSC) e Instituto de Química de São Carlos (IQSC).
+A classe USPSC \'e uma derivada da classe \textbf{\abnTeX\ v1.9.5} para as Unidades de ensino e pesquisa do Campus USP de São Carlos:
+Escola de Engenharia de São Carlos (EESC), Instituto de Arquitetura e Urbanismo (IAU), Instituto de Ci\^encias Matem\'aticas e de Computação (ICMC), Instituto de Física de São Carlos (IFSC) e Instituto de Química de São Carlos (IQSC).
 
-O objetivo do projeto é disponibilizar modelos em \LaTeX\  para a elaboração de trabalhos acadêmicos (tese, dissertação, trabalho de conclusão de curso (TCC), dentre outros) em conformidade com a \textbf{ABNT NBR 14724}: informação e documentação: trabalhos acadêmicos: apresentação \cite{nbr14724}, \textbf{Diretrizes para apresentação de dissertações e teses da USP}: documento eletrônico e impresso - Parte I (ABNT) \cite{aguia2020} e normas e padrões estabelecidos pelas Unidades.
+O objetivo do projeto \'e disponibilizar modelos em \LaTeX\  para a elaboração de trabalhos acad\^emicos (tese, dissertação, trabalho de conclusão de curso (TCC), dentre outros) em conformidade com a \textbf{ABNT NBR 14724}: informação e documentação: trabalhos acad\^emicos: apresentação \cite{nbr14724}, \textbf{Diretrizes para apresentação de dissertações e teses da USP}: documento eletrônico e impresso - Parte I (ABNT) \cite{aguia2020} e normas e padrões estabelecidos pelas Unidades.
 
 Este documento e seu código fonte são exemplos de uso da \textbf{Classe USPSC} e do pacote \textbf{abntex2cite}.
 Para complementar as instruções contidas neste documento, utilize os manuais \cite{abnetxclasse,abnetxcite,abnetxcitealf} e da classe \textsf{memoir}\cite{memoir2010}. 
 
 
-Os referidos modelos seguem a estrutura de trabalhos acadêmicos estabelecida pela ABNT NBR 14724, conforme a \autoref{fig_EstruturaTrabAcad}. 
+Os referidos modelos seguem a estrutura de trabalhos acad\^emicos estabelecida pela ABNT NBR 14724, conforme a \autoref{fig_EstruturaTrabAcad}. 
 
 \begin{figure}[htb]
-	\caption{\label{fig_EstruturaTrabAcad}Estrutura do trabalho acadêmico}
+	\caption{\label{fig_EstruturaTrabAcad}Estrutura do trabalho acad\^emico}
 	\begin{center}
 		\includegraphics[scale=0.5]{USPSC-img/USPSC-EstruturaTrabAcad.jpg}
 	\end{center}
 	\legend{Fonte: \citeonline{nbr14724}}
 \end{figure}
 
-A versão v.3.1 do Pacote USPSC, por \textit{default}, é instalado em uma pasta denominada USPSC-v3.1 com a seguinte distribuição dos arquivos utilizados para gerar o documento em formato PDF, mediante a compilação utilizando um dos editores \LaTeX\ :
+A versão v.3.1 do Pacote USPSC, por \textit{default}, \'e instalado em uma pasta denominada USPSC-v3.1 com a seguinte distribuição dos arquivos utilizados para gerar o documento em formato PDF, mediante a compilação utilizando um dos editores \LaTeX\ :
 
 
 \begin{alineas}	
@@ -47,38 +47,38 @@ A versão v.3.1 do Pacote USPSC, por \textit{default}, é instalado em uma pasta
 					\item USPSC-modelo.tex;
 					\item USPSC-modelo-EESC.tex;
 					\item USPSC-modelo-IAU.tex;
-					\item USPSC-modelo-ICMCe.tex (idioma do texto em inglês);
-					\item USPSC-modelo-ICMCp.tex (idioma do texto em português);
-					\item USPSC-modelo-IFSCe.tex (idioma do texto em inglês);
-					\item USPSC-modelo-IFSCp.tex (idioma do texto em português);
+					\item USPSC-modelo-ICMCe.tex (idioma do texto em ingl\^es);
+					\item USPSC-modelo-ICMCp.tex (idioma do texto em portugu\^es);
+					\item USPSC-modelo-IFSCe.tex (idioma do texto em ingl\^es);
+					\item USPSC-modelo-IFSCp.tex (idioma do texto em portugu\^es);
 					\item USPSC-modelo-IQSC.tex;
 				\end{subalineas}
 			\item arquivos principais do modelo para TCC: 
 			\begin{subalineas}
 				\item USPSC-TCC-modelo.tex;
 				\item USPSC-TCC-modelo-EESC.tex;
-				\item USPSC-TCC-modelo-ICMCe.tex (idioma do texto em inglês);
-				\item USPSC-TCC-modelo-ICMCp.tex (idioma do texto em português);
+				\item USPSC-TCC-modelo-ICMCe.tex (idioma do texto em ingl\^es);
+				\item USPSC-TCC-modelo-ICMCp.tex (idioma do texto em portugu\^es);
 				\item USPSC-TCC-modelo-IQSC.tex;
 			\end{subalineas}
-			\item arquivo que relaciona os arquivos pré-textuais dos programas de Pós-Graduação e TCCs das Unidades: USPSC-unidades.tex;
-			\item arquivos pré-textuais: USPSC-pre-textual-UUUU.tex e USPSC-TCC-pre-textual-UUUU.tex;
+			\item arquivo que relaciona os arquivos pr\'e-textuais dos programas de Pós-Graduação e TCCs das Unidades: USPSC-unidades.tex;
+			\item arquivos pr\'e-textuais: USPSC-pre-textual-UUUU.tex e USPSC-TCC-pre-textual-UUUU.tex;
 			\item pastas especificadas nos itens abaixo;
 	   	\end{alineas}
 	   	
-	\item \verb+ ...\USPSC-v3.1\USPSC-bib\ + com o arquivo de dados das citações e referências utilizadas: 
+	\item \verb+ ...\USPSC-v3.1\USPSC-bib\ + com o arquivo de dados das citações e refer\^encias utilizadas: 
 		\begin{alineas}	
 			\item USPSC-modelo-references.bib;
 		\end{alineas} 
 		
-	\item \verb+ ...\USPSC-v3.1\USPSC-classe\ + com os arquivos da classe USPSC, incluindo os referentes à compatibilização com a ABNT NBR 6023:2018:
+	\item \verb+ ...\USPSC-v3.1\USPSC-classe\ + com os arquivos da classe USPSC, incluindo os referentes `a compatibilização com a ABNT NBR 6023:2018:
 		\begin{alineas}
 			\item USPSC.cls;
 			\item USPSC1.cls; 
 			\item arquivo ABNT6023-2018.sty, para tirar <> da URL, chamado mediante o comando  \verb+ \usepackage{USPSC-classe/ABNT6023-2018}+;
-			\item as demais compatibilizações estão nos arquivos abntex2-alf-USPSC.bst, abntex2-alfeng-USPSC.bst, abntex2-num-USPSC.bst e abntex2-numeng-USPSC.bst, chamados através do comando \newline \verb+\bibliographystyle{USPSC-classe/abntex2-alf-USPSC} + ou \newline
+			\item as demais compatibilizações estão nos arquivos abntex2-alf-USPSC.bst, abntex2-alfeng-USPSC.bst, abntex2-num-USPSC.bst e abntex2-numeng-USPSC.bst, chamados atrav\'es do comando \newline \verb+\bibliographystyle{USPSC-classe/abntex2-alf-USPSC} + ou \newline
 			\verb+\bibliographystyle{USPSC-classe/abntex2-alfeng-USPSC} + ou \newline
-			\verb+\bibliographystyle{USPSC-classe/abntex2-num-USPSC}+ ou \newline \verb+\bibliographystyle{USPSC-classe/abntex2-numeng-USPSC}+, dependendo se o Sistemas de chamada for autor-data ou numérico; 
+			\verb+\bibliographystyle{USPSC-classe/abntex2-num-USPSC}+ ou \newline \verb+\bibliographystyle{USPSC-classe/abntex2-numeng-USPSC}+, dependendo se o Sistemas de chamada for autor-data ou num\'erico; 
 		\end{alineas}	
 	    
 	\item \verb+ ...\USPSC-v3.1\USPSC-Tutorial\ + contendo:
@@ -102,7 +102,7 @@ A versão v.3.1 do Pacote USPSC, por \textit{default}, é instalado em uma pasta
 			\item USPSC-IndicesRemissivosTutorial.tex.
 		\end{subalineas}
 	
-	\item \verb+ ...\USPSC-v3.1\USPSC-TA-PreTextual\ + com os arquivos relativos aos elementos pré-textuais de trabalhos acadêmicos:
+	\item \verb+ ...\USPSC-v3.1\USPSC-TA-PreTextual\ + com os arquivos relativos aos elementos pr\'e-textuais de trabalhos acad\^emicos:
 		\begin{alineas}
 				\item USPSC-CapaICMC.tex;
 				\item USPSC-fichacatalografica.tex;
@@ -120,14 +120,14 @@ A versão v.3.1 do Pacote USPSC, por \textit{default}, é instalado em uma pasta
 				\item USPSC-PaginaEmBranco.pdf
 			\end{alineas}
 			
-	\item \verb+ ...\USPSC-v3.1\USPSC-TA-Textual\ + contendo os arquivos relativos aos elementos textuais de trabalhos acadêmicos:
+	\item \verb+ ...\USPSC-v3.1\USPSC-TA-Textual\ + contendo os arquivos relativos aos elementos textuais de trabalhos acad\^emicos:
 		\begin{alineas}
 			\item USPSC-Cap1-Introducao.tex;
 			\item USPSC-Cap2-Desenvolvimento.tex;
 			\item USPSC-Cap3-Conclusao.tex;
 		\end{alineas}
 		
-	\item \verb+ ...\USPSC-v3.1\USPSC-TA-PosTextual\ + para os arquivos relativos aos elementos pós-textuais de trabalhos acadêmicos:	
+	\item \verb+ ...\USPSC-v3.1\USPSC-TA-PosTextual\ + para os arquivos relativos aos elementos pós-textuais de trabalhos acad\^emicos:	
 		\begin{alineas}
 			\item USPSC-Apendices.tex;
 			\item USPSC-Anexos.tex;
@@ -151,19 +151,19 @@ A versão v.3.1 do Pacote USPSC, por \textit{default}, é instalado em uma pasta
 			\item USPSC-TCC-Siglas estabelecidas para as Graduações por Unidade.xlsx;
 		\end{alineas}
 		
-	\item \verb+ ...\USPSC-v3.1\USPSC-Sobre\ + contém arquivos sobre cada versão do Pacote USPSC.
+	\item \verb+ ...\USPSC-v3.1\USPSC-Sobre\ + cont\'em arquivos sobre cada versão do Pacote USPSC.
 
 \end{alineas}	 
 
 		
-Para tese ou dissertação deverá ser utilizado o arquivo USPSC-modelo.tex, onde o autor deverá indicar a sigla da Unidade e a sigla do programa de pós-graduação que está vinculado, a exemplo dos comandos abaixo:
+Para tese ou dissertação dever\'a ser utilizado o arquivo USPSC-modelo.tex, onde o autor dever\'a indicar a sigla da Unidade e a sigla do programa de pós-graduação que est\'a vinculado, a exemplo dos comandos abaixo:
 		
 			\begin{verbatim}
 				\siglaunidade{IQSC}
 				\programa{MQOB}
 			\end{verbatim}
 			
-Para o \textbf{Modelo para teses e dissertações em \LaTeX\ utilizando o Pacote USPSC} estão definidos os seguintes arquivos pré-textuais:
+Para o \textbf{Modelo para teses e dissertações em \LaTeX\ utilizando o Pacote USPSC} estão definidos os seguintes arquivos pr\'e-textuais:
 			
 			\begin{alineas}	 
 				\item USPSC-pre-textual-EESC.tex;
@@ -173,14 +173,14 @@ Para o \textbf{Modelo para teses e dissertações em \LaTeX\ utilizando o Pacote
 				\item USPSC-pre-textual-IQSC.tex.
 			\end{alineas}
 			
-Para TCC deverá ser utilizado o arquivo USPSC-TCC-modelo.tex, onde o autor deverá indicar a \textbf{'sigla da Unidade'} + \textbf{'-TCC'} (Exemplo: EESC-TCC) e a sigla do curso de graduação que está vinculado, a exemplo dos comandos abaixo:
+Para TCC dever\'a ser utilizado o arquivo USPSC-TCC-modelo.tex, onde o autor dever\'a indicar a \textbf{'sigla da Unidade'} + \textbf{'-TCC'} (Exemplo: EESC-TCC) e a sigla do curso de graduação que est\'a vinculado, a exemplo dos comandos abaixo:
 			
 			\begin{verbatim}
 			\siglaunidade{EESC-TCC}
 			\programa{EAMB}
 			\end{verbatim}
 			
-Atualmente estão disponíveis os dados pré-textuais para a EESC, ICMC e IQSC:
+Atualmente estão disponíveis os dados pr\'e-textuais para a EESC, ICMC e IQSC:
 			
 			\begin{alineas}	 
 				\item USPSC-TCC-pre-textual-EESC.tex;
@@ -190,18 +190,18 @@ Atualmente estão disponíveis os dados pré-textuais para a EESC, ICMC e IQSC:
 			
 Serão incluídos os demais arquivos quando as demais Unidades do Campus USP de São Carlos estabelecerem seus padrões. 
 			
-Para utilizar corretamente os dados pré-textuais, é necessário consultar as siglas estabelecidas para os cursos de graduação e para os programas de pós-graduação da Unidade de vínculo nos quadros dos \textbf{APÊNDICES B-I} ou nas planilhas \textbf{USPSC-TCC-Siglas estabelecidas para as Graduações por Unidade.xlsx} e \textbf{USPSC-Siglas estabelecidas para os programas de pós-graduação por Unidade.xlsx}. 
+Para utilizar corretamente os dados pr\'e-textuais, \'e necess\'ario consultar as siglas estabelecidas para os cursos de graduação e para os programas de pós-graduação da Unidade de vínculo nos quadros dos \textbf{APÊNDICES B-I} ou nas planilhas \textbf{USPSC-TCC-Siglas estabelecidas para as Graduações por Unidade.xlsx} e \textbf{USPSC-Siglas estabelecidas para os programas de pós-graduação por Unidade.xlsx}. 
 
-Os arquivos com dados pre-textuais estão nominados como USPSC-pre-textual-UUUU.tex ou USPSC-TCC-pre-textual-UUUU.tex, onde UUUU é a sigla da Unidade. Inicialmente estão disponibilizados apenas os pré-textuais das Unidades do Campus USP de São Carlos.
+Os arquivos com dados pre-textuais estão nominados como USPSC-pre-textual-UUUU.tex ou USPSC-TCC-pre-textual-UUUU.tex, onde UUUU \'e a sigla da Unidade. Inicialmente estão disponibilizados apenas os pr\'e-textuais das Unidades do Campus USP de São Carlos.
 			
-Foram definidos os arquivos USPSC-pre-textual-OUTRO.tex e USPSC-TCC-pre-textual-OUTRO.tex que serão executados quando uma das siglas for diferente das explicitadas para as Unidades e/ou para os cursos de graduação e/ou para os programas de Pós-Graduação. O preâmbulo será incompleto e apresentando "..." no final, evidenciando que o autor deverá rever as siglas utilizadas.
+Foram definidos os arquivos USPSC-pre-textual-OUTRO.tex e USPSC-TCC-pre-textual-OUTRO.tex que serão executados quando uma das siglas for diferente das explicitadas para as Unidades e/ou para os cursos de graduação e/ou para os programas de Pós-Graduação. O pre\^ambulo ser\'a incompleto e apresentando "..." no final, evidenciando que o autor dever\'a rever as siglas utilizadas.
 
-Através do comando \verb+ \include{USPSC-unidades} + presente em USPSC.cls e USPSC1.cls,  o arquivo USPSC-unidades.tex efetua as chamadas dos arquivos pré-textuais, portanto quando for feita uma customização incluindo novos arquivos pré-textuais e/ou outra Unidade USP e/ou outra instituição de ensino e pesquisa, será necessário fazer as devidas indicações em tais arquivos. 
+Atrav\'es do comando \verb+ \include{USPSC-unidades} + presente em USPSC.cls e USPSC1.cls,  o arquivo USPSC-unidades.tex efetua as chamadas dos arquivos pr\'e-textuais, portanto quando for feita uma customização incluindo novos arquivos pr\'e-textuais e/ou outra Unidade USP e/ou outra instituição de ensino e pesquisa, ser\'a necess\'ario fazer as devidas indicações em tais arquivos. 
 	 
 \subsection{Alternativas de formatação}
 O modelo foi concebido de forma a atender as especificidades de cada Unidade e atualmente disponibiliza as seguintes alternativas de formatação:
 \subsubsection{Opções de fonte} 
-No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex é possível optar pela fonte desejada, conforme a programação reproduzida abaixo:
+No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex \'e possível optar pela fonte desejada, conforme a programação reproduzida abaixo:
 				\begin{verbatim}
 				\usepackage{lmodern}			% Usa a fonte Latin Modern
 					% Para utilizar a fonte Times New Roman, inclua 
@@ -209,10 +209,10 @@ No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex é possível optar pela f
 					% Abaixo, tire a % antes do comando  \usepackage{times}
 					%\usepackage{times}			% Usa a fonte Times New Roman
 					% Lembre-se de alterar a fonte no comando que imprime 
-					% o preâmbulo no arquivo da Classe USPSC.cls					
+					% o pre\^ambulo no arquivo da Classe USPSC.cls					
 				\end{verbatim}
 \subsubsection{Opções de cores dos links}\label{coreslinks} 
-No arquivo USPSC-modelo.tex e no USPSC-TCC-modelo.tex é possível alterar as cores dos links, de preto para as alternativas pré-estabelecidas, ou optar por outras cores, conforme a programação reproduzida abaixo:
+No arquivo USPSC-modelo.tex e no USPSC-TCC-modelo.tex \'e possível alterar as cores dos links, de preto para as alternativas pr\'e-estabelecidas, ou optar por outras cores, conforme a programação reproduzida abaixo:
 \begin{verbatim}
 % informações do PDF
 \makeatletter
@@ -222,7 +222,7 @@ pdftitle={\@title},
 pdfauthor={\@author},
 pdfsubject={\imprimirpreambulo},
 pdfcreator={LaTeX with abnTeX2},
-pdfkeywords={abnt}{latex}{abntex}{USPSC}{trabalho acadêmico}, 
+pdfkeywords={abnt}{latex}{abntex}{USPSC}{trabalho acad\^emico}, 
 colorlinks=true,       		% false: boxed links; true: colored links
 linkcolor=black,          	% color of internal links
 citecolor=black,        		% color of links to bibliography
@@ -239,60 +239,60 @@ bookmarksdepth=4
 \makeatother				
 \end{verbatim}				
 \subsubsection{Impressão anverso e verso ou somente anverso}
-No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex é possível optar por impressão em páginas ou em folhas, conforme a seguinte programação:
+No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex \'e possível optar por impressão em p\'aginas ou em folhas, conforme a seguinte programação:
 			  \begin{verbatim}
 			  twoside,  % para impressão em anverso (frente) e verso. Oposto 
 			            a oneside - Nota: utilizar \imprimirfolhaderosto*
-			  %oneside, % para impressão em páginas separadas (somente 
+			  %oneside, % para impressão em p\'aginas separadas (somente 
 			            anverso) -  Nota: utilizar \imprimirfolhaderosto
 			            % inclua uma % antes do comando twoside e exclua a % 
 			            antes do oneside 
 			  \end{verbatim}			  
-\subsubsection{Opção de p. ou f. na referência da Errata, do Resumo e do Abstract} 
+\subsubsection{Opção de p. ou f. na refer\^encia da Errata, do Resumo e do Abstract} 
  No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex, indicar p. ou f. em conformidade com a opção de impressão anverso e verso ou somente anverso, conforme a seguinte programação:
 			  \begin{verbatim}
 			  \pageref{LastPage}p. 
 			  %Substitua p. por f. quando utilizar oneside em \documentclass
 			  %\pageref{LastPage}f.
 			  \end{verbatim}			  
-\subsubsection{Tipos de cabeçalhos de páginas} 
-Tanto no arquivo USPSC-modelo.tex como no USPSC-TCC-modelo.tex é possível optar por dois tipos de cabeçalhos em conformidade com o definido abaixo:
+\subsubsection{Tipos de cabeçalhos de p\'aginas} 
+Tanto no arquivo USPSC-modelo.tex como no USPSC-TCC-modelo.tex \'e possível optar por dois tipos de cabeçalhos em conformidade com o definido abaixo:
 			  \begin{verbatim}
 			  \documentclass[
 			  ...
 			  % {USPSC-classe/USPSC} configura o cabeçalho contendo apenas o número
-			    da página
+			    da p\'agina
 			  ]{USPSC-classe/USPSC}
 			  %]{USPSC-classe/USPSC1}
 			  % Inclua % antes de ]{USPSC-classe/USPSC} e retire a % antes 
 			    de %]{USPSC-classe/USPSC1} para utilizar o cabeçalho diferenciado
-			  % para as páginas pares e ímpares: 
-			  %- páginas ímpares: com seções ou subseções e o número da página
-			  %- páginas pares: com o número da página e o título do capítulo 
+			  % para as p\'aginas pares e ímpares: 
+			  %- p\'aginas ímpares: com seções ou subseções e o número da p\'agina
+			  %- p\'aginas pares: com o número da p\'agina e o título do capítulo 
 			  \end{verbatim}
 \subsubsection{Opções de idiomas do texto}\label{idioma} 
-No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex há duas opções de idiomas do texto: português ou inglês, conforme programação abaixo:			  
+No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex h\'a duas opções de idiomas do texto: portugu\^es ou ingl\^es, conforme programação abaixo:			  
 			  \begin{verbatim}
 			  % Seleciona o idioma do documento (conforme pacotes do babel)
 			  \selectlanguage{brazil}
-			  % Se o idioma do texto for inglês, inclua uma % antes do 
+			  % Se o idioma do texto for ingl\^es, inclua uma % antes do 
 			  %      comando \selectlanguage{brazil} e 
 			  %      retire a % antes do comando abaixo
 			  %\selectlanguage{english}			  
 			  \end{verbatim}
-É importante salientar que quando o idioma do texto for inglês é necessário que o arquivo pré-textual tenha a programação correspondente neste idioma, incluindo preâmbulo, título do documento, área de concentração, dentre outros dados.
+É importante salientar que quando o idioma do texto for ingl\^es \'e necess\'ario que o arquivo pr\'e-textual tenha a programação correspondente neste idioma, incluindo pre\^ambulo, título do documento, \'area de concentração, dentre outros dados.
  			  
-\subsubsection{Utilização de pacotes para a indicação de número de autores nas referências e para citações alfabéticas ou numéricas}
-É possível indicar todos os autores nas referências ou utilizar \textbf{\textit{et al}} quando houver mais de três autores. Como somente o IQSC indica todos os autores, adotamos o \textbf{\textit{et al}} e incluímos a orientação de como proceder para alterar a programação para indicar todos, tanto no arquivo USPSC-modelo.tex como no USPSC-TCC-modelo.tex.
+\subsubsection{Utilização de pacotes para a indicação de número de autores nas refer\^encias e para citações alfab\'eticas ou num\'ericas}
+É possível indicar todos os autores nas refer\^encias ou utilizar \textbf{\textit{et al}} quando houver mais de tr\^es autores. Como somente o IQSC indica todos os autores, adotamos o \textbf{\textit{et al}} e incluímos a orientação de como proceder para alterar a programação para indicar todos, tanto no arquivo USPSC-modelo.tex como no USPSC-TCC-modelo.tex.
 
-Outra possibilidade é de optar por citações alfabéticas ou numéricas, conforme a seguinte orientação contida no arquivo USPSC-modelo.tex e no USPSC-TCC-modelo.tex:	
+Outra possibilidade \'e de optar por citações alfab\'eticas ou num\'ericas, conforme a seguinte orientação contida no arquivo USPSC-modelo.tex e no USPSC-TCC-modelo.tex:	
 		  
 			 \begin{verbatim}
 			 % ---
 			 % Pacotes de citações
 			 % Citações padrão ABNT
 			 % ---
-			 % Sistemas de chamada: autor-data ou numérico.
+			 % Sistemas de chamada: autor-data ou num\'erico.
 			 % Sistema autor-data
 			 \usepackage[alf, abnt-emphasize=bf, abnt-thesis-year=both,
 			 abnt-repeated-author-omit=no, abnt-last-names=abnt,
@@ -300,11 +300,11 @@ Outra possibilidade é de optar por citações alfabéticas ou numéricas, confo
 			 abnt-and-type=e, abnt-doi=doi, abnt-url-package=none,
 			 abnt-verbatim-entry=no]{abntex2cite}
 			 \bibliographystyle{USPSC-classe/abntex2-alf-USPSC}
-			 % Se o idioma for o inglês, inclua % no comando acima e 
+			 % Se o idioma for o ingl\^es, inclua % no comando acima e 
 			 exclua o % do comando abaixo
 			 %\bibliographystyle{USPSC-classe/abntex2-alfeng-USPSC}
 			 
-			 % Para o IQSC, que indica todos os autores nas referências, incluir % 
+			 % Para o IQSC, que indica todos os autores nas refer\^encias, incluir % 
 			 no início dos comandos acima e retirar a % dos comandos abaixo 
 			 %\usepackage[alf, abnt-emphasize=bf, abnt-thesis-year=both,
 			 abnt-repeated-author-omit=no, abnt-last-names=abnt,
@@ -312,12 +312,12 @@ Outra possibilidade é de optar por citações alfabéticas ou numéricas, confo
 			 abnt-and-type=e, abnt-doi=doi, abnt-url-package=none,
 			 abnt-verbatim-entry=no]{abntex2cite} 
 			 %\bibliographystyle{USPSC-classe/abntex2-alf-USPSC}
-			 % Se o idioma for o inglês, exclua % no comando acima ou do
+			 % Se o idioma for o ingl\^es, exclua % no comando acima ou do
 			 comando abaixo
 			 %\bibliographystyle{USPSC-classe/abntex2-alfeng-USPSC}
 			 
-			 % Sistema Numérico
-			 % Para citações numéricas, sistema adotado pelo IFSC, incluir % no 
+			 % Sistema Num\'erico
+			 % Para citações num\'ericas, sistema adotado pelo IFSC, incluir % no 
 			 início dos comandos acima e retirar a % dos comandos abaixo
 			 %\usepackage[num, abnt-emphasize=bf, abnt-thesis-year=both,
 			 abnt-repeated-author-omit=no, abnt-last-names=abnt,
@@ -325,54 +325,54 @@ Outra possibilidade é de optar por citações alfabéticas ou numéricas, confo
 			 abnt-and-type=e, abnt-doi=doi, abnt-url-package=none,
 			 abnt-verbatim-entry=no]{abntex2cite} 
 			 %\bibliographystyle{USPSC-classe/abntex2-num-USPSC}
-			 % Se o idioma for o inglês, exclua % no comando acima ou do
+			 % Se o idioma for o ingl\^es, exclua % no comando acima ou do
 			 comando abaixo
 			 %\bibliographystyle{USPSC-classe/abntex2-numeng-USPSC}
 			 
 			 % Complementarmente, verifique as instruções abaixo sobre os
-			 Pacotes de Nota de rodapé
+			 Pacotes de Nota de rodap\'e
 			 % ---
-			 % Pacotes de Nota de rodapé
-			 % Configurações de nota de rodapé
+			 % Pacotes de Nota de rodap\'e
+			 % Configurações de nota de rodap\'e
 			  
-			 %O presente modelo adota o formato numérico para as notas de rodapés 
+			 %O presente modelo adota o formato num\'erico para as notas de rodap\'es 
 			 quando utiliza o sistema de chamada autor-data para citações e 
-			 referências. Para utilizar o sistema de chamada numérico para 
-			 citações e referências, habilitar um dos comandos abaixo.
-			 % São diversas as opções para nota de rodapé no Sistema Numérico.  
+			 refer\^encias. Para utilizar o sistema de chamada num\'erico para 
+			 citações e refer\^encias, habilitar um dos comandos abaixo.
+			 % São diversas as opções para nota de rodap\'e no Sistema Num\'erico.  
 			 Para o IFSC, habilitar o comando abaixo.
 			  
 			 %\renewcommand{\thefootnote}{\fnsymbol{footnote}} %Comando para 
-			 inserção de símbolos em nota de rodapé
+			 inserção de símbolos em nota de rodap\'e
 			  
-			 % Outras opções para nota de rodapé no Sistema Numérico:
+			 % Outras opções para nota de rodap\'e no Sistema Num\'erico:
 			 %\renewcommand{\thefootnote}{\alph{footnote}}     %Comando para 
-			 inserção de letras minúsculas em nota de rodapé
+			 inserção de letras minúsculas em nota de rodap\'e
 			 %\renewcommand{\thefootnote}{\Alph{footnote}}     %Comando para 
-			 inserção de letras maiúsculas em nota de rodapé
+			 inserção de letras maiúsculas em nota de rodap\'e
 			 %\renewcommand{\thefootnote}{\roman{footnote}}    %Comando para 
-			 inserção de números romanos minúsculos  em nota de rodapé
+			 inserção de números romanos minúsculos  em nota de rodap\'e
 			 %\renewcommand{\thefootnote}{\Roman{footnote}}    %Comando para 
-			 inserção de números romanos minúsculos  em nota de rodapé
+			 inserção de números romanos minúsculos  em nota de rodap\'e
 			  
 			 \renewcommand{\footnotesize}{\small} %Comando para diminuir a fonte 
-			 das notas de rodapé	
+			 das notas de rodap\'e	
 			  
 			 % ---
-			 % Pacote para agrupar a citação numérica consecutiva
-			 % Quando for adotado o Sistema Numérico, a exemplo do IFSC, habilite 
+			 % Pacote para agrupar a citação num\'erica consecutiva
+			 % Quando for adotado o Sistema Num\'erico, a exemplo do IFSC, habilite 
 			 % o pacote cite abaixo retirando a porcentagem antes do comando abaixo
 			 %\usepackage[superscript]{cite}
 			  			  	
 			 \end{verbatim}
 
-Quando o idioma do texto for inglês, para o sistema autor-data utilize o comando \verb+\bibliographystyle{USPSC-classe/abntex2-alfeng-USPSC}+ e para o sistema numérico deverá ser utilizado \verb+\bibliographystyle{USPSC-classe/abntex2-numeng-USPSC}+.
+Quando o idioma do texto for ingl\^es, para o sistema autor-data utilize o comando \verb+\bibliographystyle{USPSC-classe/abntex2-alfeng-USPSC}+ e para o sistema num\'erico dever\'a ser utilizado \verb+\bibliographystyle{USPSC-classe/abntex2-numeng-USPSC}+.
 
-Sugerimos que quando for alterada a programação do Sistema autor-data para o numérico e/ou vice-versa, o arquivo original USPSC-modelo.tex ou USPSC-TCC-modelo.tex seja renomeado, pois durante a compilação são gerados arquivos temporários que podem interferir nas mudanças desejadas.			 
+Sugerimos que quando for alterada a programação do Sistema autor-data para o num\'erico e/ou vice-versa, o arquivo original USPSC-modelo.tex ou USPSC-TCC-modelo.tex seja renomeado, pois durante a compilação são gerados arquivos tempor\'arios que podem interferir nas mudanças desejadas.			 
 
-\subsubsection{Possibilidades de preâmbulos}
+\subsubsection{Possibilidades de pre\^ambulos}
 
-Atualmente disponibiliza 97 possibilidades de preâmbulos codificados nos arquivos pré-textuais, em conformidade com as siglas estabelecidas para os programas de pós-graduação das Unidades do Campus USP de São Carlos \textbf{(APÊNDICES B-J)}, sendo:
+Atualmente disponibiliza 97 possibilidades de pre\^ambulos codificados nos arquivos pr\'e-textuais, em conformidade com as siglas estabelecidas para os programas de pós-graduação das Unidades do Campus USP de São Carlos \textbf{(APÊNDICES B-J)}, sendo:
 	
 				  
 			   \begin{alineas}
@@ -383,20 +383,20 @@ Atualmente disponibiliza 97 possibilidades de preâmbulos codificados nos arquiv
 				\item  IQSC - 6;
 			  \end{alineas}	
 			  
-O modelo para TCC está disponível inicialmente para a EESC, ICMC e IQSC, sendo que foram codificados 28 preâmbulos referentes aos cursos de graduação destas Unidades nos arquivos USPSC-TCC-pre-textual-UUUU.tex. As siglas estabelecidas estão relacionadas nos \textbf{APÊNDICES H-J}.
+O modelo para TCC est\'a disponível inicialmente para a EESC, ICMC e IQSC, sendo que foram codificados 28 pre\^ambulos referentes aos cursos de graduação destas Unidades nos arquivos USPSC-TCC-pre-textual-UUUU.tex. As siglas estabelecidas estão relacionadas nos \textbf{APÊNDICES H-J}.
 				\begin{alineas}
 					\item EESC – 10;
 					\item  ICMC – 16;
 					\item  IQSC - 2;
 				\end{alineas}	
 	  						
-É importante alertar que tais siglas foram estabelecidas com o objetivo de transferência de parâmetros no Pacote USPSC e não são as utilizadas oficialmente pelas Unidades para referenciar os seus programas de pós-graduação e cursos de graduação.
+É importante alertar que tais siglas foram estabelecidas com o objetivo de transfer\^encia de par\^ametros no Pacote USPSC e não são as utilizadas oficialmente pelas Unidades para referenciar os seus programas de pós-graduação e cursos de graduação.
 
 \subsubsection{Versão original ou final/corrigida}
-Nos arquivos com os elementos pré-textuais das Unidades é possível especificar a versão do trabalho acadêmico produzido, a exemplo do contido em USPSC-pre-textual-IFSC.tex:	  
+Nos arquivos com os elementos pr\'e-textuais das Unidades \'e possível especificar a versão do trabalho acad\^emico produzido, a exemplo do contido em USPSC-pre-textual-IFSC.tex:	  
 			  \begin{verbatim}
 			  \notafolharosto{Vers\~ao original}
-			  %Para versão original em inglês, comente do comando/declaração 
+			  %Para versão original em ingl\^es, comente do comando/declaração 
 			  %     acima(inclua % antes do comando acima) e tire a % do 
 			  %     comando/declaração abaixo no idioma do texto
 			  %\notafolharosto{Original version} 
@@ -410,58 +410,58 @@ Nos arquivos com os elementos pré-textuais das Unidades é possível especifica
 			  Program Unit)}
 			  \end{verbatim}
 			  
-\subsubsection{Ficha catalográfica}
-É possível elaborar a ficha catalográfica em \LaTeX\ ou incluir a fornecida pela Biblioteca. Para tanto observe a programação contida nos arquivos USPSC-modelo.tex ou USPSC-TCC-modelo.tex  e USPSC-fichacatalografica.tex e/ou gere o arquivo fichacatalografica.pdf.
+\subsubsection{Ficha catalogr\'afica}
+É possível elaborar a ficha catalogr\'afica em \LaTeX\ ou incluir a fornecida pela Biblioteca. Para tanto observe a programação contida nos arquivos USPSC-modelo.tex ou USPSC-TCC-modelo.tex  e USPSC-fichacatalografica.tex e/ou gere o arquivo fichacatalografica.pdf.
 	  
 No arquivo USPSC-modelo.tex ou no USPSC-TCC-modelo.tex faça a sua opção conforme orientações reproduzidas abaixo:
 
 			 \begin{verbatim}
 			 
 			 % ---
-			 % Inserir a ficha catalográfica em pdf
+			 % Inserir a ficha catalogr\'afica em pdf
 			 % ---
-			 % A biblioteca da sua Unidade lhe fornecerá um PDF com a ficha
-			 % catalográfica definitiva. 
+			 % A biblioteca da sua Unidade lhe fornecer\'a um PDF com a ficha
+			 % catalogr\'afica definitiva. 
 			 % Quando estiver com o documento, salve-o como PDF no diretório
 			 % do seu projeto como fichacatalografica.pdf e inclua o arquivo
 			 % utilizando o comando abaixo:
 			 %\begin{fichacatalografica}
 			 %   \includepdf{fichacatalografica.pdf}
 			 %\end{fichacatalografica}
-			 % Se você optar por elaborar a ficha catalográfica, deverá 
+			 % Se voc\^e optar por elaborar a ficha catalogr\'afica, dever\'a 
 			 % incluir uma % antes das 3 linhas acima e tirar a % antes
 			 % do comando \include{USPSC-fichacatalografica}
 			 \include{USPSC-fichacatalografica}
-			 % As informações que compõem a ficha catalográfica estão 
+			 % As informações que compõem a ficha catalogr\'afica estão 
 			 % definidas no arquivo USPSC-pre-textual-UUUU.tex
 			 % ---
 			 \end{verbatim} 
 			 				
-É possível incluir ou não o Código Cutter na ficha catalográfica, conforme a seguinte orientação nos respectivos arquivos pré-textuais:
+É possível incluir ou não o Código Cutter na ficha catalogr\'afica, conforme a seguinte orientação nos respectivos arquivos pr\'e-textuais:
 
 \begin{verbatim}
 \cutter{S856m}
-% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% Para gerar a ficha catalogr\'afica sem o Código Cutter, basta 
 % incluir uma % na linha acima e tirar a % da linha abaixo
 %\cutter{ } 
 \end{verbatim} 
 
-Através do arquivo fichacatalografica.tex é possível elaborar a ficha catalográfica em \LaTeX\ . Caso o trabalho possua co-orientador será necessário seguir as orientações contidas também no arquivo com os elementos pré-textuais.	 
+Atrav\'es do arquivo fichacatalografica.tex \'e possível elaborar a ficha catalogr\'afica em \LaTeX\ . Caso o trabalho possua co-orientador ser\'a necess\'ario seguir as orientações contidas tamb\'em no arquivo com os elementos pr\'e-textuais.	 
 
 
 \section{Resultados de comandos}\label{sec-divisoes}
 
-O conteúdo desta seção foi baseado no item \textbf{1 Resultados de comandos} do \textbf{Modelo canônico de trabalho acadêmico com abnTEX2} \cite{equipeabntex2}.
+O conteúdo desta seção foi baseado no item \textbf{1 Resultados de comandos} do \textbf{Modelo canônico de trabalho acad\^emico com abnTEX2} \cite{equipeabntex2}.
 
 % ---
 \subsection{Codificação dos arquivos: UTF8}
 % ---
 
-A codificação \texttt{UTF8} deve ser utilizada para todos os arquivos do \abnTeX\ . Utilize a mesma codificação nos documentos que escrever, incluindo nos arquivos de bases bibliográficas |.bib|. Para tanto, tanto o arquivo USPSC-modelo.tex  quanto o USPSC-TCC-modelo.tex devem conter o seguinte pacote:
+A codificação \texttt{UTF8} deve ser utilizada para todos os arquivos do \abnTeX\ . Utilize a mesma codificação nos documentos que escrever, incluindo nos arquivos de bases bibliogr\'aficas |.bib|. Para tanto, tanto o arquivo USPSC-modelo.tex  quanto o USPSC-TCC-modelo.tex devem conter o seguinte pacote:
 
 \begin{verbatim}
 \usepackage[utf8]{inputenc}	 % Codificacao do documento (conversão
-                               automática dos acentos)
+                               autom\'atica dos acentos)
 \end{verbatim}
 
 % ---
@@ -470,17 +470,17 @@ A codificação \texttt{UTF8} deve ser utilizada para todos os arquivos do \abnT
 % ---
 
 Para usar hifenizações de diferentes idiomas, inclua nas opções do documento o
-nome dos idiomas que o seu texto contém. Os usuários da Classe USPSC devem utilizar:
+nome dos idiomas que o seu texto cont\'em. Os usu\'arios da Classe USPSC devem utilizar:
 
 \begin{verbatim}
 \documentclass[
 % -- opções da classe memoir --
 12pt,		% tamanho da fonte
-openright,	% capítulos começam em pág ímpar (insere página vazia caso 
+openright,	% capítulos começam em p\'ag ímpar (insere p\'agina vazia caso 
 preciso)
 twoside,  % para impressão em anverso (frente) e verso. Oposto a oneside - 
 Nota: utilizar \imprimirfolhaderosto*
-%oneside, % para impressão em páginas separadas (somente anverso) -  
+%oneside, % para impressão em p\'aginas separadas (somente anverso) -  
 Nota: utilizar \imprimirfolhaderosto
 % inclua uma % antes do comando twoside e exclua a % antes do oneside 
 a4paper,			% tamanho do papel. 
@@ -491,39 +491,39 @@ maiúsculas
 english,			% idioma adicional para hifenização
 french,				% idioma adicional para hifenização
 spanish,			% idioma adicional para hifenização
-brazil				% o último idioma é o principal do documento
+brazil				% o último idioma \'e o principal do documento
 % {USPSC-classe/USPSC} configura o cabeçalho contendo apenas o número 
-da página
+da p\'agina
 ]{USPSC-classe/USPSC}
 %]{USPSC-classe/USPSC1}
 % Inclua % antes de ]{USPSC-classe/USPSC} e retire a % antes 
 de %]{USPSC-classe/USPSC1} para utilizar o 
-% cabeçalho diferenciado para as páginas pares e ímpares:
-%- páginas ímpares: cabeçalho com seções ou subseções e o número da página
-%- páginas pares: cabeçalho com o número da página e o título do capítulo 
+% cabeçalho diferenciado para as p\'aginas pares e ímpares:
+%- p\'aginas ímpares: cabeçalho com seções ou subseções e o número da p\'agina
+%- p\'aginas pares: cabeçalho com o número da p\'agina e o título do capítulo 
 % ---
 \end{verbatim}
 
-Desta forma o texto deverá ser escrito idioma português-brasileiro (\texttt{brazil}), podendo ter citações em inglês, francês e espanhol.
+Desta forma o texto dever\'a ser escrito idioma portugu\^es-brasileiro (\texttt{brazil}), podendo ter citações em ingl\^es, franc\^es e espanhol.
 
-O idioma português-brasileiro (\texttt{brazil}) é incluído automaticamente pela
-classe \textsf{abntex2}. Porém, mesmo assim a opção \texttt{brazil} deve ser
+O idioma portugu\^es-brasileiro (\texttt{brazil}) \'e incluído automaticamente pela
+classe \textsf{abntex2}. Por\'em, mesmo assim a opção \texttt{brazil} deve ser
 informada como a última opção da classe para que todos os pacotes reconheçam o
-idioma. Vale ressaltar que a última opção de idioma é a utilizada por padrão no
+idioma. Vale ressaltar que a última opção de idioma \'e a utilizada por padrão no
 documento. 
 
-Portanto, para Classe USPSC, caso deseje escrever um texto em inglês que tenha
-citações em espanhol, português e francês, você deverá usar:
+Portanto, para Classe USPSC, caso deseje escrever um texto em ingl\^es que tenha
+citações em espanhol, portugu\^es e franc\^es, voc\^e dever\'a usar:
 
 \begin{verbatim}
 \documentclass[
 % -- opções da classe memoir --
 12pt,		% tamanho da fonte
-openright,	% capítulos começam em pág ímpar (insere página vazia caso 
+openright,	% capítulos começam em p\'ag ímpar (insere p\'agina vazia caso 
 preciso)
 twoside,  % para impressão em anverso (frente) e verso. Oposto a oneside - 
 Nota: utilizar \imprimirfolhaderosto*
-%oneside, % para impressão em páginas separadas (somente anverso) -  
+%oneside, % para impressão em p\'aginas separadas (somente anverso) -  
 Nota: utilizar \imprimirfolhaderosto
 % inclua uma % antes do comando twoside e exclua a % antes do oneside 
 a4paper,			% tamanho do papel. 
@@ -533,24 +533,24 @@ maiúsculas
 % -- opções do pacote babel --
 spanish,			% idioma adicional para hifenização
 french,				% idioma adicional para hifenização
-brazil,				% o último idioma é o principal do documento
+brazil,				% o último idioma \'e o principal do documento
 english 			% idioma adicional para hifenização
 % {USPSC-classe/USPSC} configura o cabeçalho contendo apenas o número 
-da página
+da p\'agina
 ]{USPSC-classe/USPSC}
 %]{USPSC-classe/USPSC1}
 % Inclua % antes de ]{USPSC-classe/USPSC} e retire a % antes 
 de %]{USPSC-classe/USPSC1} para utilizar o 
-% cabeçalho diferenciado para as páginas pares e ímpares:
-%- páginas ímpares: cabeçalho com seções ou subseções e o número da página
-%- páginas pares: cabeçalho com o número da página e o título do capítulo 
+% cabeçalho diferenciado para as p\'aginas pares e ímpares:
+%- p\'aginas ímpares: cabeçalho com seções ou subseções e o número da p\'agina
+%- p\'aginas pares: cabeçalho com o número da p\'agina e o título do capítulo 
 % ---
 \end{verbatim}
 
 A lista completa de idiomas suportados, bem como outras opções de hifenização,
 estão disponíveis em \citeonline[p.~7-8]{babel2011}. \\
 
-Exemplo de hifenização em inglês\footnote{Extraído de:
+Exemplo de hifenização em ingl\^es\footnote{Extraído de:
 	\url{http://en.wikibooks.org/wiki/LaTeX/Internationalization}}:
 
 \begin{otherlanguage*}{english}
@@ -564,25 +564,25 @@ Exemplo de hifenização em inglês\footnote{Extraído de:
 		`nohyphenation'.}
 \end{otherlanguage*}
 
-Exemplo de hifenização em francês\footnote{Extraído de:
+Exemplo de hifenização em franc\^es\footnote{Extraído de:
 	\url{http://bigbrowser.blog.lemonde.fr/2013/02/17/tu-ne-tweeteras-point-le-vatican-interdit-aux-cardinaux-de-tweeter-pendant-le-conclave/}}:
 
 \begin{otherlanguage*}{french}
 	\textit{Texte en français. Pas question que Twitter ne vienne faire une
-		concurrence déloyale à la traditionnelle fumée blanche qui marque l'élection
-		d'un nouveau pape. Pour éviter toute fuite précoce, le Vatican a donc pris un
-		peu d'avance, et a déjà interdit aux cardinaux qui prendront part au vote
-		d'utiliser le réseau social, selon Catholic News Service. Une mesure valable
+		concurrence d\'eloyale `a la traditionnelle fum\'ee blanche qui marque l'\'election
+		d'un nouveau pape. Pour \'eviter toute fuite pr\'ecoce, le Vatican a donc pris un
+		peu d'avance, et a d\'ej`a interdit aux cardinaux qui prendront part au vote
+		d'utiliser le r\'eseau social, selon Catholic News Service. Une mesure valable
 		surtout pour les neuf cardinaux – sur les 117 du conclave – pratiquants très
-		actifs de Twitter, qui auront interdiction pendant toute la période de se
-		connecter à leur compte.}
+		actifs de Twitter, qui auront interdiction pendant toute la p\'eriode de se
+		connecter `a leur compte.}
 \end{otherlanguage*}
 
 Exemplo de hifenização em espanhol\footnote{Extraído de:
 	\url{http://internacional.elpais.com/internacional/2013/02/17/actualidad/1361102009_913423.html}}:
 
 \foreignlanguage{spanish}{\textit{Decenas de miles de personas ovacionan al pontífice en su
-		penúltimo ángelus dominical, el primero desde que anunciase su renuncia. El Papa se
+		penúltimo \'angelus dominical, el primero desde que anunciase su renuncia. El Papa se
 		centra en la crítica al materialismo}}.
 
 O idioma geral do texto pode ser alterado como no exemplo seguinte:
@@ -593,15 +593,15 @@ O idioma geral do texto pode ser alterado como no exemplo seguinte:
 \end{verbatim}
 
 Isso altera automaticamente a hifenização e todos os nomes constantes de
-referências do documento para o idioma inglês. Consulte o manual da classe para obter orientações adicionais sobre internacionalização de documentos produzidos com \textsf{\abnTeX} \cite{abnetxclasse}.
+refer\^encias do documento para o idioma ingl\^es. Consulte o manual da classe para obter orientações adicionais sobre internacionalização de documentos produzidos com \textsf{\abnTeX} \cite{abnetxclasse}.
 
-Se a opção de idioma do texto não for o português, é necessário observar o descrito em \ref{idioma}.
+Se a opção de idioma do texto não for o portugu\^es, \'e necess\'ario observar o descrito em \ref{idioma}.
 
 % ---
 \subsection{Enumerações}
 % ---
 
-\index{alíneas}\index{subalíneas}\index{incisos}Quando for necessário enumerar
+\index{alíneas}\index{subalíneas}\index{incisos}Quando for necess\'ario enumerar
 os diversos assuntos de uma seção que não possua título, esta deve ser
 subdividida em alíneas \cite[4.2]{nbr6024}:
 
@@ -612,10 +612,10 @@ subdividida em alíneas \cite[4.2]{nbr6024}:
   
   \item o texto que antecede as alíneas termina em dois pontos;
   \item as alíneas devem ser indicadas alfabeticamente, em letra minúscula
-  seguida de parêntese. Utilizam-se letras dobradas, quando esgotadas as
+  seguida de par\^entese. Utilizam-se letras dobradas, quando esgotadas as
   letras do alfabeto;
 
-  \item as letras indicativas das alíneas devem apresentar recuo em relação à
+  \item as letras indicativas das alíneas devem apresentar recuo em relação `a
   margem esquerda;
 
   \item o texto da alínea deve começar por letra minúscula e terminar em
@@ -632,7 +632,7 @@ subdividida em alíneas \cite[4.2]{nbr6024}:
   \begin{alineas}
      \item as subalíneas devem começar por travessão seguido de espaço;
 
-     \item as subalíneas devem apresentar recuo em relação à alínea;
+     \item as subalíneas devem apresentar recuo em relação `a alínea;
 
      \item o texto da subalínea deve começar por letra minúscula e terminar em
      ponto-e-vírgula. A última subalínea deve terminar em ponto final, se não
@@ -643,53 +643,53 @@ subdividida em alíneas \cite[4.2]{nbr6024}:
   \end{alineas}
   
   \item no \abnTeX\ estão disponíveis os ambientes \texttt{incisos} e
-  \texttt{subalineas}, que em suma é o mesmo que se criar outro nível de
-  \texttt{alineas}, como nos exemplos à seguir:
+  \texttt{subalineas}, que em suma \'e o mesmo que se criar outro nível de
+  \texttt{alineas}, como nos exemplos `a seguir:
   
   \begin{incisos}
-    \item \textit{Um novo inciso em itálico};
+    \item \textit{Um novo inciso em it\'alico};
   \end{incisos}
   
   \item Alínea em \textbf{negrito}:
   
   \begin{subalineas}
-    \item \textit{Uma subalínea em itálico};
-    \item \underline{\textit{Uma subalínea em itálico e sublinhado}}; 
+    \item \textit{Uma subalínea em it\'alico};
+    \item \underline{\textit{Uma subalínea em it\'alico e sublinhado}}; 
   \end{subalineas}
   
-  \item Última alínea com \emph{ênfase}.
+  \item Última alínea com \emph{\^enfase}.
   
 \end{alineas}
 
 % ---
-\subsection{Espaçamento entre parágrafos e linhas}\label{sec_espacamento}
+\subsection{Espaçamento entre par\'agrafos e linhas}\label{sec_espacamento}
 % ---
 
-\index{espaçamento!dos parágrafos}O tamanho do parágrafo, espaço entre a margem
-e o início da frase do parágrafo, é definido por:
+\index{espaçamento!dos par\'agrafos}O tamanho do par\'agrafo, espaço entre a margem
+e o início da frase do par\'agrafo, \'e definido por:
 
 \begin{verbatim}
    \setlength{\parindent}{1.3cm}
 \end{verbatim}
 
-\index{espaçamento!do primeiro parágrafo}Por padrão, não há espaçamento no
-primeiro parágrafo de cada início de divisão do documento
-(\autoref{sec-divisoes-b}). Porém, você pode definir que o primeiro parágrafo
-também seja indentado, como é o caso deste documento. Para isso, apenas inclua o
-pacote \textsf{indentfirst} no preâmbulo do documento:
+\index{espaçamento!do primeiro par\'agrafo}Por padrão, não h\'a espaçamento no
+primeiro par\'agrafo de cada início de divisão do documento
+(\autoref{sec-divisoes-b}). Por\'em, voc\^e pode definir que o primeiro par\'agrafo
+tamb\'em seja indentado, como \'e o caso deste documento. Para isso, apenas inclua o
+pacote \textsf{indentfirst} no pre\^ambulo do documento:
 
 \begin{verbatim}
-   \usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção.
+   \usepackage{indentfirst} % Indenta o primeiro par\'agrafo de cada seção.
 \end{verbatim}
 
-\index{espaçamento!entre os parágrafos}O espaçamento entre um parágrafo e outro
+\index{espaçamento!entre os par\'agrafos}O espaçamento entre um par\'agrafo e outro
 pode ser controlado por meio do comando:
 
 \begin{verbatim}
-  \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+  \setlength{\parskip}{0.2cm}  % tente tamb\'em \onelineskip
 \end{verbatim}
 
-\index{espaçamento!entre as linhas}O controle do espaçamento entre linhas é
+\index{espaçamento!entre as linhas}O controle do espaçamento entre linhas \'e
 definido por:
 \begin{verbatim}
   \OnehalfSpacing       % espaçamento um e meio (padrão); 
@@ -697,7 +697,7 @@ definido por:
   \SingleSpacing        % espaçamento simples	
 \end{verbatim}
 
-Para isso, também estão disponíveis os ambientes:
+Para isso, tamb\'em estão disponíveis os ambientes:
 \begin{verbatim}
   \begin{SingleSpace} ...\end{SingleSpace}
   \begin{Spacing}{hfactori} ... \end{Spacing}
@@ -710,23 +710,23 @@ Para isso, também estão disponíveis os ambientes:
 % ---
 \subsection{Tabelas e quadros}
 
-As tabelas e os quadros apresentam os dados de modo resumido, oferecendo uma visão geral do conteúdo em questão, visando facilitar a compreensão do fenômeno em estudo. A diferença básica entre ambas está relacionada ao conteúdo e a formatação. 
+As tabelas e os quadros apresentam os dados de modo resumido, oferecendo uma visão geral do conteúdo em questão, visando facilitar a compreensão do fenômeno em estudo. A diferença b\'asica entre ambas est\'a relacionada ao conteúdo e a formatação. 
 
-Tabela é o conjunto de dados estatísticos, dispostos em determinada ordem de classificação, que expressam as variações qualitativas de um fenômeno. Sua finalidade básica é resumir ou sintetizar dados \cite{sibi2016}.
+Tabela \'e o conjunto de dados estatísticos, dispostos em determinada ordem de classificação, que expressam as variações qualitativas de um fenômeno. Sua finalidade b\'asica \'e resumir ou sintetizar dados \cite{sibi2016}.
 
-A construção de tabelas deve obedecer os critérios estabelecidos pelo Instituto Brasileiro de Geografia e Estatística (IBGE) e requeridos pelas normas da ABNT para documentos técnicos e acadêmicos.
+A construção de tabelas deve obedecer os crit\'erios estabelecidos pelo Instituto Brasileiro de Geografia e Estatística (IBGE) e requeridos pelas normas da ABNT para documentos t\'ecnicos e acad\^emicos.
 
-A \autoref{tab-ibge} é um exemplo de tabela alinhada que pode ser longa ou curta, conforme padrão do IBGE.
+A \autoref{tab-ibge} \'e um exemplo de tabela alinhada que pode ser longa ou curta, conforme padrão do IBGE.
 
 \begin{table}[htb]
 	%\begin{table}[H]
 	\IBGEtab{%
-		\caption{Frequência anual por categoria de usuários}%
+		\caption{Frequ\^encia anual por categoria de usu\'arios}%
 		\label{tab-ibge}
 	}{%
 	\begin{tabular}{ccc}
 		\toprule
-		Categoria de Usuários & Frequência de Usuários \\
+		Categoria de Usu\'arios & Frequ\^encia de Usu\'arios \\
 		\midrule \midrule
 		Graduação & 72\% \\
 		\midrule 
@@ -740,7 +740,7 @@ A \autoref{tab-ibge} é um exemplo de tabela alinhada que pode ser longa ou curt
 }{%
 \fonte{Elaborada pelos autores.}%
 \nota{Exemplo de uma nota.}%
-\nota[Anotações]{Uma anotação adicional, que pode ser seguida de várias
+\nota[Anotações]{Uma anotação adicional, que pode ser seguida de v\'arias
 	outras.}%
 
 }
@@ -749,7 +749,7 @@ A \autoref{tab-ibge} é um exemplo de tabela alinhada que pode ser longa ou curt
 
 \begin{table}[H]
 	\IBGEtab{%
-		\caption{Níveis descritivos dos testes de comparação de médias entre grupos para profundidade da lesão junto à restauração}%
+		\caption{Níveis descritivos dos testes de comparação de m\'edias entre grupos para profundidade da lesão junto `a restauração}%
 		\label{tabela-ibge}
 	}{%
 	\begin{tabular}{p{5.5cm}|p{5.5cm}}
@@ -769,9 +769,9 @@ A \autoref{tab-ibge} é um exemplo de tabela alinhada que pode ser longa ou curt
 
 Os \textbf{APÊNDICES J-K} exemplificam outras formatações de tabelas.
 
-A formatação do quadro é similar à tabela, mas deve ter suas laterais fechadas e conter as linhas horizontais.
+A formatação do quadro \'e similar `a tabela, mas deve ter suas laterais fechadas e conter as linhas horizontais.
 
-% o comando \newpage foi utilizado para forçar a quebra de página
+% o comando \newpage foi utilizado para forçar a quebra de p\'agina
 
 \begin{quadro}[htb]
 	\caption{\label{quadro_modelo}Níveis de investigação}
@@ -779,13 +779,13 @@ A formatação do quadro é similar à tabela, mas deve ter suas laterais fechad
 		\hline
 		\textbf{Nível de Investigação} & \textbf{Insumos}  & \textbf{Sistemas de Investigação}  & \textbf{Produtos}  \\
 		\hline
-		Meta-nível & Filosofia\index{filosofia} da Ciência  & Epistemologia &
+		Meta-nível & Filosofia\index{filosofia} da Ci\^encia  & Epistemologia &
 		Paradigma  \\
 		\hline
-		Nível do objeto & Paradigmas do metanível e evidências do nível inferior &
-		Ciência  & Teorias e modelos \\
+		Nível do objeto & Paradigmas do metanível e evid\^encias do nível inferior &
+		Ci\^encia  & Teorias e modelos \\
 		\hline
-		Nível inferior & Modelos e métodos do nível do objeto e problemas do nível inferior & Prática & Solução de problemas  \\
+		Nível inferior & Modelos e m\'etodos do nível do objeto e problemas do nível inferior & Pr\'atica & Solução de problemas  \\
 		\hline
 	\end{tabular}
 	\begin{flushleft}
@@ -838,20 +838,20 @@ como o exemplo da \autoref{fig_circulo}. \\
 	\legend{Fonte: \citeonline{equipeabntex2}}
 \end{figure}
 
-Outra opção é incorporar a figura utilizando um arquivo externo, como é o caso da \autoref{fig_grafico}. Se a figura que for incluída se tratar de um diagrama, um gráfico ou uma ilustração, que você mesmo produza, priorize o uso de imagens vetoriais no formato PDF. Com isso, o tamanho do arquivo final do trabalho será menor e as imagens terão uma apresentação melhor, principalmente quando impressas, uma vez que imagens vetoriais são perfeitamente escaláveis para qualquer dimensão. Nesse caso, se for utilizar o Microsoft Excel para produzir gráficos, ou o Microsoft Word para ilustrações, exporte-os como PDF e os incorpore ao documento conforme o exemplo abaixo. No entanto, para manter a
-coerência no uso de software livre (já que você está usando \LaTeX\  e \abnTeX),
+Outra opção \'e incorporar a figura utilizando um arquivo externo, como \'e o caso da \autoref{fig_grafico}. Se a figura que for incluída se tratar de um diagrama, um gr\'afico ou uma ilustração, que voc\^e mesmo produza, priorize o uso de imagens vetoriais no formato PDF. Com isso, o tamanho do arquivo final do trabalho ser\'a menor e as imagens terão uma apresentação melhor, principalmente quando impressas, uma vez que imagens vetoriais são perfeitamente escal\'aveis para qualquer dimensão. Nesse caso, se for utilizar o Microsoft Excel para produzir gr\'aficos, ou o Microsoft Word para ilustrações, exporte-os como PDF e os incorpore ao documento conforme o exemplo abaixo. No entanto, para manter a
+coer\^encia no uso de software livre (j\'a que voc\^e est\'a usando \LaTeX\  e \abnTeX),
 teste a ferramenta \textsf{InkScape}\index{InkScape}
-(\url{http://inkscape.org/}). Ela é uma excelente opção de código-livre para
+(\url{http://inkscape.org/}). Ela \'e uma excelente opção de código-livre para
 produzir ilustrações vetoriais, similar ao CorelDraw\index{CorelDraw} ou ao Adobe
 Illustrator\index{Adobe Illustrator}. De todo modo, caso não seja possível
 utilizar arquivos de imagens como PDF, utilize qualquer outro formato, como
-JPEG, GIF, BMP, etc. Nesse caso, você pode tentar aprimorar as imagens
+JPEG, GIF, BMP, etc. Nesse caso, voc\^e pode tentar aprimorar as imagens
 incorporadas com o software livre \textsf{Gimp}\index{Gimp}
-(\url{http://www.gimp.org/}). Ele é uma alternativa livre ao Adobe
+(\url{http://www.gimp.org/}). Ele \'e uma alternativa livre ao Adobe
 Photoshop\index{Adobe Photoshop}. \\
 
 \begin{figure}[H]
-	\caption{\label{fig_grafico}Gráfico produzido em Excel e salvo como PDF}
+	\caption{\label{fig_grafico}Gr\'afico produzido em Excel e salvo como PDF}
 	\includegraphics[scale=0.5]{USPSC-img/USPSC-modelo-img-grafico.pdf}
 	\begin{flushleft}
 		Fonte: \citeonline[p. 24]{araujo2012}
@@ -864,17 +864,17 @@ Photoshop\index{Adobe Photoshop}. \\
 
 As ilustrações devem sempre ter numeração contínua e única em todo o documento:
 
-% O comando \newpage força a quebra de página
+% O comando \newpage força a quebra de p\'agina
 
 \begin{citacao}
 	Qualquer que seja o tipo de ilustração, sua identificação aparece na parte
 	superior, precedida da palavra designativa (desenho, esquema, fluxograma,
-	fotografia, gráfico, mapa, organograma, planta, quadro, retrato, figura,
-	imagem, entre outros), seguida de seu número de ordem de ocorrência no texto,
-	em algarismos arábicos, travessão e do respectivo título. Após a ilustração, na
+	fotografia, gr\'afico, mapa, organograma, planta, quadro, retrato, figura,
+	imagem, entre outros), seguida de seu número de ordem de ocorr\^encia no texto,
+	em algarismos ar\'abicos, travessão e do respectivo título. Após a ilustração, na
 	parte inferior, indicar a fonte consultada (elemento obrigatório, mesmo que
 	seja produção do próprio autor), legenda, notas e outras informações
-	necessárias à sua compreensão (se houver). A ilustração deve ser citada no
+	necess\'arias `a sua compreensão (se houver). A ilustração deve ser citada no
 	texto e inserida o mais próximo possível do trecho a que se
 	refere \cite{nbr14724}.
 \end{citacao}
@@ -902,21 +902,21 @@ com tamanhos e posições controladas. Veja o exemplo da
 \end{figure}
 
 % ---
-\subsection{Expressões matemáticas}
+\subsection{Expressões matem\'aticas}
 % ---
 
-\index{expressões matemáticas}Use o ambiente \texttt{equation} para escrever
-expressões matemáticas numeradas:
+\index{expressões matem\'aticas}Use o ambiente \texttt{equation} para escrever
+expressões matem\'aticas numeradas:
 
 \begin{equation}
 \forall x \in X, \quad \exists \: y \leq \epsilon
 \end{equation}
 
-Escreva expressões matemáticas entre \$ e \$, como em $ \lim_{x \to \infty}
+Escreva expressões matem\'aticas entre \$ e \$, como em $ \lim_{x \to \infty}
 \exp(-x) = 0 $, para que fiquem na mesma linha.
 
-Também é possível usar colchetes para indicar o início de uma expressão
-matemática que não é numerada.
+Tamb\'em \'e possível usar colchetes para indicar o início de uma expressão
+matem\'atica que não \'e numerada.
 
 \[
 \left|\sum_{i=1}^n a_ib_i\right|
@@ -925,7 +925,7 @@ matemática que não é numerada.
 \left(\sum_{i=1}^n b_i^2\right)^{1/2}
 \]
 
-Consulte mais informações sobre expressões matemáticas em
+Consulte mais informações sobre expressões matem\'aticas em
 \url{https://github.com/abntex/abntex2/wiki/Referencias}.
 
 \subsection{Estruturas, reações e mecanismos de reações químicas}\label{Reaquimica}
@@ -934,7 +934,7 @@ Para a versão 3.0 do Pacote USPSC, o Grupo Desenvolvedor optou por utilizar os 
 Aqui são apresentados alguns exemplos, sendo que a maioria foram retirados do manual do pacote \textbf{ChemFig}\cite{ChemFigPac}. 
 
 
-A fórmula estrutural do metano é:
+A fórmula estrutural do metano \'e:
 
 
 \chemfig{C(-[5]H)(-[2]H)(<[:-70]H)(<:[:-20]H)} \\
@@ -942,7 +942,7 @@ A fórmula estrutural do metano é:
 \begin{verbatim}
 \end{verbatim} 
 
-Molecula da Adrenalina é:
+Molecula da Adrenalina \'e:
 
 \chemfig{*6((-HO)-=-(-(<[::60]OH)-[::-60]-[::-60,,,2]
 	HN-[::+60]CH_3)=-(-HO)=)} \\
@@ -950,13 +950,13 @@ Molecula da Adrenalina é:
 \begin{verbatim}
 \end{verbatim}
 
-Com o comando abaixo, o \textbf{ChemFig} possibilita escrever o nome de uma molécula abaixo dela. 
+Com o comando abaixo, o \textbf{ChemFig} possibilita escrever o nome de uma mol\'ecula abaixo dela. 
 
 \begin{verbatim}
-\ chemname [hdimi] {\ chemfig {código da molécula}} {hnamei}
+\ chemname [hdimi] {\ chemfig {código da mol\'ecula}} {hnamei}
 \end{verbatim}
 
-Para exemplificar apresentamos uma reação com os nomes das respectivas moléculas:
+Para exemplificar apresentamos uma reação com os nomes das respectivas mol\'eculas:
 
 \schemestart
 \chemname{\chemfig{R-C(-[:-30]OH)=[:30]O}}{Ácido carboxílico}
@@ -973,14 +973,14 @@ Para exemplificar apresentamos uma reação com os nomes das respectivas molécu
 \begin{verbatim}
 \end{verbatim}
 
-Mediante a utilização dos pacotes \textbf{TikZ} e \textbf{ChemFig}, o pacote \textbf{xcolor} é carregado possibilitando o uso de cores nos códigos de comandos, conforme exemplos abaixo:
+Mediante a utilização dos pacotes \textbf{TikZ} e \textbf{ChemFig}, o pacote \textbf{xcolor} \'e carregado possibilitando o uso de cores nos códigos de comandos, conforme exemplos abaixo:
 
 \chemfig{C|{\color{blue}H_3}-C(=[1]O)-[7]O|{\color{red}H}} 
 
 \begin{verbatim}
 \end{verbatim}
 
-Para destacar substâncias individualmente ou parte de um esquema, é possível utilizar recursos tais como os exemplificados a seguir.
+Para destacar subst\^ancias individualmente ou parte de um esquema, \'e possível utilizar recursos tais como os exemplificados a seguir.
 
 \begin{verbatim}
 setchemfig{compound style={draw,line width=0.8pt,
@@ -1012,7 +1012,7 @@ D\arrow(--[draw=none])[-180]
 \begin{verbatim}
 \end{verbatim} 
 
-Mais um exemplo de utilização dos recursos do pacote TikZ é o desenho de duas linhas e um ponto de interseção. O comando \verb+ \draw[blue, thick] + define um elemento gráfico cuja cor é azul e com um traço grosso. A linha é definida por seus dois pontos finais, (-1,2) e (2, -4), unidos por -. O comando \verb+ \filldraw[red] (0,0) circle (2pt) + \\ \verb+node[anchor=west] {Intersection point} + irá desenhar um círculo preenchido com a cor vermelha, sendo que (0,0) define o ponto central, (2pt) determina o raio e, próximo ao ponto, um nó e uma caixa contendo o texto "ponto de interseção", ancorado a oeste do ponto.
+Mais um exemplo de utilização dos recursos do pacote TikZ \'e o desenho de duas linhas e um ponto de interseção. O comando \verb+ \draw[blue, thick] + define um elemento gr\'afico cuja cor \'e azul e com um traço grosso. A linha \'e definida por seus dois pontos finais, (-1,2) e (2, -4), unidos por -. O comando \verb+ \filldraw[red] (0,0) circle (2pt) + \\ \verb+node[anchor=west] {Intersection point} + ir\'a desenhar um círculo preenchido com a cor vermelha, sendo que (0,0) define o ponto central, (2pt) determina o raio e, próximo ao ponto, um nó e uma caixa contendo o texto "ponto de interseção", ancorado a oeste do ponto.
 
 
 \begin{verbatim}
@@ -1023,7 +1023,7 @@ Mais um exemplo de utilização dos recursos do pacote TikZ é o desenho de duas
 \end{tikzpicture}
 \end{verbatim}
 
-Tais comandos geram os elementos gráficos abaixo:
+Tais comandos geram os elementos gr\'aficos abaixo:
 
 \begin{tikzpicture}
 \draw[blue, thick] (-1,2) -- (2,-4);
@@ -1032,7 +1032,7 @@ Tais comandos geram os elementos gráficos abaixo:
 \end{tikzpicture}
 
 
-Para gerar este documento, no preâmbulo do arquivo principal (USPSC-modelo.tex e USPSC-TCC-modelo.tex ) foram incluídos os seguintes comandos:
+Para gerar este documento, no pre\^ambulo do arquivo principal (USPSC-modelo.tex e USPSC-TCC-modelo.tex ) foram incluídos os seguintes comandos:
 \begin{verbatim}
 \usepackage{float} 				% Fixa tabelas e figuras no local exato
 \usepackage{chemfig,chemmacros} % Para escrever reações químicas
@@ -1041,24 +1041,24 @@ Para gerar este documento, no preâmbulo do arquivo principal (USPSC-modelo.tex 
 \usetikzlibrary{arrows, babel}	% Para escrever reações químicas e outros
 \end{verbatim}
 
-Para informações complementares e recursos adicionais, consulte os manuais dos pacotes utilizados:  \textbf{mychemistry}\cite{mychemistryPac}, \textbf{ChemFig}\cite{ChemFigPac}, \textbf{etoolbox}\cite{etoolboxPack}, \textbf{float}\cite{floatPac}, \textbf{xkeyval}\cite{xkeyvalPac}, \textbf{chemmacros}\cite{chemmacrosPac}, \textbf{TikZ e PGF}\cite{TikZPac} ou de outros necessários para o seu documento.
+Para informações complementares e recursos adicionais, consulte os manuais dos pacotes utilizados:  \textbf{mychemistry}\cite{mychemistryPac}, \textbf{ChemFig}\cite{ChemFigPac}, \textbf{etoolbox}\cite{etoolboxPack}, \textbf{float}\cite{floatPac}, \textbf{xkeyval}\cite{xkeyvalPac}, \textbf{chemmacros}\cite{chemmacrosPac}, \textbf{TikZ e PGF}\cite{TikZPac} ou de outros necess\'arios para o seu documento.
 
 
 % ---
 \subsection{Inclusão de outros arquivos}\label{sec-include}
 % ---
 
-É uma boa prática dividir o seu documento em diversos arquivos, e não
+É uma boa pr\'atica dividir o seu documento em diversos arquivos, e não
 apenas escrever tudo em um único. Esse recurso foi utilizado neste
 documento. Para incluir diferentes arquivos em um arquivo principal,
-de modo que cada arquivo incluído fique em uma página diferente, utilize o
+de modo que cada arquivo incluído fique em uma p\'agina diferente, utilize o
 comando:
 
 \begin{verbatim}
    \include{documento-a-ser-incluido}      % sem a extensão .tex
 \end{verbatim}
 
-Para incluir documentos sem quebra de páginas, utilize:
+Para incluir documentos sem quebra de p\'aginas, utilize:
 
 \begin{verbatim}
    \input{documento-a-ser-incluido}      % sem a extensão .tex
@@ -1066,28 +1066,28 @@ Para incluir documentos sem quebra de páginas, utilize:
 % ---
 \subsection{Índice(s)}
 % ---
-Elemento  opcional,  que  consiste  em  lista  de  palavras  ou  frases  ordenadas alfabeticamente (autor, título ou assunto) ou sistematicamente (ordenação por classes, numérica ou cronológica); localiza e remete para as informações contidas no texto. A paginação deve ser contínua, dando seguimento ao texto principal \cite{aguia2020}.
+Elemento  opcional,  que  consiste  em  lista  de  palavras  ou  frases  ordenadas alfabeticamente (autor, título ou assunto) ou sistematicamente (ordenação por classes, num\'erica ou cronológica); localiza e remete para as informações contidas no texto. A paginação deve ser contínua, dando seguimento ao texto principal \cite{aguia2020}.
 
-Para criar índice remissivo no \LaTeX\  utilize o pacote makeidx, que deve estar declarado com os demais pacotes. No presente modelo está declarado no arquivo USPSC-modelo.tex, conforme indicado abaixo:
+Para criar índice remissivo no \LaTeX\  utilize o pacote makeidx, que deve estar declarado com os demais pacotes. No presente modelo est\'a declarado no arquivo USPSC-modelo.tex, conforme indicado abaixo:
 
 \begin{verbatim}
 % ---
-% Pacotes básicos - Fundamentais 
+% Pacotes b\'asicos - Fundamentais 
 % ---
 \usepackage[T1]{fontenc}		% Seleção de códigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificação do documento (conversão 
-automática dos acentos)
+autom\'atica dos acentos)
 \usepackage{lmodern}			% Usa a fonte Latin Modern
 % Para utilizar a fonte Times New Roman, inclua uma % no início do comando 
 acima  "\usepackage{lmodern}"
 % Abaixo, tire a % antes do comando  \usepackage{times}
 %\usepackage{times}		    	% Usa a fonte Times New Roman	
-% Lembre-se de alterar a fonte no comando que imprime o preâmbulo no 
+% Lembre-se de alterar a fonte no comando que imprime o pre\^ambulo no 
 arquivo da Classe USPSC.cls				
-\usepackage{lastpage}			% Usado pela Ficha catalográfica
-\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{lastpage}			% Usado pela Ficha catalogr\'afica
+\usepackage{indentfirst}		% Indenta o primeiro par\'agrafo de cada seção.
 \usepackage{color}				% Controle das cores
-\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{graphicx}			% Inclusão de gr\'aficos
 \usepackage{float} 				% Fixa tabelas e figuras no local exato
 \usepackage{chemfig,chemmacros} % Para escrever reações químicas
 \usepackage{mychemistry}        % Para escrever reações químicas
@@ -1103,7 +1103,7 @@ A habilitação dos comandos de indexação foi incluída no arquivo USPSC-model
 
 
 \begin{verbatim}
-% compila o sumário e índice
+% compila o sum\'ario e índice
 \makeindex
 % ---
 \end{verbatim}
@@ -1116,10 +1116,10 @@ O presente modelo inclui um exemplo de índice, gerado a partir da utilização 
 \index{Adobe Illustrator}
 \index{Gimp}
 \index{Adobe Photoshop}
-\index{espaçamento!do primeiro parágrafo}
-\index{espaçamento!dos parágrafos}
+\index{espaçamento!do primeiro par\'agrafo}
+\index{espaçamento!dos par\'agrafos}
 \index{espaçamento!entre as linhas}
-\index{espaçamento!entre os parágrafos}
+\index{espaçamento!entre os par\'agrafos}
 \end{verbatim}
 
 Os comandos acima estão no arquivo USPSC-Cap2-Desenvolvimento.tex, em textos na  \autoref{sec_espacamento}  e na  \autoref{sec_figuras}.
@@ -1136,7 +1136,7 @@ Para imprimir o índice, no final do arquivo USPSC-modelo.tex foi incluído:
 %---------------------------------------------------------------------
 \end{verbatim}
 
-Para que o índice seja gerado e incluído corretamente no texto é necessário compilá-lo separadamente. No \textbf{TeXstudio 2.9.4}, na barra de menu, selecione \textbf{Tools} e execute \textbf{Index}.
+Para que o índice seja gerado e incluído corretamente no texto \'e necess\'ario compil\'a-lo separadamente. No \textbf{TeXstudio 2.9.4}, na barra de menu, selecione \textbf{Tools} e execute \textbf{Index}.
 
 
 % ---
@@ -1146,10 +1146,10 @@ Para que o índice seja gerado e incluído corretamente no texto é necessário 
 Geralmente os editores \LaTeX, como o
 TeXlipse\footnote{\url{http://texlipse.sourceforge.net/}}, o
 Texmaker\footnote{\url{http://www.xm1math.net/texmaker/}}, entre outros,
-compilam os documentos automaticamente, de modo que você não precisa se
+compilam os documentos automaticamente, de modo que voc\^e não precisa se
 preocupar com isso.
 
-No entanto, você pode compilar os documentos \LaTeX\ usando os seguintes
+No entanto, voc\^e pode compilar os documentos \LaTeX\ usando os seguintes
 comandos, que devem ser digitados no \emph{Prompt de Comandos} do Windows ou no
 \emph{Terminal} do Mac ou do Linux:
 
@@ -1166,24 +1166,24 @@ comandos, que devem ser digitados no \emph{Prompt de Comandos} do Windows ou no
 \subsection{Remissões internas}
 % ---
 
-Ao nomear a \autoref{tab-ibge} e a \autoref{fig_circulo}, apresentamos um exemplo de remissão interna, que também pode ser feita quando indicamos o
+Ao nomear a \autoref{tab-ibge} e a \autoref{fig_circulo}, apresentamos um exemplo de remissão interna, que tamb\'em pode ser feita quando indicamos o
 \autoref{cap_exemplos}, que tem o nome \emph{\nameref{cap_exemplos}}. O número
-do capítulo indicado é \ref{cap_exemplos}, que se inicia à
-\autopageref{cap_exemplos}\footnote{O número da página de uma remissão pode ser
-	obtida também assim:
+do capítulo indicado \'e \ref{cap_exemplos}, que se inicia `a
+\autopageref{cap_exemplos}\footnote{O número da p\'agina de uma remissão pode ser
+	obtida tamb\'em assim:
 	\pageref{cap_exemplos}.}.
 Veja a \autoref{sec-divisoes-b} para outros exemplos de remissões internas entre
 seções, subseções e subsubseções.
 
-O código usado para produzir o texto desta seção é:
+O código usado para produzir o texto desta seção \'e:
 
 \begin{verbatim}
 Ao nomear a \autoref{tab-nivinv} e a \autoref{fig_circulo}, apresentamos 
-um exemplo de remissão interna, que também pode ser feita quando indicamos 
+um exemplo de remissão interna, que tamb\'em pode ser feita quando indicamos 
 o \autoref{cap_exemplos}, que tem o nome \emph{\nameref{cap_exemplos}}. O
-número do capítulo indicado é \ref{cap_exemplos}, que se inicia à 
-\autopageref{cap_exemplos}\footnote{O número da página de uma remissão 
-pode ser obtida também assim: \pageref{cap_exemplos}.}. Veja a 
+número do capítulo indicado \'e \ref{cap_exemplos}, que se inicia `a 
+\autopageref{cap_exemplos}\footnote{O número da p\'agina de uma remissão 
+pode ser obtida tamb\'em assim: \pageref{cap_exemplos}.}. Veja a 
 \autoref{sec-divisoes-b} para outros exemplos de remissões internas entre 
 seções, subseções e subsubseções.
 \end{verbatim}
@@ -1196,68 +1196,68 @@ Esta seção exemplifica o uso de divisões de documentos em conformidade com a 
 \subsection{Divisões do documento: subseção}\label{sec-divisoes-subsection}
 % ---
 
-Um exemplo de seção é a \autoref{sec-divisoes-b}. Esta é a \autoref{sec-divisoes-subsection}.
+Um exemplo de seção \'e a \autoref{sec-divisoes-b}. Esta \'e a \autoref{sec-divisoes-subsection}.
 
 \subsubsection{Divisões do documento: subsubseção}\label{sec-divisoes-subsubsection}
 
-Isto é uma \texttt{subsubsection} do \LaTeX, mas é denominada de ``subseção'' porque no português não temos a palavra ``subsubseção''.
+Isto \'e uma \texttt{subsubsection} do \LaTeX, mas \'e denominada de ``subseção'' porque no portugu\^es não temos a palavra ``subsubseção''.
 
 \subsubsection{Divisões do documento: subsubseção}
 
-Isto é outra subsubseção.
+Isto \'e outra subsubseção.
 
 \subsection{Divisões do documento: subseção}\label{sec-exemplo-subsec}
 
-Isto é uma subseção.
+Isto \'e uma subseção.
 
 \subsubsection{Divisões do documento: subsubseção}
 
-Isto é mais uma subsubseção da \autoref{sec-exemplo-subsec}.
+Isto \'e mais uma subsubseção da \autoref{sec-exemplo-subsec}.
 
 
-\subsubsubsection{Esta é uma subseção de quinto
+\subsubsubsection{Esta \'e uma subseção de quinto
 nível}\label{sec-exemplo-subsubsubsection}
 
-Esta é uma seção de quinto nível. Ela é produzida com o seguinte comando:
+Esta \'e uma seção de quinto nível. Ela \'e produzida com o seguinte comando:
 
 \begin{verbatim}
-\subsubsubsection{Esta é uma subseção de quinto
+\subsubsubsection{Esta \'e uma subseção de quinto
 nível}\label{sec-exemplo-subsubsubsection}
 \end{verbatim}
 
-\subsubsubsection{Esta é outra subseção de quinto nível}\label{sec-exemplo-subsubsubsection-outro}
+\subsubsubsection{Esta \'e outra subseção de quinto nível}\label{sec-exemplo-subsubsubsection-outro}
 
-Esta é outra seção de quinto nível.
+Esta \'e outra seção de quinto nível.
 
 
-\paragraph{Este é um parágrafo numerado}\label{sec-exemplo-paragrafo}
+\paragraph{Este \'e um par\'agrafo numerado}\label{sec-exemplo-paragrafo}
 
-Este é um exemplo de parágrafo nomeado. Ele é produzido com o comando de
-parágrafo:
+Este \'e um exemplo de par\'agrafo nomeado. Ele \'e produzido com o comando de
+par\'agrafo:
 
 \begin{verbatim}
-\paragraph{Este é um parágrafo numerado}\label{sec-exemplo-paragrafo}
+\paragraph{Este \'e um par\'agrafo numerado}\label{sec-exemplo-paragrafo}
 \end{verbatim}
 
-A numeração entre parágrafos numerados e subsubsubseções são contínuas.
+A numeração entre par\'agrafos numerados e subsubsubseções são contínuas.
 
-\paragraph{Este é outro parágrafo numerado}\label{sec-exemplo-paragrafo-outro}
+\paragraph{Este \'e outro par\'agrafo numerado}\label{sec-exemplo-paragrafo-outro}
 
-Este é outro parágrafo numerado.
+Este \'e outro par\'agrafo numerado.
 
 % ---
-\subsection{Este é um exemplo de nome de subseção longa que se aplica a seções e demais divisões do documento. Ele deve estar alinhado à esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha} 
+\subsection{Este \'e um exemplo de nome de subseção longa que se aplica a seções e demais divisões do documento. Ele deve estar alinhado `a esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha} 
 
-Observe que o alinhamento do título obedece esta regra também no sumário.
+Observe que o alinhamento do título obedece esta regra tamb\'em no sum\'ario.
 	
 
 % ---
 \section{Manual da classe \textsf{\abnTeX}}
 % ---
 
-O manual da classe \textsf{\abnTeX} possui uma referência completa das macros e ambientes disponíveis \cite{abnetxclasse}.
+O manual da classe \textsf{\abnTeX} possui uma refer\^encia completa das macros e ambientes disponíveis \cite{abnetxclasse}.
 
-Contém informações adicionais sobre as normas ABNT
+Cont\'em informações adicionais sobre as normas ABNT
 observadas pelo \textsf{\abnTeX} e considerações sobre eventuais requisitos específicos
 não atendidos, como o caso da ABNT NBR 14724 \cite{nbr14724}, que
 especifica o espaçamento entre os capítulos e o início do texto, regra
@@ -1270,20 +1270,20 @@ propositalmente não atendida pelo presente modelo.
 Consulte a FAQ com perguntas frequentes e comuns no portal do \textsf{\abnTeX}:
 \url{https://github.com/abntex/abntex2/wiki/FAQ}.
 
-Inscreva-se no grupo de usuários \LaTeX:
+Inscreva-se no grupo de usu\'arios \LaTeX:
 \url{http://groups.google.com/group/latex-br}, tire suas dúvidas e ajude
-outros usuários.
+outros usu\'arios.
 
-Participe também do grupo de desenvolvedores do \textsf{\abnTeX}:
-\url{http://groups.google.com/group/abntex2} e faça sua contribuição à
+Participe tamb\'em do grupo de desenvolvedores do \textsf{\abnTeX}:
+\url{http://groups.google.com/group/abntex2} e faça sua contribuição `a
 ferramenta.
 
 % ---
-\section{Você pode ajudar?}
+\section{Voc\^e pode ajudar?}
 % ---
 
-Sua contribuição é muito importante! Você pode ajudar na divulgação, no
-desenvolvimento e de várias outras formas. Veja como contribuir com o \abnTeX\
+Sua contribuição \'e muito importante! Voc\^e pode ajudar na divulgação, no
+desenvolvimento e de v\'arias outras formas. Veja como contribuir com o \abnTeX\
 em \url{https://github.com/abntex/abntex2/wiki/Como-Contribuir}.
 
 % ---
@@ -1297,46 +1297,46 @@ Veja como customizar o \abnTeX\ em:
 % ---
 \section{Precisa de ajuda sobre o Pacote USPSC?}
 % ---
-Consulte a Seção de Referência da Biblioteca de sua instituição para obter ajuda sobre o Pacote USPSC.
+Consulte a Seção de Refer\^encia da Biblioteca de sua instituição para obter ajuda sobre o Pacote USPSC.
 
-No Campus USP de São Carlos, consulte uma das seguintes equipes de referência:
+No Campus USP de São Carlos, consulte uma das seguintes equipes de refer\^encia:
 \begin{verbatim}
-EESC - Serviço de Biblioteca Prof. Dr. Sérgio Rodrigues Fontes 
-Atendimento ao Usuário
+EESC - Serviço de Biblioteca Prof. Dr. S\'ergio Rodrigues Fontes 
+Atendimento ao Usu\'ario
 biblioteca.atendimento@eesc.usp.br
 (16) 3373-8860
 
 IAU - Biblioteca
-Atendimento ao Usuário
+Atendimento ao Usu\'ario
 bibiau@sc.usp.br
 (16) 3373-9282
 
 ICMC - Biblioteca Prof. Achille Bassi
-Seção de Atendimento ao Usuário
+Seção de Atendimento ao Usu\'ario
 biblio@icmc.usp.br
 (16) 3373-8619
 
 IFSC - Serviço de Biblioteca e Informação Prof. Bernhard Gross
-Seção de Atendimento ao Usuário
+Seção de Atendimento ao Usu\'ario
 comut@ifsc.usp.br
 (16) 3373-9778
 
 IQSC - Serviço de Biblioteca e Informação Prof. Johannes Rüdiger Lechat
-Seção de Atendimento ao Usuário
+Seção de Atendimento ao Usu\'ario
 bibiqsc@iqsc.usp.br
 (16) 3373-9936
 \end{verbatim}
 
 
-O Grupo desenvolvedor do Pacote USPSC esclarece que seu objetivo é oferecer um facilitador para os graduandos e pós-graduandos, mas não se compromete a ensinar a Linguagem de Programação \LaTeX .  
+O Grupo desenvolvedor do Pacote USPSC esclarece que seu objetivo \'e oferecer um facilitador para os graduandos e pós-graduandos, mas não se compromete a ensinar a Linguagem de Programação \LaTeX .  
 
 % ---
 \section{Customize o Pacote USPSC para sua instituição}
 % ---
 
-Para customizar o \textbf{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC} e/ou o \textbf{Modelo para teses e dissertações em \LaTeX\ utilizando o Pacote USPSC} para outras Unidades da USP e demais instituições interessadas em adotar essas normas e padrões, basta criar um arquivo pré-textual contemplando os cursos de graduação e/ou os programas de pós-graduação vigentes e incluir a chamada do mesmo em USPSC-unidades.tex.
+Para customizar o \textbf{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC} e/ou o \textbf{Modelo para teses e dissertações em \LaTeX\ utilizando o Pacote USPSC} para outras Unidades da USP e demais instituições interessadas em adotar essas normas e padrões, basta criar um arquivo pr\'e-textual contemplando os cursos de graduação e/ou os programas de pós-graduação vigentes e incluir a chamada do mesmo em USPSC-unidades.tex.
 
-Para solicitar orientações como proceder, contactar as responsáveis pela programação:
+Para solicitar orientações como proceder, contactar as respons\'aveis pela programação:
 
 \begin{verbatim}
 Biblioteca da Prefeitura do Campus USP de São Carlos - PUSP-SC/USP

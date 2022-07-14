@@ -5,20 +5,20 @@
 % ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
 % Apresentacao
 %----------------------------------------------------------------
-%% Esta \'e uma customização do abntex2-modelo-trabalho-academico.tex de v-1.9.5 laurocesar 
-%% para as Unidades do Campus USP de São Carlos:
-%% EESC - Escola de Engenharia de São Carlos
-%% IAU - @[curso]@
-%% ICMC - @[curso]@
-%% IFSC - @[curso]@
-%% IQSC - @[curso]@
+%% Esta \'e uma customiza\c{c}\~ao do abntex2-modelo-trabalho-academico.tex de v-1.9.5 laurocesar 
+%% para as Unidades do Campus USP de S\~ao Carlos:
+%% EESC - Escola de Engenharia de S\~ao Carlos
+%% IAU - @[unidadefaculdade]@
+%% ICMC - @[unidadefaculdade]@
+%% IFSC - @[unidadefaculdade]@
+%% IQSC - @[unidadefaculdade]@
 %%
 %% Este trabalho utiliza a classe USPSC.cls que \'e mantida pela seguinte equipe:
 %% 
-%% Coordenação e Programação:
+%% Coordena\c{c}\~ao e Programa\c{c}\~ao:
 %%   - Marilza Aparecida Rodrigues Tognetti - marilza@sc.usp.br (PUSP-SC)
 %%   - Ana Paula Aparecida Calabrez - aninha@sc.usp.br (PUSP-SC)
-%% Normalização:
+%% Normaliza\c{c}\~ao:
 %%   - Brianda de Oliveira Ordonho Sigolo - brianda@usp.br (IAU)
 %%   - Eduardo Graziosi Silva - edu.gs@sc.usp.br (EESC)
 %%   - Eliana de C\'assia Aquareli Cordeiro - eliana@iqsc.usp.br (IQSC)
@@ -28,7 +28,7 @@
 %%
 %% O USPSC-modelo.tex e USPSC-TCC-modelo.tex utilizam diversos arquivos relacionado em 
 %% 2.1 Pacote USPSC: Classe USPSC e modelos de trabalhos acad\^emicos	do Tutorial do Pascote 
-%%  USPSC para modelos de trabalhos de acad\^emicos em LaTeX - versão 3.1
+%%  USPSC para modelos de trabalhos de acad\^emicos em LaTeX - vers\~ao 3.1
 
 
 %----------------------------------------------------------------
@@ -39,49 +39,49 @@
 %----------------------------------------------------------------
 
 \documentclass[
-% -- opções da classe memoir --
+% -- op\c{c}\~oes da classe memoir --
 12pt,		% tamanho da fonte
-openright,	% capítulos começam em p\'ag ímpar (insere p\'agina vazia caso preciso)
-twoside,  % para impressão em anverso (frente) e verso. Oposto a oneside - Nota: utilizar \imprimirfolhaderosto*
-%oneside, % para impressão em p\'aginas separadas (somente anverso) -  Nota: utilizar \imprimirfolhaderosto
+openright,	% cap\'{\i}tulos come\c{c}am em p\'ag \'{\i}mpar (insere p\'agina vazia caso preciso)
+twoside,  % para impress\~ao em anverso (frente) e verso. Oposto a oneside - Nota: utilizar \imprimirfolhaderosto*
+%oneside, % para impress\~ao em p\'aginas separadas (somente anverso) -  Nota: utilizar \imprimirfolhaderosto
 % inclua uma % antes do comando twoside e exclua a % antes do oneside 
 a4paper,			% tamanho do papel. 
-% -- opções da classe abntex2 --
-chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
-% -- opções do pacote babel --
-english,			% idioma adicional para hifenização
-french,				% idioma adicional para hifenização
-spanish,			% idioma adicional para hifenização
-brazil				% o último idioma \'e o principal do documento
-% {USPSC-classe/USPSC} configura o cabeçalho contendo apenas o número da p\'agina
+% -- op\c{c}\~oes da classe abntex2 --
+chapter=TITLE,		% t\'{\i}tulos de cap\'{\i}tulos convertidos em letras mai\'usculas
+% -- op\c{c}\~oes do pacote babel --
+english,			% idioma adicional para hifeniza\c{c}\~ao
+french,				% idioma adicional para hifeniza\c{c}\~ao
+spanish,			% idioma adicional para hifeniza\c{c}\~ao
+brazil				% o \'ultimo idioma \'e o principal do documento
+% {USPSC-classe/USPSC} configura o cabe\c{c}alho contendo apenas o n\'umero da p\'agina
 ]{USPSC-classe/USPSC}
 %]{USPSC-classe/USPSC1}
 % Inclua % antes de ]{USPSC-classe/USPSC} e retire a % antes de %]{USPSC-classe/USPSC1} para utilizar o 
-% cabeçalho diferenciado para as p\'aginas pares e ímpares:
-%- p\'aginas ímpares: com seções ou subseções e o número da p\'agina
-%- p\'aginas pares: com o número da p\'agina e o título do capítulo 
+% cabe\c{c}alho diferenciado para as p\'aginas pares e \'{\i}mpares:
+%- p\'aginas \'{\i}mpares: com se\c{c}\~oes ou subse\c{c}\~oes e o n\'umero da p\'agina
+%- p\'aginas pares: com o n\'umero da p\'agina e o t\'{\i}tulo do cap\'{\i}tulo 
 % ---
 % ---
 % Pacotes b\'asicos - Fundamentais 
 % ---
-\usepackage[T1]{fontenc}		% Seleção de códigos de fonte.
-\usepackage[utf8]{inputenc}		% Codificação do documento (conversão autom\'atica dos acentos)
+\usepackage[T1]{fontenc}		% Sele\c{c}\~ao de c\'odigos de fonte.
+\usepackage[utf8]{inputenc}		% Codifica\c{c}\~ao do documento (convers\~ao autom\'atica dos acentos)
 \usepackage{lmodern}			% Usa a fonte Latin Modern
-% Para utilizar a fonte Times New Roman, inclua uma % no início do comando acima  "\usepackage{lmodern}"
+% Para utilizar a fonte Times New Roman, inclua uma % no in\'{\i}cio do comando acima  "\usepackage{lmodern}"
 % Abaixo, tire a % antes do comando  \usepackage{times}
 %\usepackage{times}		    	% Usa a fonte Times New Roman	
-% Para usar a fonte , lembre-se de tirar a % do comando %\renewcommand{\ABNTEXchapterfont}{\rmfamily}, localizado mais abaixo, logo após "Outras opções para nota de rodap\'e no Sistema Num\'erico" 				
+% Para usar a fonte , lembre-se de tirar a % do comando %\renewcommand{\ABNTEXchapterfont}{\rmfamily}, localizado mais abaixo, logo ap\'os "Outras op\c{c}\~oes para nota de rodap\'e no Sistema Num\'erico" 				
 \usepackage{lastpage}			% Usado pela Ficha catalogr\'afica
-\usepackage{indentfirst}		% Indenta o primeiro par\'agrafo de cada seção.
+\usepackage{indentfirst}		% Indenta o primeiro par\'agrafo de cada se\c{c}\~ao.
 \usepackage{color}				% Controle das cores
-\usepackage{graphicx}			% Inclusão de gr\'aficos
+\usepackage{graphicx}			% Inclus\~ao de gr\'aficos
 \usepackage{float} 				% Fixa tabelas e figuras no local exato
-\usepackage{chemfig,chemmacros} % Para escrever reações químicas
-\usepackage{tikz}				% Para escrever reações químicas e outros
+\usepackage{chemfig,chemmacros} % Para escrever rea\c{c}\~oes qu\'{\i}micas
+\usepackage{tikz}				% Para escrever rea\c{c}\~oes qu\'{\i}micas e outros
 \usetikzlibrary{positioning}
-\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{microtype} 			% para melhorias de justifica\c{c}\~ao
 \usepackage{pdfpages}
-\usepackage{makeidx}            % para gerar índice remissivo
+\usepackage{makeidx}            % para gerar \'{\i}ndice remissivo
 \usepackage{hyphenat}          % Pacote para retirar a hifenizacao DO TEXTO
 \usepackage[absolute]{textpos} % Pacote permite o posicionamento do texto
 \usepackage{eso-pic}           % Pacote para incluir imagem de fundo
@@ -89,8 +89,8 @@ brazil				% o último idioma \'e o principal do documento
 % ---
 
 % ---
-% Pacotes de citações
-% Citações padrão ABNT
+% Pacotes de cita\c{c}\~oes
+% Cita\c{c}\~oes padr\~ao ABNT
 % ---
 % Sistemas de chamada: autor-data ou num\'erico.
 % Sistema autor-data
@@ -99,50 +99,50 @@ brazil				% o último idioma \'e o principal do documento
 % Se o idioma for o ingl\^es, inclua % no comando acima e exclua o % do comando abaixo
 \bibliographystyle{USPSC-classe/abntex2-alfeng-USPSC}
 
-% Para o IQSC, que indica todos os autores nas refer\^encias, incluir % no início dos comandos acima e retirar a % dos comandos abaixo 
+% Para o IQSC, que indica todos os autores nas refer\^encias, incluir % no in\'{\i}cio dos comandos acima e retirar a % dos comandos abaixo 
 %\usepackage[alf, abnt-emphasize=bf, abnt-thesis-year=both, abnt-repeated-author-omit=no, abnt-last-names=abnt, abnt-etal-cite, abnt-etal-list=0, abnt-etal-text=it, abnt-and-type=e, abnt-doi=doi, abnt-url-package=none, abnt-verbatim-entry=no]{abntex2cite} 
 %\bibliographystyle{USPSC-classe/abntex2-alf-USPSC}
 % Se o idioma for o ingl\^es, exclua % no comando acima ou do comando abaixo
 %\bibliographystyle{USPSC-classe/abntex2-alfeng-USPSC}
 
 % Sistema Num\'erico
-% Para citações num\'ericas, sistema adotado pelo IFSC, incluir % no início dos comandos acima e retirar a % dos comandos abaixo
-%\usepackage{cite}              % agrupa citações num\'ericas consecutivas 
+% Para cita\c{c}\~oes num\'ericas, sistema adotado pelo IFSC, incluir % no in\'{\i}cio dos comandos acima e retirar a % dos comandos abaixo
+%\usepackage{cite}              % agrupa cita\c{c}\~oes num\'ericas consecutivas 
 %\usepackage[num, abnt-emphasize=bf, abnt-thesis-year=both, abnt-repeated-author-omit=no, abnt-last-names=abnt, abnt-etal-cite, abnt-etal-list=3, abnt-etal-text=it, abnt-and-type=e, abnt-doi=doi, abnt-url-package=none, abnt-verbatim-entry=no]{abntex2cite} 
 %\bibliographystyle{USPSC-classe/abntex2-num-USPSC}
 % Se o idioma for o ingl\^es, exclua % no comando acima ou do comando abaixo
 %\bibliographystyle{USPSC-classe/abntex2-numeng-USPSC}
 
-% Complementarmente, verifique as instruções abaixo sobre os Pacotes de Nota de rodap\'e
+% Complementarmente, verifique as instru\c{c}\~oes abaixo sobre os Pacotes de Nota de rodap\'e
 % ---
 % Pacotes de Nota de rodap\'e
-% Configurações de nota de rodap\'e
+% Configura\c{c}\~oes de nota de rodap\'e
 
-% O presente modelo adota o formato num\'erico para as notas de rodap\'es quando utiliza o sistema de chamada autor-data para citações e refer\^encias. Para utilizar o sistema de chamada num\'erico para citações e refer\^encias, habilitar um dos comandos abaixo.
-% H\'a diversa opções para nota de rodap\'e no Sistema Num\'erico.  Para o IFSC, habilitade o comando abaixo.
+% O presente modelo adota o formato num\'erico para as notas de rodap\'es quando utiliza o sistema de chamada autor-data para cita\c{c}\~oes e refer\^encias. Para utilizar o sistema de chamada num\'erico para cita\c{c}\~oes e refer\^encias, habilitar um dos comandos abaixo.
+% H\'a diversa op\c{c}\~oes para nota de rodap\'e no Sistema Num\'erico.  Para o IFSC, habilitade o comando abaixo.
 
-%\renewcommand{\thefootnote}{\fnsymbol{footnote}}  %Comando para inserção de símbolos em nota de rodap\'e
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}  %Comando para inser\c{c}\~ao de s\'{\i}mbolos em nota de rodap\'e
 
-% Outras opções para nota de rodap\'e no Sistema Num\'erico:
-%\renewcommand{\thefootnote}{\alph{footnote}}      %Comando para inserção de letras minúscula em nota de rodap\'e
-%\renewcommand{\thefootnote}{\Alph{footnote}}      %Comando para inserção de letras maiúscula em nota de rodap\'e
-%\renewcommand{\thefootnote}{\roman{footnote}}     %Comando para inserção de números romanos minúsculos  em nota de rodap\'e
-%\renewcommand{\thefootnote}{\Roman{footnote}}     %Comando para inserção de números romanos minúsculos  em nota de rodap\'e
+% Outras op\c{c}\~oes para nota de rodap\'e no Sistema Num\'erico:
+%\renewcommand{\thefootnote}{\alph{footnote}}      %Comando para inser\c{c}\~ao de letras min\'uscula em nota de rodap\'e
+%\renewcommand{\thefootnote}{\Alph{footnote}}      %Comando para inser\c{c}\~ao de letras mai\'uscula em nota de rodap\'e
+%\renewcommand{\thefootnote}{\roman{footnote}}     %Comando para inser\c{c}\~ao de n\'umeros romanos min\'usculos  em nota de rodap\'e
+%\renewcommand{\thefootnote}{\Roman{footnote}}     %Comando para inser\c{c}\~ao de n\'umeros romanos min\'usculos  em nota de rodap\'e
 
 \renewcommand{\footnotesize}{\small} %Comando para diminuir a fonte das notas de rodap\'e
-%Para utilizar a fonte Times New Roman, inclua retire % do início do comando abaixo 
+%Para utilizar a fonte Times New Roman, inclua retire % do in\'{\i}cio do comando abaixo 
 %\renewcommand{\ABNTEXchapterfont}{\rmfamily}
 
 % ---
-% Pacote para agrupar a citação num\'erica consecutiva
+% Pacote para agrupar a cita\c{c}\~ao num\'erica consecutiva
 % Quando for adotado o Sistema Num\'erico, a exemplo do IFSC, habilite 
 % o pacote cite abaixo retirando a porcentagem antes do comando abaixo
 %\usepackage[superscript]{cite}	
 
 % ---
-% Pacotes adicionais, usados apenas no \^ambito do Modelo Canônico do abnteX2
+% Pacotes adicionais, usados apenas no \^ambito do Modelo Can\^onico do abnteX2
 % ---
-\usepackage{lipsum}				% para geração de dummy text
+\usepackage{lipsum}				% para gera\c{c}\~ao de dummy text
 % ---
 
 % pacotes de tabelas
@@ -153,27 +153,27 @@ brazil				% o último idioma \'e o principal do documento
 \usepackage{array}
 
 % ----
-% Compatibilização com a ABNT NBR 6023:2018
+% Compatibiliza\c{c}\~ao com a ABNT NBR 6023:2018
 % Para tirar <> da URL
 %\DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon\addspace\url{#1}}
 \usepackage{USPSC-classe/ABNT6023-2018}
-% As demais compatibilizações estão nos arquivos abntex2-alf-USPSC.bst e abntex2-num-USPSC.bst, chamados atrav\'es do comando \bibliographystyle{USPSC-classe/abntex2-alf-USPSC} ou %\bibliographystyle{USPSC-classe/abntex2-num-USPSC}, dependendo se o Sistemas de chamada for autor-data ou num\'erico.
+% As demais compatibiliza\c{c}\~oes est\~ao nos arquivos abntex2-alf-USPSC.bst e abntex2-num-USPSC.bst, chamados atrav\'es do comando \bibliographystyle{USPSC-classe/abntex2-alf-USPSC} ou %\bibliographystyle{USPSC-classe/abntex2-num-USPSC}, dependendo se o Sistemas de chamada for autor-data ou num\'erico.
 % ----
 
 % ---
-% DADOS INICIAIS - Define sigla com título, \'area de concentração e opção do Programa 
-% ConsulteDCCp a tabela referente aos Programas, \'areas e opções de sua unidade contante do
-% arquivo USPSC-Siglas estabelecidas para os Programas de Pós-Graduação nos APÊNDICES B-J
+% DADOS INICIAIS - Define sigla com t\'{\i}tulo, \'area de concentra\c{c}\~ao e op\c{c}\~ao do Programa 
+% ConsulteDCCp a tabela referente aos Programas, \'areas e op\c{c}\~oes de sua unidade contante do
+% arquivo USPSC-Siglas estabelecidas para os Programas de P\'os-Gradua\c{c}\~ao nos AP\^ENDICES B-J
 \siglaunidade{ICMC}
 \programa{MPMp}
-% Os demais dados deverão ser fornecidos no arquivo USPSC-pre-textual-UUUU ou USPSC-TCC-pre-textual-UUUU, onde UUUU \'e a sigla da Unidade. 
+% Os demais dados dever\~ao ser fornecidos no arquivo USPSC-pre-textual-UUUU ou USPSC-TCC-pre-textual-UUUU, onde UUUU \'e a sigla da Unidade. 
 % Exemplo:USPSC-pre-textual-IFSC.tex
 % ---
-% Configurações de apar\^encia do PDF final
+% Configura\c{c}\~oes de apar\^encia do PDF final
 % alterando o aspecto da cor azul
 \definecolor{blue}{RGB}{41,5,195}
 
-% informações do PDF
+% informa\c{c}\~oes do PDF
 \makeatletter
 \hypersetup{
 	%pagebackref=true,
@@ -197,21 +197,21 @@ brazil				% o último idioma \'e o principal do documento
 \makeatother
 % --- 
 % --- 
-% Espaçamentos entre linhas e par\'agrafos 
+% Espa\c{c}amentos entre linhas e par\'agrafos 
 % --- 
 
 % O tamanho do par\'agrafo \'e dado por:
 \setlength{\parindent}{1.3cm}
 
-% Controle do espaçamento entre um par\'agrafo e outro:
+% Controle do espa\c{c}amento entre um par\'agrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente tamb\'em \onelineskip
 
 % ---
-% compila o sum\'ario e índice
+% compila o sum\'ario e \'{\i}ndice
 \makeindex
 % ---
 % ----
-% Início do documento
+% In\'{\i}cio do documento
 % ----
 \begin{document}
 
@@ -222,10 +222,10 @@ brazil				% o último idioma \'e o principal do documento
 %      retire a % antes do comando abaixo
 %\selectlanguage{english}
 
-% Retira espaço extra obsoleto entre as frases.
+% Retira espa\c{c}o extra obsoleto entre as frases.
 \frenchspacing 
 
-% --- Formatação dos Títulos
+% --- Formata\c{c}\~ao dos T\'{\i}tulos
 \renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\bfseries}
 \renewcommand{\ABNTEXsectionfontsize}{\fontsize{12}{12}\bfseries}
 \renewcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{12}\normalfont}
@@ -234,7 +234,7 @@ brazil				% o último idioma \'e o principal do documento
 
 
 % ----------------------------------------------------------
-% ELEMENTOS PRÉ-TEXTUAIS
+% ELEMENTOS PR\'E-TEXTUAIS
 % ----------------------------------------------------------
 % ---
 % Capa
@@ -248,13 +248,13 @@ brazil				% o último idioma \'e o principal do documento
 % ----------------
 % ---
 % Folha de rosto do ICMC
-% (o * indica impressão em anverso (frente) e verso )
+% (o * indica impress\~ao em anverso (frente) e verso )
 % ---
 %\imprimirfolharostocar
 \imprimirfolharostocar*
 
-% Folha de rosto padrão do Pacote USPSC
-% (o * indica impressão em anverso (frente) e verso )
+% Folha de rosto padr\~ao do Pacote USPSC
+% (o * indica impress\~ao em anverso (frente) e verso )
 % ---
 %\imprimirfolhaderosto
 %\imprimirfolhaderosto*
@@ -264,7 +264,7 @@ brazil				% o último idioma \'e o principal do documento
 % ---
 % A biblioteca da sua Unidade lhe fornecer\'a um PDF com a ficha
 % catalogr\'afica definitiva. 
-% Quando estiver com o documento, salve-o como PDF no diretório
+% Quando estiver com o documento, salve-o como PDF no diret\'orio
 % do seu projeto como fichacatalografica.pdf e inclua o arquivo
 % utilizando o comando abaixo:
 
@@ -275,7 +275,7 @@ brazil				% o último idioma \'e o principal do documento
 % do comando \include{USPSC-TA-PreTextual/USPSC-fichacatalografica} 
 % e retirar o % do comando abaixo
 %\include{USPSC-TA-PreTextual/USPSC-fichacatalografica}
-% As informações que compõem a ficha catalogr\'afica estão 
+% As informa\c{c}\~oes que comp\~oem a ficha catalogr\'afica est\~ao 
 % definidas no arquivo USPSC-pre-textual-UUUU.tex
 % ---
 
@@ -296,21 +296,21 @@ brazil				% o último idioma \'e o principal do documento
 % ---
 
 % ---
-% Inserir folha de aprovação
+% Inserir folha de aprova\c{c}\~ao
 % ---
 
-% A Folha de aprovação \'e um elemento obrigatório da NBR 4724/2011 (seção 4.2.1.3). 
-% Após a defesa/aprovação do trabalho, gere o arquivo folhadeaprovacao.pdf da p\'agina assinada pela banca 
+% A Folha de aprova\c{c}\~ao \'e um elemento obrigat\'orio da NBR 4724/2011 (se\c{c}\~ao 4.2.1.3). 
+% Ap\'os a defesa/aprova\c{c}\~ao do trabalho, gere o arquivo folhadeaprovacao.pdf da p\'agina assinada pela banca 
 % e iclua o arquivo utilizando o comando abaixo:
 \includepdf{USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf}
-% Alternativa para a Folha de Aprovação:
-% Se for a sua opção elaborar uma folha de aprovação, insira uma % antes do comando acima que inclui o arquivo folhadeaprovacao.pdf,
+% Alternativa para a Folha de Aprova\c{c}\~ao:
+% Se for a sua op\c{c}\~ao elaborar uma folha de aprova\c{c}\~ao, insira uma % antes do comando acima que inclui o arquivo folhadeaprovacao.pdf,
 % tire o % do comando abaixo e altere o arquivo folhadeaprovacao.tex conforme suas necessidades
 %\include{folhadeaprovacao}
 \includepdf{USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf}
 
 % ---
-% Dedicatória
+% Dedicat\'oria
 % ---
 \include{USPSC-TA-PreTextual/USPSC-Dedicatoria}
 % ---
@@ -322,12 +322,12 @@ brazil				% o último idioma \'e o principal do documento
 % ---
 
 % ---
-% Epígrafe
+% Ep\'{\i}grafe
 % ---
 \include{USPSC-TA-PreTextual/USPSC-Epigrafe}
 % ---
 
-% A T E N Ç Ã O
+% A T E N \c{C} \~A O
 % Se o idioma do texto for em ingl\^es, o abstract deve preceder o resumo
 % resumo em portugu\^es
 %
@@ -372,7 +372,7 @@ brazil				% o último idioma \'e o principal do documento
 % ---
 
 % ---
-% inserir lista de símbolos
+% inserir lista de s\'{\i}mbolos
 % ---
 \include{USPSC-TA-PreTextual/USPSC-Simbolos}
 % ---
@@ -387,25 +387,25 @@ brazil				% o último idioma \'e o principal do documento
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
 \textual
-% Os capítulos são inseridos como arquivos externos 
+% Os cap\'{\i}tulos s\~ao inseridos como arquivos externos 
 
-% Capítulo 1 - Introdução
+% Cap\'{\i}tulo 1 - Introdu\c{c}\~ao
 % ---
 \include{USPSC-TA-Textual/USPSC-Cap1-Introducao}
 % ---
 
 % ---
-% Capítulo 2
+% Cap\'{\i}tulo 2
 % ---
 \include{USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento}
 
-% Capítulo 3 - Conclusão
+% Cap\'{\i}tulo 3 - Conclus\~ao
 % ---
 \include{USPSC-TA-Textual/USPSC-Cap3-Conclusao}
 % ---
 
 % ----------------------------------------------------------
-% ELEMENTOS PÓS-TEXTUAIS
+% ELEMENTOS P\'OS-TEXTUAIS
 % ----------------------------------------------------------
 \postextual
 % ----------------------------------------------------------
@@ -420,7 +420,7 @@ brazil				% o último idioma \'e o principal do documento
 % Gloss\'ario
 % ----------------------------------------------------------
 %
-% Consulte o manual da classe abntex2 para orientações sobre o gloss\'ario.
+% Consulte o manual da classe abntex2 para orienta\c{c}\~oes sobre o gloss\'ario.
 %
 %\glossary
 

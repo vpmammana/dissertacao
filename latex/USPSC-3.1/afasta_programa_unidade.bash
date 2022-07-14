@@ -1,3 +1,5 @@
+sed -i "s/@\[programapos\]@@\[unidadefaculdade\]@/@[programapos]@ vinculado a @[unidadefaculdade]@/g" cmp_RedarTex.tex
+sed -i "s/@\[programapos\]@@\[unidadefaculdade\]@/@[programapos]@ vinculado a @[unidadefaculdade]@/g" cmp.tex
 sed -i "s/@\[programapos\]@@\[unidadefaculdade\]@/@[programapos]@ vinculado a @[unidadefaculdade]@/g" teste_RedarTex.tex
 sed -i "s/@\[programapos\]@@\[unidadefaculdade\]@/@[programapos]@ vinculado a @[unidadefaculdade]@/g" teste.tex
 sed -i "s/@\[programapos\]@@\[unidadefaculdade\]@/@[programapos]@ vinculado a @[unidadefaculdade]@/g" USPSC-IndicesRemissivos_RedarTex.tex

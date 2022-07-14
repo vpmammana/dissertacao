@@ -1,3 +1,5 @@
+sed -i "s/local[{]S..ao Carlos[}]/local{@[localidade]@}/g" cmp_RedarTex.tex
+sed -i "s/local[{]S..ao Carlos[}]/local{@[localidade]@}/g" cmp.tex
 sed -i "s/local[{]S..ao Carlos[}]/local{@[localidade]@}/g" teste_RedarTex.tex
 sed -i "s/local[{]S..ao Carlos[}]/local{@[localidade]@}/g" teste.tex
 sed -i "s/local[{]S..ao Carlos[}]/local{@[localidade]@}/g" USPSC-IndicesRemissivos_RedarTex.tex

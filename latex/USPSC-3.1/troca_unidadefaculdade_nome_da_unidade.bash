@@ -1,3 +1,5 @@
+sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" cmp_RedarTex.tex
+sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" cmp.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" teste_RedarTex.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" teste.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" USPSC-IndicesRemissivos_RedarTex.tex

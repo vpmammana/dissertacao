@@ -1,3 +1,5 @@
+sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" cmp_RedarTex.tex
+sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" cmp.tex
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" teste_RedarTex.tex
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" teste.tex
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" USPSC-IndicesRemissivos_RedarTex.tex

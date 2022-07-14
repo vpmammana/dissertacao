@@ -14,6 +14,7 @@
 \cp ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Anexos.tex ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-modelo-ICMCp.tex ../../latex/USPSC-3.1/USPSC-modelo-ICMCp_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex ../../latex/USPSC-3.1/USPSC-pre-textual-EESC_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/cmp.tex ../../latex/USPSC-3.1/cmp_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-unidades.tex ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-IndicesRemissivos.tex ../../latex/USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex 
@@ -74,6 +75,7 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-classe\/USPSC[}]/include{USPSC-classe\/USPSC_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-classe\/USPSC1[}]/include{USPSC-classe\/USPSC1_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-classe\/USPSC[}]/include{USPSC-classe\/USPSC_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]cmp[}]/include{cmp_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]teste[}]/include{teste_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-modelo-EESC[}]/include{USPSC-modelo-EESC_RedarTex}/g' 
@@ -138,6 +140,7 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-ResumoTutorial[}]/include{USPSC-Tutorial\/USPSC-ResumoTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-SimbolosTutorial[}]/include{USPSC-Tutorial\/USPSC-SimbolosTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]cmp[}]/include{cmp_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]teste[}]/include{teste_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-modelo-EESC[}]/include{USPSC-modelo-EESC_RedarTex}/g' 

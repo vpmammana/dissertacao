@@ -1,3 +1,5 @@
+sed -i "s/â/\\\^a/g" cmp_RedarTex.tex
+sed -i "s/â/\\\^a/g" cmp.tex
 sed -i "s/â/\\\^a/g" teste_RedarTex.tex
 sed -i "s/â/\\\^a/g" teste.tex
 sed -i "s/â/\\\^a/g" USPSC-IndicesRemissivos_RedarTex.tex

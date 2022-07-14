@@ -1,3 +1,5 @@
+sed -i "s/UNIVERSIDADE DE S\\\~AO PAULO/@[universidademaiuscula]@/g" cmp_RedarTex.tex
+sed -i "s/UNIVERSIDADE DE S\\\~AO PAULO/@[universidademaiuscula]@/g" cmp.tex
 sed -i "s/UNIVERSIDADE DE S\\\~AO PAULO/@[universidademaiuscula]@/g" teste_RedarTex.tex
 sed -i "s/UNIVERSIDADE DE S\\\~AO PAULO/@[universidademaiuscula]@/g" teste.tex
 sed -i "s/UNIVERSIDADE DE S\\\~AO PAULO/@[universidademaiuscula]@/g" USPSC-IndicesRemissivos_RedarTex.tex

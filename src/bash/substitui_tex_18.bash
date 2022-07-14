@@ -42,6 +42,7 @@ sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../
 sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../../latex/USPSC-3.1/.USPSC-pre-textual-IAU_RedarTex.tex.swp
 sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC_RedarTex.tex
 sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
+sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../../latex/USPSC-3.1/cmp_RedarTex.tex
 sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../../latex/USPSC-3.1/USPSC-Tutorial-num_RedarTex.tex
 sed -i "s/@\[unidadefaculdademaiuscula\]@/FACULDADE DE EDUCA\\\c{C}\\\~AO/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex

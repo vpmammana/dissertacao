@@ -1,3 +1,5 @@
+sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" cmp_RedarTex.tex
+sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" cmp.tex
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" teste_RedarTex.tex
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" teste.tex
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" USPSC-IndicesRemissivos_RedarTex.tex

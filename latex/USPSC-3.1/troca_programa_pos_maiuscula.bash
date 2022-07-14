@@ -1,3 +1,5 @@
+sed -i "s/PROGRAMA DE P\\\'OS-GRADUA\\\c[{]C[}]\\\~AO EM [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[programaposmaiuscula]@/g" cmp_RedarTex.tex
+sed -i "s/PROGRAMA DE P\\\'OS-GRADUA\\\c[{]C[}]\\\~AO EM [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[programaposmaiuscula]@/g" cmp.tex
 sed -i "s/PROGRAMA DE P\\\'OS-GRADUA\\\c[{]C[}]\\\~AO EM [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[programaposmaiuscula]@/g" teste_RedarTex.tex
 sed -i "s/PROGRAMA DE P\\\'OS-GRADUA\\\c[{]C[}]\\\~AO EM [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[programaposmaiuscula]@/g" teste.tex
 sed -i "s/PROGRAMA DE P\\\'OS-GRADUA\\\c[{]C[}]\\\~AO EM [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[programaposmaiuscula]@/g" USPSC-IndicesRemissivos_RedarTex.tex

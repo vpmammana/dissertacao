@@ -14,6 +14,7 @@
 \cp ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Anexos.tex ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-modelo-ICMCp.tex ../../latex/USPSC-3.1/USPSC-modelo-ICMCp_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex ../../latex/USPSC-3.1/USPSC-pre-textual-EESC_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/cmp.tex ../../latex/USPSC-3.1/cmp_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-unidades.tex ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-IndicesRemissivos.tex ../../latex/USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex 
@@ -35,6 +36,7 @@
 \cp ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-IndicesTutorial.tex ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-IndicesTutorial_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AbstractTutorial.tex ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AbstractTutorial_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap5-ConclusaoTutorial.tex ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap5-ConclusaoTutorial_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-fichacatalograficaTutorial.tex ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-fichacatalograficaTutorial_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AnexosTutorial.tex ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AnexosTutorial_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap1-IntroducaoTutorial.tex ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap1-IntroducaoTutorial_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-SimbolosTutorial.tex ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-SimbolosTutorial_RedarTex.tex 
@@ -62,6 +64,7 @@
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Errata.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Errata_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex 
@@ -72,6 +75,7 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-classe\/USPSC[}]/include{USPSC-classe\/USPSC_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-classe\/USPSC1[}]/include{USPSC-classe\/USPSC1_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-classe\/USPSC[}]/include{USPSC-classe\/USPSC_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]cmp[}]/include{cmp_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]teste[}]/include{teste_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-modelo-EESC[}]/include{USPSC-modelo-EESC_RedarTex}/g' 
@@ -99,6 +103,7 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Dedicatoria[}]/include{USPSC-TA-PreTextual\/USPSC-Dedicatoria_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Epigrafe[}]/include{USPSC-TA-PreTextual\/USPSC-Epigrafe_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Errata[}]/include{USPSC-TA-PreTextual\/USPSC-Errata_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-fichacatalografica[}]/include{USPSC-TA-PreTextual\/USPSC-fichacatalografica_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-folhadeaprovacao[}]/include{USPSC-TA-PreTextual\/USPSC-folhadeaprovacao_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Resumo[}]/include{USPSC-TA-PreTextual\/USPSC-Resumo_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Simbolos[}]/include{USPSC-TA-PreTextual\/USPSC-Simbolos_RedarTex}/g' 
@@ -129,11 +134,13 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-DedicatoriaTutorial[}]/include{USPSC-Tutorial\/USPSC-DedicatoriaTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-EpigrafeTutorial[}]/include{USPSC-Tutorial\/USPSC-EpigrafeTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-ErrataTutorial[}]/include{USPSC-Tutorial\/USPSC-ErrataTutorial_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-fichacatalograficaTutorial[}]/include{USPSC-Tutorial\/USPSC-fichacatalograficaTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-IndicesRemissivos[}]/include{USPSC-Tutorial\/USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-IndicesTutorial[}]/include{USPSC-Tutorial\/USPSC-IndicesTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-ResumoTutorial[}]/include{USPSC-Tutorial\/USPSC-ResumoTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-SimbolosTutorial[}]/include{USPSC-Tutorial\/USPSC-SimbolosTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]cmp[}]/include{cmp_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]teste[}]/include{teste_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-modelo-EESC[}]/include{USPSC-modelo-EESC_RedarTex}/g' 
@@ -161,6 +168,7 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Dedicatoria[}]/include{USPSC-TA-PreTextual\/USPSC-Dedicatoria_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Epigrafe[}]/include{USPSC-TA-PreTextual\/USPSC-Epigrafe_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Errata[}]/include{USPSC-TA-PreTextual\/USPSC-Errata_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-fichacatalografica[}]/include{USPSC-TA-PreTextual\/USPSC-fichacatalografica_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-folhadeaprovacao[}]/include{USPSC-TA-PreTextual\/USPSC-folhadeaprovacao_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Resumo[}]/include{USPSC-TA-PreTextual\/USPSC-Resumo_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Simbolos[}]/include{USPSC-TA-PreTextual\/USPSC-Simbolos_RedarTex}/g' 
@@ -191,6 +199,7 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-DedicatoriaTutorial[}]/include{USPSC-Tutorial\/USPSC-DedicatoriaTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-EpigrafeTutorial[}]/include{USPSC-Tutorial\/USPSC-EpigrafeTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-ErrataTutorial[}]/include{USPSC-Tutorial\/USPSC-ErrataTutorial_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-fichacatalograficaTutorial[}]/include{USPSC-Tutorial\/USPSC-fichacatalograficaTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-IndicesRemissivos[}]/include{USPSC-Tutorial\/USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-IndicesTutorial[}]/include{USPSC-Tutorial\/USPSC-IndicesTutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-Tutorial\/USPSC-ResumoTutorial[}]/include{USPSC-Tutorial\/USPSC-ResumoTutorial_RedarTex}/g' 

@@ -10,52 +10,65 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\c {c}\~ao}}{29}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {ESTRUTURA DO TEXTO}}{29}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Descri\c {c}\~ao da Introdu\c {c}\~ao}{29}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Descri\c {c}\~ao de Materiais e M\'etodos}{30}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Descricao de Resultados e Discuss\~oes}{30}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Produto Tecnol\'ogico}{30}{section.1.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Desenvolvimento}}{31}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Resultados de comandos}{31}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Tabelas e quadros}{31}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Figuras}{32}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Divis\~oes do documento}{33}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Divis\~oes do documento: subse\c {c}\~ao}{33}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Divis\~oes do documento: subsubse\c {c}\~ao}{33}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Divis\~oes do documento: subsubse\c {c}\~ao}{33}{subsubsection.2.2.1.2}%
-\contentsline {subsection}{\numberline {2.2.2}Divis\~oes do documento: subse\c {c}\~ao}{33}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Divis\~oes do documento: subsubse\c {c}\~ao}{33}{subsubsection.2.2.2.1}%
-\contentsline {paragraph}{\numberline {2.2.2.1.1}Esta \'e uma subse\c {c}\~ao de quinto n\'{\i }vel}{33}{paragraph.2.2.2.1.1}%
-\contentsline {paragraph}{\numberline {2.2.2.1.2}Esta \'e outra subse\c {c}\~ao de quinto n\'{\i }vel}{33}{paragraph.2.2.2.1.2}%
-\contentsline {paragraph}{\numberline {2.2.2.1.3}Este \'e um par\'agrafo numerado}{33}{paragraph.2.2.2.1.3}%
-\contentsline {paragraph}{\numberline {2.2.2.1.4}Esta \'e outro par\'agrafo numerado}{34}{paragraph.2.2.2.1.4}%
-\contentsline {subsection}{\numberline {2.2.3}Este \'e um exemplo de nome de subse\c {c}\~ao longa que se aplica a se\c {c}\~oes e demais divis\~oes do documento. Ele deve estar alinhado \`a esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{34}{subsection.2.2.3}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {INTRODU\c {C}\~AO}}{31}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objeto}{37}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Objetivo}{37}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Hip\'oteses}{37}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Problema}{37}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Justificativa}{38}{section.2.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Conclus\~ao}}{35}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Historiografia}{39}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Organiza\c {c}\~ao de dados: uma vis\~ao muito simples do modelo relacional}{39}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Sociedade da Informa\c {c}\~ao}{39}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Descri\c {c}\~ao do Programa WASH}{40}{section.3.4}%
+\contentsline {section}{\numberline {3.5}O que \'e um Estudo de Caso}{40}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Base pedag\'ogica}{40}{section.3.6}%
+\contentsline {section}{\numberline {3.7}O que \'e STEM?}{40}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Governo Eletr\^onico}{42}{section.3.8}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}M\'etodo de Historiografia Utilizado }{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{47}{section.4.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{49}{chapter.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{51}{chapter.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Lixeira}}{53}{chapter.7}%
+\vspace {\cftbeforechapterskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {AP\^ENDICES}}{37}{section*.19}%
+\contentsline {part}{\uppercase {AP\^ENDICES}}{55}{section*.19}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{39}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{57}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{41}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{59}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{43}{appendix.C}%
-\vspace {\cftbeforechapterskip }
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{61}{appendix.C}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{45}{section*.20}%
+\contentsline {part}{\uppercase {ANEXOS}}{63}{section*.20}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{47}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{65}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{49}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{67}{appendix.anexochapback.2}%

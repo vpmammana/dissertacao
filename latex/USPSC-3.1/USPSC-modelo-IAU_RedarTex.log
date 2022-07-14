@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  14 JUL 2022 05:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  14 JUL 2022 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1542,9 +1542,6 @@ Package: chemformula 2020/02/01 v4.15i typeset chemical compounds and reactions
 (./USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux)
-(./USPSC-TA-Textual/USPSC-Cap1-Introducao_RedarTex.aux)
-(./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento_RedarTex.aux)
-(./USPSC-TA-Textual/USPSC-Cap3-Conclusao_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
@@ -1950,153 +1947,112 @@ LaTeX Warning: Citation `nbr6028' on page 13 undefined on input line 15.
 ])
 (./USPSC-modelo-IAU_RedarTex.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 35.
+(Font)              <14.4> on input line 49.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 35.
+(Font)              <10> on input line 49.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 35.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(Font)              <7> on input line 49.
+
+Underfull \vbox (badness 7186) has occurred while \output is active []
 
  [27
 
-]
-[28]
-\openout2 = `USPSC-TA-Textual/USPSC-Cap1-Introducao_RedarTex.aux'.
-
- (./USPSC-TA-Textual/USPSC-Cap1-Introducao_RedarTex.tex
-
-LaTeX Warning: Citation `aguia2020' on page 29 undefined on input line 10.
-
-) [29
+])
+[28] [29
 
 
+] [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31
 
 ]
-\openout2 = `USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento_RedarTex.aux'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento_RedarTex.tex [30
+ [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-[31pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
-) has been already used, duplicate ignored
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.50 \newpage
-             ]
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]|\T1/lmr/bx/n/12 Sistemas
- []
+ [36]
+[37] [38] [39
 
+] [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (6.57309pt too wide) in paragraph at lines 60--60
-[]|\T1/lmr/m/n/12 (-20) Epistemologia| 
- []
+ [41]
+[42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 2753) in paragraph at lines 63--63
-[]|\T1/lmr/m/n/12 (+20) Nível do ob-
- []
+ [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [45]
+[46] [47
 
-LaTeX Warning: Citation `van1986' on page 32 undefined on input line 71.
+] [48
 
+] [49] [50
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
-
- []
-
-
-LaTeX Warning: Citation `equipeabntex2' on page 32 undefined on input line 116.
-
-
-
-LaTeX Warning: Citation `equipeabntex2' on page 32 undefined on input line 116.
-
-
-
-LaTeX Warning: Citation `nbr6024' on page 32 undefined on input line 123.
-
-[32pdfTeX warning (ext4): destination with the same identifier (name{quadro.2.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.126 \subsection
-                 {Divis\~oes do documento: subse\c{c}\~ao}\label{sec-divisoe...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.126 \subsection
-                 {Divis\~oes do documento: subse\c{c}\~ao}\label{sec-divisoe...
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-33.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [33]) [34]
-\openout2 = `USPSC-TA-Textual/USPSC-Cap3-Conclusao_RedarTex.aux'.
-
-
-(./USPSC-TA-Textual/USPSC-Cap3-Conclusao_RedarTex.tex) [35
-
-
+] [51] [52
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
 No file USPSC-modelo-IAU_RedarTex.bbl.
+[54]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux'.
 
-(./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex [36
-
-
-
-]
+ (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[37
-
-] [38]
-
-LaTeX Warning: Citation `nbr14724' on page 39 undefined on input line 10.
+[55
 
 
-LaTeX Warning: Citation `aguia2020' on page 39 undefined on input line 12.
 
-[39
+] [56]
 
-] [40
+LaTeX Warning: Citation `nbr14724' on page 57 undefined on input line 10.
 
-] [41pdfTeX warning (ext4): destination with the same identifier (name{table.B.
-2}) has been already used, duplicate ignored
+
+LaTeX Warning: Citation `aguia2020' on page 57 undefined on input line 12.
+
+[57
+
+] [58
+
+] [59pdfTeX warning (ext4): destination with the same identifier (name{table.B.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 \chapter
-             {Exemplo de tabela com grade}] [42
+             {Exemplo de tabela com grade}] [60
 
-]) [43pdfTeX warning (ext4): destination with the same identifier (name{table.C
-.3}) has been already used, duplicate ignored
+]) [61pdfTeX warning (ext4): destination with the same identifier (name{table.C
+.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.423 ...C-TA-PosTextual/USPSC-Apendices_RedarTex}
+l.625 ...C-TA-PosTextual/USPSC-Apendices_RedarTex}
                                                   ]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux'.
 
 
-(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex [44
+(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex [62
 
 
 
@@ -2105,18 +2061,18 @@ l.423 ...C-TA-PosTextual/USPSC-Apendices_RedarTex}
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[45
+[63
 
-] [46]
+] [64]
 
-LaTeX Warning: Citation `nbr14724' on page 47 undefined on input line 13.
+LaTeX Warning: Citation `nbr14724' on page 65 undefined on input line 13.
 
-[47
+[65
 
-] [48
+] [66
 
 ]
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=366, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=443, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
@@ -2124,14 +2080,14 @@ e 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
 
 
-LaTeX Warning: Citation `comandos' on page 49 undefined on input line 22.
+LaTeX Warning: Citation `comandos' on page 67 undefined on input line 22.
 
-) [49pdfTeX warning (ext4): destination with the same identifier (name{figure.a
-nexochapback.2.2}) has been already used, duplicate ignored
+) [67pdfTeX warning (ext4): destination with the same identifier (name{figure.a
+nexochapback.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.428 ...SPSC-TA-PosTextual/USPSC-Anexos_RedarTex}
+l.630 ...SPSC-TA-PosTextual/USPSC-Anexos_RedarTex}
                                                    <./USPSC-img/USPSC-Acentuaca
 oLaTeX.png>]
 \openout2 = `USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux'.
@@ -2152,8 +2108,8 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `USPSC-modelo-IAU_RedarTex.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 639.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 639.
 (./USPSC-modelo-IAU_RedarTex.aux
 (./USPSC-TA-PreTextual/USPSC-Errata_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux)
@@ -2163,44 +2119,38 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
 (./USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux)
-(./USPSC-TA-Textual/USPSC-Cap1-Introducao_RedarTex.aux)
-(./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento_RedarTex.aux)
-(./USPSC-TA-Textual/USPSC-Cap3-Conclusao_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 437.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 639.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 639.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 639.
  ) 
 Here is how much of TeX's memory you used:
- 31402 strings out of 483090
- 605947 string characters out of 5963929
- 1051096 words of memory out of 5000000
- 45459 multiletter control sequences out of 15000+600000
- 629745 words of font info for 119 fonts, out of 8000000 for 9000
+ 31426 strings out of 483090
+ 604306 string characters out of 5963929
+ 1109926 words of memory out of 5000000
+ 45438 multiletter control sequences out of 15000+600000
+ 631619 words of font info for 142 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 73i,18n,108p,1048b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/lm
+ 73i,18n,108p,2296b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
 2.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmtt12.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (51 pages, 512907 bytes).
+ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on USPSC-modelo-IAU_RedarTex.pdf (69 pages, 525110 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 30582 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 659 PDF objects out of 1000 (max. 8388607)
+ 552 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 30142 words of extra memory for PDF output out of 35830 (max. 10000000)
 

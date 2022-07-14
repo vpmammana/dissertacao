@@ -60,6 +60,10 @@ return $linha;
 
 function converte_acento_para_file_put($linha){
 //                        12345678
+$linha = str_replace("_","\_",$linha);
+$linha = str_replace("}","\}",$linha);
+$linha = str_replace("{","\{",$linha);
+$linha = str_replace("&","\&",$linha);
 $linha = str_replace("á","\'a",$linha);
 $linha = str_replace("Á","\'A",$linha);
 $linha = str_replace("é","\'e",$linha);
@@ -203,16 +207,8 @@ if ($result->num_rows>0) {
 			fwrite($myfile,"chmod u+x substitui_tex_".$conta.".bash\n");
 			fwrite($myfile,"find ../../latex/* | grep -i \"\_RedarTex.tex\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[".$nome_tipo_sem_underscore."\]@/".$texto_com_acentuacao_latex."/g\\\" \"$0}' > substitui_tex_".$conta.".bash\n");
 			fwrite($myfile,"./substitui_tex_".$conta.".bash\n\n");
-
 		}
-		else {
-			if ($nome_tipo_secao == "topico" || $nome_tipo_secao == "paragrafo") {
-		  		foreach ($arquivos_textuais as $value){
-					insere($value, "\postextual\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
-				}	
-			}
-
-		}	
+			
 
 
 	}
@@ -221,9 +217,47 @@ else {echo "Deu problema: ".$sql;}
 fwrite($myfile, 'echo "Deu certo!"');
 fclose($myfile);
 echo "Arquivo fechado";
-//unset($retorno_do_bash);
-//exec("../bash/copia_substitui_tex.bash", $retorno_do_bash);
+unset($retorno_do_bash);
+exec("../bash/copia_substitui_tex.bash", $retorno_do_bash);
+echo "Executando\n";
+sleep(10);
+var_dump($retorno_do_bash);
+//$conn->close();
+$conn2= new mysqli("localhost", $username, $pass, $database);
+$result=$conn2->query("$sql");
+$conta=0;
+if ($result->num_rows>0) {
+    while($row=$result->fetch_assoc()){
+		$id_chave             = $row["id_chave_filho"];
+		$conta_versoes        = $row["conta_versoes"]; 
+		$nivel             	  = $row["nivel"]; 
+		$id_secao             = $row["id_filho"]; 
+//		$id_pai               = $row["id_pai"]; 
+		$titulo               = $row["ultima_versao"]; // ultima_versao eh a ultima versao da secao, obtida da tabela versoes
+		$data_versao          = $row["data"]; // data da ultima versao  
+		$id_tipo_secao        = $row["id_nested_tipo_secao"]; 
+		$nome_tipo_secao      = $row["nome_nested_tipo_secao"];
+		$tem_filho	          = $row["tem_filho"];
+		//echo $nivel.") [".$nome_tipo_secao."] ".$id_secao." - ".$titulo."\n";
+		
+		$secao_sem_underscore = str_replace("_", "", $id_secao);
+		$secao_sem_espaco_sem_underscore = str_replace(" ", "", $secao_sem_underscore);
+		$nome_tipo_sem_underscore = str_replace("_", "", $nome_tipo_secao);
+		$texto_com_acentuacao_latex = converte_acento($titulo);
+		$texto_com_acentuacao_para_fileput = converte_acento_para_file_put($titulo);
+		
 
-echo "Executado\n";
-//var_dump($retorno_do_bash);
+			if ($nome_tipo_secao == "topico" || $nome_tipo_secao == "paragrafo") {
+		  		foreach ($arquivos_textuais as $value){
+					insere($value, "\postextual\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
+				}	
+
+		}	
+
+
+	}
+}
+else {echo "Deu problema: ".$sql;}
+
+
 ?>	

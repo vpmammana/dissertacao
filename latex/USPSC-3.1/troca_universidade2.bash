@@ -1,3 +1,5 @@
+sed -i "s/Universidade Estadual Paulista .J\\\ulio de Mesquita Filho./@[universidade]@/g" cmp_RedarTex.tex
+sed -i "s/Universidade Estadual Paulista .J\\\ulio de Mesquita Filho./@[universidade]@/g" cmp.tex
 sed -i "s/Universidade Estadual Paulista .J\\\ulio de Mesquita Filho./@[universidade]@/g" teste_RedarTex.tex
 sed -i "s/Universidade Estadual Paulista .J\\\ulio de Mesquita Filho./@[universidade]@/g" teste.tex
 sed -i "s/Universidade Estadual Paulista .J\\\ulio de Mesquita Filho./@[universidade]@/g" USPSC-IndicesRemissivos_RedarTex.tex

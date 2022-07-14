@@ -1,3 +1,5 @@
+sed -i "s/data[{]2021[}]/data{@[ano]@}/g" cmp_RedarTex.tex
+sed -i "s/data[{]2021[}]/data{@[ano]@}/g" cmp.tex
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" teste_RedarTex.tex
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" teste.tex
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" USPSC-IndicesRemissivos_RedarTex.tex

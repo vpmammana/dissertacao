@@ -1,3 +1,5 @@
+sed -i "s/Curso [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/@[curso]@}/g" cmp_RedarTex.tex
+sed -i "s/Curso [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/@[curso]@}/g" cmp.tex
 sed -i "s/Curso [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/@[curso]@}/g" teste_RedarTex.tex
 sed -i "s/Curso [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/@[curso]@}/g" teste.tex
 sed -i "s/Curso [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/@[curso]@}/g" USPSC-IndicesRemissivos_RedarTex.tex

@@ -1,3 +1,5 @@
+sed -i "s/t\\\'itulo de Mestre.Doutor/t\\\'itulo de @[mestreoudoutor]@/g" cmp_RedarTex.tex
+sed -i "s/t\\\'itulo de Mestre.Doutor/t\\\'itulo de @[mestreoudoutor]@/g" cmp.tex
 sed -i "s/t\\\'itulo de Mestre.Doutor/t\\\'itulo de @[mestreoudoutor]@/g" teste_RedarTex.tex
 sed -i "s/t\\\'itulo de Mestre.Doutor/t\\\'itulo de @[mestreoudoutor]@/g" teste.tex
 sed -i "s/t\\\'itulo de Mestre.Doutor/t\\\'itulo de @[mestreoudoutor]@/g" USPSC-IndicesRemissivos_RedarTex.tex

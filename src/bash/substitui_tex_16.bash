@@ -42,6 +42,7 @@ sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PA
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A/g" ../../latex/USPSC-3.1/.USPSC-pre-textual-IAU_RedarTex.tex.swp
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
+sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A/g" ../../latex/USPSC-3.1/cmp_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A/g" ../../latex/USPSC-3.1/USPSC-Tutorial-num_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex

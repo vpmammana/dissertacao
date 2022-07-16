@@ -43,6 +43,10 @@ echo "
 <input style='display: none' id='id_sobe_imagem' type='file' onchange=' var resposta=``;var nome_arquivo=this.value.replace(/^.*[\\\/]/, resposta); document.getElementById(`textarea_mouse`).value=nome_arquivo;if (this.files && this.files[0]){var fd= new FormData();var faili=`fileToUpload`;fd.append(faili,this.files[0],nome_arquivo);var xhr = new XMLHttpRequest();var pousti=`POST`;var nome_faili=`../php/grava_imagem.php`;xhr.open(pousti, nome_faili);xhr.onloadend= function(e) { resposta=xhr.responseText;  };xhr.send(fd);}'>
 
 <div class='menu_principal' id='menu_principal'>
+<table width = '100%'>
+<tr>
+<td>
+<div>
 <table>
 <tr>
 <td>
@@ -64,6 +68,22 @@ echo "
 </td>
 <td>
 <input type='radio' id='radio_niveis_6' name='numero_de_niveis' value='6' 		onclick='quantos_niveis_mostra = this.value; recarrega(document.getElementById(radio_selecionado).value, radio_selecionado)'>6 níveis</input>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div style='float: right; display: table-row; padding-left: 10px'>
+<table>
+<tr>
+<td><input type='button' value='Cria PDF Dissertacao/Tese' onclick='gera_mostra_pdf_tese()'></td>
+</tr>
+<tr>
+<td><input type='button' value='Cria PDF Relatório'></td>
+</tr>
+</table>
+</div>
 </td>
 </tr>
 </table>

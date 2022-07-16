@@ -1,6 +1,16 @@
 <?php
 
+if(isset($_GET["mode"])){
+  $param_mode= $_GET["mode"];
+} else $param_mode = "verbose"; // quiet ou verbose
+
+$nome_base = "../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex";
+$nome_do_tex = $nome_base.".tex";
+$nome_do_pdf = $nome_base.".pdf";
+
 function insere($nome_arquivo, $ponto_de_insercao, $nome_tipo_secao, $texto, $nome_secao, $nivel){
+global $param_mode;
+
 //unset($file);
 $file = file($nome_arquivo);
 $indice = array_search($ponto_de_insercao, $file, false);
@@ -19,10 +29,11 @@ if ($nivel == 3 && $nome_tipo_secao=="topico") {
 if ($nivel == 4 && $nome_tipo_secao=="topico") {
 	$texto_latex = "\\subsubsection[".$texto."]{".$texto."}\\label{".$texto."}";
 }
-echo $indice.")".$file[$indice]." arquivo -> ".$nome_arquivo." -> ".$texto_latex." tam: ".sizeof($file)."\n";
+//echo $indice.")".$file[$indice]." arquivo -> ".$nome_arquivo." -> ".$texto_latex." tam: ".sizeof($file)."\n";
 
 array_splice( $file, $indice - 3, 0, $texto_latex."\n");
-
+if ($param_mode == "verbose") {echo "> ".$nome_tipo_secao." ";}
+//echo "Vai inserir secoes/paragrafos no arquivo: ".$nome_arquivo."\n";
 file_put_contents($nome_arquivo, implode("",$file));
 }
 
@@ -103,6 +114,33 @@ return $retorno;
 } 
 
 include "identifica.php.cripto";
+unset($retorna_zip);
+if ($param_mode == "verbose") {echo "\nVai executar unzip\n";}
+exec("cd ../../latex
+unzip -o USPSC-3.1.zip", $retorna_unzip);
+
+do {
+unset($retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io unzip ", $retorno_do_bash);
+if ($param_mode == "verbose") {echo "\nExecutando unzip\n";}
+} while ($retorno_do_bash == "unzip");
+
+
+if ($param_mode == "verbose") {echo "\nexecutou o unzip\n";}
+if ($param_mode == "verbose") {print_r(implode("\ndeszipa: ",$retorna_unzip));}
+
+unset($retorna_inicializa);
+exec("../bash/inicializa_tex_com_change_DIR.bash", $retorna_inicializa);
+
+do {
+unset($retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io inicializa_tex ", $retorno_do_bash);
+if ($param_mode == "verbose") {echo "\nExecutando inicializa_tex_com_DIR\n";}
+} while ($retorno_do_bash == "inicializa_tex");
+
+if ($param_mode == "verbose") {echo "\nExecutou o inicializa_tex_com_DIR\n";}
+if ($param_mode == "verbose") {print_r (implode("",$retorna_inicializa));}
+
 
 unset($arquivos_textuais);
 $arquivos_textuais = retorna_arquivos_que_tem_partes_textuais();
@@ -114,38 +152,35 @@ $myfile = fopen("../bash/copia_substitui_tex.bash", "w") or die("Não foi possí
 $temporario_corpo = fopen("temporario.txt", "w");
 
 $sql="call mostra_documento_completo_niveis('raiz')";
-fwrite($myfile,"touch substitui_tex.bash\n"); 
-fwrite($myfile,"chmod u+x substitui_tex.bash\n"); 
-fwrite($myfile,"touch copia_tex.bash\n"); 
-fwrite($myfile,"chmod u+x copia_tex.bash\n"); 
+fwrite($myfile,"touch ../bash/copia_tex.bash\n"); 
+fwrite($myfile,"chmod u+x ../bash/copia_tex.bash\n"); 
 
 // copia os PDFs just in case
 
 
-
-fwrite($myfile, "find ../../latex/* | grep -i \"\.pdf\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{input = $0; gsub(/\.pdf/,\"_RedarTex.pdf\", $0); print \"\\cp \"input\" \"  $0\" \";}' > copia_tex.bash 
+fwrite($myfile, "find ../../latex/* | grep -i \"\.pdf\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{input = $0; gsub(/\.pdf/,\"_RedarTex.pdf\", $0); print \"\\cp \"input\" \"  $0\" \";}' > ../bash/copia_tex.bash 
 ");
 
-fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{input = $0; gsub(/\.cls/,\"_RedarTex.cls\", $0); print \"\\cp \"input\" \"  $0\" \";}' >> copia_tex.bash
-");
-
-
-fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{input = $0; gsub(/\.tex/,\"_RedarTex.tex\", $0); print \"\\cp \"input\" \"  $0\" \";}' >> copia_tex.bash
+fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{input = $0; gsub(/\.cls/,\"_RedarTex.cls\", $0); print \"\\cp \"input\" \"  $0\" \";}' >> ../bash/copia_tex.bash
 ");
 
 
-fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0); print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> copia_tex.bash
-");
-
-fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> copia_tex.bash
+fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{input = $0; gsub(/\.tex/,\"_RedarTex.tex\", $0); print \"\\cp \"input\" \"  $0\" \";}' >> ../bash/copia_tex.bash
 ");
 
 
-fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> copia_tex.bash
+fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0); print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
 ");
-fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> copia_tex.bash
+
+fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
 ");
-fwrite($myfile,"./copia_tex.bash\n\n");
+
+
+fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
+");
+fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
+");
+fwrite($myfile,"../bash/copia_tex.bash\n\n");
 fwrite($myfile,"sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex\n");
 
 foreach ($arquivos_textuais as $valor){
@@ -202,11 +237,12 @@ if ($result->num_rows>0) {
 		)
 		{
 			$conta++;
-			echo $nome_tipo_secao."\n";
-			fwrite($myfile,"touch substitui_tex_".$conta.".bash\n"); 
-			fwrite($myfile,"chmod u+x substitui_tex_".$conta.".bash\n");
-			fwrite($myfile,"find ../../latex/* | grep -i \"\_RedarTex.tex\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[".$nome_tipo_sem_underscore."\]@/".$texto_com_acentuacao_latex."/g\\\" \"$0}' > substitui_tex_".$conta.".bash\n");
-			fwrite($myfile,"./substitui_tex_".$conta.".bash\n\n");
+			if ($param_mode == "verbose") {echo "\nLeu ".$nome_tipo_secao."\n";}
+			if ($param_mode == "verbose") {echo "Vai gravar os comandos de substituicao no batch: ";}
+			fwrite($myfile,"touch ../bash/substitui_tex_".$conta.".bash\n"); 
+			fwrite($myfile,"chmod u+x ../bash/substitui_tex_".$conta.".bash\n");
+			fwrite($myfile,"find ../../latex/* | grep -i \"\_RedarTex.tex\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[".$nome_tipo_sem_underscore."\]@/".$texto_com_acentuacao_latex."/g\\\" \"$0}' > ../bash/substitui_tex_".$conta.".bash\n");
+			fwrite($myfile,"../bash/substitui_tex_".$conta.".bash\n\n");
 		}
 			
 
@@ -214,14 +250,30 @@ if ($result->num_rows>0) {
 	}
 }
 else {echo "Deu problema: ".$sql;}
-fwrite($myfile, 'echo "Deu certo!"');
+if ($param_mode == "verbose") {fwrite($myfile, 'echo "Talvez tenha dado certo..."
+');}
+if ($param_mode == "verbose") {fwrite($myfile, 'pwd
+');}
 fclose($myfile);
-echo "Arquivo fechado";
+if ($param_mode == "verbose") {echo "\nArquivo do batch foi fechado\n";}
+unset($retorno_do_bash_copia_substitui);
+if ($param_mode == "verbose") {echo "\nVai executar copia_substitui_tex\n";}
+exec("../bash/copia_substitui_tex.bash", $retorno_do_bash_copia_substitui);
+
+
+
+do {
+if ($param_mode == "verbose") {echo "Executando copia_substitui_tex\n";}
 unset($retorno_do_bash);
-exec("../bash/copia_substitui_tex.bash", $retorno_do_bash);
-echo "Executando\n";
-sleep(10);
-var_dump($retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io copia_substitui_tex ", $retorno_do_bash);
+if ($param_mode == "verbose") {echo "executando copia_substitui! ".implode("",$retorno_do_bash)."\n";}
+} while ($retorno_do_bash == "copia_substitui_tex");
+
+
+
+
+if ($param_mode == "verbose") {print_r(implode("\ncomando: ",$retorno_do_bash_copia_substitui));}
+
 //$conn->close();
 $conn2= new mysqli("localhost", $username, $pass, $database);
 $result=$conn2->query("$sql");
@@ -259,5 +311,22 @@ if ($result->num_rows>0) {
 }
 else {echo "Deu problema: ".$sql;}
 
+if ($param_mode == "verbose") {echo "\nVai executar pdflatex\n";}
+unset($retorno_pdflatex);
+exec("cd ../../latex/USPSC-3.1
+pwd
+pdflatex -interaction=nonstopmode ".$nome_do_tex,$retorno_pdflatex);
+do {
+unset($retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io pdflatex ", $retorno_do_bash);
+if ($param_mode == "verbose") {echo "executando pdflatex! ".implode("",$retorno_do_bash)."\n";}
+} while ($retorno_do_bash == "pdflatex");
+
+if ($param_mode == "verbose") {print_r(implode("",$retorno_pdflatex));}
+
+if ($param_mode == "verbose") {echo "\nVai executar evince\n";}
+
+if ($param_mode == "verbose") {exec("evince ".$nome_do_pdf);}
+if ($param_mode == "quiet") { echo $nome_do_pdf;};
 
 ?>	

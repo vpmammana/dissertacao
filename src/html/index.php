@@ -556,6 +556,24 @@ function scroll_horizontal(elemento){
 elemento.scrollLeft = array_scroll_horizontal[x_versao].style.left.replace("px","") - elemento.clientWidth /2 + array_scroll_horizontal[x_versao].clientWidth/2;
 }
 
+function gera_mostra_pdf_tese(){
+
+
+var resposta="";
+var url='../php/gera_tex2.php?mode=quiet';
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+			window.open(resposta);
+		     //textarea.setAttribute("data-alterado","sem_gravar");
+		     //textarea.style.backgroundColor = cor_de_edicao; 
+
+	   }
+           oReq.send();
+}
+
+
 function insere_nova_secao_a_esq(nome_secao, id_tipo_secao, trecho){
 
 

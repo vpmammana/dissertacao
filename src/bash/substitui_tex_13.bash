@@ -4,7 +4,6 @@ sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSC
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.tex
-sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/teste_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-modelo_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex
@@ -42,7 +41,6 @@ sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/.USPSC-pre-textual-IAU_RedarTex.tex.swp
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
-sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/cmp_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-Tutorial-num_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex

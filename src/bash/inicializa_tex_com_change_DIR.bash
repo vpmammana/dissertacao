@@ -1,8 +1,32 @@
 #ATENÇÃO -> underscore é um carácter especial para o LaTeX e portanto não pode ser usado como identifiar. Mas o RaderTex utiliza underscore como nome de seções. Provavelmente nao terei problemas se tirar o underscore, mas daí tem que tomar cuidado para não ter um dois identificadores diferentes tipo "titulo_abstract" e "tituloabstract", porque para o LaTeX serã o mesmo identificador
 
+# ATENÇÃO -> o awk tem que ser o mawk. Não funciona com gawk (GNU)
+
 echo "Executando Inicializa "
 
 pwd
+
+# a opção -i do sed cria arquivos temporarios que requerem as permissoes adequadas -> PRESTA ATENÇÃO! Uma solução é fazer cat file > sed > file, e daí o arquivo temporário nao eh criado
+
+sed -i 's/	//g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+sed -i 's///g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+
+sed -i '/begin.agradecimentos/,/end.agradecimentos/{//!d}'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex  
+sed -i 's/begin.agradecimentos./begin{agradecimentos}\n% @[pontoinsercaoparagrafoagradecimento]@\n/g' ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex 
+ 
+sed -i 's/	//g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex
+sed -i 's///g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex
+
+sed -i 's/ O resumo deve ressaltar o  objetivo/% @[pontoinsercaoparagraforesumo]@\napaga_daqui_para_frente/g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex
+sed -i '/apaga_daqui_para_frente/,/.cite.nbr6028.\./d' ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex 
+sed -i 's/	//g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex
+sed -i 's///g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex
+
+sed -i 's/Palavras-chave.:.*/Palavras-chave}: @[palavraschave]@/g' ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex
+
+sed -i '/.*textit.*/,/Albert Einstein}/d' ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Epigrafe.tex
+sed -i 's/begin.flushright./begin{flushright}\\textit{@[epigrafe]@}/g' ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Epigrafe.tex
+
 
 sed -i "s/autorficha{Silva, Jos\\\'e da}/autorficha{@[autorficha]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex 
 sed -i "s/autorficha{Silva, Jos\\\'e da}/autorficha{@[autorficha]@}/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-EESC.tex 
@@ -41,6 +65,7 @@ sed -i "s/autorficha{Silva, Jos\\\'e da}/autorficha{@[autorficha]@}/g" ../../lat
 sed -i "s/autorficha{Silva, Jos\\\'e da}/autorficha{@[autorficha]@}/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex 
 sed -i "s/autorabr{SILVA, J.}/autorabr{@[autorabr]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-OUTRO.tex 
 sed -i "s/autorabr{SILVA, J.}/autorabr{@[autorabr]@}/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex 
+
 
 
 sed -i "s/renewcommand[{]\\\titleabstract[}][{]Modelo para teses e disserta\\\c[{]c[}]\\\~oes em LaTeX utilizando a classe USPSC para o ICMC[}]/renewcommand{\\\titleabstract}{@[tituloabstract]@}/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCe.tex 

@@ -10,6 +10,21 @@ find ../../latex/* | grep -i "\.tex" | grep -v "RedarTex" | awk -v quote="'" '{g
 ../bash/copia_tex.bash
 
 sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCp_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCe_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-Tutorial_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IAU_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCp_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCe_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-EESC_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IQSC_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCp_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCp_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
@@ -25,6 +40,21 @@ sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTe
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-EESC_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IQSC_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCp_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCp_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCe_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-Tutorial_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IAU_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCp_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCe_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-EESC_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IQSC_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCp_RedarTex.tex
 touch ../bash/substitui_tex_1.bash
 chmod u+x ../bash/substitui_tex_1.bash
 find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/CARACTERIZA\\\\\\c{C}\\\\\~AO DO PROGRAMA Workshop Aficionados por Software e Hardware (WASH)/g\" "$0}' > ../bash/substitui_tex_1.bash
@@ -102,7 +132,7 @@ find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{
 
 touch ../bash/substitui_tex_16.bash
 chmod u+x ../bash/substitui_tex_16.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\\\\"acute"OGICA FEDERAL DO PARAN\\\\\\"acute"A Teste/g\" "$0}' > ../bash/substitui_tex_16.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\\\\"acute"OGICA FEDERAL DO PARAN\\\\\\"acute"A/g\" "$0}' > ../bash/substitui_tex_16.bash
 ../bash/substitui_tex_16.bash
 
 touch ../bash/substitui_tex_17.bash
@@ -122,6 +152,16 @@ find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{
 
 touch ../bash/substitui_tex_20.bash
 chmod u+x ../bash/substitui_tex_20.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2022/g\" "$0}' > ../bash/substitui_tex_20.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[palavraschave\]@/Papert, STEAM, STEM, WASH/g\" "$0}' > ../bash/substitui_tex_20.bash
 ../bash/substitui_tex_20.bash
+
+touch ../bash/substitui_tex_21.bash
+chmod u+x ../bash/substitui_tex_21.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[epigrafe\]@/Ci\\\\\^encia \\\\\\"acute"e a compreens\\\\\~ao que o outro constr\\\\\\"acute"oi sobre oconhecimento de algu\\\\\\"acute"em./g\" "$0}' > ../bash/substitui_tex_21.bash
+../bash/substitui_tex_21.bash
+
+touch ../bash/substitui_tex_22.bash
+chmod u+x ../bash/substitui_tex_22.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2022/g\" "$0}' > ../bash/substitui_tex_22.bash
+../bash/substitui_tex_22.bash
 

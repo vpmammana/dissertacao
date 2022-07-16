@@ -793,6 +793,8 @@ call insere_a_direita_dos_filhos_tipos_secoes("capa",				"unidade_faculdade",			
 call insere_a_direita_dos_filhos_tipos_secoes("capa",				"unidade_faculdade_maiuscula",			"Nome da unidade ou faculdade dentro da Universidade em maiúscula");
 call insere_a_direita_dos_filhos_tipos_secoes("capa",				"localidade",					"Nome da cidade onde fica a universidade");
 call insere_a_direita_dos_filhos_tipos_secoes("capa",				"ano",						"Ano da defesa da tese");
+call insere_a_direita_dos_filhos_tipos_secoes("capa",				"palavras_chave",				"Palavras-chave da tese ou dissertação");
+call insere_a_direita_dos_filhos_tipos_secoes("capa",				"epigrafe",					"Frase que dá o mote da obra.");
 call insere_a_direita_dos_filhos_tipos_secoes("raiz",				"agradecimento",				"Agradecimentos");
 call insere_a_direita_dos_filhos_tipos_secoes("agradecimento",			"paragrafo_agradecimento", 			"Parágrafos do agradecimentos");
 call insere_a_direita_dos_filhos_tipos_secoes("raiz",				"resumo",					"Resumo");
@@ -941,6 +943,8 @@ call insere_a_direita_dos_filhos("capa_da_tese", "nome_da_universidade_maiuscula
 call insere_a_direita_dos_filhos("capa_da_tese", "nome_da_unidade", "Faculdade de Educação" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "unidade_faculdade"));
 call insere_a_direita_dos_filhos("capa_da_tese", "nome_da_unidade_maiuscula", "FACULDADE DE EDUCAÇÃO" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "unidade_faculdade_maiuscula"));
 call insere_a_direita_dos_filhos("capa_da_tese", "nome_da_localidade", "Londrina" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "localidade"));
+call insere_a_direita_dos_filhos("capa_da_tese", "lista_palavras_chave", "Papert, STEAM, STEM, WASH" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "palavras_chave"));
+call insere_a_direita_dos_filhos("capa_da_tese", "frase_epigrafe", "Ciência é a compreensão que o outro constrói sobre o conhecimento de alguém." , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "epigrafe"));
 call insere_a_direita_dos_filhos("capa_da_tese", "ano_de_defesa", "2022" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "ano"));
 call insere_a_direita_dos_filhos("corpo_tese", "agradecimento_da_tese", "Agradecimentos" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "agradecimento"));
 call insere_a_direita_dos_filhos("agradecimento_da_tese", "paragrafo_agradecimento_1", "Gostaria de agradecer meus pais por tudo que me propiciaram." , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo_agradecimento"));

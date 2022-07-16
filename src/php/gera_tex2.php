@@ -1,4 +1,5 @@
 <?php
+//  ATENÇÃO -> o awk tem que ser o mawk. Não funciona com gawk (GNU)
 
 if(isset($_GET["mode"])){
   $param_mode= $_GET["mode"];
@@ -29,9 +30,23 @@ if ($nivel == 3 && $nome_tipo_secao=="topico") {
 if ($nivel == 4 && $nome_tipo_secao=="topico") {
 	$texto_latex = "\\subsubsection[".$texto."]{".$texto."}\\label{".$texto."}";
 }
-//echo $indice.")".$file[$indice]." arquivo -> ".$nome_arquivo." -> ".$texto_latex." tam: ".sizeof($file)."\n";
 
-array_splice( $file, $indice - 3, 0, $texto_latex."\n");
+//echo $indice.")".$file[$indice]." arquivo -> ".$nome_arquivo." -> ".$texto_latex." tam: ".sizeof($file)."\n";
+//if ($nome_tipo_secao == "paragraforesumo") {
+//echo "\n";
+//echo "\n";
+//echo "\n";
+//echo "putz -> (".$ponto_de_insercao.")";
+//echo " indice -> [".$indice."]";
+//echo " texto -> ".$texto_latex;
+//foreach($file as $linha){ echo "(".$linha.")";}
+//echo "\n";
+//echo "\n";
+//echo "\n";
+//echo "\n";
+//}
+
+array_splice( $file, $indice , 0, $texto_latex."\n");
 if ($param_mode == "verbose") {echo "> ".$nome_tipo_secao." ";}
 //echo "Vai inserir secoes/paragrafos no arquivo: ".$nome_arquivo."\n";
 file_put_contents($nome_arquivo, implode("",$file));
@@ -71,6 +86,7 @@ return $linha;
 
 function converte_acento_para_file_put($linha){
 //                        12345678
+
 $linha = str_replace("_","\_",$linha);
 $linha = str_replace("}","\}",$linha);
 $linha = str_replace("{","\{",$linha);
@@ -184,10 +200,20 @@ fwrite($myfile,"../bash/copia_tex.bash\n\n");
 fwrite($myfile,"sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex\n");
 
 foreach ($arquivos_textuais as $valor){
+	fwrite($myfile, "sed -i \"/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@\" ".$valor."\n");
+
+}
+
+
+foreach ($arquivos_textuais as $valor){
 	fwrite($myfile, "sed -i \"/include.*Cap[1-5]/d\" ".$valor."\n");
 
 }
 
+foreach ($arquivos_textuais as $valor){
+	fwrite($myfile, "sed -i \"/Capítulo [1-5]/d\" ".$valor."\n");
+
+}
 
 $result=$conn->query("$sql");
 $conta=0;
@@ -232,6 +258,8 @@ if ($result->num_rows>0) {
 			$nome_tipo_secao == "unidade_faculdade"			||
 			$nome_tipo_secao == "unidade_faculdade_maiuscula"	||
 			$nome_tipo_secao == "localidade"		 	||
+			$nome_tipo_secao == "palavras_chave"		 	||
+			$nome_tipo_secao == "epigrafe"			 	||
 			$nome_tipo_secao == "ano" 	
 				
 		)
@@ -301,10 +329,16 @@ if ($result->num_rows>0) {
 
 			if ($nome_tipo_secao == "topico" || $nome_tipo_secao == "paragrafo") {
 		  		foreach ($arquivos_textuais as $value){
-					insere($value, "\postextual\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
-				}	
-
-		}	
+					if ($nome_tipo_secao == 'paragrafo') {$texto_com_acentuacao_para_fileput = $texto_com_acentuacao_para_fileput."\n";}
+					insere($value, "% @[pontoinsercaotextoprincipal]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
+				}
+			}	
+			if ($nome_tipo_secao == "paragrafo_resumo") {
+					insere("../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex", "% @[pontoinsercaoparagraforesumo]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
+				}
+			if ($nome_tipo_secao == "paragrafo_agradecimento") {
+					insere("../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex", "% @[pontoinsercaoparagrafoagradecimento]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
+				}
 
 
 	}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  16 JUL 2022 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  20 JUL 2022 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1913,14 +1913,20 @@ sed on input line 303.
 ] [16
 
 ])
-(./USPSC-modelo-IAU_RedarTex.lof) [17
+(./USPSC-modelo-IAU_RedarTex.lof
+Overfull \hbox (12.68016pt too wide) in paragraph at lines 4--4
+ [][] [][][]\T1/lmr/m/n/12 (-20) @[caption-MEOS-Fish-Bone-Model-Basic-component
+s-of-a-scientific-paper]@[][] []  
+ []
+
+) [17
 
 ] [18
 
-] (./USPSC-modelo-IAU_RedarTex.lot)
-[19] [20
+] (./USPSC-modelo-IAU_RedarTex.lot) [19] [20
 
-] (./USPSC-modelo-IAU_RedarTex.loq) [21] [22
+]
+(./USPSC-modelo-IAU_RedarTex.loq) [21] [22
 
 ]
 \openout2 = `USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.aux'.
@@ -1944,30 +1950,74 @@ sed on input line 303.
 ])
 (./USPSC-modelo-IAU_RedarTex.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 49.
+(Font)              <14.4> on input line 50.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 49.
+(Font)              <10> on input line 50.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 49.
-
-Underfull \vbox (badness 7186) has occurred while \output is active []
-
+(Font)              <7> on input line 50.
  [27
 
-])
-[28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+]) [28]
+<../../imagens/Secoes.png, id=284, 1127.21124pt x 796.9775pt>
+File: ../../imagens/Secoes.png Graphic file (type png)
+<use ../../imagens/Secoes.png>
+Package pdftex.def Info: ../../imagens/Secoes.png  used on input line 420.
+(pdftex.def)             Requested size: 563.60425pt x 398.48776pt.
 
- [29
+Overfull \hbox (108.60425pt too wide) in paragraph at lines 420--421
+ [] 
+ []
+
+
+LaTeX Warning: Citation `cite-Secoes' on page 29 undefined on input line 426.
+
+
+LaTeX Warning: Citation `cite-Secoes' on page 29 undefined on input line 426.
+
+[29
 
 
 ]
-[30] [31] [32
+<../../imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper.png,
+ id=306, 853.1875pt x 294.09875pt>
+File: ../../imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper
+.png Graphic file (type png)
+<use ../../imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper.
+png>
+Package pdftex.def Info: ../../imagens/MEOS-Fish-Bone-Model-Basic-components-of
+-a-scientific-paper.png  used on input line 493.
+(pdftex.def)             Requested size: 426.59271pt x 147.04901pt.
 
-]
+
+LaTeX Warning: Citation `cite-MEOS-Fish-Bone-Model-Basic-components-of-a-scient
+ific-paper' on page 30 undefined on input line 499.
+
+
+LaTeX Warning: Citation `cite-MEOS-Fish-Bone-Model-Basic-components-of-a-scient
+ific-paper' on page 30 undefined on input line 499.
+
+
+Underfull \vbox (badness 2600) has occurred while \output is active []
+
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.523 
+       <../../imagens/Secoes.png>] [31pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.1.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.562 
+       <../../imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-pap
+er.png>] [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [33
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
@@ -1983,24 +2033,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
+[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-[40] [41] [42
+ [40]
+[41] [42] [43
 
-] [43] [44]
-Overfull \hbox (23.18642pt too wide) in paragraph at lines 1207--1208
-\T1/lmr/m/n/12 (-20) pé-dia Bri-tâ-nica te-ria sido al-te-rado para STEM [XXX h
-ttps://www.britannica.com/topic/STEM-
- []
-
-
+] [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
- [46]
+[46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
@@ -2013,26 +2056,54 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50]
-[51] [52
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [53] [54
-
-] [55] [56
-
-] [57] [58
+ [51]
+[52] [53
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [54]
+[55] [56
 
- [60]
+] [57] [58
+
+] [59] [60
+
+]
+
+! LaTeX Error: File `../../imagens/teste' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2039 ...graphics[scale=0.5]{../../imagens/teste}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `cite-teste' on page 61 undefined on input line 2045.
+
+
+LaTeX Warning: Citation `cite-teste' on page 61 undefined on input line 2045.
+
+[61pdfTeX warning (ext4): destination with the same identifier (name{figure.7.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2129 
+       ] [62]
 No file USPSC-modelo-IAU_RedarTex.bbl.
-[61]
+[63]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux'.
 
- (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex [62
+ (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex [64
 
 
 ]
@@ -2040,38 +2111,38 @@ No file USPSC-modelo-IAU_RedarTex.bbl.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[63
-
-] [64]
-
-LaTeX Warning: Citation `nbr14724' on page 65 undefined on input line 10.
-
-
-LaTeX Warning: Citation `aguia2020' on page 65 undefined on input line 12.
-
 [65
 
-] [66
+] [66]
 
-] [67pdfTeX warning (ext4): destination with the same identifier (name{table.B.
+LaTeX Warning: Citation `nbr14724' on page 67 undefined on input line 10.
+
+
+LaTeX Warning: Citation `aguia2020' on page 67 undefined on input line 12.
+
+[67
+
+] [68
+
+] [69pdfTeX warning (ext4): destination with the same identifier (name{table.B.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 \chapter
-             {Exemplo de tabela com grade}] [68
+             {Exemplo de tabela com grade}] [70
 
-]) [69pdfTeX warning (ext4): destination with the same identifier (name{table.C
+]) [71pdfTeX warning (ext4): destination with the same identifier (name{table.C
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2058 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
+l.2261 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
                                                   ]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux'.
 
 
-(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex [70
+(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex [72
 
 
 
@@ -2080,18 +2151,18 @@ l.2058 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[71
-
-] [72]
-
-LaTeX Warning: Citation `nbr14724' on page 73 undefined on input line 13.
-
 [73
 
-] [74
+] [74]
+
+LaTeX Warning: Citation `nbr14724' on page 75 undefined on input line 13.
+
+[75
+
+] [76
 
 ]
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=475, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=529, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
@@ -2099,14 +2170,14 @@ e 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
 
 
-LaTeX Warning: Citation `comandos' on page 75 undefined on input line 22.
+LaTeX Warning: Citation `comandos' on page 77 undefined on input line 22.
 
-) [75pdfTeX warning (ext4): destination with the same identifier (name{figure.a
-nexochapback.2.1}) has been already used, duplicate ignored
+) [77pdfTeX warning (ext4): destination with the same identifier (name{figure.a
+nexochapback.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2063 ...PSC-TA-PosTextual/USPSC-Anexos_RedarTex}
+l.2266 ...PSC-TA-PosTextual/USPSC-Anexos_RedarTex}
                                                    <./USPSC-img/USPSC-Acentuaca
 oLaTeX.png>]
 \openout2 = `USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux'.
@@ -2127,8 +2198,8 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `USPSC-modelo-IAU_RedarTex.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2072.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2072.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2275.
 (./USPSC-modelo-IAU_RedarTex.aux
 (./USPSC-TA-PreTextual/USPSC-Errata_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux)
@@ -2141,35 +2212,41 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 2072.
 (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2072.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2072.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2275.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2275.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2072.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2275.
  ) 
 Here is how much of TeX's memory you used:
- 31430 strings out of 483090
- 604353 string characters out of 5963929
- 1042099 words of memory out of 5000000
- 45434 multiletter control sequences out of 15000+600000
+ 31527 strings out of 483090
+ 606123 string characters out of 5963929
+ 1042436 words of memory out of 5000000
+ 45474 multiletter control sequences out of 15000+600000
  628624 words of font info for 141 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  73i,18n,108p,2318b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (77 pages, 505607 bytes).
+pdfTeX warning (dest): name{figure.anexochapback.2.3} has been referenced but
+ does not exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/l
+mbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmsy10.pfb>
+Output written on USPSC-modelo-IAU_RedarTex.pdf (79 pages, 641733 bytes).
 PDF statistics:
- 690 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 143 named destinations out of 1000 (max. 500000)
- 29630 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 758 PDF objects out of 1000 (max. 8388607)
+ 637 compressed objects within 7 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 29648 words of extra memory for PDF output out of 29859 (max. 10000000)
 

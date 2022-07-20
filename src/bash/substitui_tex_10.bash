@@ -10,6 +10,7 @@ sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA 
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCe_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex
+sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-EESC_RedarTex.tex
@@ -22,6 +23,7 @@ sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA 
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AbstractTutorial_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap5-ConclusaoTutorial_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AnexosTutorial_RedarTex.tex
+sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-Tutorial/.USPSC-Cap2-DesenvolvimentoTutorial_RedarTex.tex.swp
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-SimbolosTutorial_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AbreviaturasSiglasTutorial_RedarTex.tex
 sed -i "s/@\[programaposmaiuscula\]@/PROGRAMA DE P\\\'OS-GRADUA\\\c{C}\\\~AO DA UTFPR/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AgradecimentosTutorial_RedarTex.tex

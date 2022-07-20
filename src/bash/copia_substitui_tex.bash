@@ -157,11 +157,16 @@ find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{
 
 touch ../bash/substitui_tex_21.bash
 chmod u+x ../bash/substitui_tex_21.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[epigrafe\]@/Ci\\\\\^encia \\\\\\"acute"e a compreens\\\\\~ao que o outro constr\\\\\\"acute"oi sobre oconhecimento de algu\\\\\\"acute"em./g\" "$0}' > ../bash/substitui_tex_21.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[epigrafe\]@/Ci\\\\\^encia \\\\\\"acute"e a compreens\\\\\~ao que o outro constr\\\\\\"acute"oi sobre o conhecimento de algu\\\\\\"acute"em./g\" "$0}' > ../bash/substitui_tex_21.bash
 ../bash/substitui_tex_21.bash
 
 touch ../bash/substitui_tex_22.bash
 chmod u+x ../bash/substitui_tex_22.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2022/g\" "$0}' > ../bash/substitui_tex_22.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[dedicatoria\]@/Coloque a dedicat\\\\\\"acute"oria aqui!/g\" "$0}' > ../bash/substitui_tex_22.bash
 ../bash/substitui_tex_22.bash
+
+touch ../bash/substitui_tex_23.bash
+chmod u+x ../bash/substitui_tex_23.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2022/g\" "$0}' > ../bash/substitui_tex_23.bash
+../bash/substitui_tex_23.bash
 

@@ -15,6 +15,7 @@ global $param_mode;
 //unset($file);
 $file = file($nome_arquivo);
 $indice = array_search($ponto_de_insercao, $file, false);
+$id_arquivo = pathinfo($texto, PATHINFO_FILENAME);
 
 $texto_latex = $texto;
 
@@ -30,6 +31,18 @@ if ($nivel == 3 && $nome_tipo_secao=="topico") {
 if ($nivel == 4 && $nome_tipo_secao=="topico") {
 	$texto_latex = "\\subsubsection[".$texto."]{".$texto."}\\label{".$texto."}";
 }
+
+if ($nome_tipo_secao == "imagem"){
+	$texto_latex = "\n
+\\begin{figure}[htb]\n
+	\\begin{center}\n
+		\\includegraphics[scale=0.5]{../../imagens/".$texto."}\n
+	\\end{center}\n
+	\\caption{\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
+	\\legend{Fonte: \citeonline{cite-".$id_arquivo."}}\n
+\\end{figure}";
+}
+
 
 //echo $indice.")".$file[$indice]." arquivo -> ".$nome_arquivo." -> ".$texto_latex." tam: ".sizeof($file)."\n";
 //if ($nome_tipo_secao == "paragraforesumo") {
@@ -129,6 +142,10 @@ exec("grep -HiRr \"^\\\\\\\\\\postextual\" ../../latex/USPSC-3.1/. | grep RedarT
 return $retorno;
 } 
 
+// INICIO
+
+
+
 include "identifica.php.cripto";
 unset($retorna_zip);
 if ($param_mode == "verbose") {echo "\nVai executar unzip\n";}
@@ -166,6 +183,8 @@ $conn= new mysqli("localhost", $username, $pass, $database);
 $myfile = fopen("../bash/copia_substitui_tex.bash", "w") or die("Não foi possível abrir o arquivo!");
 
 $temporario_corpo = fopen("temporario.txt", "w");
+
+$velho_nome_tipo_secao = ""; // serve para iniciar a lista
 
 $sql="call mostra_documento_completo_niveis('raiz')";
 fwrite($myfile,"touch ../bash/copia_tex.bash\n"); 
@@ -260,6 +279,7 @@ if ($result->num_rows>0) {
 			$nome_tipo_secao == "localidade"		 	||
 			$nome_tipo_secao == "palavras_chave"		 	||
 			$nome_tipo_secao == "epigrafe"			 	||
+			$nome_tipo_secao == "dedicatoria"		 	||
 			$nome_tipo_secao == "ano" 	
 				
 		)
@@ -323,16 +343,63 @@ if ($result->num_rows>0) {
 		$secao_sem_underscore = str_replace("_", "", $id_secao);
 		$secao_sem_espaco_sem_underscore = str_replace(" ", "", $secao_sem_underscore);
 		$nome_tipo_sem_underscore = str_replace("_", "", $nome_tipo_secao);
+		$velho_tipo_sem_underscore = str_replace("_", "", $velho_nome_tipo_secao);
+
 		$texto_com_acentuacao_latex = converte_acento($titulo);
 		$texto_com_acentuacao_para_fileput = converte_acento_para_file_put($titulo);
 		
+		if ($nome_tipo_secao == 'item_lista_num') {$texto_com_acentuacao_para_fileput = "\\item ".$texto_com_acentuacao_para_fileput;}
 
-			if ($nome_tipo_secao == "topico" || $nome_tipo_secao == "paragrafo") {
-		  		foreach ($arquivos_textuais as $value){
+			if (
+				$nome_tipo_secao == "topico" || 
+				$nome_tipo_secao == "paragrafo" || 
+				$nome_tipo_secao == "chama_ref" || 
+				$nome_tipo_secao == "citacao" || 
+				$nome_tipo_secao == "imagem" || 
+				$nome_tipo_secao == "legenda_imagem" || 
+				$nome_tipo_secao == "grafico" || 
+				$nome_tipo_secao == "legenda_grafico" || 
+				$nome_tipo_secao == "tabela" || 
+				$nome_tipo_secao == "legenda_tabela" || 
+				$nome_tipo_secao == "item_lista_nao_num" || 
+				$nome_tipo_secao == "item_lista_num"
+			   ) 
+			   {
+		  		foreach ($arquivos_textuais as $value)
+				{
 					if ($nome_tipo_secao == 'paragrafo') {$texto_com_acentuacao_para_fileput = $texto_com_acentuacao_para_fileput."\n";}
-					insere($value, "% @[pontoinsercaotextoprincipal]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
-				}
-			}	
+					if ($nome_tipo_secao == 'item_lista_num' && $velho_nome_tipo_secao != 'item_lista_num') 
+						{
+							insere(
+								$value, 
+								"% @[pontoinsercaotextoprincipal]@\n", 
+								$nome_tipo_sem_underscore, 	
+								"\n\\begin{alineas}", 
+								$secao_sem_espaco_sem_underscore, 
+								$nivel
+							      ); 
+							// $secao_sem_espaco_sem_underscore nao estah sendo usada... eh para no futuro permitir label
+						}
+					if ($velho_nome_tipo_secao == 'item_lista_num' && $nome_tipo_secao != 'item_lista_num') 
+						{
+							insere(
+								$value, 
+								"% @[pontoinsercaotextoprincipal]@\n", 
+								$velho_tipo_sem_underscore, 
+								"\\end{alineas}\n", "", $nivel
+							      );
+					
+						}
+					insere(
+						$value, 
+						"% @[pontoinsercaotextoprincipal]@\n", 
+						$nome_tipo_sem_underscore, 
+						$texto_com_acentuacao_para_fileput, 
+						$secao_sem_espaco_sem_underscore, 
+						$nivel
+					      );
+				} // foreach
+			   }	
 			if ($nome_tipo_secao == "paragrafo_resumo") {
 					insere("../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex", "% @[pontoinsercaoparagraforesumo]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
 				}
@@ -340,6 +407,7 @@ if ($result->num_rows>0) {
 					insere("../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex", "% @[pontoinsercaoparagrafoagradecimento]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
 				}
 
+			$velho_nome_tipo_secao = $nome_tipo_secao;
 
 	}
 }
@@ -356,7 +424,7 @@ exec("ps -aux | grep -v grep | grep -io pdflatex ", $retorno_do_bash);
 if ($param_mode == "verbose") {echo "executando pdflatex! ".implode("",$retorno_do_bash)."\n";}
 } while ($retorno_do_bash == "pdflatex");
 
-if ($param_mode == "verbose") {print_r(implode("",$retorno_pdflatex));}
+if ($param_mode == "verbose") {print_r(implode("<br>",$retorno_pdflatex));}
 
 if ($param_mode == "verbose") {echo "\nVai executar evince\n";}
 

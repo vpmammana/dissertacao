@@ -8,6 +8,12 @@ pwd
 
 # a opção -i do sed cria arquivos temporarios que requerem as permissoes adequadas -> PRESTA ATENÇÃO! Uma solução é fazer cat file > sed > file, e daí o arquivo temporário nao eh criado
 
+sed -i 's/      //g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria.tex
+sed -i 's/^M//g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria.tex
+
+sed -i '/^.*textit.*/,/fill}/d' ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria.tex
+sed -i 's/noindent/noindent\\textit{@[dedicatoria]@} \\vspace*{\\fill}/g' ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria.tex
+
 sed -i 's/	//g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
 sed -i 's///g'  ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
 

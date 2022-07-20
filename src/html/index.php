@@ -1052,7 +1052,7 @@ arvore_com_trechos[i].addEventListener("mouseover",
 		id_da_folha_onde_esta_flutuando = this.id;
 		
 if (arvore_com_trechos[i].classList.contains("pode_mostrar_trechos"))	{hint.innerHTML="<b>id("+arvore_com_trechos[i].getAttribute("data-id-chave")+") "+arvore_com_trechos[i].getAttribute("data-version-date")+"</b><br>versoes:"+arvore_com_trechos[i].getAttribute("data-conta-versoes")+"<br><b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b><br>" + arvore_com_trechos[i].getAttribute("data-titulo");}
-else {hint.innerHTML="<b>("+arvore_com_trechos[i].getAttribute("data-id-chave")+") "+arvore_com_trechos[i].getAttribute("data-version-date")+"</b><br>versoes:"+arvore_com_trechos[i].getAttribute("data-conta-versoes")+"<br><b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b>";}
+else {hint.innerHTML="<b>("+arvore_com_trechos[i].getAttribute("data-id-chave")+") "+arvore_com_trechos[i].getAttribute("data-version-date")+"</b><br>versoes:"+arvore_com_trechos[i].getAttribute("data-conta-versoes")+"<br><b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b><br>"+arvore_com_trechos[i].getAttribute("data-nome-tipo-secao");}
 //		id_secao_mouse.innerHTML="<b>"+arvore_com_trechos[i].getAttribute("data-id-secao")+"</b>";
 //		id_pai_mouse.innerHTML=arvore_com_trechos[i].getAttribute("data-id-pai");
 

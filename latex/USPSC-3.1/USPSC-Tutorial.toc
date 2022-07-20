@@ -1,0 +1,232 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdução}}{33}{chapter.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Desenvolvimento}}{37}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Pacote USPSC: Classe USPSC e modelos de trabalhos acadêmicos}{37}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Alternativas de formatação}{42}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Opções de fonte}{42}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Opções de cores dos links}{43}{subsubsection.2.1.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.1.3}Impressão anverso e verso ou somente anverso}{44}{subsubsection.2.1.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.1.4}Opção de p. ou f. na referência da Errata, do Resumo e do Abstract}{44}{subsubsection.2.1.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.1.5}Tipos de cabeçalhos de páginas}{44}{subsubsection.2.1.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.1.6}Opções de idiomas do texto}{45}{subsubsection.2.1.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.1.7}Utilização de pacotes para a indicação de número de autores nas referências e para citações alfabéticas ou numéricas}{45}{subsubsection.2.1.1.7}%
+\contentsline {subsubsection}{\numberline {2.1.1.8}Possibilidades de preâmbulos}{47}{subsubsection.2.1.1.8}%
+\contentsline {subsubsection}{\numberline {2.1.1.9}Versão original ou final/corrigida}{48}{subsubsection.2.1.1.9}%
+\contentsline {subsubsection}{\numberline {2.1.1.10}Ficha catalográfica}{49}{subsubsection.2.1.1.10}%
+\contentsline {section}{\numberline {2.2}Resultados de comandos}{50}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Codificação dos arquivos: UTF8}{50}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Diferentes idiomas e hifenizações}{50}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Enumerações}{53}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Espaçamento entre parágrafos e linhas}{54}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Tabelas e quadros}{55}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Figuras}{56}{subsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.6.1}Figuras em minipages}{57}{subsubsection.2.2.6.1}%
+\contentsline {subsection}{\numberline {2.2.7}Expressões matemáticas}{58}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Estruturas, reações e mecanismos de reações químicas}{58}{subsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.2.9}Inclusão de outros arquivos}{61}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}Índice(s)}{61}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.11}Compilar o documento \LaTeX }{63}{subsection.2.2.11}%
+\contentsline {subsection}{\numberline {2.2.12}Remissões internas}{64}{subsection.2.2.12}%
+\contentsline {section}{\numberline {2.3}Divisões do documento}{64}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Divisões do documento: subseção}{64}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Divisões do documento: subsubseção}{64}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Divisões do documento: subsubseção}{64}{subsubsection.2.3.1.2}%
+\contentsline {subsection}{\numberline {2.3.2}Divisões do documento: subseção}{65}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Divisões do documento: subsubseção}{65}{subsubsection.2.3.2.1}%
+\contentsline {paragraph}{\numberline {2.3.2.1.1}Esta é uma subseção de quinto nível}{65}{paragraph.2.3.2.1.1}%
+\contentsline {paragraph}{\numberline {2.3.2.1.2}Esta é outra subseção de quinto nível}{65}{paragraph.2.3.2.1.2}%
+\contentsline {paragraph}{\numberline {2.3.2.1.3}Este é um parágrafo numerado}{65}{paragraph.2.3.2.1.3}%
+\contentsline {paragraph}{\numberline {2.3.2.1.4}Este é outro parágrafo numerado}{65}{paragraph.2.3.2.1.4}%
+\contentsline {subsection}{\numberline {2.3.3}Este é um exemplo de nome de subseção longa que se aplica a seções e demais divisões do documento. Ele deve estar alinhado à esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{65}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Manual da classe \textsf {abn\TeX 2}}{65}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Precisa de ajuda sobre \textsf {abn\TeX 2}?}{66}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Você pode ajudar?}{66}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Quer customizar os modelos do abn\TeX 2\ para sua instituição ou universidade?}{66}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Precisa de ajuda sobre o Pacote USPSC?}{66}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Customize o Pacote USPSC para sua instituição}{67}{section.2.9}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Citações}}{69}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Citação direta}{70}{section.3.1}%
+\babel@toc {english}{}
+\babel@toc {brazil}{}
+\babel@toc {english}{}
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {3.2}Citação indireta}{72}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Citação de citação}{72}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Citação de fontes informais}{74}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Citação de website}{75}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Destaque e supressões no texto}{75}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Notas de rodapé}{77}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Expressões Latinas}{79}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Apresentação de Autores no Texto}{79}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Alternativas de formatação}{79}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.10}Exemplos de citações}{80}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Um autor}{80}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Dois autores}{80}{subsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.10.3}Três autores}{80}{subsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.10.4}Quatro ou mais autores}{81}{subsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.10.5}Citações consecutivas em Sistema Numérico}{81}{subsection.3.10.5}%
+\contentsline {subsection}{\numberline {3.10.6}Documentos de mesmo autor publicado no mesmo ano}{81}{subsection.3.10.6}%
+\contentsline {subsection}{\numberline {3.10.7}Coincidência de sobrenome e ano}{82}{subsection.3.10.7}%
+\contentsline {subsection}{\numberline {3.10.8}Coincidência de sobrenome, inicial do prenome e ano}{82}{subsection.3.10.8}%
+\contentsline {subsection}{\numberline {3.10.9}Autoria desconhecida}{82}{subsection.3.10.9}%
+\contentsline {subsection}{\numberline {3.10.10}Entidades coletivas}{82}{subsection.3.10.10}%
+\contentsline {subsection}{\numberline {3.10.11}Patentes}{83}{subsection.3.10.11}%
+\contentsline {subsection}{\numberline {3.10.12}Eventos}{83}{subsection.3.10.12}%
+\contentsline {subsection}{\numberline {3.10.13}Vários trabalhos da mesma autoria}{83}{subsection.3.10.13}%
+\contentsline {subsection}{\numberline {3.10.14}Vários trabalhos de autorias diferentes}{84}{subsection.3.10.14}%
+\contentsline {section}{\numberline {3.11}Comandos em \LaTeX \ para citações}{84}{section.3.11}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Modelos de referências}}{93}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Monografias}{93}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Monografia no todo}{94}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Um autor}{94}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}Dois autores}{95}{subsubsection.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.1.3}Três autores}{96}{subsubsection.4.1.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.1.4}Quatro autores}{97}{subsubsection.4.1.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.1.5}Responsabilidade pelo conjunto da obra (editor, organizador,coordenador, compilador entre outros)}{99}{subsubsection.4.1.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.1.6}Outros tipos de responsabilidade (tradutor, prefaciador, ilustrador entre outros)}{101}{subsubsection.4.1.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.1.7}Autor entidade (entidades coletivas, governamentais, públicas, particulares etc.)}{102}{subsubsection.4.1.1.7}%
+\contentsline {subsubsection}{\numberline {4.1.1.8}Autoria desconhecida}{104}{subsubsection.4.1.1.8}%
+\contentsline {subsubsection}{\numberline {4.1.1.9}Autor(es) com mais de uma obra referenciada }{105}{subsubsection.4.1.1.9}%
+\contentsline {subsubsection}{\numberline {4.1.1.10}Mais de um volume}{107}{subsubsection.4.1.1.10}%
+\contentsline {subsubsection}{\numberline {4.1.1.11}Série}{108}{subsubsection.4.1.1.11}%
+\contentsline {subsubsection}{\numberline {4.1.1.12}Catálogo}{109}{subsubsection.4.1.1.12}%
+\contentsline {subsubsection}{\numberline {4.1.1.13}Relatório e parecer técnico}{111}{subsubsection.4.1.1.13}%
+\contentsline {subsubsection}{\numberline {4.1.1.14}Dicionário}{113}{subsubsection.4.1.1.14}%
+\contentsline {subsubsection}{\numberline {4.1.1.15}Trabalhos acadêmicos}{114}{subsubsection.4.1.1.15}%
+\contentsline {subsection}{\numberline {4.1.2}Parte de monografia}{116}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Autor distinto da obra no todo}{116}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Mesmo autor da obra no todo}{117}{subsubsection.4.1.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Monografia em suporte eletrônico}{118}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}Parte de monografia em suporte eletrônico}{120}{subsubsection.4.1.3.1}%
+\contentsline {subsection}{\numberline {4.1.4}Evento}{122}{subsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}Evento completo}{122}{subsubsection.4.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.4.2}Trabalho apresentado em evento}{124}{subsubsection.4.1.4.2}%
+\contentsline {subsubsection}{\numberline {4.1.4.3}Trabalho de evento publicado em periódico}{126}{subsubsection.4.1.4.3}%
+\contentsline {subsubsection}{\numberline {4.1.4.4}Evento em suporte eletrônico}{126}{subsubsection.4.1.4.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.5}Trabalho de evento em suporte eletrônico}{127}{subsubsection.4.1.4.5}%
+\contentsline {section}{\numberline {4.2}Publicações Periódicas}{128}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Coleção como um todo}{128}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Artigo de revista}{129}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Editorial}{130}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Entidade coletiva}{132}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Artigos em suplementos ou em números especiais}{132}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Artigo publicado em partes}{134}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Artigo com errata publicada}{135}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}Artigo publicado com indicação do mês}{135}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.9}Artigo no prelo}{136}{subsection.4.2.9}%
+\contentsline {subsection}{\numberline {4.2.10}Publicações periódicas em suporte eletrônico}{138}{subsection.4.2.10}%
+\contentsline {subsection}{\numberline {4.2.11}Artigo e/ou matéria de jornal}{140}{subsection.4.2.11}%
+\contentsline {subsection}{\numberline {4.2.12}Artigo publicado com correção}{141}{subsection.4.2.12}%
+\contentsline {section}{\numberline {4.3}Patentes}{143}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Documentos Jurídicos}{145}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Legislação}{145}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Jurisprudência}{151}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Doutrina}{152}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Documentos Jurídicos em suporte eletrônico}{153}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Normas}{153}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Materiais especiais}{154}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Documentos Cartográficos}{156}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}No todo}{156}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.2}Em suporte eletrônico}{157}{subsubsection.4.6.1.2}%
+\contentsline {subsection}{\numberline {4.6.2}Documentos sonoros}{158}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}No todo}{158}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}Em parte}{159}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Partituras}{159}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}Impressa}{159}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}Em suporte eletrônico}{160}{subsubsection.4.6.3.2}%
+\contentsline {subsection}{\numberline {4.6.4}Bula de medicamento}{161}{subsection.4.6.4}%
+\contentsline {subsection}{\numberline {4.6.5}Website}{162}{subsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.6.6}Artigo ahead of print}{162}{subsection.4.6.6}%
+\contentsline {subsection}{\numberline {4.6.7}Digital Object Identifier (DOI)}{163}{subsection.4.6.7}%
+\contentsline {subsection}{\numberline {4.6.8}CD-ROM e disquete}{165}{subsection.4.6.8}%
+\contentsline {subsection}{\numberline {4.6.9}Mensagens eletrônicas}{165}{subsection.4.6.9}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclusão}}{167}{chapter.5}%
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {AP\^ENDICES}}{169}{section*.19}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Apêndice(s)}}{171}{appendix.A}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Siglas dos Programas de Pós-Graduação da EESC}}{173}{appendix.B}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Siglas dos Programas de Pós-Graduação do IAU}}{177}{appendix.C}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Siglas dos Programas de Pós-Graduação do ICMC}}{179}{appendix.D}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase {Siglas dos Programas de Pós-Graduação do IFSC}}{181}{appendix.E}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {Siglas dos Programas de Pós-Graduação do IFSC para ingressantes a partir de 2020}}{183}{appendix.F}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase {Siglas dos Programas de Pós-Graduação do IQSC}}{185}{appendix.G}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {H}\MakeTextUppercase {Siglas dos Cursos de Graduação da EESC}}{187}{appendix.H}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {I}\MakeTextUppercase {Siglas dos Cursos de Graduação do ICMC}}{189}{appendix.I}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {J}\MakeTextUppercase {Siglas dos Cursos de Graduação do IQSC}}{191}{appendix.J}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {K}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{193}{appendix.K}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {L}\MakeTextUppercase {Exemplo de tabela com grade}}{195}{appendix.L}%
+\vspace {\cftbeforechapterskip }
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {ANEXOS}}{197}{section*.20}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{199}{appendix.anexochapback.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentuação (modo texto - \LaTeX )}}{201}{appendix.anexochapback.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Símbolos úteis em \LaTeX }}{203}{appendix.anexochapback.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Letras gregas em \LaTeX }}{205}{appendix.anexochapback.4}%

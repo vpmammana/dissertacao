@@ -22,6 +22,7 @@ sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-modelo-ICMCe_RedarTex.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-EESC.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex
+sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex
@@ -54,6 +55,7 @@ sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-Cap5-Conclusa
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-fichacatalograficaTutorial.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-AnexosTutorial.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-Cap1-IntroducaoTutorial.tex
+sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/.USPSC-Cap2-DesenvolvimentoTutorial_RedarTex.tex.swp
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-SimbolosTutorial_RedarTex.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-SimbolosTutorial.tex
 sed -i "s/Ú/\\\'U/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-DedicatoriaTutorial.tex

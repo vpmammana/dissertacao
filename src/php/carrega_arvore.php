@@ -300,7 +300,7 @@ $min_top_folha = 10000000;
 $max_top_folha = 0;
 
 $conta_folhas =0;
-
+$conta_imagem =0;
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()){
 	$id_chave             = $row["id_chave_filho"];
@@ -410,6 +410,13 @@ if ($result->num_rows>0) {
 				$barra_para = "</div>";
 				$barra_div_padding="";
 			}
+		if ($nome_tipo_secao =="legenda_imagem")
+			{
+				$conta_imagem++;
+				$para = $para."Fig. ".$conta_imagem." - ";
+			}
+
+
 // data-id-chave eh a chave primaria da tabela secoes
 	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
 

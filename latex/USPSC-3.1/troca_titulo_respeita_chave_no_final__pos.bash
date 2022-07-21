@@ -22,7 +22,6 @@ sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" ../../latex/./USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-EESC.tex
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex
-sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" ../../latex/./USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC.tex
 sed -i "s/t\\\'itulo de [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*[}]/t\\\'itulo de @[titulopos]@}/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex

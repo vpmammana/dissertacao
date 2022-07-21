@@ -207,7 +207,7 @@ DROP PROCEDURE IF EXISTS insere_abaixo_do_atual
 //
 CREATE PROCEDURE insere_abaixo_do_atual(IN nome_no_pai VARCHAR(100), IN nome_do_tipo_de_secao VARCHAR(200), IN in_trecho VARCHAR(3000))
 funcao:BEGIN
-	call insere_a_direita_dos_filhos(nome_no_pai, CONCAT("automatico_",CURRENT_TIMESTAMP(6)), in_trecho,'', (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = nome_do_tipo_de_secao));
+	call insere_a_direita_dos_filhos(nome_no_pai, CONCAT("automatico_",REPLACE(CURRENT_TIMESTAMP(6), ' ', '_')), in_trecho,'', (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = nome_do_tipo_de_secao));
 	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_trecho);
 END
 //
@@ -224,7 +224,7 @@ funcao:BEGIN
 	UPDATE secoes set lft = lft + 2 where lft >= @tmp_esq;
 	UPDATE secoes set rgt = rgt + 2 where rgt >= @tmp_esq;
 	#cria novo no
- 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", @time_stampa), in_descricao, "",  @tmp_esq, @tmp_esq + 1, id_do_tipo_de_secao);
+ 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", REPLACE(@time_stampa, " ", "_")), in_descricao, "",  @tmp_esq, @tmp_esq + 1, id_do_tipo_de_secao);
 	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_descricao);
 
 END
@@ -242,7 +242,7 @@ funcao:BEGIN
 	UPDATE secoes set lft = lft + 2 where lft > @tmp_dir;
 	UPDATE secoes set rgt = rgt + 2 where rgt > @tmp_dir;
 	#cria novo no
- 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", @time_stampa), in_descricao, "",  @tmp_dir + 1, @tmp_dir + 2, id_do_tipo_de_secao);
+ 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", REPLACE(@time_stampa," ","_")), in_descricao, "",  @tmp_dir + 1, @tmp_dir + 2, id_do_tipo_de_secao);
 	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_descricao);
 
 END
@@ -875,6 +875,12 @@ INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_dis
 INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="tamanho_fonte"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "tamanho_fonte" AND B.nome_valor_discreto = "1.0"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="paragrafo"));
 INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="tipo_fonte"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "tipo_fonte" AND B.nome_valor_discreto = "normal"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="paragrafo"));
 
+INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="eh_paragrafo"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "eh_paragrafo" AND B.nome_valor_discreto = "sim"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="legenda_imagem"));
+INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="alinhamento"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "alinhamento" AND B.nome_valor_discreto = "centro"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="legenda_imagem"));
+INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="tamanho_fonte"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "tamanho_fonte" AND B.nome_valor_discreto = "0.7"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="legenda_imagem"));
+INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="tipo_fonte"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "tipo_fonte" AND B.nome_valor_discreto = "bold"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="legenda_imagem"));
+
+
 INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="eh_paragrafo"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "eh_paragrafo" AND B.nome_valor_discreto = "sim"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="citacao"));
 INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="alinhamento"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "alinhamento" AND B.nome_valor_discreto = "justificado"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="citacao"));
 INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_discreto, id_nested_tipo_secao) VALUES ("",(SELECT id_chave_propriedade FROM propriedades where nome_propriedade="tamanho_fonte"),(SELECT id_chave_valor_discreto FROM propriedades as A, valores_discretos as B WHERE B.id_propriedade = A.id_chave_propriedade AND A.nome_propriedade = "tamanho_fonte" AND B.nome_valor_discreto = "1.0"),(SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes where nome_nested_tipo_secao ="citacao"));
@@ -977,8 +983,8 @@ call insere_a_direita_dos_filhos("estrutura_do_texto", "ref_item_8_lista_IMRD_co
 call insere_a_direita_dos_filhos("estrutura_do_texto", "paragrafo_5", "A variante acima, embora voltada para publicações curtas, é válida para outros tipos de registros científicos e também é baseada na ideia das 3 dimensões descrita acima: \"por que?, \"como? e \"o que?. " , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo"));
 call insere_a_direita_dos_filhos("estrutura_do_texto", "paragrafo_6", "De forma mais completa ainda, mas com a mesma estrutura básica: " , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo"));
 call insere_a_direita_dos_filhos("estrutura_do_texto", "ref_paragrafo_6", "S.A.Meo [XXX Anatomy and physiology of a scientific paper] propõe o \"MEO’s Fish Bone Model" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "chama_ref"));
-call insere_a_direita_dos_filhos("estrutura_do_texto", "imagem_1", "/var/www/html/tese/dados/imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper.png" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "imagem"));
-call insere_a_direita_dos_filhos("estrutura_do_texto", "legenda_imagem_1", "Fig 1. - A estrutura de \"espinha de peixe de S.A. MEOs (fonte: S.A.Meo [XXX Anatomy and physiology of a scientific paper])" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "legenda_imagem"));
+call insere_a_direita_dos_filhos("estrutura_do_texto", "imagem_1", "MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper.png" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "imagem"));
+call insere_a_direita_dos_filhos("estrutura_do_texto", "legenda_imagem_1", "A estrutura de \"espinha de peixe de S.A. MEOs (fonte: S.A.Meo [XXX Anatomy and physiology of a scientific paper])" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "legenda_imagem"));
 call insere_a_direita_dos_filhos("estrutura_do_texto", "paragrafo_7", "Uma vez que a Fig. 1 é um pouco \"congestionada no sentido da densidade de informações apresentadas, cabe uma descrição de cada \"costela da espinha-de-peixe de MEOs, transcrita aqui na forma de uma tabela:" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo"));
 call insere_a_direita_dos_filhos("estrutura_do_texto", "tabela_1", "/var/www/html/tese/dados/tabelas/tabela_estrutura_de_texto.html" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "tabela"));
 call insere_a_direita_dos_filhos("estrutura_do_texto", "paragrafo_8", "As 3 estruturas exemplificadas [XXX MEO, How to Write e Oftalmo] acima tratam, principalmente, de papers científicos, em que a concisão é especialmente necessária. Mas papers cientificos não são o único formato disponível para realizar uma comunicação científica. " , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo"));

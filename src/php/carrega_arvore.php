@@ -74,6 +74,9 @@ echo "
 </div>
 </td>
 <td>
+<a href='manual.html' style='color: yellow; font-size: 2rem'>Tutorial</a>
+</td>
+<td>
 <div style='float: right; display: table-row; padding-left: 10px'>
 <table>
 <tr>
@@ -405,6 +408,7 @@ if ($result->num_rows>0) {
 		}
 		if ($nome_tipo_secao =="imagem")
 			{
+				$conta_imagem++;
 				$div_padding = "<div class='div_para_imagem'><img src='../../imagens/".$titulo."' width='100%'></div>";
 				$para = "<div style='display: none'>";
 				$barra_para = "</div>";
@@ -412,8 +416,7 @@ if ($result->num_rows>0) {
 			}
 		if ($nome_tipo_secao =="legenda_imagem")
 			{
-				$conta_imagem++;
-				$para = $para."Fig. ".$conta_imagem." - ";
+				$para = $para."Fig. ".$conta_imagem." - "; // note que a legenda de figura vai mostrar a numeração da imagem imediatamente anterior... 
 			}
 
 

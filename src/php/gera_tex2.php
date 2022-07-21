@@ -5,12 +5,15 @@ if(isset($_GET["mode"])){
   $param_mode= $_GET["mode"];
 } else $param_mode = "verbose"; // quiet ou verbose
 
+$id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura, para que posso haver substituicao depois
+
 $nome_base = "../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex";
 $nome_do_tex = $nome_base.".tex";
 $nome_do_pdf = $nome_base.".pdf";
 
 function insere($nome_arquivo, $ponto_de_insercao, $nome_tipo_secao, $texto, $nome_secao, $nivel){
 global $param_mode;
+global $id_arquivo;
 
 //unset($file);
 $file = file($nome_arquivo);
@@ -44,6 +47,7 @@ if ($nome_tipo_secao == "imagem"){
 }
 
 
+
 //echo $indice.")".$file[$indice]." arquivo -> ".$nome_arquivo." -> ".$texto_latex." tam: ".sizeof($file)."\n";
 //if ($nome_tipo_secao == "paragraforesumo") {
 //echo "\n";
@@ -64,6 +68,51 @@ if ($param_mode == "verbose") {echo "> ".$nome_tipo_secao." ";}
 //echo "Vai inserir secoes/paragrafos no arquivo: ".$nome_arquivo."\n";
 file_put_contents($nome_arquivo, implode("",$file));
 }
+
+function substitui_label_caption($nome_arquivo, $label_de_busca, $substituicao){
+
+
+exec('sed -i "s/@\['.$label_de_busca.'\]@/'.$substituicao.'/g" '.$nome_arquivo);
+
+error_log(print_r("sed -i 's/@\\[".$label_de_busca."\\]@/".$substituicao."/g' ".$nome_arquivo, true));
+error_log(print_r($substituicao, true));
+
+
+}
+
+function converte_acento_para_exec($linha){
+
+$linha = str_replace("á","\\\\\'a",$linha);
+$linha = str_replace("Á","\\\\\'A",$linha);
+$linha = str_replace("é","\\\\\'e",$linha);
+$linha = str_replace("É","\\\\\'E",$linha);
+$linha = str_replace("â","\\\\\^a",$linha);
+$linha = str_replace("Â","\\\\\^A",$linha);
+$linha = str_replace("ê","\\\\\^e",$linha);
+$linha = str_replace("Ê","\\\\\^E",$linha);
+$linha = str_replace("à","\\\\\`a",$linha);
+$linha = str_replace("À","\\\\\`A",$linha);
+$linha = str_replace("ç","\\\\\c{c}",$linha);
+$linha = str_replace("Ç","\\\\\c{C}",$linha);
+$linha = str_replace("õ","\\\\\~o",$linha);
+$linha = str_replace("Õ","\\\\\~O",$linha);
+$linha = str_replace("ã","\\\\\~a",$linha);
+$linha = str_replace("Ã","\\\\\~A",$linha);
+$linha = str_replace("í","\\\\\'{\i}",$linha);
+$linha = str_replace("Í","\\\\\'I",$linha);
+$linha = str_replace("ó","\\\\\'o",$linha);
+$linha = str_replace("Ó","\\\\\'O",$linha);
+$linha = str_replace("ô","\\\\\^o",$linha);
+$linha = str_replace("Ô","\\\\\^O",$linha);
+$linha = str_replace("ú","\\\\\'u",$linha);
+$linha = str_replace("Ú","\\\\\'U",$linha);
+$linha = str_replace("ü","\\\\\\\"u",$linha);
+$linha = str_replace("Ü","\\\\\\\"U",$linha);
+
+return $linha;
+}
+
+
 
 function converte_acento($linha){
 
@@ -101,7 +150,7 @@ function converte_acento_para_file_put($linha){
 //                        12345678
 
 $linha = str_replace("_","\_",$linha);
-$linha = str_replace("}","\}",$linha);
+$linha = str_replace("}","\}",$linha); // se voce quiser usar comandos latex no box1 e box2, tem que tirar esta linha. Daí, todos o colchetes do texto precisam vir com \{
 $linha = str_replace("{","\{",$linha);
 $linha = str_replace("&","\&",$linha);
 $linha = str_replace("á","\'a",$linha);
@@ -390,6 +439,10 @@ if ($result->num_rows>0) {
 							      );
 					
 						}
+					if ($nome_tipo_secao == 'legenda_imagem'){
+						substitui_label_caption($value, "caption-".$id_arquivo, converte_acento_para_exec($titulo));
+					}
+					else {
 					insere(
 						$value, 
 						"% @[pontoinsercaotextoprincipal]@\n", 
@@ -397,7 +450,8 @@ if ($result->num_rows>0) {
 						$texto_com_acentuacao_para_fileput, 
 						$secao_sem_espaco_sem_underscore, 
 						$nivel
-					      );
+					      );	
+					}
 				} // foreach
 			   }	
 			if ($nome_tipo_secao == "paragrafo_resumo") {

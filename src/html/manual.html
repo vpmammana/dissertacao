@@ -122,7 +122,9 @@ img {
 
 <p>Além disso, é necessária uma disciplina tipográfica que acaba atrapalhando o processo criativo, dado que dele tira muita energia, que é desviada para garantir a aparência do documento (tipo de letra, tamanho das letras, tipo de parágrafo, etc.).</p> 
 
-<p>Esta desfocalização ocorre justamente no momento em que toda a energia deveria estar focalizada no conteúdo. É comum, em editores convencionais, o autor se perder na organização de capítulos, seções, sub-seções e sub-sub-seções de seu texto.</p>
+<p>Esta desfocalização ocorre justamente no momento em que toda a energia deveria estar voltada para a qualidade do conteúdo.</p> 
+
+</p>Desta forma, é comum que o uso de editores convencionais faça o autor se perder na organização de capítulos, seções, sub-seções e sub-sub-seções, negrito, itálico, margens, centralizações, etc., de seu texto.</p>
 
 <p>Por seu lado, a tipografia de documento é um assunto que requer muito conhecimento e deixá-lo a cargo do autor normalmente deixa o texto com baixa qualidade visual, sem tirar proveito da padronização, que facilita a leitura.</p>
 
@@ -140,21 +142,32 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 </tr>
 </table>
 
-<p>Mas existe uma barreira de aprendizagem muito alta para o uso do <b>TeX</b>, ou de seu sistema de macros <b>LaTeX</b>.</p>
+<p>Mas existe uma barreira de aprendizagem muito alta para o uso do <b>TeX</b>, ou de seu sistema de macros conhecido como <b>LaTeX</b>.</p>
 
-<p>Normalmente, a pessoa que não vai seguir carreira acadêmica faz apenas duas teses na vida: a dissertação de mestrado e a tese de doutorado. Mesmo considerando as dores de cair na armadilha de usar um editor tipo "Word" na dissertação de mestrado, situação que geralmente produz textos fora dos padrões editoriais, é comum que os autores caiam novamente nela. Isso porque, se for para o doutoramento, o autor se deparará com o mesmo dilema do mestrado: "<i>será que vale a pena perder tempo aprendendo o TeX, se eu só vou usar mais uma vez?</i>". A verdade é que a demanda do doutorado não é estímulo suficiente para motivar o pós-graduando a vencer a barreira de aprendizado do <b>Tex</b>, porque essa ferramenta dificilmente será usada novamente. O custo de aprender a usá-la acaba não compensando.</p>
+<p>Normalmente, o pós-graduando que não vai seguir carreira acadêmica acaba fazendo apenas dois grandes textos durante a vida: a dissertação de mestrado e a tese de doutorado. Esta demanda acaba não justificando o investimento para vencer a barreira de aprendizado do <b>TeX</b>. Assim, ele fica relegado às dores de cair na armadilha de usar um editor tipo <i>Wysiwyg</i>, a exemplo do "Word" da Microsoft, situação que geralmente produz textos fora dos padrões editoriais e que tira o foco do conteúdo, como já dito. </p>
+
+<p>O termo <i>Wysiwyg</i> tem origem no inglês é uma contração da frase <i>What You See Is What You Get</i>, ou seja, em tradução livre "o que você vê é o que você obtém". Em outras palavras,  <i>Wysiwyg</i> significa que a tela do computador tenta mostrar, durante a edição do texto, exatamente a formatação que sairá na impressora. Mas para fazer isso, o usuário tem que se responsabilizar pelo controle da aparência do texto durante a edição do texto, interrompendo o trabalho a todo momento para configurar tamanhos de letras, espaçamento de parágrafos, alinhamentos, entre outras atividades que tomam muito tempo e que acabam não ficando padronizadas, porque o usuário acaba "esquecendo" o tamanho de letra que quer em cada situação de texto, por exemplo. Esse esquecimento exige que no processo de revisão do trabalho o usuário tenha que perder energia com revisão de formatação, quando todo o seu esforço de revisão deveria estar focalizado no conteúdo. 
+</p>
+
+<p>O <b>TeX</b> não é um editor <i>Wysiwyg</i>, porque o usuário edita em modo texto, sem formatação. O usuário só vai conhecer o resultado tipográfico da edição depois que o documento final for compilado, normalmente no formato PDF.</p>
+
+<p>Umas das vantagens da forma <b>não-</b><i>Wysiwyg</i> de editar textos é a padronização do resultado tipográfico, porque o PDF é um formato de arquivo que garante que a aparência do documento permanecerá a mesma, independentemente do sistema operacional, formato de tela, etc.</p>
 
 <h2>Por que o <i>RedarTex</i> foi criado?</h2>
 
-<p>O objetivo do <i>RedarTex</i> é criar um meio de diminuir essa barreira de aprendizagem, retirando as distrações que acabam emperrando o processo criativo de elaboração do texto, mas garantindo uma alta qualidade tipográfica no texto final da dissertação ou tese.</p>
+<p>O <b>primeiro objetivo</b> do <i>RedarTex</i> é criar um meio de diminuir essa barreira de aprendizagem do <b>TeX</b>, retirando as distrações que acabam emperrando o processo criativo de elaboração do texto, mas garantindo uma alta qualidade tipográfica no texto final da dissertação ou tese.</p>
 
-<p>Um segundo objetivo do <i>RedarTex</i> é prover um meio de organizar as seções, criando um sistema otimizado de navegação pelas seções do texto.</p>
+<p>Um <b>segundo objetivo</b> do <i>RedarTex</i> é prover um meio de organizar as seções, criando um sistema otimizado de navegação pelas seções do texto.</p>
 
-<p>Um terceiro objetivo do <i>RedarTex</i> é integrar ferramentas de Análise de Linguagem Natural em português para auxiliar a redação do texto e a identificação de erros de português, provendo índices de originalidade e melhorando a qualidade dos textos produzidos pela academia brasileira. Este terceiro objetivo ainda está em desenvolvimento.</p>
+<p>Um <b>terceiro objetivo</b> do <i>RedarTex</i> é integrar ferramentas de Análise de Linguagem Natural em português para auxiliar a redação do texto e a identificação de erros de português, provendo índices de originalidade e melhorando a qualidade dos textos produzidos pela academia brasileira. Este terceiro objetivo</b> ainda está em desenvolvimento.</p>
+
+<p>Um <b>quarto objetivo</b> do <i>RedarTex</i> é permitir que o usuário se liberte dos editores convencionais do tipo <i>Wysiwyg</i>.</p>  
+
+<p>Um <b>quinto objetivo</b> do <i>RedarTex</i> é permitir a edição colaborativa do documento (ainda em desenvolvimento), em que o sistema "trava" regiões do texto para um único usuário, permitindo que a edição ocorra em vários pontos do trabalho, simultaneamente, sem que um usuário atrapalhe o "serviço" do outro.</p>
 
 <p>A descrição abaixo tem o papel de especificação do sistema e por isso pode parecer um pouco complicada para o usuário final. Nesse caso, basta ler muitas vezes...</p>
 
-<p> A utilização do sistema é de certa forma auto-explicativa, mas algumas características demandam um pouco de prática, como a navegação com as setas. Essa navegação foi desenhada para ser otimizada, no sentido de reduzir o número de passos (estados) para chegar nas funcionalidades desejadas, bem como o número de teclas necessárias para operar.</p>
+<p> A utilização do sistema é, <i>de certa forma</i>, auto-explicativa, mas algumas características demandam um pouco de prática, como a navegação com as setas. Essa navegação foi desenhada para ser otimizada, no sentido de reduzir o número de passos (estados) para chegar nas funcionalidades desejadas, bem como o número de teclas necessárias para operar.</p>
 
 <h2>Por que existem capítulos, seções e sub-seções?</h2>
 
@@ -166,6 +179,8 @@ O TeX é um sistema de tipografia desenhado e escrito principalmente por Donald K
 <li>Agrupar ideias, assuntos ou abordagens semelhantes</li>
 <li>Facilitar a leitura não sequencial do texto, permitindo encontrar o ponto que se quer ler naquele momento</li>
 </ul>
+
+<p>Estes dois motivos pedem uma abordagem taxonômica para a organização do texto, o que será descrito a partir de agora.</p>
 
 <h2>Conceito de Seção</h2>
 
@@ -180,7 +195,7 @@ Seção:
 <li>porção tirada de um todo; segmento.</li> 
 <li>Ação ou efeito de secionar, de dividir em partes.</li>
 <li>Aquilo que se retira de um todo; segmento: </li>
-<li>O que divide uma narrativa, texto ou obra escrita.</li>
+<li><b>O que divide uma narrativa, texto ou obra escrita.</b></li>
 <li>[Botânica] Listagem taxonômica de uma subdivisão de gênero ou subgênero.</li>
 </ol>
 </i>
@@ -188,7 +203,7 @@ Seção:
 </tr>
 </table>
 
-<p>Portanto, <i>seção</i> para o presente texto é um "pedaço" do texto científico. Um <i>parágrafo</i> é uma <i>seção</i> do texto, assim como um <i>capítulo</i> é também uma <i>seção</i> do texto. As <i>seções</i> de um texto costumam conter outras <i>seções</i>, criando uma hierarquização. Por exemplo: os <i>capítulos</i> contém <i>parágrafos</i>. </p>
+<p>Portanto, <i>seção</i> para o presente texto é um "pedaço" do texto científico. A definição acima em <b>negrito</b> trata justamente do significado de <i>seção</i> para um texto científico. Um <i>parágrafo</i> é uma <i>seção</i> do texto, assim como um <i>capítulo</i> é também uma <i>seção</i> do texto. As <i>seções</i> de um texto costumam conter outras <i>seções</i>, criando uma hierarquização. Por exemplo: os <i>capítulos</i> contém <i>parágrafos</i>. </p>
 
 <p>São exemplos de <i>seções</i> de um texto:</p>
 
@@ -206,16 +221,16 @@ Seção:
 <li>etc.</li>
 </ul>
 
-<p>É curioso que a palavra "Seções" apareceu na lista acima. Esta é uma situação que pode gerar confusão porque existe um segmento do texto científico (portanto, uma <i>seção</i> do texto), que normalmente está situado um nível hierárquico abaixo do capítulo, que é comumente chamado de "Seção". Então, neste caso, "Seção" (espécie) é uma das <i>seções</i> (gênero) do texto.</p>
+<p>É curioso que a palavra "Seções" apareceu na lista acima. Esta é uma situação que pode gerar confusão porque existe um segmento do texto científico (portanto, uma <i>seção</i> do texto), que normalmente está situado um nível hierárquico abaixo do capítulo, que é comumente chamado de "Seção". Então, neste caso, "Seção" (espécie, com primeira letra maiúscula) é uma das <i>seções</i> (gênero, como todas as letras minúsculas) do texto.</p>
 
-<p>As palavras "gênero" e "espécie" usadas acima estão sendo empregadas no contexto taxonômico: gênero é um conjunto de espécies. Portanto, os itens da lista acima são todos <i>espécies</i> do gênero <i>seções</i>.</p>
+<p>As palavras "gênero" e "espécie" usadas acima estão sendo empregadas no contexto taxonômico: gênero é um conjunto de espécies. Portanto, os itens da lista acima são todos <i>espécies</i> do gênero <i>seções</i>, inclusive a espécie <i>Seções</i>.</p>
 
 <p>Os capítulos, seções, sub-seções, etc. estão estruturados em níveis hierárquicos. Comumente o Capítulo contém as seções que, por sua vez, contém as sub-seções e assim por diante. Um capítulo não pode conter diretamente sub-seções. É necessário obedecer a ordem hierárquica, assim como um General comanda o Coronel, que comando o tenente.</p>
 
 
-<h2>Conceito de Nível</h2>
+<h2>Assuntos e Abordagens de Assuntos</h2>
 
-<p>O uso de níveis hierárquicos em textos científicos é consequência de que este tipo de texto é estruturado na forma de uma "taxonomia de abordagens de assuntos". Garantir que o texto científico está organizado na forma de uma "taxonomia" facilita sua compreensão por parte do leitor.</p>
+<p>O uso de níveis hierárquicos em textos científicos é consequência de sua estruturação na forma de uma "taxonomia de abordagens de assuntos". Garantir que o texto científico está organizado na forma de uma "taxonomia" facilita sua compreensão por parte do leitor.</p>
 
 <p>Antes de abordar o termo "taxonomia", é preciso compreender o conceito de "abordagem de um assunto". Segundo o dicionário, abordagem é também:</p>
 
@@ -229,11 +244,15 @@ Abordagem: visão de um assunto; ponto de vista sobre uma questão; maneira ou mét
 </tr>
 </table>
 
-<p>Assim, abordagem de um assunto é a maneira como esse assunto é interpretado ou analisado. Podemos ter um mesmo assunto abordado de diferentes maneiras. Isso é importante para o texto científico porque um mesmo assunto pode aparecer muitas vezes ao longo do texto, mas é recomendável que uma determinada abordagem daquele assunto apareça uma vez só, para evitar redundância, incoerência ou prolixia.</p>
+<p>Assim, abordagem de um assunto é a maneira como esse assunto é interpretado ou analisado.</p> 
 
-<p>É justamente a organização taxonômica das "abordagens de assuntos" que vai evitar que essas se repitam indevidamente ao longo do mesmo. Dito isso, é preciso compreender que o capítulo de "Introdução" aborda os assuntos de um jeito, diferentemente dos demais capítulos, assim como o capítulo de "Materiais e Métodos" tem o seu jeito peculiar de abordar os assuntos, e assim por diante.</p>
+<p>É possível ter um mesmo assunto abordado de diferentes maneiras ao longo de um texto científico. Ou seja, um mesmo assunto pode aparecer muitas vezes ao longo do texto, mas é <i>recomendável</i> que uma determinada abordagem daquele assunto apareça uma vez só, para evitar redundância, incoerência ou prolixia.</p>
+
+<p>É justamente a organização taxonômica das "abordagens de assuntos" que vai evitar que essas se repitam indevidamente ao longo do mesmo. Dito isso, é preciso compreender que o capítulo de "Introdução" aborda os assuntos de um jeito, diferentemente dos demais capítulos, assim como o capítulo de "Materiais e Métodos" tem o seu jeito peculiar de abordar os assuntos, e assim por diante. Essa característica própria de cada capítulo é que dá a <i>senha</i> para que as abordagens de um determinado assunto não se repitam ao longo do texto.</p>
 
 <p>Mas como a taxonomia ajuda o autor a organizar seu texto?</p>
+
+<h2>Taxonomia e Teoria de Conjuntos</h2>
 
 <p>A taxonomia é uma aplicação da <b>teoria de conjuntos</b> originária da matemática, através da qual se buscam formas de organizar o conhecimento em <i>"conjuntos disjuntos dois a dois"</i>, ou seja, conjuntos que não têm elementos em comum.</p>
 
@@ -281,14 +300,14 @@ Abordagem: visão de um assunto; ponto de vista sobre uma questão; maneira ou mét
 </tr>
 </table>
 
-<p>Os três conjuntos acima não são disjuntos dois a dois, porque o Conjunto 4 e o Conjunto 5 contém a letra M e, portanto, a interseccão dos dois não é nula.</p>
+<p>Os três conjuntos acima não são disjuntos dois a dois, porque o Conjunto 4 e o Conjunto 5 contém a letra M e, portanto, a interseccão dos dois não é nula. Evidente que os Conjutos 4 e 6, quando considerados sem o Conjunto 5, são "disjuntos dois a dois", mas essa afirmação deixa de ser válida quando o Conjunto 5 passa a ser considerado também.</p>
 
 <p>Agora que sabemos que uma taxonomia é uma forma de organizar o conhecimento em conjuntos disjuntos dois a dois, vamos ver na prática como isso funciona.</p>
-<p>  Vamos pensar num jeito de organizar veículos automotores em conjuntos. Vamos dividir os veículos entre "carros" e "motocicletas". Essa é um taxonomia funcional, porque carros têm exatamente 4 rodas e motos têm exatamente 2 rodas, portanto é impossível que uma elemento do conjunto carros apareça no conjunto motos, porque um dado veículo não tem como ter exatamente 4 rodas e exatamente 2 rodas ao mesmo tempo. O termo "exatamente" está sendo usado aqui no sentido de "nem mais nem menos" do que um determinado valor. </p>
+<p>  Vamos pensar num jeito de organizar veículos automotores em conjuntos. Vamos dividir os veículos entre "carros" e "motocicletas". Essa é um taxonomia funcional, porque carros têm exatamente 4 rodas e motos têm exatamente 2 rodas, portanto é impossível que uma elemento do conjunto carros apareça no conjunto motos, porque um dado veículo não tem como ter exatamente 4 rodas e exatamente 2 rodas ao mesmo tempo. O termo "exatamente" está sendo usado aqui no sentido de "nem mais nem menos do que um determinado valor". É muito importante usar o termo "exatamente" neste caso porque, de outra forma, carros poderiam estar também no conjunto de motos, porque carros têm 4 rodas, mas também têm duas. Claro que isso é um detalhe, mas é sempre importante tentar buscar o uso preciso da linguagem.</p>
 
-<p>Agora vamos pensar em uma outra forma de agrupar veículos automotores em conjuntos: "carros", "motocicletas" e "veículos azuis". Essa não é uma taxonomia funcional, porque podemos ter a repetição do elemento "carro azul" tanto no grupo "carros", porque "carro azul" tem exatamente 4 rodas, quanto no grupo "veículos azuis", porque "carro azul" é azul. Assim, a informação dividida nos três grupos indicados  não forma conjuntos disjuntos dois a dois, dado que pelo menos 1 elemento aparece em dois conjuntos diferentes.</p>
+<p>Agora vamos pensar em uma outra forma de agrupar veículos automotores em conjuntos: "carros", "motocicletas" e "veículos azuis". Essa não é uma taxonomia funcional, porque permite ter a repetição do elemento "carro azul" tanto no grupo "carros", porque "carro azul" tem exatamente 4 rodas, quanto no grupo "veículos azuis", porque "carro azul" é azul. Assim, a informação dividida nos três grupos indicados não forma conjuntos disjuntos dois a dois, dado que pelo menos 1 elemento aparece em dois conjuntos diferentes.</p>
 
-<p>Assim, voltando aos textos científicos, podemos pensar nos capítulos de uma tese como conjuntos disjuntos dois a dois, todos contidos no conjunto "tese". </p>
+<p>Assim, voltando aos textos científicos, podemos pensar nos capítulos de uma tese como conjuntos disjuntos dois a dois, todos contidos no conjunto "tese", e isto será detalhado a partir deste ponto. </p>
 
 <img src="../../imagens/Conjuntos.png" width="60%">
 <table width="60%"><tr><td><label class='citacao'>A tese é um conjunto de capítulos. Os capitulos são conjuntos <i> disjuntos dois a dois</i> de seções, nos quais uma determinada abordagem de um assunto presente naquele capítulo não se repete em outro capítulo. O capítulo, por sua vez, é um conjunto de seções disjuntas duas a duas.</label></td><tr></table>
@@ -301,24 +320,38 @@ Abordagem: visão de um assunto; ponto de vista sobre uma questão; maneira ou mét
 <p>Assim, os capítulos contém seções, que precisam respeitar a forma de abordagem pertinente a aquele capítulo, e as seções contém sub-seções que, por sua vez, também respeitam essa restrição. As sub-seções, por sua vez, podem conter sub-sub-seções e assim recursivamente.</p> 
 
 
-<p>Outra restrição complementar é a que determina que "não é permitido usar a abordagem de um capítulo (por exemplo, <i>Materiais e Métodos</i>) numa seção de outro capítulo (por exemplo, <i>Introdução</i>").</p>
+<p>Outra restrição complementar é a que determina que não é permitido usar a abordagem característica de um determinado capítulo (por exemplo, <i>Materiais e Métodos</i>) numa seção de outro capítulo (por exemplo, <i>Introdução</i>).</p>
 
-<p>Isso significa, também, que a abordagem adotada para tratar um assunto num determinado capítulo não se repetirá em outro capítulo.</p>
+<p>Isso significa, também, que a abordagem adotada para tratar um determinado assunto num determinado capítulo não se repetirá em outro capítulo para o mesmo assunto.</p>
 
 <p>Veja essa restrição de "não repetição" representada no diagrama abaixo:</p>
 
 <img src="Diagrama_taxonomia_de_textos.png" width="60%">
 <table width="60%"><tr><td><label class='citacao'>O diagrama mostra um texto completo (e.g. "tese") com 4 capítulos: "Introdução", "Materiais e Métodos", "Resultados e Análise" e "Conclusões". O assunto <b>OLPC</b> aparece repetido 4 vezes, uma vez em cada capítulo. As setas amarelas representam repetições aceitáveis, porque as abordagens são diferentes. A seta vermelha mostra uma repetição que não está de acordo com a taxonomia do texto, porque a abordagem é idêntica.</label></td><tr></table>
 
-<p>O diagrama acima mostra que o assunto OLPC pode aparecer repetidamente ao longo das Seções dos capítulos do texto, desde que a repetição se dê através de abordagens diferentes (setas amarelas). Se a repetição ocorrer com a mesma abordagem (seta vermelha), então ela deve ser evitada.</p>
+<p>O diagrama acima mostra, por exemplo, que o assunto OLPC pode aparecer repetidamente ao longo das Seções dos capítulos do texto, desde que a repetição se dê através de abordagens diferentes (setas amarelas). Se a repetição ocorrer com a mesma abordagem (seta vermelha), então ela deve ser evitada.</p>
 
 <p> Uma consequência importante dessas restrições é que a intersecção de dois capítulos diferentes vai resultar em um "conjunto vazio de abordagens de assuntos", ou seja, não existem abordagens de assuntos que se repetem dentre dois capítulos diferentes, mesmo que o assunto em si se repita. </p>
 
 <p>É comum que um mesmo assunto seja tratado em dois capítulos diferentes, porque os capítulos precisam dialogar, mas a abordagem desses assuntos é que não se repete. Por exemplo: imagine uma tese sobre a história do Projeto WASH. É natural que o programa OLPC seja citado várias vezes em capítulos diferentes, mas as abordagens têm que ser diferentes, sob pena de ferir um princípio da Taxonomia. </p>
 
-<p>Essa taxonomia de "formas de abordagem de assuntos" ajuda muito o leitor a organizar seus pensamentos quando está lendo: ele sabe que a forma de tratar um determinado assunto na Introdução não se repitirá nos demais capítulos, por exemplo. Isso traz ganhos em termos de concisão, rastreabilidade, organização e coerência, evitando redundâncias e conflitos de informação (e.g. seria desastroso se um conceito que se consolidou na "Introdução" fosse desconstruído na "Conclusão", deixando a tese incoerente).</p> 
 
-<p>Os índices usados tanto em dissertações como em teses são o meio de organizar visualmente essa "taxonomia", facilitando a busca não sequencial de informações no texto. Abaixo é reproduzido um trecho de índice obtido no site "Educação UmComo", o qual aqui será citado como exemplo:</p>
+<p>Essa taxonomia de "formas de abordagem de assuntos" ajuda muito o leitor a organizar seus pensamentos quando está lendo: ele sabe que a forma de tratar um determinado assunto na Introdução não se repetirá nos demais capítulos, por exemplo. Isso traz ganhos em termos de concisão, rastreabilidade, organização e coerência, evitando redundâncias e conflitos de informação (e.g. seria desastroso se um conceito que se consolidou na "Introdução" fosse desconstruído na "Conclusão", deixando a tese incoerente).</p> 
+
+<h2>Os níveis</h2>
+
+<p>O uso de uma "taxonomia de abordagem de assuntos" pressupõe que o texto será dividido em seções, começando pelos capítulos, os quais representam um conjunto de Seções (com maiúscula porque é espécie) que, por sua vez, representam individualmente conjuntos de sub-seções, estabelecendo uma hierarquia de níveis de seções (com minúscula porque é gênero). o<p>Capítulos estão todos no nível 1, ao passo que as seções estão no nível 2 e as sub-seções estão no nível 3. Os parágrafos, diferentemente, poderão estar vinculados diretamente ao capítulo, como é o caso do primeiro parágrafo do capítulo, mas podem, também estar vinculados às Seções ou sub-seções.</p> 
+
+<p>Portanto, é possível que um determinado parágrafo esteja no mesmo nível das Seções (espécie), ou seja, no nível 2. Outros parágrafos pode estar no mesmo nível das sub-seções, logo abaixo do nível das seções, situação em que estes parágrafos estariam no nível 3.</p>
+
+<p>Ou seja, existem algumas espécies de seções (como é o caso de parágrafos ou de imagens), que podem estar em qualquer nível. Normalmente os parágrafos aparecem todos sempre antes do que as seções que estão no mesmo nível que ele, lembrando que estas seções contém seus próprios parágrafos. Não é comum um parágrafo que está no nível 3 aparecer depois de uma sub-seção (que está no nível 3). </p>
+
+<p>Os níveis são identificados por números, sendo que o nível 1 é o mais alto e os números maiores são os níveis mais baixos.</p>
+
+<h2>Índices de Conteúdos</h2>
+
+
+<p>Os "Índices de Conteúdos" usados no início do texto, tanto em dissertações como em teses, são o meio de organizar visualmente essa "taxonomia", facilitando a busca não sequencial de informações no texto. Abaixo é reproduzido um trecho de índice obtido no site "Educação UmComo", o qual aqui será citado como exemplo:</p>
 
 <img src="../../imagens/sumario_18271_1_600.webp" width="60%">
 <table width="60%"><tr><td><label class='citacao'>Exemplo de índice onde pode ser visualizada a estrutura hierárquica de capítulos, seções, sub-seções e sub-sub-seções. (fonte: Educação UmComo)</label></td><tr></table>
@@ -481,7 +514,7 @@ A sequência, no sentido horário, começando nas <b>Janelas de Nível</b> é:
 
 <p>A sequência acima é obtida teclando a seta para esquerda.</p>
 
-<p>É importante notar que o número de <b>Janelas de Nível</b> mostrado na tela depende das características do documento apresentado e de qual <i>radio button</i> da <b>Árvore de Tipos de Seções</b> está selecionado. Uma explicação detalhada sobre esses <i>radio buttons</i> é feita adiante. </p>
+<p>É importante notar que o número de <b>Janelas de Nível</b> mostrado na tela depende das características do documento apresentado e do <i>radio button</i> da <b>Árvore de Tipos de Seções</b>  que está selecionado. Uma explicação detalhada sobre esses <i>radio buttons</i> é feita adiante. </p>
 
 
 <h2>Teclas</h2>
@@ -502,7 +535,7 @@ Função
 Seta para Direita
 </td>
 <td>
-Acessa o nível inferior em relação à <b>Janela de Nível</b> atualmente selecionada, mudando o cursor para a próxima <b>Janela de Nível</b> à direita, se houver um filho no nível inferior. Se estiver no nível mais baixo, ou se a seção atual não tiver filhos no nível inferior, acessará a <b>Árvore de Seções</b>. Se estiver na <b>Árvore de Seções</b>, acessará a <b>Árvore de Tipos de Seções</b>. Ao acessar o próximo nível, o cursor recai sobre a primeira seção numa hierarquia inferior (filho). Se o cursor está numa seção que não tem hierarquia inferior (e.g. "paragrafo"), então o cursor vai direto para a <b>Árvore de Seções</b>. Se a seção onde estava o cursor, antes de teclar a seta, é do tipo parágrafo, então não há filhos e ao teclar seta para direita, o cursor irá para a árvore de seções. Se a seção onde estava o cursor, antes de teclar a seta, era do tipo tópico, e se esse tópico tiver filhos, então ao teclar a seta para a direita, o cursor recairá sobre o filho. Se a tecla Shift estiver pressionada, então o cursor recairá sobre o último visitado naquele nível. 
+Acessa o nível inferior em relação à <b>Janela de Nível</b> atualmente selecionada, mudando o cursor para a próxima <b>Janela de Nível</b> à direita, mas isto só ocorre se houver um filho no nível inferior.<br><br> Se estiver no nível mais baixo do texto (e.g. sub-sub-seção), ou se a seção atual não tiver filhos no nível inferior, acessará a <b>Árvore de Seções</b>.<br><br> Se estiver na <b>Árvore de Seções</b>, acessará a <b>Árvore de Tipos de Seções</b>.<br><br> Ao acessar o próximo nível, o cursor recai sobre a primeira seção numa hierarquia inferior (filho).<br><br> Se o cursor está numa seção que não tem hierarquia inferior (e.g. "paragrafo"), então o cursor vai direto para a <b>Árvore de Seções</b>.<br><br> Se a seção onde estava o cursor, antes de teclar a seta, é do tipo parágrafo, então não há filhos e ao teclar seta para direita, o cursor irá para a árvore de seções.<br><br> Se a seção onde estava o cursor, antes de teclar a seta, era do tipo tópico, e se esse tópico tiver filhos, então ao teclar a seta para a direita, o cursor recairá sobre o filho.<br><br> Se a tecla Shift estiver pressionada, então o cursor recairá sobre o último visitado naquele nível. 
 </td>
 </tr>
 <tr>
@@ -510,7 +543,7 @@ Acessa o nível inferior em relação à <b>Janela de Nível</b> atualmente seleciona
 Seta para Esquerda
 </td>
 <td>
-Acessa o nível superior ao atualmente selecionado, mudando o cursor para a <b>Janela de Nível</b> à esquerda, caso o nível atualmente selecionado não seja o mais alto. Se estiver no primeiro nível ("nivel_1"), acessará a <b>Árvore de Tipos de Seções</b>. Se estiver na <b>Árvore de Tipos de Seções</b>, acessará a <b>Árvore de Seções</b>. O cursor recairá sobre o "pai" da seção. Se o cursor estava na <b>Árvore de Seções</b>, então o cursor recairá sobre a última seçào visitada naquela particular <b>Janela de Nível</b>. Se o cursor estava na <b>Árvore de Tipos de Seções</b>, ao teclar seta para esquerda o cursor recairá sobre a última seção visitada na <b>Árvore de Seções</b>. 
+Acessa o nível superior ao atualmente selecionado, mudando o cursor para a <b>Janela de Nível</b> à esquerda, caso o nível atualmente selecionado não seja o mais alto (caso não seja o nível de capítulos - nível 1). O cursor recairá sobre o "pai" da seção.<br><br> Se estiver no primeiro nível ("nivel_1"), acessará a <b>Árvore de Tipos de Seções</b>.<br><br> Se estiver na <b>Árvore de Tipos de Seções</b>, acessará a <b>Árvore de Seções</b>.<br><br>  Se o cursor estava na <b>Árvore de Seções</b>, então o cursor recairá sobre a última seçào visitada naquela particular <b>Janela de Nível</b>.<br><br> Se o cursor estava na <b>Árvore de Tipos de Seções</b>, ao teclar seta para esquerda o cursor recairá sobre a última seção visitada na <b>Árvore de Seções</b>. 
 </td>
 </tr>
 <tr>
@@ -518,7 +551,7 @@ Acessa o nível superior ao atualmente selecionado, mudando o cursor para a <b>Ja
 Seta horizontais (direita/esquerda) + Shift
 </td>
 <td>
-Quando aperta o shift juntamente com a seta e o cursor está em qualquer um dos "niveis", o cursor recai sobre o último visitado. Quando está em <b>Árvore de Seções</b>, ou em árvore de tipos de seçòes, o comportamento não se altera em relação a não pressionar shift.
+Quando aperta o shift juntamente com a seta e o cursor está em qualquer um dos "niveis", o cursor recai sobre o último visitado.<br><br> Quando está em <b>Árvore de Seções</b>, ou em árvore de tipos de seçòes, o comportamento não se altera em relação a não pressionar shift.
 </td>
 </tr>
 <tr>
@@ -526,7 +559,7 @@ Quando aperta o shift juntamente com a seta e o cursor está em qualquer um dos "
 Seta verticais (para cima e para baixo)
 </td>
 <td>
-As setas para cima e para baixo movem o cursor num mesmo nível acessando a seção anterior ou inferior, respectivamente. Se o cursor já estiver na primeira seção e a seta para cima for acionada, o cursos se moverá para a última seção daquele nível. Se o cursor estiver na última seção daquele nível e a seta para baixo for acionada, o cursor se moverá para a primeira seção daquele nível. Se o cursor estiver numa janela de nível, o conteúdo da seção é mostrado no Box 1. Se o cursor estiver na janela de árvore de seções, então o conteúdo da seção é mostrado no Box 2.
+As setas para cima e para baixo movem o cursor num mesmo nível acessando a seção anterior ou inferior, respectivamente.<br><br> Se o cursor já estiver na primeira seção e a seta para cima for acionada, o cursor se moverá para a última seção daquele nível.<br><br> Se o cursor estiver na última seção daquele nível e a seta para baixo for acionada, o cursor se moverá para a primeira seção daquele nível.<br><br> Se o cursor estiver numa janela de nível, o conteúdo da seção é mostrado no Box 1. Se o cursor estiver na janela de árvore de seções, então o conteúdo da seção é mostrado no Box 2.<br><br>Note que o cursor na janela de níveis nunca acessa uma seção que já tenha sido selecionada pela árvore de seções.
 </td>
 </tr>
 <tr>
@@ -550,7 +583,7 @@ A tecla PageDown leva para a primeira seção tópico que tenha um filho do nível s
 "1"
 </td>
 <td>
-A tecla "1" faz entrar no modo de edição através do Box 1. O Box 1 é uma janela para alterar o texto da seção. Basta teclar "1" e começar a digitar para que o texto seja alterado. Mas o texto não estará salvo. Para salvar é preciso teclar "Tab". Se quiser abandonar as alterações é preciso teclar "Esc". Quando o sistema entra em modo edição pelo acionamento da tecla "1", as setas não mais permitem movimentar o cursor pelas seções. Quando qualquer tecla for acionada nesse modo, a janela ficará amarela, indicando que está em edição. Portanto, nesse modo as setas passam a servir para movimentar o cursor dentro do campo de edição do Box 1. Abaixo do texto de edição do Box 1 estão pequenas caixinhas que mostram as várias versões gravadas daquela seção. Ao entrar no Box 1 com "1" é possível navegar pelas versões usando shift-setas, desde que o box não tenha começado a ser editado. Se vc quer navegar nas versões com shift-setas, e já estiver editando o texto, isso só será possível se vc teclar Esc, saindo do modo edição e entrando de novo com "1", mas sem digitar alguma tecla que leve o sistema a editar o texto da seção.
+A tecla "1" faz a seção selecionada pela janela de níveis entrar no modo de edição através do Box 1.<br><br> O Box 1 é uma janela para alterar o texto da seção selecionada pelo cursor amarelo nos níveis da janela de níveis.<br><br> Basta teclar "1" e começar a digitar para que o texto seja alterado. Mas o texto não estará salvo. Para salvar é preciso teclar "Tab". Se quiser abandonar as alterações é preciso teclar "Esc". <br><br>Quando o sistema entra em modo edição pelo acionamento da tecla "1", as setas não mais permitem movimentar o cursor pelas seções porque a partir desse ponto serão usadas para "navegar" pelo texto que está no Box 1.<br><br> Quando qualquer tecla for acionada no modo edição, a janela ficará amarela, indicando que a edição começou e precisa ser gravada para não perder o trabalho já feito. Portanto, nesse modo as setas passam a servir para movimentar o cursor dentro do campo de edição do Box 1.<br><br> Abaixo do texto de edição do Box 1 estão pequenas caixinhas que mostram as várias versões gravadas daquela seção. <br><br>Ao entrar no Box 1 com "1" é possível navegar pelas versões gravadas usando shift-setas, desde que o box não tenha começado a ser editado.<br><br> Se vc quiser navegar nas versões com shift-setas, e já estiver editando o texto, isso só será possível se vc teclar Esc, saindo do modo edição e entrando de novo com "1", mas sem digitar alguma tecla que leve o sistema a editar o texto da seção.
 </td>
 </tr>
 <tr>
@@ -558,7 +591,7 @@ A tecla "1" faz entrar no modo de edição através do Box 1. O Box 1 é uma janela 
 "2"
 </td>
 <td>
-A tecla "2" faz entrar no modo de edição através do Box 2. O Box 2 é uma janela para alterar o texto da seção. Basta teclar "2" e começar a digitar para que o texto seja alterado. Mas o texto não estará salvo. Para salvar é preciso teclar "Tab". Se quiser abandonar as alterações é preciso teclar "Esc". Se o cursor estiver na <b>Árvore de Tipos de Seções</b> quando a tecla "2" for acionada, então o Box 2 entra em modo de inserção de uma nova seção, que pode ocorrer antes, depois ou abaixo da seção atual, dependendo do botão da tela que for acionado com o mouse. Quando o sistema entra em modo edição pelo acionamento da tecla "2", as setas não mais permitem movimentar o cursor pelas seções. As setas passam a servir para movimentar o cursor dentro do campo de edição do Box 2. Os efeitos de edição descritos no box 1 acima valem para o Box 2, exceto na questão de inserção de uma nova seção.
+A tecla "2" faz a seção selecionada pela árvore de seções entrar no modo de edição através do Box 2.<br><br> O Box 2 é uma janela para alterar o texto da seção selecionada pela àrvore de seções, diferentemente do Box 1, que serve para editar o texto selecionado pelo cursor nas janelas de níveis.<br><br> Depois de selecionar o texto que quer editar na janela de árvore de seções, basta teclar "2" e começar a digitar para que o texto seja alterado. Mas o texto não estará salvo. Para salvar e impedir que a alteração seja perdida, é preciso teclar "Tab".<br><br> Se quiser abandonar as alterações é preciso teclar "Esc".<br><br> Se o cursor estiver na <b>Árvore de Tipos de Seções</b> quando a tecla "2" for acionada, então o Box 2 entra em modo de inserção de uma nova seção, que pode ocorrer antes, depois ou abaixo da seção atual, dependendo do botão da janela Box 2 que for acionado com o mouse.<br><br> Quando o sistema entra em modo edição pelo acionamento da tecla "2", as setas não mais permitem movimentar o cursor pelas seções.<br><br> As setas passam a servir para movimentar o cursor dentro do campo de edição do Box 2.<br><br> Os efeitos de edição descritos no box 1 acima valem para o Box 2, exceto na questão de inserção de uma nova seção.
 
 </td>
 </tr>
@@ -567,7 +600,7 @@ A tecla "2" faz entrar no modo de edição através do Box 2. O Box 2 é uma janela 
 Tab
 </td>
 <td>
-Se o sistema estiver em modo de edição, ou seja, se a tecla "1"  ou a tecla "2" foram acionadas e o texto dos Box 1 ou 2 foi alterado, então a tecla "Tab" gravará uma nova versão do trecho, sem prejuízo para as demais. 
+Se o sistema estiver em modo de edição, ou seja, se a tecla "1"  ou a tecla "2" foram acionadas e o texto dos Box 1 ou 2 foi alterado, então a tecla "Tab" gravará uma nova versão do trecho, sem prejuízo para as demais.<br><br> O <i>RedarTex</i> nunca apaga uma versão que é mantida indefinidamente.
 </td>
 </tr>
 <tr>
@@ -606,14 +639,14 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 	<img src="../../imagens/Arvore_de_tipos_de_secoes.png" width="20%">
 
-<p>Na imagem vemos todos os tipos de seções que podem estar presentes, ou não, eu um texto editado pelo <i>RedarTex</i>.</p> 
+<p>Na imagem vemos todos os tipos de seções que podem estar presentes, ou não, eu um texto editado pelo <i>RedarTex</i>. Diz-se que a árvore de tipos de seções tem todas as seções que "podem estar presentes ou não", porque o fato daquele tipo de seção existir na árvore de tipos não significa que o autor decidiu incluí-la no texto. Um exemplo é o <i>tipo de seção</i> "imagem". Nem toda dissertação tem imagens e, apesar desse tipo estar na árvore de tipos de seções, não estará presente nas janelas de níveis ou na árvore de seções.</p> 
 
-<p>Esta estrutura tem base em publicações sobre estruturação de textos científicos, em particular teses.</p>
+<p>A estrutura de árvore de tipos de seções presente na figura tem base em publicações sobre estruturação de textos científicos, em particular teses. Essa estrutura poderia ser modificada, uma vez que o RedarTex é configurável.</p> 
 
 <p>Os tipos de seções são representados por retângulos azuis contendo um nome e uma bola branca do lado esquerdo. Essa bola branca é do tipo <i>radio button</i> e é "clicável".</p>
 
 	<img src="../../imagens/radio_button_tipos.png" width="20%">
-<p>Na imagem acima está indicado um conjunto de <i>radio buttons</i> de alguns netos da <i>raiz</i> </p>
+<p>Na imagem acima a elipse amarela  está indicado um conjunto de <i>radio buttons</i> de alguns netos da <i>raiz</i>: título, sub_titulo, autor e orientador. </p>
 
 <p>A <b>raiz</b> é o pai de todos os tipos de seções.</p>
 
@@ -662,7 +695,9 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 <h2>Conceituação: Árvore, raiz e folhas</h2>
 
-<p>Árvore é uma estrutura de dados que permite organizar a informação de forma hierárquica. Esse tipo de estrutura de dados é particularmente útil quando se quer "categorizar" dados. A definição de árvore é bem simples. Considerando que uma árvore é um conjunto de elementos abstratos, podemos definir árvore como:</p>
+<p>Árvore é uma estrutura de dados que permite organizar a informação de forma hierárquica. Esse tipo de estrutura de dados é particularmente útil quando se quer "categorizar" dados, particularmente quando se quer mostrar taxonomias.</p> 
+
+<p>A definição de árvore é bem simples. Considerando que uma árvore é um conjunto de elementos abstratos, podemos definir árvore como:</p>
 
 <table width="30%">
 <tr>
@@ -672,15 +707,21 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 <p>Uma folha, em linguagem de estrutura de dados, é o filho que não tem filhos. </p>
 
+<h2>Textos científicos são estruturas em árvore</h2>
+
+<p>O fato de textos científicos poderem ser considerados como um "taxonomia de abordagens de assuntos" os torna exemplos naturais da estruturação em árvore.</p>
+
 <table width="30%">
 <tr>
 <td>
-<p><b>Como um texto científico tem suas seções hierarquizadas em níveis (já mostramos isso no começo deste manual), a estrutura de <i>árvore</i> é a escolha natural para representá-lo.</b> </p>
+<p><b>Como um texto científico tem suas seções hierarquizadas em níveis de conjuntos disjuntos dois a dois, a estrutura de <i>árvore</i> é a escolha natural para representá-lo.</b> </p>
 </td>
 </tr>
 </table>
 
-<p>No <i>RedarTex</i> um típico caso de "seção" que não tem filhos é o <i>parágrafo</i>. O <i>parágrafo</i> é um exemplo de nível mais baixo de <i>Seção</i>, porque não existem seções dentro do <i>parágrafo</i> e é por isso que ele é compreendido como uma <i>folha</i> da <i>árvore</i></p>
+<h2>Folhas: os filhos sem filhos</h2>
+
+<p>No <i>RedarTex</i> um típico caso de "seção" que não tem filhos é o <i>parágrafo</i>. O <i>parágrafo</i> é um exemplo de nível mais baixo de <i>seção</i>, porque não existem seções dentro do <i>parágrafo</i> e é por isso que ele é compreendido como uma <i>folha</i> da <i>árvore</i>, assim como uma folha de uma árvore real é o "fim" da árvore.</p>
 
 <p>Em outras palavras, o <i>parágrafo</i> não tem filhos e por isso é o fim da "árvore de seções".</p>
 
@@ -688,7 +729,7 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 	<img src="../../imagens/Filhos_e_folhas.png" width="20%">
 <p>O tipo de seção <i>imagem</i> permite colocar uma figura no texto e, portanto, não permite seções dentro dele e é por essa razão que é considerado uma <i>folha</i> da árvore.</p>
-
+<p>Outros tipos de seções que são considerados como "folhas" são, por exemplo: item_indice, citacao, chama_ref, etc.</p>
 <h2>Efeito do <i>Mostra Folhas</i></h2>
 
 <p>Quando o <i>checkbox</i> <b>Mostra Folhas</b> é marcado, as folhas são mostradas nas <b>Janelas de Nível</b>.</p>
@@ -717,6 +758,50 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 <p>Importante observar que as <i>folhas</i> sempre são mostradas na janela <b>Árvore de Seções</b> e o <i>checkbox</i> <b>Mostra Folhas</b> não afeta o comportamento da janela <b>Árvore de Seções</b>.</p>
 
+<h2>Como alterar com o Box 1</h2>
+
+<p>Para alterar o conteúdo de uma seção usando o Box 1, é preciso mover o cursor amarelo sobre a seção desejada nas janelas de níveis. Note que ao mover o cursor sobre as seções da janela de nível, o campo de edição de Box 1 começa a mostrar exatamente o mesmo texto da seção selecionada.</p>
+
+<p>A figura abaixo mostra uma situação em que o cursor amarelo está sobre uma seção no nível 3. A seta azul está mostrando que o Box 1 sempre mostra o conteúdo da seção que está selecionada na janela de níveis.</p>
+
+<img src="../../imagens/Box1.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>A janela Box 1 sempre mostra o conteúdo da seção que foi selecionada nas janelas de níveis.</label></td><tr></table>
+
+<p>Quando a seção que se quer alterar estiver selecionada e o Box 1 também estiver mostrando o seu conteúdo, basta teclar "1" e a janela Box 1 estará disponível para edição, sem a necessidade de clicá-la.</p>
+
+<img src="../../imagens/Box1_tecla1.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>Quando a seção desejada estiver selecionada pela janela de níveis, basta teclar "1" no teclado para que aquela seção possa ser editada.</label></td><tr></table>
+
+<p>Ao começar a digitar, o texto de Box 1 já começará a ser alterado, mas ainda não está sendo gravado. O campo de edição do Box 1 ficará amarelo para indicar que houve uma indicação, situação mostrada na figura abaixo:</p>
+
+<img src="../../imagens/Box1_tecla1_edicao_amarela.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>Ao clicar "1" e começar a digitar a alteração, o campo de edição do Box 1 ficará amarelo, indicando que houve alteração. No caso, foi digitado "COMECEI A ALTERAR A SEÇÃO!".</label></td><tr></table>
+
+<p>Para gravar as alterações, é preciso teclar Tab. Uma janela de gravação aparecerá no meio da tela por cerca de 3 segundos, como mostrado na imagem abaixo:.</p>
+
+<img src="../../imagens/TAB.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>Se o usuário estiver satisfeito com as alterações realizadas, basta teclar TAB e as alterações serão gravadas.</label></td><tr></table>
+
+<p>Note que logo após teclar TAB, a seção mostrada na Janela de Níveis já fica com a alteração realizada na janela Box 1, como mostrado na figura abaixo:</p>
+<img src="../../imagens/Secao_alterada.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>Logo após teclar TAB, as alterações introduzidas pela janela Box 1 já estão presentes no corpo do texto mostrado nas Janelas de Níveis.</label></td><tr></table>
+
+<p>Se ocorrer a desistência das alterações, ou seja, se o usuário não tiver interesse em gravar as alterações, ele não deve teclar TAB, mas teclar ESC. Quando ele teclar ESC uma janela de confirmação será ativada, perguntando se o usuário realmente quer desistir da gravação. Se ele optar por não gravar, as alterações serão perdidas para sempre.</p>
+
+<img src="../../imagens/ESC.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>Se o usuário quiser sair do modo edição da janela Box 1, basta teclar ESC e responder sim na janela de confirmação.</label></td><tr></table>
+
+<p>Quando o usuário decide gravar usando a tecla TAB não ocorre perda da versão anterior. Uma nova versão do texto é gravada, mas as antigas não serão perdidas.</p>
+
+
+<p>As várias versões do texto da seção são gravadas por tempo indeterminado, podendo ser acessadas através do retângulo azul logo abaixo do campo de alteração do Box 1, como mostrado na figura abaixo:</p>
+
+<img src="../../imagens/versoes.png" width="60%">
+<table width="60%"><tr><td><label class='citacao'>As versões da seção selecionada pela Janela de Níveis vão sendo gravadas de forma que podem ser recuperadas quando desejado.</label></td><tr></table>
+
+<p>Para acessar as versões anteriores basta mover o cursor amarelo para a seção desejada, teclar "1" e <b>ANTES</b> de iniciar qualquer alteração, teclar SHIFT setas horizontais, de forma a selecionar a versão desejada. Quando a versão desejada estiver selecionada, basta teclar TAB e ela passa a ser a válida.</p>
+
+<p></p>
 </DIV>
 </body>
 

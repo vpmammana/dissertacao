@@ -4,9 +4,6 @@
 	<title>
 		Dissertação UOXI-WASH
 	</title>
-
-		<link rel='stylesheet' href='../php/drop_menu.css'>	
-
 <style>
 html {
   height: 100%; 
@@ -18,18 +15,6 @@ body {
   overflow: hidden;
 background-color: #923cb5;
 background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
-}
-
-.janela_de_referencias{
-	background-color: white;
-	color: black;
-	border: 3px solid black;
-	border-radius: 25px;
-	z-index: 100000;
-	position: absolute;
-	display: block;
-	visibility: hidden;
-	padding: 20px;
 }
 
 .tabela_de_edicao{
@@ -319,7 +304,6 @@ $numero_de_colunas_de_radio_button = 10;
 
 include "../php/carrega_arvore.php";
 ?>
-<script type='text/javascript' src='../php/drop_menu.js'></script>
 <script>
 
 var ultimo_visitado_flutua_para_direita = -2; // ainda nao foi visitado
@@ -705,15 +689,7 @@ let futuro_y =0;
 	//console.log("x: "+x+" y:"+y)
 	//if (e.ctrlKey) {alert("control");}
 
-	if (modo_edicao && e.key=="*" && e.ctrlKey) 
-			{
-				
-				document.getElementById("janela_referencias").style.visibility="visible";
-				console.log("edicao");
-				console.log(document.getElementById("drop_1_2"));
-				setTimeout(function () {document.getElementById("drop_1_2").focus();},1000); // tem algum truque aqui para que ganhe foco... eu chutei esse settimeout e deu certo!
-				return;
-			} // referencias bibliograficas
+	if (modo_edicao && e.key=="*" && e.ctrlKey) {alert("apertou control *"); return;} // referencias bibliograficas
 
 	matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
 	console.log(matriz_ganha_foco[x][1][y]);
@@ -1168,17 +1144,9 @@ for (let m=0; m < filhos.length ; m++){
 
 function posiciona_janela_referencias(){
 
+document.getElementById("janela_referencias").style.left = document.body.offsetWidth * 0.1;
+document.getElementById("janela_referencias").style.left = (document.body.offsetHeight * 0.1) + document.getElementById("menu_principal").style.bottom;
 
-document.getElementById("janela_referencias").style.left = (document.body.offsetWidth * 0.1) + "px";
-document.getElementById("janela_referencias").style.top = parseInt(document.getElementById("menu_principal").getBoundingClientRect().bottom + (document.body.offsetHeight - document.getElementById("menu_principal").getBoundingClientRect().bottom) * 0.1)  + "px";
-
-document.getElementById("janela_referencias").style.width = (document.getElementById("edita_secoes_mouse").style.left.replace("px","")* 0.9 - parseInt(document.body.offsetWidth * 0.1)) + "px";
-document.getElementById("janela_referencias").style.height = (document.body.offsetHeight * 0.9 - parseInt(document.getElementById("menu_principal").getBoundingClientRect().bottom + (document.body.offsetHeight - document.getElementById("menu_principal").getBoundingClientRect().bottom) * 0.1)) + "px";
-
-
-//alert(document.getElementById("janela_referencias").style.height);
-
-;
 
 } // fim posiciona_janela_referencias
 
@@ -1194,7 +1162,7 @@ document.getElementById("edita_secoes_teclado").style.left = max_dir + padding_d
 document.getElementById("edita_secoes_teclado").style.width = (min_esq - max_dir - 2*padding_de_screen) + "px";
 document.getElementById("edita_secoes_teclado").style.top = menu_princ + padding_de_screen + "px";
 document.getElementById("edita_secoes_teclado").style.height = (document.body.offsetHeight - menu_princ)/2 - 2*padding_de_screen + "px";
-posiciona_janela_referencias();
+
 
 }
 

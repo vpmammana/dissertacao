@@ -91,6 +91,55 @@ echo "
 </tr>
 </table>
 </div>
+
+<div id='janela_referencias' class='janela_de_referencias'>
+
+<table width='90%'>
+<tr>
+<td>Selecione a referência:</td>
+</tr>
+<tr>
+<td>
+						<div class='dropdown'>
+                                                  <input type='text' 
+                                                        id='drop_1_2' 
+                                                        class='dropbtn' 
+                                                        onfocusout='document.getElementById(`lista_1_2`).setAttribute(`data-keyup`,`inativo`);document.getElementById(`drop_1_2`).setAttribute(`data-selecionado`,`-1`); document.getElementById(`drop_1_2`).setAttribute(`data-n-itens`,`0`);' 
+                                                        data-drop='lista_1_2'
+                                                        data-momento='atualizacao'
+                                                        data-id='1'
+                                                        data-max-itens='100'
+                                                        data-banco='dissertacao' 
+                                                        data-tabela='secoes'
+                                                        data-campo='vamos_ver_se_eh_irrelevante' 
+                                                        data-fkid='' 
+                                                        data-default=''
+                                                        data-fk-banco='dissertacao' 
+                                                        data-fk-tabela='versoes' 
+                                                        data-fk-id='vamos_ver_se_eh_irrelevante'
+														data-fk-campo-mostrado='trecho'
+                                                        data-selecionado='-1'
+                                                        data-event-blur='NAO'
+                                                        data-event-focus='NAO'
+                                                        data-event-keyup='NAO'
+                                                        data-n-itens='0'
+							data-pai-de-todos-para-saber-scroll=''	
+                                                        autocomplete='off'
+                                                        data-nivel='0'
+                                                  />
+                                                
+                                                 </div>
+</td>
+</tr>
+</table>
+		<div id='lista_1_2' class='dropdown-content'  data-keyup='inativo'></div>
+
+
+
+<input type='button' style='position: absolute; right: 0px; bottom: 0px; margin: 20px' value='seleciona' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;textarea_em_edicao.focus();'>
+</div>
+
+
 <div class='hint_trechos' id='hint_trechos'></div>
 <div class='edita_secoes' id='edita_secoes_mouse'>
 	<div class='cabecalio_de_arvore' style='font-size: 3rem; text-align: right; text-overflow: clip; display: block'><label style='color: red; display: run-in; margin-left: 30px; float: left; font-size: 1.5rem'>(tecle 2)</label>Box 2 <label style='color: yellow; display: run-in; margin-left: 0px; float: right'>&#8594;</label></div>

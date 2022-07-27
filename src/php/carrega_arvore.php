@@ -106,7 +106,8 @@ echo "
                                                         class='dropbtn' 
                                                         onfocusout='document.getElementById(`lista_1_2`).setAttribute(`data-keyup`,`inativo`);document.getElementById(`drop_1_2`).setAttribute(`data-selecionado`,`-1`); document.getElementById(`drop_1_2`).setAttribute(`data-n-itens`,`0`);' 
                                                         data-drop='lista_1_2'
-                                                        data-momento='atualizacao'
+                                                        data-momento='insercao'
+														data-nome-secao='';
                                                         data-id='1'
                                                         data-max-itens='100'
                                                         data-banco='dissertacao' 
@@ -135,8 +136,8 @@ echo "
 		<div id='lista_1_2' class='dropdown-content'  data-keyup='inativo'></div>
 
 
-
-<input type='button' style='position: absolute; right: 0px; bottom: 0px; margin: 20px' value='seleciona' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;textarea_em_edicao.focus();'>
+<input type='button' style='position: absolute; left: 0px; bottom: 0px; margin: 20px' value='insere' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;insertAtCaret(textarea_em_edicao.id,document.getElementById(`drop_1_2`).getAttribute(`data-nome-secao`)); textarea_em_edicao.focus();'>
+<input type='button' style='position: absolute; right: 0px; bottom: 0px; margin: 20px' value='cancela' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;textarea_em_edicao.focus();'>
 </div>
 
 

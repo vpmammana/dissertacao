@@ -48,7 +48,7 @@ if ($result->num_rows>0) {
 
 
 
-$sql="select ".$campo_id.",".$campo_nome." from ".$tabela." where SUBSTRING(".$campo_nome.",1,100) like '%".$str_busca."%' and id_secao in (select id_chave_categoria from secoes where id_tipo_secao=(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao='".$nome_tipo_secao."') ) order by ".$campo_nome.";";
+$sql="select ".$campo_id.",".$campo_nome.", (select nome_categoria from secoes where id_chave_categoria = id_secao) as nome_secao from ".$tabela." where SUBSTRING(".$campo_nome.",1,100) like '%".$str_busca."%' and id_secao in (select id_chave_categoria from secoes where id_tipo_secao=(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao='".$nome_tipo_secao."') ) order by ".$campo_nome.";";
 //echo $sql."<br>";
 $result=$conn->query("$sql");
 if ($result->num_rows>0) {
@@ -56,7 +56,8 @@ if ($result->num_rows>0) {
     {
 	$nome=$row[$campo_nome];
 	$id=$row[$campo_id];
-        echo $nome."<rb>".$id."<br>";
+	$nome_secao=$row["nome_secao"];
+        echo $nome."<rb>".$id."<rb>".$nome_secao."<br>";
 
     }
 } else {echo "vazio";}

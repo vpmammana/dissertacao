@@ -41,7 +41,7 @@ function atualiza_geral (tabela, campo, valor, id){
 
 
 function atualiza_fk (id_elemento_campo){
-
+return; // esse return é para a versao do RedarTex porque não há necessidade de atualizar nada na base
 		var campo=document.getElementById(id_elemento_campo);
 	                var resposta='';
 	                var url='../php/atualiza_campos.php?banco=escolax&tabela='+campo.getAttribute('data-tabela')+'&campo='+campo.getAttribute('data-campo')+'&id='+campo.getAttribute('data-id')+'&valor='+campo.getAttribute('data-fkid')+'&nome='+campo.getAttribute('data-default');
@@ -148,12 +148,15 @@ if ((e.keyCode==27) && (e.target.getAttribute('data-momento')=='insercao')) { e.
 								//console.log('drop element: '+drop_elem);
 								e.target.setAttribute('data-fkid',document.getElementById('a_'+drop_elem+'_'+e.target.getAttribute('data-selecionado')).getAttribute('data-id-fk'));
                                                             if (e.target.getAttribute('data-momento')=='atualizacao'){
-								atualiza_fk(e.target.id);
+								atualiza_fk(e.target.id); // funcao dummy para a versao RedarTex
 								carrega_drop_btn(e.target);}
-								else {e.target.value=document.getElementById('a_'+drop_elem+'_'+e.target.getAttribute('data-selecionado')).getAttribute('data-innertext');
-e.target.setAttribute('data-default',e.target.value);
-//console.log('target: '+e.target.value);
-}
+								else 
+									{
+										e.target.value=document.getElementById('a_'+drop_elem+'_'+e.target.getAttribute('data-selecionado')).getAttribute('data-innertext');
+										e.target.setAttribute('data-nome-secao',document.getElementById('a_'+drop_elem+'_'+e.target.getAttribute('data-selecionado')).getAttribute('data-nome-secao'));
+										e.target.setAttribute('data-default',e.target.value);
+										//console.log('target: '+e.target.value);
+									}
 								
 							} else {e.target.value=e.target.getAttribute('data-default');}
 							e.target.setAttribute('data-keyup','inativo');
@@ -248,7 +251,10 @@ function busca_lista(elemento_input, elemento, banco, tabela, campo, str_busca, 
 								var att_id = document.createAttribute('data-id-fk');
 							        att_id.value =	item_matriz[1];
 								node.setAttributeNode(att_id);	
-                                                                node.id='a_'+elemento+'_'+conta;
+   								var att_id_para_guardar_secao = document.createAttribute('data-nome-secao');
+							        att_id_para_guardar_secao.value =	item_matriz[2];
+								node.setAttributeNode(att_id_para_guardar_secao);	
+                                                             node.id='a_'+elemento+'_'+conta;
 								var textnode = document.createTextNode('#'+item_matriz[0]+'#');     // Create a text node
                                                                 textnode.id='text_'+elemento+'_'+conta;
 								node.appendChild(textnode);                        // Append the text to <a>

@@ -7,6 +7,8 @@
 # VPM (2022-06-29) - criacao das funcoes de insercao de novos nós, antes e depois do atual
 # VPM (2022-07-02) - criacao de procedure para gravar trecho quando insere novo filho insere_a_direita_dos_filhos_com_trecho
 # VPM (2022-07-10) - cria procedure que faz mostra_documento_completo mostrar niveis para geracao de Latex -> mostra_documento_completo_niveis
+# VPM (2022-07-27) - criei trigger para preencher tabela ids_de_referencia com os identificadores das referencias, que precisam ser inteligíveis a partir do que o usuário entra no espaço entre dois [].
+
 DELIMITER //
 DROP PROCEDURE IF EXISTS retorna_valores_de_propriedades_do_tipo_secao
 //
@@ -674,6 +676,7 @@ END
 
 DELIMITER ;
 
+DROP TABLE IF EXISTS ids_de_referencia;
 DROP TABLE IF EXISTS versoes;
 DROP TABLE IF EXISTS instancias_propriedades; # a ordem é importante por causa do foreign key
 DROP TABLE IF EXISTS valores_discretos; # a ordem é importante por causa do foreign key
@@ -915,6 +918,16 @@ CREATE TABLE secoes (
 	FOREIGN KEY (id_tipo_secao) REFERENCES nested_tipos_secoes(id_chave_nested_tipo_secao)
 );
 
+CREATE TABLE ids_de_referencia(
+		id_chave_id_de_referencia INT AUTO_INCREMENT PRIMARY KEY,
+		nome_id_de_referencia VARCHAR(300) DEFAULT NULL,
+		id_secao_do_identificador INT,
+		unique(nome_id_de_referencia),
+		FOREIGN KEY (id_secao_do_identificador) REFERENCES secoes(id_chave_categoria)
+		);
+		
+
+
 CREATE TABLE versoes(
 	id_chave_versao int not null auto_increment PRIMARY KEY,
 	nome_versao TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6),
@@ -923,6 +936,41 @@ CREATE TABLE versoes(
 	unique (id_secao, nome_versao),
 	FOREIGN KEY (id_secao) REFERENCES secoes(id_chave_categoria) 
 );
+
+DROP TRIGGER IF EXISTS grava_id_de_referencia;
+
+# o trigger abaixo preenche a tabela ids_de_referencia com os identificadores das referencias que sao do tipo item_de_referencia, pegando apenas o que estah entre colchetes, sempre que houver a insercao de uma nova versao com insert into versoes
+# note que nao ha correcao do identificador se houver update da tabela versoes, mas o RedarTex nao faz update das linhas da tabela versao. Sempre que uma nova versao eh criada, uma nova linha eh criada na tabela versao.
+
+DELIMITER $$
+CREATE TRIGGER grava_id_de_referencia
+AFTER INSERT ON versoes
+FOR EACH ROW
+BEGIN
+IF  NEW.id_secao IN (SELECT id_chave_categoria from secoes where id_tipo_secao = (SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes WHERE nome_nested_tipo_secao = "item_de_referencia")) THEN
+INSERT INTO ids_de_referencia (nome_id_de_referencia, id_secao_do_identificador) VALUES 
+		(
+			(
+			CASE 	
+				WHEN SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1) = "" THEN NULL
+				ELSE SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1)
+		 	END
+			)
+		,
+		NEW.id_secao
+		)  
+		ON DUPLICATE KEY 
+		UPDATE nome_id_de_referencia = 
+		CASE 	
+			WHEN SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1) = "" THEN NULL
+			ELSE SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1)
+	 	END
+		,
+		id_secao_do_identificador = NEW.id_secao;
+END IF;
+END$$
+
+DELIMITER ;
 
 # importante -> nao pode usar traço no primary key do nome_categoria
 
@@ -1281,3 +1329,4 @@ ORDER BY parent.lft;
 call mostra_arvore_tipos_secoes();
 call mostra_arvore_niveis_tipos_secoes();
 
+select * from ids_de_referencia,secoes where id_secao_do_identificador = id_chave_categoria;

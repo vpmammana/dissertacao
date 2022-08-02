@@ -235,7 +235,7 @@ $temporario_corpo = fopen("temporario.txt", "w");
 
 $velho_nome_tipo_secao = ""; // serve para iniciar a lista
 
-$sql="call mostra_documento_completo_niveis('raiz')";
+$sql="call mostra_documento_completo_niveis_sem_lixeira('raiz')";
 fwrite($myfile,"touch ../bash/copia_tex.bash\n"); 
 fwrite($myfile,"chmod u+x ../bash/copia_tex.bash\n"); 
 
@@ -410,6 +410,7 @@ if ($result->num_rows>0) {
 				$nome_tipo_secao == "legenda_grafico" || 
 				$nome_tipo_secao == "tabela" || 
 				$nome_tipo_secao == "legenda_tabela" || 
+				$nome_tipo_secao == "item_de_referencia" || 
 				$nome_tipo_secao == "item_lista_nao_num" || 
 				$nome_tipo_secao == "item_lista_num"
 			   ) 
@@ -417,6 +418,18 @@ if ($result->num_rows>0) {
 		  		foreach ($arquivos_textuais as $value)
 				{
 					if ($nome_tipo_secao == 'paragrafo') {$texto_com_acentuacao_para_fileput = $texto_com_acentuacao_para_fileput."\n";}
+					if ($nome_tipo_secao == 'item_de_referencia') 
+						{
+							insere(
+								$value, 
+								"% @[bibliografia]@\n", 
+								$nome_tipo_sem_underscore, 	
+								$texto_com_acentuacao_para_fileput."\n", 
+								$secao_sem_espaco_sem_underscore, 
+								$nivel
+							      ); 
+							// $secao_sem_espaco_sem_underscore nao estah sendo usada... eh para no futuro permitir label
+						}
 					if ($nome_tipo_secao == 'item_lista_num' && $velho_nome_tipo_secao != 'item_lista_num') 
 						{
 							insere(

@@ -48,7 +48,7 @@ if ($result->num_rows>0) {
 
 
 
-$sql="select ".$campo_id.",".$campo_nome.", (select nome_categoria from secoes where id_chave_categoria = id_secao) as nome_secao from ".$tabela." where SUBSTRING(".$campo_nome.",1,100) like '%".$str_busca."%' and id_secao in (select id_chave_categoria from secoes where id_tipo_secao=(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao='".$nome_tipo_secao."') ) order by ".$campo_nome.";";
+$sql="select ".$campo_id.",".$campo_nome.", (select nome_categoria from secoes where id_chave_categoria = id_secao) as nome_secao, (select nome_id_de_referencia from ids_de_referencia where id_secao_do_identificador = id_secao) as nome_id_da_referencia from ".$tabela." where SUBSTRING(".$campo_nome.",1,100) like '%".$str_busca."%' and id_secao in (select id_chave_categoria from secoes where id_tipo_secao=(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao='".$nome_tipo_secao."') ) order by ".$campo_nome.";";
 //echo $sql."<br>";
 $result=$conn->query("$sql");
 if ($result->num_rows>0) {
@@ -57,7 +57,8 @@ if ($result->num_rows>0) {
 	$nome=$row[$campo_nome];
 	$id=$row[$campo_id];
 	$nome_secao=$row["nome_secao"];
-        echo $nome."<rb>".$id."<rb>".$nome_secao."<br>";
+	$nome_id_referencia=$row["nome_id_da_referencia"];
+        echo $nome."<rb>".$id."<rb>".$nome_secao."<rb>".$nome_id_referencia."<br>";
 
     }
 } else {echo "vazio";}

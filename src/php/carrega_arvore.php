@@ -108,6 +108,7 @@ echo "
                                                         data-drop='lista_1_2'
                                                         data-momento='insercao'
 														data-nome-secao='';
+														data-nome-id-referencia='';
                                                         data-id='1'
                                                         data-max-itens='100'
                                                         data-banco='dissertacao' 
@@ -136,7 +137,8 @@ echo "
 		<div id='lista_1_2' class='dropdown-content'  data-keyup='inativo'></div>
 
 
-<input type='button' style='position: absolute; left: 0px; bottom: 0px; margin: 20px' value='insere' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;insertAtCaret(textarea_em_edicao.id,document.getElementById(`drop_1_2`).getAttribute(`data-nome-secao`)); textarea_em_edicao.focus();'>
+<input type='button' style='position: absolute; left: 0px; bottom: 0px; margin: 20px' value='insere citação direta' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;insertAtCaret(textarea_em_edicao.id,`(|[`+document.getElementById(`drop_1_2`).getAttribute(`data-nome-id-referencia`)+`]|)`); textarea_em_edicao.focus();'>
+<input type='button' style='position: absolute; left: 0; right: 0; width: 10rem; margin-left: auto; margin-right: auto; margin-bottom: 20px; bottom: 0px; ' value='insere citação indireta' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;insertAtCaret(textarea_em_edicao.id,`|[`+document.getElementById(`drop_1_2`).getAttribute(`data-nome-id-referencia`).replace(/ [0-9]/,function(m){m=m.replace(/ /,` (`); return m;}).replace(/[0-9][0-9][a-z]*$/,function(m){m=m.replace(/$/,`)`); return m;})+`]|`); textarea_em_edicao.focus();'>
 <input type='button' style='position: absolute; right: 0px; bottom: 0px; margin: 20px' value='cancela' onclick='document.getElementById(`janela_referencias`).style.visibility=`hidden`;textarea_em_edicao.focus();'>
 </div>
 

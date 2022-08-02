@@ -154,6 +154,7 @@ if ((e.keyCode==27) && (e.target.getAttribute('data-momento')=='insercao')) { e.
 									{
 										e.target.value=document.getElementById('a_'+drop_elem+'_'+e.target.getAttribute('data-selecionado')).getAttribute('data-innertext');
 										e.target.setAttribute('data-nome-secao',document.getElementById('a_'+drop_elem+'_'+e.target.getAttribute('data-selecionado')).getAttribute('data-nome-secao'));
+										e.target.setAttribute('data-nome-id-referencia',document.getElementById('a_'+drop_elem+'_'+e.target.getAttribute('data-selecionado')).getAttribute('data-nome-id-referencia'));
 										e.target.setAttribute('data-default',e.target.value);
 										//console.log('target: '+e.target.value);
 									}
@@ -254,6 +255,9 @@ function busca_lista(elemento_input, elemento, banco, tabela, campo, str_busca, 
    								var att_id_para_guardar_secao = document.createAttribute('data-nome-secao');
 							        att_id_para_guardar_secao.value =	item_matriz[2];
 								node.setAttributeNode(att_id_para_guardar_secao);	
+   								var att_id_para_guardar_nome_id_referencia = document.createAttribute('data-nome-id-referencia');
+							        att_id_para_guardar_nome_id_referencia.value =	item_matriz[3];
+								node.setAttributeNode(att_id_para_guardar_nome_id_referencia);	
                                                              node.id='a_'+elemento+'_'+conta;
 								var textnode = document.createTextNode('#'+item_matriz[0]+'#');     // Create a text node
                                                                 textnode.id='text_'+elemento+'_'+conta;

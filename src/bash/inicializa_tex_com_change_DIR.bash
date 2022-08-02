@@ -1,4 +1,6 @@
 #ATENÇÃO -> underscore é um carácter especial para o LaTeX e portanto não pode ser usado como identifiar. Mas o RaderTex utiliza underscore como nome de seções. Provavelmente nao terei problemas se tirar o underscore, mas daí tem que tomar cuidado para não ter um dois identificadores diferentes tipo "titulo_abstract" e "tituloabstract", porque para o LaTeX serã o mesmo identificador
+#ATENÇÃO -> hastag é um caracter especial para mysql 
+
 
 # ATENÇÃO -> o awk tem que ser o mawk. Não funciona com gawk (GNU)
 
@@ -225,6 +227,14 @@ sed -i "s/coorientadoradic[{] Co-orientador: Prof. Dr. Jo\\\~ao Alves Serqueira[
 
 #"da USP" aparece apenas em TUTORIAL, então não precisa mudar
 # USP Sao Carlos aparece apenas em TUTORIAL e não precisa mudar
+
+#Troca o nome da bibliografia
+touch ../../latex/USPSC-3.1/troca_bibliografia.bash
+chmod u+x ../../latex/USPSC-3.1/troca_bibliografia.bash
+find ../../latex/. | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/.bibliography[{].*[}]/\\\\\chapter[Bibliografia]{Bibliografia}\\\\\label{blibiografia}\\n\\n\\n% @[bibliografia]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_bibliografia.bash
+# voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
+../../latex/USPSC-3.1/troca_bibliografia.bash
+
 
 #Troca o nome da cidade
 touch ../../latex/USPSC-3.1/troca_cidade.bash

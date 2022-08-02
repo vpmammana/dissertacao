@@ -923,6 +923,7 @@ CREATE TABLE ids_de_referencia(
 		nome_id_de_referencia VARCHAR(300) DEFAULT NULL,
 		id_secao_do_identificador INT,
 		unique(nome_id_de_referencia),
+		unique(id_secao_do_identificador),
 		FOREIGN KEY (id_secao_do_identificador) REFERENCES secoes(id_chave_categoria)
 		);
 		
@@ -944,31 +945,55 @@ DROP TRIGGER IF EXISTS grava_id_de_referencia;
 
 DELIMITER $$
 CREATE TRIGGER grava_id_de_referencia
-AFTER INSERT ON versoes
+BEFORE INSERT ON versoes
 FOR EACH ROW
 BEGIN
-IF  NEW.id_secao IN (SELECT id_chave_categoria from secoes where id_tipo_secao = (SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes WHERE nome_nested_tipo_secao = "item_de_referencia")) THEN
-INSERT INTO ids_de_referencia (nome_id_de_referencia, id_secao_do_identificador) VALUES 
-		(
+	DECLARE c varchar(26) DEFAULT "abcdefghijklmnopqrstuvwxyz";
+	DECLARE conta INT DEFAULT 0;
+	DECLARE conta2 INT DEFAULT 0;
+	DECLARE identificador varchar(200) DEFAULT "";
+	DECLARE velho_identificador varchar(200) DEFAULT "";
+	DECLARE TEMP varchar(200) DEFAULT "";	
+	IF  NEW.id_secao IN (SELECT id_chave_categoria from secoes where id_tipo_secao = (SELECT id_chave_nested_tipo_secao FROM nested_tipos_secoes WHERE nome_nested_tipo_secao = "item_de_referencia")) THEN
+    DELETE FROM ids_de_referencia WHERE id_secao_do_identificador = NEW.id_secao; # tem que apagar se eh uma atualizacao de versao, porque pode ser que o identificador seja mantido e ai nao queremos que coloque letras caso seja soh uma atualizacao da referencia bibliografica	
+	SET identificador =  SUBSTRING(NEW.trecho, position("[" IN NEW.trecho)+1, position("]" IN NEW.trecho) - position("[" IN NEW.trecho) -1);
+	SET velho_identificador = identificador;
+	SET temp = identificador;
+	WHILE temp IN (SELECT nome_id_de_referencia from ids_de_referencia) DO
+	 IF conta > 26 THEN
+	 	SET conta2 = conta2 + 1;
+	 	SET identificador = CONCAT(identificador, SUBSTR(c, conta2, 1));
+		SET conta=0;
+	 END IF;
+	 SET conta = conta + 1;
+	 SET temp = CONCAT(identificador, SUBSTR(c,conta,1));
+	 IF conta2>26 THEN
+	 	SET conta2=0;
+	 END IF;
+	END WHILE;
+	SET identificador = temp;
+	INSERT INTO ids_de_referencia (nome_id_de_referencia, id_secao_do_identificador) VALUES 
 			(
+				(
+				CASE 	
+					WHEN identificador = "" THEN NULL
+					ELSE identificador 
+			 	END
+				)
+			,
+			NEW.id_secao
+			)  
+			ON DUPLICATE KEY 
+			UPDATE nome_id_de_referencia = 
 			CASE 	
-				WHEN SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1) = "" THEN NULL
-				ELSE SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1)
+				WHEN identificador = "" THEN NULL
+				ELSE identificador 
 		 	END
-			)
-		,
-		NEW.id_secao
-		)  
-		ON DUPLICATE KEY 
-		UPDATE nome_id_de_referencia = 
-		CASE 	
-			WHEN SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1) = "" THEN NULL
-			ELSE SUBSTRING(NEW.trecho, position("[" IN NEW.trecho), position("]" IN NEW.trecho) - position("[" IN NEW.trecho) + 1)
-	 	END
-		,
-		id_secao_do_identificador = NEW.id_secao;
-END IF;
-END$$
+			,
+			id_secao_do_identificador = NEW.id_secao;
+  	SET NEW.trecho = REPLACE(NEW.trecho, CONCAT("[",velho_identificador,"]"), CONCAT("[",identificador,"]"));
+	END IF;
+	END$$
 
 DELIMITER ;
 
@@ -1279,6 +1304,44 @@ call insere_a_direita_dos_filhos("referencia", "referencia_11", "[PAPERT, 2005] 
 call insere_a_direita_dos_filhos("referencia", "referencia_12", "[MAMMANA e TOZZI, 2018] Avaliação do Programa OLPC, Cubatão 2018", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
 
 call insere_a_direita_dos_filhos("referencia", "referencia_13", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_14", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_15", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_16", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_17", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_18", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_19", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_20", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_20a", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_21", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_22", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_23", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_24", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_25", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_26", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_27", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_28", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_29", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_30", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_31", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_32", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_33", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_34", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_35", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_36", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_37", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_38", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_39", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_40", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_41", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_42", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_43", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_44", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_45", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_46", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_47", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_48", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_49", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
+call insere_a_direita_dos_filhos("referencia", "referencia_50", "[BELL, 1973]  BELL, 1973, professor de Harvard, que a partir do texto The Coming of Post Industrial Society [XXX BELL, Daniel. The Coming of Post-industrial Society. Nova York: Basic Books, 1973", "", (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
 
 call insere_a_direita_dos_filhos("corpo_tese", "lixeira", "Lixeira" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "topico"));
 call insere_a_direita_dos_filhos("lixeira", "paragrafo_131", "o estudo sobre a  bases históricas de politicas públicas em inclusão digital que antecederam ao WASH e" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo"));
@@ -1329,4 +1392,4 @@ ORDER BY parent.lft;
 call mostra_arvore_tipos_secoes();
 call mostra_arvore_niveis_tipos_secoes();
 
-select * from ids_de_referencia,secoes where id_secao_do_identificador = id_chave_categoria;
+select * from ids_de_referencia,versoes where id_secao_do_identificador = id_secao;

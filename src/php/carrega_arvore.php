@@ -20,12 +20,24 @@ if(isset($_GET["fator_reducao"])){
   $param_fator_reducao= $_GET["fator_reducao"];
 } else $param_fator_reducao = "1";
 
+if(isset($_GET["palavra_de_busca"])){
+  $param_palavra_de_busca= $_GET["palavra_de_busca"];
+} else $param_palavra_de_busca = "";
+
+function tira_acento($estringue){
+
+$nova_string = preg_replace(array("/(á|à|ã|â|ä)/","/(Á|À|Ã|Â|Ä)/","/(é|è|ê|ë)/","/(É|È|Ê|Ë)/","/(í|ì|î|ï)/","/(Í|Ì|Î|Ï)/","/(ó|ò|õ|ô|ö)/","/(Ó|Ò|Õ|Ô|Ö)/","/(ú|ù|û|ü)/","/(Ú|Ù|Û|Ü)/","/(ñ)/","/(Ñ)/"),explode(" ","a A e E i I o O u U n N"),$estringue);
+return $nova_string;
+}
+
+$_GET["palavra_de_busca"]=""; // tem que limpar essa variavel para que nao carregue de novo com a mesma busca
 
 $largura_niveis_array = json_decode($param_json);
 $radical_de_nucleo ="nucleo_nivel_secao_"; // radicao do identificar de um nucleo de nivel. O nucleo de nivel eh onde estah o trecho trazido do banco de dados, sem as formatacoes
 
 echo "
 <script>
+var str_palavra_de_busca = '';
 var quantos_niveis_mostra = ".$param_n_niveis.";
 var radical_de_nucleo = '".$radical_de_nucleo."';
 var mostra_filhos_check = ".$param_filhos.";
@@ -38,6 +50,8 @@ var largura_niveis_array=[];
 for ($p=0; $p < sizeof($largura_niveis_array); $p++){
 	echo "largura_niveis_array.push(".$largura_niveis_array[$p].");";
 }
+
+
 echo "</script>";
 echo "
 <input style='display: none' id='id_sobe_imagem' type='file' onchange=' var resposta=``;var nome_arquivo=this.value.replace(/^.*[\\\/]/, resposta); document.getElementById(`textarea_mouse`).value=nome_arquivo;if (this.files && this.files[0]){var fd= new FormData();var faili=`fileToUpload`;fd.append(faili,this.files[0],nome_arquivo);var xhr = new XMLHttpRequest();var pousti=`POST`;var nome_faili=`../php/grava_imagem.php`;xhr.open(pousti, nome_faili);xhr.onloadend= function(e) { resposta=xhr.responseText;  };xhr.send(fd);}'>
@@ -75,6 +89,20 @@ echo "
 </td>
 <td>
 <a href='manual.html' style='color: yellow; font-size: 2rem'>Tutorial</a>
+</td>
+<td>
+<table id='table_de_busca' style='visibility: hidden'>
+<tr style='height: 50%'>
+<td>
+<input id='palavra_de_busca' type='text' placeholder='palavra para buscar' value='".$param_palavra_de_busca."' onfocus='simula_key_down(`B`)' ><input id='botao_de_busca_palavra' type='button' value='busca' onclick='modo_busca=false; str_palavra_de_busca=document.getElementById(`palavra_de_busca`).value; document.getElementById(`check_raiz`).click()' />
+</td>
+</tr>
+<tr style='height: 50%'>
+<td id='conta_matches' style='color: white; height: 100%; visibility: hidden'>
+teste
+</td>
+</tr>
+</table>
 </td>
 <td>
 <div style='float: right; display: table-row; padding-left: 10px'>
@@ -240,7 +268,13 @@ $altura_blank = 500;
 $largura_folha = 350;
 $altura_folha = 20;
 $padding_folha = 10;
-echo "<script>var padding_folha = ".$padding_folha.";</script>";
+echo 
+"<script>
+var padding_folha = ".$padding_folha.";";
+
+if ($param_tipo_secao == "raiz") {echo "document.getElementById('table_de_busca').style.visibility='visible';";}
+
+echo "</script>";
 
 
 $padding_arvore = 20;
@@ -356,6 +390,7 @@ $max_top_folha = 0;
 
 $conta_folhas =0;
 $conta_imagem =0;
+$conta_matches=0; // usado quando eh feita uma busca por string, para saber quantos matches foram encontrados.
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()){
 	$id_chave             = $row["id_chave_filho"];
@@ -473,7 +508,15 @@ if ($result->num_rows>0) {
 
 
 // data-id-chave eh a chave primaria da tabela secoes
-	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'>".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
+
+$temp_palavra_de_busca = tira_acento($param_palavra_de_busca); 
+$temp_titulo = tira_acento($titulo);
+if ( $param_palavra_de_busca =="" || preg_match("/".$temp_palavra_de_busca."/i", $temp_titulo)==1){
+	$conta_matches++;
+   if ($param_palavra_de_busca !="" && preg_match("/".$temp_palavra_de_busca."/i", $temp_titulo)==1) {
+ 	$titulo = preg_replace("/".$param_palavra_de_busca."/i", "<b>$0</b>", $titulo); // cria bold no matches
+   }; 
+	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'  >".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
 
 
 
@@ -487,8 +530,21 @@ $velho_titulo = $titulo;
 		{
 			$niveis[$nivel]="<div id='cabecalio_de_nivel_".$nivel."' class='cabecalio_de_nivel' style='background-color: ".$cor_nivel[$nivel+1]."; color: ".$cor_letra_nivel[$nivel+1]."; left: ".$left."px; width: ".$largura_niveis_array[$nivel]."px; height: ".$altura_cabecalio."px; top: ".$top_cabecalio."px'>Nível: ".$nivel." (Escolha Box 1)</div>"."<div id='nivel_".$nivel."' data-nivel='".$nivel."' class='nivel ganha_foco' style='background-color: ".$cor_nivel[$nivel+1]."; color: ".$cor_letra_nivel[$nivel+1].";  left: ".$left."px; width: ".$largura_niveis_array[$nivel]."px; top: ".$top_niveis."px; height: ".$height_niveis."px'>";
 		}
+}
 //	echo "<tr><td>".$nivel."</td><td>".$id_secao."</td><td>".$id_pai."</td><td>".$titulo."</td></tr>"; 
-    }
+    } //fim do while
+if ($conta_matches ==0) {
+echo "<script>alert('Nao foi encontrado o padrão: ".$param_palavra_de_busca."'); recarrega('raiz', 'dummy_radio');document.getElementById('conta_matches').innerHTML='Não foram encontradas seções contendo a palavra \"".$param_palavra_de_busca."\" no tipo \"".$param_tipo_secao."\".'; document.getElementById('conta_matches').style.visibility='visible';</script>";
+}
+else
+{
+	if ($param_palavra_de_busca == "") {
+		echo "<script>document.getElementById('conta_matches').innerHTML='O tipo \"".$param_tipo_secao."\" tem ".$conta_matches." seções.'; document.getElementById('conta_matches').style.visibility='visible';</script>";
+	} else
+	{
+		echo "<script>document.getElementById('conta_matches').innerHTML='Foram encontradas ".$conta_matches." seções contendo a palavra ".$param_palavra_de_busca." no tipo \"".$para_tipo_secao."\".'; document.getElementById('conta_matches').style.visibility='visible';</script>";
+	}
+}
 }
 else { echo "<tr><td>Não tem nomes duplicados</td></tr>";}
 

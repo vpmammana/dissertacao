@@ -321,7 +321,7 @@ include "../php/carrega_arvore.php";
 ?>
 <script type='text/javascript' src='../php/drop_menu.js'></script>
 <script>
-
+var str_palavra_de_busca = "";
 var ultimo_visitado_flutua_para_direita = -2; // ainda nao foi visitado
 
 var debug = document.getElementById("edita_secoes_teclado");
@@ -343,6 +343,7 @@ var gemeo_atual_na_arvore=null;
 var gemeo_atual_no_nivel=null;
 var velho_gemeo_no_nivel = null;
 var modo_edicao = false;
+var modo_busca = false;
 var textarea_em_edicao = null;
 var versoes_em_edicao = null;
 var conta_tentativas_de_ajuste_de_tela=0;
@@ -488,7 +489,7 @@ function recarrega(tipo, radio){
 var arrStr = encodeURIComponent(JSON.stringify(largura_niveis_array));
 var param_filhos = document.getElementById("check_mostra_filhos").checked;
 
-window.location.search = "&tipo_secao="+tipo+"&filhos="+param_filhos+"&n_niveis="+quantos_niveis_mostra+"&json="+arrStr+"&fator_reducao="+fator_de_reducao_da_largura_da_arvore;
+window.location.search = "?tipo_secao="+tipo+"&filhos="+param_filhos+"&n_niveis="+quantos_niveis_mostra+"&json="+arrStr+"&fator_reducao="+fator_de_reducao_da_largura_da_arvore+"&palavra_de_busca="+str_palavra_de_busca;
 //var arrStr = encodeURIComponent(JSON.stringify(myArray));
 //var resposta="";
 //var param_filhos = document.getElementById("check_mostra_filhos").checked;
@@ -739,7 +740,7 @@ let futuro_y =0;
 	//console.log("x: "+x+" y:"+y)
 	//if (e.ctrlKey) {alert("control");}
 
-	if (modo_edicao && e.key=="*" && e.ctrlKey) 
+	if (modo_edicao && e.key=="*" && e.ctrlKey && matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")!="item_de_referencia") 
 			{
 				
 				document.getElementById("janela_referencias").style.visibility="visible";
@@ -770,11 +771,19 @@ let futuro_y =0;
 		gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 	}
 
-	if (modo_edicao == false ){
+	if (((modo_edicao == false || document.activeElement != textarea_em_edicao ) && modo_busca == false) || (modo_busca == true &&  document.activeElement != document.getElementById("palavra_de_busca"))){
 		e.preventDefault();
 		e.stopPropagation();	
 	}
 
+
+
+		if (modo_busca == true) 
+			{
+				if (e.key == "Enter") {modo_busca = false; document.getElementById("botao_de_busca_palavra").click();}
+				if (e.key == "Escape") {modo_busca = false; setTimeout(function () {document.getElementById("palavra_de_busca").value=""; str_palavra_de_busca=""; recarrega("raiz", "dummy_radio");}, 100)} // mostra tudo, zerando a palavra de busca 
+				return;
+			}	
 		if (e.key == "Escape" && modo_edicao) {
 			if (confirm("Tem certeza que quer sair sem gravar?")) {
 			textarea_em_edicao.blur();// tira o foco do textarea
@@ -791,6 +800,7 @@ let futuro_y =0;
 
 		
 		if (e.key == "Tab" && modo_edicao) {
+			if (document.getElementById("botao_sobe_imagem").disabled==true){
 			modo_edicao = false;
 			textarea_em_edicao.blur();// tira o foco do textarea 
 			desabilita_box("true", "edita_secoes_mouse");
@@ -801,6 +811,7 @@ let futuro_y =0;
 				grava_trecho(textarea_em_edicao.getAttribute(`data-id-chave-secao`),  textarea_em_edicao.getAttribute(`data-id-secao`), textarea_em_edicao.value, versoes_em_edicao, textarea_em_edicao);
 	
 			} else {alert("Ocorreu erro XPTO.");}
+			} else {alert("Você não pode gravar agora. Escolha se quer inserir a imagem acima ou abaixo da seção atual.");}
 			return;
 			
 		;}
@@ -810,18 +821,26 @@ let futuro_y =0;
 		if (e.key=="Home") {y=0;}
 		if (e.key=="End") {y=matriz_ganha_foco[x][1].length-1;}
 	
-		if (e.key == "1") {
-			if (matriz_ganha_foco[x][0].includes("seletor")) {alert("Para editar o Box 1 o cursor não pode estar na árvore 'Escolha do tipo de seção'.");} else {
-			if (document.getElementById("textarea_teclado").getAttribute("data-alterado")=="gravado") {	
-			modo_edicao = true;
-			textarea_em_edicao = document.getElementById("textarea_teclado");
-			versoes_em_edicao = document.getElementById("versoes_teclado");
-			carrega_versoes_scroll("versoes_teclado",  textarea_em_edicao.getAttribute("data-id-chave-secao"), "textarea_teclado");
-			textarea_em_edicao.focus();
-			} else {alert("Selecione uma seção nas janelas de níveis antes de tentar editar!");}
+		if (e.key == "B" || e.key == "b") {
+			modo_busca = true;
+			document.getElementById("palavra_de_busca").focus();
 			return;
-			}
 		;}
+
+		if (e.key == "1") {
+		          if (matriz_ganha_foco[x][0].includes("seletor")) {alert("Para editar o Box 1 o cursor não pode estar na árvore 'Escolha do tipo de seção'.");} else {
+		          if (document.getElementById("textarea_teclado").getAttribute("data-alterado")=="gravado") {     
+		          modo_edicao = true;
+		          textarea_em_edicao = document.getElementById("textarea_teclado");
+		          versoes_em_edicao = document.getElementById("versoes_teclado");
+		          carrega_versoes_scroll("versoes_teclado",  textarea_em_edicao.getAttribute("data-id-chave-secao"), "textarea_teclado");
+		          textarea_em_edicao.focus();
+				  } else {alert("Selecione uma seção nas janelas de níveis antes de tentar editar!");}
+				  }
+				  return;
+	    }
+
+
 		if (e.key == "2") {
 			if (matriz_ganha_foco[x][1][y].getAttribute("data-id-secao")== "corpo_tese") {alert("Você não pode editar a raiz (corpo_tese) do documento. A operação será interrompida e nada será feito."); return;}
 			if (document.getElementById("textarea_mouse").getAttribute("data-alterado")=="gravado") {	
@@ -1009,10 +1028,14 @@ let futuro_y =0;
 		if (!matriz_ganha_foco[x][0].includes("seletor")) 
 			{
 				if (matriz_ganha_foco[x][0].includes("nivel")) {
+					if (matriz_ganha_foco[x][1][y].getAttribute("data-id-pai") != ""){ // se a visualização é de "raiz", selecionada na janela de tipos_de_secoes, entao data-id-pai eh ""
 					restringe_tipos_que_ganham_foco(document.getElementById("secao_"+matriz_ganha_foco[x][1][y].getAttribute("data-id-pai")).getAttribute("data-nome-tipo-secao"));
+					}
 				}
 				if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
+					if (matriz_ganha_foco[x][1][y].getAttribute("data-id-pai") != ""){
 					restringe_tipos_que_ganham_foco(document.getElementById("folha_arvore_"+matriz_ganha_foco[x][1][y].getAttribute("data-id-pai")).getAttribute("data-nome-tipo-secao"));
+					}
 				}
 			}
 		velho_focado = matriz_ganha_foco[x][1][y];
@@ -1434,13 +1457,25 @@ if (folha_da_arvore.getBoundingClientRect().top < moldura_da_arvore.getBoundingC
 	
 }
 
-function simula_key_down(){
+
+function simulateKey(view, keyCode, key) {
+  let event = document.createEvent("Event")
+  event.initEvent("keydown", true, true)
+  event.keyCode = keyCode
+  event.key = event.code = key
+  return view.someProp("handleKeyDown", f => f(view, event))
+}
+
+
+
+function simula_key_down(caracter){
+
 document.body.dispatchEvent(
   new KeyboardEvent("keydown", {
-    key: "e",
-    keyCode: 69, // example values.
-    code: "KeyE", // put everything you need in this object.
-    which: 69,
+    key: caracter,
+    keyCode: caracter.charCodeAt(0), // example values.
+    code: "Key"+caracter, // put everything you need in this object.
+    which: caracter.charCodeAt(0),
     shiftKey: false, // you don't need to include values
     ctrlKey: false,  // if you aren't going to use them.
     metaKey: false   // these are here for example's sake.
@@ -1653,7 +1688,7 @@ for (let i = 0; i < textareas.length; i++) {
 						}
 					if ((e.key == "ArrowLeft" || e.key == "ArrowRight") && modo_edicao && e.shiftKey && textarea_em_edicao.getAttribute("data-alterado")=="gravado"){return;} //nao pode entrar em modo edicao se apertar shift
 					
-					if (modo_edicao) {
+					if (modo_edicao && document.activeElement == textarea_em_edicao) {
 					this.setAttribute("data-alterado","sem_gravar");
 					this.style.backgroundColor = cor_de_edicao; 
 					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
@@ -1690,7 +1725,7 @@ if (matriz_ganha_foco[x][0].includes("nivel")) {
 if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
 		gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 }
-simula_key_down();
+simula_key_down("e"); // este evento eh para tirar um erro aparentemente inofensivo que aparece na primeira carga, porque nem todos os elementos estao criados. Forca o evento de teclado para criar.
 
 limpa_pais(1);
 flutua_para_direita("flutua_para_direita");

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  2 AUG 2022 19:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  3 AUG 2022 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2218,23 +2218,19 @@ s-of-a-scientific-paper]@[][] []
 ])
 (./USPSC-modelo-IAU_RedarTex.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 48.
+(Font)              <14.4> on input line 50.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 48.
+(Font)              <10> on input line 50.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 48.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(Font)              <7> on input line 50.
  [27
 
-])
-[28] [29
+]) [28] [29
 
 
 ]
 <../../imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper.png,
- id=296, 853.1875pt x 294.09875pt>
+ id=298, 853.1875pt x 294.09875pt>
 File: ../../imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper
 .png Graphic file (type png)
 <use ../../imagens/MEOS-Fish-Bone-Model-Basic-components-of-a-scientific-paper.
@@ -2399,7 +2395,7 @@ LaTeX Warning: Citation `nbr14724' on page 79 undefined on input line 13.
 ] [80
 
 ]
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=530, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=532, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
@@ -2455,15 +2451,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2561.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2561.
  ) 
 Here is how much of TeX's memory you used:
  40041 strings out of 494468
  764193 string characters out of 6175091
- 1007267 words of memory out of 5000000
+ 1008266 words of memory out of 5000000
  42688 multiletter control sequences out of 15000+600000
  628624 words of font info for 141 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
@@ -2477,10 +2470,10 @@ f/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
 /type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (83 pages, 570328 bytes).
+Output written on USPSC-modelo-IAU_RedarTex.pdf (83 pages, 570404 bytes).
 PDF statistics:
- 757 PDF objects out of 1000 (max. 8388607)
- 634 compressed objects within 7 object streams
+ 758 PDF objects out of 1000 (max. 8388607)
+ 635 compressed objects within 7 object streams
  177 named destinations out of 1000 (max. 500000)
  29643 words of extra memory for PDF output out of 29859 (max. 10000000)
 

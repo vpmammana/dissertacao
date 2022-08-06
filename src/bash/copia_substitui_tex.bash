@@ -11,20 +11,35 @@ find ../../latex/* | grep -i "\.tex" | grep -v "RedarTex" | awk -v quote="'" '{g
 
 sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-EESC_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-EESC_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-Tutorial_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-Tutorial_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCp_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCp_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCe_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-ICMCe_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCp_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCp_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IAU_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-IAU_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IQSC_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-IQSC_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCp_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCp_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCe_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-ICMCe_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex

@@ -9,6 +9,8 @@
 # VPM (2022-07-10) - cria procedure que faz mostra_documento_completo mostrar niveis para geracao de Latex -> mostra_documento_completo_niveis
 # VPM (2022-07-27) - criei trigger para preencher tabela ids_de_referencia com os identificadores das referencias, que precisam ser inteligíveis a partir do que o usuário entra no espaço entre dois [].
 # VPM (2022-08-05) - criei mostra_documento_completo_com_pai para permitir a gravacao da tese em formato sql. Eu preciso do nome do pai para poder criar os calls que vão gerar o script SQL. Decidi gravar num script ao invés de usar o dump do mysql
+# VPM (2022-08-06) - coloquei item_de_referencia como filho de topico no nested_tipos_secoes, para permitir visualizar tópicos e referencias ao mesmo tempo
+
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS retorna_valores_de_propriedades_do_tipo_secao
@@ -950,8 +952,7 @@ call insere_a_direita_dos_filhos_tipos_secoes("topico",				"tabela",					"Tabela
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"legenda_tabela",				"Legenda de tabela dos tópicos ou sessões");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"item_lista_num",				"Item de Lista Numerada");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"item_lista_nao_num",				"Item de Lista Numerada");
-call insere_a_direita_dos_filhos_tipos_secoes("raiz",				"referencia",					"Referências da Tese");
-call insere_a_direita_dos_filhos_tipos_secoes("referencia",			"item_de_referencia", 				"Itens da seção de referências");
+call insere_a_direita_dos_filhos_tipos_secoes("topico",			    "item_de_referencia", 				"Itens da seção de referências");
 
 CREATE TABLE instancias_propriedades (
 	id_chave_instancia_propriedade INT AUTO_INCREMENT PRIMARY KEY,
@@ -1417,7 +1418,7 @@ call insere_a_direita_dos_filhos("resultados_e_discussoes", "paragrafo_171", "Re
 call insere_a_direita_dos_filhos("resultados_e_discussoes", "paragrafo_172", "Para que fosse possível fazer a estruturação dos dados foi preciso criar uma plataforma, um modelo de dados, etc…" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo"));
 call insere_a_direita_dos_filhos("corpo_tese", "conclusoes", "CONCLUSÕES" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "topico"));
 call insere_a_direita_dos_filhos("conclusoes", "paragrafo_173", "Aqui vão as conclusões." , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "paragrafo"));
-call insere_a_direita_dos_filhos("corpo_tese", "referencia", "REFERÊNCIAS" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "referencia"));
+call insere_a_direita_dos_filhos("corpo_tese", "referencia", "REFERÊNCIAS" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "topico"));
 call insere_a_direita_dos_filhos("referencia", "referencia_0", "[MEO, 2018] Meo, S.A. Anatomy and physiology of a scientific paper, Saudi Journal of Biological Sciences, V.25, I.7, November 2018, Pg. 1278-1283" , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));
 
 call insere_a_direita_dos_filhos("referencia", "referencia_1", "[LEVY, 2000] LEVY, P. Cibercultura. 2 ed. Editora 34,  Rio de Janeiro:, 2000.p. 14 e 15." , "",(select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = "item_de_referencia"));

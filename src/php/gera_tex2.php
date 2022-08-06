@@ -5,6 +5,11 @@ if(isset($_GET["mode"])){
   $param_mode= $_GET["mode"];
 } else $param_mode = "verbose"; // quiet ou verbose
 
+if(isset($_GET["mantem_bilbiografia"])){
+  $param_mantem_bibliografia= $_GET["mantem_bibliografia"];
+} else $param_mantem_bibliografia = "nao"; // porque talvez, um dia, quem sabe, seja interessante manter a secao de bibliografia separada do capitulo de referencia, com "sim" as referencias apareceriam em duplicidade
+
+
 $id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura, para que posso haver substituicao depois
 
 $nome_base = "../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex";
@@ -148,6 +153,8 @@ return $linha;
 
 function converte_acento_para_file_put($linha){
 //                        12345678
+$linha = str_replace("[[","",$linha);
+$linha = str_replace("]]","",$linha);
 
 $linha = str_replace("_","\_",$linha);
 $linha = str_replace("}","\}",$linha); // se voce quiser usar comandos latex no box1 e box2, tem que tirar esta linha. Daí, todos o colchetes do texto precisam vir com \{
@@ -269,7 +276,9 @@ fwrite($myfile,"sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ..
 
 foreach ($arquivos_textuais as $valor){
 	fwrite($myfile, "sed -i \"/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@\" ".$valor."\n");
-
+	if ($param_mantem_bibliografia == "nao"){
+		fwrite($myfile, "sed -i \"/^.chapter.Bibliografia..Bibliografia/d\" ".$valor."\n");
+	}
 }
 
 
@@ -418,8 +427,11 @@ if ($result->num_rows>0) {
 		  		foreach ($arquivos_textuais as $value)
 				{
 					if ($nome_tipo_secao == 'paragrafo') {$texto_com_acentuacao_para_fileput = $texto_com_acentuacao_para_fileput."\n";}
+				if ($nome_tipo_secao == 'chama_ref') {$texto_com_acentuacao_para_fileput = "\\begin{flushright}\n\\setlength{\\absparsep}{0pt}\n\\tiny ".$texto_com_acentuacao_para_fileput." \\normalsize \n\\end{flushright}\n\n";}
+
 					if ($nome_tipo_secao == 'item_de_referencia') 
 						{
+							if ($param_mantem_bibliografia !="nao"){
 							insere(
 								$value, 
 								"% @[bibliografia]@\n", 
@@ -429,6 +441,10 @@ if ($result->num_rows>0) {
 								$nivel
 							      ); 
 							// $secao_sem_espaco_sem_underscore nao estah sendo usada... eh para no futuro permitir label
+							} else
+							{
+								$texto_com_acentuacao_para_fileput = "\\begin{flushleft}\n".$texto_com_acentuacao_para_fileput."\n\\end{flushleft}\n\n";
+							}
 						}
 					if ($nome_tipo_secao == 'item_lista_num' && $velho_nome_tipo_secao != 'item_lista_num') 
 						{

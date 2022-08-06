@@ -231,7 +231,7 @@ sed -i "s/coorientadoradic[{] Co-orientador: Prof. Dr. Jo\\\~ao Alves Serqueira[
 #Troca o nome da bibliografia
 touch ../../latex/USPSC-3.1/troca_bibliografia.bash
 chmod u+x ../../latex/USPSC-3.1/troca_bibliografia.bash
-find ../../latex/. | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/.bibliography[{].*[}]/\\\\\chapter[Bibliografia]{Bibliografia}\\\\\label{blibiografia}\\n\\n\\n% @[bibliografia]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_bibliografia.bash
+find ../../latex/. | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/.bibliography[{].*[}]/\\\\\chapter[Bibliografia]{Bibliografia}\\\\\label{bibliografia}\\n\\n\\n% @[bibliografia]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_bibliografia.bash
 # voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
 ../../latex/USPSC-3.1/troca_bibliografia.bash
 

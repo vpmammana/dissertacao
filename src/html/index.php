@@ -308,8 +308,14 @@ label{
 </head>
 <body>
 <div id="popup_gravando" class="popup">gravando...</div>
+<div id="popup_latex" class="popup">Gerando LaTeX...</div>
 
 <?php
+
+ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
 
 include "../php/identifica.php.cripto";
 $database = "dissertacao";
@@ -349,6 +355,7 @@ var versoes_em_edicao = null;
 var conta_tentativas_de_ajuste_de_tela=0;
 
 var popup_gravando = document.getElementById("popup_gravando");
+var popup_latex = document.getElementById("popup_latex");
 
 var minima_largura_percentual_da_edicao = 0.2;
 
@@ -626,6 +633,7 @@ elemento.scrollLeft = array_scroll_horizontal[x_versao].style.left.replace("px",
 
 function gera_mostra_pdf_tese(){
 
+popup_latex.style.visibility = "visible";
 
 var resposta="";
 var url='../php/gera_tex2.php?mode=quiet';
@@ -633,6 +641,7 @@ var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
+			popup_latex.style.visibility = "hidden";
 			window.open(resposta);
 		     //textarea.setAttribute("data-alterado","sem_gravar");
 		     //textarea.style.backgroundColor = cor_de_edicao; 

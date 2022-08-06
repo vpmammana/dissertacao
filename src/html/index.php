@@ -378,6 +378,23 @@ var id_da_folha_onde_esta_flutuando;
 
 var matriz_ganha_foco=[]; // eh a matriz que guarda uma copia dos divs que serao percorridos pelo teclado.
 
+function grava_backup_sql(){
+var resposta="";
+var url='../php/grava_script_sql.php';
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+			var win = window.open();
+			win.document.body.innerHTML = resposta;
+		     //textarea.setAttribute("data-alterado","sem_gravar");
+		     //textarea.style.backgroundColor = cor_de_edicao; 
+
+	   }
+           oReq.send();
+
+}
+
 function insertAtCaret(areaId,text) { // fonte: fnicollier no github
 		var txtarea = document.getElementById(areaId);
 		var scrollPos = txtarea.scrollTop;
@@ -771,7 +788,8 @@ let futuro_y =0;
 		gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 	}
 
-	if (((modo_edicao == false || document.activeElement != textarea_em_edicao ) && modo_busca == false) || (modo_busca == true &&  document.activeElement != document.getElementById("palavra_de_busca"))){
+	if ((((modo_edicao == false || document.activeElement != textarea_em_edicao ) && modo_busca == false) || (modo_busca == true &&  document.activeElement != document.getElementById("palavra_de_busca"))) && document.activeElement != document.getElementById("drop_1_2")){
+	console.log(e.key);
 		e.preventDefault();
 		e.stopPropagation();	
 	}
@@ -800,7 +818,7 @@ let futuro_y =0;
 
 		
 		if (e.key == "Tab" && modo_edicao) {
-			if (document.getElementById("botao_sobe_imagem").disabled==true){
+			if (document.getElementById("botao_nova_secao_abaixo").disabled==true){
 			modo_edicao = false;
 			textarea_em_edicao.blur();// tira o foco do textarea 
 			desabilita_box("true", "edita_secoes_mouse");

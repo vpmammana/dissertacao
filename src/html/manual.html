@@ -857,6 +857,18 @@ O <i>RedarTex</i> tem uma estrutura configurável de texto, com a possibilidade d
 
 <p>Quando o cursor estiver sobre o tipo de seção desejado (e.g. imagem), basta teclar "2" e o Box 2 está disponível para a inserção da imagem, ou outro tipo pertinente ao status do momento. Se o objetivo é inserir uma figura, então é preciso clicar na opção <i>arquivo</i>. Uma janela de seleção de arquivo surgirá, através da qual o usuário consegue selecionar a imagem desejada. Neste ponto, basta clicar ok e o nome do arquivo selecionado aparecerá no Box 2. Se o usuário quiser realmente a imagem, basta clicar no botão de posição pertinente: antes ou depois.</p>
 
+<h2>Como guardar um backup do documento</h2>
+
+<p>O RedarTex é baseado em base de dados relacional. Os seus dados são guardados em formato SQL. Para que seja possível guardar a estrutura do texto existe uma ferramenta para fazer um <i>dump parcial</i> dos dados. Este <i>dump</i> é parcial porque não armazena os comandos SQL de criação da base, que estão num arquivo separado.</p>
+
+<p>O <i>dump parcial</i> fica armazenado no servidor, na forma de arquivo, mas também é disponibilizado para o usuário, que pode fazer um "selecionar tudo" seguido de "copiar" para obter o script localmente.</p>
+
+<p>A recuperação do <i>dump parcial</i> é feita pelo administrador do sistema, em caso de necessidade. O usário pode fazer quantos dumps quiser.</p>
+
+<p>O dump parcial não armazena as imagens que foram subidas no servidor. É assumido que o usuário tem cópia de suas imagens, uma vez que teve que subí-las para o servidor.</p>
+
+<p>Para gerar o dump parcial é preciso clicar no botão <b>grava_backup_sql</b> que fica na barra superior da tela.</p>
+
 </DIV>
 </body>
 

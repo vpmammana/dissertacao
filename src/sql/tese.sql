@@ -8,6 +8,7 @@
 # VPM (2022-07-02) - criacao de procedure para gravar trecho quando insere novo filho insere_a_direita_dos_filhos_com_trecho
 # VPM (2022-07-10) - cria procedure que faz mostra_documento_completo mostrar niveis para geracao de Latex -> mostra_documento_completo_niveis
 # VPM (2022-07-27) - criei trigger para preencher tabela ids_de_referencia com os identificadores das referencias, que precisam ser inteligíveis a partir do que o usuário entra no espaço entre dois [].
+# VPM (2022-08-05) - criei mostra_documento_completo_com_pai para permitir a gravacao da tese em formato sql. Eu preciso do nome do pai para poder criar os calls que vão gerar o script SQL. Decidi gravar num script ao invés de usar o dump do mysql
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS retorna_valores_de_propriedades_do_tipo_secao
@@ -207,16 +208,16 @@ END
 # insere antes (a esquerda) do no atual
 DROP PROCEDURE IF EXISTS insere_abaixo_do_atual
 //
-CREATE PROCEDURE insere_abaixo_do_atual(IN nome_no_pai VARCHAR(100), IN nome_do_tipo_de_secao VARCHAR(200), IN in_trecho VARCHAR(3000))
+CREATE PROCEDURE insere_abaixo_do_atual(IN nome_no_pai VARCHAR(100), IN nome_do_tipo_de_secao VARCHAR(200), IN in_trecho VARCHAR(3500))
 funcao:BEGIN
-	call insere_a_direita_dos_filhos(nome_no_pai, CONCAT("automatico_",REPLACE(CURRENT_TIMESTAMP(6), ' ', '_')), in_trecho,'', (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = nome_do_tipo_de_secao));
+	call insere_a_direita_dos_filhos(nome_no_pai, CONCAT("auto_",REPLACE(CURRENT_TIMESTAMP(6), ' ', '_')), in_trecho,'', (select id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao = nome_do_tipo_de_secao));
 	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_trecho);
 END
 //
 # insere antes (a esquerda) do no atual
 DROP PROCEDURE IF EXISTS insere_a_esquerda_do_atual
 //
-CREATE PROCEDURE insere_a_esquerda_do_atual(IN nome_no VARCHAR(100), IN id_do_tipo_de_secao INT, IN in_descricao VARCHAR(3000))
+CREATE PROCEDURE insere_a_esquerda_do_atual(IN nome_no VARCHAR(100), IN id_do_tipo_de_secao INT, IN in_descricao VARCHAR(3500))
 funcao:BEGIN
 	SELECT @tmp_esq:= lft from secoes where nome_categoria = nome_no;
 	SELECT @time_stampa :=  CURRENT_TIMESTAMP(3);
@@ -226,7 +227,7 @@ funcao:BEGIN
 	UPDATE secoes set lft = lft + 2 where lft >= @tmp_esq;
 	UPDATE secoes set rgt = rgt + 2 where rgt >= @tmp_esq;
 	#cria novo no
- 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", REPLACE(@time_stampa, " ", "_")), in_descricao, "",  @tmp_esq, @tmp_esq + 1, id_do_tipo_de_secao);
+ 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("auto_", REPLACE(@time_stampa, " ", "_")), in_descricao, "",  @tmp_esq, @tmp_esq + 1, id_do_tipo_de_secao);
 	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_descricao);
 
 END
@@ -234,7 +235,7 @@ END
 # insere depois (a direita) do no atual
 DROP PROCEDURE IF EXISTS insere_a_direita_do_atual
 //
-CREATE PROCEDURE insere_a_direita_do_atual(IN nome_no VARCHAR(100), IN id_do_tipo_de_secao INT, IN in_descricao VARCHAR(3000))
+CREATE PROCEDURE insere_a_direita_do_atual(IN nome_no VARCHAR(100), IN id_do_tipo_de_secao INT, IN in_descricao VARCHAR(3500))
 funcao:BEGIN
 	SELECT @tmp_dir:= rgt from secoes where nome_categoria = nome_no;
 	SELECT @time_stampa :=  CURRENT_TIMESTAMP(3);
@@ -244,7 +245,7 @@ funcao:BEGIN
 	UPDATE secoes set lft = lft + 2 where lft > @tmp_dir;
 	UPDATE secoes set rgt = rgt + 2 where rgt > @tmp_dir;
 	#cria novo no
- 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("automatico_", REPLACE(@time_stampa," ","_")), in_descricao, "",  @tmp_dir + 1, @tmp_dir + 2, id_do_tipo_de_secao);
+ 	INSERT INTO secoes(nome_categoria, descricao, lnk, lft, rgt, id_tipo_secao) VALUES(CONCAT("auto_", REPLACE(@time_stampa," ","_")), in_descricao, "",  @tmp_dir + 1, @tmp_dir + 2, id_do_tipo_de_secao);
 	INSERT INTO versoes(id_secao, trecho) VALUES (LAST_INSERT_ID(), in_descricao);
 
 END
@@ -580,6 +581,60 @@ SELECT POS_FINAL.nivel, POS_FINAL.id_chave_filho, POS_FINAL.id_filho, POS_FINAL.
 						where (T_filho.niveis - T_pai.niveis > 0 AND T_filho.tfilhoesquerda BETWEEN T_pai.esquerda AND T_pai.direita) OR (T_filho.niveis=0 AND T_filho.filho = T_pai.filho) ORDER BY T_filho.tfilhoesquerda) AS FINAL WHERE FINAL.idtiposecao IN 
 (
 SELECT DISTINCT T1.id from (SELECT parent.id_chave_nested_tipo_secao as id FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.nome_nested_tipo_secao in (SELECT T.nome FROM (SELECT node.nome_nested_tipo_secao as nome, (COUNT(parent.nome_nested_tipo_secao) - (min(sub_tree.depth) + 1)) AS depth FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent, nested_tipos_secoes AS sub_parent, ( SELECT node.nome_nested_tipo_secao, (COUNT(parent.nome_nested_tipo_secao) - 1) AS depth FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.nome_nested_tipo_secao = tipo_secao GROUP BY node.nome_nested_tipo_secao ORDER BY max(node.lft) ) AS sub_tree WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.lft BETWEEN sub_parent.lft AND sub_parent.rgt AND sub_parent.nome_nested_tipo_secao = sub_tree.nome_nested_tipo_secao GROUP BY node.nome_nested_tipo_secao HAVING depth <= 1 ORDER BY max(node.lft)) as T where T.depth>0)  ORDER BY parent.lft) as T1
+) ORDER BY FINAL.tfilho_esquerda) AS POS_FINAL order by POS_FINAL.esq;
+END
+//
+DROP PROCEDURE IF EXISTS mostra_documento_completo_com_pai
+//
+CREATE PROCEDURE mostra_documento_completo_com_pai(IN tipo_secao varchar(200))
+BEGIN
+SELECT CASE WHEN (POS_FINAL.nivel=0) THEN 0 ELSE 1 END as nivel, POS_FINAL.id_chave_filho, POS_FINAL.id_filho, POS_FINAL.id_pai as paizao, POS_FINAL.titulo, POS_FINAL.id_nested_tipo_secao, POS_FINAL.nome_nested_tipo_secao, POS_FINAL.esq, POS_FINAL.dir, POS_FINAL.tem_filho, (SELECT trecho from versoes where id_secao = POS_FINAL.id_chave_filho order by nome_versao DESC LIMIT 1) as ultima_versao,(SELECT nome_versao from versoes where id_secao = POS_FINAL.id_chave_filho order by nome_versao DESC LIMIT 1) as data, (SELECT count(*) from versoes where id_secao = POS_FINAL.id_chave_filho) as conta_versoes   FROM
+(SELECT FINAL.nivel, FINAL.id_chave_filho, FINAL.id_filho, FINAL.id_pai, FINAL.titulo, FINAL.idtiposecao as id_nested_tipo_secao, (select nome_nested_tipo_secao from nested_tipos_secoes where id_chave_nested_tipo_secao = id_nested_tipo_secao) as nome_nested_tipo_secao, FINAL.tfilho_esquerda as esq, FINAL.tfilho_direita as dir, CASE WHEN (FINAL.tfilho_direita - FINAL.tfilho_esquerda = 1) THEN "NAO_TEM_FILHO" ELSE "TEM_FILHO" END as tem_filho FROM
+(
+	SELECT 
+		T_filho.niveis as nivel, T_filho.id_chave_filho as id_chave_filho, T_filho.filho as id_filho, T_pai.filho as id_pai, (SELECT descricao from secoes where nome_categoria = T_filho.filho) as titulo, T_filho.id____tipo____secao as idtiposecao, T_filho.tfilhoesquerda as tfilho_esquerda, T_filho.tfilhodireita as tfilho_direita
+	from 
+		(
+			SELECT 
+				ST.niveis as niveis, ST.id_chave_filho as id_chave_filho, ST.filho as filho, ST.esquerda as tfilhoesquerda, ST.direita as tfilhodireita, ST.id___tipo___secao as id____tipo____secao 
+			from 
+				(
+					SELECT 
+						COUNT(T.pai) - 1 as niveis, T.id_chave_filho as id_chave_filho, T.filho as filho, T.esquerda as esquerda, T.direita as direita, T.id__tipo__secao as id___tipo___secao
+					from 
+						(
+							SELECT 
+								node.id_chave_categoria as id_chave_filho, node.nome_categoria as filho, parent.nome_categoria as pai, node.lft as esquerda, node.rgt as direita, node.id_tipo_secao as id__tipo__secao 
+							from 
+								secoes as node, secoes as parent 
+									where node.lft BETWEEN parent.lft AND parent.rgt 
+						) as T group by T.id_chave_filho, T.filho, T.esquerda, T.direita
+				) as ST
+		) as T_filho 
+			left join 
+				(
+					SELECT 
+						ST2.niveis as niveis, ST2.filho as filho, ST2.esquerda, ST2.direita 
+					from 
+						(
+							SELECT 
+								COUNT(T.pai) - 1 as niveis, T.filho as filho, T.esquerda as esquerda, T.direita as direita 
+							from 
+								(
+									SELECT 
+										node.nome_categoria as filho, parent.nome_categoria as pai, node.lft as esquerda, node.rgt as direita 
+									from 
+										secoes as node, secoes as parent 
+											where node.lft BETWEEN parent.lft AND parent.rgt 
+
+ 
+								) as T group by T.filho, T.esquerda, T.direita
+						) as ST2
+				) as T_pai 
+					on T_filho.niveis - T_pai.niveis <2 
+						where (T_filho.niveis - T_pai.niveis > 0 AND T_filho.tfilhoesquerda BETWEEN T_pai.esquerda AND T_pai.direita) OR (T_filho.niveis=0 AND T_filho.filho = T_pai.filho) ORDER BY T_filho.tfilhoesquerda) AS FINAL WHERE FINAL.idtiposecao IN 
+(
+SELECT DISTINCT T1.id from (SELECT parent.id_chave_nested_tipo_secao as id FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.nome_nested_tipo_secao in (SELECT T.nome FROM (SELECT node.nome_nested_tipo_secao as nome, (COUNT(parent.nome_nested_tipo_secao) - (min(sub_tree.depth) + 1)) AS depth FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent, nested_tipos_secoes AS sub_parent, ( SELECT node.nome_nested_tipo_secao, (COUNT(parent.nome_nested_tipo_secao) - 1) AS depth FROM nested_tipos_secoes AS node, nested_tipos_secoes AS parent WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.nome_nested_tipo_secao = tipo_secao GROUP BY node.nome_nested_tipo_secao ORDER BY max(node.lft) ) AS sub_tree WHERE node.lft BETWEEN parent.lft AND parent.rgt AND node.lft BETWEEN sub_parent.lft AND sub_parent.rgt AND sub_parent.nome_nested_tipo_secao = sub_tree.nome_nested_tipo_secao GROUP BY node.nome_nested_tipo_secao HAVING depth <= 2 ORDER BY max(node.lft)) as T where T.depth>0)  ORDER BY parent.lft) as T1
 ) ORDER BY FINAL.tfilho_esquerda) AS POS_FINAL order by POS_FINAL.esq;
 END
 //
@@ -983,7 +1038,7 @@ INSERT INTO instancias_propriedades (valor_continuo,id_propriedade, id_valor_dis
 CREATE TABLE secoes (
         id_chave_categoria INT AUTO_INCREMENT PRIMARY KEY,
         nome_categoria VARCHAR(100) NOT NULL,
-	descricao varchar(3000),
+	descricao varchar(3500),
 	lnk varchar(300),
         lft INT NOT NULL,
         rgt INT NOT NULL,
@@ -1013,7 +1068,7 @@ CREATE TABLE versoes(
 	id_chave_versao int not null auto_increment PRIMARY KEY,
 	nome_versao TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6),
 	id_secao int,
-	trecho varchar(15000),
+	trecho varchar(3500),
 	unique (id_secao, nome_versao),
 	FOREIGN KEY (id_secao) REFERENCES secoes(id_chave_categoria) 
 );
@@ -1078,6 +1133,7 @@ BEGIN
 DELIMITER ;
 
 # importante -> nao pode usar traço no primary key do nome_categoria
+# CREATE PROCEDURE insere_a_direita_dos_filhos(IN nome_no_pai varchar(100), IN no_para_inserir varchar(100), IN no_descricao varchar(10000), IN no_link varchar(300), IN tipo_secao int)
 
 
 insert into secoes values (1,'corpo_tese','raiz','',1,2, (SELECT id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao="raiz"));

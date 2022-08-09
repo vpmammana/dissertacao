@@ -805,7 +805,7 @@ let futuro_y =0;
 
 
 
-		if (modo_busca == true) 
+		if (modo_busca == true && modo_edicao == false) 
 			{
 				if (e.key == "Enter") {modo_busca = false; document.getElementById("botao_de_busca_palavra").click();}
 				if (e.key == "Escape") {modo_busca = false; setTimeout(function () {document.getElementById("palavra_de_busca").value=""; str_palavra_de_busca=""; recarrega("raiz", "dummy_radio");}, 100)} // mostra tudo, zerando a palavra de busca 
@@ -823,6 +823,9 @@ let futuro_y =0;
 			textarea_em_edicao.style.backgroundColor = cor_de_gravado;	
 			}
 
+		}
+		if (e.key == "Enter" && modo_edicao && textarea_em_edicao == document.getElementById("textarea_mouse") && document.activeElement != document.getElementById("drop_1_2")) {
+			alert("Apertou enter no Box 2");
 		}
 
 		

@@ -359,10 +359,12 @@ var popup_latex = document.getElementById("popup_latex");
 
 var minima_largura_percentual_da_edicao = 0.2;
 
-var x = 0; // aumenta com seta para direita e diminui com seta para esquerda
-var y = 0; // aumenta com seta para baixo e diminui com seta para cima
-var x_versao = 0;
-var x_arvore=0; // indica posicao do cursor azul presente na arvore de secoes, gerado pelo movimento nos niveis 
+var acao_principal = "nenhuma"; // pode assumir os valores de nenhuma e insere_paragrafo. Ainda nao encontrei o estado ideal para acionar o insere_paragrafo
+
+var x = x_sessao_anterior; // aumenta com seta para direita e diminui com seta para esquerda
+var y = y_sessao_anterior; // aumenta com seta para baixo e diminui com seta para cima
+var x_versao = 0;  // versao eh provavelmente relacionado aa tabela versoes do banco de dados
+var x_arvore=0; // indica posicao do cursor azul (depois verde claro) presente na arvore de secoes, gerado pelo movimento nos niveis 
 var y_arvore=0;
 var max_dir = 0;
 var min_esq = 1000000000000000000;
@@ -512,8 +514,27 @@ var oReq=new XMLHttpRequest();
 function recarrega(tipo, radio){
 var arrStr = encodeURIComponent(JSON.stringify(largura_niveis_array));
 var param_filhos = document.getElementById("check_mostra_filhos").checked;
+console.log(gemeo_atual_no_nivel);
+// alert("recarrega: "+x+" <---> "+y+ "    gemeononivel"+gemeo_atual_no_nivel.id);
+	itz_x = 0;
+	itz_y = 0;
 
-window.location.search = "?tipo_secao="+tipo+"&filhos="+param_filhos+"&n_niveis="+quantos_niveis_mostra+"&json="+arrStr+"&fator_reducao="+fator_de_reducao_da_largura_da_arvore+"&palavra_de_busca="+str_palavra_de_busca;
+console.log("gemeo");
+
+
+if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && (ultimo_visitado_flutua_para_direita > -1)) {
+	itz_x = gemeo_atual_no_nivel.getAttribute("data-nivel") - 1; 
+	itz_y = gemeo_atual_no_nivel.getAttribute("data-y");}
+
+if (matriz_ganha_foco[x][0].includes("seletor") && (ultimo_visitado_flutua_para_direita > -1)) {
+	itz_x = gemeo_atual_no_nivel.getAttribute("data-nivel") - 1; 
+	itz_y = parseInt(gemeo_atual_no_nivel.getAttribute("data-y")) + 1;}
+
+if (matriz_ganha_foco[x][0].includes("nivel")) {
+	itz_x = x;
+	itz_y = y;}
+
+window.location.search = "?tipo_secao="+tipo+"&filhos="+param_filhos+"&n_niveis="+quantos_niveis_mostra+"&json="+arrStr+"&fator_reducao="+fator_de_reducao_da_largura_da_arvore+"&palavra_de_busca="+str_palavra_de_busca+"&x_cursor="+ itz_x +"&y_cursor=" + itz_y;
 //var arrStr = encodeURIComponent(JSON.stringify(myArray));
 //var resposta="";
 //var param_filhos = document.getElementById("check_mostra_filhos").checked;
@@ -541,7 +562,7 @@ window.location.search = "?tipo_secao="+tipo+"&filhos="+param_filhos+"&n_niveis=
 //                     }
 //           oReq.send();
 //
-}
+} // fim recarrega
 
 function maximiza_altura(classe){
 
@@ -679,6 +700,7 @@ var oReq=new XMLHttpRequest();
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
 		     elemento.value = resposta.trim(); // estah voltando com o linebreak no comeco por causa do ?> no final do arquivo identifica.php.cripto
+			 gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[matriz_ganha_foco.length - 2][1][ultimo_visitado_flutua_para_direita]); // -2 para pegar flutua_para_direita. gemeo_atual_no_nivel passa a ser clone do que foi selecionado na arvore de secoes
 		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
 		     //textarea.setAttribute("data-alterado","sem_gravar");
 		     //textarea.style.backgroundColor = cor_de_edicao; 
@@ -748,6 +770,7 @@ elemento = document.getElementById(div_versoes);
 
 var resposta="";
 var url='../php/devolve_divs_versoes.php?id_chave_secao='+id_chave_secao+'&largura='+largura_do_botao_de_versao+'&altura='+altura_do_botao_de_versao+'&fonte='+fonte_do_botao_de_versao+'&unidade='+unidade+'&fator_fonte='+fator_fonte_versao+'&separacao='+separacao_do_botao_de_versao+'&textarea='+textarea;
+console.log("URL: "+url+" div_versoes: "+div_versoes+" id: "+id_chave_secao+" textarea: "+textarea);
 var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
@@ -782,13 +805,17 @@ let futuro_y =0;
 
 	let edita_secoes_mouse_id_secao = document.getElementById("edita_secoes_mouse_id_secao").innerText;
 	if (matriz_ganha_foco[x][0].includes("nivel")) {
+	    console.log(x+" * "+y);
 		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
 			if (e.key == " " && !modo_edicao) {
 	
 				console.log("primeira chamada");
 				futuro_y = gemeo_atual_na_arvore.getAttribute("data-y");
+				
 				y--;
-				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;} 
+				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}
+
+	    		console.log(x+" * "+y + " futuro_y "+ futuro_y);
 				guarda_ultimo_visitado[x]=y;
 			}
 
@@ -807,7 +834,7 @@ let futuro_y =0;
 
 		if (modo_busca == true && modo_edicao == false) 
 			{
-				if (e.key == "Enter") {modo_busca = false; document.getElementById("botao_de_busca_palavra").click();}
+				if (e.key == "Enter") {modo_busca = false;  document.getElementById("botao_de_busca_palavra").click();}
 				if (e.key == "Escape") {modo_busca = false; setTimeout(function () {document.getElementById("palavra_de_busca").value=""; str_palavra_de_busca=""; recarrega("raiz", "dummy_radio");}, 100)} // mostra tudo, zerando a palavra de busca 
 				return;
 			}	
@@ -825,8 +852,9 @@ let futuro_y =0;
 
 		}
 		if (e.key == "Enter" && modo_edicao && textarea_em_edicao == document.getElementById("textarea_mouse") && document.activeElement != document.getElementById("drop_1_2")) {
-			alert("Apertou enter no Box 2");
+			document.getElementById("botao_nova_secao_abaixo").click();
 		}
+
 
 		
 		if (e.key == "Tab" && modo_edicao) {
@@ -995,7 +1023,7 @@ let futuro_y =0;
 							x++; 
 							if(x > matriz_ganha_foco.length - 1) {x=0;}  
 							y = guarda_ultimo_visitado[x]; 
-							if (y == -2) {y=0;}
+							if (y == -2) {y=0;} // y negativo sao flags... y positivos sao posicoes y
 						}
 					}
 				else {
@@ -1025,11 +1053,11 @@ let futuro_y =0;
 			 		if (e.shiftKey) {y=guarda_ultimo_visitado[x]; if (y == -2) {y = 0;} } // se estiver apertando shift vai para ultimo visitado ao inves de ir para o primeiro filho do atual.	
 					if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && !e.shiftKey) { y=parseInt(gemeo_atual_na_arvore.getAttribute("data-y")); } 
 					if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {guarda_ultimo_visitado[x_anterior] = y_anterior;}
-			}
+			} // fim if ArrowRight
 	
        		if (x > matriz_ganha_foco.length - 1) { x=0;} // estes ifs estavam depois dos 4 abaixo, mas parece mais lógico que fiquem aqui 
 		if (x < 0) { x=matriz_ganha_foco.length -1;}
-	        if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y")) && e.key != " ") {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;}} // evita colocar no Box 2 algo que jah esta no BOX 1
+	        if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && y==parseInt(gemeo_atual_na_arvore.getAttribute("data-y")) && e.key != " ") {y++; if (y > matriz_ganha_foco[x][1].length -1) {y=0;};gemeo_atual_no_nivel = matriz_ganha_foco[x][1][y]; } // evita colocar no Box 2 algo que jah esta no BOX 1
          	if (matriz_ganha_foco[x][0].includes("nivel") && matriz_ganha_foco[x][1][y].getAttribute("data-id-secao") == edita_secoes_mouse_id_secao ) {y--; if (y > matriz_ganha_foco[x][1].length -1) {y=0;} if (y < 0) {y = matriz_ganha_foco[x][1].length - 1;}} // evita o contrario. note que precisa tambem cuidar do caso do ArrowDown, porque nesse caso, este if faz voltar para cima e nao desce nunca mais... entao no ArrowDown, se perceber que vai cair na secao selecionada pelo Box2, tem que pular para baixo
 
 // a partir daqui jah decidiu qual eh o valor de x e y
@@ -1113,7 +1141,12 @@ let futuro_y =0;
 		}
 	if (matriz_ganha_foco[x][0].includes("nivel")) {
 		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
-			if (e.key == " " && !modo_edicao) {
+		if (y>=0) {gemeo_atual_no_nivel = matriz_ganha_foco[x][1][y];}
+		else {
+			if (y<1 && y < matriz_ganha_foco[x][1].length -1) {gemeo_atual_no_nivel = matriz_ganha_foco[x][1][y - 1];}
+			else {gemeo_atual_no_nivel = null;}
+		}
+		if (e.key == " " && !modo_edicao) {
 				console.log("segunda chamada");
 				matriz_ganha_foco[x][1][y].style.border = velha_borda_focalizada;
 				document.getElementById(matriz_ganha_foco[x][0]).style.border = velha_borda_de_nivel_focalizada;
@@ -1382,22 +1415,24 @@ function restringe_tipos_que_ganham_foco(tipo_pai){ // para a arvore de tipos, a
 }
 
 function acha_divs_que_ganham_foco(){
-guarda_ultimo_visitado.length = 0;
-const colecao_ganha_foco = document.getElementsByClassName("ganha_foco");
-	for (let i = 0; i < colecao_ganha_foco.length; i++) {
-	guarda_ultimo_visitado.push(-2);
 // guarda_ultimo_visitado = -2 -> significa que ainda nao foi visitado
 // guarda_ultimo_visitado = -1 -> significa que nao tem filhos do nivel pai
 // guarda_ultimo_visitado > -1 -> eh o ultimo visitado
 
+guarda_ultimo_visitado.length = 0;
+const colecao_ganha_foco = document.getElementsByClassName("ganha_foco");
+	for (let i = 0; i < colecao_ganha_foco.length; i++) {
+	guarda_ultimo_visitado.push(-2);
 	
 		var dupla_ganha_foco_e_filhos=[];
 		dupla_ganha_foco_e_filhos.push(colecao_ganha_foco[i].id);
 			const colecao_sub_ganha_foco = colecao_ganha_foco[i].getElementsByTagName("*");
 			var matriz_sub_ganha_foco=[];
+			let contador = 0;
 			for (let j = 0; j < colecao_sub_ganha_foco.length; j++) {
 				if (colecao_sub_ganha_foco[j].classList.contains("sub_ganha_foco")){
 					matriz_sub_ganha_foco.push(colecao_sub_ganha_foco[j]);
+					if (colecao_sub_ganha_foco[j].classList.contains("secao")) {matriz_sub_ganha_foco[matriz_sub_ganha_foco.length - 1].setAttribute("data-y",contador); contador++;}; // na arvore de secoes o data-y pode ser definido no momento do carregamento. Na arvore de niveis tem que ser pela ordem de criacao dos elementos
 				}
 			}
 		dupla_ganha_foco_e_filhos.push(matriz_sub_ganha_foco);
@@ -1735,6 +1770,9 @@ for (let i = 0; i < textareas.length; i++) {
 
 function inicializa(){
 
+//alert("Antes de inicializa: "+x+" ---> "+y);
+
+
 desabilita_box("true", "edita_secoes_mouse");
 desabilita_box("true", "edita_secoes_teclado");
 
@@ -1743,18 +1781,33 @@ document.getElementById(radio_selecionado).checked=true;
 document.getElementById("check_mostra_filhos").checked=mostra_filhos_check;
 inicializa_teclado();
 acha_divs_que_ganham_foco();
+
+	if (matriz_ganha_foco[x][0].includes("nivel")) {
+			gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+	}
+
+	if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
+			gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
+	}
+	
+	if (matriz_ganha_foco[x][0].includes("flutua_para_direita") && gemeo_atual_na_arvore == null) {
+			gemeo_atual_no_nivel = matriz_ganha_foco[x][1][y];
+			gemeo_atual_na_arvore = matriz_ganha_foco[matriz_ganha_foco[x][1][y].getAttribute("data-nivel")][1][y];
+			if (y>0) {guarda_ultimo_visitado[matriz_ganha_foco[x][1][y].getAttribute("data-nivel")-1] = y - 1;} else
+				     {guarda_ultimo_visitado[matriz_ganha_foco[x][1][y].getAttribute("data-nivel")-1] = y + 1;}
+	}
+
 velha_borda_focalizada = matriz_ganha_foco[x][1][y].style.border;
 velha_borda_de_nivel_focalizada=document.getElementById(matriz_ganha_foco[x][0]).style.border;
 velho_gemeo_no_nivel = matriz_ganha_foco[x][1][y];
+
 cria_listener_textarea();
 
+
+
 matriz_ganha_foco[x][1][y].style.border=borda_focalizada;
-if (matriz_ganha_foco[x][0].includes("nivel")) {
-		gemeo_atual_na_arvore = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
-}
-if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {
-		gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[x][1][y].getAttribute("data-gemeo"));
-}
+
+
 simula_key_down("e"); // este evento eh para tirar um erro aparentemente inofensivo que aparece na primeira carga, porque nem todos os elementos estao criados. Forca o evento de teclado para criar.
 
 limpa_pais(1);
@@ -1826,7 +1879,14 @@ for (let i = 0; i < percorre_niveis.length; i++) {
 
 acha_dir_max_min_esq_niveis();
 
-setTimeout( function () {refaz_tamanho_edita_secoes("edita_secoes_teclado", "edita_secoes_mouse");}, 1000);
+setTimeout( function () {
+	refaz_tamanho_edita_secoes("edita_secoes_teclado", "edita_secoes_mouse");
+		let paizao = document.getElementById(matriz_ganha_foco[x][0]);
+
+	if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {scroll_arvore_especial(paizao,matriz_ganha_foco[x][1][y]); alert("scroll");}  // nao precisava desta complicacao de 2 ifs
+	if (matriz_ganha_foco[x][0].includes("seletor")) {scroll_arvore_especial(paizao,matriz_ganha_foco[x][1][y]);alert("scroll2");}
+
+	}, 1000);
 } // fim inicializa()
 
 

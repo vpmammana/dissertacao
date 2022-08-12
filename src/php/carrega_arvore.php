@@ -24,6 +24,17 @@ if(isset($_GET["palavra_de_busca"])){
   $param_palavra_de_busca= $_GET["palavra_de_busca"];
 } else $param_palavra_de_busca = "";
 
+
+if(isset($_GET["x_cursor"])){
+  $param_x_cursor= $_GET["x_cursor"];
+} else $param_x_cursor = 0;
+
+if(isset($_GET["y_cursor"])){
+  $param_y_cursor= $_GET["y_cursor"];
+} else $param_y_cursor = 0;
+
+
+
 function tira_acento($estringue){
 
 $nova_string = preg_replace(array("/(á|à|ã|â|ä)/","/(Á|À|Ã|Â|Ä)/","/(é|è|ê|ë)/","/(É|È|Ê|Ë)/","/(í|ì|î|ï)/","/(Í|Ì|Î|Ï)/","/(ó|ò|õ|ô|ö)/","/(Ó|Ò|Õ|Ô|Ö)/","/(ú|ù|û|ü)/","/(Ú|Ù|Û|Ü)/","/(ñ)/","/(Ñ)/"),explode(" ","a A e E i I o O u U n N"),$estringue);
@@ -37,6 +48,8 @@ $radical_de_nucleo ="nucleo_nivel_secao_"; // radicao do identificar de um nucle
 
 echo "
 <script>
+
+
 var str_palavra_de_busca = '';
 var quantos_niveis_mostra = ".$param_n_niveis.";
 var radical_de_nucleo = '".$radical_de_nucleo."';
@@ -45,6 +58,12 @@ var fator_de_reducao_da_largura_da_arvore = ".$param_fator_reducao.";
 var tipo_secao_selecionado_no_check = '".$param_tipo_secao."';
 var radio_selecionado='check_".$param_tipo_secao."';
 var largura_niveis_array=[];
+var x_sessao_anterior = ".$param_x_cursor."; // recupera a posicao do cursor da ultima sessao
+var y_sessao_anterior = ".$param_y_cursor.";
+
+
+//setTimeout(function () {inicializa();}, 1000);
+
 ";
 
 for ($p=0; $p < sizeof($largura_niveis_array); $p++){
@@ -326,7 +345,7 @@ function retorna_style($propriedade, $valor, $id_secao){
 		if ($valor == "esquerda") {
 			$regra = "text-align: left;";
 		}
-		if ($valor == "direito") {
+		if ($valor == "direita") {
 			$regra = "text-align: right;";
 		}
 		if ($valor == "justificado") {
@@ -462,7 +481,7 @@ if ($result->num_rows>0) {
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
 // data-id-chave eh a chave primaria da tabela secoes
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."'  data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."' data-nome-tipo-secao='".$nome_tipo_secao."' data-gemeo='secao_".$id_secao."' data-da-lixeira='".$eh_da_lixeira."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; 
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."' data-nivel='".$nivel."' data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."' data-nome-tipo-secao='".$nome_tipo_secao."' data-gemeo='secao_".$id_secao."' data-da-lixeira='".$eh_da_lixeira."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; // note a repeticao da propriedade de nivel com data-x e data-nivel -> apenas para nao ter que mudar um pedaco de codigo na function inicializa() do index.html 
 	$conta_folhas++;
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	
@@ -519,7 +538,7 @@ if ( $param_palavra_de_busca =="" || preg_match("/".$temp_palavra_de_busca."/i",
    if ($param_palavra_de_busca !="" && preg_match("/".$temp_palavra_de_busca."/i", $temp_titulo)==1) {
  	$titulo = preg_replace("/".$param_palavra_de_busca."/i", "<b>$0</b>", $titulo); // cria bold no matches
    }; 
-	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'  >".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>";
+	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-y='-1' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'  >".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>"; // sao os elementos das janelas de niveis? data-y='-1' significa que ainda nao foi atribuído um indice data-y ao elemento da janela de niveis
 
 
 

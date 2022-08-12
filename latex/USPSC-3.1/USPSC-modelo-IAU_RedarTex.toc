@@ -47,29 +47,29 @@
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {AP\^ENDICES}}{67}{section*.15}% 
+\contentsline {part}{\uppercase {AP\^ENDICES}}{63}{section*.15}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{69}{appendix.A}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{65}{appendix.A}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{71}{appendix.B}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{67}{appendix.B}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{73}{appendix.C}% 
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{69}{appendix.C}% 
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{75}{section*.16}% 
+\contentsline {part}{\uppercase {ANEXOS}}{71}{section*.16}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{77}{appendix.anexochapback.1}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{73}{appendix.anexochapback.1}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{79}{appendix.anexochapback.2}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{75}{appendix.anexochapback.2}% 

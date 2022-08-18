@@ -338,7 +338,7 @@ var fonte_do_botao_de_versao = '1';
 var separacao_do_botao_de_versao = '8';
 
 var cor_de_edicao = "yellow";
-var cor_de_gravado = "white";
+var cor_de_gravado = "lightgray";
 var cor_de_problema = "red";
 
 
@@ -711,15 +711,45 @@ var oReq=new XMLHttpRequest();
 
 function insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho){
 
+//let pos_enter = /\r|\n/g.exec(trecho).index;
 
+let index_enter = trecho.lastIndexOf("\n");
+
+if (index_enter < 0) {
+ index_enter = trecho.lastIndexOf("\r");
+}
+
+
+let subtrecho = "";
+
+
+//	if (pos_enter == null) { subtrecho = trecho;}
+//	else 
+//			{
+//				subtrecho = trecho.substring(0, pos_enter);
+//				trecho = trecho.substring(pos_enter + 1);
+//			}
+//	
+
+if (index_enter < 0) { subtrecho = trecho;}
+else 
+		{
+			subtrecho = trecho.substring(index_enter)
+			trecho = trecho.substring(0, index_enter - 1);
+		}
 var resposta="";
-var url='../php/insere_dir.php?nome_secao='+nome_secao+'&id_tipo_secao='+id_tipo_secao+'&trecho='+trecho;
+var url='../php/insere_dir.php?nome_secao='+nome_secao+'&id_tipo_secao='+id_tipo_secao+'&trecho='+subtrecho;
 var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
-		     elemento.value = resposta.trim(); // estah voltando com o linebreak no comeco por causa do ?> no final do arquivo identifica.php.cripto
-		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
+		     elemento.value = resposta.trim(); // estah voltando com o linebreak no comeco por causa do ?> no final do arquivo identifica.php.cripto, P.S. -> estranho porque trim deveria remover soh whitespace
+		     if (index_enter < 0) {
+			 	recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
+			 }
+			 else {
+		 		insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho); // insere uma secao por newline contida no Box... 
+		 	 }
 		     //textarea.setAttribute("data-alterado","sem_gravar");
 		     //textarea.style.backgroundColor = cor_de_edicao; 
 

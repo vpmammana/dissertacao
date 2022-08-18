@@ -19,6 +19,7 @@ $sql="call mostra_documento_completo_com_pai('raiz');";
 
 $result=$conn->query("$sql");
 
+echo "delete from guarda_ids_da_lixeira;<br><br>";
 echo "delete from ids_de_referencia;<br><br>";
 echo "delete from versoes;<br><br>";
 echo "delete from secoes;<br><br>";
@@ -27,9 +28,10 @@ fwrite($myfile, "# SCRIPT que permite gerar novamente a dissertacao. Nao grava a
 fwrite($myfile, "# Desenvolvido por Victor Mammana\n");
 fwrite($myfile, "# Este script nao recria as stored procedures, que estao em tese.sql\n\n\n\n");
 
-fwrite($myfile, "delete from ids_de_referencia);\n");
-fwrite($myfile, "delete from versoes);\n");
-fwrite($myfile, "delete from secoes);\n");
+fwrite($myfile, "delete from guarda_ids_da_lixeira;\n");
+fwrite($myfile, "delete from ids_de_referencia;\n");
+fwrite($myfile, "delete from versoes;\n");
+fwrite($myfile, "delete from secoes;\n");
 
 echo "insert into secoes values (1,'corpo_tese','raiz','',1,2, (SELECT id_chave_nested_tipo_secao from nested_tipos_secoes where nome_nested_tipo_secao='raiz'));<br><br>";
 

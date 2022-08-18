@@ -208,7 +208,7 @@ teste
 			</tr>
 			<tr id='linha_chave_mouse' style='height: 90%; border-spacing: 0px; line-height: 0px'>
 				<td colspan='2' style=' padding: 0px; line-height: 0px'>
-					<textarea data-id-chave-secao='-1' data-alterado='vazio' id='textarea_mouse' class='edicao_versao'>
+					<textarea data-id-chave-secao='-1' data-alterado='vazio' id='textarea_mouse' class='edicao_versao' style='background-color: lightgray'>
 					</textarea>
 				</td>
 			</tr>
@@ -244,7 +244,7 @@ teste
 			</tr>
 		<tr  id='linha_chave_teclado' style='height: 90%; padding: 0px; border-spacing: 0px; line-height: 0px'>
 			<td colspan='2' style=' padding: 0px' >
-			<textarea data-id-chave-secao='-1' data-alterado='gravado' id='textarea_teclado'  class='edicao_versao'>
+			<textarea data-id-chave-secao='-1' data-alterado='gravado' id='textarea_teclado'  class='edicao_versao' style='background-color: lightgray'>
 			</textarea>
 			</td>
 		</tr>

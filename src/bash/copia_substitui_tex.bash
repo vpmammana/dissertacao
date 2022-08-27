@@ -72,7 +72,7 @@ sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarT
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 touch ../bash/substitui_tex_1.bash
 chmod u+x ../bash/substitui_tex_1.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/CARACTERIZA\\\\\\c{C}\\\\\~AO DO PROGRAMA Workshop Aficionados por Software e Hardware (WASH)/g\" "$0}' > ../bash/substitui_tex_1.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/Caracteriza\\\\\\c{c}\\\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\\\\"acute"oria, M\\\\\\"acute"etodos e Resultados/g\" "$0}' > ../bash/substitui_tex_1.bash
 ../bash/substitui_tex_1.bash
 
 touch ../bash/substitui_tex_2.bash

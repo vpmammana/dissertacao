@@ -24,55 +24,64 @@
 \contentsline {section}{\numberline {2.5}Justificativa}{42}{section.2.5}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{45}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Historiografia e o discurso hist\'orico}{45}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Organiza\c {c}\~ao de dados: uma vis\~ao muito simples do modelo relacional}{47}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Sociedade da Informa\c {c}\~ao}{47}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{48}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Descri\c {c}\~ao do Programa WASH}{49}{section.3.5}% 
-\contentsline {section}{\numberline {3.6}O pensamento de Papert}{49}{section.3.6}% 
-\contentsline {section}{\numberline {3.7}O que \'e STEM?}{50}{section.3.7}% 
-\contentsline {section}{\numberline {3.8}Governo Eletr\^onico}{53}{section.3.8}% 
+\contentsline {section}{\numberline {3.1}Fundamenta\c {c}\~ao para o levantamento hist\'orico}{45}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Revis\~ao da evolu\c {c}\~ao da historiografia}{45}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Governo Eletr\^onico}{48}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Sociedade da Informa\c {c}\~ao}{53}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{54}{subsection.3.1.4}% 
+\contentsline {subsection}{\numberline {3.1.5}Descri\c {c}\~ao do Programa WASH}{54}{subsection.3.1.5}% 
+\contentsline {subsection}{\numberline {3.1.6}O pensamento de Papert}{55}{subsection.3.1.6}% 
+\contentsline {subsection}{\numberline {3.1.7}O que \'e STEM?}{56}{subsection.3.1.7}% 
+\contentsline {section}{\numberline {3.2}Fundamenta\c {c}\~ao para a caracteriza\c {c}\~ao do m\'etodo}{58}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Fundamenta\c {c}\~ao para a caracteriza\c {c}\~ao dos resultados}{59}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Indicadores}{59}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Informa\c {c}\~ao, dados e conhecimento}{60}{subsection.3.3.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{59}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}M\'etodo de Historiografia Utilizado }{59}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{59}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{59}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}M\'etodo de Caracteriza\c {c}\~ao do M\'etodo do WASH}{61}{section.4.4}% 
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{63}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}M\'etodo de Historiografia Utilizado }{63}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{63}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{63}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}M\'etodo de Caracteriza\c {c}\~ao do M\'etodo do WASH}{65}{section.4.4}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{63}{chapter.5}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{67}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Narrativa do GESAC}{67}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Narrativa do OLPC}{67}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Narrativa do Afira}{67}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Dados da Platu\'osh}{67}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Dados da plataforma de planejamento}{67}{section.5.5}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{65}{chapter.6}% 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{71}{chapter.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{67}{chapter.7}% 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{73}{chapter.7}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{69}{chapter.8}% 
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{75}{chapter.8}% 
 \vspace {\cftbeforechapterskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {AP\^ENDICES}}{71}{section*.15}% 
+\contentsline {part}{\uppercase {AP\^ENDICES}}{79}{section*.15}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{73}{appendix.A}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{81}{appendix.A}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{75}{appendix.B}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{83}{appendix.B}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{77}{appendix.C}% 
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{85}{appendix.C}% 
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{79}{section*.16}% 
+\contentsline {part}{\uppercase {ANEXOS}}{87}{section*.16}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{81}{appendix.anexochapback.1}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{89}{appendix.anexochapback.1}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{83}{appendix.anexochapback.2}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{91}{appendix.anexochapback.2}% 

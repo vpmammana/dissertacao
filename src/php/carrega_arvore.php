@@ -657,7 +657,7 @@ if ($result->num_rows>0) {
 	$zti6 = $left_folha_ts-$left_arvore_ts+$padding_folha_ts;
 	$zti7 = $top_folha_ts-$top_arvore_ts+$padding_folha_ts;
 
-        $arvore_tipos = $arvore_tipos."<div id='folha_arvore_tipos_secoes_".$id."' data-id-tipo-secao='".$id."' data-primeiro-filho='sem_filhos_registrados' class='folha_de_arvore sub_ganha_foco arvore_de_tipos' data-id-secao='".$nome."' data-cor-nivel='".$cor_nivel_tipos_secoes[$nivel]."' data-id-pai='".$pai."' data-cor-letra='".$cor_letra_nivel_tipos_secoes[$nivel]."' style=' background-color: ".$cor_nivel_tipos_secoes[$nivel]."; color: ".$cor_letra_nivel_tipos_secoes[$nivel]."; width: ".$largura_folha_ts."px; left: ".$zti6."px; top: ".$zti7."px;'>".$miolo_folha."</div>";
+        $arvore_tipos = $arvore_tipos."<div id='folha_arvore_tipos_secoes_".$id."' data-id-tipo-secao='".$id."' data-primeiro-filho='sem_filhos_registrados' class='folha_de_arvore sub_ganha_foco arvore_de_tipos' data-id-secao='".$nome."' data-nome-tipo-secao='".$nome."' data-cor-nivel='".$cor_nivel_tipos_secoes[$nivel]."' data-id-pai='".$pai."' data-cor-letra='".$cor_letra_nivel_tipos_secoes[$nivel]."' style=' background-color: ".$cor_nivel_tipos_secoes[$nivel]."; color: ".$cor_letra_nivel_tipos_secoes[$nivel]."; width: ".$largura_folha_ts."px; left: ".$zti6."px; top: ".$zti7."px;'>".$miolo_folha."</div>";
         $top_folha_ts = $top_folha_ts + ($altura_folha_ts + $padding_folha_ts);
 
 

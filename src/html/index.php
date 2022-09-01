@@ -387,6 +387,28 @@ var id_da_folha_onde_esta_flutuando;
 
 var matriz_ganha_foco=[]; // eh a matriz que guarda uma copia dos divs que serao percorridos pelo teclado.
 
+function recursao_para_achar_tipo_na_arvore (tipo_buscado, tipo_atual){ // esse malabarismo eh para dar sincronia na busca do tipo na arvore de tipos, porque estou simulando o teclado.
+	if (tipo_buscado == tipo_atual) {
+		setTimeout(function () {simula_key_down("2");}, 10); // achou, então entra em modo edicao usando a tecla simulada 2
+		return;
+	} else
+	{
+		setTimeout(function () 
+			{
+				simula_key_down("ArrowDown");
+				setTimeout(
+				function () {
+					tipo_atual = matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"); 
+				    console.log(tipo_buscado + " --------------" + tipo_atual);
+					recursao_para_achar_tipo_na_arvore(tipo_buscado, tipo_atual);
+				}
+				,10);
+			}
+		,50);
+	}
+
+}
+
 function grava_backup_sql(){
 var resposta="";
 var url='../php/grava_script_sql.php';
@@ -535,33 +557,6 @@ if (matriz_ganha_foco[x][0].includes("nivel")) {
 	itz_y = y;}
 
 window.location.search = "?tipo_secao="+tipo+"&filhos="+param_filhos+"&n_niveis="+quantos_niveis_mostra+"&json="+arrStr+"&fator_reducao="+fator_de_reducao_da_largura_da_arvore+"&palavra_de_busca="+str_palavra_de_busca+"&x_cursor="+ itz_x +"&y_cursor=" + itz_y;
-//var arrStr = encodeURIComponent(JSON.stringify(myArray));
-//var resposta="";
-//var param_filhos = document.getElementById("check_mostra_filhos").checked;
-//var url='../php/carrega_arvore.php?tipo_secao='+tipo+'&filhos='+param_filhos;
-//var oReq=new XMLHttpRequest();
-//           oReq.open("GET", url, false);
-//           oReq.onload = function (e) {
-//		     limpa_array();
-//document.removeChild(document.documentElement);	
-//		     min_esq = 10000000000000000000000000;
-//		     max_dir = 0;
-//                     resposta=oReq.responseText;
-//		     // let temp_html = document.getElementById("seletor").innerHTML;
-//		     document.body.innerHTML=resposta;
-////alert(radio);
-//		     setTimeout(function () 
-//				{
-//					document.getElementById(radio).checked = true;
-//					document.getElementById("check_mostra_filhos").checked = param_filhos;
-//				}, 1000);
-//			setTimeout(function () {inicializa();}, 1000);
-//
-//			//inicializa();
-//
-//                     }
-//           oReq.send();
-//
 } // fim recarrega
 
 function maximiza_altura(classe){
@@ -928,8 +923,35 @@ let futuro_y =0;
 				  return;
 	    }
 
+		if (e.key == "i" || e.key == "I") { // inserir nova secao do mesmo tipo da atual... a complicacao de setTimeout eh para dar a sincronizacao de simulacao de teclado
+				let tipo_secao_para_inserir = matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"); // guarda o tipo de secao onde o cursor estah agora.
+				if (!matriz_ganha_foco[x][0].includes("nivel")){ alert("Você precisa estar numa janela de nível para inserir."); return;}
+				setTimeout(function () {simula_key_down(" ");}, 10);
+				setTimeout(function () 
+					{
+						simula_key_down("ArrowRight");
+			            setTimeout(function () 
+							{
+								//alert(tipo_secao_para_inserir + ' arvore-> '+matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
+								if (tipo_secao_para_inserir == matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")) 
+									{setTimeout(function () {simula_key_down("2");}, 100);}
+								else {
+								      
+								    	setTimeout(
+											function () {
+												recursao_para_achar_tipo_na_arvore(tipo_secao_para_inserir, matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"));
+											}
+										, 10);
+									}
+								
+								;}
+							,10);
+					}
+				, 100);			
+		return;
+		} // if "I"
 
-		if (e.key == "2") {
+		if (e.key == "2") { // insercao de novo 
 			if (matriz_ganha_foco[x][1][y].getAttribute("data-id-secao")== "corpo_tese") {alert("Você não pode editar a raiz (corpo_tese) do documento. A operação será interrompida e nada será feito."); return;}
 			if (document.getElementById("textarea_mouse").getAttribute("data-alterado")=="gravado") {	
 			modo_edicao = true;
@@ -1553,13 +1575,39 @@ if (folha_da_arvore.getBoundingClientRect().top < moldura_da_arvore.getBoundingC
 }
 
 
-function simulateKey(view, keyCode, key) {
-  let event = document.createEvent("Event")
-  event.initEvent("keydown", true, true)
-  event.keyCode = keyCode
-  event.key = event.code = key
-  return view.someProp("handleKeyDown", f => f(view, event))
+/**
+ * Simulate a key event.
+ * @param {Number} keyCode The keyCode of the key to simulate
+ * @param {String} type (optional) The type of event : down, up or press. The default is down
+ * @param {Object} modifiers (optional) An object which contains modifiers keys { ctrlKey: true, altKey: false, ...}
+ * Fonte: https://gist.github.com/GlauberF/d8278ce3aa592389e6e3d4e758e6a0c2#file-keyeventsimulator-js
+ */
+function simulateKey (keyCode, type, modifiers) {
+	var evtName = (typeof(type) === "string") ? "key" + type : "keydown";	
+	var modifier = (typeof(modifiers) === "object") ? modifier : {};
+
+	var event = document.createEvent("HTMLEvents");
+	event.initEvent(evtName, true, false);
+	event.keyCode = keyCode;
+	
+	for (var i in modifiers) {
+		event[i] = modifiers[i];
+	}
+
+	document.dispatchEvent(event);
 }
+
+// Setup some tests
+
+
+
+//function simulateKey(view, keyCode, key) {
+//  let event = document.createEvent("Event")
+//  event.initEvent("keydown", true, true)
+//  event.keyCode = keyCode
+//  event.key = event.code = key
+//  return view.someProp("handleKeyDown", f => f(view, event))
+//}
 
 
 

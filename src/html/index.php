@@ -386,10 +386,69 @@ var padding_de_screen = 10; // evita que os elementos flutuantes encostem nas bo
 var id_da_folha_onde_esta_flutuando;
 
 var matriz_ganha_foco=[]; // eh a matriz que guarda uma copia dos divs que serao percorridos pelo teclado.
+var texto_a_separar="";
+
+
+function retorna_texto_de_textarea (){ // retorna a ultima parte do texto, a partir do cursor e depois deleta esta ultima parte
+	let field = textarea_em_edicao;
+	let start= field.selectionStart;
+	let end = field.value.length;
+	
+	if( field.createTextRange ) {
+	        var selRange = field.createTextRange();
+	        selRange.collapse(true);
+	        selRange.moveStart('character', start);
+	        selRange.moveEnd('character', end-start);
+	        selRange.select();
+	    } else if( field.setSelectionRange ) {
+	        field.setSelectionRange(start, end);
+	    } else if( field.selectionStart ) {
+	        field.selectionStart = start;
+	        field.selectionEnd = end;
+	    }
+	console.log(start + "=================" +end);
+	field.focus();
+	
+	texto_a_separar = textarea_em_edicao.value.slice(start, end);
+	let texto_que_deve_sobrar = textarea_em_edicao.value.slice(0, start).trim();
+	textarea_em_edicao.value = texto_que_deve_sobrar;
+	//alert(texto_que_deve_sobrar);
+	//alert("vai "+textarea_em_edicao.id+" starti "+start + " end "+end);
+	setTimeout(
+		function (){
+			simula_key_down("Tab");
+			setTimeout(
+				function () {
+					simula_key_down("i");		
+			}
+			,20);
+		}
+	,10);
+	
+	
+} // retorna_texto_de_textarea
 
 function recursao_para_achar_tipo_na_arvore (tipo_buscado, tipo_atual){ // esse malabarismo eh para dar sincronia na busca do tipo na arvore de tipos, porque estou simulando o teclado.
 	if (tipo_buscado == tipo_atual) {
 		setTimeout(function () {simula_key_down("2");}, 10); // achou, então entra em modo edicao usando a tecla simulada 2
+		setTimeout(function () 
+						{
+	//						alert("texto a separar -> "+texto_a_separar);
+							if (texto_a_separar > "") 
+							{
+								setTimeout(
+								function (){
+									textarea_mouse.value =  texto_a_separar;
+									// alert("vai clicar na insercao abaixo");
+									document.getElementById("botao_nova_secao_abaixo").click();
+									texto_a_separar="";
+								}
+								,100)
+							}
+						}
+				  , 50
+				  ); // 
+
 		return;
 	} else
 	{
@@ -883,6 +942,7 @@ let futuro_y =0;
 
 		
 		if (e.key == "Tab" && modo_edicao) {
+//			alert("tab");
 			if (document.getElementById("botao_nova_secao_abaixo").disabled==true){
 			modo_edicao = false;
 			textarea_em_edicao.blur();// tira o foco do textarea 
@@ -932,18 +992,18 @@ let futuro_y =0;
 						simula_key_down("ArrowRight");
 			            setTimeout(function () 
 							{
-								//alert(tipo_secao_para_inserir + ' arvore-> '+matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
-								if (tipo_secao_para_inserir == matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")) 
-									{setTimeout(function () {simula_key_down("2");}, 100);}
-								else {
-								      
-								    	setTimeout(
-											function () {
-												recursao_para_achar_tipo_na_arvore(tipo_secao_para_inserir, matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"));
-											}
-										, 10);
-									}
-								
+								recursao_para_achar_tipo_na_arvore(tipo_secao_para_inserir, matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"));
+//alert(tipo_secao_para_inserir + ' arvore-> '+matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
+//								if (tipo_secao_para_inserir == matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")) 
+//									{setTimeout(function () {simula_key_down("2");}, 100);}
+//								else {
+//								      
+//								    	setTimeout(
+//											function () {
+//												//											}
+//										, 10);
+//									}
+//								
 								;}
 							,10);
 					}
@@ -1835,6 +1895,7 @@ for (let i = 0; i < textareas.length; i++) {
 					this.setAttribute("data-alterado","sem_gravar");
 					this.style.backgroundColor = cor_de_edicao; 
 					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
+					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("separa_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
 					if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
 					console.log("grava_"+textarea_em_edicao.id);
 					console.log(document.getElementById("grava_"+textarea_em_edicao.id).disabled);

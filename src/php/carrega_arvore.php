@@ -255,7 +255,7 @@ teste
 			<tr style='height: 20%; border: 1px solid black; line-height: 0px'>
 				<td ><input id='grava_textarea_teclado' type='button' value='grava' onclick='let temp_textarea=document.getElementById(`textarea_teclado`); grava_trecho(temp_textarea.getAttribute(`data-id-chave-secao`), temp_textarea.getAttribute(`data-id-secao`, document.getElementById(`versoes_teclado`), `textarea_teclado`), temp_textarea.value); this.disabled=true'></td>
 				<td ><input id='botao_lixeira_teclado' type='button' value='lixeira' value='lixeira' onclick='if (document.getElementById(`edita_secoes_teclado_id_secao`).innerText==`sem_selecao`){alert(`Você não selecionou uma seção nas janelas de níveis.`); return;} transpoe_subarvore(document.getElementById(`edita_secoes_teclado_id_secao`).innerText,`lixeira`)'></td>
-				<td ><input type='button' value='separa'></td>
+				<td ><input id='separa_textarea_teclado' type='button' value='separa' onclick='retorna_texto_de_textarea();'></td>
 				<td ><input type='button' value='junta'></td>
 				<td ><input type='button' value='sobe'></td>
 				<td ><input type='button' value='desce'></td>

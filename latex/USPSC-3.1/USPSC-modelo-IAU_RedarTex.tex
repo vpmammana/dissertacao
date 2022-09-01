@@ -74,7 +74,9 @@ brazil				% o \'ultimo idioma \'e o principal do documento
 \usepackage{lastpage}			% Usado pela Ficha catalogr\'afica
 \usepackage{indentfirst}		% Indenta o primeiro par\'agrafo de cada se\c{c}\~ao.
 \usepackage{color}				% Controle das cores
-\usepackage{graphicx}			% Inclus\~ao de gr\'aficos
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+			% Inclus\~ao de gr\'aficos
 \usepackage{float} 				% Fixa tabelas e figuras no local exato
 \usepackage{chemfig,chemmacros} % Para escrever rea\c{c}\~oes qu\'{\i}micas
 \usepackage{tikz}				% Para escrever rea\c{c}\~oes qu\'{\i}micas e outros
@@ -682,7 +684,7 @@ Um trabalho mais completo de descri\c{c}\~ao, mas baseado na mesma estrutura b\'
 
 	\begin{center}
 
-		\includegraphics[scale=0.5]{../../imagens/MEOS.png}
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/MEOS.png}
 
 	\end{center}
 
@@ -989,7 +991,7 @@ Inicialmente tais transforma\c{c}\~oes eram associadas principalmente \`a substi
 
 
 
-V\'arios pa\'{\i}ses t\^em buscado uma melhor prepara\c{c}\~ao para enfrentar essas transforma\c{c}\~oes, dotando o cidad\~ao de meios cognitivos, de conhecimento e culturais para se readaptar. Para isso, t\^em procurado remodelar seus sistemas educacionais, uma vez que "ficar para tr\'as" em rela\c{c}\~ao aos demais pa\'{\i}ses pode afetar a prosperidade de suas popula\c{c}\~oes, sua autonomia e liberdade [XXX].
+V\'arios pa\'{\i}ses t\^em buscado uma melhor prepara\c{c}\~ao para enfrentar essas transforma\c{c}\~oes, dotando o cidad\~ao de meios cognitivos, de conhecimento e cultura para se readaptar. Para isso, t\^em procurado remodelar seus sistemas educacionais, uma vez que “ficar para tr\'as” em rela\c{c}\~ao aos demais pa\'{\i}ses pode afetar a prosperidade de suas popula\c{c}\~oes, sua autonomia e liberdade [XXX].
 
 
 
@@ -1681,7 +1683,7 @@ Como nos ensina  Marczal (2016),  Her\'odoto e Tuc\'{\i}dides s\~ao muitas vezes
 
 	\begin{center}
 
-		\includegraphics[scale=0.5]{../../imagens/Herodote.jpg}
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/Herodote.jpg}
 
 	\end{center}
 
@@ -1718,7 +1720,7 @@ Mas a origem da hist\'oria como atividade profissional, com o vi\'es de ci\^enci
 
 	\begin{center}
 
-		\includegraphics[scale=0.5]{../../imagens/ranke.jpg}
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/ranke.jpg}
 
 	\end{center}
 
@@ -3399,7 +3401,7 @@ Aqui \'e apresentada a caracteriza\c{c}\~ao dos resultados do WASH.
 
 
 \subsection[Dados da Platu\'osh]{Dados da Platu\'osh}\label{Dados da Platu\'osh}
-Abaixo est\~ao presentes os gr\'aficos da platu\'osh, que \'e a plataforma do WASH.
+Nesta se\c{c}\~ao ser\~ao apresentados os indicadores do Projeto WASH encontrados por meio da aplica\c{c}\~ao do m\'etodo descrito em Materiais e M\'etodos.
 
 
 
@@ -3416,7 +3418,7 @@ Abaixo est\~ao presentes os gr\'aficos da platu\'osh, que \'e a plataforma do WA
 
 	\begin{center}
 
-		\includegraphics[scale=0.5]{../../imagens/distribuicao-dos-eventos-ao-longo-dos-anos-menor.png}
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/distribuicao-dos-eventos-ao-longo-dos-anos-menor.png}
 
 	\end{center}
 
@@ -3442,13 +3444,13 @@ a pr\'atica de educa\c{c}\~ao cientifica
 
 	\begin{center}
 
-		\includegraphics[scale=0.5]{../../imagens/distribuicao-das-idades-dos-participantes.png}
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/histograma-de-idades-no-ano-do-evento.png}
 
 	\end{center}
 
-	\caption{\label{distribuicao-das-idades-dos-participantes}@[caption-distribuicao-das-idades-dos-participantes]@}
+	\caption{\label{histograma-de-idades-no-ano-do-evento}@[caption-histograma-de-idades-no-ano-do-evento]@}
 
-	\legend{Fonte: \citeonline{cite-distribuicao-das-idades-dos-participantes}}
+	\legend{Fonte: \citeonline{cite-histograma-de-idades-no-ano-do-evento}}
 
 \end{figure}
 Segue mais.
@@ -3468,7 +3470,7 @@ Segue mais.
 
 	\begin{center}
 
-		\includegraphics[scale=0.5]{../../imagens/participantes-por-genero.png}
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/participantes-por-genero.png}
 
 	\end{center}
 
@@ -3488,21 +3490,6 @@ Histograma
 
 
 
-
-
-\begin{figure}[htb]
-
-	\begin{center}
-
-		\includegraphics[scale=0.5]{../../imagens/idade-mulheres-no-ano-do-evento.png}
-
-	\end{center}
-
-	\caption{\label{idade-mulheres-no-ano-do-evento}@[caption-idade-mulheres-no-ano-do-evento]@}
-
-	\legend{Fonte: \citeonline{cite-idade-mulheres-no-ano-do-evento}}
-
-\end{figure}
 mais um par\'agrafo
 
 
@@ -3514,21 +3501,6 @@ mais um par\'agrafo
 
 
 
-
-
-\begin{figure}[htb]
-
-	\begin{center}
-
-		\includegraphics[scale=0.5]{../../imagens/idades-homens-no-ano-do-evento.png}
-
-	\end{center}
-
-	\caption{\label{idades-homens-no-ano-do-evento}@[caption-idades-homens-no-ano-do-evento]@}
-
-	\legend{Fonte: \citeonline{cite-idades-homens-no-ano-do-evento}}
-
-\end{figure}
 \subsection[Dados da plataforma de planejamento]{Dados da plataforma de planejamento}\label{Dados da plataforma de planejamento}
 participantes
 

@@ -1,10 +1,12 @@
 \cp ../../latex/USPSC-3.1/USPSC-modelo-IAU.pdf ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-Tutorial.pdf ../../latex/USPSC-3.1/USPSC-Tutorial_RedarTex.pdf 
+\cp ../../latex/USPSC-3.1/testando.pdf ../../latex/USPSC-3.1/testando_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-marca.pdf ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-marca_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-grafico.pdf ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-grafico_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-PaginaEmBranco_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica_RedarTex.pdf 
+\cp ../../latex/USPSC-3.1/testando2.pdf ../../latex/USPSC-3.1/testando2_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-classe/USPSC1.cls ../../latex/USPSC-3.1/USPSC-classe/USPSC1_RedarTex.cls 
 \cp ../../latex/USPSC-3.1/USPSC-classe/USPSC.cls ../../latex/USPSC-3.1/USPSC-classe/USPSC_RedarTex.cls 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-modelo.tex ../../latex/USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex 
@@ -37,6 +39,13 @@
 \cp ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-IndicesRemissivos.tex ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Apendices.tex ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex ../../latex/USPSC-3.1/USPSC-pre-textual-IAU_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/.texlive2018 ../../latex/USPSC-3.1/_RedarTex.texlive2018 
+\cp ../../latex/USPSC-3.1/.texlive2018/texmf-var ../../latex/USPSC-3.1/_RedarTex.texlive2018/texmf-var 
+\cp ../../latex/USPSC-3.1/.texlive2018/texmf-var/fonts ../../latex/USPSC-3.1/_RedarTex.texlive2018/texmf-var/fonts 
+\cp ../../latex/USPSC-3.1/.texlive2018/texmf-var/fonts/pk ../../latex/USPSC-3.1/_RedarTex.texlive2018/texmf-var/fonts/pk 
+\cp ../../latex/USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour ../../latex/USPSC-3.1/_RedarTex.texlive2018/texmf-var/fonts/pk/ljfour 
+\cp ../../latex/USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen ../../latex/USPSC-3.1/_RedarTex.texlive2018/texmf-var/fonts/pk/ljfour/jknappen 
+\cp ../../latex/USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec ../../latex/USPSC-3.1/_RedarTex.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-modelo-IQSC.tex ../../latex/USPSC-3.1/USPSC-TCC-modelo-IQSC_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-modelo-IFSCp.tex ../../latex/USPSC-3.1/USPSC-modelo-IFSCp_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC.tex ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex 
@@ -137,6 +146,13 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-pre-textual-OUTRO[}]/include{USPSC-pre-textual-OUTRO_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-pre-textual-Tutorial[}]/include{USPSC-pre-textual-Tutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2018[}]/include{live2018_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2018\/texmf-var[}]/include{live2018\/texmf-var_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts[}]/include{live2018\/texmf-var\/fonts_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk[}]/include{live2018\/texmf-var\/fonts\/pk_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk\/ljfour[}]/include{live2018\/texmf-var\/fonts\/pk\/ljfour_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen[}]/include{live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec[}]/include{live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PosTextual\/USPSC-Anexos[}]/include{USPSC-TA-PosTextual\/USPSC-Anexos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PosTextual\/USPSC-Apendices[}]/include{USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex}/g' 
@@ -200,3 +216,10 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-pre-textual-OUTRO[}]/include{USPSC-pre-textual-OUTRO_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-pre-textual-Tutorial[}]/include{USPSC-pre-textual-Tutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2018[}]/include{live2018_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2018\/texmf-var[}]/include{live2018\/texmf-var_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts[}]/include{live2018\/texmf-var\/fonts_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk[}]/include{live2018\/texmf-var\/fonts\/pk_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk\/ljfour[}]/include{live2018\/texmf-var\/fonts\/pk\/ljfour_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen[}]/include{live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec[}]/include{live2018\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec_RedarTex}/g' 

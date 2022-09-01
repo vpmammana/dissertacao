@@ -44,7 +44,7 @@ if ($nome_tipo_secao == "imagem"){
 	$texto_latex = "\n
 \\begin{figure}[htb]\n
 	\\begin{center}\n
-		\\includegraphics[scale=0.5]{../../imagens/".$texto."}\n
+		\\includegraphics[max size={\\textwidth}{\\textheight}]{../../imagens/".$texto."}\n
 	\\end{center}\n
 	\\caption{\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
 	\\legend{Fonte: \citeonline{cite-".$id_arquivo."}}\n

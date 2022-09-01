@@ -57,6 +57,13 @@ sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-TA-PosTextual/USPSC-Apendi
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IAU.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-Tutorial-num_RedarTex.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-modelo-EESC_RedarTex.tex
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.texlive2018
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-IQSC.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-modelo-IFSCp.tex
@@ -97,6 +104,7 @@ sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-EESC.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
+sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-modelo-IAU.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/à/\\\\\`a/g" ../../latex/./USPSC-3.1/USPSC-modelo.tex

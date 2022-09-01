@@ -1,4 +1,4 @@
-#ATENÇÃO -> underscore é um carácter especial para o LaTeX e portanto não pode ser usado como identifiar. Mas o RaderTex utiliza underscore como nome de seções. Provavelmente nao terei problemas se tirar o underscore, mas daí tem que tomar cuidado para não ter um dois identificadores diferentes tipo "titulo_abstract" e "tituloabstract", porque para o LaTeX serã o mesmo identificador
+#ATENÇÃO -> underscore é um carácter especial para o LaTeX e portanto não pode ser usado como identificador nem como nome de arquivo de imagens, ou outros tipos de arquivos. Mas o RaderTex utiliza underscore como nome de seções. Provavelmente nao terei problemas se tirar o underscore, mas daí tem que tomar cuidado para não ter um dois identificadores diferentes tipo "titulo_abstract" e "tituloabstract", porque para o LaTeX serã o mesmo identificador
 #ATENÇÃO -> hastag é um caracter especial para mysql 
 
 
@@ -132,6 +132,25 @@ sed -i "s/titulo[{]Modelo para elabora\\\c[{]c[}]\\\~ao de trabalhos acad\\\^emi
 sed -i "s/titulo[{]Modelo para TCC em \\\LaTeX\\\ utilizando o Pacote USPSC[}]/titulo{@[titulo]@}/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex               
 sed -i "s/tituloadic[{]Modelo para TC em \\\LaTeX\\\ utilizando o Pacote USPSC para o ICMC[}]/tituloadic{@[titulo]@}/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC.tex                 
 sed -i "s/tituloadic[{]Modelo para TCC em \\\LaTeX\\\ utilizando o Pacote USPSC para o ICMC[}]/tituloadic{@[titulo]@}/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC.tex                 
+
+# coloca o package adjustbox para garantir que todas imagens caberão
+
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap2-DesenvolvimentoTutorial.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCp.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-EESC.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCe.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IQSC.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-IQSC.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCp.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-Tutorial.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-EESC.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-Tutorial-num.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo.tex
+sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCe.tex
 
 
 sed -i "s/orientador[{]Profa. Dra. Elisa Gon\\\c[{]c[}]alves Rodrigues[}]/orientador{Prof(a). Dr(a). @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex          

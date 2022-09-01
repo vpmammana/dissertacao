@@ -50,6 +50,7 @@ sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-modelo_Reda
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
+sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC_RedarTex.tex
 sed -i "s/@\[mestreoudoutor\]@/Mestre/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.tex

@@ -389,7 +389,15 @@ var matriz_ganha_foco=[]; // eh a matriz que guarda uma copia dos divs que serao
 var texto_a_separar="";
 
 
-function junta_proximo (){
+function junta_proximo (){i
+
+var tipos_autorizados = "paragrafo, citacao, item_lista_num, item_lista_nao_num";
+
+if (!matriz_ganha_foco[x][0].includes("nivel")) {alert("Você só pode fazer junta numa janela de nível."); return;}
+if (x == 0) {alert("Você não pode juntar seções do nível 1."); return;}
+if (y >= matriz_ganha_foco[x][1].length-1) {alert("Você está na última seção do nível e não há nada para juntar."); return;}
+if (matriz_ganha_foco[x][1][y].getAttribute("data-id-pai")!=matriz_ganha_foco[x][1][y+1].getAttribute("data-id-pai")) {alert("Você está na última subseção da seção "+matriz_ganha_foco[x][1][y].getAttribute("data-id-pai")+ "  e portanto não há nada para juntar."); return;}
+if (!tipos_autorizados.includes(matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"))) {alert("Apenas os tipos "+ tipos_autorizados + " podem ser juntados. Você está tentando juntar em uma seção tipo "+matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")); return;}
 setTimeout(
 function (){
 	simula_key_down("Tab");
@@ -410,27 +418,29 @@ function (){
 											textarea_teclado.value = textarea_teclado.value + " " + textarea_mouse.value;
 											setTimeout(
 												function (){
+													alert(textarea_teclado.value);
 													simula_key_down("Tab");
 													setTimeout(
 														function (){
 															transpoe_subarvore(document.getElementById(`edita_secoes_mouse_id_secao`).innerText,`lixeira`);
 														}
-													,20);
+													,40);
 												}
-											,20);
+											,40);
 										}
-									,20);
+									,40);
 								}
-							,20);
+							,40);
 						}
-					,20);
+					,40);
 				}
-			,20);
+			,40);
 		}
-	,20);
+	,40);
 
 }
-,20);
+,40);
+
 } // junta_proximo
 
 function retorna_texto_de_textarea (){ // retorna a ultima parte do texto, a partir do cursor e depois deleta esta ultima parte
@@ -940,8 +950,8 @@ let futuro_y =0;
 				futuro_y = gemeo_atual_na_arvore.getAttribute("data-y");
 				
 				y--;
-				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}
-
+//				if (y < 0) {y=matriz_ganha_foco[x][1].length -1;}
+				if (y < 0) {y=1;}
 	    		console.log(x+" * "+y + " futuro_y "+ futuro_y);
 				guarda_ultimo_visitado[x]=y;
 			}
@@ -975,7 +985,7 @@ let futuro_y =0;
 			textarea_em_edicao.value = array_scroll_horizontal[array_scroll_horizontal.length - 1].getAttribute("data-trecho"); ;
 		        textarea_em_edicao.setAttribute("data-alterado","gravado");
 			textarea_em_edicao.style.backgroundColor = cor_de_gravado;	
-			}
+			} else {textarea_em_edicao.focus();}
 
 		}
 		if (e.key == "Enter" && modo_edicao && textarea_em_edicao == document.getElementById("textarea_mouse") && document.activeElement != document.getElementById("drop_1_2")) {
@@ -992,12 +1002,13 @@ let futuro_y =0;
 			desabilita_box("true", "edita_secoes_mouse");
 			desabilita_box("true", "edita_secoes_teclado");
 
-			ajusta_bordas_do_selecionado();
+//alert("oi2 " + textarea_em_edicao.value);
 			if (textarea_em_edicao != null && versoes_em_edicao != null) {
 				grava_trecho(textarea_em_edicao.getAttribute(`data-id-chave-secao`),  textarea_em_edicao.getAttribute(`data-id-secao`), textarea_em_edicao.value, versoes_em_edicao, textarea_em_edicao);
 	
 			} else {alert("Ocorreu erro XPTO.");}
 			} else {alert("Você não pode gravar agora. Escolha se quer inserir a imagem acima ou abaixo da seção atual.");}
+			ajusta_bordas_do_selecionado();
 			return;
 			
 		;}
@@ -1028,7 +1039,9 @@ let futuro_y =0;
 
 		if (e.key == "i" || e.key == "I") { // inserir nova secao do mesmo tipo da atual... a complicacao de setTimeout eh para dar a sincronizacao de simulacao de teclado
 				let tipo_secao_para_inserir = matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"); // guarda o tipo de secao onde o cursor estah agora.
+				let autorizados_para_i = "paragrafo, chama_ref, citacao, imagem, legenda_imagem, grafico, legenda_grafico, tabela, legenda_tabela, item_lista_num, item_lista_nao_num, item_de_referencia";
 				if (!matriz_ganha_foco[x][0].includes("nivel")){ alert("Você precisa estar numa janela de nível para inserir."); return;}
+				if (!autorizados_para_i.includes(tipo_secao_para_inserir)) {alert("Você só pode usar o shortcut 'i' para os seguintes tipos de secoes: "+tipo_secao_para_inserir+"."); return;}
 				setTimeout(function () {simula_key_down(" ");}, 10);
 				setTimeout(function () 
 					{
@@ -1036,18 +1049,7 @@ let futuro_y =0;
 			            setTimeout(function () 
 							{
 								recursao_para_achar_tipo_na_arvore(tipo_secao_para_inserir, matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"));
-//alert(tipo_secao_para_inserir + ' arvore-> '+matriz_ganha_foco[x][1][y].getAttribute("data-id-secao"));
-//								if (tipo_secao_para_inserir == matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")) 
-//									{setTimeout(function () {simula_key_down("2");}, 100);}
-//								else {
-//								      
-//								    	setTimeout(
-//											function () {
-//												//											}
-//										, 10);
-//									}
-//								
-								;}
+							}
 							,10);
 					}
 				, 100);			

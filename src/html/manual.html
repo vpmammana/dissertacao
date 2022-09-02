@@ -888,6 +888,31 @@ O caminho de inserção de uma nova seção é um pouco desajeitado. Para ficar mais 
 Ao apartar a tecla "i", a inserção se dará no Box 2.
 </p>
 
+<h2>Relatório de Testes</h2>
+
+<h3>
+Shortcut I para inserção de novo item
+</h3>
+
+<p>
+<b>2022_09_02</b> - Foi detectado um problema quando o cursor está sobre um seção do tipo topico. Foi preciso colocar um bloqueador na função, para só permitir a inserção quando estão em um filho de tópico, a exemplo de "paragrafo, chama_ref, citacao, imagem, etc.".
+</p>
+
+<p>
+<b>2022_09_02</b> - Ainda existe um comportamento da UIX desconfortável que é: quando se tenta inserir no primeiro item de um nível, é acionado um scroll que mostra o último item do nível, criando uma bagunça mental no usuário. Existe uma lógica: quando vamos inserir um item, o cursor pula para a árvore de seções, na mesma seção em que estava na janela de níveis. Isso obriga que o item selecionado em Box 1 seja o anterior ao primeiro, que já está selecionado na árvore de seções. Isso significa o último da janela de níveis e, portanto, um pulo de scroll para o final da janela. Não tem nada de errado com a lógica, só que é desconfortável. A solução é evitar esse pulo, jogando o cursor para o próximo, ao invés de mandar para o anterior. Assim, quando for inserir na primeira seção, o cursor da Janela de Níveis vai para o segundo item do nível, enquanto o cursor na Árvore de Seções vai para o primeiro item do nível. <b>CORRIGIDO:</b> foi mudada a ação no caso de y ser menor 0, como segue:
+<code>
+                if (y < 0) {y=1;}
+
+</code>
+</p>
+<h3>
+Mandar paragrafo para lixeira
+</h3>
+
+<p>
+<b>2022_09_02</b> - Ao selecionar uma seção do tipo "paragrafo" com o cursor na janela de níveis, é possível apagar usando o botão "lixeira" da Box 1. O parágrafo é enviado para o capítulo ad-hoc de "lixeira". Verifiquei várias vezes para diversos níveis. Falta verificar a situação para uma deleção do tipo "topico". Será que a árvore inteira vai para a lixeira?
+</p>
+
 
 <h2>Bugs conhecidos e outras Restrições</h2>
 

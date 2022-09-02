@@ -481,7 +481,7 @@ if ($result->num_rows>0) {
 	$zti2 = $top_folha-$top_arvore+$padding_folha;
 
 // data-id-chave eh a chave primaria da tabela secoes
-	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."' data-nivel='".$nivel."' data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."' data-nome-tipo-secao='".$nome_tipo_secao."' data-gemeo='secao_".$id_secao."' data-da-lixeira='".$eh_da_lixeira."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'>".$id_secao."</div>"; // note a repeticao da propriedade de nivel com data-x e data-nivel -> apenas para nao ter que mudar um pedaco de codigo na function inicializa() do index.html 
+	$arvore = $arvore."<div id='folha_arvore_".$id_secao."' class='folha_de_arvore pode_mostrar_trechos  contem_trechos sub_ganha_foco' data-y='".$conta_folhas."' data-x='".$nivel."' data-nivel='".$nivel."' data-cor-nivel='".$cor_nivel[$nivel]."' data-cor-letra='".$cor_letra_nivel[$nivel]."' data-id-secao='".$id_secao."' data-conta-versoes='".$conta_versoes."' data-nome-tipo-secao='".$nome_tipo_secao."' data-gemeo='secao_".$id_secao."' data-da-lixeira='".$eh_da_lixeira."' data-id-chave='".$id_chave."' data-version-date='".$data_versao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' style=' background-color: ".$cor_nivel[$nivel]."; color: ".$cor_letra_nivel[$nivel]."; width: ".$largura_folha."px; left: ".$zti1."px; top: ".$zti2."px;'  onclick='simula_key_down(`Escape`);'>".$id_secao."</div>"; // note a repeticao da propriedade de nivel com data-x e data-nivel -> apenas para nao ter que mudar um pedaco de codigo na function inicializa() do index.html 
 	$conta_folhas++;
 	$top_folha = $top_folha + ($altura_folha + $padding_folha);
 	
@@ -538,7 +538,7 @@ if ( $param_palavra_de_busca =="" || preg_match("/".$temp_palavra_de_busca."/i",
    if ($param_palavra_de_busca !="" && preg_match("/".$temp_palavra_de_busca."/i", $temp_titulo)==1) {
  	$titulo = preg_replace("/".$param_palavra_de_busca."/i", "<b>$0</b>", $titulo); // cria bold no matches
    }; 
-	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-y='-1' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."'  >".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>"; // sao os elementos das janelas de niveis? data-y='-1' significa que ainda nao foi atribuído um indice data-y ao elemento da janela de niveis
+	$itz = $espaco."<div id='secao_".$id_secao."' data-id-filho='".$id_secao."' data-id-secao='".$id_secao."' data-id-pai='".$id_pai."' data-titulo='".$titulo_de_arvore."' data-nivel='".$nivel."' data-y='-1' data-version-date='".$data_versao."' data-conta-versoes='".$conta_versoes."' data-id-chave='".$id_chave."' data-gemeo='folha_arvore_".$id_secao."' data-nome-tipo-secao='".$nome_tipo_secao."'  data-da-lixeira='".$eh_da_lixeira."'  data-cor-nivel='".$cor_nivel[$nivel+1]."' data-cor-letra='".$cor_letra_nivel[$nivel+1]."' class='secao sub_ganha_foco contem_trechos' style='".$back_ground_color." width: ".$largura_pai_efetivo."px; ".$style."' onclick='simula_key_down(`Escape`);' >".$div_padding.$para.$titulo.$barra_para.$barra_div_padding."</div>"; // sao os elementos das janelas de niveis? data-y='-1' significa que ainda nao foi atribuído um indice data-y ao elemento da janela de niveis
 
 
 
@@ -595,7 +595,7 @@ if ($altura_moldura > $max_tamanho_arvore) {$altura_moldura = $max_tamanho_arvor
 $zti4 = $min_folha-$padding_arvore;
 $zti5 = $min_top_folha - $padding_arvore;
 
-echo "<div id='flutua_para_direita' class='moldura ganha_foco' style=' width: ".$largura_moldura."px; height: ".$altura_moldura."px; left: ".$zti4."px; top: ".$zti5."px'><div id='cabecalio_flutua_para_direita' class='cabecalio_de_arvore' style='width: ".$largura_moldura."px; height: ".$altura_cabecalio."px;'><label  style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha Box 2</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox'  id='check_mostra_trechos' onclick='percorre_arvore_trechos(this.checked)' checked>Mostra Trechos</input></div></div>".$arvore."</div>";
+echo "<div id='flutua_para_direita' class='moldura ganha_foco' style=' width: ".$largura_moldura."px; height: ".$altura_moldura."px; left: ".$zti4."px; top: ".$zti5."px'  onclick='simula_key_down(`Escape`);'><div id='cabecalio_flutua_para_direita' class='cabecalio_de_arvore' style='width: ".$largura_moldura."px; height: ".$altura_cabecalio."px;'><label  style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha Box 2</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox'  id='check_mostra_trechos' onclick='percorre_arvore_trechos(this.checked)' checked>Mostra Trechos</input></div></div>".$arvore."</div>";
 //echo "</table>";
 $conn->next_result();
 
@@ -657,7 +657,7 @@ if ($result->num_rows>0) {
 	$zti6 = $left_folha_ts-$left_arvore_ts+$padding_folha_ts;
 	$zti7 = $top_folha_ts-$top_arvore_ts+$padding_folha_ts;
 
-        $arvore_tipos = $arvore_tipos."<div id='folha_arvore_tipos_secoes_".$id."' data-id-tipo-secao='".$id."' data-primeiro-filho='sem_filhos_registrados' class='folha_de_arvore sub_ganha_foco arvore_de_tipos' data-id-secao='".$nome."' data-nome-tipo-secao='".$nome."' data-cor-nivel='".$cor_nivel_tipos_secoes[$nivel]."' data-id-pai='".$pai."' data-cor-letra='".$cor_letra_nivel_tipos_secoes[$nivel]."' style=' background-color: ".$cor_nivel_tipos_secoes[$nivel]."; color: ".$cor_letra_nivel_tipos_secoes[$nivel]."; width: ".$largura_folha_ts."px; left: ".$zti6."px; top: ".$zti7."px;'>".$miolo_folha."</div>";
+        $arvore_tipos = $arvore_tipos."<div id='folha_arvore_tipos_secoes_".$id."' data-id-tipo-secao='".$id."' data-primeiro-filho='sem_filhos_registrados' class='folha_de_arvore sub_ganha_foco arvore_de_tipos' data-id-secao='".$nome."' data-nome-tipo-secao='".$nome."' data-cor-nivel='".$cor_nivel_tipos_secoes[$nivel]."' data-id-pai='".$pai."' data-cor-letra='".$cor_letra_nivel_tipos_secoes[$nivel]."' style=' background-color: ".$cor_nivel_tipos_secoes[$nivel]."; color: ".$cor_letra_nivel_tipos_secoes[$nivel]."; width: ".$largura_folha_ts."px; left: ".$zti6."px; top: ".$zti7."px;'  onclick='simula_key_down(`Escape`);'>".$miolo_folha."</div>";
         $top_folha_ts = $top_folha_ts + ($altura_folha_ts + $padding_folha_ts);
 
 
@@ -679,7 +679,7 @@ $zti8 =$min_folha_ts-$padding_arvore_ts;
 $zti9 =$min_top_folha_ts - $padding_arvore_ts - $altura_cabecalio_arvore;
 
 echo "
-<div id='seletor' class='moldura_ts ganha_foco' style=' width: ".$largura_moldura_ts."px; height: ".$altura_moldura_ts."px; left: ".$zti8."px; top: ".$zti9."px'><div id='cabecalio_seletor' class='cabecalio_de_arvore' style=' width: ".$largura_moldura_ts."px; height: ".$altura_cabecalio_arvore."px;'><label style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha o tipo de seção:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_filhos' >Mostra Folhas</input></div></div>
+<div id='seletor' class='moldura_ts ganha_foco' style=' width: ".$largura_moldura_ts."px; height: ".$altura_moldura_ts."px; left: ".$zti8."px; top: ".$zti9."px' onclick='simula_key_down(`Escape`);'><div id='cabecalio_seletor' class='cabecalio_de_arvore' style=' width: ".$largura_moldura_ts."px; height: ".$altura_cabecalio_arvore."px;'><label style='color: yellow; display: run-in; margin-left: 0px; float: left; font-weight: bold; font-size: 1rem; padding-top: 0px'>Escolha o tipo de seção:</label><div style='top: 0px; right: 40px; position: absolute'><input type='checkbox' id='check_mostra_filhos' >Mostra Folhas</input></div></div>
 ".$arvore_tipos."</div>";
 $conn2->next_result();
 $conn2->close();

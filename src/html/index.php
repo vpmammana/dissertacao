@@ -389,6 +389,50 @@ var matriz_ganha_foco=[]; // eh a matriz que guarda uma copia dos divs que serao
 var texto_a_separar="";
 
 
+function junta_proximo (){
+setTimeout(
+function (){
+	simula_key_down("Tab");
+	setTimeout(
+		function (){
+			simula_key_down("ArrowDown");
+			setTimeout(
+				function (){
+					simula_key_down(" ");			
+					setTimeout(
+						function (){
+							simula_key_down("ArrowLeft");
+							setTimeout(
+								function (){
+									simula_key_down("1");
+									setTimeout(
+										function (){
+											textarea_teclado.value = textarea_teclado.value + " " + textarea_mouse.value;
+											setTimeout(
+												function (){
+													simula_key_down("Tab");
+													setTimeout(
+														function (){
+															transpoe_subarvore(document.getElementById(`edita_secoes_mouse_id_secao`).innerText,`lixeira`);
+														}
+													,20);
+												}
+											,20);
+										}
+									,20);
+								}
+							,20);
+						}
+					,20);
+				}
+			,20);
+		}
+	,20);
+
+}
+,20);
+} // junta_proximo
+
 function retorna_texto_de_textarea (){ // retorna a ultima parte do texto, a partir do cursor e depois deleta esta ultima parte
 	let field = textarea_em_edicao;
 	let start= field.selectionStart;
@@ -833,7 +877,6 @@ var oReq=new XMLHttpRequest();
 
 function transpoe_subarvore(secao_movel, secao_alvo){
 
-if (!confirm("Tem certeza que você quer transferir esta seção para a lixeira?")) {return;}
 
 var resposta="";
 var url='../php/transpoe_subarvore.php?secao_movel='+secao_movel+'&secao_alvo='+secao_alvo;
@@ -841,7 +884,7 @@ var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
-		     alert(resposta);
+		     //alert(resposta);
 		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
 
 	   }
@@ -1896,6 +1939,7 @@ for (let i = 0; i < textareas.length; i++) {
 					this.style.backgroundColor = cor_de_edicao; 
 					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
 					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("separa_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
+					if (matriz_ganha_foco[x][0].includes("nivel")) {document.getElementById("junta_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
 					if (matriz_ganha_foco[x][0].includes("flutua_para_direita")) {document.getElementById("grava_"+textarea_em_edicao.id).disabled=false;} // nao pode habilitar o botao grava se eh para inserir novo
 					console.log("grava_"+textarea_em_edicao.id);
 					console.log(document.getElementById("grava_"+textarea_em_edicao.id).disabled);

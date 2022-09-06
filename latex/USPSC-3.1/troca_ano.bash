@@ -104,7 +104,6 @@ sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/USPSC-pre-text
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-EESC.tex
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
-sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/USPSC-modelo-IAU.tex
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/data[{]2021[}]/data{@[ano]@}/g" ../../latex/./USPSC-3.1/USPSC-modelo.tex

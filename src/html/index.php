@@ -418,7 +418,7 @@ function (){
 											textarea_teclado.value = textarea_teclado.value + " " + textarea_mouse.value;
 											setTimeout(
 												function (){
-													alert(textarea_teclado.value);
+													//alert(textarea_teclado.value);
 													simula_key_down("Tab");
 													setTimeout(
 														function (){

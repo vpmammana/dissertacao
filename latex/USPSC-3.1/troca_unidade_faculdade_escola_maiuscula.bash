@@ -104,7 +104,6 @@ sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g
 sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-EESC.tex
 sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex
 sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
-sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-IAU.tex
 sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/ESCOLA DE ENGENHARIA DE S\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-modelo.tex

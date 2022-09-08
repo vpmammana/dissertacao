@@ -204,19 +204,19 @@ return $retorno;
 
 include "identifica.php.cripto";
 unset($retorna_zip);
-if ($param_mode == "verbose") {echo "\nVai executar unzip\n";}
+if ($param_mode == "verbose") {echo "<br>Vai executar unzip<br>";}
 exec("cd ../../latex
 unzip -o USPSC-3.1.zip", $retorna_unzip);
 
 do {
 unset($retorno_do_bash);
 exec("ps -aux | grep -v grep | grep -io unzip ", $retorno_do_bash);
-if ($param_mode == "verbose") {echo "\nExecutando unzip\n";}
+if ($param_mode == "verbose") {echo "<br>Executando unzip<br>";}
 } while ($retorno_do_bash == "unzip");
 
 
-if ($param_mode == "verbose") {echo "\nexecutou o unzip\n";}
-if ($param_mode == "verbose") {print_r(implode("\ndeszipa: ",$retorna_unzip));}
+if ($param_mode == "verbose") {echo "<br>executou o unzip<br>";}
+if ($param_mode == "verbose") {print_r(implode("<br>deszipa: ",$retorna_unzip));}
 
 unset($retorna_inicializa);
 exec("../bash/inicializa_tex_com_change_DIR.bash", $retorna_inicializa);
@@ -224,10 +224,10 @@ exec("../bash/inicializa_tex_com_change_DIR.bash", $retorna_inicializa);
 do {
 unset($retorno_do_bash);
 exec("ps -aux | grep -v grep | grep -io inicializa_tex ", $retorno_do_bash);
-if ($param_mode == "verbose") {echo "\nExecutando inicializa_tex_com_DIR\n";}
+if ($param_mode == "verbose") {echo "<br>Executando inicializa_tex_com_DIR<br>";}
 } while ($retorno_do_bash == "inicializa_tex");
 
-if ($param_mode == "verbose") {echo "\nExecutou o inicializa_tex_com_DIR\n";}
+if ($param_mode == "verbose") {echo "<br>Executou o inicializa_tex_com_DIR<br>";}
 if ($param_mode == "verbose") {print_r (implode("",$retorna_inicializa));}
 
 
@@ -361,24 +361,24 @@ if ($param_mode == "verbose") {fwrite($myfile, 'echo "Talvez tenha dado certo...
 if ($param_mode == "verbose") {fwrite($myfile, 'pwd
 ');}
 fclose($myfile);
-if ($param_mode == "verbose") {echo "\nArquivo do batch foi fechado\n";}
+if ($param_mode == "verbose") {echo "<br>Arquivo do batch foi fechado<br>";}
 unset($retorno_do_bash_copia_substitui);
-if ($param_mode == "verbose") {echo "\nVai executar copia_substitui_tex\n";}
+if ($param_mode == "verbose") {echo "<br>Vai executar copia_substitui_tex<br>";}
 exec("../bash/copia_substitui_tex.bash", $retorno_do_bash_copia_substitui);
 
 
 
 do {
-if ($param_mode == "verbose") {echo "Executando copia_substitui_tex\n";}
+if ($param_mode == "verbose") {echo "Executando copia_substitui_tex<br>";}
 unset($retorno_do_bash);
 exec("ps -aux | grep -v grep | grep -io copia_substitui_tex ", $retorno_do_bash);
-if ($param_mode == "verbose") {echo "executando copia_substitui! ".implode("",$retorno_do_bash)."\n";}
+if ($param_mode == "verbose") {echo "executando copia_substitui! ".implode("",$retorno_do_bash)."<br>";}
 } while ($retorno_do_bash == "copia_substitui_tex");
 
 
 
 
-if ($param_mode == "verbose") {print_r(implode("\ncomando: ",$retorno_do_bash_copia_substitui));}
+if ($param_mode == "verbose") {print_r(implode("<br>comando: ",$retorno_do_bash_copia_substitui));}
 
 //$conn->close();
 $conn2= new mysqli("localhost", $username, $pass, $database);

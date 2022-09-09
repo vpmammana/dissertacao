@@ -1,12 +1,8 @@
-\cp ../../latex/USPSC-3.1/USPSC-modelo-IAU.pdf ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.pdf 
-\cp ../../latex/USPSC-3.1/USPSC-Tutorial.pdf ../../latex/USPSC-3.1/USPSC-Tutorial_RedarTex.pdf 
-\cp ../../latex/USPSC-3.1/testando.pdf ../../latex/USPSC-3.1/testando_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-marca.pdf ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-marca_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-grafico.pdf ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-grafico_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-PaginaEmBranco_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica_RedarTex.pdf 
-\cp ../../latex/USPSC-3.1/testando2.pdf ../../latex/USPSC-3.1/testando2_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-classe/USPSC1.cls ../../latex/USPSC-3.1/USPSC-classe/USPSC1_RedarTex.cls 
 \cp ../../latex/USPSC-3.1/USPSC-classe/USPSC.cls ../../latex/USPSC-3.1/USPSC-classe/USPSC_RedarTex.cls 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-modelo.tex ../../latex/USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex 

@@ -1,0 +1,59 @@
+%% USPSC-fichacatalografica.tex
+% ---
+% Inserir a ficha bibliografica
+% ---
+% Isto \'e um exemplo de Ficha Catalogr\'afica, ou ``Dados internacionais de
+% cataloga\c{c}\~ao-na-publica\c{c}\~ao''. Voc\^e pode utilizar este modelo como refer\^encia. 
+% Por\'em, provavelmente a biblioteca da sua universidade lhe fornecer\'a um PDF
+% com a ficha catalogr\'afica definitiva ap\'os a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diret\'orio do seu projeto e substitua todo
+% o conte\'udo de implementa\c{c}\~ao deste arquivo pelo comando abaixo:
+%
+\begin{fichacatalografica}
+	\hspace{-1.4cm}
+	\imprimirnotaautorizacao \\ \\
+	%\sffamily
+	\vspace*{\fill}					% Posi\c{c}\~ao vertical
+\begin{center}					% Minipage Centralizado
+  \imprimirnotabib \\
+  \begin{table}[htb]
+	\scriptsize
+	\centering	
+	\begin{tabular}{|p{0.9cm} p{8.7cm}|}
+		\hline
+	      & \\
+		  &	  \imprimirautorficha     \\
+		
+		 \imprimircutter & 
+							\hspace{0.4cm}\imprimirtitulo~  / ~\imprimirautor~ ;  ~\imprimirorientadorcorpoficha. -- 	\imprimirlocal, \imprimirdata.   \\
+		
+		  &  % Para incluir nota referente \`a vers\~ao corrigida no corpo da ficha,
+			  % incluir % no in\'{\i}cio da linha acima e tirar a % do in\'{\i}cio da linha abaixo
+			  %	\hspace{0.4cm} \imprimirtitulo~  / ~\imprimirautor~ ; ~\imprimirorientadorcorpoficha~- ~\imprimirnotafolharosto. -- \imprimirlocal, \imprimirdata.  \\
+		
+			\hspace{0.4cm}\pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\ 
+		  & \\
+		  & 
+		    \hspace{0.4cm}\imprimirnotaficha ~--~ 
+						  \imprimirunidademin, 
+						  \imprimiruniversidademin, 
+		                  \imprimirdata. \\ 
+		  & \\                 
+		   % Para incluir nota referente \`a vers\~ao corrigida em notas,
+		    % incluir uma % no in\'{\i}cio da linha acima e	
+		    % tirar a % do in\'{\i}cio da linha abaixo
+		    % & \hspace{0.4cm}\imprimirnotafolharosto \\ 
+		  & \\ 
+		  & \hspace{0.4cm}1. LaTeX. 2. abnTeX. 3. Classe USPSC. 4. Editora\c{c}\~ao de texto. 5. Normaliza\c{c}\~ao da documenta\c{c}\~ao. 6. Tese. 7. Disserta\c{c}\~ao. 8. Documentos (elabora\c{c}\~ao). 9. Documentos eletr\^onicos. I. \imprimirorientadorficha. 
+		   II. T\'{\i}tulo. \\
+	
+		     %Se houver co-orientador, inclua % antes da linha (antes de II. T\'{\i}tulo.) 
+		     %          e tire a % antes do comando abaixo 
+		     %III. T\'{\i}tulo. \\   
+		  \hline
+	\end{tabular}
+  \end{table}
+\end{center}
+\end{fichacatalografica}
+% ---
+

@@ -6,7 +6,6 @@ sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap2-DesenvolvimentoTutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-ResumoTutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-ErrataTutorial_RedarTex.tex
-sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/.USPSC-Cap2-DesenvolvimentoTutorial_RedarTex.tex.swp
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AbreviaturasSiglasTutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-IndicesTutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-EpigrafeTutorial_RedarTex.tex
@@ -19,7 +18,6 @@ sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-fichacatalograficaTutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-EESC_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-pre-textual-OUTRO_RedarTex.tex
-sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/.~lock.USPSC-modelo-IAU_RedarTex.tex#
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCe_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex
@@ -63,4 +61,3 @@ sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Errata_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex
-sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/.USPSC-pre-textual-IAU_RedarTex.tex.swp

@@ -20,7 +20,6 @@ sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-Cap4-ReferenciasTutorial.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-ErrataTutorial_RedarTex.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-AgradecimentosTutorial.tex
-sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/.USPSC-Cap2-DesenvolvimentoTutorial_RedarTex.tex.swp
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-AbreviaturasSiglasTutorial_RedarTex.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-IndicesTutorial_RedarTex.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-IndicesRemissivos.tex
@@ -42,7 +41,6 @@ sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-EESC.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-unidades.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-OUTRO_RedarTex.tex
-sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/.~lock.USPSC-modelo-IAU_RedarTex.tex#
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IQSC.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-ICMCe.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-unidades_RedarTex.tex
@@ -126,4 +124,3 @@ sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-IFSCe.tex
 sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex
-sed -i "s/INSTITUTO DE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/.USPSC-pre-textual-IAU_RedarTex.tex.swp

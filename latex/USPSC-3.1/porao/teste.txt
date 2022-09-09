@@ -1,41 +1,41 @@
-hípica
-HÍPICA
-chão
-CHÃO
-ÓPTICA
-óptica
-PARLAPATÕES
+h\'{\i}pica
+H\'IPICA
+ch\~ao
+CH\~AO
+\'OPTICA
+\'optica
+PARLAPAT\~OES
 
-á
-Á
-à
-À
-ã
-Ã
-â
-Â
-é
-É
-ê
-Ê
-í
-Í
-ó
-Ó
-õ
-Õ
-ô
-Ô
-ú
-Ú
-ç
-Ç
+\'a
+\'A
+\`a
+\`A
+\~a
+\~A
+\^a
+\^A
+\'e
+\'E
+\^e
+\^E
+\'{\i}
+\'I
+\'o
+\'O
+\~o
+\~O
+\^o
+\^O
+\'u
+\'U
+\c{c}
+\c{C}
 
-parlapatões
+parlapat\~oes
 
 
-paçoca
-faça
+pa\c{c}oca
+fa\c{c}a
 
 
 

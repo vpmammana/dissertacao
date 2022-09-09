@@ -77,10 +77,12 @@ file_put_contents($nome_arquivo, implode("",$file));
 function substitui_label_caption($nome_arquivo, $label_de_busca, $substituicao){
 
 
-exec('sed -i "s/@\['.$label_de_busca.'\]@/'.$substituicao.'/g" '.$nome_arquivo);
+exec('sed -i "s/@\['.$label_de_busca.'\]@/'.$substituicao.'/g" '.$nome_arquivo, $out_, $code);
 
-error_log(print_r("sed -i 's/@\\[".$label_de_busca."\\]@/".$substituicao."/g' ".$nome_arquivo, true));
-error_log(print_r($substituicao, true));
+if ($code) {error_log(print_r("CODIGO: >>>>".implode($out_)."<<<<<<<<<<<<<\n", true));}
+
+//	error_log(print_r("sed -i 's/@\\[".$label_de_busca."\\]@/".$substituicao."/g' ".$nome_arquivo, true));
+//	error_log(print_r($substituicao, true));
 
 
 }
@@ -194,23 +196,31 @@ return $linha;
 
 function retorna_arquivos_que_tem_partes_textuais(){
 unset($retorno);
-exec("grep -HiRr \"^\\\\\\\\\\postextual\" ../../latex/USPSC-3.1/. | grep RedarTex | grep -v \.swp | awk 'BEGIN{FS=\":\"}{print $1}'",$retorno );
+exec("grep -HiRr \"^\\\\\\\\\\postextual\" ../../latex/USPSC-3.1/. | grep RedarTex | grep -v \.swp | awk 'BEGIN{FS=\":\"}{print $1}'",$retorno, $code );
+if ($code) {error_log(print_r("CODIGO: grep >>>>".implode($retorno)."<<<<<<<<<<<<<\n", true));}
 return $retorno;
 } 
 
 // INICIO
 
+ini_set('max_execution_time', 300);
+
+error_log(print_r("INI_GET -> ".ini_get("max_execution_time"), true));
+
+//echo "<script>alert('gera_tex2');</script>";
 
 
 include "identifica.php.cripto";
 unset($retorna_zip);
 if ($param_mode == "verbose") {echo "<br>Vai executar unzip<br>";}
-exec("cd ../../latex
-unzip -o USPSC-3.1.zip", $retorna_unzip);
+exec("cd ../../latex && unzip -o USPSC-3.1.zip", $retorna_unzip, $code);
+if ($code) {error_log(print_r("CODIGO: unzip >>>>".implode($retorna_unzip)."<<<<<<<<<<<<<\n", true));}
 
 do {
 unset($retorno_do_bash);
-exec("ps -aux | grep -v grep | grep -io unzip ", $retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io unzip ", $retorno_do_bash, $code);
+if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+
 if ($param_mode == "verbose") {echo "<br>Executando unzip<br>";}
 } while ($retorno_do_bash == "unzip");
 
@@ -219,11 +229,14 @@ if ($param_mode == "verbose") {echo "<br>executou o unzip<br>";}
 if ($param_mode == "verbose") {print_r(implode("<br>deszipa: ",$retorna_unzip));}
 
 unset($retorna_inicializa);
-exec("../bash/inicializa_tex_com_change_DIR.bash", $retorna_inicializa);
+exec("../bash/inicializa_tex_com_change_DIR.bash 2>&1", $retorna_inicializa, $code);
+error_log(print_r("CODIGO inicializa: >>>>".implode($retorna_inicializa)."<<<<<<<\n", true));
 
 do {
 unset($retorno_do_bash);
-exec("ps -aux | grep -v grep | grep -io inicializa_tex ", $retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io inicializa_tex ", $retorno_do_bash, $code);
+if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+
 if ($param_mode == "verbose") {echo "<br>Executando inicializa_tex_com_DIR<br>";}
 } while ($retorno_do_bash == "inicializa_tex");
 
@@ -237,6 +250,10 @@ $database = "dissertacao";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 $myfile = fopen("../bash/copia_substitui_tex.bash", "w") or die("Não foi possível abrir o arquivo!");
+$script_file = fopen("../../latex/USPSC-3.1/mimetiza_pdflatex.bash","w") or die ("Não consegui abrir o arquivo de script");
+
+fwrite($script_file, "/usr/bin/pdflatex -interaction=nonstopmode ".$nome_do_tex); // demorei um dia inteiro para perceber que tinha que usar /usr/bin - se usa no prompt nao e necessario - curioso
+fclose($script_file);
 
 $temporario_corpo = fopen("temporario.txt", "w");
 
@@ -364,14 +381,17 @@ fclose($myfile);
 if ($param_mode == "verbose") {echo "<br>Arquivo do batch foi fechado<br>";}
 unset($retorno_do_bash_copia_substitui);
 if ($param_mode == "verbose") {echo "<br>Vai executar copia_substitui_tex<br>";}
-exec("../bash/copia_substitui_tex.bash", $retorno_do_bash_copia_substitui);
+exec("../bash/copia_substitui_tex.bash", $retorno_do_bash_copia_substitui, $code);
 
+if ($code) {error_log(print_r("CODIGO: copia_substitui>>>>".implode($retorno_do_bash_copia_substitui)."<<<<<<<\n", true));}
 
 
 do {
 if ($param_mode == "verbose") {echo "Executando copia_substitui_tex<br>";}
 unset($retorno_do_bash);
-exec("ps -aux | grep -v grep | grep -io copia_substitui_tex ", $retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io copia_substitui_tex ", $retorno_do_bash, $code);
+if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+
 if ($param_mode == "verbose") {echo "executando copia_substitui! ".implode("",$retorno_do_bash)."<br>";}
 } while ($retorno_do_bash == "copia_substitui_tex");
 
@@ -498,12 +518,14 @@ else {echo "Deu problema: ".$sql;}
 
 if ($param_mode == "verbose") {echo "\nVai executar pdflatex\n";}
 unset($retorno_pdflatex);
-exec("cd ../../latex/USPSC-3.1
-pwd
-pdflatex -interaction=nonstopmode ".$nome_do_tex,$retorno_pdflatex);
+exec("cd ../../latex/USPSC-3.1 && ./mimetiza_pdflatex.bash 2>&1",$retorno_pdflatex, $code);
+if ($code) {error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));}
+error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));
 do {
 unset($retorno_do_bash);
-exec("ps -aux | grep -v grep | grep -io pdflatex ", $retorno_do_bash);
+exec("ps -aux | grep -v grep | grep -io pdflatex ", $retorno_do_bash, $code);
+if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+
 if ($param_mode == "verbose") {echo "executando pdflatex! ".implode("",$retorno_do_bash)."\n";}
 } while ($retorno_do_bash == "pdflatex");
 
@@ -511,7 +533,11 @@ if ($param_mode == "verbose") {print_r(implode("<br>",$retorno_pdflatex));}
 
 if ($param_mode == "verbose") {echo "\nVai executar evince\n";}
 
-if ($param_mode == "verbose") {exec("evince ".$nome_do_pdf);}
+if ($param_mode == "verbose") {
+		exec("evince ".$nome_do_pdf, $out, $code);
+		if ($code) {error_log(print_r("CODIGO: evince >>>>".implode($out)."<<<<<<<<<<<<<\n", true));}
+
+}
 if ($param_mode == "quiet") { echo $nome_do_pdf;};
 
 ?>	

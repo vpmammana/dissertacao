@@ -33,6 +33,7 @@ if(isset($_GET["y_cursor"])){
   $param_y_cursor= $_GET["y_cursor"];
 } else $param_y_cursor = 0;
 
+ini_set('max_execution_time', 300);
 
 
 function tira_acento($estringue){

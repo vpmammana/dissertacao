@@ -5,22 +5,22 @@ Universidade , 253 , Universidade , 49 , Universidade , 348
 UNIVERSIDADE , 21 , UNIVERSIDADE , 10 , UNIVERSIDADE , 112
 Universidade Estadual , 8 , Universidade Estadual , 8 , Universidade Estadual , 109 Verificado
 UNIVERSIDADE ESTADUAL , 0 , UNIVERSIDADE ESTADUAL , 0 , UNIVERSIDADE ESTADUAL , 1
-Faculdade , 2 , Faculdade , 0 , Faculdade , 201
-FACULDADE , 0 , FACULDADE , 0 , FACULDADE , 201
+@[unidadefaculdade]@, 2 , @[unidadefaculdade]@, 0 , @[unidadefaculdade]@, 201
+@[unidadefaculdademaiuscula]@, 0 , @[unidadefaculdademaiuscula]@, 0 , @[unidadefaculdademaiuscula]@, 201
 Instituto , 258 , Instituto , 19 , Instituto , 211 Verificado -> nao sobraram em arquivos importantes
 INSTITUTO , 8 , INSTITUTO , 0 , INSTITUTO , 201
 Escola , 97 , Escola , 35 , Escola , 233 - Verificado -> nao sobraram em arquivos importantes 
 ESCOLA , 3 , ESCOLA , 0 , ESCOLA , 101
 Programa , 441 , Programa , 309 , Programa , 506
 PROGRAMA , 20 , PROGRAMA , 20 , PROGRAMA , 221
-Curso , 71 , Curso , 48 , Curso , 249
-CURSO , 6 , CURSO , 6 , CURSO , 207
+@[curso]@, 71 , @[curso]@, 48 , @[curso]@, 249
+@[cursomaiuscula]@, 6 , @[cursomaiuscula]@, 6 , @[cursomaiuscula]@, 207
 P...s-Gradua , 142 , P...s-Gradua , 221 , P...s-Gradua , 222
 Gradua , 510 , Gradua , 378 , Gradua , 577
 P...S-GRADUA , 1 , P...S-GRADUA , 1 , P...S-GRADUA , 2
 GRADUA , 2 , GRADUA , 2 , GRADUA , 204
-Nome da Unidade USP , 4 , Nome da Unidade USP , 0 , Nome da Unidade USP , 102
-Unidade USP , 9 , Unidade USP , 0 , Unidade USP , 203
+@[unidadefaculdade]@ , 4 , @[unidadefaculdade]@ , 0 , @[unidadefaculdade]@ , 102
+@[unidadefaculdade]@ , 9 , @[unidadefaculdade]@ , 0 , @[unidadefaculdade]@ , 203
 [Tt]...tulo , 125 , [Tt]...tulo , 127 , [Tt]...tulo , 133
 Modelo para teses e disserta , 35 , Modelo para teses e disserta , 19 , Modelo para teses e disserta , 51
 Modelo para TCC em , 24 , Modelo para TCC em , 14 , Modelo para TCC em , 25

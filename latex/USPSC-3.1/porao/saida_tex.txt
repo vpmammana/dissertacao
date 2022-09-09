@@ -322,7 +322,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []\T1/lmr/m/n/12 (+20) Tese apresentada ao
 
 Underfull \hbox (badness 10000) in paragraph at lines 263--263
-\T1/lmr/m/n/12 (+20) @[programapos]@@[unidadefaculdade]@,
+\T1/lmr/m/n/12 (+20) @[programapos]@ vinculado a @[unidadefaculdade]@,
 
 Underfull \hbox (badness 10000) in paragraph at lines 263--263
 \T1/lmr/m/n/12 (+20) @[universidade]@, como parte dos

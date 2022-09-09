@@ -12,9 +12,9 @@ echo -n "Universidade Estadual -> "
 grep -HRr "Universidade Estadual" . |  grep -i .tex| wc -l
 echo -n "UNIVERSIDADE ESTADUAL -> "
 grep -HRr "UNIVERSIDADE ESTADUAL" . |  grep -i .tex| wc -l
-echo -n "Faculdade -> "
+echo -n "@[unidadefaculdade]@-> "
 grep -HRr "Faculdade" . |  grep -i .tex| wc -l
-echo -n "FACULDADE -> "
+echo -n "@[unidadefaculdademaiuscula]@-> "
 grep -HRr "FACULDADE" . |  grep -i .tex| wc -l
 echo -n "Instituto -> "
 grep -HRr "Instituto" . |  grep -i .tex| wc -l
@@ -28,9 +28,9 @@ echo -n "Programa -> "
 grep -HRr "Programa" . |  grep -i .tex| wc -l
 echo -n "PROGRAMA -> "
 grep -HRr "PROGRAMA" . |  grep -i .tex| wc -l
-echo -n "Curso -> "
+echo -n "@[curso]@-> "
 grep -HRr "Curso" . |  grep -i .tex| wc -l
-echo -n "CURSO -> "
+echo -n "@[cursomaiuscula]@-> "
 grep -HRr "CURSO" . |  grep -i .tex| wc -l
 echo -n "P...s-Gradua -> "
 grep -HRr "P...s-Gradua" . |  grep -i .tex| wc -l
@@ -40,10 +40,10 @@ echo -n "P...S-GRADUA -> "
 grep -HRr "P...S-GRADUA" . |  grep -i .tex| wc -l
 echo -n "GRADUA -> "
 grep -HRr "GRADUA" . |  grep -i .tex| wc -l
-echo -n "Nome da Unidade USP -> "
-grep -HRr "Nome da Unidade USP" . |  grep -i .tex| wc -l
-echo -n "Unidade USP -> "
-grep -HRr "Unidade USP" . |  grep -i .tex| wc -l
+echo -n "@[unidadefaculdade]@ -> "
+grep -HRr "@[unidadefaculdade]@" . |  grep -i .tex| wc -l
+echo -n "@[unidadefaculdade]@ -> "
+grep -HRr "@[unidadefaculdade]@" . |  grep -i .tex| wc -l
 echo -n "[Tt]...tulo  -> "
 grep -HRir "t...tulo " . |  grep -i .tex| wc -l
 echo -n "Modelo para teses e disserta -> "

@@ -185,5 +185,3 @@ chmod u+x ../bash/substitui_tex_23.bash
 find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2022/g\" "$0}' > ../bash/substitui_tex_23.bash
 ../bash/substitui_tex_23.bash
 
-echo "Talvez tenha dado certo..."
-pwd

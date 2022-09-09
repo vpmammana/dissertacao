@@ -57,13 +57,6 @@ sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../l
 sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IAU.tex
 sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-Tutorial-num_RedarTex.tex
 sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-EESC_RedarTex.tex
-sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.texlive2018
-sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var
-sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts
-sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk
-sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour
-sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen
-sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec
 sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex
 sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-IQSC.tex
 sed -i "s/Escola de Engenharia de S\\\~ao Carlos/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-IFSCp.tex

@@ -1,4 +1,4 @@
-#ATENÇÃO -> underscore é um carácter especial para o LaTeX e portanto não pode ser usado como identifiar. Mas o RaderTex utiliza underscore como nome de seções. Provavelmente nao terei problemas se tirar o underscore, mas daí tem que tomar cuidado para não ter um dois identificadores diferentes tipo "titulo_abstract" e "tituloabstract", porque para o LaTeX serã o mesmo identificador
+#ATEN\c{C}\~AO -> underscore \'e um car\'acter especial para o LaTeX e portanto n\~ao pode ser usado como identifiar. Mas o RaderTex utiliza underscore como nome de se\c{c}\~oes. Provavelmente nao terei problemas se tirar o underscore, mas da\'{\i} tem que tomar cuidado para n\~ao ter um dois identificadores diferentes tipo "titulo_abstract" e "tituloabstract", porque para o LaTeX ser\~a o mesmo identificador
 
 
 sed -i "s/autorficha{Silva, Jos\\\'e da}/autorficha{@[autorficha]@}/g" USPSC-pre-textual-EESC.tex 
@@ -189,8 +189,8 @@ sed -i "s/coorientador[{]Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientador{Prof
 sed -i "s/coorientadoradic[{] Co-orientador: Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientadoradic{Co-orientador: Prof(a). Dr(a). @[coorientador]@}/g" USPSC-pre-textual-ICMC.tex                 
 sed -i "s/coorientadoradic[{] Co-orientador: Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientadoradic{Co-orientador: Prof(a). Dr(a). @[coorientador]@}/g" USPSC-TCC-pre-textual-ICMC.tex             
 
-#"da USP" aparece apenas em TUTORIAL, então não precisa mudar
-# USP Sao Carlos aparece apenas em TUTORIAL e não precisa mudar
+#"da USP" aparece apenas em TUTORIAL, ent\~ao n\~ao precisa mudar
+# USP Sao Carlos aparece apenas em TUTORIAL e n\~ao precisa mudar
 
 #Troca o nome da cidade
 touch troca_cidade.bash
@@ -231,13 +231,13 @@ find * | grep -i "\.tex" | awk -v aspas="\"" '{print "sed -i \"s/Universidade Es
 #Troca o nome da unidadefaculdade
 touch troca_unidadefaculdade_nome_da_unidade.bash
 chmod u+x troca_unidadefaculdade_nome_da_unidade.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Nome da Unidade USP/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade_nome_da_unidade.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdade]@/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade_nome_da_unidade.bash
 ./troca_unidadefaculdade_nome_da_unidade.bash
 
-#Troca o nome da unidadefaculdade - a troca abaixo tem que vir depois da "Nome da Unidade USP". De outra forma corrompe tudo
+#Troca o nome da unidadefaculdade - a troca abaixo tem que vir depois da "@[unidadefaculdade]@". De outra forma corrompe tudo
 touch troca_unidadefaculdade_unidade_usp.bash
 chmod u+x troca_unidadefaculdade_unidade_usp.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Unidade USP/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade_unidade_usp.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdade]@/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade_unidade_usp.bash
 ./troca_unidadefaculdade_unidade_usp.bash
 
 
@@ -256,52 +256,52 @@ find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/ESCOLA DE ENGENH
 #Troca o nome da unidadefaculdade mas respeita o chave no final
 touch troca_unidadefaculdade_respeita_chave_no_final2.bash
 chmod u+x troca_unidadefaculdade_respeita_chave_no_final2.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Faculdade [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*[}]/@[unidadefaculdade]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final2.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdade]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*[}]/@[unidadefaculdade]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final2.bash
 ./troca_unidadefaculdade_respeita_chave_no_final2.bash
 
 #Troca o nome da unidadefaculdade
 touch troca_unidadefaculdade2.bash
 chmod u+x troca_unidadefaculdade2.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Faculdade [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade2.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdade]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade2.bash
 ./troca_unidadefaculdade2.bash
 
 #Troca o nome da unidadefaculdademaiuscula respeita chave no final
 touch troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
 chmod u+x troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/FACULDADE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*[}]/@[unidadefaculdademaiuscula]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdademaiuscula]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*[}]/@[unidadefaculdademaiuscula]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
 ./troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
 
 
 #Troca o nome da unidadefaculdademaiuscula
 touch troca_unidadefaculdademaiuscula2.bash
 chmod u+x troca_unidadefaculdademaiuscula2.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/FACULDADE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' > troca_unidadefaculdademaiuscula2.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdademaiuscula]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' > troca_unidadefaculdademaiuscula2.bash
 ./troca_unidadefaculdademaiuscula2.bash
 
 #Troca o nome da unidadefaculdade respeita chave no final
 touch troca_unidadefaculdade_respeita_chave_no_final_3.bash
 chmod u+x troca_unidadefaculdade_respeita_chave_no_final_3.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Instituto de [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*[}]/@[unidadefaculdade]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final_3.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdade]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*[}]/@[unidadefaculdade]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final_3.bash
 ./troca_unidadefaculdade_respeita_chave_no_final_3.bash
 
 
 #Troca o nome da unidadefaculdade
 touch troca_unidadefaculdade3.bash
 chmod u+x troca_unidadefaculdade3.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Instituto de [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade3.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdade]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[unidadefaculdade]@/g\" "$0;}' > troca_unidadefaculdade3.bash
 ./troca_unidadefaculdade3.bash
 
 #Troca o nome da unidadefaculdade respeita chave no final
 touch troca_unidadefaculdade_respeita_chave_no_final_4.bash
 chmod u+x troca_unidadefaculdade_respeita_chave_no_final_4.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/INSTITUTO DE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*[}]/@[unidadefaculdademaiuscula]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final_4.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdademaiuscula]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*[}]/@[unidadefaculdademaiuscula]@}/g\" "$0;}' > troca_unidadefaculdade_respeita_chave_no_final_4.bash
 ./troca_unidadefaculdade_respeita_chave_no_final_4.bash
 
 
 #Troca o nome da unidadefaculdade
 touch troca_unidadefaculdade4.bash
 chmod u+x troca_unidadefaculdade4.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/INSTITUTO DE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' > troca_unidadefaculdade4.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[unidadefaculdademaiuscula]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' > troca_unidadefaculdade4.bash
 ./troca_unidadefaculdade4.bash
 
 #Troca o nome da unidadefaculdade respeita chave no final
@@ -332,25 +332,25 @@ find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/PROGRAMA DE P\\\
 #Troca o nome da curso respeita chave no final
 touch troca_curso_respeita_chave_no_final.bash
 chmod u+x troca_curso_respeita_chave_no_final.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Curso [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*[}]/@[curso]@}/g\" "$0;}' > troca_curso_respeita_chave_no_final.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[curso]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*[}]/@[curso]@}/g\" "$0;}' > troca_curso_respeita_chave_no_final.bash
 ./troca_curso_respeita_chave_no_final.bash
 
 #Troca o nome da curso
 touch troca_curso.bash
 chmod u+x troca_curso.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Curso [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[curso]@/g\" "$0;}' > troca_curso.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[curso]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/@[curso]@/g\" "$0;}' > troca_curso.bash
 ./troca_curso.bash
 
 #Troca o nome da cursomaiuscula respeita chave no final
 touch troca_curso_respeita_chave_no_final_maiuscula.bash
 chmod u+x troca_curso_respeita_chave_no_final_maiuscula.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/CURSO [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*[}]/@[cursomaiuscula]@}/g\" "$0;}' > troca_curso_respeita_chave_no_final_maiuscula.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[cursomaiuscula]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*[}]/@[cursomaiuscula]@}/g\" "$0;}' > troca_curso_respeita_chave_no_final_maiuscula.bash
 ./troca_curso_respeita_chave_no_final_maiuscula.bash
 
 #Troca o nome da cursomaiuscula
 touch troca_cursomaiuscula.bash
 chmod u+x troca_cursomaiuscula.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/CURSO [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[cursomaiuscula]@/g\" "$0;}' > troca_cursomaiuscula.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@[cursomaiuscula]@[A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[cursomaiuscula]@/g\" "$0;}' > troca_cursomaiuscula.bash
 ./troca_cursomaiuscula.bash
 
 #Troca o mestreoudoutor - nao aparece TITULO em maiuscula, segundo o verificador.bash
@@ -390,166 +390,166 @@ find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/@\[programapos\]
 ./afasta_programa_unidade.bash
 
 
-#á
+#\'a
 touch troca_acento_agudo_a.bash
 chmod u+x troca_acento_agudo_a.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/á/\\\\\\"quote"a/g\" "$0;}' > troca_acento_agudo_a.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'a/\\\\\\"quote"a/g\" "$0;}' > troca_acento_agudo_a.bash
 ./troca_acento_agudo_a.bash
 
-#Á
+#\'A
 touch troca_acento_agudo_a_M.bash
 chmod u+x troca_acento_agudo_a_M.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Á/\\\\\\"quote"A/g\" "$0;}' > troca_acento_agudo_a_M.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'A/\\\\\\"quote"A/g\" "$0;}' > troca_acento_agudo_a_M.bash
 ./troca_acento_agudo_a_M.bash
 
-#é
+#\'e
 touch troca_acento_agudo_e.bash
 chmod u+x troca_acento_agudo_e.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/é/\\\\\\"quote"e/g\" "$0;}' > troca_acento_agudo_e.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'e/\\\\\\"quote"e/g\" "$0;}' > troca_acento_agudo_e.bash
 ./troca_acento_agudo_e.bash
 
-#É
+#\'E
 touch troca_acento_agudo_e_M.bash
 chmod u+x troca_acento_agudo_e_M.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/É/\\\\\\"quote"E/g\" "$0;}' > troca_acento_agudo_e_M.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'E/\\\\\\"quote"E/g\" "$0;}' > troca_acento_agudo_e_M.bash
 ./troca_acento_agudo_e_M.bash
 
-#â
+#\^a
 touch troca_acento_flex_a.bash
 chmod u+x troca_acento_flex_a.bash
-find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/â/\\\\\\"quote"a/g\" "$0;}' > troca_acento_flex_a.bash
+find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/\^a/\\\\\\"quote"a/g\" "$0;}' > troca_acento_flex_a.bash
 ./troca_acento_flex_a.bash
 
-#Â
+#\^A
 touch troca_acento_flex_a_M.bash
 chmod u+x troca_acento_flex_a_M.bash
-find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/Â/\\\\\\"quote"A/g\" "$0;}' > troca_acento_flex_a_M.bash
+find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/\^A/\\\\\\"quote"A/g\" "$0;}' > troca_acento_flex_a_M.bash
 ./troca_acento_flex_a_M.bash
 
-#ê
+#\^e
 touch troca_acento_flex_e.bash
 chmod u+x troca_acento_flex_e.bash
-find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/ê/\\\\\\"quote"e/g\" "$0;}' > troca_acento_flex_e.bash
+find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/\^e/\\\\\\"quote"e/g\" "$0;}' > troca_acento_flex_e.bash
 ./troca_acento_flex_e.bash
 
-#Ê
+#\^E
 touch troca_acento_flex_e_M.bash
 chmod u+x troca_acento_flex_e_M.bash
-find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/Ê/\\\\\\"quote"E/g\" "$0;}' > troca_acento_flex_e_M.bash
+find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/\^E/\\\\\\"quote"E/g\" "$0;}' > troca_acento_flex_e_M.bash
 ./troca_acento_flex_e_M.bash
 
-#à
+#\`a
 touch troca_acento_crase.bash
 chmod u+x troca_acento_crase.bash
-find * | grep -i "\.tex" | awk -v quote="\`" '{print "sed -i \"s/à/\\\\\\\\\\"quote"a/g\" "$0;}' > troca_acento_crase.bash
+find * | grep -i "\.tex" | awk -v quote="\`" '{print "sed -i \"s/\`a/\\\\\\\\\\"quote"a/g\" "$0;}' > troca_acento_crase.bash
 ./troca_acento_crase.bash
 
-#À
+#\`A
 touch troca_acento_crase_M.bash
 chmod u+x troca_acento_crase_M.bash
-find * | grep -i "\.tex" | awk -v quote="\`" '{print "sed -i \"s/À/\\\\\\\\\\"quote"A/g\" "$0;}' > troca_acento_crase_M.bash
+find * | grep -i "\.tex" | awk -v quote="\`" '{print "sed -i \"s/\`A/\\\\\\\\\\"quote"A/g\" "$0;}' > troca_acento_crase_M.bash
 ./troca_acento_crase_M.bash
 
-#ä
+#"a
 touch troca_acento_trema_a.bash
 chmod u+x troca_acento_trema_a.bash
-find * | grep -i "\.tex" | awk -v quote="\"" '{print "sed -i \"s/ä/\\\\\\"quote"a/g\" "$0;}' > troca_acento_trema_a.bash
+find * | grep -i "\.tex" | awk -v quote="\"" '{print "sed -i \"s/"a/\\\\\\"quote"a/g\" "$0;}' > troca_acento_trema_a.bash
 ./troca_acento_trema_a.bash
 
-#Ä
+#"A
 touch troca_acento_trema_a_M.bash
 chmod u+x troca_acento_trema_a_M.bash
-find * | grep -i "\.tex" | awk -v quote="\"" '{print "sed -i \"s/Ä/\\\\\\"quote"A/g\" "$0;}' > troca_acento_trema_a_M.bash
+find * | grep -i "\.tex" | awk -v quote="\"" '{print "sed -i \"s/"A/\\\\\\"quote"A/g\" "$0;}' > troca_acento_trema_a_M.bash
 ./troca_acento_trema_a_M.bash
 
-#ç
+#\c{c}
 touch troca_acento_cedilha.bash
 chmod u+x troca_acento_cedilha.bash
-find * | grep -i "\.tex" | awk -v quote="none" '{print "sed -i \"s/ç/\\\\\\c{c}/g\" "$0;}' > troca_acento_cedilha.bash
+find * | grep -i "\.tex" | awk -v quote="none" '{print "sed -i \"s/\c{c}/\\\\\\c{c}/g\" "$0;}' > troca_acento_cedilha.bash
 ./troca_acento_cedilha.bash
 
-#Ç
+#\c{C}
 touch troca_acento_cedilha_M.bash
 chmod u+x troca_acento_cedilha_M.bash
-find * | grep -i "\.tex" | awk -v quote="none" '{print "sed -i \"s/Ç/\\\\\\c{C}/g\" "$0;}' > troca_acento_cedilha_M.bash
+find * | grep -i "\.tex" | awk -v quote="none" '{print "sed -i \"s/\c{C}/\\\\\\c{C}/g\" "$0;}' > troca_acento_cedilha_M.bash
 ./troca_acento_cedilha_M.bash
 
-#õ
+#\~o
 touch troca_acento_til_o.bash
 chmod u+x troca_acento_til_o.bash
-find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/õ/\\\\\\"quote"o/g\" "$0;}' > troca_acento_til_o.bash
+find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/\~o/\\\\\\"quote"o/g\" "$0;}' > troca_acento_til_o.bash
 ./troca_acento_til_o.bash
 
-#Õ
+#\~O
 touch troca_acento_til_o_M.bash
 chmod u+x troca_acento_til_o_M.bash
-find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/Õ/\\\\\\"quote"O/g\" "$0;}' > troca_acento_til_o_M.bash
+find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/\~O/\\\\\\"quote"O/g\" "$0;}' > troca_acento_til_o_M.bash
 ./troca_acento_til_o_M.bash
 
-#ã
+#\~a
 touch troca_acento_til_a.bash
 chmod u+x troca_acento_til_a.bash
-find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/ã/\\\\\\"quote"a/g\" "$0;}' > troca_acento_til_a.bash
+find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/\~a/\\\\\\"quote"a/g\" "$0;}' > troca_acento_til_a.bash
 ./troca_acento_til_a.bash
 
-#Ã
+#\~A
 touch troca_acento_til_a_M.bash
 chmod u+x troca_acento_til_a_M.bash
-find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/Ã/\\\\\\"quote"A/g\" "$0;}' > troca_acento_til_a_M.bash
+find * | grep -i "\.tex" | awk -v quote="~" '{print "sed -i \"s/\~A/\\\\\\"quote"A/g\" "$0;}' > troca_acento_til_a_M.bash
 ./troca_acento_til_a_M.bash
 
-#í
+#\'{\i}
 touch troca_acento_agudo_i.bash
 chmod u+x troca_acento_agudo_i.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/í/\\\\\\"quote"{\\\\\\i}/g\" "$0;}' > troca_acento_agudo_i.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'{\i}/\\\\\\"quote"{\\\\\\i}/g\" "$0;}' > troca_acento_agudo_i.bash
 ./troca_acento_agudo_i.bash
 
-#Í
+#\'I
 touch troca_acento_agudo_i_M.bash
 chmod u+x troca_acento_agudo_i_M.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Í/\\\\\\"quote"I/g\" "$0;}' > troca_acento_agudo_i_M.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'I/\\\\\\"quote"I/g\" "$0;}' > troca_acento_agudo_i_M.bash
 ./troca_acento_agudo_i_M.bash
 
-#ó
+#\'o
 touch troca_acento_agudo_o.bash
 chmod u+x troca_acento_agudo_o.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/ó/\\\\\\"quote"o/g\" "$0;}' > troca_acento_agudo_o.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'o/\\\\\\"quote"o/g\" "$0;}' > troca_acento_agudo_o.bash
 ./troca_acento_agudo_o.bash
 
-#Ó
+#\'O
 touch troca_acento_agudo_o_M.bash
 chmod u+x troca_acento_agudo_o_M.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Ó/\\\\\\"quote"O/g\" "$0;}' > troca_acento_agudo_o_M.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'O/\\\\\\"quote"O/g\" "$0;}' > troca_acento_agudo_o_M.bash
 ./troca_acento_agudo_o_M.bash
 
-#ô
+#\^o
 touch troca_acento_flex_o.bash
 chmod u+x troca_acento_flex_o.bash
-find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/ô/\\\\\\"quote"o/g\" "$0;}' > troca_acento_flex_o.bash
+find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/\^o/\\\\\\"quote"o/g\" "$0;}' > troca_acento_flex_o.bash
 ./troca_acento_flex_o.bash
 
-#Ô
+#\^O
 touch troca_acento_flex_o_M.bash
 chmod u+x troca_acento_flex_o_M.bash
-find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/Ô/\\\\\\"quote"O/g\" "$0;}' > troca_acento_flex_o_M.bash
+find * | grep -i "\.tex" | awk -v quote="^" '{print "sed -i \"s/\^O/\\\\\\"quote"O/g\" "$0;}' > troca_acento_flex_o_M.bash
 ./troca_acento_flex_o_M.bash
 
-#ú
+#\'u
 touch troca_acento_agudo_u.bash
 chmod u+x troca_acento_agudo_u.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/ú/\\\\\\"quote"u/g\" "$0;}' > troca_acento_agudo_u.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'u/\\\\\\"quote"u/g\" "$0;}' > troca_acento_agudo_u.bash
 ./troca_acento_agudo_u.bash
 
-#ü
+#\'u
 touch troca_acento_trema_u.bash
 chmod u+x troca_acento_trema_u.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/ü/\\\\\\"quote"u/g\" "$0;}' > troca_acento_trema_u.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'u/\\\\\\"quote"u/g\" "$0;}' > troca_acento_trema_u.bash
 ./troca_acento_trema_u.bash
 
-#Ú
+#\'U
 touch troca_acento_agudo_u_M.bash
 chmod u+x troca_acento_agudo_u_M.bash
-find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/Ú/\\\\\\"quote"U/g\" "$0;}' > troca_acento_agudo_u_M.bash
+find * | grep -i "\.tex" | awk -v quote="'" '{print "sed -i \"s/\'U/\\\\\\"quote"U/g\" "$0;}' > troca_acento_agudo_u_M.bash
 ./troca_acento_agudo_u_M.bash
 
 

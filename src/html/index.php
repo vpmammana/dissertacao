@@ -809,7 +809,7 @@ var oReq=new XMLHttpRequest();
                      resposta=oReq.responseText;
 		     elemento.value = resposta.trim(); // estah voltando com o linebreak no comeco por causa do ?> no final do arquivo identifica.php.cripto
 			 gemeo_atual_no_nivel = document.getElementById(matriz_ganha_foco[matriz_ganha_foco.length - 2][1][ultimo_visitado_flutua_para_direita]); // -2 para pegar flutua_para_direita. gemeo_atual_no_nivel passa a ser clone do que foi selecionado na arvore de secoes
-		     recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
+		     setTimeout(function () {recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);}, 1000);
 		     //textarea.setAttribute("data-alterado","sem_gravar");
 		     //textarea.style.backgroundColor = cor_de_edicao; 
 
@@ -1039,9 +1039,9 @@ let futuro_y =0;
 
 		if (e.key == "i" || e.key == "I") { // inserir nova secao do mesmo tipo da atual... a complicacao de setTimeout eh para dar a sincronizacao de simulacao de teclado
 				let tipo_secao_para_inserir = matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"); // guarda o tipo de secao onde o cursor estah agora.
-				let autorizados_para_i = "paragrafo, chama_ref, citacao, imagem, legenda_imagem, grafico, legenda_grafico, tabela, legenda_tabela, item_lista_num, item_lista_nao_num, item_de_referencia";
+				let autorizados_para_i = "paragrafo, chama_ref, citacao, imagem, legenda_imagem, grafico, legenda_grafico, tabela, legenda_tabela, item_lista_num, item_lista_nao_num, item_de_referencia, topico";
 				if (!matriz_ganha_foco[x][0].includes("nivel")){ alert("Você precisa estar numa janela de nível para inserir."); return;}
-				if (!autorizados_para_i.includes(tipo_secao_para_inserir)) {alert("Você só pode usar o shortcut 'i' para os seguintes tipos de secoes: "+tipo_secao_para_inserir+"."); return;}
+				if (!autorizados_para_i.includes(tipo_secao_para_inserir)) {alert("Você só pode usar o shortcut 'i' para os seguintes tipos de secoes: "+autorizados_para_i+"."); return;}
 				setTimeout(function () {simula_key_down(" ");}, 10);
 				setTimeout(function () 
 					{
@@ -1558,9 +1558,9 @@ function restringe_tipos_que_ganham_foco(tipo_pai){ // para a arvore de tipos, a
 	let arvore_tipos_de_secoes = document.getElementsByClassName("arvore_de_tipos");
 	//console.log(indice_seletor + " - "+tipo_pai);
 	for (i=0; i < arvore_tipos_de_secoes.length; i++){
-		if (arvore_tipos_de_secoes[i].getAttribute("data-id-pai") == tipo_pai){
+		if (arvore_tipos_de_secoes[i].getAttribute("data-id-pai") == tipo_pai || arvore_tipos_de_secoes[i].getAttribute("data-id-secao") == tipo_pai){
 			matriz_ganha_foco[indice_seletor][1].push(arvore_tipos_de_secoes[i]);
-			if ( i < arvore_tipos_de_secoes.length -1 && arvore_tipos_de_secoes[i+1].getAttribute("data-id-pai") == arvore_tipos_de_secoes[i].getAttribute("data-id-secao")) {
+			if ( i < arvore_tipos_de_secoes.length -1 && (arvore_tipos_de_secoes[i+1].getAttribute("data-id-pai") == arvore_tipos_de_secoes[i].getAttribute("data-id-secao") || arvore_tipos_de_secoes[i].getAttribute("data-id-secao") == tipo_pai)) {
 				arvore_tipos_de_secoes[i].setAttribute("data-primeiro-filho", arvore_tipos_de_secoes[i+1].getAttribute("data-id-secao"));
 			}
 			//console.log(matriz_ganha_foco[indice_seletor][1]);

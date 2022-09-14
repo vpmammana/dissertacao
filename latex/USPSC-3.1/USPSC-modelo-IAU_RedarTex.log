@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  13 SEP 2022 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  14 SEP 2022 00:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1963,12 +1963,12 @@ sed on input line 305.
 ] [16
 
 ])
-(./USPSC-modelo-IAU_RedarTex.lof)
+(./USPSC-modelo-IAU_RedarTex.lof
 Underfull \vbox (badness 3128) has occurred while \output is active []
 
  [17
 
-]
+])
 [18] (./USPSC-modelo-IAU_RedarTex.lot) [19
 
 ] [20
@@ -2009,13 +2009,23 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 83.
 
+Overfull \hbox (1.5877pt too wide) detected at line 87
+ \T1/lmss/bx/n/12 103
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 91
+ \T1/lmss/bx/n/12 105
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 95
- \T1/lmss/bx/n/12 101
+ \T1/lmss/bx/n/12 107
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 104
- \T1/lmss/bx/n/12 105
+ \T1/lmss/bx/n/12 111
  []
 
 
@@ -2023,7 +2033,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
 Overfull \hbox (1.5877pt too wide) detected at line 108
- \T1/lmss/bx/n/12 107
+ \T1/lmss/bx/n/12 113
  []
 
 ) [29] [30
@@ -2031,7 +2041,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 108
 ] [31
 
 ] [32] [33]
-<../../imagens/MEOS.png, id=443, 853.1875pt x 294.09875pt>
+<../../imagens/MEOS.png, id=447, 853.1875pt x 294.09875pt>
 File: ../../imagens/MEOS.png Graphic file (type png)
 <use ../../imagens/MEOS.png>
 Package pdftex.def Info: ../../imagens/MEOS.png  used on input line 643.
@@ -2077,7 +2087,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [45] [46] [47
 
 ] [48]
-<../../imagens/Herodote.jpg, id=545, 337.26pt x 481.8pt>
+<../../imagens/Herodote.jpg, id=549, 337.26pt x 481.8pt>
 File: ../../imagens/Herodote.jpg Graphic file (type jpg)
 <use ../../imagens/Herodote.jpg>
 Package pdftex.def Info: ../../imagens/Herodote.jpg  used on input line 1560.
@@ -2098,7 +2108,7 @@ LaTeX Warning: Citation `cite-Herodote' on page 49 undefined on input line 1566
                                                   \fi \fi 
 l.1579 
         <../../imagens/Herodote.jpg>]
-<../../imagens/ranke.jpg, id=550, 107.38997pt x 148.80312pt>
+<../../imagens/ranke.jpg, id=554, 107.38997pt x 148.80312pt>
 File: ../../imagens/ranke.jpg Graphic file (type jpg)
 <use ../../imagens/ranke.jpg>
 Package pdftex.def Info: ../../imagens/ranke.jpg  used on input line 1593.
@@ -2173,246 +2183,292 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [69]
 [70] [71
 
-] [72]
+] [72] [73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73]
-[74] [75]
-<../../imagens/Evento-Ciencia-Em-Show.jpg, id=708, 622.325pt x 414.54875pt>
+ [74]
+[75] [76]
+<../../imagens/Evento-Ciencia-Em-Show.jpg, id=720, 622.325pt x 414.54875pt>
 File: ../../imagens/Evento-Ciencia-Em-Show.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Ciencia-Em-Show.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Ciencia-Em-Show.jpg  used on inpu
-t line 3574.
+t line 3572.
 (pdftex.def)             Requested size: 622.32347pt x 414.54773pt.
 
 
-LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 76 undefined on i
-nput line 3580.
+LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 77 undefined on i
+nput line 3578.
 
 
-LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 76 undefined on i
-nput line 3580.
+LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 77 undefined on i
+nput line 3578.
 
-<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=709, 2007.5pt x 1337.9
+<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=721, 2007.5pt x 1337.9
 9875pt>
 File: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type jp
 g)
 <use ../../imagens/dia-das-criancas-2022-10-03-menor.JPG>
 Package pdftex.def Info: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG  u
-sed on input line 3589.
+sed on input line 3587.
 (pdftex.def)             Requested size: 2007.49512pt x 1337.9955pt.
 
-LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 76 und
-efined on input line 3595.
+LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 77 und
+efined on input line 3593.
 
 
-LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 76 und
-efined on input line 3595.
+LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 77 und
+efined on input line 3593.
 
-<../../imagens/confraternizacao-de-natal-menor.jpeg, id=710, 2007.5pt x 1337.99
+<../../imagens/confraternizacao-de-natal-menor.jpeg, id=722, 2007.5pt x 1337.99
 875pt>
 File: ../../imagens/confraternizacao-de-natal-menor.jpeg Graphic file (type jpg
 )
 <use ../../imagens/confraternizacao-de-natal-menor.jpeg>
 Package pdftex.def Info: ../../imagens/confraternizacao-de-natal-menor.jpeg  us
-ed on input line 3604.
+ed on input line 3602.
 (pdftex.def)             Requested size: 2007.49512pt x 1337.9955pt.
 
-LaTeX Warning: Citation `cite-confraternizacao-de-natal-menor' on page 76 undef
-ined on input line 3610.
+LaTeX Warning: Citation `cite-confraternizacao-de-natal-menor' on page 77 undef
+ined on input line 3608.
 
 
-LaTeX Warning: Citation `cite-confraternizacao-de-natal-menor' on page 76 undef
-ined on input line 3610.
+LaTeX Warning: Citation `cite-confraternizacao-de-natal-menor' on page 77 undef
+ined on input line 3608.
 
-<../../imagens/Evento-Greenk-2018-05-27.jpg, id=711, 1043.9pt x 782.925pt>
+<../../imagens/Evento-Greenk-2018-05-27.jpg, id=723, 1043.9pt x 782.925pt>
 File: ../../imagens/Evento-Greenk-2018-05-27.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Greenk-2018-05-27.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Greenk-2018-05-27.jpg  used on in
-put line 3619.
+put line 3617.
 (pdftex.def)             Requested size: 1043.89745pt x 782.9231pt.
 
-LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 76 undefined on
- input line 3625.
+LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 77 undefined on
+ input line 3623.
 
 
-LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 76 undefined on
- input line 3625.
+LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 77 undefined on
+ input line 3623.
 
-<../../imagens/MAAS.jpg, id=712, 1043.9pt x 782.925pt>
+<../../imagens/MAAS.jpg, id=724, 1043.9pt x 782.925pt>
 File: ../../imagens/MAAS.jpg Graphic file (type jpg)
 <use ../../imagens/MAAS.jpg>
-Package pdftex.def Info: ../../imagens/MAAS.jpg  used on input line 3634.
+Package pdftex.def Info: ../../imagens/MAAS.jpg  used on input line 3632.
 (pdftex.def)             Requested size: 1043.89745pt x 782.9231pt.
 
-LaTeX Warning: Citation `cite-MAAS' on page 76 undefined on input line 3640.
+LaTeX Warning: Citation `cite-MAAS' on page 77 undefined on input line 3638.
 
 
-LaTeX Warning: Citation `cite-MAAS' on page 76 undefined on input line 3640.
+LaTeX Warning: Citation `cite-MAAS' on page 77 undefined on input line 3638.
 
-<../../imagens/Ciencia-em-Show-prado.jpeg, id=713, 1027.84pt x 562.1pt>
+<../../imagens/Ciencia-em-Show-prado.jpeg, id=725, 1027.84pt x 562.1pt>
 File: ../../imagens/Ciencia-em-Show-prado.jpeg Graphic file (type jpg)
 <use ../../imagens/Ciencia-em-Show-prado.jpeg>
 Package pdftex.def Info: ../../imagens/Ciencia-em-Show-prado.jpeg  used on inpu
-t line 3649.
+t line 3647.
 (pdftex.def)             Requested size: 1027.8375pt x 562.09863pt.
 
-LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 76 undefined on in
-put line 3655.
+LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 77 undefined on in
+put line 3653.
 
 
-LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 76 undefined on in
-put line 3655.
+LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 77 undefined on in
+put line 3653.
 
-[76] [77pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.5.4}) has been already used, duplicate ignored
+[77pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3696 
-        <../../imagens/Evento-Ciencia-Em-Show.jpg>]
-<../../imagens/output-eventos.jpeg, id=730, 2258.4375pt x 3011.25pt>
-File: ../../imagens/output-eventos.jpeg Graphic file (type jpg)
-<use ../../imagens/output-eventos.jpeg>
-Package pdftex.def Info: ../../imagens/output-eventos.jpeg  used on input line 
-3728.
+l.3666 
+        <../../imagens/Evento-Ciencia-Em-Show.jpg>] [78pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.5.5}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3712 
+        <../../imagens/dia-das-criancas-2022-10-03-menor.JPG>]
+<../../imagens/output-participantes.jpeg, id=736, 2258.4375pt x 3011.25pt>
+File: ../../imagens/output-participantes.jpeg Graphic file (type jpg)
+<use ../../imagens/output-participantes.jpeg>
+Package pdftex.def Info: ../../imagens/output-participantes.jpeg  used on input
+ line 3726.
 (pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
 
 
-LaTeX Warning: Citation `cite-output-eventos' on page 78 undefined on input lin
-e 3734.
+LaTeX Warning: Citation `cite-output-participantes' on page 79 undefined on inp
+ut line 3732.
 
 
-LaTeX Warning: Citation `cite-output-eventos' on page 78 undefined on input lin
-e 3734.
+LaTeX Warning: Citation `cite-output-participantes' on page 79 undefined on inp
+ut line 3732.
 
-<../../imagens/participantes-por-genero.png, id=731, 578.16pt x 508.299pt>
-File: ../../imagens/participantes-por-genero.png Graphic file (type png)
-<use ../../imagens/participantes-por-genero.png>
-Package pdftex.def Info: ../../imagens/participantes-por-genero.png  used on in
-put line 3753.
-(pdftex.def)             Requested size: 578.15858pt x 508.29774pt.
+<../../imagens/output-participantes2.jpeg, id=737, 2258.4375pt x 3011.25pt>
+File: ../../imagens/output-participantes2.jpeg Graphic file (type jpg)
+<use ../../imagens/output-participantes2.jpeg>
+Package pdftex.def Info: ../../imagens/output-participantes2.jpeg  used on inpu
+t line 3777.
+(pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
 
-LaTeX Warning: Citation `cite-participantes-por-genero' on page 78 undefined on
- input line 3759.
-
-
-LaTeX Warning: Citation `cite-participantes-por-genero' on page 78 undefined on
- input line 3759.
-
-[78pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3782 \subsection
-                  [Distribui\c{c}\~ao de temas em relat\'orios]{Distribui\c{...
- <../../imagens/dia-das-criancas-2022-10-03-menor.JPG>]
-<../../imagens/distribuicao-dos-eventos-ao-longo-dos-anos-menor.png, id=737, 96
-3.6pt x 481.8pt>
-File: ../../imagens/distribuicao-dos-eventos-ao-longo-dos-anos-menor.png Graphi
-c file (type png)
-<use ../../imagens/distribuicao-dos-eventos-ao-longo-dos-anos-menor.png>
-Package pdftex.def Info: ../../imagens/distribuicao-dos-eventos-ao-longo-dos-an
-os-menor.png  used on input line 3808.
-(pdftex.def)             Requested size: 963.59766pt x 481.79881pt.
+LaTeX Warning: Citation `cite-output-participantes2' on page 79 undefined on in
+put line 3783.
 
 
-LaTeX Warning: Citation `cite-distribuicao-dos-eventos-ao-longo-dos-anos-menor'
- on page 79 undefined on input line 3814.
+LaTeX Warning: Citation `cite-output-participantes2' on page 79 undefined on in
+put line 3783.
+
+<../../imagens/output-media-participacoes.jpeg, id=738, 2258.4375pt x 3011.25pt
+>
+File: ../../imagens/output-media-participacoes.jpeg Graphic file (type jpg)
+<use ../../imagens/output-media-participacoes.jpeg>
+Package pdftex.def Info: ../../imagens/output-media-participacoes.jpeg  used on
+ input line 3801.
+(pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
+
+LaTeX Warning: Citation `cite-output-media-participacoes' on page 79 undefined 
+on input line 3807.
 
 
-LaTeX Warning: Citation `cite-distribuicao-dos-eventos-ao-longo-dos-anos-menor'
- on page 79 undefined on input line 3814.
-
-<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=738, 2007.5pt x 40
-15.0pt>
-File: ../../imagens/histograma-de-idades-no-ano-do-evento.png Graphic file (typ
-e png)
-<use ../../imagens/histograma-de-idades-no-ano-do-evento.png>
-Package pdftex.def Info: ../../imagens/histograma-de-idades-no-ano-do-evento.pn
-g  used on input line 3833.
-(pdftex.def)             Requested size: 2007.49512pt x 4014.99026pt.
-
-LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 79
- undefined on input line 3839.
+LaTeX Warning: Citation `cite-output-media-participacoes' on page 79 undefined 
+on input line 3807.
 
 
-LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 79
- undefined on input line 3839.
-
-
-LaTeX Warning: Float too large for page by 73.53262pt on input line 3841.
-
-[79pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3862 P
-        rimeiro par\'agrafo. <../../imagens/confraternizacao-de-natal-menor.jpe
-g>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3809 \end{figure}
+                    <../../imagens/confraternizacao-de-natal-menor.jpeg>]
+Underfull \vbox (badness 1902) has occurred while \output is active []
 
  [80pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3935 \subsection
-                  [Participantes mais ass\'{\i}duos]{Participantes mais ass\...
- <../../imagens/Evento-Greenk-2018-05-27.jpg>] [81pdfTeX warning (ext4): destin
-ation with the same identifier (name{figure.5.8}) has been already used, duplic
-ate ignored
+l.3839 
+        <../../imagens/Evento-Greenk-2018-05-27.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3955 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-MAAS.jpg>] [82pdfTeX warning (ext4): destination with the same identifier (name
-{figure.5.9}) has been already used, duplicate ignored
+l.3866 
+        <../../imagens/MAAS.jpg>]
+<../../imagens/genero-todos-crop.jpeg, id=751, 583.781pt x 504.284pt>
+File: ../../imagens/genero-todos-crop.jpeg Graphic file (type jpg)
+<use ../../imagens/genero-todos-crop.jpeg>
+Package pdftex.def Info: ../../imagens/genero-todos-crop.jpeg  used on input li
+ne 3907.
+(pdftex.def)             Requested size: 583.77957pt x 504.28276pt.
+
+
+LaTeX Warning: Citation `cite-genero-todos-crop' on page 82 undefined on input 
+line 3913.
+
+
+LaTeX Warning: Citation `cite-genero-todos-crop' on page 82 undefined on input 
+line 3913.
+
+
+Underfull \vbox (badness 7981) has occurred while \output is active []
+
+ [82pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3955 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-Ciencia-em-Show-prado.jpeg>] [83pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.5.10}) has been already used, duplicate ignored
+l.3918 
+        <../../imagens/Ciencia-em-Show-prado.jpeg>] [83] [84]
+<../../imagens/output-eventos.jpeg, id=772, 2258.4375pt x 3011.25pt>
+File: ../../imagens/output-eventos.jpeg Graphic file (type jpg)
+<use ../../imagens/output-eventos.jpeg>
+Package pdftex.def Info: ../../imagens/output-eventos.jpeg  used on input line 
+4128.
+(pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
+
+
+LaTeX Warning: Citation `cite-output-eventos' on page 85 undefined on input lin
+e 4134.
+
+
+LaTeX Warning: Citation `cite-output-eventos' on page 85 undefined on input lin
+e 4134.
+
+<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=773, 2007.5pt x 40
+15.0pt>
+File: ../../imagens/histograma-de-idades-no-ano-do-evento.png Graphic file (typ
+e png)
+<use ../../imagens/histograma-de-idades-no-ano-do-evento.png>
+Package pdftex.def Info: ../../imagens/histograma-de-idades-no-ano-do-evento.pn
+g  used on input line 4153.
+(pdftex.def)             Requested size: 2007.49512pt x 4014.99026pt.
+
+LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 85
+ undefined on input line 4159.
+
+
+LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 85
+ undefined on input line 4159.
+
+
+LaTeX Warning: Float too large for page by 73.53262pt on input line 4161.
+
+[85] [86] [87pdfTeX warning (ext4): destination with the same identifier (name{
+figure.5.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3955 \chapter
+l.4275 \chapter
                [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-output-eventos.jpeg>] [84pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.5.11}) has been already used, duplicate ignored
+output-participantes.jpeg>] [88pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.5.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3955 \chapter
+l.4275 \chapter
                [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-participantes-por-genero.png>] [85pdfTeX warning (ext4): destination with the s
-ame identifier (name{figure.5.12}) has been already used, duplicate ignored
+output-participantes2.jpeg>] [89pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.5.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3955 \chapter
+l.4275 \chapter
                [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-distribuicao-dos-eventos-ao-longo-dos-anos-menor.png>] [86pdfTeX warning (ext4)
-: destination with the same identifier (name{figure.5.13}) has been already use
-d, duplicate ignored
+output-media-participacoes.jpeg>] [90pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.5.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3955 \chapter
+l.4275 \chapter
                [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-histograma-de-idades-no-ano-do-evento.png>] [87
+genero-todos-crop.jpeg>] [91pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.5.14}) has been already used, duplicate ignored
 
-] [88
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.4275 \chapter
+               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
+output-eventos.jpeg>] [92pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.5.15}) has been already used, duplicate ignored
 
-] [89] [90
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.4275 \chapter
+               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
+histograma-de-idades-no-ano-do-evento.png>] [93
 
-] [91] [92]
-[93] [94]
+] [94
+
+] [95] [96
+
+] [97] [98]
+[99] [100]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux'.
 
  (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex
@@ -2420,40 +2476,40 @@ histograma-de-idades-no-ano-do-evento.png>] [87
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[95
+[101
 
 
 
-] [96]
+] [102]
 
-LaTeX Warning: Citation `nbr14724' on page 97 undefined on input line 10.
+LaTeX Warning: Citation `nbr14724' on page 103 undefined on input line 10.
 
 
-LaTeX Warning: Citation `aguia2020' on page 97 undefined on input line 12.
+LaTeX Warning: Citation `aguia2020' on page 103 undefined on input line 12.
 
-[97
+[103
 
-] [98
+] [104
 
-] [99pdfTeX warning (ext4): destination with the same identifier (name{table.B.
-1}) has been already used, duplicate ignored
+] [105pdfTeX warning (ext4): destination with the same identifier (name{table.B
+.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 \chapter
-             {Exemplo de tabela com grade}] [100
+             {Exemplo de tabela com grade}] [106
 
-]) [101pdfTeX warning (ext4): destination with the same identifier (name{table.
+]) [107pdfTeX warning (ext4): destination with the same identifier (name{table.
 C.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5266 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
+l.5619 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
                                                   ]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux'.
 
 
-(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex [102
+(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex [108
 
 
 
@@ -2462,18 +2518,18 @@ l.5266 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[103
+[109
 
-] [104]
+] [110]
 
-LaTeX Warning: Citation `nbr14724' on page 105 undefined on input line 13.
+LaTeX Warning: Citation `nbr14724' on page 111 undefined on input line 13.
 
-[105
+[111
 
-] [106
+] [112
 
 ]
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=861, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=898, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
@@ -2481,14 +2537,14 @@ e 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
 
 
-LaTeX Warning: Citation `comandos' on page 107 undefined on input line 22.
+LaTeX Warning: Citation `comandos' on page 113 undefined on input line 22.
 
-) [107pdfTeX warning (ext4): destination with the same identifier (name{figure.
-anexochapback.2.14}) has been already used, duplicate ignored
+) [113pdfTeX warning (ext4): destination with the same identifier (name{figure.
+anexochapback.2.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5271 ...PSC-TA-PosTextual/USPSC-Anexos_RedarTex}
+l.5624 ...PSC-TA-PosTextual/USPSC-Anexos_RedarTex}
                                                    <./USPSC-img/USPSC-Acentuaca
 oLaTeX.png>]
 \openout2 = `USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux'.
@@ -2509,8 +2565,8 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `USPSC-modelo-IAU_RedarTex.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5280.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5280.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5633.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5633.
 (./USPSC-modelo-IAU_RedarTex.aux
 (./USPSC-TA-PreTextual/USPSC-Errata_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux)
@@ -2523,22 +2579,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 5280.
 (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5280.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5280.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5633.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5633.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5633.
  ) 
 Here is how much of TeX's memory you used:
- 32869 strings out of 483090
- 629558 string characters out of 5963929
- 1077673 words of memory out of 5000000
- 46625 multiletter control sequences out of 15000+600000
+ 32903 strings out of 483090
+ 630143 string characters out of 5963929
+ 1078051 words of memory out of 5000000
+ 46641 multiletter control sequences out of 15000+600000
  628999 words of font info for 142 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  73i,18n,108p,2318b,721s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2552,10 +2605,10 @@ ype1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (109 pages, 5041229 bytes).
+Output written on USPSC-modelo-IAU_RedarTex.pdf (115 pages, 7217365 bytes).
 PDF statistics:
- 1224 PDF objects out of 1440 (max. 8388607)
- 1056 compressed objects within 11 object streams
- 337 named destinations out of 1000 (max. 500000)
- 30471 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1263 PDF objects out of 1440 (max. 8388607)
+ 1089 compressed objects within 11 object streams
+ 353 named destinations out of 1000 (max. 500000)
+ 30481 words of extra memory for PDF output out of 35830 (max. 10000000)
 

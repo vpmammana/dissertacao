@@ -58,51 +58,51 @@
 \contentsline {section}{\numberline {5.2}Caracterizacao do M\'etodo do WASH}{71}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Caracteriza\c {c}\~ao dos Resultados do WASH}{72}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Amostragem do p\'ublico atendido}{73}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Evolu\c {c}\~ao temporal de participantes}{77}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Distribui\c {c}\~ao de partipantes por sexo}{78}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}N\'umero de Bolsistas}{78}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}N\'umero de Relat\'orios}{79}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{79}{subsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.3.7}N\'umero de oficinas realizadas}{79}{subsection.5.3.7}%
-\contentsline {subsection}{\numberline {5.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{79}{subsection.5.3.8}%
-\contentsline {subsection}{\numberline {5.3.9}Distribui\c {c}\~ao de temas nas oficinas}{79}{subsection.5.3.9}%
-\contentsline {subsection}{\numberline {5.3.10}Tipos de Atividades realizadas nas oficinas}{80}{subsection.5.3.10}%
-\contentsline {subsection}{\numberline {5.3.11}Cidades Atendidas}{81}{subsection.5.3.11}%
-\contentsline {subsection}{\numberline {5.3.12}Participantes mais ass\'{\i }duos}{81}{subsection.5.3.12}%
-\contentsline {section}{\numberline {5.4}An\'alise: s\'{\i }ntese das 3 dimens\~oes}{81}{section.5.4}%
+\contentsline {subsection}{\numberline {5.3.2}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{78}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Distribui\c {c}\~ao de partipantes por sexo}{80}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}N\'umero de Bolsistas}{83}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{84}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{85}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}N\'umero de oficinas realizadas}{85}{subsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{85}{subsection.5.3.8}%
+\contentsline {subsection}{\numberline {5.3.9}Distribui\c {c}\~ao de temas nas oficinas}{85}{subsection.5.3.9}%
+\contentsline {subsection}{\numberline {5.3.10}Tipos de Atividades realizadas nas oficinas}{85}{subsection.5.3.10}%
+\contentsline {subsection}{\numberline {5.3.11}Cidades Atendidas}{86}{subsection.5.3.11}%
+\contentsline {subsection}{\numberline {5.3.12}Participantes mais ass\'{\i }duos}{86}{subsection.5.3.12}%
+\contentsline {section}{\numberline {5.4}An\'alise: s\'{\i }ntese das 3 dimens\~oes}{86}{section.5.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{87}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{93}{chapter.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{89}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{95}{chapter.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{91}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{97}{chapter.8}%
 \vspace {\cftbeforechapterskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {AP\^ENDICES}}{95}{section*.19}%
+\contentsline {part}{\uppercase {AP\^ENDICES}}{101}{section*.19}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{97}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Ap\^endice(s)}}{103}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{99}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{105}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{101}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Exemplo de tabela com grade}}{107}{appendix.C}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{103}{section*.20}%
+\contentsline {part}{\uppercase {ANEXOS}}{109}{section*.20}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{105}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{111}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{107}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{113}{appendix.anexochapback.2}%

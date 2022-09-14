@@ -42,7 +42,7 @@ if ($nivel == 4 && $nome_tipo_secao=="topico") {
 
 if ($nome_tipo_secao == "imagem"){
 	$texto_latex = "\n
-\\begin{figure}[htb]\n
+\\begin{figure}[Htb]\n
 	\\begin{center}\n
 		\\includegraphics[max size={\\textwidth}{\\textheight}]{../../imagens/".$texto."}\n
 	\\end{center}\n
@@ -162,6 +162,7 @@ $linha = str_replace("_","\_",$linha);
 $linha = str_replace("}","\}",$linha); // se voce quiser usar comandos latex no box1 e box2, tem que tirar esta linha. Daí, todos o colchetes do texto precisam vir com \{
 $linha = str_replace("{","\{",$linha);
 $linha = str_replace("&","\&",$linha);
+$linha = str_replace("%","\%",$linha);
 $linha = str_replace("á","\'a",$linha);
 $linha = str_replace("Á","\'A",$linha);
 $linha = str_replace("é","\'e",$linha);

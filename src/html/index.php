@@ -391,7 +391,7 @@ var texto_a_separar="";
 
 function junta_proximo (){i
 
-var tipos_autorizados = "paragrafo, citacao, item_lista_num, item_lista_nao_num";
+var tipos_autorizados = "paragrafo, citacao, item_lista_num, item_lista_nao_num, mult_imagem";
 
 if (!matriz_ganha_foco[x][0].includes("nivel")) {alert("Você só pode fazer junta numa janela de nível."); return;}
 if (x == 0) {alert("Você não pode juntar seções do nível 1."); return;}
@@ -1076,9 +1076,12 @@ let futuro_y =0;
 				{
 				document.getElementById("botao_nova_secao_dentro").disabled = false;
 				}
-				
-				textarea_em_edicao.value = "";				
+				if (matriz_ganha_foco[x][1][y].getAttribute("data-id-secao")== "mult_imagem") 
+				{textarea_em_edicao.value = "Junte cada imagem puxando uma imagem abaixo e intercalando com os captions. Todos os itens devem ser separados com |. Você pode digitar o nome do arquivo se já estiver uploaded, mas não use underscore no nome. Não use ENTER. -> \n";}
+				else
+				{textarea_em_edicao.value = "";}
 			}
+		
 			} else {alert("Selecione uma seção nas janela 'Escolha Box 2' antes de tentar editar!");}
 			return;	
 		;}

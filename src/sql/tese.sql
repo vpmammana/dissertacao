@@ -945,6 +945,7 @@ call insere_a_direita_dos_filhos_tipos_secoes("topico",				"paragrafo",					"Par
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"chama_ref",					"Chamada de referência em parágrafos dos tópicos ou das sessões");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"citacao",					"Citacao por extenso em itálico, dentro de tópicos ou das sessões");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"imagem",					"Imagens dos tópicos ou sessões");
+call insere_a_direita_dos_filhos_tipos_secoes("topico",				"mult_imagem",					"Imagens múltiplas, arquivo e captions separados por |");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"legenda_imagem",				"Legenda de Imagens dos tópicos ou sessões");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"grafico",					"Gráficos dos tópicos ou sessões");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"legenda_grafico",				"Legenda de gráficos dos tópicos ou sessões");

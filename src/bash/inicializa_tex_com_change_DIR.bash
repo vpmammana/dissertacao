@@ -247,6 +247,14 @@ sed -i "s/coorientadoradic[{] Co-orientador: Prof. Dr. Jo\\\~ao Alves Serqueira[
 #"da USP" aparece apenas em TUTORIAL, então não precisa mudar
 # USP Sao Carlos aparece apenas em TUTORIAL e não precisa mudar
 
+#Troca o nome da posicionamento_figuras
+touch ../../latex/USPSC-3.1/troca_posicionamento_figuras.bash
+chmod u+x ../../latex/USPSC-3.1/troca_posicionamento_figuras.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/\[htb\]/[Htb]/g\" "$0;}' >../../latex/USPSC-3.1/troca_posicionamento_figuras.bash
+# voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
+../../latex/USPSC-3.1/troca_posicionamento_figuras.bash
+
+
 #Troca o nome da bibliografia
 touch ../../latex/USPSC-3.1/troca_bibliografia.bash
 chmod u+x ../../latex/USPSC-3.1/troca_bibliografia.bash

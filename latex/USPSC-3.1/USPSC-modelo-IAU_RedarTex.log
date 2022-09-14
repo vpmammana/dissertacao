@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  14 SEP 2022 00:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  14 SEP 2022 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1828,15 +1828,25 @@ e1 used on input line 266.
 
 LaTeX Warning: Citation `nbr14724' on page 3 undefined on input line 4.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 25.
+)
+Runaway argument?
+{table}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \E
+TC.
+! File ended while scanning use of \@float@HH.
+<inserted text> 
+                \par 
+l.289 ...SPSC-TA-PreTextual/USPSC-Errata_RedarTex}
+                                                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 [3
 
 
-] [4
-
-])
-<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=52, 597.55246pt x 845.07718
+]
+<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=46, 597.55246pt x 845.07718
 pt>
 File: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf>
@@ -1848,7 +1858,7 @@ File: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf Graphic file (type pdf)
 Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf  used o
 n input line 300.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=55, page=1, 597.55246pt x 8
+<USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, id=49, page=1, 597.55246pt x 8
 45.07718pt>
 File: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf, page 1>
@@ -1875,10 +1885,10 @@ File: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf Graphic file (type pdf)
 Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf , page1
  used on input line 300.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [5
+ [4
 
  <./USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf>]
-<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=67, 597.55246pt x 845.07718pt
+<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=60, 597.55246pt x 845.07718pt
 >
 File: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf>
@@ -1890,7 +1900,7 @@ File: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf Graphic file (type pdf)
 Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf  used on 
 input line 305.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=70, page=1, 597.55246pt x 845
+<USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, id=63, page=1, 597.55246pt x 845
 .07718pt>
 File: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf Graphic file (type pdf)
 <use USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf, page 1>
@@ -1917,89 +1927,88 @@ File: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf Graphic file (type pdf)
 Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf , page1 u
 sed on input line 305.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [6 <./USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf>]
+ [5 <./USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf>]
 \openout2 = `USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.tex [7
-
-] [8
+(./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.tex [6
 
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex [9
+(./USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex [7
 
 
 
-] [10
+
+] [8
 
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Epigrafe_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-Epigrafe_RedarTex.tex [11
+(./USPSC-TA-PreTextual/USPSC-Epigrafe_RedarTex.tex [9
 
 
-] [12
+] [10
 
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex [13
+(./USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex [11
 
 
-] [14
+] [12
 
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.tex [15
+(./USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.tex [13
 
 
-] [16
+] [14
 
 ])
 (./USPSC-modelo-IAU_RedarTex.lof
-Underfull \vbox (badness 3128) has occurred while \output is active []
+Underfull \vbox (badness 2503) has occurred while \output is active []
 
- [17
+ [15
 
 ])
-[18] (./USPSC-modelo-IAU_RedarTex.lot) [19
+[16] (./USPSC-modelo-IAU_RedarTex.lot) [17
 
-] [20
+] [18
 
 ]
-(./USPSC-modelo-IAU_RedarTex.loq) [21] [22
+(./USPSC-modelo-IAU_RedarTex.loq) [19] [20
 
 ]
 \openout2 = `USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex [23
+(./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex [21
 
 
-] [24
+] [22
 
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex [25
+(./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex [23
 
 
 
-] [26
+] [24
 
 ])
 (./USPSC-modelo-IAU_RedarTex.toc
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
- [27
+ [25
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2010,132 +2019,449 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 83.
 
 Overfull \hbox (1.5877pt too wide) detected at line 87
- \T1/lmss/bx/n/12 103
+ \T1/lmss/bx/n/12 101
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 91
- \T1/lmss/bx/n/12 105
+ \T1/lmss/bx/n/12 103
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 95
- \T1/lmss/bx/n/12 107
+ \T1/lmss/bx/n/12 105
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 104
- \T1/lmss/bx/n/12 111
+ \T1/lmss/bx/n/12 109
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [26]
 Overfull \hbox (1.5877pt too wide) detected at line 108
- \T1/lmss/bx/n/12 113
+ \T1/lmss/bx/n/12 111
  []
 
-) [29] [30
+) [27] [28
 
-] [31
+] [29
 
-] [32] [33]
-<../../imagens/MEOS.png, id=447, 853.1875pt x 294.09875pt>
+] [30]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.640 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/MEOS.png, id=419, 853.1875pt x 294.09875pt>
 File: ../../imagens/MEOS.png Graphic file (type png)
 <use ../../imagens/MEOS.png>
 Package pdftex.def Info: ../../imagens/MEOS.png  used on input line 643.
 (pdftex.def)             Requested size: 853.18542pt x 294.09802pt.
+[31]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.647 	\caption
+               {\label{MEOS}A estrutura de espinha de peixe de S.A. MEOs  (f...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.647 	\caption
+               {\label{MEOS}A estrutura de espinha de peixe de S.A. MEOs  (f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.647 	\caption
+               {\label{MEOS}A estrutura de espinha de peixe de S.A. MEOs  (f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `cite-MEOS' on page 34 undefined on input line 649.
+LaTeX Warning: Citation `cite-MEOS' on page 32 undefined on input line 649.
 
 
-LaTeX Warning: Citation `cite-MEOS' on page 34 undefined on input line 649.
+LaTeX Warning: Citation `cite-MEOS' on page 32 undefined on input line 649.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.651 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.651 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 
-Underfull \vbox (badness 1127) has occurred while \output is active []
+! LaTeX Error: \begin{table} on input line 22 ended by \end{figure}.
 
- [34pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-1}) has been already used, duplicate ignored
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.651 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.691 
-       <../../imagens/MEOS.png>] [35] [36]
+[32
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Organiza\c {c}\~ao da
+ Introdu\c {c}\~ao}{32}{section.1.3}\protected@file@percent }
+\newlabel{Organiza\c {c}\~ao da Introdu\c {c}\~ao}{{\M@TitleReference {1.3}{Org
+aniza\c {c}\~ao da Introdu\c {c}\~ao}}{32}{Organiza\c {c}\~ao da Introdu\c {c}\
+~ao}{section.1.3}{}}
+ <../../imagens/MEOS.png>] [33
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Organiza\c {c}\~ao de
+ Materiais e M\'etodos}{33}{section.1.4}\protected@file@percent }
+\newlabel{Organiza\c {c}\~ao de Materiais e M\'etodos}{{\M@TitleReference {1.4}
+{Organiza\c {c}\~ao de Materiais e M\'etodos}}{33}{Organiza\c {c}\~ao de Materi
+ais e M\'etodos}{section.1.4}{}}
+] [34
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}Organiza\c {c}\~ao de
+ Resultados e Discuss\~oes}{34}{section.1.5}\protected@file@percent }
+\newlabel{Organiza\c {c}\~ao de Resultados e Discuss\~oes}{{\M@TitleReference {
+1.5}{Organiza\c {c}\~ao de Resultados e Discuss\~oes}}{34}{Organiza\c {c}\~ao d
+e Resultados e Discuss\~oes}{section.1.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}Organiza\c {c}\~ao de
+ Produto Tecnol\'ogico}{34}{section.1.6}\protected@file@percent }
+\newlabel{Organiza\c {c}\~ao de Produto Tecnol\'ogico}{{\M@TitleReference {1.6}
+{Organiza\c {c}\~ao de Produto Tecnol\'ogico}}{34}{Organiza\c {c}\~ao de Produt
+o Tecnol\'ogico}{section.1.6}{}}
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37
+ [35
 
+
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapter
+numwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {2}\MakeTextUpperca
+se  {INTRODU\c {C}\~AO}}{35}{chapter.2}\protected@file@percent }
+\newlabel{INTRODU\c {C}\~AO}{{\M@TitleReference {2}{\MakeTextUppercase  {INTROD
+U\c {C}\~AO}}}{35}{INTRODU\c {C}\~AO}{chapter.2}{}}
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
+[40] [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [42]
+[43
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Objeto}{43}{section.2
+.1}\protected@file@percent }
+\newlabel{Objeto}{{\M@TitleReference {2.1}{Objeto}}{43}{Objeto}{section.2.1}{}}
 
- [41]
-[42] [43]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Objetivo}{43}{section
+.2.2}\protected@file@percent }
+\newlabel{Objetivo}{{\M@TitleReference {2.2}{Objetivo}}{43}{Objetivo}{section.2
+.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Hip\'oteses}{43}{sect
+ion.2.3}\protected@file@percent }
+\newlabel{Hip\'oteses}{{\M@TitleReference {2.3}{Hip\'oteses}}{43}{Hip\'oteses}{
+section.2.3}{}}
+] [44
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Problema}{44}{section
+.2.4}\protected@file@percent }
+\newlabel{Problema}{{\M@TitleReference {2.4}{Problema}}{44}{Problema}{section.2
+.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Justificativa}{44}{se
+ction.2.5}\protected@file@percent }
+\newlabel{Justificativa}{{\M@TitleReference {2.5}{Justificativa}}{44}{Justifica
+tiva}{section.2.5}{}}
+] [45
 
- [44]
-[45] [46] [47
 
-] [48]
-<../../imagens/Herodote.jpg, id=549, 337.26pt x 481.8pt>
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapter
+numwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {3}\MakeTextUpperca
+se  {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{45}{chapter.3}\protected@file@percent }
+\newlabel{FUNDAMENTA\c {C}\~AO TE\'ORICA }{{\M@TitleReference {3}{\MakeTextUppe
+rcase  {FUNDAMENTA\c {C}\~AO TE\'ORICA }}}{45}{FUNDAMENTA\c {C}\~AO TE\'ORICA}{
+chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Fundamenta\c {c}\~ao:
+ hist\'oria}{45}{section.3.1}\protected@file@percent }
+\newlabel{Fundamenta\c {c}\~ao: hist\'oria}{{\M@TitleReference {3.1}{Fundamenta
+\c {c}\~ao: hist\'oria}}{45}{Fundamenta\c {c}\~ao: hist\'oria}{section.3.1}{}}
+] [46
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Revis\~ao da evo
+lu\c {c}\~ao da historiografia}{46}{subsection.3.1.1}\protected@file@percent }
+\newlabel{Revis\~ao da evolu\c {c}\~ao da historiografia}{{\M@TitleReference {3
+.1.1}{Revis\~ao da evolu\c {c}\~ao da historiografia}}{46}{Revis\~ao da evolu\c
+ {c}\~ao da historiografia}{subsection.3.1.1}{}}
+]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.1557 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/Herodote.jpg, id=534, 337.26pt x 481.8pt>
 File: ../../imagens/Herodote.jpg Graphic file (type jpg)
 <use ../../imagens/Herodote.jpg>
 Package pdftex.def Info: ../../imagens/Herodote.jpg  used on input line 1560.
 (pdftex.def)             Requested size: 337.25917pt x 481.79881pt.
 
+! LaTeX Error: \caption outside float.
 
-LaTeX Warning: Citation `cite-Herodote' on page 49 undefined on input line 1566
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1564 	\caption
+                {\label{Herodote}C\'opia Romana do Busto de Her\'odoto, do s...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.1564 	\caption
+                {\label{Herodote}C\'opia Romana do Busto de Her\'odoto, do s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.1564 	\caption
+                {\label{Herodote}C\'opia Romana do Busto de Her\'odoto, do s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-Herodote}
+
+LaTeX Warning: Citation `cite-Herodote' on page 47 undefined on input line 1566
 .
 
+\citation{cite-Herodote}
 
-LaTeX Warning: Citation `cite-Herodote' on page 49 undefined on input line 1566
+LaTeX Warning: Citation `cite-Herodote' on page 47 undefined on input line 1566
 .
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-}) has been already used, duplicate ignored
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.1568 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1579 
-        <../../imagens/Herodote.jpg>]
-<../../imagens/ranke.jpg, id=554, 107.38997pt x 148.80312pt>
+! Extra }, or forgotten \endgroup.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.1568 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{errata} on input line 2 ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1568 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[47
+\newlabel{Herodote}{{\M@TitleReference {3.1.1}{Revis\~ao da evolu\c {c}\~ao da 
+historiografia}}{47}{Revis\~ao da evolu\c {c}\~ao da historiografia}{subsection
+.3.1.1}{}}
+ <../../imagens/Herodote.jpg>]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.1590 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/ranke.jpg, id=540, 107.38997pt x 148.80312pt>
 File: ../../imagens/ranke.jpg Graphic file (type jpg)
 <use ../../imagens/ranke.jpg>
 Package pdftex.def Info: ../../imagens/ranke.jpg  used on input line 1593.
 (pdftex.def)             Requested size: 107.3897pt x 148.80275pt.
 
+! LaTeX Error: \caption outside float.
 
-LaTeX Warning: Citation `cite-ranke' on page 50 undefined on input line 1599.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1597 	\caption
+                {\label{ranke}Leopold Von Ranke (fonte: dom\'{i}nio p\'ublico)}
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.1597 	\caption
+                {\label{ranke}Leopold Von Ranke (fonte: dom\'{i}nio p\'ublico)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.1597 	\caption
+                {\label{ranke}Leopold Von Ranke (fonte: dom\'{i}nio p\'ublico)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-ranke}
+
+LaTeX Warning: Citation `cite-ranke' on page 48 undefined on input line 1599.
+
+\citation{cite-ranke}
+
+LaTeX Warning: Citation `cite-ranke' on page 48 undefined on input line 1599.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.1601 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.1601 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `cite-ranke' on page 50 undefined on input line 1599.
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1601 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.1601 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 620.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [50pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1639 E
-        vidente que os m\'etodos da pesquisa em Hist\'oria evolu\'{\i}ram mu...
+) [48
+\newlabel{ranke}{{\M@TitleReference {}{}}{48}{}{subsection.3.1.1}{}}
  <../../imagens/ranke.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [49]
 Underfull \vbox (badness 2970) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Governo Eletr\^o
+nico}{51}{subsection.3.1.2}\protected@file@percent }
+\newlabel{Governo Eletr\^onico}{{\M@TitleReference {3.1.2}{Governo Eletr\^onico
+}}{51}{Governo Eletr\^onico}{subsection.3.1.2}{}}
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2147,20 +2473,65 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55]
+[56
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Sociedade da Inf
+orma\c {c}\~ao}{56}{subsection.3.1.3}\protected@file@percent }
+\newlabel{Sociedade da Informa\c {c}\~ao}{{\M@TitleReference {3.1.3}{Sociedade 
+da Informa\c {c}\~ao}}{56}{Sociedade da Informa\c {c}\~ao}{subsection.3.1.3}{}}
+
+] [57
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Pol\'{\i }ticas 
+P\'ublicas de Inclus\~ao e Cultura Digital}{57}{subsection.3.1.4}\protected@fil
+e@percent }
+\newlabel{Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{{\M@Title
+Reference {3.1.4}{Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}}{
+57}{Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{subsection.3.1.
+4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Descri\c {c}\~ao
+ do Programa WASH}{57}{subsection.3.1.5}\protected@file@percent }
+\newlabel{Descri\c {c}\~ao do Programa WASH}{{\M@TitleReference {3.1.5}{Descri\
+c {c}\~ao do Programa WASH}}{57}{Descri\c {c}\~ao do Programa WASH}{subsection.
+3.1.5}{}}
+] [58
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}O pensamento de 
+Papert}{58}{subsection.3.1.6}\protected@file@percent }
+\newlabel{O pensamento de Papert}{{\M@TitleReference {3.1.6}{O pensamento de Pa
+pert}}{58}{O pensamento de Papert}{subsection.3.1.6}{}}
+] [59
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.7}O que \'e STEM?}
+{59}{subsection.3.1.7}\protected@file@percent }
+\newlabel{O que \'e STEM?}{{\M@TitleReference {3.1.7}{O que \'e STEM?}}{59}{O q
+ue \'e STEM?}{subsection.3.1.7}{}}
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56]
+ [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
-[58] [59] [60] [61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [63]
-[64] [65]
+ [61
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Fundamenta\c {c}\~ao:
+ caracteriza\c {c}\~ao do m\'etodo}{61}{section.3.2}\protected@file@percent }
+\newlabel{Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao do m\'etodo}{{\M@TitleRef
+erence {3.2}{Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao do m\'etodo}}{61}{Fund
+amenta\c {c}\~ao: caracteriza\c {c}\~ao do m\'etodo}{section.3.2}{}}
+] [62
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Fundamenta\c {c}\~ao:
+ caracteriza\c {c}\~ao dos resultados}{62}{section.3.3}\protected@file@percent 
+}
+\newlabel{Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados}{{\M@Title
+Reference {3.3}{Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados}}{62
+}{Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Indicadores}{62}
+{subsection.3.3.1}\protected@file@percent }
+\newlabel{Indicadores}{{\M@TitleReference {3.3.1}{Indicadores}}{62}{Indicadores
+}{subsection.3.3.1}{}}
+] [63
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Informa\c {c}\~a
+o, dados e conhecimento}{63}{subsection.3.3.2}\protected@file@percent }
+\newlabel{Informa\c {c}\~ao, dados e conhecimento}{{\M@TitleReference {3.3.2}{I
+nforma\c {c}\~ao, dados e conhecimento}}{63}{Informa\c {c}\~ao, dados e conheci
+mento}{subsection.3.3.2}{}}
+]
 
 ! Package inputenc Error: Unicode character ầ (U+1EA7)
 (inputenc)                not set up for use with LaTeX.
@@ -2175,35 +2546,240 @@ l.2760 ...\'e a identifica\c{c}\~ao desta relevầ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[66] [67
+[64] [65
 
-] [68]
+
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapter
+numwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {4}\MakeTextUpperca
+se  {MATERIAIS E M\'ETODOS}}{65}{chapter.4}\protected@file@percent }
+\newlabel{MATERIAIS E M\'ETODOS}{{\M@TitleReference {4}{\MakeTextUppercase  {MA
+TERIAIS E M\'ETODOS}}}{65}{MATERIAIS E M\'ETODOS}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Caminho para constru\
+c {c}\~ao da narrativa hist\'orica}{65}{section.4.1}\protected@file@percent }
+\newlabel{Caminho para constru\c {c}\~ao da narrativa hist\'orica}{{\M@TitleRef
+erence {4.1}{Caminho para constru\c {c}\~ao da narrativa hist\'orica}}{65}{Cami
+nho para constru\c {c}\~ao da narrativa hist\'orica}{section.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}M\'etodo de Hist
+oriografia Utilizado }{65}{subsection.4.1.1}\protected@file@percent }
+\newlabel{M\'etodo de Historiografia Utilizado }{{\M@TitleReference {4.1.1}{M\'
+etodo de Historiografia Utilizado }}{65}{M\'etodo de Historiografia Utilizado}{
+subsection.4.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Acervo utilizado
+ para o levantamento hist\'orico}{65}{subsection.4.1.2}\protected@file@percent 
+}
+\newlabel{Acervo utilizado para o levantamento hist\'orico}{{\M@TitleReference 
+{4.1.2}{Acervo utilizado para o levantamento hist\'orico}}{65}{Acervo utilizado
+ para o levantamento hist\'orico}{subsection.4.1.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Caminho para a An\'al
+ise do M\'etodo do WASH}{65}{section.4.2}\protected@file@percent }
+\newlabel{Caminho para a An\'alise do M\'etodo do WASH}{{\M@TitleReference {4.2
+}{Caminho para a An\'alise do M\'etodo do WASH}}{65}{Caminho para a An\'alise d
+o M\'etodo do WASH}{section.4.2}{}}
+] [66
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}M\'etodo de Cara
+cteriza\c {c}\~ao do M\'etodo do WASH}{66}{subsection.4.2.1}\protected@file@per
+cent }
+\newlabel{M\'etodo de Caracteriza\c {c}\~ao do M\'etodo do WASH}{{\M@TitleRefer
+ence {4.2.1}{M\'etodo de Caracteriza\c {c}\~ao do M\'etodo do WASH}}{66}{M\'eto
+do de Caracteriza\c {c}\~ao do M\'etodo do WASH}{subsection.4.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Materiais para c
+aracteriza\c {c}\~ao do m\'etodo do WASH.}{66}{subsection.4.2.2}\protected@file
+@percent }
+\newlabel{Materiais para caracteriza\c {c}\~ao do m\'etodo do WASH.}{{\M@TitleR
+eference {4.2.2}{Materiais para caracteriza\c {c}\~ao do m\'etodo do WASH.}}{66
+}{Materiais para caracteriza\c {c}\~ao do m\'etodo do WASH}{subsection.4.2.2}{}
+}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Caminho para a caract
+eriza\c {c}\~ao dos resultados do WASH}{66}{section.4.3}\protected@file@percent
+ }
+\newlabel{Caminho para a caracteriza\c {c}\~ao dos resultados do WASH}{{\M@Titl
+eReference {4.3}{Caminho para a caracteriza\c {c}\~ao dos resultados do WASH}}{
+66}{Caminho para a caracteriza\c {c}\~ao dos resultados do WASH}{section.4.3}{}
+}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}M\'etodo de Estr
+utura\c {c}\~ao e an\'alise dos dados}{66}{subsection.4.3.1}\protected@file@per
+cent }
+\newlabel{M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{{\M@TitleRefer
+ence {4.3.1}{M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}}{66}{M\'eto
+do de Estrutura\c {c}\~ao e an\'alise dos dados}{subsection.4.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}M\'etodo de dete
+rmina\c {c}\~ao do g\^enero dos participantes}{66}{subsection.4.3.2}\protected@
+file@percent }
+\newlabel{M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{{\M@Ti
+tleReference {4.3.2}{M\'etodo de determina\c {c}\~ao do g\^enero dos participan
+tes}}{66}{M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{subsec
+tion.4.3.2}{}}
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
-[70] [71
+ [67]
+[68] [69
 
-] [72] [73]
+
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapter
+numwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {5}\MakeTextUpperca
+se  {RESULTADOS E DISCUSS\~OES}}{69}{chapter.5}\protected@file@percent }
+\newlabel{RESULTADOS E DISCUSS\~OES}{{\M@TitleReference {5}{\MakeTextUppercase 
+ {RESULTADOS E DISCUSS\~OES}}}{69}{RESULTADOS E DISCUSS\~OES}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Narrativas contru\'{\
+i }das a partir do m\'etodo historiogr\'afico}{69}{section.5.1}\protected@file@
+percent }
+\newlabel{Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico}{{
+\M@TitleReference {5.1}{Narrativas contru\'{\i }das a partir do m\'etodo histor
+iogr\'afico}}{69}{Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'
+afico}{section.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Narrativa do GES
+AC}{69}{subsection.5.1.1}\protected@file@percent }
+\newlabel{Narrativa do GESAC}{{\M@TitleReference {5.1.1}{Narrativa do GESAC}}{6
+9}{Narrativa do GESAC}{subsection.5.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Narrativa do OLP
+C}{69}{subsection.5.1.2}\protected@file@percent }
+\newlabel{Narrativa do OLPC}{{\M@TitleReference {5.1.2}{Narrativa do OLPC}}{69}
+{Narrativa do OLPC}{subsection.5.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Narrativa sobre 
+a Papert e Brasil (Afira)}{69}{subsection.5.1.3}\protected@file@percent }
+\newlabel{Narrativa sobre a Papert e Brasil (Afira)}{{\M@TitleReference {5.1.3}
+{Narrativa sobre a Papert e Brasil (Afira)}}{69}{Narrativa sobre a Papert e Bra
+sil (Afira)}{subsection.5.1.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Caracterizacao do M\'
+etodo do WASH}{69}{section.5.2}\protected@file@percent }
+\newlabel{Caracterizacao do M\'etodo do WASH}{{\M@TitleReference {5.2}{Caracter
+izacao do M\'etodo do WASH}}{69}{Caracterizacao do M\'etodo do WASH}{section.5.
+2}{}}
+] [70
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Caracteriza\c {c}\~ao
+ dos Resultados do WASH}{70}{section.5.3}\protected@file@percent }
+\newlabel{Caracteriza\c {c}\~ao dos Resultados do WASH}{{\M@TitleReference {5.3
+}{Caracteriza\c {c}\~ao dos Resultados do WASH}}{70}{Caracteriza\c {c}\~ao dos 
+Resultados do WASH}{section.5.3}{}}
+] [71
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Amostragem do p\
+'ublico atendido}{71}{subsection.5.3.1}\protected@file@percent }
+\newlabel{Amostragem do p\'ublico atendido}{{\M@TitleReference {5.3.1}{Amostrag
+em do p\'ublico atendido}}{71}{Amostragem do p\'ublico atendido}{subsection.5.3
+.1}{}}
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74]
-[75] [76]
-<../../imagens/Evento-Ciencia-Em-Show.jpg, id=720, 622.325pt x 414.54875pt>
+ [72]
+[73] [74]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3569 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/Evento-Ciencia-Em-Show.jpg, id=706, 622.325pt x 414.54875pt>
 File: ../../imagens/Evento-Ciencia-Em-Show.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Ciencia-Em-Show.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Ciencia-Em-Show.jpg  used on inpu
 t line 3572.
 (pdftex.def)             Requested size: 622.32347pt x 414.54773pt.
 
+! LaTeX Error: \caption outside float.
 
-LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 77 undefined on i
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3576 	\caption
+                {\label{Evento-Ciencia-Em-Show}Evento de demonstra\c{c}\~oes...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3576 	\caption
+                {\label{Evento-Ciencia-Em-Show}Evento de demonstra\c{c}\~oes...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3576 	\caption
+                {\label{Evento-Ciencia-Em-Show}Evento de demonstra\c{c}\~oes...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-Evento-Ciencia-Em-Show}
+
+LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 75 undefined on i
 nput line 3578.
 
+\citation{cite-Evento-Ciencia-Em-Show}
 
-LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 77 undefined on i
+LaTeX Warning: Citation `cite-Evento-Ciencia-Em-Show' on page 75 undefined on i
 nput line 3578.
 
-<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=721, 2007.5pt x 1337.9
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3580 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3580 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3580 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3580 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3584 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=707, 2007.5pt x 1337.9
 9875pt>
 File: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type jp
 g)
@@ -2212,14 +2788,109 @@ Package pdftex.def Info: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG  u
 sed on input line 3587.
 (pdftex.def)             Requested size: 2007.49512pt x 1337.9955pt.
 
-LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 77 und
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75
+\newlabel{Evento-Ciencia-Em-Show}{{\M@TitleReference {5.3.1}{Amostragem do p\'u
+blico atendido}}{75}{Amostragem do p\'ublico atendido}{Item.114}{}}
+ <../../imagens/Evento-Ciencia-Em-Show.jpg>]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3591 	\caption
+                {\label{dia-das-criancas-2022-10-03-menor}Evento de comemora...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3591 	\caption
+                {\label{dia-das-criancas-2022-10-03-menor}Evento de comemora...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3591 	\caption
+                {\label{dia-das-criancas-2022-10-03-menor}Evento de comemora...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-dia-das-criancas-2022-10-03-menor}
+
+LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 76 und
 efined on input line 3593.
 
+\citation{cite-dia-das-criancas-2022-10-03-menor}
 
-LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 77 und
+LaTeX Warning: Citation `cite-dia-das-criancas-2022-10-03-menor' on page 76 und
 efined on input line 3593.
 
-<../../imagens/confraternizacao-de-natal-menor.jpeg, id=722, 2007.5pt x 1337.99
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3595 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3595 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3595 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3595 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3599 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/confraternizacao-de-natal-menor.jpeg, id=713, 2007.5pt x 1337.99
 875pt>
 File: ../../imagens/confraternizacao-de-natal-menor.jpeg Graphic file (type jpg
 )
@@ -2228,26 +2899,216 @@ Package pdftex.def Info: ../../imagens/confraternizacao-de-natal-menor.jpeg  us
 ed on input line 3602.
 (pdftex.def)             Requested size: 2007.49512pt x 1337.9955pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76
+\newlabel{dia-das-criancas-2022-10-03-menor}{{\M@TitleReference {5.3.1}{Amostra
+gem do p\'ublico atendido}}{76}{Amostragem do p\'ublico atendido}{Item.114}{}}
+ <../../imagens/dia-das-criancas-2022-10-03-menor.JPG>]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3606 	\caption
+                {\label{confraternizacao-de-natal-menor}Evento de Natal real...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3606 	\caption
+                {\label{confraternizacao-de-natal-menor}Evento de Natal real...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3606 	\caption
+                {\label{confraternizacao-de-natal-menor}Evento de Natal real...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-confraternizacao-de-natal-menor}
+
 LaTeX Warning: Citation `cite-confraternizacao-de-natal-menor' on page 77 undef
 ined on input line 3608.
 
+\citation{cite-confraternizacao-de-natal-menor}
 
 LaTeX Warning: Citation `cite-confraternizacao-de-natal-menor' on page 77 undef
 ined on input line 3608.
 
-<../../imagens/Evento-Greenk-2018-05-27.jpg, id=723, 1043.9pt x 782.925pt>
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3610 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3610 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3610 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3610 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3614 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/Evento-Greenk-2018-05-27.jpg, id=718, 1043.9pt x 782.925pt>
 File: ../../imagens/Evento-Greenk-2018-05-27.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Greenk-2018-05-27.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Greenk-2018-05-27.jpg  used on in
 put line 3617.
 (pdftex.def)             Requested size: 1043.89745pt x 782.9231pt.
 
-LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 77 undefined on
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77
+\newlabel{confraternizacao-de-natal-menor}{{\M@TitleReference {5.3.1}{Amostrage
+m do p\'ublico atendido}}{77}{Amostragem do p\'ublico atendido}{Item.114}{}}
+ <../../imagens/confraternizacao-de-natal-menor.jpeg>]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3621 	\caption
+                {\label{Evento-Greenk-2018-05-27}Evento Greenk, patrocinado ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3621 	\caption
+                {\label{Evento-Greenk-2018-05-27}Evento Greenk, patrocinado ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3621 	\caption
+                {\label{Evento-Greenk-2018-05-27}Evento Greenk, patrocinado ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-Evento-Greenk-2018-05-27}
+
+LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 78 undefined on
  input line 3623.
 
+\citation{cite-Evento-Greenk-2018-05-27}
 
-LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 77 undefined on
+LaTeX Warning: Citation `cite-Evento-Greenk-2018-05-27' on page 78 undefined on
  input line 3623.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3625 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3625 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3625 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3625 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3629 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 <../../imagens/MAAS.jpg, id=724, 1043.9pt x 782.925pt>
 File: ../../imagens/MAAS.jpg Graphic file (type jpg)
@@ -2255,304 +3116,1018 @@ File: ../../imagens/MAAS.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../imagens/MAAS.jpg  used on input line 3632.
 (pdftex.def)             Requested size: 1043.89745pt x 782.9231pt.
 
-LaTeX Warning: Citation `cite-MAAS' on page 77 undefined on input line 3638.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78
+\newlabel{Evento-Greenk-2018-05-27}{{\M@TitleReference {5.3.1}{Amostragem do p\
+'ublico atendido}}{78}{Amostragem do p\'ublico atendido}{Item.114}{}}
+ <../../imagens/Evento-Greenk-2018-05-27.jpg>]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3636 	\caption
+                {\label{MAAS}Evento no Museu Aberto de Astronomia, promovido...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3636 	\caption
+                {\label{MAAS}Evento no Museu Aberto de Astronomia, promovido...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3636 	\caption
+                {\label{MAAS}Evento no Museu Aberto de Astronomia, promovido...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-MAAS}
+
+LaTeX Warning: Citation `cite-MAAS' on page 79 undefined on input line 3638.
+
+\citation{cite-MAAS}
+
+LaTeX Warning: Citation `cite-MAAS' on page 79 undefined on input line 3638.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3640 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3640 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `cite-MAAS' on page 77 undefined on input line 3638.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
-<../../imagens/Ciencia-em-Show-prado.jpeg, id=725, 1027.84pt x 562.1pt>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3640 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3640 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3644 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/Ciencia-em-Show-prado.jpeg, id=729, 1027.84pt x 562.1pt>
 File: ../../imagens/Ciencia-em-Show-prado.jpeg Graphic file (type jpg)
 <use ../../imagens/Ciencia-em-Show-prado.jpeg>
 Package pdftex.def Info: ../../imagens/Ciencia-em-Show-prado.jpeg  used on inpu
 t line 3647.
 (pdftex.def)             Requested size: 1027.8375pt x 562.09863pt.
 
-LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 77 undefined on in
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79
+\newlabel{MAAS}{{\M@TitleReference {5.3.1}{Amostragem do p\'ublico atendido}}{7
+9}{Amostragem do p\'ublico atendido}{Item.114}{}}
+ <../../imagens/MAAS.jpg>]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3651 	\caption
+                {\label{Ciencia-em-Show-prado}Evento de demonstra\c{c}\~oes ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3651 	\caption
+                {\label{Ciencia-em-Show-prado}Evento de demonstra\c{c}\~oes ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3651 	\caption
+                {\label{Ciencia-em-Show-prado}Evento de demonstra\c{c}\~oes ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-Ciencia-em-Show-prado}
+
+LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 80 undefined on in
 put line 3653.
 
+\citation{cite-Ciencia-em-Show-prado}
 
-LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 77 undefined on in
+LaTeX Warning: Citation `cite-Ciencia-em-Show-prado' on page 80 undefined on in
 put line 3653.
 
-[77pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4
-}) has been already used, duplicate ignored
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3655 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3666 
-        <../../imagens/Evento-Ciencia-Em-Show.jpg>] [78pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.5.5}) has been already used, d
-uplicate ignored
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3655 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3712 
-        <../../imagens/dia-das-criancas-2022-10-03-menor.JPG>]
-<../../imagens/output-participantes.jpeg, id=736, 2258.4375pt x 3011.25pt>
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3655 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3655 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+[80
+\newlabel{Ciencia-em-Show-prado}{{\M@TitleReference {5.3.1}{Amostragem do p\'ub
+lico atendido}}{80}{Amostragem do p\'ublico atendido}{Item.114}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Evolu\c {c}\~ao 
+temporal do n\'umero de participa\c {c}\~oes}{80}{subsection.5.3.2}\protected@f
+ile@percent }
+\newlabel{Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{{\M@Tit
+leReference {5.3.2}{Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oe
+s}}{80}{Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{subsectio
+n.5.3.2}{}}
+ <../../imagens/Ciencia-em-Show-prado.jpeg>]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3705 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/output-participantes.jpeg, id=738, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-participantes.jpeg Graphic file (type jpg)
 <use ../../imagens/output-participantes.jpeg>
 Package pdftex.def Info: ../../imagens/output-participantes.jpeg  used on input
- line 3726.
+ line 3708.
 (pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `cite-output-participantes' on page 79 undefined on inp
-ut line 3732.
+ [81]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3712 	\caption
+                {\label{output-participantes}Evolu\c{c}\~ao temporal do n\'u...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3712 	\caption
+                {\label{output-participantes}Evolu\c{c}\~ao temporal do n\'u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3712 	\caption
+                {\label{output-participantes}Evolu\c{c}\~ao temporal do n\'u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-output-participantes}
+
+LaTeX Warning: Citation `cite-output-participantes' on page 82 undefined on inp
+ut line 3714.
+
+\citation{cite-output-participantes}
+
+LaTeX Warning: Citation `cite-output-participantes' on page 82 undefined on inp
+ut line 3714.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3716 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3716 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `cite-output-participantes' on page 79 undefined on inp
-ut line 3732.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
-<../../imagens/output-participantes2.jpeg, id=737, 2258.4375pt x 3011.25pt>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3716 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3716 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+
+Underfull \vbox (badness 4205) has occurred while \output is active []
+
+ [82
+\newlabel{output-participantes}{{\M@TitleReference {5.3.2}{Evolu\c {c}\~ao temp
+oral do n\'umero de participa\c {c}\~oes}}{82}{Evolu\c {c}\~ao temporal do n\'u
+mero de participa\c {c}\~oes}{subsection.5.3.2}{}}
+ <../../imagens/output-participantes.jpeg>]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3756 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/output-participantes2.jpeg, id=747, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-participantes2.jpeg Graphic file (type jpg)
 <use ../../imagens/output-participantes2.jpeg>
 Package pdftex.def Info: ../../imagens/output-participantes2.jpeg  used on inpu
-t line 3777.
+t line 3759.
 (pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
 
-LaTeX Warning: Citation `cite-output-participantes2' on page 79 undefined on in
-put line 3783.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3763 	\caption
+                {\label{output-participantes2}Evolu\c{c}\~ao anual do n\'ume...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3763 	\caption
+                {\label{output-participantes2}Evolu\c{c}\~ao anual do n\'ume...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3763 	\caption
+                {\label{output-participantes2}Evolu\c{c}\~ao anual do n\'ume...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-output-participantes2}
+
+LaTeX Warning: Citation `cite-output-participantes2' on page 84 undefined on in
+put line 3765.
+
+\citation{cite-output-participantes2}
+
+LaTeX Warning: Citation `cite-output-participantes2' on page 84 undefined on in
+put line 3765.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3767 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3767 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `cite-output-participantes2' on page 79 undefined on in
-put line 3783.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
-<../../imagens/output-media-participacoes.jpeg, id=738, 2258.4375pt x 3011.25pt
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3767 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3767 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+[84
+\newlabel{output-participantes2}{{\M@TitleReference {5.3.2}{Evolu\c {c}\~ao tem
+poral do n\'umero de participa\c {c}\~oes}}{84}{Evolu\c {c}\~ao temporal do n\'
+umero de participa\c {c}\~oes}{subsection.5.3.2}{}}
+ <../../imagens/output-participantes2.jpeg>]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3780 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<../../imagens/output-media-participacoes.jpeg, id=757, 2258.4375pt x 3011.25pt
 >
 File: ../../imagens/output-media-participacoes.jpeg Graphic file (type jpg)
 <use ../../imagens/output-media-participacoes.jpeg>
 Package pdftex.def Info: ../../imagens/output-media-participacoes.jpeg  used on
- input line 3801.
+ input line 3783.
 (pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
 
-LaTeX Warning: Citation `cite-output-media-participacoes' on page 79 undefined 
-on input line 3807.
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3787 	\caption
+                {\label{output-media-participacoes}Evolu\c{c}\~ao anual da m...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3787 	\caption
+                {\label{output-media-participacoes}Evolu\c{c}\~ao anual da m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3787 	\caption
+                {\label{output-media-participacoes}Evolu\c{c}\~ao anual da m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-output-media-participacoes}
+
+LaTeX Warning: Citation `cite-output-media-participacoes' on page 85 undefined 
+on input line 3789.
+
+\citation{cite-output-media-participacoes}
+
+LaTeX Warning: Citation `cite-output-media-participacoes' on page 85 undefined 
+on input line 3789.
+
+[85
+\newlabel{output-media-participacoes}{{\M@TitleReference {5.3.2}{Evolu\c {c}\~a
+o temporal do n\'umero de participa\c {c}\~oes}}{85}{Evolu\c {c}\~ao temporal d
+o n\'umero de participa\c {c}\~oes}{subsection.5.3.2}{}}
+ <../../imagens/output-media-participacoes.jpeg>]
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3791 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3791 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `cite-output-media-participacoes' on page 79 undefined 
-on input line 3807.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3791 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3791 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
 
- [79pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
-6}) has been already used, duplicate ignored
+[86
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Distribui\c {c}\
+~ao de partipantes por sexo}{86}{subsection.5.3.3}\protected@file@percent }
+\newlabel{Distribui\c {c}\~ao de partipantes por sexo}{{\M@TitleReference {5.3.
+3}{Distribui\c {c}\~ao de partipantes por sexo}}{86}{Distribui\c {c}\~ao de par
+tipantes por sexo}{subsection.5.3.3}{}}
+]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.3886 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3809 \end{figure}
-                    <../../imagens/confraternizacao-de-natal-menor.jpeg>]
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
- [80pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
-7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3839 
-        <../../imagens/Evento-Greenk-2018-05-27.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
-8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3866 
-        <../../imagens/MAAS.jpg>]
-<../../imagens/genero-todos-crop.jpeg, id=751, 583.781pt x 504.284pt>
+<../../imagens/genero-todos-crop.jpeg, id=766, 583.781pt x 504.284pt>
 File: ../../imagens/genero-todos-crop.jpeg Graphic file (type jpg)
 <use ../../imagens/genero-todos-crop.jpeg>
 Package pdftex.def Info: ../../imagens/genero-todos-crop.jpeg  used on input li
-ne 3907.
+ne 3889.
 (pdftex.def)             Requested size: 583.77957pt x 504.28276pt.
 
+! LaTeX Error: \caption outside float.
 
-LaTeX Warning: Citation `cite-genero-todos-crop' on page 82 undefined on input 
-line 3913.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3893 	\caption
+                {\label{genero-todos-crop}@[caption-genero-todos-crop]@}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.3893 	\caption
+                {\label{genero-todos-crop}@[caption-genero-todos-crop]@}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.3893 	\caption
+                {\label{genero-todos-crop}@[caption-genero-todos-crop]@}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-genero-todos-crop}
+
+LaTeX Warning: Citation `cite-genero-todos-crop' on page 87 undefined on input 
+line 3895.
+
+\citation{cite-genero-todos-crop}
+
+LaTeX Warning: Citation `cite-genero-todos-crop' on page 87 undefined on input 
+line 3895.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.3897 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.3897 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `cite-genero-todos-crop' on page 82 undefined on input 
-line 3913.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3897 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-Underfull \vbox (badness 7981) has occurred while \output is active []
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3897 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
 
- [82pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
-9}) has been already used, duplicate ignored
+[87
+\newlabel{genero-todos-crop}{{\M@TitleReference {5.3.3}{Distribui\c {c}\~ao de 
+partipantes por sexo}}{87}{Distribui\c {c}\~ao de partipantes por sexo}{subsect
+ion.5.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}N\'umero de Bols
+istas}{87}{subsection.5.3.4}\protected@file@percent }
+\newlabel{N\'umero de Bolsistas}{{\M@TitleReference {5.3.4}{N\'umero de Bolsist
+as}}{87}{N\'umero de Bolsistas}{subsection.5.3.4}{}}
+ <../../imagens/genero-todos-crop.jpeg>] [88] [89
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.5}Caracteriza\c {c
+}\~ao dos Planos de Trabalhos e Relat\'orios}{89}{subsection.5.3.5}\protected@f
+ile@percent }
+\newlabel{Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{{\M@Tit
+leReference {5.3.5}{Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orio
+s}}{89}{Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{subsectio
+n.5.3.5}{}}
+]
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.4117 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.3918 
-        <../../imagens/Ciencia-em-Show-prado.jpeg>] [83] [84]
-<../../imagens/output-eventos.jpeg, id=772, 2258.4375pt x 3011.25pt>
+<../../imagens/output-eventos.jpeg, id=790, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-eventos.jpeg Graphic file (type jpg)
 <use ../../imagens/output-eventos.jpeg>
 Package pdftex.def Info: ../../imagens/output-eventos.jpeg  used on input line 
-4128.
+4120.
 (pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `cite-output-eventos' on page 85 undefined on input lin
-e 4134.
+ [90
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.6}Distribui\c {c}\
+~ao de temas em relat\'orios}{90}{subsection.5.3.6}\protected@file@percent }
+\newlabel{Distribui\c {c}\~ao de temas em relat\'orios}{{\M@TitleReference {5.3
+.6}{Distribui\c {c}\~ao de temas em relat\'orios}}{90}{Distribui\c {c}\~ao de t
+emas em relat\'orios}{subsection.5.3.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.7}N\'umero de ofic
+inas realizadas}{90}{subsection.5.3.7}\protected@file@percent }
+\newlabel{N\'umero de oficinas realizadas}{{\M@TitleReference {5.3.7}{N\'umero 
+de oficinas realizadas}}{90}{N\'umero de oficinas realizadas}{subsection.5.3.7}
+{}}
+]
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4124 	\caption
+                {\label{output-eventos}@[caption-output-eventos]@}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.4124 	\caption
+                {\label{output-eventos}@[caption-output-eventos]@}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.4124 	\caption
+                {\label{output-eventos}@[caption-output-eventos]@}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{cite-output-eventos}
+
+LaTeX Warning: Citation `cite-output-eventos' on page 91 undefined on input lin
+e 4126.
+
+\citation{cite-output-eventos}
+
+LaTeX Warning: Citation `cite-output-eventos' on page 91 undefined on input lin
+e 4126.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.4128 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.4128 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `cite-output-eventos' on page 85 undefined on input lin
-e 4134.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
-<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=773, 2007.5pt x 40
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4128 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.4128 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+Runaway argument?
+{figure}[Htb]\def \baselinestretch {\m@m@float@spacing }\normalsize \@nameuse \
+ETC.
+! Paragraph ended before \@float@HH was complete.
+<to be read again> 
+                   \par 
+l.4142 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91
+\newlabel{output-eventos}{{\M@TitleReference {5.3.7}{N\'umero de oficinas reali
+zadas}}{91}{N\'umero de oficinas realizadas}{subsection.5.3.7}{}}
+ <../../imagens/output-eventos.jpeg>]
+<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=801, 2007.5pt x 40
 15.0pt>
 File: ../../imagens/histograma-de-idades-no-ano-do-evento.png Graphic file (typ
 e png)
 <use ../../imagens/histograma-de-idades-no-ano-do-evento.png>
 Package pdftex.def Info: ../../imagens/histograma-de-idades-no-ano-do-evento.pn
-g  used on input line 4153.
+g  used on input line 4145.
 (pdftex.def)             Requested size: 2007.49512pt x 4014.99026pt.
 
-LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 85
- undefined on input line 4159.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 85
- undefined on input line 4159.
-
-
-LaTeX Warning: Float too large for page by 73.53262pt on input line 4161.
-
-[85] [86] [87pdfTeX warning (ext4): destination with the same identifier (name{
-figure.5.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4275 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-output-participantes.jpeg>] [88pdfTeX warning (ext4): destination with the same
- identifier (name{figure.5.11}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4275 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-output-participantes2.jpeg>] [89pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.5.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4275 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-output-media-participacoes.jpeg>] [90pdfTeX warning (ext4): destination with th
-e same identifier (name{figure.5.13}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4275 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-genero-todos-crop.jpeg>] [91pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.5.14}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4275 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-output-eventos.jpeg>] [92pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.5.15}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4275 \chapter
-               [CONCLUS\~OES]{CONCLUS\~OES}\label{CONCLUS\~OES} <../../imagens/
-histograma-de-idades-no-ano-do-evento.png>] [93
-
-] [94
-
-] [95] [96
-
-] [97] [98]
-[99] [100]
-\openout2 = `USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux'.
-
- (./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 9.
-
-[101
-
-
-
-] [102]
-
-LaTeX Warning: Citation `nbr14724' on page 103 undefined on input line 10.
-
-
-LaTeX Warning: Citation `aguia2020' on page 103 undefined on input line 12.
-
-[103
-
-] [104
-
-] [105pdfTeX warning (ext4): destination with the same identifier (name{table.B
-.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.36 \chapter
-             {Exemplo de tabela com grade}] [106
-
-]) [107pdfTeX warning (ext4): destination with the same identifier (name{table.
-C.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.5619 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
-                                                  ]
-\openout2 = `USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux'.
-
-
-(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex [108
-
-
-
+ [92
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.8}Distribui\c {c}\
+~ao et\'aria nas oficinas}{92}{subsection.5.3.8}\protected@file@percent }
+\newlabel{Distribui\c {c}\~ao et\'aria nas oficinas}{{\M@TitleReference {5.3.8}
+{Distribui\c {c}\~ao et\'aria nas oficinas}}{92}{Distribui\c {c}\~ao et\'aria n
+as oficinas}{subsection.5.3.8}{}}
 ]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 9.
+! LaTeX Error: \caption outside float.
 
-[109
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4149 	\caption
+                {\label{histograma-de-idades-no-ano-do-evento}@[caption-hist...
 
-] [110]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Citation `nbr14724' on page 111 undefined on input line 13.
+! Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.4149 	\caption
+                {\label{histograma-de-idades-no-ano-do-evento}@[caption-hist...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-[111
+! Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.4149 	\caption
+                {\label{histograma-de-idades-no-ano-do-evento}@[caption-hist...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [112
 
-]
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=898, 225.84375pt x 353.06906pt>
-File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
-<use USPSC-img/USPSC-AcentuacaoLaTeX.png>
-Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
-e 21.
-(pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [93 <../../imagens/histograma-de-idades-no-ano-do-evento.png>]
+\citation{cite-histograma-de-idades-no-ano-do-evento}
+
+LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 94
+ undefined on input line 4151.
+
+\citation{cite-histograma-de-idades-no-ano-do-evento}
+
+LaTeX Warning: Citation `cite-histograma-de-idades-no-ano-do-evento' on page 94
+ undefined on input line 4151.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.4153 \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.4153 \end{figure}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 
-LaTeX Warning: Citation `comandos' on page 113 undefined on input line 22.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
-) [113pdfTeX warning (ext4): destination with the same identifier (name{figure.
-anexochapback.2.16}) has been already used, duplicate ignored
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4153 \end{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.5624 ...PSC-TA-PosTextual/USPSC-Anexos_RedarTex}
-                                                   <./USPSC-img/USPSC-Acentuaca
-oLaTeX.png>]
-\openout2 = `USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux'.
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.4153 \end{figure}
+                   
+Things are pretty mixed up, but I think the worst is over.
 
- (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.tex)
-No file USPSC-modelo-IAU_RedarTex.ind.
+[94
+\newlabel{histograma-de-idades-no-ano-do-evento}{{\M@TitleReference {5.3.8}{Dis
+tribui\c {c}\~ao et\'aria nas oficinas}}{94}{Distribui\c {c}\~ao et\'aria nas o
+ficinas}{subsection.5.3.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.9}Distribui\c {c}\
+~ao de temas nas oficinas}{94}{subsection.5.3.9}\protected@file@percent }
+\newlabel{Distribui\c {c}\~ao de temas nas oficinas}{{\M@TitleReference {5.3.9}
+{Distribui\c {c}\~ao de temas nas oficinas}}{94}{Distribui\c {c}\~ao de temas n
+as oficinas}{subsection.5.3.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.10}Tipos de Ativid
+ades realizadas nas oficinas}{94}{subsection.5.3.10}\protected@file@percent }
+\newlabel{Tipos de Atividades realizadas nas oficinas}{{\M@TitleReference {5.3.
+10}{Tipos de Atividades realizadas nas oficinas}}{94}{Tipos de Atividades reali
+zadas nas oficinas}{subsection.5.3.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.11}Cidades Atendid
+as}{94}{subsection.5.3.11}\protected@file@percent }
+\newlabel{Cidades Atendidas}{{\M@TitleReference {5.3.11}{Cidades Atendidas}}{94
+}{Cidades Atendidas}{subsection.5.3.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.12}Participantes m
+ais ass\'{\i }duos}{94}{subsection.5.3.12}\protected@file@percent }
+\newlabel{Participantes mais ass\'{\i }duos}{{\M@TitleReference {5.3.12}{Partic
+ipantes mais ass\'{\i }duos}}{94}{Participantes mais ass\'{\i }duos}{subsection
+.5.3.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}An\'alise: s\'{\i }nt
+ese das 3 dimens\~oes}{94}{section.5.4}\protected@file@percent }
+\newlabel{An\'alise: s\'{\i }ntese das 3 dimens\~oes}{{\M@TitleReference {5.4}{
+An\'alise: s\'{\i }ntese das 3 dimens\~oes}}{94}{An\'alise: s\'{\i }ntese das 3
+ dimens\~oes}{section.5.4}{}}
+] [95
+
+
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapter
+numwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {6}\MakeTextUpperca
+se  {CONCLUS\~OES}}{95}{chapter.6}\protected@file@percent }
+\newlabel{CONCLUS\~OES}{{\M@TitleReference {6}{\MakeTextUppercase  {CONCLUS\~OE
+S}}}{95}{CONCLUS\~OES}{chapter.6}{}}
+] [96
+
+] [97
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapter
+numwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {7}\MakeTextUpperca
+se  {PRODUTOS TECNOL\'OGICOS}}{97}{chapter.7}\protected@file@percent }
+\newlabel{PRODUTOS TECNOL\'OGICOS}{{\M@TitleReference {7}{\MakeTextUppercase  {
+PRODUTOS TECNOL\'OGICOS}}}{97}{PRODUTOS TECNOL\'OGICOS}{chapter.7}{}}
+] [98
+
+] [99
+\@writefile{toc}{\setlength  {\cftchapterindent }{0em} \setlength  {\cftchapter
+numwidth }{\cftlastnumwidth }}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {8}\MakeTextUpperca
+se  {REFER\^ENCIAS}}{99}{chapter.8}\protected@file@percent }
+\newlabel{REFER\^ENCIAS}{{\M@TitleReference {8}{\MakeTextUppercase  {REFER\^ENC
+IAS}}}{99}{REFER\^ENCIAS}{chapter.8}{}}
+] [100] [101]
+
+! LaTeX Error: \include cannot be nested.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5611 ...-TA-PosTextual/USPSC-Apendices_RedarTex}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \include cannot be nested.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5616 ...PSC-TA-PosTextual/USPSC-Anexos_RedarTex}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \include cannot be nested.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5621 ...extual/USPSC-IndicesRemissivos_RedarTex}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 
 AED: lastpage setting LastPage
+[102
+\@writefile{toc}{\vspace  {\cftbeforechapterskip }}
+]
+\newlabel{LastPage}{{}{102}{}{page.102}{}}
+\xdef\lastpage@lastpage{102}
+\xdef\lastpage@lastpageHy{102}
+\memsetcounter{lastsheet}{104}
+\memsetcounter{lastpage}{102}
 \tf@lof=\write6
 \openout6 = `USPSC-modelo-IAU_RedarTex.lof'.
 
@@ -2565,8 +4140,8 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `USPSC-modelo-IAU_RedarTex.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5633.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5633.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5625.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5625.
 (./USPSC-modelo-IAU_RedarTex.aux
 (./USPSC-TA-PreTextual/USPSC-Errata_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux)
@@ -2575,40 +4150,111 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 5633.
 (./USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.aux)
-(./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux)
-(./USPSC-TA-PosTextual/USPSC-Apendices_RedarTex.aux)
-(./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
-(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5633.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5633.
+(./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5625.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5625.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5633.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5625.
  ) 
 Here is how much of TeX's memory you used:
- 32903 strings out of 483090
- 630143 string characters out of 5963929
- 1078051 words of memory out of 5000000
- 46641 multiletter control sequences out of 15000+600000
- 628999 words of font info for 142 fonts, out of 8000000 for 9000
+ 32814 strings out of 483090
+ 627716 string characters out of 5963929
+ 1076806 words of memory out of 5000000
+ 46583 multiletter control sequences out of 15000+600000
+ 618628 words of font info for 133 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 73i,18n,108p,2318b,721s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (115 pages, 7217365 bytes).
+ 73i,18n,108p,2318b,859s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{appendix.anexochapback.2} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.anexochapback.1} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.20} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.C} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.B} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.19} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.anexochapback.2.16} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.15} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.14} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.13} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.12} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.11} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.10} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.9} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.8} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.5} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.1.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{page.111} has been referenced but does not exist, r
+eplaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/
+texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
+rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on USPSC-modelo-IAU_RedarTex.pdf (104 pages, 7143106 bytes).
 PDF statistics:
- 1263 PDF objects out of 1440 (max. 8388607)
- 1089 compressed objects within 11 object streams
- 353 named destinations out of 1000 (max. 500000)
- 30481 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1181 PDF objects out of 1200 (max. 8388607)
+ 1021 compressed objects within 11 object streams
+ 342 named destinations out of 1000 (max. 500000)
+ 27348 words of extra memory for PDF output out of 29859 (max. 10000000)
 

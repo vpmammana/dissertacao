@@ -15,16 +15,28 @@ $id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura,
 $nome_base = "../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex";
 $nome_do_tex = $nome_base.".tex";
 $nome_do_pdf = $nome_base.".pdf";
+unset($conta_mult_imagem); // array de contadores relacionados a cada arquivo RedarTex que precisa ser alterado
+
+function impar($number){ // retorna true se for impar
+    if($number % 2 == 0){
+        return ""; 
+    }
+    else{
+        return "%";
+    }
+}
 
 function insere($nome_arquivo, $ponto_de_insercao, $nome_tipo_secao, $texto, $nome_secao, $nivel){
 global $param_mode;
 global $id_arquivo;
+global $conta_mult_imagem;
 
 //unset($file);
 $file = file($nome_arquivo);
 $indice = array_search($ponto_de_insercao, $file, false);
 $id_arquivo = pathinfo($texto, PATHINFO_FILENAME);
 
+// $texto_latex = $nome_tipo_secao." -> ".$texto;
 $texto_latex = $texto;
 
 if ($nivel == 1 && $nome_tipo_secao=="topico") {
@@ -40,37 +52,55 @@ if ($nivel == 4 && $nome_tipo_secao=="topico") {
 	$texto_latex = "\\subsubsection[".$texto."]{".$texto."}\\label{".$texto."}";
 }
 
+
+if ($nome_tipo_secao == "citacao"){
+	$texto_latex="\n\\noindent\\begin{center}\\mbox{\\centering\\fbox{\\centering\\par\parbox{0.7\\linewidth}{\\small\\textit{".$texto."}\\normalize}}}\\end{center}\n\n";
+}
+
 if ($nome_tipo_secao == "imagem"){
+        if ($conta_mult_imagem[$nome_arquivo]==0){
 	$texto_latex = "\n
+\\captionsetup{format=plain}
 \\begin{figure}[htb]\n
 	\\begin{center}\n
 		\\includegraphics[max size={\\textwidth}{\\textheight}]{../../imagens/".$texto."}\n
 	\\end{center}\n
 	\\caption{\\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
 \\end{figure}\n";
+	}
+	else
+	{
+        $texto_latex = "\\begin{minipage}[b]{0.4\\linewidth}
+        \\centering
+                \\includegraphics[width=1.0\\linewidth]{../../imagens/".$texto."}
+                \\caption{@[caption-".$id_arquivo."]@}
+                \\label{".$id_arquivo."}
+\\end{minipage}".impar($conta_mult_imagem[$nome_arquivo])."\n\\hspace{0.5cm}"; //.impar($conta_mult_imagem[$nome_arquivo]); // se tem porcento, não quebra a linha
+        $conta_mult_imagem[$nome_arquivo]++;
+	}
 }
 
+if ($nome_tipo_secao == "multimagem"){ // note que o nome da secao chega aqui sem UNDERSCORE... isso é um risco de duplicidade de nomes... 
+        $texto_latex="\n
+\\captionsetup{format=plain}
+\\begin{figure}[max size={\\textwidth}{\\textheight}]\n
+\\centering\n
+";
+        $conta_mult_imagem[$nome_arquivo] =1;
+}
 
+if ($nome_tipo_secao != "multimagem" && $nome_tipo_secao != "imagem" && $conta_mult_imagem[$nome_arquivo] > 0){
+        $texto_latex=
+"\\end{figure}\n\n\n
+".$texto_latex;
+        $conta_mult_imagem[$nome_arquivo] = 0;
+}
 
-//echo $indice.")".$file[$indice]." arquivo -> ".$nome_arquivo." -> ".$texto_latex." tam: ".sizeof($file)."\n";
-//if ($nome_tipo_secao == "paragraforesumo") {
-//echo "\n";
-//echo "\n";
-//echo "\n";
-//echo "putz -> (".$ponto_de_insercao.")";
-//echo " indice -> [".$indice."]";
-//echo " texto -> ".$texto_latex;
-//foreach($file as $linha){ echo "(".$linha.")";}
-//echo "\n";
-//echo "\n";
-//echo "\n";
-//echo "\n";
-//}
+	array_splice( $file, $indice , 0, $texto_latex."\n");
+	if ($param_mode == "verbose") {echo "> ".$nome_tipo_secao." ";}
+	//echo "Vai inserir secoes/paragrafos no arquivo: ".$nome_arquivo."\n";
+	file_put_contents($nome_arquivo, implode("",$file));
 
-array_splice( $file, $indice , 0, $texto_latex."\n");
-if ($param_mode == "verbose") {echo "> ".$nome_tipo_secao." ";}
-//echo "Vai inserir secoes/paragrafos no arquivo: ".$nome_arquivo."\n";
-file_put_contents($nome_arquivo, implode("",$file));
 }
 
 function substitui_label_caption($nome_arquivo, $label_de_busca, $substituicao){
@@ -300,6 +330,7 @@ fwrite($myfile,"../bash/copia_tex.bash\n\n");
 fwrite($myfile,"sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex\n");
 
 foreach ($arquivos_textuais as $valor){
+	$conta_mult_imagem[$valor]=0; // zera os contadores de mult_imagem para cada arquivo
 	fwrite($myfile, "sed -i \"/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@\" ".$valor."\n");
 	if ($param_mantem_bibliografia == "nao"){
 		fwrite($myfile, "sed -i \"/^.chapter.Bibliografia..Bibliografia/d\" ".$valor."\n");
@@ -333,6 +364,7 @@ if ($result->num_rows>0) {
 		$tem_filho	          = $row["tem_filho"];
 		//echo $nivel.") [".$nome_tipo_secao."] ".$id_secao." - ".$titulo."\n";
 		
+		if ($param_mode == "verbose") {echo "> ".$nome_tipo_secao."\n";}
 		$secao_sem_underscore = str_replace("_", "", $id_secao);
 		$secao_sem_espaco_sem_underscore = str_replace(" ", "", $secao_sem_underscore);
 		$nome_tipo_sem_underscore = str_replace("_", "", $nome_tipo_secao);
@@ -442,6 +474,7 @@ if ($result->num_rows>0) {
 				$nome_tipo_secao == "chama_ref" || 
 				$nome_tipo_secao == "citacao" || 
 				$nome_tipo_secao == "imagem" || 
+				$nome_tipo_secao == "mult_imagem" ||  // aqui nome_tipo_secao ainda tem underscore, mas dentro da insere foi tirado. 
 				$nome_tipo_secao == "legenda_imagem" || 
 				$nome_tipo_secao == "grafico" || 
 				$nome_tipo_secao == "legenda_grafico" || 
@@ -455,8 +488,7 @@ if ($result->num_rows>0) {
 		  		foreach ($arquivos_textuais as $value)
 				{
 					if ($nome_tipo_secao == 'paragrafo') {$texto_com_acentuacao_para_fileput = $texto_com_acentuacao_para_fileput."\n";}
-				if ($nome_tipo_secao == 'chama_ref') {$texto_com_acentuacao_para_fileput = "\\begin{flushright}\n\\setlength{\\absparsep}{0pt}\n\\tiny ".$texto_com_acentuacao_para_fileput." \\normalsize \n\\end{flushright}\n\n";}
-
+					if ($nome_tipo_secao == 'chama_ref') {$texto_com_acentuacao_para_fileput = "\\begin{flushright}\n\\setlength{\\absparsep}{0pt}\n\\tiny ".$texto_com_acentuacao_para_fileput." \\normalsize \n\\end{flushright}\n\n";}
 					if ($nome_tipo_secao == 'item_de_referencia') 
 						{
 							if ($param_mantem_bibliografia !="nao"){

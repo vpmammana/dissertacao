@@ -933,9 +933,21 @@ Para inserir múltiplas imagens é preciso inserir o tipo de secão "mult_imagem" e
 </p>
 
 <p>
-O tipo de seção "mult_imagem" funciona como um tag de formatação que não requer terminador. Quando o gerador de LATEX encontra o tag "mult_secao", todas as imagens que vierem na sequência, serão colocadas lado a lado, em uma página. Ainda não são conhecidos os efeitos de uma quantidade muito grande de imagens.
+O tipo de seção "mult_imagem" funciona como um tag de formatação que não requer terminador (mult_imagem não pode ser usado como terminador de uma sequência de imagens múltiplas). Quando o gerador de LATEX encontra o tag "mult_secao", todas as imagens que vierem na sequência, serão colocadas lado a lado, em uma página. Ainda não são conhecidos os efeitos de uma quantidade muito grande de imagens.
 </p>
 
+<p>Sempre coloque um parágrafo antes do tag mult_imagem. Isto não é um bug.</p>
+
+<p>Você pode usar mult_imagem antes de uma imagem único, o que vai controlar o tamanho da imagem. Mas você pode não usar, e o tamanho da imagem dependerá do tamanho do arquivo. Além disso, se não usar a tag mult_imagem as imagens ficarão independentes, caindo em lugares do texto definidos pelo latex.</p>
+
+<h2>Apagar múltiplas seções</h2>
+
+<p1>O botão "lixeira" dos Box 1 e Box 2 apagam uma seção de cada vez, recarregando o sistema, o que é muito lento e pouco prático.</p1>
+<p1>Para agilizar o apagamento de uma quantidade grande de seções foi criado o botão "selecionar seções, no topo da página de interação. Ao clicar no botão "selecionar seções" serão mostrados checbox para cada seção que for folha, ou seja, que não tem filhos. Assim, é possível apagar múltiplas folhas, mas não múltiplas subárvores (o sistema está preparado para apagar múltiplas subárvores, mas é sempre uma feature que precisa ser mais testada).</p1>
+<p1>Depois que o usuário selecionar as seções que deseja apagar nos respectivos checkbox, é possível apagar todos os selecionados clicando no botão "apagar seções selecionadas".</p1>
+<p1>O sistema ainda tem uma característica que é um pouco irritante, que é o fato de que não é possível des-selecionar individualmente uma seção, depois que ela foi selecionada. Se quiser des-selecionar uma seção, terá que des-selecionar todas e começar a seleção de novo. Vou melhorar isso um dia, mas não quero colocar energia de programação nesse ponto agora.</p1>
+<p1>Para des-selecionar todas as seções selecionadas, basta clicar em "selecionar seções" novamente e tudo será des-selecionado e os checkbox serão escondidos.</p1>
+<p1>Note que, no momento, as seções não são verdadeiramente apagadas, mas transferidas para a Lixeira. Ainda não existe ferramenta de UNDO, portanto é bom gravar o texto em "grava_backup_sql" antes de grande quantidade de apagamento, para poder ser recuperado.</p1>
 
 </DIV>
 </body>

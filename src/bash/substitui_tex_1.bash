@@ -10,6 +10,7 @@ sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados 
 sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\'oria, M\\\'etodos e Resultados/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCe_RedarTex.tex
 sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\'oria, M\\\'etodos e Resultados/g" ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\'oria, M\\\'etodos e Resultados/g" ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex
+sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\'oria, M\\\'etodos e Resultados/g" ../../latex/USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\'oria, M\\\'etodos e Resultados/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\'oria, M\\\'etodos e Resultados/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex
 sed -i "s/@\[titulo\]@/Caracteriza\\\c{c}\\\~ao do Projeto Workshop Aficionados por Software e Hardware (WASH) - Hist\\\'oria, M\\\'etodos e Resultados/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-EESC_RedarTex.tex

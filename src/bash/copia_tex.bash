@@ -135,6 +135,8 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-pre-textual-OUTRO[}]/include{USPSC-pre-textual-OUTRO_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-pre-textual-Tutorial[}]/include{USPSC-pre-textual-Tutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PreTextual\/USPSC-Errata_RedarTex[}]/d' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex[}]/d' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PosTextual\/USPSC-Anexos[}]/include{USPSC-TA-PosTextual\/USPSC-Anexos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PosTextual\/USPSC-Apendices[}]/include{USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex}/g' 

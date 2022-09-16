@@ -42,13 +42,12 @@ if ($nivel == 4 && $nome_tipo_secao=="topico") {
 
 if ($nome_tipo_secao == "imagem"){
 	$texto_latex = "\n
-\\begin{figure}[Htb]\n
+\\begin{figure}[htb]\n
 	\\begin{center}\n
 		\\includegraphics[max size={\\textwidth}{\\textheight}]{../../imagens/".$texto."}\n
 	\\end{center}\n
-	\\caption{\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
-	\\legend{Fonte: \citeonline{cite-".$id_arquivo."}}\n
-\\end{figure}";
+	\\caption{\\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
+\\end{figure}\n";
 }
 
 
@@ -214,7 +213,7 @@ error_log(print_r("INI_GET -> ".ini_get("max_execution_time"), true));
 include "identifica.php.cripto";
 unset($retorna_zip);
 if ($param_mode == "verbose") {echo "<br>Vai executar unzip<br>";}
-exec("cd ../../latex && unzip -o USPSC-3.1.zip", $retorna_unzip, $code);
+exec("cd ../../latex && /usr/bin/unzip -o USPSC-3.1.zip", $retorna_unzip, $code);
 if ($code) {error_log(print_r("CODIGO: unzip >>>>".implode($retorna_unzip)."<<<<<<<<<<<<<\n", true));}
 
 do {
@@ -285,8 +284,16 @@ fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"RedarTex\" |
 ");
 
 
+
 fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
 ");
+
+fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"/include[{]USPSC-TA-PreTextual\/USPSC-Errata_RedarTex[}]/d\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
+");
+
+fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"/include[{]USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex[}]/d\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
+");
+
 fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/USPSC-3.1\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex.bash
 ");
 fwrite($myfile,"../bash/copia_tex.bash\n\n");

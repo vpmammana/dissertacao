@@ -388,10 +388,10 @@ var id_da_folha_onde_esta_flutuando;
 var matriz_ganha_foco=[]; // eh a matriz que guarda uma copia dos divs que serao percorridos pelo teclado.
 var texto_a_separar="";
 
+var tipos_nao_editaveis = ",mult_imagem,"; // normalmente marcadores de formatacao, como mult_imagem, USE VIRGULAS SEM ESPACOS PARA SEPARAR, porque assim nao tem como imagem match com mult_imagem
+function junta_proximo (){
 
-function junta_proximo (){i
-
-var tipos_autorizados = "paragrafo, citacao, item_lista_num, item_lista_nao_num, mult_imagem";
+var tipos_autorizados = "paragrafo, citacao, item_lista_num, item_lista_nao_num"; // autorizados para juntar e mais alguma coisa que nao me lembro agora
 
 if (!matriz_ganha_foco[x][0].includes("nivel")) {alert("Você só pode fazer junta numa janela de nível."); return;}
 if (x == 0) {alert("Você não pode juntar seções do nível 1."); return;}
@@ -1026,6 +1026,7 @@ let futuro_y =0;
 
 		if (e.key == "1") {
 		          if (matriz_ganha_foco[x][0].includes("seletor")) {alert("Para editar o Box 1 o cursor não pode estar na árvore 'Escolha do tipo de seção'.");} else {
+			  if (tipos_nao_editaveis.includes(","+matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")+",")) {alert("O tipo de seção "+matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")+ " não é editável no Box1."); modo_edicao=false; return;}
 		          if (document.getElementById("textarea_teclado").getAttribute("data-alterado")=="gravado") {     
 		          modo_edicao = true;
 		          textarea_em_edicao = document.getElementById("textarea_teclado");
@@ -1077,10 +1078,18 @@ let futuro_y =0;
 				document.getElementById("botao_nova_secao_dentro").disabled = false;
 				}
 				if (matriz_ganha_foco[x][1][y].getAttribute("data-id-secao")== "mult_imagem") 
-				{textarea_em_edicao.value = "Junte cada imagem puxando uma imagem abaixo e intercalando com os captions. Todos os itens devem ser separados com |. Você pode digitar o nome do arquivo se já estiver uploaded, mas não use underscore no nome. Não use ENTER. -> \n";}
+				{textarea_em_edicao.value = "Imagens Múltiplas";}
 				else
 				{textarea_em_edicao.value = "";}
 			}
+			if (tipos_nao_editaveis.includes(matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao"))) 
+				{
+					if (!matriz_ganha_foco[x][0].includes("seletor")) {alert("O tipo de seção "+matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao")+ " não é editável no Box2.");}
+					modo_edicao=false; 
+					textarea_em_edicao.blur();
+					return;
+				}
+
 		
 			} else {alert("Selecione uma seção nas janela 'Escolha Box 2' antes de tentar editar!");}
 			return;	

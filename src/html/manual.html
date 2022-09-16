@@ -929,8 +929,13 @@ Mandar topico para lixeira
 <h2>Imagens múltiplas</h2>
 
 <p>
-Para inserir múltiplas imagens é preciso inserir o tipo de secão "mult_imagem" e depois inserir as imagens, uma a uma, depois de "mult_secao". Depois que inserir a imagem, vc deve juntar essa imagem ao mult_imagem usando o "junta" do Box1.
+Para inserir múltiplas imagens é preciso inserir o tipo de secão "mult_imagem" e depois inserir as imagens, uma a uma, depois de "mult_secao". 
 </p>
+
+<p>
+O tipo de seção "mult_imagem" funciona como um tag de formatação que não requer terminador. Quando o gerador de LATEX encontra o tag "mult_secao", todas as imagens que vierem na sequência, serão colocadas lado a lado, em uma página. Ainda não são conhecidos os efeitos de uma quantidade muito grande de imagens.
+</p>
+
 
 </DIV>
 </body>

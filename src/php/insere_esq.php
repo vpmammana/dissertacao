@@ -22,7 +22,7 @@ $database = "dissertacao";
 
 
 $pdo = new PDO('mysql:dbname='.$database.';host=127.0.0.1', $username, $pass);
-$data = $pdo->query("call insere_a_esquerda_do_atual('".$nome_secao."', '".$id_tipo_secao."', '".$trecho."');")->fetchAll(PDO::FETCH_ASSOC);
+$data = $pdo->query("call insere_a_esquerda_do_atual('".$nome_secao."', '".$id_tipo_secao."', ".$pdo->quote($trecho).");")->fetchAll(PDO::FETCH_ASSOC);
 //print_r($data);
 //echo '<br />';
 //print_r($total_count);

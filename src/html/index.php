@@ -29,8 +29,14 @@ background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
   border: 1px solid black;
 }
 
-
-
+.tabela_do_texto {
+	
+	border-collapse: collapse;
+}
+.tabela_do_texto * {
+	border: 1px solid black;
+	font-size: 0.6rem;
+}
 .janela_de_referencias{
 	background-color: white;
 	color: black;
@@ -78,6 +84,7 @@ textarea {
  box-sizing: border-box;
  font-size: 1rem;
  height: 100%;
+white-space: pre-wrap;
 }
 
 .edita_secoes {
@@ -576,6 +583,23 @@ toggle_selecionador = !toggle_selecionador;
 
 } // fim function
 
+function grava_word(){
+var resposta="";
+var url='../php/grava_word.php';
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+			alert("Atenção: esta opção gera o DOCX a partir da última versão de geração do Latex. Se você fez alguma alteração no documento, precisa gerar o LATEX primeiro.");
+                        window.open(resposta);
+		     //textarea.setAttribute("data-alterado","sem_gravar");
+		     //textarea.style.backgroundColor = cor_de_edicao; 
+
+	   }
+           oReq.send();
+
+}
+
 function grava_backup_sql(){
 var resposta="";
 var url='../php/grava_script_sql.php';
@@ -593,7 +617,7 @@ var oReq=new XMLHttpRequest();
 
 }
 
-function insertAtCaret(areaId,text) { // fonte: fnicollier no github
+function insertAtCaret(areaId,text) { // fonte: fnicollier no github - para inserir onde o cursor está no textarea, acho
 		var txtarea = document.getElementById(areaId);
 		var scrollPos = txtarea.scrollTop;
 		var strPos = 0;
@@ -660,13 +684,19 @@ function limpa_array(){
 	matriz_ganha_foco.length = 0;
 }
 
-function grava_trecho(id_chave_secao, id_secao, trecho, div_versoes, textarea){ // grava uma nova versao de secao
+function grava_trecho(id_chave_secao, id_secao, trecho_original, div_versoes, textarea){ // grava uma nova versao de secao
+
+
+let trecho = trecho_original.replace(/(?:\\[rn]|[\r\n]+)+/g,'\\r\\n');
+
+//alert("-> "+trecho);
 if (id_secao == "corpo_tese") {alert("Você não pode alterar a raiz do documento. Nada será feito."); return;}
 if (id_chave_secao <0) {alert("Você ainda não selecionou uma seção. Nada será feito."); return;}
 popup_gravando.style.visibility = "visible";
 setTimeout(function(){popup_gravando.style.visibility = "hidden";}, 2000);
 var resposta="";
 var url='../php/insere_novo_trecho.php?id_chave_secao='+id_chave_secao+'&trecho='+trecho;
+//alert(url);
 var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
@@ -694,6 +724,8 @@ var oReq=new XMLHttpRequest();
 					document.getElementById(radical_de_nucleo+id_secao).innerHTML = trecho;
 				}
 			}
+			if (document.getElementById("secao_"+id_secao).getAttribute("data-nome-tipo-secao")=="tabela" || document.getElementById("secao_"+id_secao).getAttribute("data-nome-tipo-secao")=="tabela" )
+				{  recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);}
                      }
            oReq.send();
 
@@ -834,8 +866,9 @@ var oReq=new XMLHttpRequest();
 }
 
 
-function insere_nova_secao_a_esq(nome_secao, id_tipo_secao, trecho){
+function insere_nova_secao_a_esq(nome_secao, id_tipo_secao, trecho_original){
 
+let trecho = trecho_original.replace(/\r\n/g,'\\r\\n')
 
 var resposta="";
 var url='../php/insere_esq.php?nome_secao='+nome_secao+'&id_tipo_secao='+id_tipo_secao+'&trecho='+trecho;
@@ -852,7 +885,9 @@ var oReq=new XMLHttpRequest();
            oReq.send();
 }
 
-function insere_nova_secao_abaixo(nome_secao_pai, nome_tipo_secao, trecho){
+function insere_nova_secao_abaixo(nome_secao_pai, nome_tipo_secao, trecho_origina){
+
+let trecho = trecho_original.replace(/\r\n/g,'\\r\\n');
 
 var resposta="";
 var url='../php/insere_abaixo.php?nome_secao_pai='+nome_secao_pai+'&nome_tipo_secao='+nome_tipo_secao+'&trecho='+trecho;
@@ -871,36 +906,35 @@ var oReq=new XMLHttpRequest();
            oReq.send();
 }
 
-function insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho){
+function insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho_original, nome_tipo_secao){
+
+let trecho = trecho_original;
 
 //let pos_enter = /\r|\n/g.exec(trecho).index;
 
 let index_enter = trecho.lastIndexOf("\n");
 
-if (index_enter < 0) {
- index_enter = trecho.lastIndexOf("\r");
+if ( trecho.lastIndexOf("\r") < index_enter) {
+    index_enter = trecho.lastIndexOf("\r");
 }
+
 
 
 let subtrecho = "";
 
-
-//	if (pos_enter == null) { subtrecho = trecho;}
-//	else 
-//			{
-//				subtrecho = trecho.substring(0, pos_enter);
-//				trecho = trecho.substring(pos_enter + 1);
-//			}
-//	
-
-if (index_enter < 0) { subtrecho = trecho;}
+if (index_enter < 0 || nome_tipo_secao=="tabela") 
+	{ 
+		subtrecho = trecho.replace(/(?:\\[rn]|[\r\n]+)+/g,'\\r\\n');
+	}
 else 
 		{
-			subtrecho = trecho.substring(index_enter)
+			subtrecho = trecho.substring(index_enter).replace(/(?:\\[rn]|[\r\n]+)+/g,'\\r\\n');
 			trecho = trecho.substring(0, index_enter - 1);
 		}
+
 var resposta="";
 var url='../php/insere_dir.php?nome_secao='+nome_secao+'&id_tipo_secao='+id_tipo_secao+'&trecho='+subtrecho;
+//alert("insere_dir -> "+url);
 var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
@@ -910,7 +944,7 @@ var oReq=new XMLHttpRequest();
 			 	recarrega(document.getElementById(radio_selecionado).value, radio_selecionado);
 			 }
 			 else {
-		 		insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho); // insere uma secao por newline contida no Box... 
+		 		insere_nova_secao_a_dir(nome_secao, id_tipo_secao, trecho, nome_tipo_secao); // insere uma secao por newline contida no Box... 
 		 	 }
 		     //textarea.setAttribute("data-alterado","sem_gravar");
 		     //textarea.style.backgroundColor = cor_de_edicao; 
@@ -1061,7 +1095,8 @@ let futuro_y =0;
 			} else {textarea_em_edicao.focus();}
 
 		}
-		if (e.key == "Enter" && modo_edicao && textarea_em_edicao == document.getElementById("textarea_mouse") && document.activeElement != document.getElementById("drop_1_2")) {
+		if (e.key == "Enter" && modo_edicao && textarea_em_edicao == document.getElementById("textarea_mouse") && document.activeElement != document.getElementById("drop_1_2") && matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao") != "tabela") {
+			
 			document.getElementById("botao_nova_secao_abaixo").click();
 		}
 
@@ -1362,7 +1397,8 @@ let futuro_y =0;
 			id_secao_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-secao");
 			id_pai_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-id-pai");
 			//			data_teclado.innerHTML = matriz_ganha_foco[x][1][y].getAttribute("data-version-date").split(".")[0];
-			textarea_teclado.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo");
+			textarea_teclado.value = matriz_ganha_foco[x][1][y].getAttribute("data-titulo").replace(/(?:\\[rn]|[\r\n]+)+/g,'\r\n'); // necessario para fazer mostrar new line no caso de tabela
+//			if (matriz_ganha_foco[x][1][y].getAttribute("data-nome-tipo-secao") == "tabela"){alert("value -> "+textarea_teclado.value);};
 			if (matriz_ganha_foco[x][1][y].getAttribute("data-da-lixeira") == "nao" && tipo_secao_selecionado_no_check!='raiz') {botao_lixeira_teclado.disabled = false;} else {botao_lixeira_teclado.disabled = true;}
 			textarea_teclado.setAttribute("data-alterado","gravado"); // indica que o dado apresentado eh o que estah na base de dados
 			//console.log("estou passando por aqui -> "+ textarea_teclado.id + " data-titulo -> " +  matriz_ganha_foco[x][1][y].getAttribute("data-titulo"));

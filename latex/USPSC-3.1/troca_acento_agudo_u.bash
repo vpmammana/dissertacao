@@ -80,6 +80,7 @@ sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IAU.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-Tutorial.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-Tutorial_RedarTex.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/dissertacao_elaine_2022_09_16.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-modelo-ICMCe.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-EESC_RedarTex.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
@@ -87,6 +88,7 @@ sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-EESC.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-modelo-IFSCp.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-modelo-IFSCe.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
+sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/dissertacao_elaine_2022_09_16_RedarTex.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-Tutorial-num_RedarTex.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-IQSC.tex
 sed -i "s/ú/\\\'u/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-ICMCe.tex

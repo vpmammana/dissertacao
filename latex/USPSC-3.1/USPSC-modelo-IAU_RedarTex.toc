@@ -9,7 +9,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {ORGANIZA\c {C}\~AO DESTE TRABALHO teste}}{27}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {ORGANIZA\c {C}\~AO DESTE TRABALHO}}{27}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Exemplifica\c {c}\~ao de uma poss\'{\i }vel organiza\c {c}\~ao deste texto}{27}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Outras refer\^encias para organiza\c {c}\~ao deste texto}{29}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Organiza\c {c}\~ao da Introdu\c {c}\~ao}{31}{section.1.3}%
@@ -22,12 +22,12 @@
 \contentsline {section}{\numberline {2.2}Objetivo}{41}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Hip\'oteses}{42}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Problema}{42}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Justificativa}{42}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Justificativa}{43}{section.2.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{45}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Fundamenta\c {c}\~ao: hist\'oria}{45}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Revis\~ao da evolu\c {c}\~ao da historiografia}{46}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Governo Eletr\^onico}{50}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Governo Eletr\^onico}{51}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Sociedade da Informa\c {c}\~ao}{56}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{57}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}Descri\c {c}\~ao do Programa WASH}{57}{subsection.3.1.5}%

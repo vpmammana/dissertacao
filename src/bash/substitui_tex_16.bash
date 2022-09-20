@@ -42,6 +42,7 @@ sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PA
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A - Campus Londrina/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A - Campus Londrina/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A - Campus Londrina/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
+sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A - Campus Londrina/g" ../../latex/USPSC-3.1/dissertacao_elaine_2022_09_16_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A - Campus Londrina/g" ../../latex/USPSC-3.1/USPSC-Tutorial-num_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A - Campus Londrina/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex
 sed -i "s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\'OGICA FEDERAL DO PARAN\\\'A - Campus Londrina/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCe_RedarTex.tex

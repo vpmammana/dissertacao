@@ -949,6 +949,33 @@ O tipo de seção "mult_imagem" funciona como um tag de formatação que não requer 
 <p1>Para des-selecionar todas as seções selecionadas, basta clicar em "selecionar seções" novamente e tudo será des-selecionado e os checkbox serão escondidos.</p1>
 <p1>Note que, no momento, as seções não são verdadeiramente apagadas, mas transferidas para a Lixeira. Ainda não existe ferramenta de UNDO, portanto é bom gravar o texto em "grava_backup_sql" antes de grande quantidade de apagamento, para poder ser recuperado.</p1>
 
+<h2>Gerar saída DOCX Word</h2>
+
+<p>
+O sistema gera DOCX no botão "grava WORD DOCX". Observe que o DOCX gerado é baseado na última geração do Latex. Portanto, se você fizer uma alteração no documento e não gerar no Latex, a última alteração não aparecerá no DOCX.
+</p>
+
+<h2>Como gerar tabelas</h2>
+
+<p>
+Para gerar tabelas é preciso inserir uma tabela por meio da Box 2, como é feito para qualquer outro tipo de seção. Recaptulando: escolha a seção sob a qual quer inserir a tabela. Aperte espaço e depois seta para a direita. Quando o cursor estiver no seletor de tipo de seção, escolha com as setas para cima e para baixo o tipo "tabela".
+</p>
+<p>
+Quando o tipo "tabela" estiver selecionado, aperte "2" para selecionar a inserção pelo Box2. 
+</p>
+<p>
+Normalmente o Box 2 considera que o "enter" é para gravar a nova seção abaixo da atual. Mas quando o tipo é "tabela" o "enter" não mais é usado para gravar o conteúdo de Box 2. Agora o usuário pode criar a sua própria tabela digitando as células da tabela separadas pelo símbolo "|" e as linhas separadas por "enter".
+</p>
+<p>
+O interpretador vai mostrar a tabela na janela de níveis assim que o botão "antes" ou "depois" for apertado. 
+</p>
+
+<h2>Aspas duplas no Latex</h2>
+
+<p>
+Para conseguir abrir e fechar aspas no latex é preciso usar o símbol backtick duas vezes (abrir) e apóstrofo duas vezes(fechar).
+</p>
+
 </DIV>
 </body>
 

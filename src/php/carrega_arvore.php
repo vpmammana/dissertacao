@@ -131,7 +131,18 @@ teste
 <input id='apagar_mult_secoes' type='button' value='apagar seções selecionadas' style='visibility: hidden' onclick='transpoe_subarvore_recursivo(`lixeira`);'>
 </td>
 <td>
+<table>
+<tr>
+<td>
 <input id='grava_SQL' type='button' value='grava_backup_sql' onclick='grava_backup_sql();'>
+</td>
+</tr>
+<tr>
+<td>
+<input id='Salva WORD' type='button' value='grava WORD DOCX' onclick='grava_word();'>
+</td>
+</tr>
+</table>
 </td>
 <td>
 <div style='float: right; display: table-row; padding-left: 10px'>
@@ -535,6 +546,33 @@ if ($result->num_rows>0) {
 				$para = $para."Fig. ".$conta_imagem." - "; // note que a legenda de figura vai mostrar a numeração da imagem imediatamente anterior... 
 			}
 
+		if ($nome_tipo_secao == "tabela") {
+				$tamanho_fonte = "0.7rem";
+				$temp_tabela = "<table class='tabela_do_texto'>";
+				$linhas_de_tabela = preg_split("/\\\\n|\n/", $titulo);
+				$temp_tabela=$temp_tabela."<tr>";
+				$conta_linhas=0;
+				foreach($linhas_de_tabela as $linha){
+					$linha_sem_r = preg_replace('/\\\r|\r/',"",$linha);
+//					$linha_sem_r= $linha;
+					$celulas = explode("|", $linha_sem_r);
+					foreach($celulas as $celula){
+						if ($conta_linhas >0) {
+						$temp_tabela=$temp_tabela."<td>".$celula."</td>";
+						}
+						else
+						{
+						$temp_tabela=$temp_tabela."<th>".$celula."</th>";
+
+						}
+
+					}
+				$temp_tabela=$temp_tabela."</tr>";
+				$conta_linhas++;
+				}
+				$temp_tabela =  $temp_tabela."</table>";		
+				$titulo=$temp_tabela;	
+		}
 
 // data-id-chave eh a chave primaria da tabela secoes
 

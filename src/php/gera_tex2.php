@@ -80,6 +80,17 @@ if ($nome_tipo_secao == "imagem"){
 	}
 }
 
+//if ($nome_tipo_secao == "tabela") {
+//
+//	$texto_latex = "\n
+//\begin{tabular}{|c|c|c|c|}
+//
+//\end{tabular}
+//";
+//
+//}
+
+
 if ($nome_tipo_secao == "multimagem"){ // note que o nome da secao chega aqui sem UNDERSCORE... isso é um risco de duplicidade de nomes... 
         $texto_latex="\n
 \\captionsetup{format=plain}
@@ -184,6 +195,9 @@ return $linha;
 
 function converte_acento_para_file_put($linha){
 //                        12345678
+
+
+$linha = str_replace("\"","\\textquotedbl",$linha); // isso aqui não vai funcionar muito bem porque a segunda aspas ficara sem espaco com a proxima palavra. Melhor usar duplo backstick para abrir as aspas e duplo apostrofo para fechar
 $linha = str_replace("[[","",$linha);
 $linha = str_replace("]]","",$linha);
 

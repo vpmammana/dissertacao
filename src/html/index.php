@@ -885,7 +885,7 @@ var oReq=new XMLHttpRequest();
            oReq.send();
 }
 
-function insere_nova_secao_abaixo(nome_secao_pai, nome_tipo_secao, trecho_origina){
+function insere_nova_secao_abaixo(nome_secao_pai, nome_tipo_secao, trecho_original){
 
 let trecho = trecho_original.replace(/\r\n/g,'\\r\\n');
 

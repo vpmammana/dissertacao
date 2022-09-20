@@ -17,6 +17,13 @@
 \cp ../../latex/USPSC-3.1/USPSC-unidades.tex ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-IndicesRemissivos.tex ../../latex/USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-modelo-EESC.tex ../../latex/USPSC-3.1/USPSC-TCC-modelo-EESC_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/.texlive2019 ../../latex/USPSC-3.1/_RedarTex.texlive2019 
+\cp ../../latex/USPSC-3.1/.texlive2019/texmf-var ../../latex/USPSC-3.1/_RedarTex.texlive2019/texmf-var 
+\cp ../../latex/USPSC-3.1/.texlive2019/texmf-var/fonts ../../latex/USPSC-3.1/_RedarTex.texlive2019/texmf-var/fonts 
+\cp ../../latex/USPSC-3.1/.texlive2019/texmf-var/fonts/pk ../../latex/USPSC-3.1/_RedarTex.texlive2019/texmf-var/fonts/pk 
+\cp ../../latex/USPSC-3.1/.texlive2019/texmf-var/fonts/pk/ljfour ../../latex/USPSC-3.1/_RedarTex.texlive2019/texmf-var/fonts/pk/ljfour 
+\cp ../../latex/USPSC-3.1/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen ../../latex/USPSC-3.1/_RedarTex.texlive2019/texmf-var/fonts/pk/ljfour/jknappen 
+\cp ../../latex/USPSC-3.1/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec ../../latex/USPSC-3.1/_RedarTex.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec 
 \cp ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC.tex ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC.tex ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp.tex ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex 
@@ -137,6 +144,13 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-pre-textual-Tutorial[}]/include{USPSC-pre-textual-Tutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]dissertacao_elaine_2022_09_16[}]/include{dissertacao_elaine_2022_09_16_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2019[}]/include{live2019_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2019\/texmf-var[}]/include{live2019\/texmf-var_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts[}]/include{live2019\/texmf-var\/fonts_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk[}]/include{live2019\/texmf-var\/fonts\/pk_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk\/ljfour[}]/include{live2019\/texmf-var\/fonts\/pk\/ljfour_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen[}]/include{live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec[}]/include{live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PreTextual\/USPSC-Errata_RedarTex[}]/d' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex[}]/d' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
@@ -203,3 +217,10 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-pre-textual-Tutorial[}]/include{USPSC-pre-textual-Tutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]dissertacao_elaine_2022_09_16[}]/include{dissertacao_elaine_2022_09_16_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2019[}]/include{live2019_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2019\/texmf-var[}]/include{live2019\/texmf-var_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts[}]/include{live2019\/texmf-var\/fonts_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk[}]/include{live2019\/texmf-var\/fonts\/pk_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk\/ljfour[}]/include{live2019\/texmf-var\/fonts\/pk\/ljfour_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen[}]/include{live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec[}]/include{live2019\/texmf-var\/fonts\/pk\/ljfour\/jknappen\/ec_RedarTex}/g' 

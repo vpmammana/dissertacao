@@ -10,7 +10,6 @@ sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/USP
 sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCe_RedarTex.tex
 sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex
-sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex
 sed -i "s/@\[orientador\]@/Paulo S\\\'ergio Camargo/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-EESC_RedarTex.tex

@@ -22,7 +22,6 @@ sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[uni
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-EESC.tex
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex
-sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC.tex
 sed -i "s/FACULDADE [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo_RedarTex.tex

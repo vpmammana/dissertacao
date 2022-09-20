@@ -26,6 +26,41 @@ function impar($number){ // retorna true se for impar
     }
 }
 
+function retorna_n_linhas($texto){
+	
+	$linhas=preg_split("/\\\\n|\n/", $texto);
+	return sizeof($linhas);
+
+}
+
+function retorna_n_colunas($texto){
+
+	$linhas=preg_split("/\\\\n|\n/", $texto);
+
+	$max=0;
+
+	foreach($linhas as $linha) {
+		$linha_sem_r = preg_replace('/\\\r|\r/',"",$linha);
+		$celulas = explode("|", $linha_sem_r);
+		if ($max < sizeof($celulas)) {$max = sizeof($celulas);}
+	}
+
+	return $max;
+
+}
+
+function retorna_formato_colunas($n_colunas){
+	$formato = "{";
+	for ($i=0; $i<$n_colunas; $i++){
+		
+		$formato = $formato."|c";
+
+	}
+
+	$formato = $formato."|}";
+ 	return $formato;
+}	
+
 function insere($nome_arquivo, $ponto_de_insercao, $nome_tipo_secao, $texto, $nome_secao, $nivel){
 global $param_mode;
 global $id_arquivo;
@@ -34,8 +69,14 @@ global $conta_mult_imagem;
 //unset($file);
 $file = file($nome_arquivo);
 $indice = array_search($ponto_de_insercao, $file, false);
-$id_arquivo = pathinfo($texto, PATHINFO_FILENAME);
 
+if (file_exists($texto)){
+$id_arquivo = pathinfo($texto, PATHINFO_FILENAME);
+}
+else
+{$id_arquivo = hash('ripemd160', $texto);}
+
+error_log(print_r("CODIGO: >>>>----".$id_arquivo."----<<<<<<<<<<<<<\n", true));
 // $texto_latex = $nome_tipo_secao." -> ".$texto;
 $texto_latex = $texto;
 
@@ -80,15 +121,45 @@ if ($nome_tipo_secao == "imagem"){
 	}
 }
 
-//if ($nome_tipo_secao == "tabela") {
-//
-//	$texto_latex = "\n
-//\begin{tabular}{|c|c|c|c|}
-//
-//\end{tabular}
-//";
-//
-//}
+if ($nome_tipo_secao == "tabela") {
+
+	$n_linhas=retorna_n_linhas($texto);
+	$n_colunas=retorna_n_colunas($texto);
+	$formato_colunas = retorna_formato_colunas($n_colunas);
+	$linhas=preg_split("/\\\\n|\n/", $texto);
+	$texto_latex = "\n
+\n
+\\begin{table}[htb]
+\\caption{\\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
+\\centering
+\\begin{tabular}".$formato_colunas."
+\\hline\n";
+	$conta_linhas_tabela=0;
+	foreach($linhas as $linha) {
+	if ($conta_linhas_tabela >0) {
+		$texto_latex = $texto_latex." \\\\\n";
+	}
+		$linha_sem_r = preg_replace('/\\\r|\r/',"",$linha);
+		$celulas = preg_replace("/\|/", " & ",$linha_sem_r);	
+		$texto_latex = $texto_latex.$celulas;
+		if ($conta_linhas_tabela == 0) {
+		}	
+		$conta_linhas_tabela++;
+	}
+$texto_latex=$texto_latex." \\\\";
+		if ($conta_linhas_tabela ==1) {
+			$texto_latex = $texto_latex."\\hline\n";
+		}
+
+
+if ($conta_linhas_tabela > 1) {
+	$texto_latex = $texto_latex."\n\\hline";
+}
+
+$texto_latex = $texto_latex."\n\\end{tabular}
+\\end{table}\n\n";
+
+}
 
 
 if ($nome_tipo_secao == "multimagem"){ // note que o nome da secao chega aqui sem UNDERSCORE... isso é um risco de duplicidade de nomes... 
@@ -197,7 +268,7 @@ function converte_acento_para_file_put($linha){
 //                        12345678
 
 
-$linha = str_replace("\"","\\textquotedbl",$linha); // isso aqui não vai funcionar muito bem porque a segunda aspas ficara sem espaco com a proxima palavra. Melhor usar duplo backstick para abrir as aspas e duplo apostrofo para fechar
+$linha = str_replace("\"","\\textquotedbl ",$linha); // isso aqui não vai funcionar muito bem porque a segunda aspas ficara sem espaco com a proxima palavra. Melhor usar duplo backstick para abrir as aspas e duplo apostrofo para fechar
 $linha = str_replace("[[","",$linha);
 $linha = str_replace("]]","",$linha);
 
@@ -542,7 +613,7 @@ if ($result->num_rows>0) {
 							      );
 					
 						}
-					if ($nome_tipo_secao == 'legenda_imagem'){
+					if ($nome_tipo_secao == 'legenda_imagem' || $nome_tipo_secao == 'legenda_tabela'){
 						substitui_label_caption($value, "caption-".$id_arquivo, converte_acento_para_exec($titulo));
 					}
 					else {

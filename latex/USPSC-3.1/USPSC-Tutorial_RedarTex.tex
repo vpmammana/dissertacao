@@ -2374,15 +2374,8 @@ Esta forma de estrutura\c{c}\~ao dos dados define como ser\~ao gerados os indica
 
 
 
-\subsection[Bancos de Dados Relacionais]{Bancos de Dados Relacionais}\label{Bancos de Dados Relacionais}
-O objetivo desta se\c{c}\~ao \'e rever os m\'etodos de modelagem de dados dispon\'{\i}veis para viabilizar a coleta de dados no \^ambito do Projeto WASH. O foco aqui ser\'a embasar a decis\~ao de empregar a modelagem relacional, em detrimento de outros m\'etodos menos estruturados.
-
-
-
-
-
-
-Os bancos de dados podem ter diferentes n\'{\i}veis de formaliza\c{c}\~ao, seguindo integralmente ou em parte normas bastante espec\'{\i}ficas (Setzer e Silva, 2017) , dependendo das caracter\'{\i}sticas e necessidades do sistema que se quer modelar. Mas antes de entrar na revis\~ao sobre o assunto, \'e preciso entender a complexidade do sistema que se quer representar.
+\subsection[Registro de dados na escola p\'ublica]{Registro de dados na escola p\'ublica}\label{Registro de dados na escola p\'ublica}
+Visando compreender as alternativas para determinar a quantidade de participantes, bem como outros indicadores no \^ambito do projeto WASH, h\'a que se olhar brevemente para como a escola p\'ublica regula sua pr\'opria armazenagem de dados. Al\'em disso, \'e preciso compreender preliminarmente a forma como o WASH funciona, tema que ser\'a muito mais detalhado na parte de resultados.
 
 
 
@@ -2396,21 +2389,14 @@ A primeira caracter\'{\i}stica do Programa WASH que determina a forma como a col
 
 
 
-Diferentemente de programas que ocorrem no \^ambito acad\^emico de pesquisa, o Projeto WASH tem uma \^enfase maior em extens\~ao, que deve ser concretizada pela oferta de oficinas em STEAM para o ensino fundamental.
+Diferentemente de programas que ocorrem no \^ambito acad\^emico de pesquisa, o Projeto WASH tem uma \^enfase maior em extens\~ao, que deve ser concretizada pela oferta de oficinas em STEAM para o ensino fundamental. Na pr\'atica isso significa que os bolsistas participantes do WASH precisam realizar oficinas nas escolas p\'ublicas e outros tipos de entidade, em temas variados, promovendo atividades diversas, com cronogramas que s\~ao determinados caso a caso, uma vez que precisam se enquadrar nas necessidades da escola. Estas caracter\'{\i}sticas geram uma complexidade maior do modelo de representa\c{c}\~ao de dados do que o que seria necess\'ario para uma escola regular.
 
 
 
 
 
 
-Assim, para a avalia\c{c}\~ao de suas caracter\'{\i}sticas h\'a que se estabelecer meios de medir quantitativamente sua capacidade de atingir crian\c{c}as do ensino fundamental.
-
-
-
-
-
-
-Portanto, \'e preciso criar meios de coletar dados sobre, principalmente:
+Com esta complexidade em mente, \'e preciso criar meios de coletar dados sobre, principalmente:
 
 
 
@@ -2423,9 +2409,12 @@ Portanto, \'e preciso criar meios de coletar dados sobre, principalmente:
 \item n\'umero de oficinas ofertadas
 \item n\'umero de institui\c{c}\~oes participantes
 \item n\'umero de horas de atividade por estudante
+\item cidades atendidas
+\item frequ\^encia dos bolsistas multiplicadores
+\item distribui\c{c}\~ao et\'aria dos participantes
 \end{alineas}
 
-dentre tantos outros dados.
+dentre tantos.
 
 
 
@@ -2446,7 +2435,7 @@ Por ser um programa sem uma legisla\c{c}\~ao espec\'{\i}fica para o estabelecime
 
 
 
-Portanto, o sistema de registro de participa\c{c}\~oes de estudantes do WASH precisa ser flex\'{\i}vel o bastante para garantir a representa\c{c}\~ao desse ambiente diverso institucionalmente, adaptando-se \`a realidade de cada institui\c{c}\~ao parceira.
+Portanto, outra caracter\'{\i}stica do sistema de registro de participa\c{c}\~oes de estudantes do WASH \'e ser flex\'{\i}vel o bastante para garantir a representa\c{c}\~ao desse ambiente diverso institucionalmente, adaptando-se \`a realidade de cada institui\c{c}\~ao parceira.
 
 
 
@@ -2492,7 +2481,7 @@ Al\'em de servir de indicador de efici\^encia e efic\'acia, o controle de frequ\
 
 
 
-O WASH, por ser uma atividade de educa\c{c}\~ao complementar \`a da escola regular, n\~ao tem uma normatiza\c{c}\~ao equivalente. Mesmo assim n\~ao pode abrir m\~ao de produzir seus pr\'oprios indicadores de efici\^encia e efic\'acia, raz\~ao pela precisou desenvolver um m\'etodo pr\'oprio.
+O WASH, por ser uma atividade de educa\c{c}\~ao complementar \`a da escola regular, n\~ao tem uma normatiza\c{c}\~ao equivalente. Mesmo assim n\~ao pode abrir m\~ao de produzir seus pr\'oprios indicadores de efici\^encia e efic\'acia, raz\~ao pela qual  precisou desenvolver um m\'etodo pr\'oprio.
 
 
 
@@ -2513,28 +2502,57 @@ Esta necessidade de registro foi reconhecida nos prim\'ordios do Projeto e uma d
 
 
 
-De forma bem suscinta, podemos recapitular que a coleta de dados presen\c{c}a no \^ambito do projeto WASH se deu, inicialmente, por meio que podemos chamar de anal\'ogico: o registro em papel do nome das crian\c{c}as presentes, com a marca\c{c}\~ao da data no topo da folha.
+\subsection[Planilhas eletr\^onicas para registro de dados]{Planilhas eletr\^onicas para registro de dados}\label{Planilhas eletr\^onicas para registro de dados}
+As planilhas eletr\^onicas s\~ao softwares que permitem guardar e dados, realizar opera\c{c}\~oes com eles num formato de tabela, com o objetivo de deles extrair informa\c{c}\~oes.
 
 
 
 
 
 
-Com o crescimento r\'apido do projeto este m\'etodo come\c{c}ou a ficar invi\'avel, e foi tentanda a utiliza\c{c}\~ao de formul\'arios on-line tipo \textquotedbl Google Forms\textquotedbl , os quais eram transferidos para planilhas eletr\^onicas para armazenagem.
+A planilha eletr\^onica \'e um dos m\'etodos mais populares para armazenagem e an\'alise de dados porque tem uma curva de aprendizado relativamente favor\'avel. Em outras palavras, com pouca capacita\c{c}\~ao, o interessado consegue obter resultados rapidamente.
 
 
 
 
 
 
-O emprego de planilhas eletr\^onicas tamb\'em se mostrou insatisfat\'orio e \'e neste ponto que come\c{c}amos a revis\~ao da literatura de Bancos de Dados Relacionais.
+O Projeto WASH iniciou sua armazenagem de dados empregando planilhas eletr\^onicas justamente por conta desta facilidade, mas t\~ao r\'apido quanto os primeiros resultados come\c{c}arama a aparecer tamb\'em come\c{c}aram a ficar evidentes as limita\c{c}\~oes deste m\'etodo, embora ainda existam no projeto muitos dados que permanecem sendo armazenados em planilhas. Ali\'as, esta candidata tamb\'em utilizou-se de planilhas para verifica\c{c}\~ao de dados que j\'a est\~ao estruturados em Bancos de Dados Relacionais, como se ver\'a nos Resultados e An\'alise. Por ora este assunto n\~ao ser\'a tratado aqui.
 
 
 
 
 
 
-FULLER (2011), em seu artigo ``Vantagens e perigos de usar o Microsoft Excel para organizar e apresentar dados de qualidade de \'agua`` nos presenteia com algumas importantes reflex\~oes:
+Com base nesta observa\c{c}\~ao de dificuldades, o foco aqui ser\'a embasar, por compara\c{c}\~ao, a decis\~ao de empregar a modelagem relacional, em detrimento de outros m\'etodos menos estruturados, como \'e o caso das planilhas eletr\^onicas. A modelagem relacional ser\'a tratada na pr\'oxima se\c{c}\~ao.
+
+
+
+
+
+
+De forma bem suscinta, podemos recapitular que a coleta de dados de presen\c{c}a no \^ambito do projeto WASH se deu, inicialmente, por meio que podemos chamar de anal\'ogico: o registro em papel do nome das crian\c{c}as presentes, com a marca\c{c}\~ao da data caracter\'{\i}sticas dos eventos no topo da folha.
+
+
+
+
+
+
+Com o crescimento r\'apido do projeto este m\'etodo come\c{c}ou a ficar invi\'avel, e foi tentada a utiliza\c{c}\~ao de formul\'arios on-line tipo \textquotedbl Google Forms\textquotedbl , os quais eram transferidos para planilhas eletr\^onicas para armazenagem.
+
+
+
+
+
+
+O emprego de planilhas eletr\^onicas tamb\'em se mostrou insatisfat\'orio e \'e neste ponto que come\c{c}amos a revis\~ao da literatura sobre o assunto.
+
+
+
+
+
+
+FULLER (2011), em seu artigo \textquotedbl Vantagens e perigos de usar o Microsoft Excel para organizar e apresentar dados de qualidade de \'agua\textquotedbl  (tradu\c{c}\~ao livre do t\'{\i}tulo) nos presenteia com algumas importantes reflex\~oes:
 
 
 
@@ -2545,7 +2563,7 @@ FULLER (2011), em seu artigo ``Vantagens e perigos de usar o Microsoft Excel par
 \noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{Usar o Excel para organizar os dados \'e uma tremenda vantagem, mas tamb\'em cria oportunidade para introduzir erros insidiosos no conjunto de dados, erros que podem entrar nos dados de forma sutil, com impacto pervasivo mas muito dif\'{\i}cies de descobrir(...)}\normalize}}}\end{center}
 
 
-O n\'{\i}vel de confian\c{c}a nesta afirma\c{c}\~ao de  FULLER (2011) \'e bastante alto, uma vez que o trabalho de coleta de dados por ele realizado envolveu uma entrada de 4.752 dados anuais por mais de 10 anos, o que certamente permitiu que ele avaliasse a confiabilidade do Excel como ferramenta. A escola do Excel como ferramenta tinha sido aprovada pela Ag\^encia de Fomento  (FULLER, 2011), uma transi\c{c}\~ao do m\'etodo anterior de coleta, que era baseado em planilhas em papel com c\'alculos feitos em calculadora.
+O n\'{\i}vel de confian\c{c}a nesta afirma\c{c}\~ao de  FULLER (2011) \'e bastante alto, uma vez que o trabalho de coleta de dados por ele realizado envolveu uma entrada de 4.752 dados anuais por mais de 10 anos, o que certamente permitiu que ele avaliasse a confiabilidade do Excel como ferramenta. A escolha do Excel como ferramenta em sua pesquisa tinha sido aprovada pela Ag\^encia de Fomento  (FULLER, 2011), uma transi\c{c}\~ao do m\'etodo anterior de coleta, que segundo ele era baseado em planilhas em papel com c\'alculos feitos em calculadora.
 
 
 
@@ -2570,24 +2588,24 @@ Com base nesta vasta experi\^encia,  FULLER (2011) identificou as seguintes font
 \begin{alineas}
 \item Erros de digita\c{c}\~ao: normalmente envolviam apertar inadvertidamente n\'umeros adjacentes no teclado, ou simplesmente ler os dados de laborat\'orio de forma errada. Esse tipo de erro pode alterar dramaticamente as m\'edias e passar despercebido nos gr\'aficos de espalhamento de dados.
 \item Deslocamento de colunas e repeti\c{c}\~ao inadvertida de dados: algumas vezes uma coluna pode ser repetida sem que a pessoa respons\'avel por entrar os dados perceba, por exemplo.
-\item Perda de n\'umeros ou multiplicidade indevida de de entrada de dados: isto pode gerar uma coluna de dados com menos ou mais dados do que o n\'umero original.
+\item Perda de n\'umeros ou multiplicidade indevida de entrada de dados: isto pode gerar uma coluna de dados com menos ou mais dados do que o n\'umero original.
 \end{alineas}
 
-Estes tipos de erros, por mais pros\'aicos que possam parecer, tinham paralelo na experi\^encia de registro do WASH. No in\'{\i}cio do projeto observaramos uma falta de qualidade dos dados de presen\c{c}a de alunos do fundamental no WASH, uma situa\c{c}\~ao que requeria medidas por parte da equipe de gest\~ao do projeto.
+Estes tipos de erros, por mais pros\'aicos que possam parecer, tinham paralelo na experi\^encia de registro do WASH por n\'os vivenciada. No in\'{\i}cio do projeto observaramos uma falta de qualidade dos dados de presen\c{c}a de crian\c{c}as do fundamental no WASH, uma situa\c{c}\~ao que requeria medidas por parte da equipe de gest\~ao do projeto.
 
 
 
 
 
 
- Brudner (2022) complementa essa vis\~ao, mas com uma abordagem mais de neg\'ocios, trazendo as 22 vantagens e desvantagens na utiliza\c{c}\~ao de planilha eletr\^onicas.
+ Brudner (2022) complementa essa vis\~ao, mas com uma abordagem mais de neg\'ocios, trazendo as vantagens e desvantagens na utiliza\c{c}\~ao de planilha eletr\^onicas.
 
 
 
 
 
 
-Dentre as vantagens s\~ao citadas:
+Dentre as vantagens s\~ao citadas (Brudner, 2022) :
 
 
 
@@ -2596,18 +2614,17 @@ Dentre as vantagens s\~ao citadas:
 
 
 \begin{alineas}
-\item as planilhas eletr\^onicas podem ser obtidas gratuitamente, a exemplo do LibreOffice e do Google Docs. Mesmo empresas como a Microsoft oferece acesso gratuito a algumas de suas vers\~oes.
-\item as planilhas eletr\^onicas requerem pouco treinamento para seu uso b\'asico
+\item as planilhas eletr\^onicas podem ser obtidas gratuitamente, a exemplo do LibreOffice e do Google Docs. Mesmo empresas como a Microsoft oferecem acesso gratuito a algumas de suas vers\~oes.
 \item as planilhas eletr\^onicas requerem pouco treinamento para seu uso b\'asico
 \item planilhas eletr\^onicas s\~ao \textquotedbl customiz\'aveis\textquotedbl , ou seja, permitem ser configuradas facilmente para atender aquela necessidade espec\'{\i}fica do usu\'ario
 \item as planilhas eletr\^onicas permite o trabalho colaborativo, quando muitos usu\'arios editam a planilha ao mesmo tempo. Esse possibilidade tamb\'em pode ser um problema, dado que pode resultar em re-trabalho quando um usu\'ario modifica os dados j\'a verificados por outro, por exemplo
 \item as planilhas eletr\^onicas permitem uma manipula\c{c}\~ao e an\'alise de dados relativamente f\'acil, o que tamb\'em pode ser um problema, dado que \'e f\'acil remover parte dos dados, tornando-os n\~ao confi\'aveis
 \item as planilhas s\~ao facilmente integr\'aveis com outras  ferramentas, mesmo com banco de dados especializados
-\item as planilhas s\~ao facilmente integr\'aveis ao fluxo de trabalho de sua equipe, n\~ao requerendo custosas adapta\c{c}\~oes quando o sistema \'e menos flex\'{\i}vel
+\item as planilhas s\~ao facilmente integr\'aveis ao fluxo de trabalho de sua equipe, n\~ao requerendo custosas adapta\c{c}\~oes, como \'e o caso de sistemas menos flex\'{\i}veis
 \item as planilhas geram facilmente documentos de grande apelo visual, principalmente no ambiente de neg\'ocios. H\'a uma grande quantidade de \textquotedbl templates\textquotedbl  que d\~ao bastante flexibilidade para a apresenta\c{c}\~ao dos resultados.
 \end{alineas}
 
- Brudner (2022) tamb\'em aponta as disvantagens das planilhas eletr\^onicas:
+ Brudner (2022) tamb\'em aponta as desvantagens das planilhas eletr\^onicas:
 
 
 
@@ -2616,17 +2633,300 @@ Dentre as vantagens s\~ao citadas:
 
 
 \begin{alineas}
-\item embora f\'aceis de usar, as planilhas s\~ao desajeitadas, principalmente quando \'e preciso manipular grandes quantidades de dados. O usu\'ario se ver\'a percorrendo (scrolling) centenas ou at\'e milhares de c\'elulas para poder encontrar seus dados, mesmo quando tem ferramentas de filtros dispon\'{\i}veis.
-\item as planilhas eletr\^onicas n\~ao s\~ao seguras, dado que n\~ao tem sistemas de autentica\c{c}\~ao (login). Uma vez distribu\'{\i}das colocam em risco a privacidade das pessoas ali registradas (no caso de registros de presen\c{c}a), uma fragilidade frente aos requisitos da Lei Geral de Prote\c{c}\~ao de Dados, por exemplo.
-\item a facilidade com que as planilhas eletr\^onicas podem ser utilizadas de forma colaborativa cria um outro problema: \'e dif\'{\i}cil dizer quem editou os dados pela \'ultima vez. Isso prejudica a rastreabilidade dos erros, prejudicando sua corre\c{c}\~ao. Quando muitas pessoas entram dados, como \'e o caso do WASH, \'e comum um usu\'ario inadvertidamente introduzir erros em cima do trabalho de outro, os quais depois ser\~ao muito dif\'{\i}ceis de encontrar.
+\item embora f\'aceis de usar, as planilhas s\~ao desajeitadas, principalmente quando \'e preciso manipular grandes quantidades de dados. O usu\'ario se ver\'a percorrendo (scrolling) e inspecionando centenas ou at\'e milhares de c\'elulas para poder encontrar seus dados, mesmo quando tem ferramentas de busca e filtros dispon\'{\i}veis.
+\item as planilhas eletr\^onicas n\~ao s\~ao seguras, dado que n\~ao t\^em sistemas de autentica\c{c}\~ao (login). Uma vez distribu\'{\i}das, colocam em risco a privacidade das pessoas ali registradas (no caso de registros de presen\c{c}a), uma fragilidade frente aos requisitos da Lei Geral de Prote\c{c}\~ao de Dados, por exemplo.
+\item a facilidade com que as planilhas eletr\^onicas podem ser utilizadas de forma colaborativa cria um outro problema: \'e dif\'{\i}cil dizer quem editou os dados pela \'ultima vez. Isso prejudica a rastreabilidade dos erros, dificultando sua corre\c{c}\~ao. Quando muitas pessoas entram dados, como \'e o caso do WASH, \'e comum um usu\'ario inadvertidamente introduzir erros em cima do trabalho de outro, os quais depois ser\~ao muito dif\'{\i}ceis de encontrar.
 \item as planilhas eletr\^onicas criam v\'arias vers\~oes da mesma \textquotedbl verdade\textquotedbl   (Brudner, 2022), mesmo que todos os usu\'arios de dados partam da mesma fonte de dados inicial. Isso ocorre porque \'e comum os usu\'arios salvarem suas pr\'oprias vers\~oes da planilha, criando um problema de concorr\^encia de atualiza\c{c}\~oes.
 \item da mesma forma como  FULLER (2011),  Brudner (2022) tamb\'em aponta a inevitabilidade de erros introduzidos pelos v\'arios usu\'arios.
 \item muito embora as planilhas permitam obter relat\'orios rapidamente para estruturas simples, \`a medida que as estruturas v\~ao ficando mais complexas, torna-se cada vez mais dif\'{\i}cil gerar novos relat\'orios
-\item o fato das planilhas serem \textquotedbl customiz\'aveis\textquotedbl  e independentes de uma equipe de suporte tamb\'em significa que o pr\'oprio usu\'ario tem que gerar seus gr\'aficos, o que consume bastante tempo e pode ser bastante frustante
-\item al\'em da falta de seguran\c{c}a em termos de expor a privacidade das pessoas registradas, as planilhas s\~ao particularmente propensas a perder dados, seja por erros de opera\c{c}\~ao ou por problemas com os sistemas de armazenamento, dado que as planilhas n\~ao tem sistemas robustos de \textquotedbl back-up\textquotedbl 
+\item o fato das planilhas serem \textquotedbl customiz\'aveis\textquotedbl  e independentes de uma equipe de suporte tamb\'em significa que o pr\'oprio usu\'ario tem que gerar seus gr\'aficos, o que consume bastante tempo e pode ser bastante frustrante quando n\~ao se consegue obter a vis\~ao desejada
+\item al\'em da falta de seguran\c{c}a em termos de expor a privacidade das pessoas registradas, as planilhas s\~ao particularmente propensas a perder dados, seja por erros de opera\c{c}\~ao ou por problemas com os sistemas de armazenamento, uma vez que as planilhas n\~ao tem sistemas robustos de \textquotedbl back-up\textquotedbl 
 \item \`a medida que o seu \textquotedbl neg\'ocio\textquotedbl  se amplia e os requisitos de tratamento de dados v\~ao se tornando mais complexos, \'e natural que sistemas especializados sejam necess\'arios, situa\c{c}\~ao que nem sempre permite a integra\c{c}\~ao dos dados antigos, presentes na planilha eletr\^onica
 \item as planilhas eletr\^onicas n\~ao podem ser integradas a aplicativos mobile, dificultando a ubiquicidade
 \end{alineas}
+
+N\~ao obstante as vantagens, o fato \'e que todas estas desvantagens mostraram-se determinantes no caso do Projeto WASH, requerendo uma a\c{c}\~ao no sentido de buscar formas mais robustas de armazenagem.
+
+
+
+
+
+
+Vamos mostrar agora algumas situa\c{c}\~oes que ocorrem em planilhas eletr\^onicas que acabam prejudicando a confiabilidade nos dados.
+
+
+
+
+
+
+Vamos considerar uma representa\c{c}\~ao de uma planilha eletr\^onica na forma de uma tabela de cadastro de estudantes.
+
+
+
+
+
+
+Na representa\c{c}\~ao, cada linha \'e o cadastro de uma estudante e seus dados est\~ao dispostos em colunas, como segue:
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htb]
+\caption{\label{5cd49d846bb805576365031d3fdab9ef0126f66f}Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.}
+
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+  &  A  &  B  &  C  &  D  \\
+0 & Nome  &  Cidade  &  Data de Nascimento  &  Escola \\
+1 & Jos\'e  &  Campinas  &  10/10/2010  &  Bento \\
+2 & Maria  &  Cmpinas  &  03/04/2012  &  Bento \\
+3 & Jo\~ao  &  S\~ao Paulo  &  11/12/2004  &  Bento \\
+4 & M\'ario  &  S. Paulo  &  30/01/2009  &  Bento \\
+5 & Pedro  &  Sao Paulo  &  13/02/2013  &  Bento \\
+\hline
+\end{tabular}
+\end{table}
+
+
+Na tabela que representa a planilha vemos um tipo de erro de prenchimento muito comum, que \'e a falta de uniformiza\c{c}\~ao da representa\c{c}\~ao dos dados.
+
+
+
+
+
+
+Veja, por exemplo, o nome da cidade na c\'elula B2, que est\'a grafada errado (Cmpinas, quando deveria ser Campinas). Esse \'e um erro t\'{\i}pico de digita\c{c}\~ao, quando a pessoa respons\'avel por entrar o dado esquece uma letra.
+
+
+
+
+
+
+Tamb\'em na linha da falta de uniformiza\c{c}\~ao, vemos a situa\c{c}\~ao as c\'elulas B3, B4 e B5. Ali a cidade \textquotedbl S\~ao Paulo\textquotedbl  est\'a grafada de 3 formas diferentes: S\~ao Paulo, S. Paulo e Sao Paulo. N\~ao \'e um erro de digita\c{c}\~ao, mas simplesmente a falta de um acordo pr\'evio sobre como a palavra S\~ao Paulo deve ser grafada. Podemos imaginar uma situa\c{c}\~ao em que v\'arias pessoas preencheram informa\c{c}\~oes na planilha, cada uma com uma pr\'atica de grafia diferente da palavra S\~ao Paulo.
+
+
+
+
+
+
+Esta falta de uniformiza\c{c}\~ao, seja por um erro ou por diferentes pr\'aticas de representa\c{c}\~ao dos dados, causa muitos problemas para a obten\c{c}\~ao de informa\c{c}\~oes a partir dos dados. No exemplo, pode ser interpretado que o Projeto tem apenas 1 pessoa da cidade de S\~ao Paulo, caso a busca por paulistanos se d\^e a partir da grafia \textquotedbl S\~ao Paulo\textquotedbl . Da mesma forma, pode ser interpretado que h\'a apenas uma pessoa da cidade de Campinas, caso a busca se d\^e pela grafia \textquotedbl Campinas\textquotedbl . Numa planilha pequena, com poucas linhas, \'e evidente que este tipo de erro \'e f\'acil de perceber. Mas em planilhas com grande quantidade de dados esse erro pode ser muito dif\'{\i}cil de detectar.
+
+
+
+
+
+
+As planilhas eletr\^onicas t\^em meios de diminuir a chance desse problema ocorrer. Uma das formas \'e o auto-preenchimento, uma facilidade que usa a informa\c{c}\~ao das c\'elulas anteriores daquela coluna para sugerir um preenchimento para o usu\'ario. Mas esta facilidade n\~ao \'e auto-consistente e o usu\'ario pode n\~ao aceitar a sugest\~ao, criando o erro.
+
+
+
+
+
+
+O exemplo de planilha eletr\^onica abaixo mostra outro tipo de problema de preenchimento comum a esta ferramenta:
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htb]
+\caption{\label{596fb4829283dadb41823939479c75b55fbd8223}Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica}
+
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+  &  A  &  B  &  C  &  D  \\
+0 & Nome  &  Cidade  &  Data de Nascimento  &  Escola \\
+1 & Jos\'e  &  10/10/2010  &  Bento  &   \\
+2 & Maria  &  Cmpinas  &  03/04/2012  &  Bento \\
+3 & Jo\~ao  &  S\~ao Paulo  &  11/12/2004  &  Bento \\
+4 & M\'ario  &  S. Paulo  &  30/01/2009  &  Bento \\
+5 & Pedro  &  Sao Paulo  &  13/02/2013  &  Bento \\
+\hline
+\end{tabular}
+\end{table}
+
+
+No segundo exemplo de planilha eletr\^onica vemos uma situa\c{c}\~ao de erro de preenchimento bastante comum: deslocar os dados de um linha para a esquerda, apagando indevidamente uma c\'elula. Este tipo de erro ocorre na planilha porque ela n\~ao verifica o tipo de dado que est\'a sendo colocado numa dada c\'elula. Por exemplo, com o deslocamento para a esquerda, a c\'elula que cont\'em o nome da escola D1 acaba por preencher a c\'elula C1, que deveria ser do tipo data, mas que agora cont\'em uma sequ\^encia de letras \textquotedbl Bento\textquotedbl . Novamente, \'e um erro f\'acil de perceber em planilhas pequenas, mas que pode causar muito estrago e ser dif\'{\i}cil de perceber quando temos milhares de linhas numa planilha.
+
+
+
+
+
+
+Neste ponto podemos nos perguntar: ser\'a que existe alguma tecnologia que garanta a consist\^encia dos dados a qualquer momento, evitando que o usu\'ario consiga entrar dados de forma a prejudicar a integridade da base de dados?
+
+
+
+
+
+
+Esta tecnologia se chama \textquotedbl Banco de Dados Relacional\textquotedbl , que ser\'a descrita na pr\'oxima se\c{c}\~ao.
+
+
+
+
+
+
+\subsection[Bancos de Dados Relacionais]{Bancos de Dados Relacionais}\label{Bancos de Dados Relacionais}
+A teoria por tr\'as de Bancos de Dados Relacionais \'e bastante sofisticada envolvendo uma \'Algebra que escapa aos objetivos desta disserta\c{c}\~ao. Entretanto alguns elementos s\~ao f\'aceis de compreender e podem ser expostos aqui de uma forma simples o suficiente para atender ao objetivo de justificar as escolhas feitas ao longo deste trabalho. Isto pode ser feito sem preju\'{\i}zo para o rigor e erudi\c{c}\~ao.
+
+
+
+
+
+
+O pioneiro na cria\c{c}\~ao dos conceitos de Bancos de Dados Relacionais foi Edgard Codd, um pesquisador da IBM que revolucionou a forma como o mundo passou a armazenar dados. Seu paper seminal foi  \textquotedbl A Relational Model of Data for Large Shared Data Banks\textquotedbl  de 1970, um marco na \'area (CODD, 1970). Ao longo de sua vida, Codd lutou contra uma resist\^encia para implanta\c{c}\~ao de suas ideias dentro da pr\'opria IBM, as quais tinham origem em interesses comerciais, uma vez que a IBM j\'a tinha sistemas implantados baseados em outras formas de representa\c{c}\~ao de dados, e n\~ao tinha interesse em uma nova solu\c{c}\~ao concorrente. O modelo de Codd, muito superior, passou a ser considerado pela IBM por conta da press\~ao de concorrentes e de seus clientes, que passaram a exigir uma solu\c{c}\~ao baseada nas ideias de Codd [XXX].
+
+
+
+
+
+
+A for\c{c}a das ideias de Codd pode ser percebida na seguinte transcri\c{c}\~ao de seu artigo seminal (CODD, 1970):
+
+
+
+
+
+
+
+\noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{A vis\~ao ou modelo relacional de dados descrita na se\c{c}\~ao 1 parece ser superior, em v\'arios aspectos, quando comparada com os modelos de grafo e de rede [3,4] presentemente em voga para sistemas n\~ao inferenciais. Ela prov\^e meios para descrever dados com estrutura puramente natural, ou seja, sem a super imposi\c{c}\~ao de uma estrutura adicional para a representa\c{c}\~ao dos dados no m\'aquina. Assim, obt\'em-se as bases para uma linguagem de dados de alto n\'{\i}vel, que prov\^e a m\'axima independ\^encia entre programas de um lado e a representa\c{c}\~ao e organiza\c{c}\~ao dos dados de outro. (Tradu\c{c}\~ao Livre de  CODD (1970))}\normalize}}}\end{center}
+
+
+A frase acima indica uma busca por uma representa\c{c}\~ao dos dados que fosse independente da representa\c{c}\~ao espec\'{\i}fica numa m\'aquina em particular. Ou seja, Codd buscou uma forma de abstrair a representa\c{c}\~ao dos dados, sem ter que se preocupar como a m\'aquina os guardava, criando a possibilidade de independ\^encia do tipo de computador, sistema operacional ou at\'e do tipo de software de gest\~ao de dados. Isto tornou a armazenagem de dados muito mais flex\'{\i}vel, robusta e auto-consistente. Por auto-consistente podemos entender dados que dificilmente poder\~ao sobre corrup\c{c}\~oes, porque o pr\'oprio sistema \'e preparado para evitar dados indevidos.
+
+
+
+
+
+
+Para garantir a funcionalidade de seu esquema de armazenagem, Codd pensou em \textquotedbl regras\textquotedbl  ou normas.
+
+
+
+
+
+
+Frequentemente s\~ao referidas 12 normas para caracterizar a formaliza\c{c}\~ao de Codd, mas identificamos muitas varia\c{c}\~oes na forma de apresentar essas regras, a exemplo do que oferece Setzer e Silva (2017).
+
+
+
+
+
+
+Assim, buscamos criar a nossa pr\'opria compreens\~ao das regras de Codd, integrando conhecimentos presentes no artigo de  CODD (1970) e  Setzer e Silva (2017), conhecimentos presentes em Wikipedia\_Codd (2022),  TutorialsPoint (2022) e  RelDB (2019). Portanto estamos combinando fontes can\^onicas, a exemplo de  CODD (1970) e Setzer e Silva (2017), com outras mais heterod\'oxicas, o que \'e perfeitamente plaus\'{\i}vel no caso, uma vez que n\~ao se trata de especialidade da autora, mas instrumental para justificar algumas decis\~oes tomadas ao longo deste trabalho.
+
+
+
+
+
+
+Para come\c{c}ar a compreender os Bancos de Dados relacionais, vamos aceitar uma regra fundamental desse esquema que \'e:
+
+
+
+
+
+
+
+\noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{Toda informa\c{c}\~ao num Banco de Dados Relacional \'e representada exclusivamente por meio de tabelas, com linhas e colunas (adaptado de RelDB (2019))}\normalize}}}\end{center}
+
+
+Esta regra pode confundir as pessoas, levando-as a pensar que, como as planilhas eletr\^onicas s\~ao tabelas, elas tamb\'em s\~ao bancos de dados relacionais, mas isto n\~ao \'e verdade, como ficar\'a claro pelas demais regras.
+
+
+
+
+
+
+Posto isto, vamos ver o que \'e uma tabela dentro do conceito de Bancos de Dados relacionais:
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htb]
+\caption{\label{a8397969db05eaba803013476324bfe9b2b94efb}Exemplo de tabela de um banco de dados relacional.}
+
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Nome  &  Cidade  &  Data de Nascimento  &  Escola \\
+Jos\'e  &  Campinas  &  10/10/2010  &  Bento \\
+Maria  &  Campinas  &  03/04/2012  &  Bento \\
+Jo\~ao  &  Campinas  &  11/12/2004  &  Bento \\
+M\'ario  &  Campinas  &  30/01/2009  &  Bento \\
+Pedro  &  Campinas  &  13/02/2013  &  Bento \\
+\hline
+\end{tabular}
+\end{table}
+
+
+Como se v\^e, uma tabela no sentido de banco de dados relacionais \'e exatamente o que vem \`a mente quando uma pessoa sem forma\c{c}\~ao na \'area imagina.
+
+
+
+
+
+
+Um banco de dados relacional, normalmente, tem muitas tabelas ao mesmo tempo e elas precisam seguir algumas regras para que sejam consideradas como parte de um banco de dados relacional.
+
+
+
+
+
+
+A lista abaixo de regras \'e bastante calcada no que nos ensina  Setzer e Silva (2017), com algumas complementa\c{c}\~oes:
+
+
+
+
+
+
+
+\begin{alineas}
+\item cada tabela segue um esquema que define suas caracter\'{\i}sticas e recebe um nome pr\'oprio, distinto do nome de qualquer outra tabela do banco de dados (adaptado de Setzer e Silva, 2017)
+\item cada tabela tem pelo menos uma coluna que precisa ter um nome ( adaptado de Setzer e Silva, 2017). Aqui j\'a vemos uma diferen\c{c}a entre as planilhas eletr\^onicas e os bancos de dados relacionais, uma vez que nas planilhas as colunas s\~ao identificadas por letras, ao passo que no banco de dados relacional \'e usado um nome que pode ser constiu\'{\i}do por muitas letras
+\item duas colunas distintas de uma mesma tabela devem ter nomes diferentes (adaptado de Setzer e Silva (2017)). Esta regra \'e importante porque permite identificar cada coluna de forma \'unica, sem confus\~ao. Note que tabelas diferentes podem ter colunas com o mesmo nome, mas uma mesma tabela precisa ter todas as suas colunas com nomes diferentes
+\item usando-se os nomes para fazer refer\^encia \`as colunas, a ordem dessas colunas \'e irrelevante  (Setzer e Silva, 2017). Este \'e um ponto que tamb\'em diferencia os bancos de dados relacionais das planilhas eletr\^onicas, porque nas planilhas existe uma ordem fixa nas colunas, ou seja, a coluna A vem antes da coluna B que, por sua vez, vem antes da coluna C, e assim por diante. Nos bancos de dados relacionais essa ordem n\~ao \'e necess\'aria e \'e essa caracter\'{\i}stica que d\'a a robustez para o esse tipo de estrutura
+\item os valores de uma coluna de uma tabela s\~ao elementos de um s\'o conjunto, denominado de dom\'{\i}nio da coluna  (Setzer e Silva, 2017). Aqui entra o conceito de tipo de dado: uma coluna s\'o pode ter um tipo de dado. Por exemplo: uma coluna de nome de estudantes pode ter uma sequ\^encia de letras como tipo de dados. Uma coluna de data de nascimento, por sua vez, n\~ao pode ter letras como tipo de dado, mas apenas n\'umeros (de 0 a 9) e separadores (por exemplo a barra ou o dois pontos). Se o usu\'ario tenta entrar uma letra numa coluna que \'e do tipo data, o sistema de gerenciamento de banco de dados relacional n\~ao vai permitir, o que promove a auto-consist\^encia dos dados
+\item duas ou mais colunas distintas de uma mesma tabela podem ser definidas como parte de um mesmo dom\'{\i}nio  (Setzer e Silva, 2017). Um ponto ponto importante \'e que duas colunas diferentes de uma mesma tabela, num sistema de bancos de dados relacional, podem ter o mesmo tipo de dado, ou seja, para uma mesma tabela podemos ter duas colunas de data, desde que tenham nomes diferentes. Um exemplo \'e colocar na tabela de estudantes uma coluna de data de nascimento e uma coluna de data de registro, por exemplo. As duas colunas t\^em o mesmo tipo de dado (data), mas t\^em nomes diferentes e portanto seguem as regras de Codd para bancos de dados relacionais
+\item N\~ao h\'a linhas iguais, mesmo que elas tenham exatamente os mesmos valores  (adaptado de Setzer e Silva, 2017). Este ponto significa o seguinte: mesmo que uma tabela tenha linhas id\^enticas, ou seja, com todas as c\'elulas iguais, estas linhas id\^enticas ser\~ao consideradas como distintas no sentido de que guardam a mesma informa\c{c}\~ao sobre entidades distintas
+\item a ordem com que o computador armazena as linhas na tabela \'e irrelevante para o usu\'ario  (adaptado de Setzer e Silva (2017)). Esta regra \'e equivalente \`a regra que diz que a ordem das colunas \'e irrelevante, diferenciando o banco de dados relacional das planilhas eletr\^onicas. Na planilha existe uma ordem nas linhas: a linha 1 vem antes da linha 2 que, por sua vez, vem antes da linha 3 e assim por diante. Para o banco de dados relacional esta ordem \'e irrelevante e \'e isso que garante a sua robustez e flexibilidade
+\item cada c\'elula de uma tabela pode ser vazia ou, ao contr\'ario, conter no m\'aximo um \'unico valor elementar (isto \'e, uma c\'elula n\~ao pode conter um conjunto de valores e nem um valor composto)  S (Setzer e Silva, 2017)
+\end{alineas}
+
+Importante ressaltar que a interpreta\c{c}\~ao dada para cada norma foi discutida com especialistas da \'area e foge um pouco da forma\c{c}\~ao desta candidata. A compreens\~ao das consequẽncias de cada regra n\~ao \'e imediata e n\~ao existe aqui a pretens\~ao de passar a imagem de que a candidata domina todas estas consequ\^encias. Mas como se ver\'a adiante, alguma delas podem ser inferidas a partir de exemplos simples.
+
+
+
+
+
+
+Nos dias de hoje o rigor das normas propostas por Codd tem sido revisto e \'e aceito que bancos de dados podem ter diferentes n\'{\i}veis de formaliza\c{c}\~ao, seguindo integralmente ou em parte normas bastante espec\'{\i}ficas (Setzer e Silva, 2017), dependendo das caracter\'{\i}sticas e necessidades do sistema que se quer modelar.
+
+
+
+
+
 
 \chapter[MATERIAIS E M\'ETODOS]{MATERIAIS E M\'ETODOS}\label{MATERIAIS E M\'ETODOS}
 Como j\'a descrito na fundamenta\c{c}\~ao te\'orica, o termo \textquotedbl m\'etodo\textquotedbl  vem do \'etimo latino \textquotedbl methodus\textquotedbl   (FREITAS, 2019), que significa \textquotedbl caminho\textquotedbl .
@@ -3843,7 +4143,7 @@ Vamos testar \textquotedbl aspas\textquotedbl  e ver como s\~ao guardadas. Depoi
 
 
 \begin{table}[htb]
-\caption{\label{96a5858fd2e287fed4b65c001ce7de8de2d2fc5b}Legenda de teste}
+\caption{\label{e1fee5245f1f580d36a53669e2e1e0d16ec34593}Legenda de teste}
 
 \centering
 \begin{tabular}{|c|c|c|}
@@ -4797,6 +5097,106 @@ Aqui entra o Produto tecnol\'ogico.
 \begin{flushleft}
 \begin{flushleft}
 [Brudner, 2022] Brudner, E. Twenty Two Advantages and Disadvantages of Using Spreadsheets for Business, acessado via https://blog.hubspot.com/sales/dangers-of-using-spreadsheets-for-sales em 20 de setembro de 2022.
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+[CODD, 1970] Codd, E.F. A Relational Model of Data for Large Shared Data Banks, Communications of the ACM, V13, N6, 1970
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+[RelDB, 2019] Post sobre as 12 regras de Codd no website da empresa RelDB, obtido de https://reldb.org/c/index.php/twelve-rules/ em 21 de setembro de 2022.
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+[TutorialsPoint, 2022] Lista das Regras de Codd obtido do website https://www.tutorialspoint.com/dbms/dbms\_codds\_rules.htm em 21 de setembro de 2022
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+[Wikipedia\_Codd, 2022] obtido de https://pt.wikipedia.org/wiki/Edgar\_Frank\_Codd em 21 de setembro de 2022.
 \end{flushleft}
 
 

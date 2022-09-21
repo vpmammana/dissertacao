@@ -37,56 +37,58 @@
 \contentsline {section}{\numberline {3.3}Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados}{62}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Indicadores}{62}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Informa\c {c}\~ao, dados e conhecimento}{63}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Bancos de Dados Relacionais}{65}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Registro de dados na escola p\'ublica}{65}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Planilhas eletr\^onicas para registro de dados}{67}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Bancos de Dados Relacionais}{72}{subsection.3.3.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{71}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Caminho para constru\c {c}\~ao da narrativa hist\'orica}{71}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}M\'etodo de Historiografia Utilizado }{71}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Acervo utilizado para o levantamento hist\'orico}{71}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Caminho para a An\'alise do M\'etodo do WASH}{71}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}M\'etodo de Caracteriza\c {c}\~ao do M\'etodo do WASH}{72}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Materiais para caracteriza\c {c}\~ao do m\'etodo do WASH.}{72}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Caminho para a caracteriza\c {c}\~ao dos resultados do WASH}{72}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{72}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{72}{subsection.4.3.2}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{77}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Caminho para constru\c {c}\~ao da narrativa hist\'orica}{77}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}M\'etodo de Historiografia Utilizado }{77}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Acervo utilizado para o levantamento hist\'orico}{77}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Caminho para a An\'alise do M\'etodo do WASH}{77}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}M\'etodo de Caracteriza\c {c}\~ao do M\'etodo do WASH}{78}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Materiais para caracteriza\c {c}\~ao do m\'etodo do WASH.}{78}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Caminho para a caracteriza\c {c}\~ao dos resultados do WASH}{78}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{78}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{78}{subsection.4.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{75}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico}{75}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Narrativa do GESAC}{75}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Narrativa do OLPC}{75}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Narrativa sobre a Papert e Brasil (Afira)}{75}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Caracterizacao do M\'etodo do WASH}{75}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Caracteriza\c {c}\~ao dos Resultados do WASH}{76}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Amostragem do p\'ublico atendido}{77}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{81}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Distribui\c {c}\~ao de partipantes por sexo}{83}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}N\'umero de Bolsistas}{85}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{87}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{88}{subsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.3.7}N\'umero de oficinas realizadas}{88}{subsection.5.3.7}%
-\contentsline {subsection}{\numberline {5.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{88}{subsection.5.3.8}%
-\contentsline {subsection}{\numberline {5.3.9}Distribui\c {c}\~ao de temas nas oficinas}{88}{subsection.5.3.9}%
-\contentsline {subsection}{\numberline {5.3.10}Tipos de Atividades realizadas nas oficinas}{88}{subsection.5.3.10}%
-\contentsline {subsection}{\numberline {5.3.11}Cidades Atendidas}{89}{subsection.5.3.11}%
-\contentsline {subsection}{\numberline {5.3.12}Participantes mais ass\'{\i }duos}{89}{subsection.5.3.12}%
-\contentsline {section}{\numberline {5.4}An\'alise: s\'{\i }ntese das 3 dimens\~oes}{89}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{81}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico}{81}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Narrativa do GESAC}{81}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Narrativa do OLPC}{81}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Narrativa sobre a Papert e Brasil (Afira)}{81}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Caracterizacao do M\'etodo do WASH}{81}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Caracteriza\c {c}\~ao dos Resultados do WASH}{82}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Amostragem do p\'ublico atendido}{83}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{87}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Distribui\c {c}\~ao de partipantes por sexo}{89}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}N\'umero de Bolsistas}{91}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{93}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{94}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}N\'umero de oficinas realizadas}{94}{subsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{94}{subsection.5.3.8}%
+\contentsline {subsection}{\numberline {5.3.9}Distribui\c {c}\~ao de temas nas oficinas}{94}{subsection.5.3.9}%
+\contentsline {subsection}{\numberline {5.3.10}Tipos de Atividades realizadas nas oficinas}{94}{subsection.5.3.10}%
+\contentsline {subsection}{\numberline {5.3.11}Cidades Atendidas}{95}{subsection.5.3.11}%
+\contentsline {subsection}{\numberline {5.3.12}Participantes mais ass\'{\i }duos}{95}{subsection.5.3.12}%
+\contentsline {section}{\numberline {5.4}An\'alise: s\'{\i }ntese das 3 dimens\~oes}{95}{section.5.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{93}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{99}{chapter.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{95}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{101}{chapter.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{97}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{103}{chapter.8}%
 \vspace {\cftbeforechapterskip }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{101}{section*.28}%
+\contentsline {part}{\uppercase {ANEXOS}}{107}{section*.31}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{103}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{109}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{105}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{111}{appendix.anexochapback.2}%

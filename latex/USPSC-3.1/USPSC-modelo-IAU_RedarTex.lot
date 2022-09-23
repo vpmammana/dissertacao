@@ -1,14 +1,17 @@
 \babel@toc {brazil}{}
 \babel@toc {brazil}{}
-\contentsline {table}{\numberline {1}{\ignorespaces Estrutura de espinha de peixe de MEO\relax }}{30}{table.caption.17}%
-\contentsline {table}{\numberline {2}{\ignorespaces Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.\relax }}{71}{table.caption.20}%
-\contentsline {table}{\numberline {3}{\ignorespaces Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica\relax }}{72}{table.caption.21}%
-\contentsline {table}{\numberline {4}{\ignorespaces Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.\relax }}{74}{table.caption.22}%
-\contentsline {table}{\numberline {5}{\ignorespaces Tabela de cidades num banco de dados relacional.\relax }}{77}{table.caption.23}%
-\contentsline {table}{\numberline {6}{\ignorespaces Tabela para a representa\c {c}\~ao de pessoas num banco de dados relacional\relax }}{77}{table.caption.24}%
-\contentsline {table}{\numberline {7}{\ignorespaces Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.\relax }}{84}{table.caption.26}%
-\contentsline {table}{\numberline {8}{\ignorespaces Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros de institui\c {c}\~oes. Na presente reprodu\c {c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c {c}\~oes de tipos de institui\c {c}\~oes por motivos de espa\c {c}o.\relax }}{85}{table.caption.27}%
-\contentsline {table}{\numberline {9}{\ignorespaces Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos papeis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.\relax }}{86}{table.caption.28}%
-\contentsline {table}{\numberline {10}{\ignorespaces Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.\relax }}{86}{table.caption.29}%
-\contentsline {table}{\numberline {11}{\ignorespaces O bando de dados relacional subjacente `a Plataforma de Gest\~ao do WASH \'e constitu\'{i}do por 54 tabelas.\relax }}{87}{table.caption.30}%
-\contentsline {table}{\numberline {12}{\ignorespaces Legenda de teste\relax }}{109}{table.caption.37}%
+\contentsline {table}{\numberline {1}{\ignorespaces Estrutura de espinha de peixe de MEO\relax }}{32}{table.caption.17}%
+\contentsline {table}{\numberline {2}{\ignorespaces @[caption-ed54bc166d61421fb45a0a1ca035fe625bb25060]@\relax }}{70}{table.caption.20}%
+\contentsline {table}{\numberline {3}{\ignorespaces Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.\relax }}{84}{table.caption.22}%
+\contentsline {table}{\numberline {4}{\ignorespaces Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica\relax }}{84}{table.caption.23}%
+\contentsline {table}{\numberline {5}{\ignorespaces Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.\relax }}{86}{table.caption.24}%
+\contentsline {table}{\numberline {6}{\ignorespaces Tabela de cidades num banco de dados relacional.\relax }}{89}{table.caption.25}%
+\contentsline {table}{\numberline {7}{\ignorespaces Tabela para a representa\c {c}\~ao de pessoas num banco de dados relacional\relax }}{89}{table.caption.26}%
+\contentsline {table}{\numberline {8}{\ignorespaces Tradu\c {c}\~ao livre das palavras chave SQL associadas ao comando SELECT.\relax }}{91}{table.caption.27}%
+\contentsline {table}{\numberline {9}{\ignorespaces Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.\relax }}{92}{table.caption.28}%
+\contentsline {table}{\numberline {10}{\ignorespaces Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.\relax }}{98}{table.caption.30}%
+\contentsline {table}{\numberline {11}{\ignorespaces Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros de institui\c {c}\~oes. Na presente reprodu\c {c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c {c}\~oes de tipos de institui\c {c}\~oes por motivos de espa\c {c}o.\relax }}{99}{table.caption.31}%
+\contentsline {table}{\numberline {12}{\ignorespaces Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos papeis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.\relax }}{99}{table.caption.32}%
+\contentsline {table}{\numberline {13}{\ignorespaces Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.\relax }}{99}{table.caption.33}%
+\contentsline {table}{\numberline {14}{\ignorespaces O bando de dados relacional subjacente `a Plataforma de Gest\~ao do WASH \'e constitu\'{i}do por 54 tabelas.\relax }}{101}{table.caption.34}%
+\contentsline {table}{\numberline {15}{\ignorespaces Legenda de teste\relax }}{123}{table.caption.41}%

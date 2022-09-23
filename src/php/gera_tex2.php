@@ -130,6 +130,7 @@ if ($nome_tipo_secao == "tabela") {
 	$texto_latex = "\n
 \n
 \\begin{table}[htb]
+\\tiny
 \\caption{\\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
 \\centering
 \\begin{tabular}".$formato_colunas."

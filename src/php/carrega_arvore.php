@@ -553,6 +553,7 @@ if ($result->num_rows>0) {
 				$temp_tabela=$temp_tabela."<tr>";
 				$conta_linhas=0;
 				foreach($linhas_de_tabela as $linha){
+					if (preg_match("/^----/",$linha)){continue;} 
 					$linha_sem_r = preg_replace('/\\\r|\r/',"",$linha);
 //					$linha_sem_r= $linha;
 					$celulas = explode("|", $linha_sem_r);

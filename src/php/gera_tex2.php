@@ -76,7 +76,7 @@ $id_arquivo = pathinfo($texto, PATHINFO_FILENAME);
 else
 {$id_arquivo = hash('ripemd160', $texto);}
 
-error_log(print_r("CODIGO: >>>>----".$id_arquivo."----<<<<<<<<<<<<<\n", true));
+//error_log(print_r("CODIGO: >>>>----".$id_arquivo."----<<<<<<<<<<<<<\n", true));
 // $texto_latex = $nome_tipo_secao." -> ".$texto;
 $texto_latex = $texto;
 
@@ -97,6 +97,25 @@ if ($nivel == 4 && $nome_tipo_secao=="topico") {
 if ($nome_tipo_secao == "citacao"){
 	$texto_latex="\n\\noindent\\begin{center}\\mbox{\\centering\\fbox{\\centering\\par\parbox{0.7\\linewidth}{\\small\\textit{".$texto."}\\normalize}}}\\end{center}\n\n";
 }
+
+if ($nome_tipo_secao == "diagramaMER"){
+error_log(print_r("DIAGRAMA_MER: >>>>".$nome_tipo_secao."<<<<<<\n", true));
+$linha_sem_r = preg_replace('/\\\r|\r/',"",$texto);
+$MER = explode("|", $linha_sem_r);
+	$texto_latex="
+\\begin{tikzpicture}
+  [every entity/.style={fill=blue!20,draw=blue,thick},
+   every relationship/.style={fill=orange!20,draw=orange,thick,aspect=1.5}]
+  \\node[entity] (".str_replace(" ","",trim($MER[0])).")  at (0,0)   {".trim($MER[0])."};
+  \\node[entity] (".str_replace(" ","",trim($MER[2])).") at (10,0)   {".trim($MER[2])."};
+  \\node[relationship]    at (5,0) {".trim($MER[1])."}
+    edge (".str_replace(" ","",trim($MER[0])).")
+    edge (".str_replace(" ","",trim($MER[2])).");
+\\end{tikzpicture}
+";
+}
+
+
 
 if ($nome_tipo_secao == "imagem"){
         if ($conta_mult_imagem[$nome_arquivo]==0){
@@ -137,17 +156,18 @@ if ($nome_tipo_secao == "tabela") {
 \\hline\n";
 	$conta_linhas_tabela=0;
 	foreach($linhas as $linha) {
-	if ($conta_linhas_tabela >0) {
+	if ($conta_linhas_tabela >0 && !preg_match('/^----/',$linha_sem_r)) {
 		$texto_latex = $texto_latex." \\\\\n";
 	}
 		$linha_sem_r = preg_replace('/\\\r|\r/',"",$linha);
-		$celulas = preg_replace("/\|/", " & ",$linha_sem_r);	
+		if (preg_match('/^----/',$linha_sem_r)) { $celulas = "\\hline\n";}
+		else {$celulas = preg_replace("/\|/", " & ",$linha_sem_r);}
 		$texto_latex = $texto_latex.$celulas;
 		if ($conta_linhas_tabela == 0) {
 		}	
 		$conta_linhas_tabela++;
 	}
-$texto_latex=$texto_latex." \\\\";
+	$texto_latex=$texto_latex." \\\\";
 		if ($conta_linhas_tabela ==1) {
 			$texto_latex = $texto_latex."\\hline\n";
 		}
@@ -191,7 +211,7 @@ function substitui_label_caption($nome_arquivo, $label_de_busca, $substituicao){
 
 exec('sed -i "s/@\['.$label_de_busca.'\]@/'.$substituicao.'/g" '.$nome_arquivo, $out_, $code);
 
-if ($code) {error_log(print_r("CODIGO: >>>>".implode($out_)."<<<<<<<<<<<<<\n", true));}
+// if ($code) {error_log(print_r("CODIGO: >>>>".implode($out_)."<<<<<<<<<<<<<\n", true));}
 
 //	error_log(print_r("sed -i 's/@\\[".$label_de_busca."\\]@/".$substituicao."/g' ".$nome_arquivo, true));
 //	error_log(print_r($substituicao, true));
@@ -313,7 +333,7 @@ return $linha;
 function retorna_arquivos_que_tem_partes_textuais(){
 unset($retorno);
 exec("grep -HiRr \"^\\\\\\\\\\postextual\" ../../latex/USPSC-3.1/. | grep RedarTex | grep -v \.swp | awk 'BEGIN{FS=\":\"}{print $1}'",$retorno, $code );
-if ($code) {error_log(print_r("CODIGO: grep >>>>".implode($retorno)."<<<<<<<<<<<<<\n", true));}
+// if ($code) {error_log(print_r("CODIGO: grep >>>>".implode($retorno)."<<<<<<<<<<<<<\n", true));}
 return $retorno;
 } 
 
@@ -321,7 +341,7 @@ return $retorno;
 
 ini_set('max_execution_time', 300);
 
-error_log(print_r("INI_GET -> ".ini_get("max_execution_time"), true));
+// error_log(print_r("INI_GET -> ".ini_get("max_execution_time"), true));
 
 //echo "<script>alert('gera_tex2');</script>";
 
@@ -330,12 +350,12 @@ include "identifica.php.cripto";
 unset($retorna_zip);
 if ($param_mode == "verbose") {echo "<br>Vai executar unzip<br>";}
 exec("cd ../../latex && /usr/bin/unzip -o USPSC-3.1.zip", $retorna_unzip, $code);
-if ($code) {error_log(print_r("CODIGO: unzip >>>>".implode($retorna_unzip)."<<<<<<<<<<<<<\n", true));}
+//if ($code) {error_log(print_r("CODIGO: unzip >>>>".implode($retorna_unzip)."<<<<<<<<<<<<<\n", true));}
 
 do {
 unset($retorno_do_bash);
 exec("ps -aux | grep -v grep | grep -io unzip ", $retorno_do_bash, $code);
-if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+//if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
 
 if ($param_mode == "verbose") {echo "<br>Executando unzip<br>";}
 } while ($retorno_do_bash == "unzip");
@@ -346,12 +366,12 @@ if ($param_mode == "verbose") {print_r(implode("<br>deszipa: ",$retorna_unzip));
 
 unset($retorna_inicializa);
 exec("../bash/inicializa_tex_com_change_DIR.bash 2>&1", $retorna_inicializa, $code);
-error_log(print_r("CODIGO inicializa: >>>>".implode($retorna_inicializa)."<<<<<<<\n", true));
+//error_log(print_r("CODIGO inicializa: >>>>".implode($retorna_inicializa)."<<<<<<<\n", true));
 
 do {
 unset($retorno_do_bash);
 exec("ps -aux | grep -v grep | grep -io inicializa_tex ", $retorno_do_bash, $code);
-if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+//if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
 
 if ($param_mode == "verbose") {echo "<br>Executando inicializa_tex_com_DIR<br>";}
 } while ($retorno_do_bash == "inicializa_tex");
@@ -509,14 +529,14 @@ unset($retorno_do_bash_copia_substitui);
 if ($param_mode == "verbose") {echo "<br>Vai executar copia_substitui_tex<br>";}
 exec("../bash/copia_substitui_tex.bash", $retorno_do_bash_copia_substitui, $code);
 
-if ($code) {error_log(print_r("CODIGO: copia_substitui>>>>".implode($retorno_do_bash_copia_substitui)."<<<<<<<\n", true));}
+//if ($code) {error_log(print_r("CODIGO: copia_substitui>>>>".implode($retorno_do_bash_copia_substitui)."<<<<<<<\n", true));}
 
 
 do {
 if ($param_mode == "verbose") {echo "Executando copia_substitui_tex<br>";}
 unset($retorno_do_bash);
 exec("ps -aux | grep -v grep | grep -io copia_substitui_tex ", $retorno_do_bash, $code);
-if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+//if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
 
 if ($param_mode == "verbose") {echo "executando copia_substitui! ".implode("",$retorno_do_bash)."<br>";}
 } while ($retorno_do_bash == "copia_substitui_tex");
@@ -568,6 +588,7 @@ if ($result->num_rows>0) {
 				$nome_tipo_secao == "legenda_tabela" || 
 				$nome_tipo_secao == "item_de_referencia" || 
 				$nome_tipo_secao == "item_lista_nao_num" || 
+				$nome_tipo_secao == "diagrama_MER" || 
 				$nome_tipo_secao == "item_lista_num"
 			   ) 
 			   {
@@ -645,12 +666,12 @@ else {echo "Deu problema: ".$sql;}
 if ($param_mode == "verbose") {echo "\nVai executar pdflatex\n";}
 unset($retorno_pdflatex);
 exec("cd ../../latex/USPSC-3.1 && ./mimetiza_pdflatex.bash 2>&1",$retorno_pdflatex, $code);
-if ($code) {error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));}
-error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));
+//if ($code) {error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));}
+//error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));
 do {
 unset($retorno_do_bash);
 exec("ps -aux | grep -v grep | grep -io pdflatex ", $retorno_do_bash, $code);
-if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
+//if ($code) {error_log(print_r("CODIGO: ps-aux >>>>".implode($retorno_do_bash)."<<<<<<<<<<<<<\n", true));}
 
 if ($param_mode == "verbose") {echo "executando pdflatex! ".implode("",$retorno_do_bash)."\n";}
 } while ($retorno_do_bash == "pdflatex");
@@ -661,7 +682,7 @@ if ($param_mode == "verbose") {echo "\nVai executar evince\n";}
 
 if ($param_mode == "verbose") {
 		exec("evince ".$nome_do_pdf, $out, $code);
-		if ($code) {error_log(print_r("CODIGO: evince >>>>".implode($out)."<<<<<<<<<<<<<\n", true));}
+		//if ($code) {error_log(print_r("CODIGO: evince >>>>".implode($out)."<<<<<<<<<<<<<\n", true));}
 
 }
 if ($param_mode == "quiet") { echo $nome_do_pdf;};

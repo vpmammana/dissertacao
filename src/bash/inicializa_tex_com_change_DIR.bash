@@ -152,6 +152,26 @@ sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]
 sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n\\\\usepackage[skip=2pt,font=scriptsize]{caption}\\n\\\\usepackage{subcaption}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo.tex
 sed -i "s/usepackage[{]graphicx[}]/usepackage{graphicx}\\n\\\\usepackage[export]{adjustbox}\\n\\\\usepackage[skip=2pt,font=scriptsize]{caption}\\n\\\\usepackage{subcaption}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCe.tex
 
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCp.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-EESC.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IQSC.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-Tutorial-num.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-Cap2-DesenvolvimentoTutorial.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-Tutorial.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/dissertacao_elaine_2022_09_16.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCe.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCp.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCe.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-IQSC.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo-EESC.tex
+sed -i "s/usetikzlibrary[{]positioning[}]/usetikzlibrary{positioning}\\n\\\\usetikzlibrary{er}\\n/g" ../../latex/USPSC-3.1/USPSC-modelo.tex
+
+
+
 
 sed -i "s/orientador[{]Profa. Dra. Elisa Gon\\\c[{]c[}]alves Rodrigues[}]/orientador{Prof(a). Dr(a). @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex          
 sed -i "s/orientadorcorpoficha[{]orientadora Elisa Gon\\\c[{]c[}]alves Rodrigues[}]/orientadorcorpoficha{orientador(a) @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex          

@@ -951,6 +951,9 @@ call insere_a_direita_dos_filhos_tipos_secoes("topico",				"grafico",					"Gráf
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"legenda_grafico",				"Legenda de gráficos dos tópicos ou sessões");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"tabela",					"Tabelas dos tópicos ou sessões");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"legenda_tabela",				"Legenda de tabela dos tópicos ou sessões");
+
+call insere_a_direita_dos_filhos_tipos_secoes("topico",				"diagrama_MER",					"Diagrama MER");
+
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"item_lista_num",				"Item de Lista Numerada");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"item_lista_nao_num",				"Item de Lista Numerada");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",			    "item_de_referencia", 				"Itens da seção de referências");

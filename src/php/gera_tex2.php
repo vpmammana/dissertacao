@@ -3,7 +3,7 @@
 
 if(isset($_GET["mode"])){
   $param_mode= $_GET["mode"];
-} else $param_mode = "verbose"; // quiet ou verbose
+} else $param_mode = "verbose"; // quiet ou verbose ou debug
 
 if(isset($_GET["mantem_bilbiografia"])){
   $param_mantem_bibliografia= $_GET["mantem_bibliografia"];
@@ -99,7 +99,7 @@ if ($nome_tipo_secao == "citacao"){
 }
 
 if ($nome_tipo_secao == "diagramaMER"){
-error_log(print_r("DIAGRAMA_MER: >>>>".$nome_tipo_secao."<<<<<<\n", true));
+if ($param_mode == "verbose") {error_log(print_r("DIAGRAMA_MER: >>>>".$nome_tipo_secao."<<<<<<\n", true));}
 $linha_sem_r = preg_replace('/\\\r|\r/',"",$texto);
 $MER = explode("|", $linha_sem_r);
 	$texto_latex="
@@ -437,6 +437,9 @@ fwrite($myfile,"sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ..
 
 foreach ($arquivos_textuais as $valor){
 	$conta_mult_imagem[$valor]=0; // zera os contadores de mult_imagem para cada arquivo
+	if ($param_mode == "debug") {
+		echo "Zerou conta_mult_imagem[".$valor."]\n";
+	}
 	fwrite($myfile, "sed -i \"/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@\" ".$valor."\n");
 	if ($param_mantem_bibliografia == "nao"){
 		fwrite($myfile, "sed -i \"/^.chapter.Bibliografia..Bibliografia/d\" ".$valor."\n");
@@ -651,9 +654,11 @@ if ($result->num_rows>0) {
 				} // foreach
 			   }	
 			if ($nome_tipo_secao == "paragrafo_resumo") {
+					$conta_mult_imagem["../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex"] = 0; // precisa atribuir para nao dar erro de falta de indice em insere
 					insere("../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex", "% @[pontoinsercaoparagraforesumo]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
 				}
 			if ($nome_tipo_secao == "paragrafo_agradecimento") {
+					$conta_mult_imagem["../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex"] = 0;
 					insere("../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex", "% @[pontoinsercaoparagrafoagradecimento]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
 				}
 

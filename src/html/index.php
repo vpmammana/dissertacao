@@ -20,6 +20,8 @@ background-color: #923cb5;
 background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 
+
+
 .para_centralizar{
   margin: auto;
   border: 3px solid #73AD21;
@@ -52,6 +54,7 @@ background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
 .tabela_de_edicao{
 	width: 100%;
 	text-align: left;
+	table-layout: fixed;
 }
 
 .tabela_de_edicao *{
@@ -857,6 +860,7 @@ var oReq=new XMLHttpRequest();
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
 			popup_latex.style.visibility = "hidden";
+			//alert(resposta); atencao porque pode vir um erro de gera_tex2 na resposta. Mas isso depende de como o PHP estah configurado. No specchio vem erro, no pc local nao
 			window.open(resposta);
 		     //textarea.setAttribute("data-alterado","sem_gravar");
 		     //textarea.style.backgroundColor = cor_de_edicao; 

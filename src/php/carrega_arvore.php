@@ -225,7 +225,7 @@ teste
 				<td  id='edita_secoes_mouse_id_pai'	></td>
 			</tr>
 			<tr id='linha_chave_mouse' style='height: 90%; border-spacing: 0px; line-height: 0px'>
-				<td colspan='2' style=' padding: 0px; line-height: 0px'>
+				<td colspan='2' style=' padding: 0px; line-height: 0px; width'>
 					<textarea data-id-chave-secao='-1' data-alterado='vazio' id='textarea_mouse' class='edicao_versao' style='background-color: lightgray'>
 					</textarea>
 				</td>

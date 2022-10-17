@@ -115,6 +115,25 @@ $MER = explode("|", $linha_sem_r);
 ";
 }
 
+if ($nome_tipo_secao == "diagramaMER3ario"){
+if ($param_mode == "verbose") {error_log(print_r("DIAGRAMA_MER: >>>>".$nome_tipo_secao."<<<<<<\n", true));}
+$linha_sem_r = preg_replace('/\\\r|\r/',"",$texto);
+$MER = explode("|", $linha_sem_r);
+	$texto_latex="
+\\begin{tikzpicture}
+  [every entity/.style={fill=blue!20,draw=blue,thick},
+   every relationship/.style={fill=orange!20,draw=orange,thick,aspect=1.5}]
+  \\node[entity] (".str_replace(" ","",trim($MER[0])).")  at (0,0)   {".trim($MER[0])."};
+  \\node[entity] (".str_replace(" ","",trim($MER[2])).") at (10,0)   {".trim($MER[2])."};
+  \\node[entity] (".str_replace(" ","",trim($MER[3])).") at (5,-3)   {".trim($MER[3])."};
+  \\node[relationship]    at (5,0) {".trim($MER[1])."}
+    edge (".str_replace(" ","",trim($MER[0])).")
+    edge (".str_replace(" ","",trim($MER[2])).")
+    edge (".str_replace(" ","",trim($MER[3])).")
+	;
+\\end{tikzpicture}
+";
+}
 
 
 if ($nome_tipo_secao == "imagem"){
@@ -592,6 +611,7 @@ if ($result->num_rows>0) {
 				$nome_tipo_secao == "item_de_referencia" || 
 				$nome_tipo_secao == "item_lista_nao_num" || 
 				$nome_tipo_secao == "diagrama_MER" || 
+				$nome_tipo_secao == "diagrama_MER_3ario" || 
 				$nome_tipo_secao == "item_lista_num"
 			   ) 
 			   {

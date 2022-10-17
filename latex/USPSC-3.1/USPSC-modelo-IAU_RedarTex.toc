@@ -23,81 +23,85 @@
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{43}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Fundamenta\c {c}\~ao: hist\'oria (eixo 1)}{43}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}Revis\~ao da evolu\c {c}\~ao da historiografia}{44}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Governo Eletr\^onico}{48}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.2}Governo Eletr\^onico}{49}{subsection.3.1.2}% 
 \contentsline {subsection}{\numberline {3.1.3}Sociedade da Informa\c {c}\~ao}{54}{subsection.3.1.3}% 
 \contentsline {subsection}{\numberline {3.1.4}Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{55}{subsection.3.1.4}% 
 \contentsline {subsection}{\numberline {3.1.5}Descri\c {c}\~ao do Programa WASH}{55}{subsection.3.1.5}% 
 \contentsline {subsection}{\numberline {3.1.6}O pensamento de Papert}{56}{subsection.3.1.6}% 
-\contentsline {subsection}{\numberline {3.1.7}O que \'e STEM?}{62}{subsection.3.1.7}% 
+\contentsline {subsection}{\numberline {3.1.7}O que \'e STEM?}{63}{subsection.3.1.7}% 
 \contentsline {section}{\numberline {3.2}Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao do m\'etodo (eixo 2)}{65}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Modelo Descritivo}{67}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Modelo Entidade Relacionamento}{67}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Business Process Modeling Notation (BPMN)}{70}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados (eixo 3)}{71}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Indicadores}{71}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Informa\c {c}\~ao, dados e conhecimento}{72}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Registro de dados na escola p\'ublica}{74}{subsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.3.4}Planilhas eletr\^onicas para registro de dados}{76}{subsection.3.3.4}% 
-\contentsline {subsection}{\numberline {3.3.5}Bancos de Dados Relacionais}{81}{subsection.3.3.5}% 
-\contentsline {subsection}{\numberline {3.3.6}Linguagem SQL}{87}{subsection.3.3.6}% 
+\contentsline {subsection}{\numberline {3.2.2}Modelo Entidade Relacionamento}{69}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Business Process Modeling Notation (BPMN)}{73}{subsection.3.2.3}% 
+\contentsline {section}{\numberline {3.3}Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados (eixo 3)}{74}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Indicadores}{74}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Informa\c {c}\~ao, dados e conhecimento}{75}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Registro de dados na escola p\'ublica}{77}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}Planilhas eletr\^onicas para registro de dados}{79}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.5}Bancos de Dados Relacionais}{84}{subsection.3.3.5}% 
+\contentsline {subsection}{\numberline {3.3.6}Linguagem SQL}{89}{subsection.3.3.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{89}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Caminho para constru\c {c}\~ao da narrativa hist\'orica (eixo 1)}{89}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}M\'etodo de Historiografia Utilizado }{89}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Acervo utilizado para o levantamento hist\'orico}{89}{subsection.4.1.2}% 
-\contentsline {section}{\numberline {4.2}Caminho para a An\'alise do M\'etodo do WASH (eixo 2)}{89}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Como identificar Entidades e Associa\c {c}\~oes}{91}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Como modelar os processos de neg\'ocio (BPMN)}{95}{subsection.4.2.2}% 
-\contentsline {section}{\numberline {4.3}Caminho para a caracteriza\c {c}\~ao dos resultados do WASH (eixo 3)}{95}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{95}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{100}{subsection.4.3.2}% 
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{93}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Caminho para constru\c {c}\~ao da narrativa hist\'orica (eixo 1)}{93}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}M\'etodo de Historiografia Utilizado }{93}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Acervo utilizado para o levantamento hist\'orico}{93}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Caminho para a An\'alise do M\'etodo do WASH (eixo 2)}{93}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Como identificar Entidades e Associa\c {c}\~oes}{95}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Como modelar os processos de neg\'ocio (BPMN)}{100}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}Caminho para a caracteriza\c {c}\~ao dos resultados do WASH (eixo 3)}{100}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{100}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}M\'etodo de determina\c {c}\~ao do g\^enero dos participantes}{105}{subsection.4.3.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{107}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{107}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Narrativa do GESAC}{107}{subsection.5.1.1}% 
-\contentsline {subsection}{\numberline {5.1.2}Narrativa do OLPC}{107}{subsection.5.1.2}% 
-\contentsline {subsection}{\numberline {5.1.3}Narrativa sobre a Papert e Brasil (Afira)}{111}{subsection.5.1.3}% 
-\contentsline {section}{\numberline {5.2}Caracteriza\c {c}\~ao do M\'etodo do WASH (eixo 2)}{111}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Entidade: Pessoas}{111}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Entidade: Tipos de Papeis}{112}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Entidade: Documentos}{112}{subsection.5.2.3}% 
-\contentsline {subsection}{\numberline {5.2.4}Entidade: Tipos de Documentos}{113}{subsection.5.2.4}% 
-\contentsline {subsection}{\numberline {5.2.5}Entidade: Temas}{114}{subsection.5.2.5}% 
-\contentsline {subsection}{\numberline {5.2.6}Entidade: Tipos de Atividades}{114}{subsection.5.2.6}% 
-\contentsline {subsection}{\numberline {5.2.7}Entidade: Institui\c {c}\~oes}{115}{subsection.5.2.7}% 
-\contentsline {subsection}{\numberline {5.2.8}Entidade: Tipos de Institui\c {c}\~oes}{115}{subsection.5.2.8}% 
-\contentsline {subsection}{\numberline {5.2.9}Entidade: Eventos}{116}{subsection.5.2.9}% 
-\contentsline {section}{\numberline {5.3}Caracteriza\c {c}\~ao dos Resultados do WASH (eixo 3)}{116}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Amostragem do p\'ublico atendido}{117}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{123}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}Distribui\c {c}\~ao de partipantes por sexo}{125}{subsection.5.3.3}% 
-\contentsline {subsection}{\numberline {5.3.4}N\'umero de Bolsistas}{126}{subsection.5.3.4}% 
-\contentsline {subsection}{\numberline {5.3.5}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{128}{subsection.5.3.5}% 
-\contentsline {subsection}{\numberline {5.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{129}{subsection.5.3.6}% 
-\contentsline {subsection}{\numberline {5.3.7}N\'umero de oficinas realizadas}{129}{subsection.5.3.7}% 
-\contentsline {subsection}{\numberline {5.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{129}{subsection.5.3.8}% 
-\contentsline {subsection}{\numberline {5.3.9}Distribui\c {c}\~ao de temas nas oficinas}{129}{subsection.5.3.9}% 
-\contentsline {subsection}{\numberline {5.3.10}Tipos de Atividades realizadas nas oficinas}{129}{subsection.5.3.10}% 
-\contentsline {subsection}{\numberline {5.3.11}Cidades Atendidas}{129}{subsection.5.3.11}% 
-\contentsline {subsection}{\numberline {5.3.12}Participantes mais ass\'{\i }duos}{129}{subsection.5.3.12}% 
-\contentsline {section}{\numberline {5.4}S\'{\i }ntese anal\'{\i }tica dos 3 eixos}{129}{section.5.4}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{113}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{113}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Narrativa do GESAC}{113}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Narrativa do OLPC}{113}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Narrativa sobre a Papert e Brasil (Afira)}{117}{subsection.5.1.3}% 
+\contentsline {section}{\numberline {5.2}Caracteriza\c {c}\~ao do M\'etodo do WASH (eixo 2)}{117}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Entidade: Pessoas}{117}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Entidade: Tipos de Papeis}{118}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Entidade: Documentos}{118}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Entidade: Tipos de Documentos}{119}{subsection.5.2.4}% 
+\contentsline {subsection}{\numberline {5.2.5}Entidade: Temas}{120}{subsection.5.2.5}% 
+\contentsline {subsection}{\numberline {5.2.6}Entidade: Tipos de Atividades}{121}{subsection.5.2.6}% 
+\contentsline {subsection}{\numberline {5.2.7}Entidade: Institui\c {c}\~oes}{121}{subsection.5.2.7}% 
+\contentsline {subsection}{\numberline {5.2.8}Entidade: Tipos de Institui\c {c}\~oes}{122}{subsection.5.2.8}% 
+\contentsline {subsection}{\numberline {5.2.9}Entidade: Eventos}{122}{subsection.5.2.9}% 
+\contentsline {subsection}{\numberline {5.2.10}Entidade: Papeis das Institui\c {c}\~oes}{123}{subsection.5.2.10}% 
+\contentsline {subsection}{\numberline {5.2.11}Entidade: Tipos de Bolsas}{124}{subsection.5.2.11}% 
+\contentsline {subsection}{\numberline {5.2.12}Associa\c {c}\~ao: Desempenho}{124}{subsection.5.2.12}% 
+\contentsline {subsection}{\numberline {5.2.13}Associa\c {c}\~ao: Classifica\c {c}\~ao}{125}{subsection.5.2.13}% 
+\contentsline {section}{\numberline {5.3}Caracteriza\c {c}\~ao dos Resultados do WASH (eixo 3)}{125}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Amostragem do p\'ublico atendido}{127}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{131}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}Distribui\c {c}\~ao de partipantes por sexo}{134}{subsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.3.4}N\'umero de Bolsistas}{135}{subsection.5.3.4}% 
+\contentsline {subsection}{\numberline {5.3.5}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{137}{subsection.5.3.5}% 
+\contentsline {subsection}{\numberline {5.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{138}{subsection.5.3.6}% 
+\contentsline {subsection}{\numberline {5.3.7}N\'umero de oficinas realizadas}{138}{subsection.5.3.7}% 
+\contentsline {subsection}{\numberline {5.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{138}{subsection.5.3.8}% 
+\contentsline {subsection}{\numberline {5.3.9}Distribui\c {c}\~ao de temas nas oficinas}{138}{subsection.5.3.9}% 
+\contentsline {subsection}{\numberline {5.3.10}Tipos de Atividades realizadas nas oficinas}{138}{subsection.5.3.10}% 
+\contentsline {subsection}{\numberline {5.3.11}Cidades Atendidas}{138}{subsection.5.3.11}% 
+\contentsline {subsection}{\numberline {5.3.12}Participantes mais ass\'{\i }duos}{138}{subsection.5.3.12}% 
+\contentsline {section}{\numberline {5.4}S\'{\i }ntese anal\'{\i }tica dos 3 eixos}{138}{section.5.4}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{133}{chapter.6}% 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\~OES}}{141}{chapter.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{135}{chapter.7}% 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{143}{chapter.7}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{137}{chapter.8}% 
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\^ENCIAS}}{145}{chapter.8}% 
 \vspace {\cftbeforechapterskip }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{141}{section*.45}% 
+\contentsline {part}{\uppercase {ANEXOS}}{149}{section*.48}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{143}{appendix.anexochapback.1}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{151}{appendix.anexochapback.1}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{145}{appendix.anexochapback.2}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{153}{appendix.anexochapback.2}% 

@@ -1390,7 +1390,7 @@ Existem muitos m\'etodos para se caracterizar ou modelar sistemas. Por exemplo, 
 \item outros
 \end{alineas}
 
-No campo da engenharia existe toda uma \'area conhecida como Unified Modeling Language (UML), que permite trabalhar com requisitos do sistema, casos de uso, descri\c{c}\~ao de atividades, entre outros meios descritivos. Mas n\~ao seguiremos esse caminho, como se ver\'a nos Materiais e M\'etodos, permanecendo na zona proximal de nossa forma\c{c}\~ao acad\^emica, que \'e na \'area de humanas. Mostraremos que nossa abordagem \'e capaz de gerar uma modelagem pass\'{\i}vel de ser complementada pela \'area de Engenharia.
+No campo da engenharia existe toda uma \'area conhecida como Unified Modeling Language (UML), que permite trabalhar com requisitos do sistema, casos de uso, descri\c{c}\~ao de atividades, entre outros meios descritivos. Mas n\~ao seguiremos esse caminho, como se ver\'a nos Materiais e M\'etodos, permanecendo na zona proximal de nossa forma\c{c}\~ao acad\^emica, que \'e na \'area de humanas. Mostraremos que nossa abordagem \'e capaz de gerar uma modelagem pass\'{\i}vel de ser complementada pela \'area de Engenharia posteriormente.
 
 
 A profundidade da modelagem depende do n\'{\i}vel de abstra\c{c}\~ao a que se quer chegar na an\'alise do sistema de aprendizagem.
@@ -1405,16 +1405,16 @@ Setzer e Silva (2017) ensinam que h\'a 4 n\'{\i}veis de abstra\c{c}\~ao para ana
 
 \begin{table}[htb]
 \tiny
-\caption{\label{9109a908c21da29338bc810a131d2186e9e7b0f9}N\'{i}veis de abstra\c{c}\~oes}
+\caption{\label{ddb7374a787411a3bee0d5d790c47d75ffd71927}N\'{i}veis de abstra\c{c}\~oes}
 
 \centering
 \begin{tabular}{|c|c|}
 \hline
-Modelo Descritivo  &  modelo de n\'{\i}vel de abstra\c{c}\~ao descritivo \\
+Modelo Descritivo  &  modelo do n\'{\i}vel de abstra\c{c}\~ao descritivo \\
 \hline
-Modelo Conceitual  &  modelo de n\'{\i}vel de abstra\c{c}\~ao conceitual \\
+Modelo Conceitual  &  modelo do n\'{\i}vel de abstra\c{c}\~ao conceitual \\
 \hline
-Modelo Computacional  &  descri\c{c}\~ao com linguagens de alto n\'{\i}vel \\
+Modelo Computacional  &  linguagens de computa\c{c}\~ao de alto n\'{\i}vel \\
 \hline
 Modelo Interno  &  linguagem de programa\c{c}\~ao \\
 \hline
@@ -1422,7 +1422,7 @@ Modelo Interno  &  linguagem de programa\c{c}\~ao \\
 \end{table}
 
 
-Considerando os objetivos da caracteriza\c{c}\~ao aqui almejados, neste trabalho a an\'alise do Sistema do WASH ficar\'a concentrada no modelo do n\'{\i}vel de abstra\c{c}\~ao descritivo (ou simplesmente Modelo Descritivo), que se diferencia por usar uma linguagem informal, focalizando a identifica\c{c}\~ao dos entes envolvidos, bem como suas associa\c{c}\~oes  (Setzer e Silva, 2017). A abordagem do Modelo Descritivo ser\'a complementada com \textquotedbl pinceladas\textquotedbl  do modelo do n\'{\i}vel de abstra\c{c}\~ao conceitual (ou simplesmente Modelo Conceitual).
+Considerando os objetivos da caracteriza\c{c}\~ao aqui almejados, neste trabalho a an\'alise do Sistema do WASH ficar\'a concentrada no modelo do n\'{\i}vel de abstra\c{c}\~ao descritivo (ou simplesmente Modelo Descritivo), que se diferencia por usar uma linguagem informal. Este n\'{\i}vel de abstra\c{c}\~ao ser\'a usado para a identifica\c{c}\~ao das entidades envolvidas, bem como suas associa\c{c}\~oes  (Setzer e Silva, 2017). A abordagem do Modelo Descritivo ser\'a complementada com \textquotedbl pinceladas\textquotedbl  do modelo do n\'{\i}vel de abstra\c{c}\~ao conceitual (ou simplesmente Modelo Conceitual), que ser\'a usado para a representa\c{c}\~ao dos relacionamentos entre entidades.
 
 
 A figura XXX mostra um diagrama da abordagem adotada neste trabalho, que pode ser identificada como \textquotedbl Modelo H\'{\i}brido\textquotedbl , por combinar os n\'{\i}veis de abstra\c{c}\~ao descritivo e conceitual.
@@ -1449,6 +1449,111 @@ Al\'em da modelagem indicada, pertinente \`a identifica\c{c}\~ao de entidades e 
 Valendo-se da contribui\c{c}\~ao de outros participantes do WASH, apresentaremos um diagrama de modelagem de processos no formato BPMN. Este diagrama foi desenvolvido pelo colega Saulo Monteiro, a pedido da coordena\c{c}\~ao do WASH. O modelo BPMN em quest\~ao foi baseado em informa\c{c}\~oes sobre os procedimentos de implanta\c{c}\~ao do WASH desenvolvidos pela candidata, raz\~ao pela qual sua apresenta\c{c}\~ao neste disserta\c{c}\~ao \'e adequada.
 
 
+Mas antes de partir para a descri\c{c}\~ao da modelagem de sistemas, faremos uma breve revis\~ao do conceito de Taxonomia, dado que ser\'a importante para associa\c{c}\~oes de classifica\c{c}\~ao do Modelo MER.
+
+
+\subsection[Taxonomia]{Taxonomia}\label{Taxonomia}
+A taxonomia \'e uma aplica\c{c}\~ao da teoria de conjuntos origin\'aria da matem\'atica, atrav\'es da qual se buscam formas de organizar o conhecimento em \textquotedbl conjuntos disjuntos dois a dois\textquotedbl , ou seja, conjuntos que n\~ao t\^em elementos em comum.
+
+
+Considere os conjuntos de letras da tabela XXX.
+
+
+
+
+
+
+\begin{table}[htb]
+\tiny
+\caption{\label{f949aa902f1edcd8a77b86ea2247b8db48e4140e}Exemplo de 3 conjuntos disjuntos dois a dois.}
+
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Nome do Conjunto  &  Conte\'udo do Conjunto \\
+\hline
+Conjunto 1  &  A, H, M, N, S \\
+Conjunto 2  &  B, O \\
+Conjunto 3  &  C, Y, J \\
+\hline
+\end{tabular}
+\end{table}
+
+
+Os conjuntos 1, 2 e 3 definidos acima s\~ao \textquotedbl disjuntos dois-a-dois\textquotedbl , porque n\~ao t\^em elementos repetidos.
+
+
+Agora vamos analisar uma situ\c{c}\~ao em que os conjuntos n\~ao s\~ao disjuntos dois a dois. Considere a tabela XXX.
+
+
+
+
+
+
+\begin{table}[htb]
+\tiny
+\caption{\label{addf8ab306d7b3223b701a4f6624e64135528ac6}Exemplo de 3 conjuntos que n\~ao s\~ao disjuntos dois a dois.}
+
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Nome do Conjunto  &  Conte\'udo do Conjunto \\
+Conjunto 4  &  A, H, M, N, S \\
+Conjunto 5  &  B, T, O, M \\
+Conjunto 6  &  C, Y, J \\
+\hline
+\end{tabular}
+\end{table}
+
+
+Os tr\^es conjuntos acima n\~ao s\~ao disjuntos dois a dois, porque o Conjunto 4 e o Conjunto 5 cont\'em a letra M e, portanto, a intersecc\~ao dos dois n\~ao \'e nula. Evidente que os Conjutos 4 e 6, quando considerados sem o Conjunto 5, s\~ao \textquotedbl disjuntos dois a dois\textquotedbl , mas essa afirma\c{c}\~ao deixa de ser v\'alida quando o Conjunto 5 passa a ser considerado tamb\'em.
+
+
+Agora que sabemos que uma taxonomia \'e uma forma de organizar o conhecimento em conjuntos disjuntos dois a dois, vamos ver na pr\'atica como isso funciona.
+
+
+Vamos pensar num jeito de organizar ve\'{\i}culos automotores em conjuntos. Vamos dividir os ve\'{\i}culos entre \textquotedbl carros\textquotedbl  e \textquotedbl motocicletas\textquotedbl . Essa \'e um taxonomia funcional, porque carros t\^em exatamente 4 rodas e motos t\^em exatamente 2 rodas, portanto \'e imposs\'{\i}vel que uma elemento do conjunto carros apare\c{c}a no conjunto motos, porque um dado ve\'{\i}culo n\~ao tem como ter exatamente 4 rodas e exatamente 2 rodas ao mesmo tempo. O termo \textquotedbl exatamente\textquotedbl  est\'a sendo usado aqui no sentido de \textquotedbl nem mais nem menos do que um determinado valor\textquotedbl . \'E muito importante usar o termo \textquotedbl exatamente\textquotedbl  neste caso porque, de outra forma, carros poderiam estar tamb\'em no conjunto de motos, porque carros t\^em 4 rodas, mas tamb\'em t\^em duas. Claro que isso \'e um detalhe, mas \'e sempre importante tentar buscar o uso preciso da linguagem.
+
+
+Agora vamos pensar em uma outra forma de agrupar ve\'{\i}culos automotores: conjuntos de \textquotedbl carros\textquotedbl , conjunto de \textquotedbl motocicletas\textquotedbl  e conjuntos de \textquotedbl ve\'{\i}culos azuis\textquotedbl . Essa n\~ao \'e uma taxonomia funcional, porque permite ter a repeti\c{c}\~ao do elemento \textquotedbl carro azul\textquotedbl  tanto no grupo \textquotedbl carros\textquotedbl , porque \textquotedbl carro azul\textquotedbl  tem exatamente 4 rodas, quanto no grupo \textquotedbl ve\'{\i}culos azuis\textquotedbl , porque \textquotedbl carro azul\textquotedbl  \'e azul. Assim, a informa\c{c}\~ao dividida nos tr\^es grupos indicados n\~ao forma conjuntos disjuntos dois a dois, dado que pelo menos 1 elemento aparece em dois conjuntos diferentes.
+
+
+Uma outra forma de pensarmos essa \textquotedbl taxonomia de conjuntos disjuntos\textquotedbl  \'e considerar a \'arvores de diret\'orios de um sistema operacional, como Linux ou Windows, na sua forma mais b\'asica (sem links l\'ogicos).
+
+
+Numa \'arvode de diret\'orios b\'asica, cada arquivo s\'o consegue estar em um diret\'orio de cada vez (desconsidere c\'opias de arquivos).
+
+
+Assim, pelo que descrevemos at\'e agora, a taxonomia \'e uma forma de organizar a informa\c{c}\~ao hierarquicamente, classificando-a em categorias ou tipos.
+
+
+No caso de modelagem de bancos de dados, \'e comum querermos classificar dados em tipos.
+
+
+Como exemplo podemos pensar na classifica\c{c}\~ao dos documentos do projeto WASH por tipos de documentos, como indicado na Fig. XXX.
+
+
+
+
+\captionsetup{format=plain}
+\begin{figure}[htb]
+
+	\begin{center}
+
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/exemplo-de-taxonomia.jpg}
+
+	\end{center}
+
+	\caption{\label{1d3efc4f11ba26e8cf5155309b9993914a803998}Exemplo de taxonomia de documentos.}
+
+\end{figure}
+
+Vemos que quando o documento est\'a classificado na caixinha de \textquotedbl relat\'orios parciais\textquotedbl , n\~ao tem como ser classificado na caixinha de \textquotedbl relat\'orios finais\textquotedbl . A mesma situa\c{c}\~ao ocorre quando um documento \'e classificado como \textquotedbl plano de trabalho de processo m\~ae\textquotedbl : \'e imposs\'{\i}vel esse documento ser classificado, ao mesmo tempo, de \textquotedbl plano de trabalho de bolsa\textquotedbl , simplesmente porque s\~ao tipos de documentos diferentes.
+
+
+Por outro lado, um documento do tipo \textquotedbl relat\'orio parcial\textquotedbl  tamb\'em \'e um documento do tipo \textquotedbl relat\'orio\textquotedbl , que, por sua vez, tamb\'em \'e um documento do tipo \textquotedbl T\'ecnico-Cient\'{\i}fico\textquotedbl .
+
+
 \subsection[Modelo Descritivo]{Modelo Descritivo}\label{Modelo Descritivo}
 Segundo Setzer e Silva (2017), o modelo descritivo \'e baseado em \textquotedbl descri\c{c}\~oes informais feitas em uma linguagem natural\textquotedbl  tanto escrita quanto falada, ou seja, no presente caso, o modelo descritivo pode ser feito em Portugu\^es.
 
@@ -1472,7 +1577,7 @@ Assim, no n\'{\i}vel conceitual, os diagramas formais de Entidade Relacionamento
 Destarte, para que essa forma de modelar possa ser conduzida com um m\'{\i}nimo de objetividade, ser\'a preciso rever, rapidamente, os conceitos b\'asicos do MER.
 
 
-\subsection[Modelo Entidade Relacionamento]{Modelo Entidade Relacionamento}\label{Modelo Entidade Relacionamento}
+\subsection[Modelo Entidade Relacionamento (MER)]{Modelo Entidade Relacionamento (MER)}\label{Modelo Entidade Relacionamento (MER)}
 A Modelagem tipo Entidade Relacionamento (MER) foi introduzida por Peter Chen em 1976. Setzer e Silva (2017) alertam para a confus\~ao que normalmente \'e feita entre o conceito de Entidade e as tabelas dos Modelos de Dados Relacionais (MDR), os quais ser\~ao mais aprofundados em pr\'oximas se\c{c}\~oes.
 
 
@@ -1482,13 +1587,13 @@ A principal diferen\c{c}a entre a MER e os MDR \'e que a primeira \'e totalmente
 Entretanto, as duas representa\c{c}\~oes t\^em paralelos, dado que em muitos casos \'e poss\'{\i}vel correlacionar uma entidade do Modelo MER com uma tabela no MDR. Dito isso, permanece o alerta de  Setzer e Silva (2017) para que n\~ao se confundam entidades com tabelas.
 
 
-Portanto, o MDR \'e um modelo computacional que visa a sua implementa\c{c}\~ao em um programa de computador, ao passo que o MER visa promover a compreens\~ao do sistema em an\'alise, sem o compromisso de que haver\'a uma implementa\c{c}\~ao em um c\'odigo fonte.
+Portanto, o MDR \'e um modelo computacional que visa a sua implementa\c{c}\~ao em um programa de computador, ao passo que o MER visa promover a compreens\~ao do sistema em an\'alise, sem o compromisso de que haver\'a uma implementa\c{c}\~ao em um equipamento inform\'atico.
 
 
-Destarte, \'e comum o MER vir antes do MDR, mas muitos desenvolvedores acabam desenvolvendo o MDR sem uma modelagem MER, como \'e o caso da plataforma Platu\'osh, que foi implementada diretamente. Uma de nossas contribui\c{c}\~oes \'e criar o primeiro MER para o WASH, que permitir\'a avaliar o MDR implementado na forma da Platu\'osh, identificando suas fragilidades e propondo melhorias.
+\'E boa pr\'atica que o MER seja constru\'{\i}do antes do MDR, mas para acelerar resultados, muitos desenvolvedores acabam desenvolvendo o MDR sem uma modelagem MER. Este \'e o caso da plataforma Platu\'osh, cujo MDR foi implementado sem a exist\^encia de um MER. Uma de nossas contribui\c{c}\~oes neste trabalho \'e criar o primeiro MER para o WASH, que permitir\'a avaliar o MDR implementado na forma da Platu\'osh, identificando suas fragilidades e propondo melhorias.
 
 
-O principal trabalho na modelagem MER \'e identificar as entidades presentes no sistema em an\'alise, no caso o Sistema WASH.
+Pode-se dizer que o principal trabalho na modelagem MER \'e identificar as entidades presentes no sistema em an\'alise, no caso o Sistema WASH. Em seguida, um trabalho importante \'e identificar seus relacionamentos.
 
 
 Entidades s\~ao abstra\c{c}\~oes mentais de um ente que existe no mundo real  (Setzer e Silva, 2017).
@@ -1506,10 +1611,10 @@ O sistema de modelagem MER \'e muito formal e define at\'e como as entidades dev
 Mas estas regras de representa\c{c}\~ao s\~ao v\'alidas no n\'{\i}vel de abstra\c{c}\~ao conceitual e, como j\'a dissemos, neste trabalho permaneceremos no n\'{\i}vel de abstra\c{c}\~ao descritivo com \textquotedbl leves pinceladas\textquotedbl  do n\'{\i}vel conceitual, removendo a necessidade de formaliza\c{c}\~ao e permitindo que seja baseado em linguagem natural (portugu\^es).
 
 
-No MER as entidades podem ser consideradas como conjuntos de entes. Assim \'e poss\'{\i}vel pensar na entidade entitulada \textquotedbl Pessoas\textquotedbl  como um conjunto de pessoas, por exemplo. A identifica\c{c}\~ao de quais s\~ao as entidades do sistema \'e uma das principais atividades da Modelagem MER.
+No MER as entidades podem ser consideradas como conjuntos de entes. Assim \'e poss\'{\i}vel pensar na entidade entitulada \textquotedbl Pessoas\textquotedbl  como um conjunto de pessoas, por exemplo.
 
 
-Sem a pretens\~ao de iniciar a modelagem propriamente dita do WASH neste ponto do texto, tarefa que ficar\'a para materiais e m\'etodos, vamos tomar o projeto WASH como exemplo para aprender a identificar entidades. Usaremos documentos formais do Projeto, a exemplo da portaria CTI (2018), como base para o trabalho de identifica\c{c}\~ao de entidades e associa\c{c}\~oes. Antes de prosseguir, vale dizer que n\'os poder\'{\i}amos utilizar a lista de tabelas do MDR da Platu\'osh como ponto de partida para identificar as entidades do projeto, mas poder\'{\i}amos recair em v\'{\i}cios da modelagem inicial, lembrando que nosso objetivo, ao final do trabalho no eixo 2, \'e verificar se o MDR da Platu\'osh \'e um bom modelo. Se part\'{\i}ssemos dele, nossa an\'alise j\'a estaria comprometida de in\'{\i}cio. Esta \'e a raz\~ao de termos escolhido a Portaria 178/2018 como ponto de partida.
+Sem a pretens\~ao de iniciar a modelagem propriamente dita do WASH neste ponto do texto, tarefa que ficar\'a para Materiais e M\'etodos, vamos tomar o projeto WASH como exemplo para aprender a identificar entidades. Usaremos documentos formais do Projeto, a exemplo da portaria CTI (2018), como base para o trabalho de identifica\c{c}\~ao de entidades e associa\c{c}\~oes. Antes de prosseguir, vale dizer que n\'os poder\'{\i}amos utilizar a lista de tabelas do MDR da Platu\'osh como ponto de partida para identificar as entidades do projeto, mas poder\'{\i}amos recair em v\'{\i}cios da modelagem inicial, lembrando que nosso objetivo, ao final do trabalho no eixo 2, \'e verificar se o MDR da Platu\'osh \'e um bom modelo. Se part\'{\i}ssemos dele, nossa an\'alise j\'a estaria comprometida de in\'{\i}cio. Esta \'e a raz\~ao de termos escolhido a Portaria 178/2018 como ponto de partida.
 
 
 Para come\c{c}ar com um exemplo, vamos pensar nas \textquotedbl pessoas que participam do WASH\textquotedbl .
@@ -1540,7 +1645,7 @@ Note uma caracter\'{\i}stica muito importante das entidades: o seu nome \'e semp
 Agora que j\'a identificamos, em car\'ater de exemplo, algumas entidades do Projeto WASH, vamos conhecer um outro elemento da modelagem MER: os atributos.
 
 
-Os atributos s\~ao caracter\'{\i}sticas que podem ser atribu\'{\i}das, uma a uma, aos entes das entidades. No caso da entidade \textquotedbl Pessoas\textquotedbl  o primeiro atributo que vem \`a mente \'e o \textquotedbl nome\textquotedbl  da pessoa. Outro atributo comumente modelado \'e a \textquotedbl data de nascimento\textquotedbl  da pessoa, assim como \'e comum atribuir CPF, RG e g\^enero aos entes da Entidade \textquotedbl Pessoas\textquotedbl .
+Os atributos s\~ao caracter\'{\i}sticas que podem ser atribu\'{\i}das, uma a uma, aos entes das entidades. No caso da entidade \textquotedbl Pessoas\textquotedbl  o primeiro atributo que vem \`a mente \'e o \textquotedbl nome\textquotedbl  da pessoa. Outro atributo comumente modelado \'e a \textquotedbl data de nascimento\textquotedbl  da pessoa, assim como \'e comum atribuir CPF, RG e g\^enero aos entes da Entidade \textquotedbl Pessoas\textquotedbl . A escolha dos atributos que ser\~ao modelados depende dos objetivos da modelagem. Por exemplo, eu n\~ao vou colocar o atributo \textquotedbl signo astrol\'ogico\textquotedbl  no modelo, caso essa informa\c{c}\~ao n\~ao seja relevante para os objetivos da modelagem.
 
 
 A entidade \textquotedbl institui\c{c}\~oes\textquotedbl  tem outros atributos poss\'{\i}veis, tais como \textquotedbl nome da institui\c{c}\~ao\textquotedbl , \textquotedbl endere\c{c}o da institui\c{c}\~ao\textquotedbl , \textquotedbl regimento da institui\c{c}\~ao\textquotedbl  e assim por diante.
@@ -1564,27 +1669,27 @@ Para finalizar a descri\c{c}\~ao de conceitos importantes para a modelagem MER, 
 Dissemos que as pessoas tem como atributo o seu nome, ao passo que os eventos t\^em como atributo a data em que foram realizados. Mas como poder\'{\i}amos usar a modelagem MER para representar uma pessoa participando de um evento?
 
 
-Setzer e Silva (2017) mostra que n\~ao \'e poss\'{\i}vel incluir a participa\c{c}\~ao em um evento como atributo da entidade \textquotedbl Pessoas\textquotedbl , porque isso misturaria os conceitos de \textquotedbl Pessoas\textquotedbl  e \textquotedbl Eventos\textquotedbl  numa mesma entidade. Pelo mesmo motivo, n\~ao poder\'{\i}amos incluir como atributo da entidade \textquotedbl Eventos\textquotedbl  as  pessoas que participam de \textquotedbl Eventos\textquotedbl . Para manter a necess\'aria segrega\c{c}\~ao entre os conceitos de \textquotedbl Pessoas\textquotedbl  e \textquotedbl Eventos\textquotedbl , pertinente \`a modelagem MER, h\'a a necessidade de uma forma de representa\c{c}\~ao adicional. No caso do Modelo Conceitual MER, essa forma adicional ser\'a chamada de \textquotedbl relacionamento\textquotedbl . No Modelo Descritivo \'e chamada de \textquotedbl associa\c{c}\~ao\textquotedbl .
+Setzer e Silva (2017) mostram que n\~ao \'e poss\'{\i}vel incluir a participa\c{c}\~ao em um evento como atributo da entidade \textquotedbl Pessoas\textquotedbl , porque isso misturaria os conceitos de \textquotedbl Pessoas\textquotedbl  e \textquotedbl Eventos\textquotedbl  numa mesma entidade. Pelo mesmo motivo, n\~ao poder\'{\i}amos incluir como atributo da entidade \textquotedbl Eventos\textquotedbl  as  pessoas que participam de \textquotedbl Eventos\textquotedbl . Para manter a necess\'aria segrega\c{c}\~ao entre os conceitos de \textquotedbl Pessoas\textquotedbl  e \textquotedbl Eventos\textquotedbl , pertinente \`a modelagem MER, h\'a a necessidade de uma forma de representa\c{c}\~ao adicional. No caso do Modelo Conceitual MER, essa forma adicional ser\'a chamada de \textquotedbl relacionamento\textquotedbl . No Modelo Descritivo \'e chamada de \textquotedbl associa\c{c}\~ao\textquotedbl .
 
 
-Assim, podemos usar o conceito de \textquotedbl relacionamento\textquotedbl  para dizer:
+Assim, podemos estabelecer o relacionamento \textquotedbl Participa\c{c}\~ao\textquotedbl , que nos permite representar a seguinte situa\c{c}\~ao:
 
 
 
 \noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{Pessoas participam de Eventos}\normalize}}}\end{center}
 
 
-De forma equivalente, mas no sentido contr\'ario, podemos usar o conceito de \textquotedbl relacionamento\textquotedbl  para dizer:
+De forma equivalente, mas no sentido contr\'ario, podemos pensar no  relacionamento \textquotedbl Participa\c{c}\~ao\textquotedbl  para representar a situa\c{c}\~ao inversa:
 
 
 
-\noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{Eventos recebem a participa\c{c}\~ao de pessoas}\normalize}}}\end{center}
+\noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{Eventos recebem pessoas}\normalize}}}\end{center}
 
 
 Notamos que a rela\c{c}\~ao entre entidades num MER \'e uma a\c{c}\~ao (e.g. participar - receber) e portanto \'e sempre representada por verbos, que se complementam com rela\c{c}\~ao \`a dire\c{c}\~ao em que a a\c{c}\~ao \'e considerada.
 
 
-Se na rela\c{c}\~ao colocamos a entidade \textquotedbl Pessoas\textquotedbl  primeiro, o verbo \'e participar. Se colocamos a entidade \textquotedbl Eventos\textquotedbl  primeiro, o verbo \'e receber. Para usar uma palavra \'unica que representa a rela\c{c}\~ao podemos substituir os dois verbos por uma substantiva\c{c}\~ao da a\c{c}\~ao. No caso, podemos chamar essa rela\c{c}\~ao de \textquotedbl Participa\c{c}\~oes\textquotedbl . No modelo MER, \'e comum usar um ret\^angulo para representar as entidades e um los\^angulo para representar as rela\c{c}\~oes:
+Se no relacinamento \textquotedbl Participa\c{c}\~ao\textquotedbl  colocamos a entidade \textquotedbl Pessoas\textquotedbl  primeiro, o verbo \'e participar. Se colocamos a entidade \textquotedbl Eventos\textquotedbl  primeiro, o verbo \'e receber. Para usar uma palavra \'unica que representa a rela\c{c}\~ao podemos substituir os dois verbos por uma substantiva\c{c}\~ao da a\c{c}\~ao. \'E por isso que escolhemos o nome \textquotedbl Participa\c{c}\~ao\textquotedbl  para representar o relacionamento entre as entidades \textquotedbl Pessoas\textquotedbl  e \textquotedbl Eventos\textquotedbl . No modelo MER, \'e comum usar um ret\^angulo para representar as entidades e um los\^angulo para representar as rela\c{c}\~oes, como mostrado na Fig. XXX.
 
 
 
@@ -1612,15 +1717,15 @@ Existem relacionamentos (ou associa\c{c}\~oes) que envolvem mais de duas entidad
 
 	\begin{center}
 
-		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/ER-ternario.png}
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/P-TP-I.png}
 
 	\end{center}
 
-	\caption{\label{d1742324949849a9372b9176c25d4033dc407d83}Representa\c{c}\~ao de uma rela\c{c}\~ao tern\'aria atrav\'es de um diagrama Entidade Relacionamento.}
+	\caption{\label{31147f5e0086cc99f13aad0dd6601e9e784d5117}Representa\c{c}\~ao de uma rela\c{c}\~ao tern\'aria atrav\'es de um diagrama Entidade Relacionamento.}
 
 \end{figure}
 
-O diagrama da Fig. XXX pode ser entendido a partir do exemplo em que consideramos 3 entidades do WASH: \textquotedbl Pessoas\textquotedbl , \textquotedbl Institui\c{c}\~oes\textquotedbl  e \textquotedbl Tipos de Papeis\textquotedbl .
+Para criar o exemplo da Fig. XXX, em que se v\^e uma rela\c{c}\~ao tern\'aria, consideramos 3 entidades do WASH: \textquotedbl Pessoas\textquotedbl , \textquotedbl Institui\c{c}\~oes\textquotedbl  e \textquotedbl Tipos de Papeis\textquotedbl . \`As vezes \'e dif\'{\i}cil achar um nome curto que represente o relacionamento (ou associa\c{c}\~ao) tern\'ario. Assim, \'e pr\'atica comum usar como nome a sigla constitu\'{\i}da pelas primeiras letras dos nomes das entidades que atrav\'es dele se relacionam. No caso da figura o nome escolhido foi \textquotedbl P-TP-I\textquotedbl .
 
 
 A entidade \textquotedbl Tipos de Papeis\textquotedbl  representa todos os tipos de papeis que uma pessoa pode desempenhar dentro do projeto WASH. Por exemplo: uma pessoa pode atuar como estudante, como bolsista, como professor ou como orientador, dentre muitas outras possibilidades.
@@ -1629,7 +1734,7 @@ A entidade \textquotedbl Tipos de Papeis\textquotedbl  representa todos os tipos
 A entidade \textquotedbl Institui\c{c}\~oes\textquotedbl  representa todas as institui\c{c}\~oes que est\~ao envolvidas com atividades do WASH. Por exemplo, podem ser elementos da entidade \textquotedbl Institui\c{c}\~oes\textquotedbl : o Centro de Tecnologia da Informa\c{c}\~ao Renato Archer (CTI), o Instituto Federal de S\~ao Paulo (IFSP), a Escola Estadual Vitor Meirelles ou o pr\'oprio CNPq.
 
 
-Uma vez identificadas as 3 entidades da Fig. XXX, podemos entender o relacionamento (ou associa\c{c}\~ao) \textquotedbl Desempenho\textquotedbl , atrav\'es das seguintes frase em linguagem natural:
+Uma vez identificadas as 3 entidades da Fig. XXX, podemos entender o relacionamento (ou associa\c{c}\~ao) \textquotedbl P-TP-I\textquotedbl , atrav\'es das seguintes frase em linguagem natural:
 
 
 
@@ -1638,17 +1743,17 @@ Uma vez identificadas as 3 entidades da Fig. XXX, podemos entender o relacioname
 
 \begin{table}[htb]
 \tiny
-\caption{\label{0579774e21cd9528025969cf65c59ac2957211e9}Uso de exemplos em linguagem natural para representar a associa\c{c}\~ao Desempenho.}
+\caption{\label{bf49b4fb3d4e469f29e9791eac9cfdcadc3d61a6}Uso de exemplos em linguagem natural para representar a associa\c{c}\~ao P-TP-I.}
 
 \centering
 \begin{tabular}{|c|}
 \hline
-Jo\~ao desempenha como aluno vinculado ao IFSP \\
-Jo\~ao desempenha como bolsista vinculado ao CNPq \\
-Maria desempenha como orientadora vinculada \`a UNIFESP \\
-Maria desempenha como professora vinculada \`a UNIFESP \\
-Pedro desempenha como coordenador de projeto junto ao CNPq \\
-Pedro desempenha como servidor junto ao CEMADEN \\
+Jo\~ao atua como aluno vinculado ao IFSP \\
+Jo\~ao atua como bolsista vinculado ao CNPq \\
+Maria atua como orientadora vinculada \`a UNIFESP \\
+Maria atua como professora vinculada \`a UNIFESP \\
+Pedro atua como coordenador de projeto junto ao CNPq \\
+Pedro atua como servidor junto ao CEMADEN \\
 \hline
 \end{tabular}
 \end{table}
@@ -2262,7 +2367,7 @@ Pelo que pudemos apurar na literatura, este assunto poderia ser aprofundado tant
 Como j\'a descrito na fundamenta\c{c}\~ao te\'orica, o termo \textquotedbl m\'etodo\textquotedbl  vem do \'etimo latino \textquotedbl methodus\textquotedbl   (FREITAS, 2019), que significa \textquotedbl caminho\textquotedbl .
 
 
-Assim, o m\'etodo aplicado na pesquisa pertinente a esta disserta\c{c}\~ao, pode ser entendido como o caminho percorrido para chegar aos resultados.
+Em outras palavras: o m\'etodo aplicado na presente pesquisa pode ser entendido como o caminho percorrido para chegar aos resultados.
 
 
 Na ci\^encia \'e muito importante que o caminho percorrido para chegar num resultado seja bem delineado, para que outros possam tentar percorr\^e-lo tamb\'em, verificando a reprodutibilidade dos resultados obtidos pelos que por ali j\'a passaram.
@@ -2274,7 +2379,7 @@ Na ci\^encia \'e muito importante que o caminho percorrido para chegar num resul
 Dizemos que s\~ao \textquotedbl v\'arios caminhos\textquotedbl  porque o presente trabalho, por envolver 3 eixos principais, requereu o desenvolvimento de m\'etodos em variadas \'areas do conhecimento, desde estrutura de dados at\'e a historiografia, por exemplo.
 
 
-Na \textquotedbl Fundamenta\c{c}\~ao Te\'orica\textquotedbl  buscamos preparar terreno para o presente cap\'{\i}tulo, onde descrevemos uma parcela mais ampla do universo de m\'etodos dispon\'{\i}veis para o trabalho, dentre os quais foram escolhidos os que passamos a descrever a partir de agora.
+Na \textquotedbl Fundamenta\c{c}\~ao Te\'orica\textquotedbl  buscamos preparar terreno para a presente discuss\~ao. L\'a descrevemos uma parcela mais ampla do universo de m\'etodos dispon\'{\i}veis para o trabalho, dentre os quais foram escolhidos os que passamos a descrever a partir de agora.
 
 
 \section[Caminho para constru\c{c}\~ao da narrativa hist\'orica (eixo 1)]{Caminho para constru\c{c}\~ao da narrativa hist\'orica (eixo 1)}\label{Caminho para constru\c{c}\~ao da narrativa hist\'orica (eixo 1)}
@@ -2298,7 +2403,7 @@ Foram usados dois caminhos principais para caracterizar o M\'etodo do WASH:
 
 
 \begin{alineas}
-\item Modelagem de Entidade e Relacionamento (MER) adaptada pela combina\c{c}\~ao dos n\'{\i}veis de abstra\c{c}\~ao descritivo e conceitual (Setzer e Silva, 2017)
+\item Modelagem de Entidade e Relacionamento (MER), adaptada pela combina\c{c}\~ao de meios de an\'alise oriundos dos n\'{\i}veis de abstra\c{c}\~ao descritivo e conceitual (Setzer e Silva, 2017)
 \item Modelagem de Processos, no formato de Business Process Model Notation (BPMN)
 \end{alineas}
 
@@ -2308,25 +2413,25 @@ O caminho (a) foi por n\'os desenvolvido como uma adapta\c{c}\~ao dos ensinament
 Esta simplifica\c{c}\~ao foi conseguida pela substancial ado\c{c}\~ao de linguagem natural (portugu\^es), que \'e permitida no n\'{\i}vel de abstra\c{c}\~ao descritivo (Setzer e Silva, 2017).
 
 
-Entretanto, a descri\c{c}\~ao baseada exclusivamente neste n\'{\i}vel de abstra\c{c}\~ao n\~ao foi suficiente para garantir a clareza que desej\'avamos. Por esta raz\~ao, decidimos complement\'a-la com Diagramas Entidade-Relacionamento simples, a exemplo dos que s\~ao mostrados na Fig. XXX.
+Entretanto, a descri\c{c}\~ao baseada exclusivamente neste n\'{\i}vel de abstra\c{c}\~ao n\~ao foi suficiente para garantir a clareza que desej\'avamos. Por esta raz\~ao, decidimos complement\'a-la com Diagramas Entidade-Relacionamento simples, a exemplo dos que s\~ao mostrados nas Figs. XXX e XXX.
 
 
 Os Diagramas Entidade-Relacionamento s\~ao pertinentes ao n\'{\i}vel de abstra\c{c}\~ao conceitual, que \'e mais formal do que o n\'{\i}vel descritivo (Setzer e Silva, 2017).
 
 
-Portanto a nossa modelagem MER acabou por se mostrar h\'{\i}brida, intermedi\'aria entre o n\'{\i}vel descritivo e o conceitual. A fig. XXX de Fundamenta\c{c}\~ao Te\'orica mostra um diagrama dos v\'arios n\'{\i}veis de abstra\c{c}\~ao e onde se situa o Modelo H\'{\i}brido por n\'os proposto.
+Portanto a nossa modelagem MER acabou por se mostrar h\'{\i}brida, intermedi\'aria entre o n\'{\i}vel descritivo e o conceitual. A Fig. XXX, de Fundamenta\c{c}\~ao Te\'orica, mostra os quatro n\'{\i}veis de abstra\c{c}\~ao previstos por  Setzer e Silva (2017). Na figura \'e poss\'{\i}vel identificar onde se situa o Modelo H\'{\i}brido por n\'os proposto.
 
 
 Nossa modelagem MER usou a Portaria CTI 178/2018 e o seu anexo como base de investiga\c{c}\~ao, que \'e o documento mais representativo de descri\c{c}\~ao do m\'etodo at\'e 2018.
 
 
-Considerando que a elabora\c{c}\~ao desta disserta\c{c}\~ao iniciou-se no final de 2020, o documento de refer\^encia citado pode ser considerado como um documento cristalizado o suficiente para ser o ponto de partida da modelagem MER que aqui desejamos fazer.
+Considerando que a elabora\c{c}\~ao desta disserta\c{c}\~ao iniciou-se no final de 2020, o documento de refer\^encia citado, de 2018, pode ser considerado um documento suficientemente cristalizado para ser o ponto de partida da modelagem MER que aqui desejamos fazer.
 
 
 Entretanto, por termos participado da concep\c{c}\~ao, elabora\c{c}\~ao, planejamento, coordena\c{c}\~ao e execu\c{c}\~ao do Projeto WASH durante toda a sua exist\^encia, sabemos que seu documento de refer\^encia traz apenas um vis\~ao parcial do m\'etodo efetivamente aplicado.
 
 
-Al\'em disso, considerando-se o tempo transcorrido desde a publica\c{c}\~ao do documento de refer\^encia at\'e a data desta disserta\c{c}\~ao, \'e razo\'avel esperar que o WASH praticado nos dias de hoje tenha incorporado caracter\'{\i}sticas que n\~ao estavam previstas no documento de refer\^encia de 2018.
+Al\'em disso, considerando-se o tempo transcorrido desde a publica\c{c}\~ao do documento de refer\^encia at\'e a data desta disserta\c{c}\~ao, \'e razo\'avel esperar que o WASH praticado nos dias de hoje tenha incorporado caracter\'{\i}sticas que n\~ao estavam previstas no documento de refer\^encia de 2018. Isso \'e particularmente verdade quando consideramos que houve uma pandemia no interregno.
 
 
 Assim, o dinamismo da evolu\c{c}\~ao metodol\'ogica do WASH requer um acompanhamento do que de fato tem sido o projeto, para al\'em do documento de refer\^encia anexo \`a Portaria 178/2018.
@@ -2335,32 +2440,52 @@ Assim, o dinamismo da evolu\c{c}\~ao metodol\'ogica do WASH requer um acompanham
 Isso significa que usaremos o documento de refer\^encia como ponto de partida, mas que n\~ao desconsideraremos outras fontes para dar conta dessa din\^amica de evolu\c{c}\~ao do m\'etodo.
 
 
-Optamos por n\~ao usar o MDR da Plataforma Platu\'osh como fonte de informa\c{c}\~ao para a identifica\c{c}\~ao das entidades e relacionamentos. Isso foi feito assim porque \'e normal que o MER venha antes do MDR, pr\'atica que n\~ao foi seguida pela equipe de TI do WASH.
+Optamos por n\~ao usar o MDR da Plataforma Platu\'osh como fonte de informa\c{c}\~ao para a identifica\c{c}\~ao das entidades e relacionamentos do MER. Essa op\c{c}\~ao se justifica porque as boas pr\'aticas indicam que o MER deve ser feito antes do MDR, mas esse cuidado n\~ao foi seguido pela equipe de TI do WASH.
 
 
-A falta de um MER na hora de elabora\c{c}\~ao do MDR \'e uma fragilidade da Plataforma Platu\'osh, que pode ter trazido v\'{\i}cios de representa\c{c}\~ao de dados. Assim, optamos por desenvolver o Modelo MER independentemente e, apenas depois de pronto, compar\'a-lo com o MDR da Plataforma Platu\'osh. O fato de termos participado da elabora\c{c}\~ao da Platu\'osh exigiu a busca por um distanciamento daquela solu\c{c}\~ao, no momento de elabora\c{c}\~ao do nosso MER.
+A falta de um MER na hora de elabora\c{c}\~ao do MDR \'e uma fragilidade da Plataforma Platu\'osh, que pode ter trazido v\'{\i}cios de representa\c{c}\~ao de dados. Assim, optamos por desenvolver o Modelo MER independentemente e, apenas depois de pronto, compar\'a-lo com o MDR da Plataforma Platu\'osh. O fato de termos participado da elabora\c{c}\~ao da Platu\'osh exigiu que nos distanci\'assemos daquela solu\c{c}\~ao durante a elabora\c{c}\~ao do nosso pr\'oprio MER.
 
 
 O caminho (b) foi aplicado pelo colaborador do WASH, Saulo Monteiro [XXX], sobre as informa\c{c}\~oes fornecidas pela equipe do WASH, com grande protagonismo nosso na defini\c{c}\~ao das atividades e a\c{c}\~oes que foram modeladas.
 
 
-Com rela\c{c}\~ao ao BPMN, adiantamos que em seguida \`a descri\c{c}\~ao da Modelagem MER, realizaremos uma breve revis\~ao do m\'etodo empregado pelo colega Saulo Monteiro com base nas informa\c{c}\~oes por n\'os compartilhadas.
+Com rela\c{c}\~ao ao BPMN, adiantamos que em seguida \`a descri\c{c}\~ao da Modelagem MER, realizaremos uma breve revis\~ao do m\'etodo empregado pelo colega Saulo Monteiro com base nas informa\c{c}\~oes por ele compartilhadas.
 
 
-Antes de prosseguir \'e preciso recaptular a discuss\~ao sobre se estamos tentando caracterizar o m\'etodo de um projeto, de um programa, de uma proto-pol\'{\i}tica ou de um sistema. Acreditamos que esta identifica\c{c}\~ao pode ser deixada para o cap\'{\i}tulo de Resultados e An\'alise.
+Antes de prosseguir \'e preciso relembrar a discuss\~ao que fizemos na Fundamenta\c{c}\~ao Te\'orica sobre se o WASH \'e um projeto, programa, pol\'{\i}tica p\'ublica ou sistema. At\'e este ponto, a resposta est\'a em aberto e deixaremos para o cap\'{\i}tulo de Resultados e An\'alise sua elucida\c{c}\~ao.
 
 
 \subsection[Como identificar Entidades e Associa\c{c}\~oes]{Como identificar Entidades e Associa\c{c}\~oes}\label{Como identificar Entidades e Associa\c{c}\~oes}
-Para respeitar a nomenclatura pertinente ao n\'{\i}vel de abstra\c{c}\~ao descritivo, conforme  Setzer e Silva (2017), usaremos, dentro da modelagem, o termo \textquotedbl associa\c{c}\~ao\textquotedbl  quando nos referirmos ao conceito de \textquotedbl relacionamento\textquotedbl , mas permaneceremos denominando o m\'etodo como \textquotedbl Modelagem Entidade-Relacionamento\textquotedbl .
+Para respeitar a nomenclatura pertinente ao n\'{\i}vel de abstra\c{c}\~ao descritivo, conforme  Setzer e Silva (2017), usaremos o termo \textquotedbl associa\c{c}\~ao\textquotedbl  quando nos referirmos ao conceito de \textquotedbl relacionamento\textquotedbl , mas permaneceremos denominando o m\'etodo como \textquotedbl Modelagem Entidade-Relacionamento\textquotedbl . Este cuidado \'e importante porque as nomenclaturas mudam, de acordo com o n\'{\i}vel de abstra\c{c}\~ao, o que est\'a explicitado na tabela XXX.
+
+
+
+
+
+
+\begin{table}[htb]
+\tiny
+\caption{\label{7dc6a0cd1483e951a803f257b4a9664fa3a268ad}Compara\c{c}\~ao das nomenclaturas usadas nos n\'{i}veis de abstra\c{c}\~ao descritivo e conceitual.}
+
+\centering
+\begin{tabular}{|c|c|}
+\hline
+N\'{\i}vel de Abstra\c{c}\~ao  &  Nomenclatura \\
+\hline
+Descritivo  &  Entidade - Associa\c{c}\~ao \\
+Conceitual  &  Entidade - Relacionamento \\
+\hline
+\end{tabular}
+\end{table}
 
 
 O caminho de caracteriza\c{c}\~ao do m\'etodo do WASH por meio de Modelagem Entidade Relacionamento partir\'a da an\'alise e classifica\c{c}\~ao da lista de substantivos constantes no gloss\'ario da Portaria 178/2018.
 
 
-Esta lista ser\'a enriquecida por outros substantivos coletados no texto do Anexo \`a Portaria. Estes substantivos ser\~ao analisados e agrupados em Entidades, para depois serem identificadas as associa\c{c}\~oes (relacionamentos) entre elas, como determina a Modelagem Entidade-Relacionamento.
+Esta lista ser\'a enriquecida por outros substantivos coletados no texto do Anexo \`a Portaria. Estes substantivos ser\~ao analisados e agrupados em conjuntos que permitir\~ao inferir quais entidades est\~ao presentes no sistema, para depois serem identificadas as associa\c{c}\~oes entre elas.
 
 
-A classifica\c{c}\~ao dos substantivos, buscando identificar uma estrutura de entidades e associa\c{c}\~oes ser\'a referida como \textquotedbl M\'etodo de Infer\^encia\textquotedbl , que passa a ser descrito daqui para frente.
+A classifica\c{c}\~ao dos substantivos, buscando identificar uma estrutura de entidades e associa\c{c}\~oes, ser\'a referida como \textquotedbl M\'etodo de Infer\^encia\textquotedbl , que passa a ser descrito daqui para frente.
 
 
 Na tabela XXX \'e apresentada uma lista de substantivos presentes no gloss\'ario da portaria (por ordem alfab\'etica).
@@ -2393,7 +2518,7 @@ Scratch  &  WASH  &  \\
 \end{table}
 
 
-Na tabela XXX \'e apresentada uma lista de substantivos encontrados no texto do Anexo \`a Portaria (por ordem de ocorr\^encia no Anexo):
+Na tabela XXX \'e apresentada uma lista de substantivos selecionados a partir do texto Anexo \`a Portaria (por ordem de ocorr\^encia no Anexo):
 
 
 
@@ -2402,7 +2527,7 @@ Na tabela XXX \'e apresentada uma lista de substantivos encontrados no texto do 
 
 \begin{table}[htb]
 \tiny
-\caption{\label{ed98281d009c18519ead0b6dc7fab5fc772f0825}Substantivos extra\'{i}dos do texto do anexo da portaria 178 para a modelagem MER.}
+\caption{\label{ed98281d009c18519ead0b6dc7fab5fc772f0825}Substantivos extra\'{i}dos do texto do anexo da portaria 178 para a modelagem MER. Trata-se de de subconjunto selecionado, dado que alguns substantivos que n\~ao s\~ao pertinentes foram descartados.}
 
 \centering
 \begin{tabular}{|c|c|c|}
@@ -2481,10 +2606,10 @@ ITI B  &  TED  &  legisla\c{c}\~ao \\
 \end{table}
 
 
-Foram identificados cerca de 220 substantivos no documento de refer\^encia anexo \`a Portaria 178/2018.
+Foram selecionados cerca de 220 do total de substantivos presentes no documento de refer\^encia anexo \`a Portaria 178/2018.
 
 
-Agora, por inspe\c{c}\~ao, vamos tentar identificar as entidades mais evidentes para a classifica\c{c}\~ao do universo de substantivos. Esta \textquotedbl inspe\c{c}\~ao\textquotedbl  envolve, em alguns casos, verificar o contexto em que o substantivo aparece na Portaria CTI 178/2018.
+Agora, por inspe\c{c}\~ao dos substantivos, vamos tentar identificar as entidades mais evidentes. Esta \textquotedbl inspe\c{c}\~ao\textquotedbl  envolve, em alguns casos, verificar o contexto em que o substantivo aparece na Portaria CTI 178/2018.
 
 
 Abaixo apresentamos o subconjunto de substantivos selecionados a partir da tabela XXX, que nos permite inferir a exist\^encia de uma entidade do tipo \textquotedbl Pessoas\textquotedbl  no contexo do projeto WASH:
@@ -2500,7 +2625,7 @@ O subconjunto acima, al\'em de nos permitir inferir a exist\^encia da entidade \
 Por isso, precisamos encontrar mais subconjuntos de substantivos que nos permitam inferir a exist\^encia  das demais entidades pertinentes ao Projeto WASH.
 
 
-Novamente, por inspe\c{c}\~ao, idenficamos a entidade \textquotedbl Tipos de Papeis\textquotedbl  a partir do subconjunto de substantivos abaixo:
+Novamente, por inspe\c{c}\~ao, idenficamos a entidade \textquotedbl Tipos de Papeis\textquotedbl , como indicado pelo subconjunto de substantivos abaixo:
 
 
 
@@ -2510,10 +2635,10 @@ Novamente, por inspe\c{c}\~ao, idenficamos a entidade \textquotedbl Tipos de Pap
 Chama a aten\c{c}\~ao que muitos substantivos que est\~ao presentes no subconjunto relativo \`a entidade \textquotedbl Pessoas\textquotedbl  tamb\'em est\~ao presentes no subconjunto relativo \`a entidade \textquotedbl Tipos de Papeis\textquotedbl . Isto ocorre porque algumas palavras podem remeter a duas ou mais abstra\c{c}\~oes. Por exemplo: \textquotedbl alunos\textquotedbl  traz em si o conceito de \textquotedbl pessoa\textquotedbl , mas tamb\'em traz a no\c{c}\`ao de \textquotedbl v\'{\i}nculo\textquotedbl  ou \textquotedbl papel desempenhado\textquotedbl  no contexto de uma institui\c{c}\~ao de ensino.
 
 
-Agora que temos duas entidades, \textquotedbl Pessoas\textquotedbl  e \textquotedbl Tipos de Papeis\textquotedbl , podemos definir a sua associa\c{c}\~ao (relacionamento) que, no caso, denominamos \textquotedbl Desempenho\textquotedbl , representando-a com um diagrama entidade-relacionamento \textquotedbl emprestado\textquotedbl  do n\'{\i}vel de abstra\c{c}\~ao conceitual, como segue:
-
-
 Por este motivo, subconjuntos diferentes de substantivos, mesmo que tenham muitas intersec\c{c}\~oes de palavras, podem nos remeter a abstra\c{c}\~oes diferentes de entidades.
+
+
+Agora que temos duas entidades, \textquotedbl Pessoas\textquotedbl  e \textquotedbl Tipos de Papeis\textquotedbl , podemos definir a sua associa\c{c}\~ao (relacionamento) que, no caso, denominamos \textquotedbl Desempenho\textquotedbl , representando-a com um diagrama entidade-relacionamento \textquotedbl emprestado\textquotedbl  do n\'{\i}vel de abstra\c{c}\~ao conceitual, como segue:
 
 
 
@@ -2533,10 +2658,10 @@ Seguindo novamente  Setzer e Silva (2017), podemos interpretar a associa\c{c}\~a
 Um problema desta forma de representa\c{c}\~ao da associa\c{c}\~ao desempenho, utilizando apenas duas entidades, \'e que n\~ao conseguimos identificar em que institui\c{c}\~ao o papel \'e desempenhado.
 
 
-Vamos supor que a pessoas \textquotedbl Pedro\textquotedbl , enquanto era aluno do ensino m\'edio, desempenhou o papel de aluno da Escola Estadual Vitor Meirelles. Depois, quando entrou para o ensino superior, passou a desempenhar o papel de aluno junto \`a Universidade Estadual de Campinas. Essa situa\c{c}\~ao mostra que a associa\c{c}\~ao \textquotedbl Desempenho\textquotedbl  tem que ser tern\'aria, ou seja, tem que envolver as entidades \textquotedbl Pessoas\textquotedbl , \textquotedbl Tipos de Papeis\textquotedbl  e \textquotedbl Institui\c{c}\~oes\textquotedbl . Vimos na fundamenta\c{c}\~ao te\'orica como esse tipo de associa\c{c}\~ao \'e representada pela Fig. XXX.
+Vamos supor que a pessoa \textquotedbl Pedro\textquotedbl , enquanto era aluno do ensino m\'edio, desempenhou o papel de aluno da Escola Estadual Vitor Meirelles. Depois, quando entrou para o ensino superior, passou a desempenhar o papel de aluno junto \`a Universidade Estadual de Campinas. Essa situa\c{c}\~ao mostra que a associa\c{c}\~ao \textquotedbl Desempenho\textquotedbl  tem que ser tern\'aria, ou seja, tem que envolver as entidades \textquotedbl Pessoas\textquotedbl , \textquotedbl Tipos de Papeis\textquotedbl  e \textquotedbl Institui\c{c}\~oes\textquotedbl . Vimos na fundamenta\c{c}\~ao te\'orica como esse tipo de associa\c{c}\~ao \'e representada pela Fig. XXX.
 
 
-Desta forma, h\'a que se usar uma representa\c{c}\~ao tern\'aria para a associa\c{c}\~ao \textquotedbl Desempenho\textquotedbl , como segue:
+Desta forma, h\'a que se usar uma representa\c{c}\~ao tern\'aria para representar \textquotedbl a que institui\c{c}\~ao a pessoa estava vinculada, quando desempenho um determinado papel\textquotedbl , como segue. Na associa\c{c}\~ao tern\'aria, \'e comum usar a sigla formada pela primeira letra de cada entidade como nome da Associa\c{c}\~ao:
 
 
 
@@ -2546,17 +2671,20 @@ Desta forma, h\'a que se usar uma representa\c{c}\~ao tern\'aria para a associa\
   \node[entity] (Pessoas)  at (0,0)   {Pessoas};
   \node[entity] (TiposdePapeis) at (10,0)   {Tipos de Papeis};
   \node[entity] (Institui\c{c}\~oes) at (5,-3)   {Institui\c{c}\~oes};
-  \node[relationship]    at (5,0) {Desempenho}
+  \node[relationship]    at (5,0) {P - TP - I}
     edge (Pessoas)
     edge (TiposdePapeis)
     edge (Institui\c{c}\~oes)
 	;
 \end{tikzpicture}
 
-Feita a ressalva de que a associa\c{c}\~ao \textquotedbl Desempenho\textquotedbl  tem que ser do tipo tern\'aria, ou seja, relacionando 3 entidades, vamos dar um passo atr\'as na complexidade dessa representa\c{c}\~ao para que possamos explicar a l\'ogica da representa\c{c}\~ao de uma associa\c{c}\~ao dentro do conceito de teoria de conjuntos.
+Feita a ressalva de que a associa\c{c}\~ao \textquotedbl P - TP - I\textquotedbl  tem que ser do tipo tern\'aria, ou seja, relacionando 3 entidades, vamos dar um passo atr\'as na complexidade dessa representa\c{c}\~ao para que possamos explicar a l\'ogica da representa\c{c}\~ao de uma associa\c{c}\~ao dentro do conceito de teoria de conjuntos.
 
 
-Portanto, apenas para efeito de exemplo, vamos considerar, temporariamente, que a rela\c{c}\~ao \textquotedbl Desempenho\textquotedbl  envolve apenas \textquotedbl Pessoas\textquotedbl  e \textquotedbl Tipos de Papeis\textquotedbl . E vamos dar alguns exemplos.
+Portanto, apenas para efeito de exemplo, vamos considerar, temporariamente, que a rela\c{c}\~ao \textquotedbl Desempenho\textquotedbl  envolve apenas \textquotedbl Pessoas\textquotedbl  e \textquotedbl Tipos de Papeis\textquotedbl , desconsiderando que o desempenho do tipo de papel tem que estar vinculado a alguma institui\c{c}\~ao.
+
+
+Com essa simplifica\c{c}\~ao, vamos dar alguns exemplos elucidativos.
 
 
 Na tabela XXX apresentamos nomes de pessoas que fazem parte da entidade \textquotedbl Pessoas\textquotedbl .
@@ -2649,16 +2777,16 @@ No sentido inverso a associa\c{c}\~ao \textquotedbl Desempenho\textquotedbl  nos
 
 \end{figure}
 
-Mas a associa\c{c}\~ao \textquotedbl desempenho\textquotedbl  deve permitir que Pedro assuma nenhum, um ou mais de um papel, concomitantes, simult\^aneos ou parcialmente sobrepostos. Para qualquer papel que Pedro desempenhe, sempre haver\'a uma data de in\'{\i}cio e de fim para aquele papel.
+Mas a associa\c{c}\~ao \textquotedbl desempenho\textquotedbl  deve permitir que Pedro assuma nenhum, um ou mais de um papel, concomitantes, simult\^aneos ou parcialmente sobrepostos. Para que a temporalidade dos papeis desempenhados possa ser representada, \'e preciso indicar a data de in\'{\i}cio e de fim para aquele papel.
 
 
 Vamos criar uma situa\c{c}\~ao hip\'otetica de pap\'eis simult\^aneos para Pedro. Para o exemplo ficar mais claro, acompanhe na figura XXX, que busca representar a associa\c{c}\~ao \textquotedbl Desempenho\textquotedbl  na forma de uma linha de tempo.
 
 
-A figura XXX mostra 1 elemento da entidade \textquotedbl Pessoas\textquotedbl , no caso \textquotedbl Pedro\textquotedbl , representado pela seta azul. A figura tamb\'em mostra 6 elementos da Entidade \textquotedbl Tipos de Papeis\textquotedbl , representados pelas setas vermelhas.
+A figura XXX mostra um elemento da entidade \textquotedbl Pessoas\textquotedbl , no caso \textquotedbl Pedro\textquotedbl , representado pela seta azul. A figura tamb\'em mostra seis elementos da Entidade \textquotedbl Tipos de Papeis\textquotedbl , representados pelas setas vermelhas.
 
 
-A seta (1) da Fig XXX indica que Pedro desempenhou o papel de \textquotedbl aluno do fundamental\textquotedbl  por um certo per\'{\i}odo. A seta (2) indica que um pouco depois de iniciar suas atividades como \textquotedbl aluno do fundamental\textquotedbl  ele passou a frequentar as oficinas do WASH, desempenhando o papel de \textquotedbl Participante do WASH\textquotedbl . Vemos que o papel indicado pela seta (1) chegou ao fim, substitu\'{\i}do pelo papel indicado pela seta (3), que \'e o de \textquotedbl aluno do ensino m\'edio\textquotedbl . Simultaneamente ao papel de \textquotedbl aluno do ensino m\'edio\textquotedbl , Pedro foi convidado pela equipe do WASH para assumir o papel de \textquotedbl multiplicador\textquotedbl  do WASH, como indica a seta (4). Como Pedro n\~ao tinha bolsa na fase inicial do papel \textquotedbl multiplicador\textquotedbl , naquele per\'{\i}odo ele estava desempenhando o papel de \textquotedbl volunt\'ario\textquotedbl , como indicado pela seta (5). A partir do in\'{\i}cio da seta (6), quando a equipe ofereceu uma bolsa, ele passou a ser \textquotedbl bolsista\textquotedbl  e a seta (5) teve que ser finalizada.
+A seta (1) da Fig XXX indica que Pedro desempenhou o papel de \textquotedbl aluno do fundamental\textquotedbl  por um certo per\'{\i}odo. A seta (2) indica que, um pouco depois de iniciar suas atividades como \textquotedbl aluno do fundamental\textquotedbl , ele passou a frequentar as oficinas do WASH, desempenhando o papel de \textquotedbl Participante do WASH\textquotedbl . Vemos que o papel indicado pela seta (1) chegou ao fim, substitu\'{\i}do pelo papel indicado pela seta (3), que \'e o de \textquotedbl aluno do ensino m\'edio\textquotedbl . Simultaneamente ao papel de \textquotedbl aluno do ensino m\'edio\textquotedbl , Pedro foi convidado pela equipe do WASH para assumir o papel de \textquotedbl multiplicador\textquotedbl  do WASH, como indica a seta (4). Como Pedro n\~ao tinha bolsa na fase inicial do papel \textquotedbl multiplicador\textquotedbl , naquele per\'{\i}odo ele estava desempenhando o papel de \textquotedbl volunt\'ario\textquotedbl , como indicado pela seta (5). A partir do in\'{\i}cio da seta (6), quando a equipe ofereceu uma bolsa, ele passou a ser \textquotedbl bolsista\textquotedbl  e a seta (5) teve que ser finalizada.
 
 
 
@@ -2676,16 +2804,16 @@ A seta (1) da Fig XXX indica que Pedro desempenhou o papel de \textquotedbl alun
 
 \end{figure}
 
- Portanto, a associa\c{c}\~ao \textquotedbl desempenho\textquotedbl  deve contemplar a possibilidade de Pedro ter um ou mais papeis, com a possibilidade de sobreposi\c{c}\~ao temporal, integral ou parcial.
+ Portanto, a associa\c{c}\~ao \textquotedbl desempenho\textquotedbl  deve contemplar a possibilidade de Pedro ter um ou mais papeis, com a possibilidade de sobreposi\c{c}\~ao temporal, seja integral ou parcial.
 
 
 Considerando a associa\c{c}\~ao \textquotedbl desempenho\textquotedbl  no sentido oposto, esta deve contemplar a possibilidade de um determinado tipo de papel ser desempenhado por mais de uma pessoa. Por exemplo, o tipo de papel \textquotedbl participante\textquotedbl  deve ser pass\'{\i}vel de ser desempenhado por milhares de participantes do WASH. O papel \textquotedbl coordenador\textquotedbl  deve ser pass\'{\i}vel de ser desempenhado por muitos participantes do WASH, dado que existem coordena\c{c}\~oes locais no programa.
 
 
-Esta forma bi-direcional de analisar a associa\c{c}\~ao \textquotedbl desempenho\textquotedbl  ajuda, posteriormente, a equipe de TI definir a cardinalidade das rela\c{c}\~oes no Modelo Conceitual de Entidade-Relacionamento.
+Esta forma bi-direcional de analisar a associa\c{c}\~ao \textquotedbl desempenho\textquotedbl  ajuda, posteriormente, a equipe de TI definir a \textquotedbl cardinalidade\textquotedbl  (ou multiplicidade) das rela\c{c}\~oes no Modelo Conceitual de Entidade-Relacionamento.
 
 
-Como estamos no n\'{\i}vel de abstra\c{c}\~ao descritivo, n\~ao aprofundaremos na quest\~ao da cardinalidade dos relacionamentos, permanecendo numa descri\c{c}\~ao por meio de linguagem natural das associa\c{c}\~oes encontradas no WASH.
+Como estamos no n\'{\i}vel de abstra\c{c}\~ao descritivo, n\~ao aprofundaremos na quest\~ao da cardinalidade dos relacionamentos, permanecendo numa descri\c{c}\~ao por meio de linguagem natural das associa\c{c}\~oes encontradas no WASH. Esta descri\c{c}\~ao da cardinalidade, usando linguagem natural, estar\'a presente no cap\'{\i}tulo de Resultados e An\'alise.
 
 
 O m\'etodo de infer\^encia aqui descrito foi aplicado repetidamente, visando identificar as entidades e associa\c{c}\~oes mais relevantes para a modelagem do Projeto WASH.
@@ -3076,7 +3204,7 @@ Como se ver\'a no cap\'{\i}tulo de Resultados e An\'alise, os dados analisados s
 Portanto, \'e neste ponto que os resultados obtidos ser\~ao descritos e, concomitantemente, analisados para, posteriormente, serem discutidos.
 
 
-Os resultados est\~ao organizados, inicialmente, em tr\^es se\c{c}\~oes separadas, relacionadas \`as tr\^es dimens\~oes do Projeto WASH em an\'alise neste texto:
+Os resultados est\~ao organizados, inicialmente, em tr\^es se\c{c}\~oes separadas, relacionadas aos tr\^es eixos do Projeto WASH em an\'alise neste texto:
 
 
 
@@ -3203,20 +3331,20 @@ No cap\'{\i}tulo de Materiais e M\'etodos apresentamos o caminho utilizado para 
 Explicamos, tamb\'em, que optamos por uma Modelagem Entidade-Relacionamento h\'{\i}brida, no sentido que ela se valeu da combina\c{c}\~ao de elementos dos n\'{\i}veis de abstra\c{c}\~ao descritivo e conceitual. Esta combina\c{c}\~ao permitiu simplificar a representa\c{c}\~ao do modelo, utilizando a linguagem natural (portugu\^es) complementada por alguns diagramas simples do n\'{\i}vel conceitual.
 
 
-As se\c{c}\~oes a seguir identificam todas as entidades e associa\c{c}\~oes encontradas pela aplica\c{c}\~ao do m\'etodo de infer\^encial.
+As se\c{c}\~oes a seguir identificam todas as entidades e associa\c{c}\~oes encontradas pela aplica\c{c}\~ao do m\'etodo de infer\^encia.
 
 
-As subse\c{c}\~oes relativas a entidades t\^em como elementos principais a identifica\c{c}\~ao dos substantivos que permitem inferir a exist\^encia de uma entidade na forma de uma subconjunto de substantivos, bem como seus atributos, na forma de uma lista.
+As subse\c{c}\~oes relativas a entidades t\^em como elementos principais a identifica\c{c}\~ao dos substantivos da Portaria CTI 178/2018 que permitiram inferir a exist\^encia de uma entidade. Estes substantivos s\~ao apresentados como elementos de um subconjunto. As subse\c{c}\~oes relativas a entidades identificam, tamb\'em, os atributos de cada entidade.
 
 
-Note que os subconjuntos de substantivos apresentados para cada entidade podem ter intersec\c{c}\~oes. Por exemplo, o substantivo \textquotedbl experimenta\c{c}\~ao\textquotedbl  aparece no subconjunto relativo \`a entidade \textquotedbl Temas\textquotedbl , porque pode ser um tema de uma palestra sobre m\'etodo cient\'{\i}fico, em que \textquotedbl palestra\textquotedbl  \'e a atividade. Em oposi\c{c}\~ao, o substantivo \textquotedbl experimenta\c{c}\~ao\textquotedbl  aparece no subconjunto relativo \`a entidade \textquotedbl Tipos de Atividades\textquotedbl , porque pode ser a atividade que est\'a sendo realizada numa oficina, a exemplo de uma experimento de qu\'{\i}mica. Esta situa\c{c}\~ao de conceitos diferentes para o mesmo substantivo, dependendo do contexto, j\'a foi exposta no cap\'{\i}tulo de Materiais e M\'etodos. Assim, \'e a leitura do contexto em que o substantivo aparece na Portaria CTI 178/2018 que permite decidir em que subconjunto ela deve aparecer, mesmo que ocorra de forma repetida em subconjuntos diferentes.
+Note que os subconjuntos de substantivos apresentados para cada entidade podem ter intersec\c{c}\~oes. Por exemplo, o substantivo \textquotedbl experimenta\c{c}\~ao\textquotedbl  aparece no subconjunto relativo \`a entidade \textquotedbl Temas\textquotedbl , porque pode ser um tema de uma palestra sobre m\'etodo cient\'{\i}fico, em que \textquotedbl palestra\textquotedbl  \'e a atividade. Em oposi\c{c}\~ao, o substantivo \textquotedbl experimenta\c{c}\~ao\textquotedbl  aparece no subconjunto relativo \`a entidade \textquotedbl Tipos de Atividades\textquotedbl , porque pode ser a atividade que est\'a sendo realizada numa oficina, a exemplo de uma experimento de qu\'{\i}mica. Esta situa\c{c}\~ao de conceitos diferentes para o mesmo substantivo, dependendo do contexto, j\'a foi exposta no cap\'{\i}tulo de Materiais e M\'etodos. Assim, \'e a leitura do contexto em que o substantivo aparece na Portaria CTI 178/2018 que permite decidir em que subconjunto ele deve aparecer, mesmo que ocorra de forma repetida em subconjuntos diferentes.
 
 
 Seguindo a pr\'atica descrita em  Setzer e Silva (2017), as entidades receber\~ao um nome constitu\'{\i}do de um substantivo no plural, com a primeira letra em mai\'uscula.
 
 
 \subsection[Entidade: Pessoas]{Entidade: Pessoas}\label{Entidade: Pessoas}
-A identifica\c{c}\~ao da exist\^encia da entidade \textquotedbl Pessoas\textquotedbl  no MER do WASH foi detalhadamente descrita no cap\'{\i}tulo de Materiais e M\'etodos como exemplo, cabendo aqui apenas resumir os achados.
+A identifica\c{c}\~ao da exist\^encia da entidade \textquotedbl Pessoas\textquotedbl  no MER do WASH foi detalhadamente descrita como exemplo no cap\'{\i}tulo de Materiais e M\'etodos, cabendo aqui apenas resumir os achados.
 
 
 A entidade \textquotedbl Pessoas\textquotedbl  representa qualquer pessoa que tenha sido registrada no WASH, independentemente de ter participado de oficinas ou n\~ao.
@@ -3227,24 +3355,27 @@ Como atributos, a entidade \textquotedbl Pessoas\textquotedbl  tem:
 
 
 \begin{alineas}
-\item nome da pessoa
-\item data de nascimento
-\item data do registro no WASH
-\item nome do respons\'avel
-\item g\^enero
+\item nome da pessoa (e.g. Pedro, Maria, Jos\'e)
+\item data de nascimento (e.g. 10/11/2011)
+\item data do registro no WASH (e.g. 04/03/2015)
+\item nome do respons\'avel (e.g. Agnes, Orlando e M\'ario)
+\item sexo (masculino, feminino)
 \end{alineas}
 
 Note que \'e natural sentir-se tentado a incluir o atributo \textquotedbl tipo de papel\textquotedbl  como atributo da entidade \textquotedbl Pessoas\textquotedbl , afinal, com este atributo poder\'{\i}amos dizer se a pessoa \'e um aluno, um professor ou um volunt\'ario, por exemplo.
 
 
-Mas, como vimos em Materiais e M\'etodos, uma pessoa pode ter v\'arios pap\'eis durante sua participa\c{c}\~ao no projeto. Estes papeis podem ser simult\^aneos, concomitantes ou parcialmente sobrepostos. Essa multiplicidade de possibilidades torna mais oportuno que  o papel da pessoa, no \^ambito do projeto, seja representado por uma associa\c{c}\~ao, como se ver\'a adiante.
+Mas, como vimos em Materiais e M\'etodos, uma pessoa pode ter v\'arios pap\'eis durante sua participa\c{c}\~ao no projeto. Estes papeis podem ser ass\'{\i}ncronos, concomitantes ou parcialmente sobrepostos. Essa multiplicidade de possibilidades torna mais oportuno que  o papel da pessoa, no \^ambito do projeto, seja representado por uma associa\c{c}\~ao, como se ver\'a adiante.
 
 
-Esse tipo de \textquotedbl tenta\c{c}\~ao\textquotedbl  se repete para outros aspectos de uma pessoa, como por exemplo incluir o \textquotedbl Plano de Trabalho\textquotedbl  como um atributo da pessoa. Mas uma pessoa pode ter mais de um plano de trabalho, ent\~ao \'e mais oportuno representar isso atrav\'es de uma associa\c{c}\~ao entre a entidade \textquotedbl Pessoas\textquotedbl  e a entidade \textquotedbl Documentos\textquotedbl . Veremos isso mais adiante.
+A \textquotedbl tenta\c{c}\~ao\textquotedbl  de acrescentar uma entidade como atributos de outra \'e muito recorrente, mas deve ser evitada. Uma outra situa\c{c}\~ao semelhante no caso da entidade \textquotedbl Pessoas\textquotedbl , \'e propor a inclus\~ao do \textquotedbl Plano de Trabalho\textquotedbl  como um atributo da pessoa. Mas uma pessoa pode ter mais de um plano de trabalho, ent\~ao \'e mais oportuno representar isso atrav\'es de uma associa\c{c}\~ao entre a entidade \textquotedbl Pessoas\textquotedbl  e a entidade \textquotedbl Documentos\textquotedbl . Veremos isso mais adiante.
 
 
 \subsection[Entidade: Tipos de Papeis]{Entidade: Tipos de Papeis}\label{Entidade: Tipos de Papeis}
-A entidade \textquotedbl Tipos de Papeis\textquotedbl  foi bastante discutida no cap\'{\i}tulo de Materiais e M\'etodos, como exemplo na descri\c{c}\~ao do m\'etodo de identifica\c{c}\~ao de entidades. Em resumo, podemos recapitular que a entidade \textquotedbl Tipos de Papeis\textquotedbl  representam os papeis que uma pessoa da entidade \textquotedbl Pessoas\textquotedbl  pode desempenhar. Por exemplo, uma pessoa pode desempenhar o papel de aluno, de multiplicador, de professor, de coordenador, etc.
+A entidade \textquotedbl Tipos de Papeis\textquotedbl  foi bastante discutida no cap\'{\i}tulo de Materiais e M\'etodos, como exemplo na descri\c{c}\~ao do m\'etodo de identifica\c{c}\~ao de entidades. Por esta raz\~ao n\~ao reproduziremos aqui o subconjunto de substantivos que permitiu inferir a sua exist\^encia.
+
+
+Em resumo, podemos recapitular que a entidade \textquotedbl Tipos de Papeis\textquotedbl  representa os papeis que uma pessoa da entidade \textquotedbl Pessoas\textquotedbl  pode desempenhar. Por exemplo, uma pessoa pode desempenhar o papel de aluno, de multiplicador, de professor, de coordenador, etc.
 
 
 Os atributos da entidade \textquotedbl Tipos de Papeis\textquotedbl  s\~ao:
@@ -3252,8 +3383,8 @@ Os atributos da entidade \textquotedbl Tipos de Papeis\textquotedbl  s\~ao:
 
 
 \begin{alineas}
-\item nome do tipo de papel
-\item descri\c{c}\~ao do tipo de papel
+\item nome do tipo de papel (e.g. aluno, orientador, professor, coordenador, multiplicador, etc.)
+\item descri\c{c}\~ao do tipo de papel (e.g. \textquotedbl o tipo de papel orientador \'e usado para representar o papel desempenhado por um professor capacitado para orientar bolsas de inicia\c{c}\~oes cient\'{\i}ficas\textquotedbl )
 \end{alineas}
 
 \subsection[Entidade: Documentos]{Entidade: Documentos}\label{Entidade: Documentos}
@@ -3264,7 +3395,7 @@ A inspe\c{c}\~ao do conjunto de substantivos da Tabela XXX, que traz uma sele\c{
 \noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{Documento de Refer\^encia, curr\'{\i}culo, projetos de pesquisa, resolu\c{c}\~oes normativas, apostilas, regras, planejamento, avalia\c{c}\~ao de projeto, presta\c{c}\~ao de contas, Plano de Trabalho, relat\'orio de atividades, di\'arios de bordo, cadastro, of\'{\i}cio, normativos, legisla\c{c}\~ao, proposta, avalia\c{c}\~ao, projetos, fontes bibliogr\'aficas, emendas parlamentares, avalia\c{c}\~ao de impacto, relat\'orios parciais, autoriza\c{c}\~ao, emenda, procedimentos, modelo de neg\'ocios, or\c{c}amento, termos, fontes, diretrizes, autoriza\c{c}\~oes, Registro de Presen\c{c}a, papers, calend\'ario, projeto, relat\'orios finais}\normalize}}}\end{center}
 
 
-Desta maneira, podemos ent\~ao considerar a entidade \textquotedbl Documentos\textquotedbl  como representativa de qualquer tipo de documento, independentemente dele ter um car\'ater educacional ou administrativo, ter sido criado no \^ambito do WASH, ou ser pr\'e-existente, dentre outras possibilidades.
+Desta maneira, podemos considerar a entidade \textquotedbl Documentos\textquotedbl  como representativa de qualquer tipo de documento, independentemente dele ter um car\'ater educacional ou administrativo, ter sido criado no \^ambito do WASH, ou ser pr\'e-existente, dentre outras possibilidades.
 
 
 Os atributos da entidade \textquotedbl Documentos\textquotedbl  s\~ao:
@@ -3272,8 +3403,8 @@ Os atributos da entidade \textquotedbl Documentos\textquotedbl  s\~ao:
 
 
 \begin{alineas}
-\item t\'{\i}tulo do documento
-\item data do documento
+\item t\'{\i}tulo do documento (e.g. \textquotedbl Portaria CTI 178/2018\textquotedbl , \textquotedbl Of\'{\i}cio n° 138\textquotedbl , \textquotedbl Relat\'orio T\'ecnico sobre Rob\'otica\textquotedbl )
+\item data do documento (e.g. 09/12/2017)
 \end{alineas}
 
 \subsection[Entidade: Tipos de Documentos]{Entidade: Tipos de Documentos}\label{Entidade: Tipos de Documentos}
@@ -3292,8 +3423,8 @@ Os atributos da entidade \textquotedbl Tipos de Documentos\textquotedbl  s\~ao:
 
 
 \begin{alineas}
-\item nome do tipo de documento
-\item descri\c{c}\~ao do tipo de documento
+\item nome do tipo de documento (e.g. Portaria, Of\'{\i}cio, Relat\'orio, Plano de Trabalho)
+\item descri\c{c}\~ao do tipo de documento (e.g. \textquotedbl Relat\'orio t\'ecnico \'e um tipo de documento voltado para descrever os m\'etodos e resultados de um trabalho de inicia\c{c}\~ao cient\'{\i}fica\textquotedbl )
 \end{alineas}
 
 Ainda no campo das \textquotedbl tenta\c{c}\~oes\textquotedbl , n\~ao seria de surpreender se algu\'em decidisse colocar o \textquotedbl tipo de documento\textquotedbl  como um atributo da entidade \textquotedbl Documentos\textquotedbl , mas vamos lembrar que, considerando a taxonomia de tipos de documentos, um certo documento pode ser simultaneamente do tipo \textquotedbl relat\'orio\textquotedbl  e do tipo \textquotedbl relat\'orio parcial\textquotedbl , ao passo que outro documento pode ser simultaneamente do tipo \textquotedbl relat\'orio\textquotedbl  e do tipo \textquotedbl relat\'orio final\textquotedbl , situa\c{c}\~ao que indica que um documento pode ser de v\'arios tipos, dentro de uma taxonomia. Em outras palavras, \'e mais oportuno representar o \textquotedbl tipo de um certo documento\textquotedbl  como uma associa\c{c}\~ao entre a entidade \textquotedbl Documentos\textquotedbl  e a entidade \textquotedbl Tipos de Documentos\textquotedbl , conforme ser\'a detalhado adiante.
@@ -3307,7 +3438,7 @@ A inspe\c{c}\~ao do conjunto de elementos da Tabela XXX, que traz uma sele\c{c}\
 \noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{aprendizado tecnol\'ogico, experimenta\c{c}\~ao, sustentabilidade, software. conceitos, m\'etodo cient\'{\i}fico, aptid\~oes, tem\'aticas, scratch, audiovisual, valores do m\'etodo cient\'{\i}fico, cidadania, projetos de pesquisa, engenharia, aprendizagem, projetos, extens\~ao, programa\c{c}\~ao de computadores, capacita\c{c}\~ao, respeito, compromisso, ci\^encia, tecnologia, matem\'atica, cultura digital, inclus\~ao digital, ENCTI, alfabetiza\c{c}\~ao}\normalize}}}\end{center}
 
 
-A entidade \textquotedbl Temas\textquotedbl  remete \`a ideia de assunto tratado, possivelmente, em uma Oficina do WASH. Note que o tema tratado na oficina n\~ao indica a forma como o tema foi tratado, conceito mais relacionado \`a entidade \textquotedbl Tipos de Atividades\textquotedbl . que descrita a seguir.
+A entidade \textquotedbl Temas\textquotedbl  remete \`a ideia de assunto tratado, possivelmente, em uma Oficina do WASH. Note que o tema tratado na oficina n\~ao indica a forma como o tema foi tratado, conceito mais relacionado \`a entidade \textquotedbl Tipos de Atividades\textquotedbl , que ser\'a descrita a seguir.
 
 
 A Entidade \textquotedbl Temas\textquotedbl  tem como atributos:
@@ -3315,8 +3446,8 @@ A Entidade \textquotedbl Temas\textquotedbl  tem como atributos:
 
 
 \begin{alineas}
-\item nome do tema
-\item descri\c{c}\~ao do tema
+\item nome do tema (e.g. matem\'atica, engenharia, rob\'otica, programa\c{c}\~ao de computadores)
+\item descri\c{c}\~ao do tema (e.g. \textquotedbl programa\c{c}\~ao de computadores envolve o desenvolvimento de algoritmos e sua codifica\c{c}\~ao numa linguagem de programa\c{c}\~ao\textquotedbl )
 \end{alineas}
 
 \subsection[Entidade: Tipos de Atividades]{Entidade: Tipos de Atividades}\label{Entidade: Tipos de Atividades}
@@ -3330,16 +3461,23 @@ A inspe\c{c}\~ao do conjunto de elementos da Tabela XXX, que traz uma sele\c{c}\
 A entidade \textquotedbl Tipos de Atividade\textquotedbl  remete \`a ideia de como um certo evento do WASH foi realizado, independentemente do assunto (tema) que foi tratado naquele evento.
 
 
-Destarte, um evento sobre experimenta\c{c}\~ao em qu\'{\i}mica pode ocorrer de v\'arias maneiras: atrav\'es de um evento de demonstra\c{c}\~ao em que algu\'em apresenta para os demais um experimento qu\'{\i}mico, ou atrav\'es de pr\'aticas de laborat\'orio, em que cada participante de uma oficina realiza os experimentos qu\'{\i}micos ou atrav\'es de uma palestra te\'orica sobre o assunto.
+Destarte, um evento sobre experimenta\c{c}\~ao em qu\'{\i}mica (tema) pode ocorrer de v\'arias maneiras:
 
+
+
+\begin{alineas}
+\item atrav\'es de um evento de demonstra\c{c}\~ao em que algu\'em apresenta para os demais um experimento qu\'{\i}mico,
+\item ou atrav\'es de pr\'aticas de laborat\'orio, em que cada participante de uma oficina realiza os experimentos qu\'{\i}micos
+\item ou atrav\'es de uma palestra te\'orica sobre o assunto.
+\end{alineas}
 
 Os atributos da entidade \textquotedbl Tipos de Atividades\textquotedbl  est\~ao listados abaixo:
 
 
 
 \begin{alineas}
-\item nome do tipo de atividade
-\item descri\c{c}\~ao do tipo de atividade
+\item nome do tipo de atividade (e.g. oficina, palestra, comemora\c{c}\~ao, premia\c{c}\~ao, etc.)
+\item descri\c{c}\~ao do tipo de atividade (e.g. \textquotedbl uma oficina \'e um viv\^encia entre participantes que se organizam para realizar atividades pr\'aticas\textquotedbl )
 \end{alineas}
 
 \subsection[Entidade: Institui\c{c}\~oes]{Entidade: Institui\c{c}\~oes}\label{Entidade: Institui\c{c}\~oes}
@@ -3358,12 +3496,15 @@ Podemos identificar os seguintes atributos da entidade \textquotedbl Institui\c{
 
 
 \begin{alineas}
-\item nome da institui\c{c}\~ao
-\item CNPJ da institui\c{c}\~ao
-\item descri\c{c}\~ao da institui\c{c}\~ao
+\item nome da institui\c{c}\~ao (e.g. IFSP, MEC, MIT, CTI, CEMADEN)
+\item CNPJ da institui\c{c}\~ao (e.g.  01.263.896/0026-12)
+\item descri\c{c}\~ao da institui\c{c}\~ao (e.g. \textquotedbl O Cemaden \'e uma institui\c{c}\~ao voltada para o monitoramento e alerta de desastres naturais\textquotedbl )
 \end{alineas}
 
-Note que \'e natural se sentir tentado a incluir a \textquotedbl cidade\textquotedbl  da institui\c{c}\~ao como atributo, mas veremos que isso n\~ao \'e oportuno, porque uma institui\c{c}\~ao pode estar localizada em v\'arias cidades, a exemplo do Instituto Federal de S\~ao Paulo ou da Secretaria de Educa\c{c}\~ao do Estado de S\~ao Paulo. Portanto deixaremos para representar essa situa\c{c}\~ao atrav\'es de uma associa\c{c}\~ao com a entidade \textquotedbl Cidades\textquotedbl . Veremos adiante como isso \'e feito.
+Note que \'e natural se sentir tentado a incluir a \textquotedbl cidade\textquotedbl  da institui\c{c}\~ao como atributo, mas veremos que isso n\~ao \'e oportuno, porque uma institui\c{c}\~ao pode estar localizada em v\'arias cidades, a exemplo do Instituto Federal de S\~ao Paulo ou da Secretaria de Educa\c{c}\~ao do Estado de S\~ao Paulo. Al\'em disso, vimos na Fundamenta\c{c}\~ao Te\'orica o risco de grafar de formas diferentes o nome de uma cidade, quando ela \'e tratada como atributo.
+
+
+Portanto deixaremos para representar essa situa\c{c}\~ao atrav\'es de uma associa\c{c}\~ao com a entidade \textquotedbl Cidades\textquotedbl . Veremos adiante como isso \'e feito.
 
 
 \subsection[Entidade: Tipos de Institui\c{c}\~oes]{Entidade: Tipos de Institui\c{c}\~oes}\label{Entidade: Tipos de Institui\c{c}\~oes}
@@ -3382,8 +3523,8 @@ Para esta entidade, podemos listar os seguintes atributos:
 
 
 \begin{alineas}
-\item nome do tipo de institui\c{c}\~ao
-\item descri\c{c}\~ao do tipo de institui\c{c}\~ao
+\item nome do tipo de institui\c{c}\~ao (e.g. escola, escola p\'ublica, universidade, centro de pesquisa, etc.)
+\item descri\c{c}\~ao do tipo de institui\c{c}\~ao (e.g. \textquotedbl uma Escola P\'ublica Estadual \'e uma institui\c{c}\~ao de ensino gratuita, subordinada \`a Secretaria de Educa\c{c}\~ao Estadual\textquotedbl )
 \end{alineas}
 
 \subsection[Entidade: Eventos]{Entidade: Eventos}\label{Entidade: Eventos}
@@ -3397,7 +3538,7 @@ A inspe\c{c}\~ao do conjunto de elementos da Tabela XXX, que traz uma sele\c{c}\
 A entidade \textquotedbl Eventos\textquotedbl  remete \`a ideia de um acontecimento em que h\'a a intera\c{c}\~ao entre v\'arias pessoas, que se encontram num local determinado, num per\'{\i}odo de tempo espec\'{\i}fico, para a realiza\c{c}\~ao de uma atividade conjunta.
 
 
-Com a pandemia, a no\c{c}\~ao de evento tem que ser expandida, tirando o requisito de intera\c{c}\~ao presencial em local determinado. Isso significa que \textquotedbl a institui\c{c}\~ao em que o evento ocorre\textquotedbl  deixa de ser relevante no caso remoto, conceito que tem que ser substitu\'{\i}do por \textquotedbl a institui\c{c}\~ao que promove o evento\textquotedbl .
+Com a pandemia, a no\c{c}\~ao de evento teve que ser expandida, tirando o requisito de intera\c{c}\~ao presencial em local determinado. Isso significa que \textquotedbl a institui\c{c}\~ao em que o evento ocorre\textquotedbl  deixa de ser relevante no caso remoto, conceito que tem que ser substitu\'{\i}do por \textquotedbl a institui\c{c}\~ao que promove o evento\textquotedbl .
 
 
 Podemos considerar os seguintes atributos para a entidade \textquotedbl Eventos\textquotedbl :
@@ -3405,19 +3546,19 @@ Podemos considerar os seguintes atributos para a entidade \textquotedbl Eventos\
 
 
 \begin{alineas}
-\item nome do evento
-\item data do evento
-\item hor\'ario de in\'{\i}cio
-\item hor\'ario de finaliza\c{c}\~ao
+\item nome do evento (e.g. \textquotedbl Semana Nacional de Ci\^encia e Tecnologia\textquotedbl , \textquotedbl Dia das Crian\c{c}as 2014\textquotedbl )
+\item data do evento (e.g. \textquotedbl 23/02/2019\textquotedbl )
+\item hor\'ario de in\'{\i}cio (e.g. \textquotedbl 9h30min\textquotedbl )
+\item hor\'ario de finaliza\c{c}\~ao (e.g. \textquotedbl 17h20min\textquotedbl )
 \end{alineas}
 
 \'E natural pensar em \textquotedbl institui\c{c}\~ao\textquotedbl  como um atributo de eventos, pensando na institui\c{c}\~ao que teria promovido o evento, mas n\~ao \'e oportuno fazer dessa forma.
 
 
-Um evento pode estar sendo realizado numa dada escola, mas pode ser promovido por um centro de pesquisa, pensando nos conceitos de \textquotedbl Entidade Respons\'avel\textquotedbl  e \textquotedbl Entidade Promotora\textquotedbl  presente na Portaria CTI 178/2018, indicando que a entidade \textquotedbl Eventos\textquotedbl  se relaciona com mais de um elemento da entidade \textquotedbl Institui\c{c}\~oes\textquotedbl . Podemos ter uma situa\c{c}\~ao em que um dado evento ter mais de uma entidade promotora.
+Um evento pode estar sendo realizado numa dada escola, mas pode ser promovido por um centro de pesquisa, por exemplo. Os conceitos de \textquotedbl local de realiza\c{c}\~ao\textquotedbl  e \textquotedbl entidade que promove o evento\textquotedbl  est\~ao presentes na Portaria CTI 178/2018. Essa previs\~ao da portaria antecipa que a entidade \textquotedbl Eventos\textquotedbl  se relaciona com mais de um elemento da entidade \textquotedbl Institui\c{c}\~oes\textquotedbl . Inclusive, podemos ter situa\c{c}\~oes em que um dado evento tem mais de uma entidade promotora, por exemplo.
 
 
-Como se ver\'a adiante, estas situa\c{c}\~oes indicam que \'e mais apropriado utilizar associa\c{c}\~oes para representar qual \'e a institui\c{c}\~ao que promove um evento, como se ver\'a adiante.
+Estas situa\c{c}\~oes indicam que \'e mais apropriado utilizar associa\c{c}\~oes para representar qual \'e a institui\c{c}\~ao que promove um evento, como se ver\'a adiante.
 
 
 \subsection[Entidade: Papeis das Institui\c{c}\~oes]{Entidade: Papeis das Institui\c{c}\~oes}\label{Entidade: Papeis das Institui\c{c}\~oes}
@@ -3431,7 +3572,7 @@ A inspe\c{c}\~ao do conjunto de elementos da Tabela XXX, que traz uma sele\c{c}\
 A Portaria CTI 178/2018 \'e bastante espec\'{\i}fica na defini\c{c}\~ao dos papeis que as institui\c{c}\~oes devem desempenhar no contexto dos eventos do WASH. Esse cuidado se deve ao fato de que o p\'ublico alvo \'e de menores de idade. Portanto, h\'a que existir um respons\'avel pelas crian\c{c}as em todos os eventos.
 
 
-O \textquotedbl papel desempenhado pela institui\c{c}\~ao\textquotedbl  pode ser independente do \textquotedbl tipo de institui\c{c}\~ao\textquotedbl . Por exemplo, uma escola pode desempenhar o papel de \textquotedbl entidade respons\'avel\textquotedbl  num determinado evento e de \textquotedbl entidade promotora\textquotedbl  em outro. Essa multiplicidade de papeis, que podem ocorrer simultaneamente, concomitantemente ou parcialmente sobrepostos, exige que a defini\c{c}\~ao desta entidade \textquotedbl Papeis das Institui\c{c}\~oes\textquotedbl , independentemente das entidades \textquotedbl Institui\c{c}\~oes\textquotedbl  e \textquotedbl Tipos de Institui\c{c}\~oes\textquotedbl .
+O \textquotedbl papel desempenhado pela institui\c{c}\~ao\textquotedbl  pode ser independente do \textquotedbl tipo de institui\c{c}\~ao\textquotedbl . Por exemplo, uma escola pode desempenhar o papel de \textquotedbl entidade respons\'avel\textquotedbl  num determinado evento e de \textquotedbl entidade promotora\textquotedbl  em outro. Essa multiplicidade de papeis, que podem ocorrer ass\'{\i}ncronamente, concomitantemente ou parcialmente sobrepostos, exige que a defini\c{c}\~ao desta entidade \textquotedbl Papeis das Institui\c{c}\~oes\textquotedbl , independentemente das entidades \textquotedbl Institui\c{c}\~oes\textquotedbl  e \textquotedbl Tipos de Institui\c{c}\~oes\textquotedbl .
 
 
 \subsection[Entidade: Tipos de Bolsas]{Entidade: Tipos de Bolsas}\label{Entidade: Tipos de Bolsas}
@@ -3447,9 +3588,9 @@ Assim, a entidade \textquotedbl Tipos de Bolsas\textquotedbl  remete ao conceito
 
 
 \begin{alineas}
-\item nome da bolsa
-\item sigla
-\item dura\c{c}\~ao m\'axima
+\item nome da bolsa (e.g. \textquotedbl Extencionismo A\textquotedbl , \textquotedbl Extencionismo B\textquotedbl , \textquotedbl Programa Institucional de Bolsas de Inicia\c{c}\~ao em Desenvolvimento Tecnol\'ogico e Inova\c{c}\~ao\textquotedbl )
+\item sigla (e.g. EXP A, EXP B, ITI A, ITI B)
+\item dura\c{c}\~ao m\'axima (e.g. \textquotedbl 36 meses\textquotedbl , \textquotedbl 12 meses\textquotedbl , etc.)
 \end{alineas}
 
 Como nos demais t\'opicos, tamb\'em neste identificamos que poderia haver uma percep\c{c}\~ao de que \textquotedbl tipo de bolsa\textquotedbl  deveria ser um atributo da entidade \textquotedbl Pessoas\textquotedbl , afinal, uma pessoa, em geral, pode ter apenas uma bolsa de cada vez.
@@ -3461,14 +3602,21 @@ Ocorre que \'e de interesse do projeto conhecer todas as bolsas que a pessoa tev
 Outro detalhe importante \'e que n\~ao colocamos a institui\c{c}\~ao \`a qual a bolsa est\'a vincula nem a institui\c{c}\~ao que fornece a Bolsa, porque j\'a temos a entidade \textquotedbl Institui\c{c}\~oes\textquotedbl  e devemos usar uma associa\c{c}\~ao para vincular as bolsas \`as institui\c{c}\~oes de fomento.
 
 
-\subsection[Associa\c{c}\~ao: Desempenho]{Associa\c{c}\~ao: Desempenho}\label{Associa\c{c}\~ao: Desempenho}
-Vimos em materias e m\'etodos que um participante do WASH pode desempenhar uma mir\'{\i}ade de papeis, de forma independente, concomitante, simult\^anea ou parcialmente sobreposta.
+\subsection[Entidade: Cidades]{Entidade: Cidades}\label{Entidade: Cidades}
+Identificamos a necessidade de registrar a entidade \textquotedbl Cidades\textquotedbl , que representa as cidades onde as \textquotedbl Institui\c{c}\~oes\textquotedbl  est\~ao localizadas e onde os \textquotedbl Eventos\textquotedbl  s\~ao realizados. Note que n\~ao h\'a uma lista de substantivos na Portaria 178/2018 para motivar a cria\c{c}\~ao desta entidade. No entanto, sua exist\^encia \'e impl\'{\i}cita ao conceito de \textquotedbl Institui\c{c}\~oes\textquotedbl  e \textquotedbl Eventos\textquotedbl .
+
+
+\subsection[Associa\c{c}\~ao: Desempenho P-TP-I]{Associa\c{c}\~ao: Desempenho P-TP-I}\label{Associa\c{c}\~ao: Desempenho P-TP-I}
+Vimos em materias e m\'etodos que um participante do WASH pode desempenhar uma mir\'{\i}ade de papeis, de forma ass\'{\i}ncrona, concomitante, ou parcialmente sobreposta.
 
 
 Vimos que esses papeis podem se dar em institui\c{c}\~oes diferentes, raz\~ao pela qual antecipamos que a associa\c{c}\~ao \textquotedbl Desempenho\textquotedbl  \'e do tipo tern\'aria, ou seja, envolve 3 entidades.
 
 
-Vimos tamb\'em que essa associa\c{c}\~ao pode ser representada por um Diagrama Entidade-Relacionamento simples como que segue:
+Vimos tamb\'em que essa associa\c{c}\~ao pode ser representada por um Diagrama Entidade-Relacionamento simples, como o que segue.
+
+
+Adotamos a pr\'atica do MER de chamar a associa\c{c}\~ao tern\'aria pela sigla constitu\'{\i}da pela primeira letra de cada entidade, mas para ficar mais claro, mantivemos no nome da associa\c{c}\~ao a palavra \textquotedbl Desempenho\textquotedbl , para indicar que ela se refere a \textquotedbl pessoas desempenharem um papel no \^ambito do WASH\textquotedbl . A associa\c{c}\~ao ficou denominada \textquotedbl Desempenho P-TP-I\textquotedbl , com \textquotedbl P\textquotedbl  indicando \textquotedbl Pessoas\textquotedbl , \textquotedbl TP\textquotedbl  indicando \textquotedbl Tipos de Papeis\textquotedbl  e \textquotedbl I\textquotedbl  indicando Institui\c{c}\~oes:
 
 
 
@@ -3478,7 +3626,7 @@ Vimos tamb\'em que essa associa\c{c}\~ao pode ser representada por um Diagrama E
   \node[entity] (Pessoas)  at (0,0)   {Pessoas};
   \node[entity] (TiposdePapeis) at (10,0)   {Tipos de Papeis};
   \node[entity] (Institui\c{c}\~oes) at (5,-3)   {Institui\c{c}\~oes};
-  \node[relationship]    at (5,0) {Desempenho}
+  \node[relationship]    at (5,0) {Desempenho P-TP-I}
     edge (Pessoas)
     edge (TiposdePapeis)
     edge (Institui\c{c}\~oes)
@@ -3493,15 +3641,15 @@ Esta associa\c{c}\~ao tem atributos, que s\~ao usados para registrar quando o pa
 
 
 \begin{alineas}
-\item in\'{\i}cio
-\item fim
+\item in\'{\i}cio (e.g. 22/11/2016)
+\item fim (e.g. 13/01/2020)
 \end{alineas}
 
-\subsection[Associa\c{c}\~ao: Classifica\c{c}\~ao]{Associa\c{c}\~ao: Classifica\c{c}\~ao}\label{Associa\c{c}\~ao: Classifica\c{c}\~ao}
+\subsection[Associa\c{c}\~ao: Classifica\c{c}\~ao de Documentos]{Associa\c{c}\~ao: Classifica\c{c}\~ao de Documentos}\label{Associa\c{c}\~ao: Classifica\c{c}\~ao de Documentos}
 Sabemos que documentos podem ser classificados em uma taxonomia, que costuma ser estruturada de forma hier\'arquica.
 
 
-N\~ao entraremos no m\'erito da estrutura\c{c}\~ao hier\'arquica e vamos, por simplicidade, considerar apenas um aspecto dessa estrutura: um documento pode ser classificado em v\'arios \textquotedbl Tipos de Documentos\textquotedbl  simultaneamente.
+N\~ao entraremos no m\'erito da estrutura\c{c}\~ao hier\'arquica e vamos, por simplicidade, considerar apenas um aspecto dessa estrutura: um documento pode estar associado a v\'arios \textquotedbl Tipos de Documentos\textquotedbl  simultaneamente.
 
 
 
@@ -3510,12 +3658,118 @@ N\~ao entraremos no m\'erito da estrutura\c{c}\~ao hier\'arquica e vamos, por si
    every relationship/.style={fill=orange!20,draw=orange,thick,aspect=1.5}]
   \node[entity] (TiposdeDocumentos)  at (0,0)   {Tipos de Documentos};
   \node[entity] (Documentos) at (10,0)   {Documentos};
-  \node[relationship]    at (5,0) {Classifica\c{c}\~ao}
+  \node[relationship]    at (5,0) {Classifica\c{c}\~ao TD-D}
     edge (TiposdeDocumentos)
     edge (Documentos);
 \end{tikzpicture}
 
 O Diagrama MER acima pode ser lido, da esquerda para direita como \textquotedbl Tipos de Documentos classificam Documentos\textquotedbl  e, no sentido inverso, \textquotedbl Documentos s\~ao classificados segundo Tipos de Documentos\textquotedbl .
+
+
+\subsection[Associa\c{c}\~ao: Classifica\c{c}\~ao de Eventos por Atividade]{Associa\c{c}\~ao: Classifica\c{c}\~ao de Eventos por Atividade}\label{Associa\c{c}\~ao: Classifica\c{c}\~ao de Eventos por Atividade}
+J\'a foi comentado que os eventos do WASH podem ser classificados pelo tipo de atividade. Por exemplo: podemos ter um evento do tipo oficina, outro do tipo palestra, e assim por diante.
+
+
+Esta situa\c{c}\~ao indica uma associa\c{c}\~ao entre a entidade \textquotedbl Eventos\textquotedbl  e \textquotedbl Tipos de Atividades\textquotedbl , como segue:
+
+
+
+\begin{tikzpicture}
+  [every entity/.style={fill=blue!20,draw=blue,thick},
+   every relationship/.style={fill=orange!20,draw=orange,thick,aspect=1.5}]
+  \node[entity] (TipodeAtividade)  at (0,0)   {Tipo de Atividade};
+  \node[entity] (Eventos) at (10,0)   {Eventos};
+  \node[relationship]    at (5,0) {Classifica\c{c}\~ao TA-E}
+    edge (TipodeAtividade)
+    edge (Eventos);
+\end{tikzpicture}
+
+A associa\c{c}\~ao acima pode ser lida, da esquerda para a direita, como: \textquotedbl Tipos de Atividades classificam Eventos\textquotedbl . Da direta para a esquerda, podemos ler como: \textquotedbl Eventos s\~ao classificados segundo Tipos de Atividades\textquotedbl .
+
+
+N\~ao podemos desconsiderar a hip\'otese de que um mesmo evento pode estar associado a mais de uma atividade. Podemos ter um evento que, inicialmente, transcorreu na forma de Oficina e, depois, na forma de palestra. Podemos ter um evento que ocorre em duas salas diferentes. Na primeira podemos ter o formato de oficina e na segunda podemos ter o formato de Roda de Conversa. Por esse motivo, esta associa\c{c}\~ao deve prever essa possibilidade.
+
+
+\subsection[Associa\c{c}\~ao: Classifica\c{c}\~ao de Eventos por Tema]{Associa\c{c}\~ao: Classifica\c{c}\~ao de Eventos por Tema}\label{Associa\c{c}\~ao: Classifica\c{c}\~ao de Eventos por Tema}
+Os eventos do WASH tamb\'em podem ser classificados pelo tema abordado, lembrando que um mesmo evento pode abordar mais de um tema.
+
+
+A associa\c{c}\~ao pertinente pode ser representada como segue:
+
+
+
+\begin{tikzpicture}
+  [every entity/.style={fill=blue!20,draw=blue,thick},
+   every relationship/.style={fill=orange!20,draw=orange,thick,aspect=1.5}]
+  \node[entity] (Temas)  at (0,0)   {Temas};
+  \node[entity] (Eventos) at (10,0)   {Eventos};
+  \node[relationship]    at (5,0) {Classifica\c{c}\~ao T-E}
+    edge (Temas)
+    edge (Eventos);
+\end{tikzpicture}
+
+A associa\c{c}\~ao indicada pode ser lida, da esquerda para direita, como segue: \textquotedbl Temas classificam Eventos\textquotedbl , ao passo que direita para  esquerda pode ser lida como \textquotedbl Eventos s\~ao classificados por Temas\textquotedbl .
+
+
+\subsection[Associa\c{c}\~ao: Classifica\c{c}\~ao das Institui\c{c}\~oes]{Associa\c{c}\~ao: Classifica\c{c}\~ao das Institui\c{c}\~oes}\label{Associa\c{c}\~ao: Classifica\c{c}\~ao das Institui\c{c}\~oes}
+Assim como ocorre com rela\c{c}\~ao \`a entidade \textquotedbl Documentos\textquotedbl , tamb\'em existe uma taxonomia de \textquotedbl Institui\c{c}\~oes\textquotedbl . Isto significa que uma institui\c{c}\~ao pode ser associada a mais de um tipo de institui\c{c}\~ao. Esta situa\c{c}\~ao indica a exist\^encia de uma associa\c{c}\~ao como segue:
+
+
+
+\begin{tikzpicture}
+  [every entity/.style={fill=blue!20,draw=blue,thick},
+   every relationship/.style={fill=orange!20,draw=orange,thick,aspect=1.5}]
+  \node[entity] (TiposdeInstititui\c{c}\~oes)  at (0,0)   {Tipos de Instititui\c{c}\~oes};
+  \node[entity] (Institui\c{c}\~oes) at (10,0)   {Institui\c{c}\~oes};
+  \node[relationship]    at (5,0) {Classifica\c{c}\~ao TI-I}
+    edge (TiposdeInstititui\c{c}\~oes)
+    edge (Institui\c{c}\~oes);
+\end{tikzpicture}
+
+Da mesma forma como nos demais casos, da esquerda para a direita podemos ler \textquotedbl Tipos de Institui\c{c}\~oes classificam Institui\c{c}\~oes\textquotedbl  e, no sentido inverso, \textquotedbl Institui\c{c}\~oes s\~ao classificadas pelo Tipo de Institui\c{c}\~oes\textquotedbl .
+
+
+\subsection[Associa\c{c}\~ao: Desempenho I-PI-E]{Associa\c{c}\~ao: Desempenho I-PI-E}\label{Associa\c{c}\~ao: Desempenho I-PI-E}
+De forma semelhante ao que acontece na associa\c{c}\~ao \textquotedbl Desempenho P-TP-I\textquotedbl , que indica o desempenho de \textquotedbl Tipos de Papeis\textquotedbl  por \textquotedbl Pessoas\textquotedbl  vinculadas a \textquotedbl Institui\c{c}\~oes\textquotedbl , podemos ter os \textquotedbl Papeis das Institui\c{c}\~oes\textquotedbl  desempenhados por \textquotedbl Institui\c{c}\~oes\textquotedbl  no \^ambito de \textquotedbl Eventos\textquotedbl .
+
+
+Vimos que a Portaria CTI 178/2018 prev\^e alguns papeis especiais para as institui\c{c}\~oes, no \^ambito do WASH, tais como:
+
+
+
+\begin{alineas}
+\item Institui\c{c}\~oes Promotoras
+\item Institui\c{c}\~oes Executoras
+\item Institui\c{c}\~oes Respons\'aveis
+\end{alineas}
+
+Vimos que uma institui\c{c}\~ao pode assumir um ou mais papeis durante um evento, e diferentes papeis para eventos diferentes.
+
+
+(Nota: o termo \textquotedbl entidade\textquotedbl  \'e usado no sentido de \textquotedbl institui\c{c}\~ao\textquotedbl  na Portaria 178/2018. Para evitar confus\~ao com o conceito de \textquotedbl entidades\textquotedbl  do Modelo MER, aqui ser\'a substitu\'{\i}do por \textquotedbl institui\c{c}\~ao\textquotedbl .)
+
+
+Por exemplo: o CTI j\'a foi, simultaneamente, \textquotedbl Institui\c{c}\~ao Promotora\textquotedbl  e \textquotedbl Institui\c{c}\~ao Respons\'avel\textquotedbl  em alguns eventos, ao passo que em outros o CTI atuou apenas como \textquotedbl Institui\c{c}\~ao Promotora\textquotedbl . O IFSP j\'a foi apenas \textquotedbl Institui\c{c}\~ao Respons\'avel\textquotedbl  para alguns eventos, sendo \textquotedbl Institui\c{c}\~ao Promotora\textquotedbl  para outros. Essa variedade de papeis requer uma associa\c{c}\~ao do tipo tern\'aria, como segue:
+
+
+
+\begin{tikzpicture}
+  [every entity/.style={fill=blue!20,draw=blue,thick},
+   every relationship/.style={fill=orange!20,draw=orange,thick,aspect=1.5}]
+  \node[entity] (Institui\c{c}\~ao)  at (0,0)   {Institui\c{c}\~ao};
+  \node[entity] (PapeisdasInstitui\c{c}\~oes) at (10,0)   {Papeis das Institui\c{c}\~oes};
+  \node[entity] (Eventos) at (5,-3)   {Eventos};
+  \node[relationship]    at (5,0) {Desempenho I-PI-E}
+    edge (Institui\c{c}\~ao)
+    edge (PapeisdasInstitui\c{c}\~oes)
+    edge (Eventos)
+	;
+\end{tikzpicture}
+
+Denominados a asssocia\c{c}\~ao como \textquotedbl Desempenho I-PI-E\textquotedbl , com \textquotedbl I\textquotedbl  para Institui\c{c}\~oes, \textquotedbl PI\textquotedbl  para \textquotedbl Papeis das Institui\c{c}\~oes\textquotedbl  e \textquotedbl E\textquotedbl  para \textquotedbl Eventos\textquotedbl .
+
+
+Esta associa\c{c}\~ao pode ser lida, da esquerda para direita como segue: \textquotedbl As Institui\c{c}\~oes desempenham Papeis nos Eventos\textquotedbl . Da direita para a esquerda, a associa\c{c}\~ao pode ser lida como segue: \textquotedbl Papeis s\~ao desempenhados por Institui\c{c}\~oes nos Eventos\textquotedbl .
 
 
 \section[Caracteriza\c{c}\~ao dos Resultados do WASH (eixo 3)]{Caracteriza\c{c}\~ao dos Resultados do WASH (eixo 3)}\label{Caracteriza\c{c}\~ao dos Resultados do WASH (eixo 3)}

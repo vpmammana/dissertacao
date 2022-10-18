@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  17 OCT 2022 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  18 OCT 2022 03:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2265,14 +2265,14 @@ sed on input line 308.
 
 ])
 (./USPSC-modelo-IAU_RedarTex.lof
-Underfull \vbox (badness 3128) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15
 
 ])
-[16] (./USPSC-modelo-IAU_RedarTex.lot) [17
+[16] (./USPSC-modelo-IAU_RedarTex.lot [17
 
-] [18]
+]) [18]
 (./USPSC-modelo-IAU_RedarTex.loq) [19
 
 ] [20
@@ -2303,64 +2303,64 @@ Underfull \vbox (badness 1789) has occurred while \output is active []
  [25
 
 ]
-Overfull \hbox (1.5877pt too wide) detected at line 51
- \T1/lmss/bx/n/12 100
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 55
- \T1/lmss/bx/n/12 113
+Overfull \hbox (1.5877pt too wide) detected at line 52
+ \T1/lmss/bx/n/12 103
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 56
- \T1/lmss/bx/n/12 113
+ \T1/lmss/bx/n/12 115
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 60
- \T1/lmss/bx/n/12 117
+Overfull \hbox (1.5877pt too wide) detected at line 57
+ \T1/lmss/bx/n/12 115
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 74
- \T1/lmss/bx/n/12 125
+Overfull \hbox (1.5877pt too wide) detected at line 61
+ \T1/lmss/bx/n/12 119
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 87
- \T1/lmss/bx/n/12 138
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 89
- \T1/lmss/bx/n/12 141
+Overfull \hbox (1.5877pt too wide) detected at line 80
+ \T1/lmss/bx/n/12 131
  []
 
 [26]
-Overfull \hbox (1.5877pt too wide) detected at line 91
- \T1/lmss/bx/n/12 143
- []
-
-
 Overfull \hbox (1.5877pt too wide) detected at line 93
- \T1/lmss/bx/n/12 145
+ \T1/lmss/bx/n/12 144
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 99.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 99.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 99.
 
-Overfull \hbox (1.5877pt too wide) detected at line 103
+Overfull \hbox (1.5877pt too wide) detected at line 95
+ \T1/lmss/bx/n/12 147
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 97
+ \T1/lmss/bx/n/12 149
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 99
  \T1/lmss/bx/n/12 151
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 105.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 105.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 105.
 
-Overfull \hbox (1.5877pt too wide) detected at line 107
- \T1/lmss/bx/n/12 153
+Overfull \hbox (1.5877pt too wide) detected at line 109
+ \T1/lmss/bx/n/12 157
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 113
+ \T1/lmss/bx/n/12 159
  []
 
 ) [27] [28
@@ -2368,7 +2368,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 107
 ] [29
 
 ] [30] [31]
-<../../imagens/MEOS.png, id=534, 853.1875pt x 294.09875pt>
+<../../imagens/MEOS.png, id=556, 853.1875pt x 294.09875pt>
 File: ../../imagens/MEOS.png Graphic file (type png)
 <use ../../imagens/MEOS.png>
 Package pdftex.def Info: ../../imagens/MEOS.png  used on input line 691.
@@ -2717,7 +2717,7 @@ l.1662 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
-<../../imagens/Herodote.jpg, id=611, 337.26pt x 481.8pt>
+<../../imagens/Herodote.jpg, id=633, 337.26pt x 481.8pt>
 File: ../../imagens/Herodote.jpg Graphic file (type jpg)
 <use ../../imagens/Herodote.jpg>
 Package pdftex.def Info: ../../imagens/Herodote.jpg  used on input line 1669.
@@ -2986,7 +2986,7 @@ l.1703 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
-<../../imagens/ranke.jpg, id=612, 107.38997pt x 148.80312pt>
+<../../imagens/ranke.jpg, id=634, 107.38997pt x 148.80312pt>
 File: ../../imagens/ranke.jpg Graphic file (type jpg)
 <use ../../imagens/ranke.jpg>
 Package pdftex.def Info: ../../imagens/ranke.jpg  used on input line 1710.
@@ -3241,32 +3241,34 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [66]
-<../../imagens/niveis-abstracao.png, id=721, 1127.21124pt x 796.9775pt>
+<../../imagens/niveis-abstracao.png, id=743, 1127.21124pt x 796.9775pt>
 File: ../../imagens/niveis-abstracao.png Graphic file (type png)
 <use ../../imagens/niveis-abstracao.png>
 Package pdftex.def Info: ../../imagens/niveis-abstracao.png  used on input line
  3444.
 (pdftex.def)             Requested size: 1127.2085pt x 796.97554pt.
 
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.3498 ...les (Setzer e Silva, 2017)}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \vbox (badness 4416) has occurred while \output is active []
 
-[67] [68 <../../imagens/niveis-abstracao.png>] [69]
+ [67]
+[68 <../../imagens/niveis-abstracao.png>]
+<../../imagens/exemplo-de-taxonomia.jpg, id=755, 1622.06pt x 1911.14pt>
+File: ../../imagens/exemplo-de-taxonomia.jpg Graphic file (type jpg)
+<use ../../imagens/exemplo-de-taxonomia.jpg>
+Package pdftex.def Info: ../../imagens/exemplo-de-taxonomia.jpg  used on input 
+line 3677.
+(pdftex.def)             Requested size: 1622.05606pt x 1911.13535pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
+ [69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70 <../../imagens/exemplo-de-taxonomia.jpg>]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.3767 ...ia  (Setzer e Silva, 2017)}\normalize}}}
+l.3731 ...les (Setzer e Silva, 2017)}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3275,10 +3277,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.3892 ...soas participam de Eventos}\normalize}}}
+l.4000 ...ia  (Setzer e Silva, 2017)}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3286,10 +3291,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[73]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.3907 ...ticipa\c{c}\~ao de pessoas}\normalize}}}
+l.4125 ...soas participam de Eventos}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3297,49 +3303,33 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<../../imagens/MER-crop.png, id=746, 1081.03876pt x 360.34625pt>
+[74]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.4140 ...it{Eventos recebem pessoas}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<../../imagens/MER-crop.png, id=781, 1081.03876pt x 360.34625pt>
 File: ../../imagens/MER-crop.png Graphic file (type png)
 <use ../../imagens/MER-crop.png>
-Package pdftex.def Info: ../../imagens/MER-crop.png  used on input line 3939.
+Package pdftex.def Info: ../../imagens/MER-crop.png  used on input line 4172.
 (pdftex.def)             Requested size: 1081.03612pt x 360.34537pt.
-<../../imagens/ER-ternario.png, id=747, 1530.71875pt x 557.08125pt>
-File: ../../imagens/ER-ternario.png Graphic file (type png)
-<use ../../imagens/ER-ternario.png>
-Package pdftex.def Info: ../../imagens/ER-ternario.png  used on input line 3965
-.
-(pdftex.def)             Requested size: 1530.71503pt x 557.0799pt.
-[72 <../../imagens/MER-crop.png>]
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
- [73 <../../imagens/ER-ternario.png>] [74] [75]
+<../../imagens/P-TP-I.png, id=782, 1207.51125pt x 370.38374pt>
+File: ../../imagens/P-TP-I.png Graphic file (type png)
+<use ../../imagens/P-TP-I.png>
+Package pdftex.def Info: ../../imagens/P-TP-I.png  used on input line 4198.
+(pdftex.def)             Requested size: 1207.5083pt x 370.38283pt.
+[75 <../../imagens/MER-crop.png>] [76 <../../imagens/P-TP-I.png>] [77]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.4257 ... livre de  MAMMANA (1999))}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[76] [77]
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.4471 ...liza\c{c}\~ao, no Sistema.}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[78]
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.4630 ...ao livre de FULLER (2011))}\normalize}}}
+l.4490 ... livre de  MAMMANA (1999))}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3350,12 +3340,15 @@ and I'll forget about whatever was undefined.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [79]
-[80] [81] [82] [83]
+[80]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.4968 ...~ao Livre de  CODD (1970))}\normalize}}}
+l.4704 ...liza\c{c}\~ao, no Sistema.}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3363,11 +3356,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[84]
+[81]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.5027 ...(adaptado de RelDB (2019))}\normalize}}}
+l.4863 ...ao livre de FULLER (2011))}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3375,7 +3368,31 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[85] [86]
+[82] [83] [84] [85] [86]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.5201 ...~ao Livre de  CODD (1970))}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[87]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.5260 ...(adaptado de RelDB (2019))}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[88] [89]
 
 ! Package inputenc Error: Unicode character ẽ (U+1EBD)
 (inputenc)                not set up for use with LaTeX.
@@ -3384,17 +3401,17 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5120 ...andidata. A compreens\~ao das consequẽ
+l.5353 ...andidata. A compreens\~ao das consequẽ
                                                   ncias de cada regra n\~ao ...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[87] [88] [89]
+[90] [91] [92]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.5394 ...dbl Paulo\%\textquotedbl ;}\normalize}}}
+l.5627 ...dbl Paulo\%\textquotedbl ;}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3403,7 +3420,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 5394--5394
+Underfull \hbox (badness 3872) in paragraph at lines 5627--5627
 []\T1/lmr/m/it/10.95 (+20) SELECT nome_-par-ti-ci-pante FROM par-ti-ci-pan-tes2
  WHERE
  []
@@ -3411,7 +3428,7 @@ Underfull \hbox (badness 3872) in paragraph at lines 5394--5394
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.5409 ...dbl Paulo\%\textquotedbl ;}\normalize}}}
+l.5642 ...dbl Paulo\%\textquotedbl ;}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3419,43 +3436,41 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[90] [91] [92
+[93] [94] [95
 
-] [93]
-Underfull \vbox (badness 4595) has occurred while \output is active []
-
- [94]
-[95]
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.5996 ...ntes, atendidos, deputados}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.6033 ...tes,  atendidos, deputados}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[96]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [97]
+ [96]
+[97]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.6265 ... fundamental\textquotedbl }\normalize}}}
+l.6249 ...ntes, atendidos, deputados}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[98]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.6286 ...tes,  atendidos, deputados}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[99]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.6529 ... fundamental\textquotedbl }\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3466,7 +3481,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.6280 ...otedbl Pedro\textquotedbl }\normalize}}}
+l.6544 ...otedbl Pedro\textquotedbl }\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3474,21 +3489,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<../../imagens/DiagramaVenn.png, id=923, 1303.87125pt x 618.31pt>
+<../../imagens/DiagramaVenn.png, id=955, 1303.87125pt x 618.31pt>
 File: ../../imagens/DiagramaVenn.png Graphic file (type png)
 <use ../../imagens/DiagramaVenn.png>
-Package pdftex.def Info: ../../imagens/DiagramaVenn.png  used on input line 629
-0.
+Package pdftex.def Info: ../../imagens/DiagramaVenn.png  used on input line 655
+4.
 (pdftex.def)             Requested size: 1303.86807pt x 618.30849pt.
-[98]
-<../../imagens/digrama-associacoes4.png, id=928, 1127.21124pt x 796.9775pt>
+[100]
+<../../imagens/digrama-associacoes4.png, id=960, 1127.21124pt x 796.9775pt>
 File: ../../imagens/digrama-associacoes4.png Graphic file (type png)
 <use ../../imagens/digrama-associacoes4.png>
 Package pdftex.def Info: ../../imagens/digrama-associacoes4.png  used on input 
-line 6349.
+line 6613.
 (pdftex.def)             Requested size: 1127.2085pt x 796.97554pt.
- [99 <../../imagens/DiagramaVenn.png>] [100 <../../imagens/digrama-associacoes4
-.png>]
+
+Underfull \vbox (badness 4341) has occurred while \output is active []
+
+ [101 <../../imagens/DiagramaVenn.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102 <../../imagens/digrama-associacoes4.png>]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -3496,7 +3516,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `m' ignored and `p' used.
 
@@ -3507,7 +3527,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `a' ignored and `p' used.
 
@@ -3518,7 +3538,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -3529,7 +3549,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `s' ignored and `p' used.
 
@@ -3540,7 +3560,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -3551,7 +3571,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `z' ignored and `p' used.
 
@@ -3562,7 +3582,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -3573,7 +3593,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `=' ignored and `p' used.
 
@@ -3584,7 +3604,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -3595,7 +3615,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -3606,7 +3626,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -3617,7 +3637,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -3628,7 +3648,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `w' ignored and `p' used.
 
@@ -3639,7 +3659,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -3650,7 +3670,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `d' ignored and `p' used.
 
@@ -3661,7 +3681,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
@@ -3672,7 +3692,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -3683,7 +3703,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -3694,7 +3714,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -3705,7 +3725,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -3716,7 +3736,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -3727,7 +3747,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -3738,7 +3758,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `g' ignored and `p' used.
 
@@ -3749,59 +3769,55 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6525 ...ure}[max size={\textwidth}{\textheight}]
+l.6789 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
-<../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=940, 193.9245pt x 3
+<../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=972, 193.9245pt x 3
 08.352pt>
 File: ../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg Graphic file (type
  jpg)
 <use ../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg>
 Package pdftex.def Info: ../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg
-  used on input line 6532.
+  used on input line 6796.
 (pdftex.def)             Requested size: 181.99722pt x 289.38982pt.
-<../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=941, 207.8967pt x 3
+<../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=973, 207.8967pt x 3
 08.352pt>
 File: ../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg Graphic file (type
  jpg)
 <use ../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg>
 Package pdftex.def Info: ../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg
-  used on input line 6539.
+  used on input line 6803.
 (pdftex.def)             Requested size: 181.99722pt x 269.94377pt.
-<../../imagens/blurred-planilha2.png, id=942, 922.94812pt x 337.26pt>
+<../../imagens/blurred-planilha2.png, id=974, 922.94812pt x 337.26pt>
 File: ../../imagens/blurred-planilha2.png Graphic file (type png)
 <use ../../imagens/blurred-planilha2.png>
 Package pdftex.def Info: ../../imagens/blurred-planilha2.png  used on input lin
-e 6546.
+e 6810.
 (pdftex.def)             Requested size: 181.99722pt x 66.5039pt.
-[101] [102 <../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg> <../../imag
+[103] [104 <../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg> <../../imag
 ens/blurred-Presenca-Oficina-2014-09-06.jpeg> <../../imagens/blurred-planilha2.
 png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [103]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [104]
-[105]
+ [105]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [106]
-[107] [108] [109] [110] [111] [112
-
-] [113] [114] [115]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116]
-Underfull \vbox (badness 1867) has occurred while \output is active []
+ [107]
+[108] [109] [110] [111] [112] [113] [114
 
- [117]
-[118]
+] [115] [116] [117]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118]
+[119] [120]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.7718 ...ojeto, relat\'orios finais}\normalize}}}
+l.7993 ...ojeto, relat\'orios finais}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3812,7 +3828,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.7762 ...ojeto, relat\'orios finais}\normalize}}}
+l.8037 ...ojeto, relat\'orios finais}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3820,11 +3836,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[119]
+
+Underfull \vbox (badness 5667) has occurred while \output is active []
+
+ [121]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.7817 ...ENCTI, alfabetiza\c{c}\~ao}\normalize}}}
+l.8092 ...ENCTI, alfabetiza\c{c}\~ao}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3832,57 +3851,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[120]
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.7861 ...c{c}\~ao, monitoria, curso}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.7916 ...\'avel, Entidade Promotora}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \vbox (badness 3009) has occurred while \output is active []
 
-[121]
+ [122]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.7972 ...e ensino, escolas privadas}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.8016 ...presen\c{c}a, calend\'ario}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[122]
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.8106 ...\'avel, Entidade Promotora}\normalize}}}
+l.8136 ...c{c}\~ao, monitoria, curso}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3894,19 +3870,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.8144 ...rama de bolsas, orientador}\normalize}}}
-                                                  \end{center}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[124] [125] [126] [127]
-! Undefined control sequence.
-<recently read> \normalize 
-                           
-l.8521 ... da tabela participantes2;}\normalize}}}
+l.8198 ...\'avel, Entidade Promotora}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3917,7 +3881,31 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.8547 ...ante) from participantes2;}\normalize}}}
+l.8265 ...e ensino, escolas privadas}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[124]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.8309 ...presen\c{c}a, calend\'ario}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[125]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.8399 ...\'avel, Entidade Promotora}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3928,7 +3916,27 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.8595 ... da tabela participantes2;}\normalize}}}
+l.8437 ...rama de bolsas, orientador}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[126] [127]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [128]
+[129]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [130]
+[131] [132]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.9071 ... da tabela participantes2;}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3939,7 +3947,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.8621 ...ante) from participantes2;}\normalize}}}
+l.9097 ...ante) from participantes2;}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3947,11 +3955,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[128]
+
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
+ [133]
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.8686 ...nte e ano\_do\_nascimento;}\normalize}}}
+l.9145 ... da tabela participantes2;}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3962,7 +3973,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \normalize 
                            
-l.8701 ...icipante, ano\_nascimento;}\normalize}}}
+l.9171 ...ante) from participantes2;}\normalize}}}
                                                   \end{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3970,7 +3981,29 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[129] [130]
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.9236 ...nte e ano\_do\_nascimento;}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \normalize 
+                           
+l.9251 ...icipante, ano\_nascimento;}\normalize}}}
+                                                  \end{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[134] [135]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -3978,7 +4011,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `m' ignored and `p' used.
 
@@ -3989,7 +4022,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `a' ignored and `p' used.
 
@@ -4000,7 +4033,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4011,7 +4044,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `s' ignored and `p' used.
 
@@ -4022,7 +4055,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4033,7 +4066,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `z' ignored and `p' used.
 
@@ -4044,7 +4077,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4055,7 +4088,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `=' ignored and `p' used.
 
@@ -4066,7 +4099,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -4077,7 +4110,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -4088,7 +4121,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4099,7 +4132,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4110,7 +4143,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `w' ignored and `p' used.
 
@@ -4121,7 +4154,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4132,7 +4165,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `d' ignored and `p' used.
 
@@ -4143,7 +4176,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
@@ -4154,7 +4187,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -4165,7 +4198,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -4176,7 +4209,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4187,7 +4220,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4198,7 +4231,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4209,7 +4242,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4220,7 +4253,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `g' ignored and `p' used.
 
@@ -4231,48 +4264,48 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8801 ...ure}[max size={\textwidth}{\textheight}]
+l.9351 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
-<../../imagens/Evento-Ciencia-Em-Show.jpg, id=1150, 622.325pt x 414.54875pt>
+<../../imagens/Evento-Ciencia-Em-Show.jpg, id=1195, 622.325pt x 414.54875pt>
 File: ../../imagens/Evento-Ciencia-Em-Show.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Ciencia-Em-Show.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Ciencia-Em-Show.jpg  used on inpu
-t line 8808.
+t line 9358.
 (pdftex.def)             Requested size: 181.99722pt x 121.23445pt.
-<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1151, 2007.5pt x 1337.
+<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1196, 2007.5pt x 1337.
 99875pt>
 File: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type jp
 g)
 <use ../../imagens/dia-das-criancas-2022-10-03-menor.JPG>
 Package pdftex.def Info: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG  u
-sed on input line 8815.
+sed on input line 9365.
 (pdftex.def)             Requested size: 181.99722pt x 121.29259pt.
-<../../imagens/confraternizacao-de-natal-menor.jpeg, id=1152, 2007.5pt x 1337.9
+<../../imagens/confraternizacao-de-natal-menor.jpeg, id=1197, 2007.5pt x 1337.9
 9875pt>
 File: ../../imagens/confraternizacao-de-natal-menor.jpeg Graphic file (type jpg
 )
 <use ../../imagens/confraternizacao-de-natal-menor.jpeg>
 Package pdftex.def Info: ../../imagens/confraternizacao-de-natal-menor.jpeg  us
-ed on input line 8822.
+ed on input line 9372.
 (pdftex.def)             Requested size: 181.99722pt x 121.29259pt.
-<../../imagens/Evento-Greenk-2018-05-27.jpg, id=1153, 1043.9pt x 782.925pt>
+<../../imagens/Evento-Greenk-2018-05-27.jpg, id=1198, 1043.9pt x 782.925pt>
 File: ../../imagens/Evento-Greenk-2018-05-27.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Greenk-2018-05-27.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Greenk-2018-05-27.jpg  used on in
-put line 8829.
+put line 9379.
 (pdftex.def)             Requested size: 181.99722pt x 136.48828pt.
-<../../imagens/MAAS.jpg, id=1154, 1043.9pt x 782.925pt>
+<../../imagens/MAAS.jpg, id=1199, 1043.9pt x 782.925pt>
 File: ../../imagens/MAAS.jpg Graphic file (type jpg)
 <use ../../imagens/MAAS.jpg>
-Package pdftex.def Info: ../../imagens/MAAS.jpg  used on input line 8836.
+Package pdftex.def Info: ../../imagens/MAAS.jpg  used on input line 9386.
 (pdftex.def)             Requested size: 181.99722pt x 136.48828pt.
-<../../imagens/Ciencia-em-Show-prado.jpeg, id=1155, 1027.84pt x 562.1pt>
+<../../imagens/Ciencia-em-Show-prado.jpeg, id=1200, 1027.84pt x 562.1pt>
 File: ../../imagens/Ciencia-em-Show-prado.jpeg Graphic file (type jpg)
 <use ../../imagens/Ciencia-em-Show-prado.jpeg>
 Package pdftex.def Info: ../../imagens/Ciencia-em-Show-prado.jpeg  used on inpu
-t line 8843.
+t line 9393.
 (pdftex.def)             Requested size: 181.99722pt x 99.52686pt.
 
 ! LaTeX Error: Unknown float option `m'.
@@ -4281,7 +4314,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `m' ignored and `p' used.
 
@@ -4292,7 +4325,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `a' ignored and `p' used.
 
@@ -4303,7 +4336,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4314,7 +4347,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `s' ignored and `p' used.
 
@@ -4325,7 +4358,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4336,7 +4369,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `z' ignored and `p' used.
 
@@ -4347,7 +4380,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4358,7 +4391,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `=' ignored and `p' used.
 
@@ -4369,7 +4402,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -4380,7 +4413,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -4391,7 +4424,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4402,7 +4435,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4413,7 +4446,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `w' ignored and `p' used.
 
@@ -4424,7 +4457,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4435,7 +4468,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `d' ignored and `p' used.
 
@@ -4446,7 +4479,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
@@ -4457,7 +4490,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -4468,7 +4501,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -4479,7 +4512,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4490,7 +4523,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4501,7 +4534,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4512,7 +4545,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4523,7 +4556,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `g' ignored and `p' used.
 
@@ -4534,16 +4567,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8866 ...ure}[max size={\textwidth}{\textheight}]
+l.9416 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
-<../../imagens/Ciencia-Prado-publico.jpeg, id=1156, 1284.8pt x 856.19875pt>
+<../../imagens/Ciencia-Prado-publico.jpeg, id=1201, 1284.8pt x 856.19875pt>
 File: ../../imagens/Ciencia-Prado-publico.jpeg Graphic file (type jpg)
 <use ../../imagens/Ciencia-Prado-publico.jpeg>
 Package pdftex.def Info: ../../imagens/Ciencia-Prado-publico.jpeg  used on inpu
-t line 8873.
+t line 9423.
 (pdftex.def)             Requested size: 181.99722pt x 121.27797pt.
+[136] [137 <../../imagens/Evento-Ciencia-Em-Show.jpg> <../../imagens/dia-das-cr
+iancas-2022-10-03-menor.JPG> <../../imagens/confraternizacao-de-natal-menor.jpe
+g> <../../imagens/Evento-Greenk-2018-05-27.jpg> <../../imagens/MAAS.jpg> <../..
+/imagens/Ciencia-em-Show-prado.jpeg>]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -4551,7 +4588,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `m' ignored and `p' used.
 
@@ -4562,7 +4599,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `a' ignored and `p' used.
 
@@ -4573,7 +4610,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4584,7 +4621,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `s' ignored and `p' used.
 
@@ -4595,7 +4632,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4606,7 +4643,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `z' ignored and `p' used.
 
@@ -4617,7 +4654,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4628,7 +4665,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `=' ignored and `p' used.
 
@@ -4639,7 +4676,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -4650,7 +4687,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -4661,7 +4698,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4672,7 +4709,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4683,7 +4720,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `w' ignored and `p' used.
 
@@ -4694,7 +4731,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4705,7 +4742,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `d' ignored and `p' used.
 
@@ -4716,7 +4753,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
@@ -4727,7 +4764,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -4738,7 +4775,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -4749,7 +4786,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4760,7 +4797,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4771,7 +4808,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4782,7 +4819,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4793,7 +4830,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `g' ignored and `p' used.
 
@@ -4804,35 +4841,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8941 ...ure}[max size={\textwidth}{\textheight}]
+l.9491 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
-<../../imagens/output-participantes.jpeg, id=1157, 2258.4375pt x 3011.25pt>
+<../../imagens/output-participantes.jpeg, id=1218, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-participantes.jpeg Graphic file (type jpg)
 <use ../../imagens/output-participantes.jpeg>
 Package pdftex.def Info: ../../imagens/output-participantes.jpeg  used on input
- line 8948.
+ line 9498.
 (pdftex.def)             Requested size: 181.99722pt x 242.65094pt.
-<../../imagens/output-participantes2.jpeg, id=1158, 2258.4375pt x 3011.25pt>
+<../../imagens/output-participantes2.jpeg, id=1219, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-participantes2.jpeg Graphic file (type jpg)
 <use ../../imagens/output-participantes2.jpeg>
 Package pdftex.def Info: ../../imagens/output-participantes2.jpeg  used on inpu
-t line 8955.
+t line 9505.
 (pdftex.def)             Requested size: 181.99722pt x 242.65094pt.
-<../../imagens/output-media-participacoes.jpeg, id=1159, 2258.4375pt x 3011.25p
+<../../imagens/output-media-participacoes.jpeg, id=1220, 2258.4375pt x 3011.25p
 t>
 File: ../../imagens/output-media-participacoes.jpeg Graphic file (type jpg)
 <use ../../imagens/output-media-participacoes.jpeg>
 Package pdftex.def Info: ../../imagens/output-media-participacoes.jpeg  used on
- input line 8962.
+ input line 9512.
 (pdftex.def)             Requested size: 181.99722pt x 242.65094pt.
-[131] [132 <../../imagens/Evento-Ciencia-Em-Show.jpg> <../../imagens/dia-das-cr
-iancas-2022-10-03-menor.JPG> <../../imagens/confraternizacao-de-natal-menor.jpe
-g> <../../imagens/Evento-Greenk-2018-05-27.jpg> <../../imagens/MAAS.jpg> <../..
-/imagens/Ciencia-em-Show-prado.jpeg>] [133 <../../imagens/Ciencia-Prado-publico
-.jpeg> <../../imagens/output-participantes.jpeg> <../../imagens/output-particip
-antes2.jpeg> <../../imagens/output-media-participacoes.jpeg>] [134]
+[138 <../../imagens/Ciencia-Prado-publico.jpeg>] [139 <../../imagens/output-par
+ticipantes.jpeg> <../../imagens/output-participantes2.jpeg> <../../imagens/outp
+ut-media-participacoes.jpeg>] [140]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -4840,7 +4874,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `m' ignored and `p' used.
 
@@ -4851,7 +4885,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `a' ignored and `p' used.
 
@@ -4862,7 +4896,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4873,7 +4907,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `s' ignored and `p' used.
 
@@ -4884,7 +4918,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4895,7 +4929,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `z' ignored and `p' used.
 
@@ -4906,7 +4940,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4917,7 +4951,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `=' ignored and `p' used.
 
@@ -4928,7 +4962,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -4939,7 +4973,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -4950,7 +4984,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -4961,7 +4995,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -4972,7 +5006,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `w' ignored and `p' used.
 
@@ -4983,7 +5017,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -4994,7 +5028,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `d' ignored and `p' used.
 
@@ -5005,7 +5039,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
@@ -5016,7 +5050,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -5027,7 +5061,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -5038,7 +5072,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -5049,7 +5083,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -5060,7 +5094,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -5071,7 +5105,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -5082,7 +5116,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `g' ignored and `p' used.
 
@@ -5093,44 +5127,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9140 ...ure}[max size={\textwidth}{\textheight}]
+l.9690 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
-<../../imagens/genero-todos-crop.jpeg, id=1179, 583.781pt x 504.284pt>
+<../../imagens/genero-todos-crop.jpeg, id=1233, 583.781pt x 504.284pt>
 File: ../../imagens/genero-todos-crop.jpeg Graphic file (type jpg)
 <use ../../imagens/genero-todos-crop.jpeg>
 Package pdftex.def Info: ../../imagens/genero-todos-crop.jpeg  used on input li
-ne 9147.
+ne 9697.
 (pdftex.def)             Requested size: 181.99722pt x 157.21132pt.
-[135 <../../imagens/genero-todos-crop.jpeg>] [136] [137]
-<../../imagens/output-eventos.jpeg, id=1204, 2258.4375pt x 3011.25pt>
+[141 <../../imagens/genero-todos-crop.jpeg>] [142]
+<../../imagens/output-eventos.jpeg, id=1250, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-eventos.jpeg Graphic file (type jpg)
 <use ../../imagens/output-eventos.jpeg>
 Package pdftex.def Info: ../../imagens/output-eventos.jpeg  used on input line 
-9421.
+9971.
 (pdftex.def)             Requested size: 2258.432pt x 3011.24269pt.
-<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1205, 2007.5pt x 4
+ [143]
+<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1259, 2007.5pt x 4
 015.0pt>
 File: ../../imagens/histograma-de-idades-no-ano-do-evento.png Graphic file (typ
 e png)
 <use ../../imagens/histograma-de-idades-no-ano-do-evento.png>
 Package pdftex.def Info: ../../imagens/histograma-de-idades-no-ano-do-evento.pn
-g  used on input line 9448.
+g  used on input line 9998.
 (pdftex.def)             Requested size: 2007.49512pt x 4014.99026pt.
 
 
-LaTeX Warning: Float too large for page by 24.53262pt on input line 9454.
+LaTeX Warning: Float too large for page by 24.53262pt on input line 10004.
 
-[138] [139 <../../imagens/output-eventos.jpeg>] [140 <../../imagens/histograma-
-de-idades-no-ano-do-evento.png>] [141
+[144] [145 <../../imagens/output-eventos.jpeg>] [146 <../../imagens/histograma-
+de-idades-no-ano-do-evento.png>] [147
 
-] [142
+] [148
 
-] [143] [144
+] [149] [150
 
-] [145] [146] [147]
-[148]
+] [151] [152] [153]
+[154]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux'.
 
  (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex
@@ -5138,22 +5173,22 @@ de-idades-no-ano-do-evento.png>] [141
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[149
+[155
 
 
 
-] [150]
+] [156]
 
-LaTeX Warning: Citation `nbr14724' on page 151 undefined on input line 13.
+LaTeX Warning: Citation `nbr14724' on page 157 undefined on input line 13.
 
-[151
+[157
 
-] [152
+] [158
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 20.
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=1270, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=1324, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
@@ -5161,9 +5196,9 @@ e 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
 
 
-LaTeX Warning: Citation `comandos' on page 153 undefined on input line 22.
+LaTeX Warning: Citation `comandos' on page 159 undefined on input line 22.
 
-) [153 <./USPSC-img/USPSC-AcentuacaoLaTeX.png>]
+) [159 <./USPSC-img/USPSC-AcentuacaoLaTeX.png>]
 \openout2 = `USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux'.
 
 
@@ -5183,8 +5218,8 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `USPSC-modelo-IAU_RedarTex.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11676.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11676.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 12226.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 12226.
 (./USPSC-modelo-IAU_RedarTex.aux
 (./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.aux)
@@ -5195,23 +5230,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 11676.
 (./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11676.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12226.
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 11676.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 12226.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11676.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12226.
  ) 
 Here is how much of TeX's memory you used:
- 43495 strings out of 494468
- 829366 string characters out of 6175091
- 1102037 words of memory out of 5000000
- 45663 multiletter control sequences out of 15000+600000
+ 43599 strings out of 494468
+ 831518 string characters out of 6175091
+ 1106719 words of memory out of 5000000
+ 45744 multiletter control sequences out of 15000+600000
  648219 words of font info for 184 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  73i,18n,98p,2410b,795s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5226,10 +5258,10 @@ hare/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 ssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (155 pages, 8624031 bytes).
+Output written on USPSC-modelo-IAU_RedarTex.pdf (161 pages, 10072751 bytes).
 PDF statistics:
- 1708 PDF objects out of 1728 (max. 8388607)
- 1473 compressed objects within 15 object streams
- 507 named destinations out of 1000 (max. 500000)
- 33174 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1785 PDF objects out of 2073 (max. 8388607)
+ 1542 compressed objects within 16 object streams
+ 529 named destinations out of 1000 (max. 500000)
+ 33227 words of extra memory for PDF output out of 35830 (max. 10000000)
 

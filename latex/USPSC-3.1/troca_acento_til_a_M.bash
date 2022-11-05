@@ -36,6 +36,7 @@ sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-Cap4-Referenc
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-AbstractTutorial_RedarTex.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-Tutorial/USPSC-fichacatalograficaTutorial_RedarTex.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/dissertacao_elaine_2022_10_10_RedarTex.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-modelo-ICMCp.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-EESC.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-EESC.tex
@@ -99,6 +100,7 @@ sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.t
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-modelo-IAU.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
+sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/dissertacao_elaine_2022_10_10.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-modelo.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC.tex
 sed -i "s/Ã/\\\~A/g" ../../latex/./USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC_RedarTex.tex

@@ -17,6 +17,7 @@ sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AbstractTutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-fichacatalograficaTutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/dissertacao_elaine_2022_10_10_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-pre-textual-OUTRO_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCe_RedarTex.tex

@@ -851,7 +851,7 @@ elemento.scrollLeft = array_scroll_horizontal[x_versao].style.left.replace("px",
 
 function gera_mostra_pdf_tese(){
 
-popup_latex.style.visibility = "visible";
+setTimeout(function () {popup_latex.style.visibility = "visible";}, 100); // settimeout para forçar visualização
 
 var resposta="";
 var url='../php/gera_tex2.php?mode=quiet';

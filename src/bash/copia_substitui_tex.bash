@@ -14,6 +14,8 @@ find ../../latex/* | grep -i "\.tex" | grep -v "RedarTex" | awk -v quote="'" '{g
 sed -i 's/USPSC-classe\/USPSC/USPSC-classe\/USPSC_RedarTex/g' ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
 sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./dissertacao_elaine_2022_10_10_RedarTex.tex
+sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./dissertacao_elaine_2022_10_10_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
 sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex
@@ -45,6 +47,7 @@ sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-T
 sed -i "/include.*USPSC.*Cap1/c\% @[pontoinsercaotextoprincipal]@" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 sed -i "/^.chapter.Bibliografia..Bibliografia/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./dissertacao_elaine_2022_10_10_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-EESC_RedarTex.tex
@@ -61,6 +64,7 @@ sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./dissertacao_elaine_2022_09
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarTex.tex
 sed -i "/include.*Cap[1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./dissertacao_elaine_2022_10_10_RedarTex.tex
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-IFSCe_RedarTex.tex
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-Tutorial-num_RedarTex.tex
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo-EESC_RedarTex.tex

@@ -54,6 +54,7 @@
 \cp ../../latex/USPSC-3.1/USPSC-IndicesRemissivos.tex ../../latex/USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-EESC.tex ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-EESC_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-modelo-IAU.tex ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/dissertacao_elaine_2022_10_10.tex ../../latex/USPSC-3.1/dissertacao_elaine_2022_10_10_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-modelo.tex ../../latex/USPSC-3.1/USPSC-modelo_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC.tex ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex 
@@ -137,6 +138,7 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-pre-textual-Tutorial[}]/include{USPSC-pre-textual-Tutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]dissertacao_elaine_2022_09_16[}]/include{dissertacao_elaine_2022_09_16_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]dissertacao_elaine_2022_10_10[}]/include{dissertacao_elaine_2022_10_10_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PreTextual\/USPSC-Errata_RedarTex[}]/d' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex[}]/d' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
@@ -203,3 +205,4 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-pre-textual-Tutorial[}]/include{USPSC-pre-textual-Tutorial_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-unidades[}]/include{USPSC-unidades_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]dissertacao_elaine_2022_09_16[}]/include{dissertacao_elaine_2022_09_16_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]dissertacao_elaine_2022_10_10[}]/include{dissertacao_elaine_2022_10_10_RedarTex}/g' 

@@ -95,7 +95,7 @@ if ($nivel == 4 && $nome_tipo_secao=="topico") {
 
 
 if ($nome_tipo_secao == "citacao"){
-	$texto_latex="\n\\noindent\\begin{center}\\mbox{\\centering\\fbox{\\centering\\par\parbox{0.7\\linewidth}{\\small\\textit{".$texto."}\\normalize}}}\\end{center}\n\n";
+	$texto_latex="\n\\noindent\\begin{center}\\mbox{\\centering\\fbox{\\centering\\par\parbox{0.7\\linewidth}{\\small\\textit{".$texto."}\\normalsize}}}\\end{center}\n\n";
 }
 
 if ($nome_tipo_secao == "diagramaMER"){

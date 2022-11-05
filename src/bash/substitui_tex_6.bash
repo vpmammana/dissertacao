@@ -17,6 +17,7 @@ sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for
 sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-AbstractTutorial_RedarTex.tex
 sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g" ../../latex/USPSC-3.1/USPSC-Tutorial/USPSC-fichacatalograficaTutorial_RedarTex.tex
 sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-EESC_RedarTex.tex
+sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g" ../../latex/USPSC-3.1/dissertacao_elaine_2022_10_10_RedarTex.tex
 sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g" ../../latex/USPSC-3.1/USPSC-pre-textual-OUTRO_RedarTex.tex
 sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g" ../../latex/USPSC-3.1/USPSC-unidades_RedarTex.tex
 sed -i "s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g" ../../latex/USPSC-3.1/USPSC-modelo-IFSCe_RedarTex.tex

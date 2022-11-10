@@ -954,6 +954,7 @@ call insere_a_direita_dos_filhos_tipos_secoes("topico",				"legenda_tabela",				
 
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"diagrama_MER",					"Diagrama MER");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"diagrama_MER_3ario",					"Diagrama MER ternário");
+call insere_a_direita_dos_filhos_tipos_secoes("topico",             "diagrama_MER_quad",                   "Diagrama MER quaternário");
 
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"item_lista_num",				"Item de Lista Numerada");
 call insere_a_direita_dos_filhos_tipos_secoes("topico",				"item_lista_nao_num",				"Item de Lista Numerada");

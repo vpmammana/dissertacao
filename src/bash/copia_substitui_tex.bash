@@ -82,7 +82,7 @@ sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarT
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 touch ../bash/substitui_tex_1.bash
 chmod u+x ../bash/substitui_tex_1.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/Caracteriza\\\\\\c{c}\\\\\~ao de um sistema de aprendizagem baseado em viv\\\\\^encias/g\" "$0}' > ../bash/substitui_tex_1.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/Programa WASH: caracteriza\\\\\\c{c}\\\\\~ao do sistema de aprendizagem quanto sua hist\\\\\\"acute"oria, seus m\\\\\\"acute"etodos e resultados/g\" "$0}' > ../bash/substitui_tex_1.bash
 ../bash/substitui_tex_1.bash
 
 touch ../bash/substitui_tex_2.bash

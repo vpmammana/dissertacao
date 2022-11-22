@@ -19,6 +19,7 @@ $sql="call mostra_documento_completo_com_pai('raiz');";
 
 $result=$conn->query("$sql");
 
+echo "start transaction;<br><br>";
 echo "delete from guarda_ids_da_lixeira;<br><br>";
 echo "delete from ids_de_referencia;<br><br>";
 echo "delete from versoes;<br><br>";
@@ -28,6 +29,7 @@ fwrite($myfile, "# SCRIPT que permite gerar novamente a dissertacao. Nao grava a
 fwrite($myfile, "# Desenvolvido por Victor Mammana\n");
 fwrite($myfile, "# Este script nao recria as stored procedures, que estao em tese.sql\n\n\n\n");
 
+fwrite($myfile, "start transaction;\n");
 fwrite($myfile, "delete from guarda_ids_da_lixeira;\n");
 fwrite($myfile, "delete from ids_de_referencia;\n");
 fwrite($myfile, "delete from versoes;\n");
@@ -55,5 +57,9 @@ if ($result->num_rows>0) {
 
 echo "<br><br>INSERT INTO versoes (id_secao, trecho) SELECT id_chave_categoria, descricao FROM secoes;";
 fwrite($myfile,"\n\nINSERT INTO versoes (id_secao, trecho) SELECT id_chave_categoria, descricao FROM secoes;");
+
+echo "<br><br>commit;";
+fwrite($myfile, "commit;\n");
+
 
 ?>

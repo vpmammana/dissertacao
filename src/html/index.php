@@ -1032,6 +1032,8 @@ var oReq=new XMLHttpRequest();
 
 function teclado(e) {
 
+if (modo_edicao && e.key == "&") {alert("Cuidado com o & porque dá problema na hora de gravar no SQL. Melhor não usar."); return;}
+
 console.log("alo");
 let futuro_y =0;
 	//console.log("x: "+x+" y:"+y)

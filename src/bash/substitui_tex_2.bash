@@ -30,6 +30,8 @@ sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-Tutorial_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IQSC_RedarTex.tex
+sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/Pre_textual_UTFPR_RedarTex.tex
+sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/.Pre_textual_UTFPR_RedarTex.tex.swp
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[subtitulo\]@/HIST\\\'ORIA, M\\\'ETODOS E RESULTADOS/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex

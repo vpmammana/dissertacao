@@ -67,6 +67,8 @@ sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-EESC.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-IQSC.tex
+sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/Pre_textual_UTFPR_RedarTex.tex
+sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/.Pre_textual_UTFPR_RedarTex.tex.swp
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-IFSC.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-ICMCp_RedarTex.tex
@@ -102,6 +104,7 @@ sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/dissertacao_elaine_2022_10_10.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-modelo.tex
+sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/Pre_textual_UTFPR.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-ICMC.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC_RedarTex.tex
 sed -i "s/Programa de P\\\'os-Gradua\\\c[{]c[}]\\\~ao em [A-Za-z\\\'{}\\\~\\\^\\\"\\\`( de )( e )(Manufatura)]*/@[programapos]@/g" ../../latex/./USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos.tex

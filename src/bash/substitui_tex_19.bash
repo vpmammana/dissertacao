@@ -30,6 +30,8 @@ sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo_Re
 sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/USPSC-Tutorial_RedarTex.tex
 sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IQSC_RedarTex.tex
+sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/Pre_textual_UTFPR_RedarTex.tex
+sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/.Pre_textual_UTFPR_RedarTex.tex.swp
 sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex
 sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[localidade\]@/Londrina/g" ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex

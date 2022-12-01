@@ -1,0 +1,111 @@
+%% USPSC-pre-textual-IAU.tex
+%% Camandos para definição do tipo de documento (tese ou dissertação), área de concentração, opção, preâmbulo, titulação 
+%% referentes ao Programa de Pós-Graduação o IQSC
+\instituicao{Universidade Tecnol\'ogica Federal do Paran\'a - Campus Londrina}
+\unidade{PROGRAMA DE P\'OS GRADUA\c{C}\~AO EM ENSINO DE C. HUMANAS, SOCIAIS E DA NATUREZA - PPGEN}
+\unidademin{PPGEN}
+\universidademin{Universidade Tecnol\'ogica Federal do Paran\'a - Campus Londrina}
+
+\notafolharosto{Vers\~ao original}
+%Para versão original em inglês, comente do comando/declaração 
+%     acima(inclua % antes do comando acima) e tire a % do 
+%     comando/declaração abaixo no idioma do texto
+%\notafolharosto{Original version} 
+%Para versão corrigida, comente do comando/declaração da 
+%     versão original acima (inclua % antes do comando acima) 
+%     e tire a % do comando/declaração de um dos comandos 
+%     abaixo em conformidade com o idioma do texto
+%\notafolharosto{Vers\~ao corrigida \\(Vers\~ao original dispon\'ivel na Unidade que aloja o Programa)}
+%\notafolharosto{Corrected version \\(Original version available on the Program Unit)}
+
+% ---
+% dados complementares para CAPA e FOLHA DE ROSTO
+% ---
+\universidade{UNIVERSIDADE TECNOL\'OGICA FEDERAL DO PARAN\'A - Campus Londrina}
+\titulo{Caracteriza\c{c}\~ao e modelagem do sistema heter\'arquico de aprendizagem do WASH}
+\titleabstract{Characterization of the Hardware and Software for Geeks Program }
+\tituloresumo{Caracteriza\c{c}\~ao e modelagem do sistema heter\'arquico de aprendizagem do WASH}
+\autor{Elaine da Silva Tozzi}
+\autorficha{Tozzi, Elaine da Silva}
+\autorabr{Tozzi, E.S.}
+
+\cutter{S856m}
+% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% incluir uma % na linha acima e tirar a % da linha abaixo
+%\cutter{ }
+
+\local{Londrina}
+\data{2022}
+% Quando for Orientador, basta incluir uma % antes do comando abaixo
+\renewcommand{\orientadorname}{Orientador e Co-Orientador:}
+% Quando for Coorientadora, basta tirar a % utilizar o comando abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+\orientador{Prof(a). Dr(a). Paulo S\'ergio Camargo e Victor Pellegrini Mammana (co-orientador)}
+\orientadorcorpoficha{orientador(a) Paulo S\'ergio Camargo e Victor Pellegrini Mammana (co-orientador)}
+\orientadorficha{Camargo, Paulo S\'ergio e Mammana, Victor Pellegrini (co-orientador)}
+%Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
+%          e tire a % antes dos 3 comandos abaixo
+%\coorientador{Prof(a). Dr(a). @[coorientador]@}
+%\orientadorcorpoficha{orientador(a) Paulo S\'ergio Camargo e Victor Pellegrini Mammana (co-orientador)}
+%\orientadorficha{Camargo, Paulo S\'ergio e Mammana, Victor Pellegrini (co-orientador)}
+
+\notaautorizacao{AUTORIZO A REPRODU\c{C}\~AO E DIVULGA\c{C}\~AO TOTAL OU PARCIAL DESTE TRABALHO, POR QUALQUER MEIO CONVENCIONAL OU ELETR\^ONICO PARA FINS DE ESTUDO E PESQUISA, DESDE QUE CITADA A FONTE.}
+\notabib{Ficha catalogr\'afica elaborada pela Biblioteca do PPGEN, com os dados fornecidos pelo(a) autor(a)}
+
+\newcommand{\programa}[1]{
+
+% DAUT ==========================================================================
+\ifthenelse{\equal{#1}{DAUT}}{
+    \area{Ensino}
+	\tipotrabalho{Tese (Doutorado)}
+	\tipotrabalhoabs{Thesis (Doctor)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao @[programapos]@, Sociais e da Natureza (PPGEN) da Universidade Tecnol\'ogica Federal do Paran\'a - Campus Londrina, como requisito parcial para a obten\c{c}\~ao do t\'itulo de @[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[mestreoudoutor]@ em Ensino de Ci\^encias Humanas, Sociais e da Natureza, do Programa de Mestrado de Ensino.}
+	\notaficha{Tese (Mestrado UTFPR}
+    }{
+% MAUT ===========================================================================
+\ifthenelse{\equal{#1}{MAUT}}{
+    \area{Ensino}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado)}
+	\tipotrabalhoabs{Dissertation (Master)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao @[programapos]@, Sociais e da Natureza (PPGEN) da Universidade Tecnol\'ogica Federal do Paran\'a - Campus Londrina, como requisito parcial para a obten\c{c}\~ao do t\'itulo de @[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[mestreoudoutor]@ em Ensino de Ci\^encias Humanas, Sociais e da Natureza, do Programa de Mestrado de Ensino.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de P\'os-Gradua\c{c}\~ao da UTFPR}
+    }{
+% DAUH ==========================================================================
+\ifthenelse{\equal{#1}{DAUH}}{
+    \area{Teoria e Hist\'oria da Arquitetura e do Urbanismo}
+	\tipotrabalho{Tese (Doutorado)}
+	\tipotrabalhoabs{Thesis (Doctor)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Tese apresentada ao Programa de P\'os-Gradua\c{c}\~ao da UTFPR vinculado a @[unidadefaculdade]@}\~ao, Universidade Tecnol\'ogica Federal do Paran\'a - Campus Londrina, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de @[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[mestreoudoutor]@ em LicenciaturaMestre em Arquitetura e Urbanismo.}
+	\notaficha{Tese (Doutorado - Programa de P\'os-Gradua\c{c}\~ao da UTFPR}
+    }{
+% MAUH ===========================================================================
+\ifthenelse{\equal{#1}{MAUH}}{
+    \area{Teoria e Hist\'oria da Arquitetura e do Urbanismo}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado)}
+	\tipotrabalhoabs{Dissertation (Master)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao Programa de P\'os-Gradua\c{c}\~ao da UTFPR vinculado a @[unidadefaculdade]@}\~ao, Universidade Tecnol\'ogica Federal do Paran\'a - Campus Londrina, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de @[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[mestreoudoutor]@ em LicenciaturaMestre em Arquitetura e Urbanismo.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de P\'os-Gradua\c{c}\~ao da UTFPR}
+    }{
+% Outros
+	\tipotrabalho{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado)}
+	\tipotrabalhoabs{Dissertation/Thesis (Master/Doctor)}
+	\area{Nome da \'Area}
+	\opcao{Nome da Op\c{c}\~ao}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao/Tese apresentada ao Programa de P\'os-Gradua\c{c}\~ao da UTFPR vinculado a @[unidadefaculdade]@}\~ao, Universidade Tecnol\'ogica Federal do Paran\'a - Campus Londrina, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de @[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[titulopos]@@[mestreoudoutor]@ em LicenciaturaMestre em Arquitetura e Urbanismo.}
+	\notaficha{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado - Programa de P\'os-Gradua\c{c}\~ao da UTFPR}
+    }}}}}
+				

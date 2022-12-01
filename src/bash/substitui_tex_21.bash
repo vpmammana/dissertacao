@@ -30,6 +30,8 @@ sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\
 sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/USPSC-Tutorial_RedarTex.tex
 sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/USPSC-pre-textual-IQSC_RedarTex.tex
+sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/Pre_textual_UTFPR_RedarTex.tex
+sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/.Pre_textual_UTFPR_RedarTex.tex.swp
 sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/USPSC-TCC-modelo-ICMCe_RedarTex.tex
 sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/USPSC-modelo-ICMCp_RedarTex.tex
 sed -i "s/@\[epigrafe\]@/Ci\\\^encia \\\'e a compreens\\\~ao que o outro constr\\\'oi sobre o conhecimento de algu\\\'em./g" ../../latex/USPSC-3.1/USPSC-modelo-IAU_RedarTex.tex

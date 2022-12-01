@@ -82,7 +82,7 @@ sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarT
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 touch ../bash/substitui_tex_1.bash
 chmod u+x ../bash/substitui_tex_1.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/Programa WASH: caracteriza\\\\\\c{c}\\\\\~ao do sistema de aprendizagem quanto sua hist\\\\\\"acute"oria, seus m\\\\\\"acute"etodos e resultados/g\" "$0}' > ../bash/substitui_tex_1.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/Caracteriza\\\\\\c{c}\\\\\~ao e modelagem do sistema heter\\\\\\"acute"arquico de aprendizagem do WASH/g\" "$0}' > ../bash/substitui_tex_1.bash
 ../bash/substitui_tex_1.bash
 
 touch ../bash/substitui_tex_2.bash
@@ -112,12 +112,12 @@ find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{
 
 touch ../bash/substitui_tex_7.bash
 chmod u+x ../bash/substitui_tex_7.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[orientador\]@/Paulo S\\\\\\"acute"ergio Camargo/g\" "$0}' > ../bash/substitui_tex_7.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[orientador\]@/Paulo S\\\\\\"acute"ergio Camargo e Victor Pellegrini Mammana/g\" "$0}' > ../bash/substitui_tex_7.bash
 ../bash/substitui_tex_7.bash
 
 touch ../bash/substitui_tex_8.bash
 chmod u+x ../bash/substitui_tex_8.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[orientadorficha\]@/Camargo, Paulo S\\\\\\"acute"ergio/g\" "$0}' > ../bash/substitui_tex_8.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[orientadorficha\]@/Camargo, Paulo S\\\\\\"acute"ergio e Mammana, Victor Pellegrini/g\" "$0}' > ../bash/substitui_tex_8.bash
 ../bash/substitui_tex_8.bash
 
 touch ../bash/substitui_tex_9.bash

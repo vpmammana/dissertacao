@@ -10,114 +10,117 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\c {C}\~AO}}{31}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}WASH: projeto, programa, sistema, organiza\c {c}\~ao ou pol\'{\i }tica p\'ublica?}{37}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Objeto}{39}{section.1.2}% 
+\contentsline {section}{\numberline {1.1}WASH: projeto, programa, sistema, organiza\c {c}\~ao ou pol\'{\i }tica p\'ublica?}{38}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Objeto}{40}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Objetivos}{40}{section.1.3}% 
-\contentsline {subsection}{\numberline {1.3.1}Objetivos Espec\'{\i }ficos}{40}{subsection.1.3.1}% 
-\contentsline {section}{\numberline {1.4}Hip\'oteses}{40}{section.1.4}% 
-\contentsline {section}{\numberline {1.5}Problema}{41}{section.1.5}% 
-\contentsline {section}{\numberline {1.6}Justificativa}{42}{section.1.6}% 
+\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{41}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\'{\i }ficos}{41}{subsection.1.3.2}% 
+\contentsline {section}{\numberline {1.4}Hip\'oteses}{41}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}Problema}{43}{section.1.5}% 
+\contentsline {section}{\numberline {1.6}Justificativa}{43}{section.1.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{43}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Fundamenta\c {c}\~ao: hist\'oria (eixo 1)}{44}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Revis\~ao: historiografia}{48}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Hierarquia versus heterarquia}{53}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}Governo Eletr\^onico}{55}{subsection.2.1.3}% 
-\contentsline {subsection}{\numberline {2.1.4}Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{58}{subsection.2.1.4}% 
-\contentsline {subsection}{\numberline {2.1.5}O pensamento de Papert}{61}{subsection.2.1.5}% 
-\contentsline {subsection}{\numberline {2.1.6}O LOGO e o SCRATCH}{68}{subsection.2.1.6}% 
-\contentsline {subsection}{\numberline {2.1.7}O que \'e STEM/STEAM?}{71}{subsection.2.1.7}% 
-\contentsline {section}{\numberline {2.2}Fundamenta\c {c}\~ao: modelagem (eixo 2)}{77}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Taxonomia}{79}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Modelo Descritivo}{83}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Modelo Entidade Relacionamento (MER)}{84}{subsection.2.2.3}% 
-\contentsline {subsection}{\numberline {2.2.4}Business Process Modeling Notation (BPMN)}{88}{subsection.2.2.4}% 
-\contentsline {section}{\numberline {2.3}Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados (eixo 3)}{89}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Indicadores}{89}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Informa\c {c}\~ao, dados e conhecimento}{90}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Registro de dados na escola p\'ublica}{92}{subsection.2.3.3}% 
-\contentsline {subsection}{\numberline {2.3.4}Investimento por educando: escola p\'ublica vs. privada}{94}{subsection.2.3.4}% 
-\contentsline {subsection}{\numberline {2.3.5}Planilhas eletr\^onicas para registro de dados}{95}{subsection.2.3.5}% 
-\contentsline {subsection}{\numberline {2.3.6}Bancos de Dados Relacionais}{100}{subsection.2.3.6}% 
-\contentsline {subsection}{\numberline {2.3.7}Linguagem SQL}{105}{subsection.2.3.7}% 
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{45}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Fundamenta\c {c}\~ao: hist\'oria (eixo 1)}{46}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Revis\~ao: historiografia}{50}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Hierarquia versus heterarquia}{50}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Governo Eletr\^onico}{51}{subsection.2.1.3}% 
+\contentsline {subsection}{\numberline {2.1.4}Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{54}{subsection.2.1.4}% 
+\contentsline {subsection}{\numberline {2.1.5}O pensamento de Papert}{57}{subsection.2.1.5}% 
+\contentsline {subsection}{\numberline {2.1.6}O LOGO e o SCRATCH}{64}{subsection.2.1.6}% 
+\contentsline {subsection}{\numberline {2.1.7}O que \'e STEM/STEAM?}{67}{subsection.2.1.7}% 
+\contentsline {section}{\numberline {2.2}Fundamenta\c {c}\~ao: modelagem (eixo 2)}{73}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Taxonomia}{76}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Modelo Descritivo}{80}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Modelo Entidade Relacionamento (MER)}{80}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.4}Business Process Modeling Notation (BPMN)}{85}{subsection.2.2.4}% 
+\contentsline {section}{\numberline {2.3}Fundamenta\c {c}\~ao: caracteriza\c {c}\~ao dos resultados (eixo 3)}{85}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Indicadores}{86}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Informa\c {c}\~ao, dados e conhecimento}{87}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Registro de dados na escola p\'ublica}{88}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Investimento por educando: escola p\'ublica vs. privada}{90}{subsection.2.3.4}% 
+\contentsline {subsection}{\numberline {2.3.5}Planilhas eletr\^onicas para registro de dados}{91}{subsection.2.3.5}% 
+\contentsline {subsection}{\numberline {2.3.6}Bancos de Dados Relacionais}{96}{subsection.2.3.6}% 
+\contentsline {subsection}{\numberline {2.3.7}Linguagem SQL}{101}{subsection.2.3.7}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{109}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Caminho para constru\c {c}\~ao da narrativa hist\'orica (eixo 1)}{109}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Fases da Pesquisa Hist\'orica}{112}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Acervos}{114}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3.2}Caminho para a modelagem (eixo 2)}{115}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Como identificar Entidades e Associa\c {c}\~oes}{116}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Como modelar os processos de neg\'ocio (BPMN)}{122}{subsection.3.2.2}% 
-\contentsline {section}{\numberline {3.3}Caminho para a obten\c {c}\~ao dos indicadores (eixo 3)}{122}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{122}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}M\'etodo de determina\c {c}\~ao do sexo dos participantes}{127}{subsection.3.3.2}% 
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{105}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Caminho para constru\c {c}\~ao da narrativa hist\'orica (eixo 1)}{105}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Fases da Pesquisa Hist\'orica}{108}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Acervos}{110}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}Caminho para a modelagem (eixo 2)}{111}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Como identificar Entidades e Associa\c {c}\~oes}{113}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Como modelar os processos de neg\'ocio (BPMN)}{118}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Caminho para a obten\c {c}\~ao dos indicadores (eixo 3)}{118}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{118}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}M\'etodo de determina\c {c}\~ao do sexo dos participantes}{123}{subsection.3.3.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{135}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{135}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}O GESAC e sua contribui\c {c}\~ao para a cultura digital no pa\'{\i }s}{135}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Avalia\c {c}\~ao do OLPC e PID como g\^enese do WASH}{142}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}Papert no Brasil pela \'otica de Afira Ripper}{154}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}Os valores e conceitos do Programa WASH}{157}{subsection.4.1.4}% 
-\contentsline {section}{\numberline {4.2}Modelagem do WASH (eixo 2)}{162}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Entidade: Pessoas (Pe)}{163}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Entidade: Tipos de Papeis (TP)}{164}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Entidade: Documentos (Do)}{165}{subsection.4.2.3}% 
-\contentsline {subsection}{\numberline {4.2.4}Entidade: Tipos de Documentos (TD)}{165}{subsection.4.2.4}% 
-\contentsline {subsection}{\numberline {4.2.5}Entidade: Temas (Te)}{166}{subsection.4.2.5}% 
-\contentsline {subsection}{\numberline {4.2.6}Entidade: Tipos de Atividades (TA)}{167}{subsection.4.2.6}% 
-\contentsline {subsection}{\numberline {4.2.7}Entidade: Institui\c {c}\~oes (In)}{168}{subsection.4.2.7}% 
-\contentsline {subsection}{\numberline {4.2.8}Entidade: Tipos de Institui\c {c}\~oes (TI)}{169}{subsection.4.2.8}% 
-\contentsline {subsection}{\numberline {4.2.9}Entidade: Eventos (Ev)}{170}{subsection.4.2.9}% 
-\contentsline {subsection}{\numberline {4.2.10}Entidade: Papeis das Institui\c {c}\~oes (PI)}{171}{subsection.4.2.10}% 
-\contentsline {subsection}{\numberline {4.2.11}Entidade: Tipos de Bolsas (TB)}{171}{subsection.4.2.11}% 
-\contentsline {subsection}{\numberline {4.2.12}Entidade: Cidades (Ci)}{172}{subsection.4.2.12}% 
-\contentsline {subsection}{\numberline {4.2.13}Entidade: Tipos de Processos (Tr)}{172}{subsection.4.2.13}% 
-\contentsline {subsection}{\numberline {4.2.14}Entidade: Processos (Pr)}{173}{subsection.4.2.14}% 
-\contentsline {subsection}{\numberline {4.2.15}Associa\c {c}\~ao: Desempenho de Papeis (Pe-TP-In-Do)}{173}{subsection.4.2.15}% 
-\contentsline {subsection}{\numberline {4.2.16}Associa\c {c}\~ao: Classifica\c {c}\~ao de Documentos (TD-Do)}{175}{subsection.4.2.16}% 
-\contentsline {subsection}{\numberline {4.2.17}Associa\c {c}\~ao: Indexa\c {c}\~ao de Eventos (TA-Ev)}{175}{subsection.4.2.17}% 
-\contentsline {subsection}{\numberline {4.2.18}Associa\c {c}\~ao: Indexa\c {c}\~ao de Eventos (Te-Ev)}{176}{subsection.4.2.18}% 
-\contentsline {subsection}{\numberline {4.2.19}Associa\c {c}\~ao: Classifica\c {c}\~ao das Institui\c {c}\~oes (TI-In)}{176}{subsection.4.2.19}% 
-\contentsline {subsection}{\numberline {4.2.20}Associa\c {c}\~ao: Desempenho de Papel (In-PI-Ev)}{177}{subsection.4.2.20}% 
-\contentsline {subsection}{\numberline {4.2.21}Associa\c {c}\~ao: Organiza\c {c}\~ao de Tipos de Processos (In-Tr)}{178}{subsection.4.2.21}% 
-\contentsline {subsection}{\numberline {4.2.22}Associa\c {c}\~ao: Classifica\c {c}\~ao de Processos (Tr-Pr)}{178}{subsection.4.2.22}% 
-\contentsline {subsection}{\numberline {4.2.23}Associa\c {c}\~ao: Organiza\c {c}\~ao de Documentos (Pr-Do)}{179}{subsection.4.2.23}% 
-\contentsline {subsection}{\numberline {4.2.24}Associa\c {c}\~ao: Organiza\c {c}\~ao de Localiza\c {c}\~ao (In-Ci)}{180}{subsection.4.2.24}% 
-\contentsline {subsection}{\numberline {4.2.25}Modelagem BPMN}{180}{subsection.4.2.25}% 
-\contentsline {subsection}{\numberline {4.2.26}S\'{\i }ntese: o funcionamento do Programa WASH}{181}{subsection.4.2.26}% 
-\contentsline {section}{\numberline {4.3}Caracteriza\c {c}\~ao dos Indicadores do WASH (eixo 3)}{182}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Amostragem do p\'ublico atendido}{184}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{188}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}Distribui\c {c}\~ao de partipantes por sexo}{191}{subsection.4.3.3}% 
-\contentsline {subsection}{\numberline {4.3.4}N\'umero de Bolsistas}{192}{subsection.4.3.4}% 
-\contentsline {subsection}{\numberline {4.3.5}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{194}{subsection.4.3.5}% 
-\contentsline {subsection}{\numberline {4.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{195}{subsection.4.3.6}% 
-\contentsline {subsection}{\numberline {4.3.7}N\'umero de oficinas realizadas}{195}{subsection.4.3.7}% 
-\contentsline {subsection}{\numberline {4.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{195}{subsection.4.3.8}% 
-\contentsline {subsection}{\numberline {4.3.9}Distribui\c {c}\~ao de temas nas oficinas}{195}{subsection.4.3.9}% 
-\contentsline {subsection}{\numberline {4.3.10}Tipos de Atividades realizadas nas oficinas}{195}{subsection.4.3.10}% 
-\contentsline {subsection}{\numberline {4.3.11}Cidades Atendidas}{195}{subsection.4.3.11}% 
-\contentsline {subsection}{\numberline {4.3.12}Participantes mais ass\'{\i }duos}{195}{subsection.4.3.12}% 
-\contentsline {section}{\numberline {4.4}S\'{\i }ntese anal\'{\i }tica dos 3 eixos}{195}{section.4.4}% 
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {RESULTADOS E DISCUSS\~OES}}{131}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{131}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}O GESAC e sua contribui\c {c}\~ao para a cultura digital no pa\'{\i }s}{131}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Avalia\c {c}\~ao do OLPC e PID como g\^enese do WASH}{139}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Papert no Brasil pela \'otica de Afira Ripper}{151}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Os valores e conceitos do Programa WASH}{154}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}Modelagem do WASH (eixo 2)}{159}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Entidade: Pessoas (Pe)}{160}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Entidade: Tipos de Papeis (TP)}{161}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Entidade: Documentos (Do)}{162}{subsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.2.4}Entidade: Tipos de Documentos (TD)}{162}{subsection.4.2.4}% 
+\contentsline {subsection}{\numberline {4.2.5}Entidade: Temas (Te)}{163}{subsection.4.2.5}% 
+\contentsline {subsection}{\numberline {4.2.6}Entidade: Tipos de Atividades (TA)}{164}{subsection.4.2.6}% 
+\contentsline {subsection}{\numberline {4.2.7}Entidade: Institui\c {c}\~oes (In)}{165}{subsection.4.2.7}% 
+\contentsline {subsection}{\numberline {4.2.8}Entidade: Tipos de Institui\c {c}\~oes (TI)}{166}{subsection.4.2.8}% 
+\contentsline {subsection}{\numberline {4.2.9}Entidade: Eventos (Ev)}{167}{subsection.4.2.9}% 
+\contentsline {subsection}{\numberline {4.2.10}Entidade: Papeis das Institui\c {c}\~oes (PI)}{168}{subsection.4.2.10}% 
+\contentsline {subsection}{\numberline {4.2.11}Entidade: Tipos de Bolsas (TB)}{168}{subsection.4.2.11}% 
+\contentsline {subsection}{\numberline {4.2.12}Entidade: Cidades (Ci)}{169}{subsection.4.2.12}% 
+\contentsline {subsection}{\numberline {4.2.13}Entidade: Tipos de Processos (Tr)}{169}{subsection.4.2.13}% 
+\contentsline {subsection}{\numberline {4.2.14}Entidade: Processos (Pr)}{170}{subsection.4.2.14}% 
+\contentsline {subsection}{\numberline {4.2.15}Associa\c {c}\~ao: Desempenho de Papeis (Pe-TP-In-Do)}{170}{subsection.4.2.15}% 
+\contentsline {subsection}{\numberline {4.2.16}Associa\c {c}\~ao: Classifica\c {c}\~ao de Documentos (TD-Do)}{172}{subsection.4.2.16}% 
+\contentsline {subsection}{\numberline {4.2.17}Associa\c {c}\~ao: Indexa\c {c}\~ao de Eventos (TA-Ev)}{172}{subsection.4.2.17}% 
+\contentsline {subsection}{\numberline {4.2.18}Associa\c {c}\~ao: Indexa\c {c}\~ao de Eventos (Te-Ev)}{173}{subsection.4.2.18}% 
+\contentsline {subsection}{\numberline {4.2.19}Associa\c {c}\~ao: Classifica\c {c}\~ao das Institui\c {c}\~oes (TI-In)}{173}{subsection.4.2.19}% 
+\contentsline {subsection}{\numberline {4.2.20}Associa\c {c}\~ao: Desempenho de Papel (In-PI-Ev)}{174}{subsection.4.2.20}% 
+\contentsline {subsection}{\numberline {4.2.21}Associa\c {c}\~ao: Organiza\c {c}\~ao de Tipos de Processos (In-Tr)}{175}{subsection.4.2.21}% 
+\contentsline {subsection}{\numberline {4.2.22}Associa\c {c}\~ao: Classifica\c {c}\~ao de Processos (Tr-Pr)}{175}{subsection.4.2.22}% 
+\contentsline {subsection}{\numberline {4.2.23}Associa\c {c}\~ao: Organiza\c {c}\~ao de Documentos (Pr-Do)}{176}{subsection.4.2.23}% 
+\contentsline {subsection}{\numberline {4.2.24}Associa\c {c}\~ao: Organiza\c {c}\~ao de Localiza\c {c}\~ao (In-Ci)}{177}{subsection.4.2.24}% 
+\contentsline {subsection}{\numberline {4.2.25}Modelagem BPMN}{177}{subsection.4.2.25}% 
+\contentsline {subsection}{\numberline {4.2.26}S\'{\i }ntese: o funcionamento do Programa WASH}{178}{subsection.4.2.26}% 
+\contentsline {section}{\numberline {4.3}Caracteriza\c {c}\~ao dos Indicadores do WASH (eixo 3)}{179}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Amostragem do p\'ublico atendido}{181}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{185}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}Distribui\c {c}\~ao de partipantes por sexo}{188}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}N\'umero de Bolsistas}{189}{subsection.4.3.4}% 
+\contentsline {subsection}{\numberline {4.3.5}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{191}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}Distribui\c {c}\~ao de temas em relat\'orios}{192}{subsection.4.3.6}% 
+\contentsline {subsection}{\numberline {4.3.7}N\'umero de oficinas realizadas}{192}{subsection.4.3.7}% 
+\contentsline {subsection}{\numberline {4.3.8}Distribui\c {c}\~ao et\'aria nas oficinas}{192}{subsection.4.3.8}% 
+\contentsline {subsection}{\numberline {4.3.9}Distribui\c {c}\~ao de temas nas oficinas}{192}{subsection.4.3.9}% 
+\contentsline {subsection}{\numberline {4.3.10}Tipos de Atividades realizadas nas oficinas}{192}{subsection.4.3.10}% 
+\contentsline {subsection}{\numberline {4.3.11}Cidades Atendidas}{192}{subsection.4.3.11}% 
+\contentsline {subsection}{\numberline {4.3.12}Participantes mais ass\'{\i }duos}{192}{subsection.4.3.12}% 
+\contentsline {section}{\numberline {4.4}S\'{\i }ntese anal\'{\i }tica dos 3 eixos}{192}{section.4.4}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~OES}}{199}{chapter.5}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~OES}}{195}{chapter.5}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{201}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}V\'{\i }deo/Entrevista: Papert e Afira Ripper}{201}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Revis\~ao do documento de refer\^encia do Programa WASH}{201}{section.6.2}% 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{197}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}V\'{\i }deo/Entrevista: Papert e Afira Ripper}{197}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Revis\~ao do documento de refer\^encia do Programa WASH}{197}{section.6.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\^ENCIAS}}{203}{chapter.7}% 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\^ENCIAS}}{199}{chapter.7}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {AP\^ENDICE A: revis\~ao sobre historiografia}}{209}{chapter.8}% 
 \vspace {\cftbeforechapterskip }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{213}{section*.59}% 
+\contentsline {part}{\uppercase {ANEXOS}}{215}{section*.59}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{215}{appendix.anexochapback.1}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{217}{appendix.anexochapback.1}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{217}{appendix.anexochapback.2}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{219}{appendix.anexochapback.2}% 

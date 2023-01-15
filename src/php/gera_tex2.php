@@ -5,10 +5,13 @@ if(isset($_GET["mode"])){
   $param_mode= $_GET["mode"];
 } else $param_mode = "verbose"; // quiet ou verbose ou debug
 
-if(isset($_GET["mantem_bilbiografia"])){
+if(isset($_GET["mantem_bibliografia"])){
   $param_mantem_bibliografia= $_GET["mantem_bibliografia"];
 } else $param_mantem_bibliografia = "nao"; // porque talvez, um dia, quem sabe, seja interessante manter a secao de bibliografia separada do capitulo de referencia, com "sim" as referencias apareceriam em duplicidade
 
+if(isset($_GET["enfatiza_data"])){
+  $param_enfatiza_data= $_GET["enfatiza_data"];
+} else $param_enfatiza_data = "nao";
 
 $id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura, para que posso haver substituicao depois
 

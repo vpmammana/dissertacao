@@ -1,24 +1,24 @@
 \babel@toc {brazil}{}
 \babel@toc {brazil}{}
-\contentsline {table}{\numberline {1}{\ignorespaces N\'{i}veis de abstra\c {c}\~oes\relax }}{74}{table.caption.16}% 
-\contentsline {table}{\numberline {2}{\ignorespaces Exemplo de 3 conjuntos disjuntos dois a dois.\relax }}{76}{table.caption.18}% 
-\contentsline {table}{\numberline {3}{\ignorespaces Exemplo de 3 conjuntos que n\~ao s\~ao disjuntos dois a dois.\relax }}{77}{table.caption.19}% 
-\contentsline {table}{\numberline {4}{\ignorespaces Uso de exemplos em linguagem natural para representar a associa\c {c}\~ao P-TP-I.\relax }}{85}{table.caption.23}% 
-\contentsline {table}{\numberline {5}{\ignorespaces Compara\c {c}\~ao do investimento por hora por aluno nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: Fundeb, DOU e Plataforma Campineira Melhor Escola. (Fonte: [[MAMMANA et al. (2020)]])\relax }}{90}{table.caption.24}% 
-\contentsline {table}{\numberline {6}{\ignorespaces Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.\relax }}{94}{table.caption.25}% 
-\contentsline {table}{\numberline {7}{\ignorespaces Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica\relax }}{95}{table.caption.26}% 
-\contentsline {table}{\numberline {8}{\ignorespaces Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.\relax }}{97}{table.caption.27}% 
-\contentsline {table}{\numberline {9}{\ignorespaces Tabela de cidades num banco de dados relacional.\relax }}{100}{table.caption.28}% 
-\contentsline {table}{\numberline {10}{\ignorespaces Tabela para a representa\c {c}\~ao de pessoas num banco de dados relacional\relax }}{100}{table.caption.29}% 
-\contentsline {table}{\numberline {11}{\ignorespaces Tradu\c {c}\~ao livre das palavras chave SQL associadas ao comando SELECT.\relax }}{102}{table.caption.30}% 
-\contentsline {table}{\numberline {12}{\ignorespaces Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.\relax }}{102}{table.caption.31}% 
-\contentsline {table}{\numberline {13}{\ignorespaces Compara\c {c}\~ao das nomenclaturas usadas nos n\'{i}veis de abstra\c {c}\~ao descritivo e conceitual.\relax }}{113}{table.caption.32}% 
-\contentsline {table}{\numberline {14}{\ignorespaces Lista de substantivos presentes no gloss\'ario da Portaria 178 (em ordem alfab\'etica).\relax }}{113}{table.caption.33}% 
-\contentsline {table}{\numberline {15}{\ignorespaces Substantivos extra\'{i}dos do texto do anexo da portaria 178 para a modelagem MER. Trata-se de de subconjunto selecionado, dado que alguns substantivos que n\~ao s\~ao pertinentes foram descartados.\relax }}{126}{table.caption.34}% 
-\contentsline {table}{\numberline {16}{\ignorespaces Exemplo de lista de pessoas pertencentes `a entidade Pessoas\relax }}{127}{table.caption.35}% 
-\contentsline {table}{\numberline {17}{\ignorespaces Exemplo de lista de tipos de papeis pertencentes `a entidade Tipos de Papeis\relax }}{127}{table.caption.36}% 
-\contentsline {table}{\numberline {18}{\ignorespaces Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.\relax }}{127}{table.caption.40}% 
-\contentsline {table}{\numberline {19}{\ignorespaces Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros de institui\c {c}\~oes. Na presente reprodu\c {c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c {c}\~oes de tipos de institui\c {c}\~oes por motivos de espa\c {c}o.\relax }}{128}{table.caption.41}% 
-\contentsline {table}{\numberline {20}{\ignorespaces Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos papeis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.\relax }}{128}{table.caption.42}% 
-\contentsline {table}{\numberline {21}{\ignorespaces Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.\relax }}{128}{table.caption.43}% 
-\contentsline {table}{\numberline {22}{\ignorespaces O bando de dados relacional subjacente `a Plataforma de Gest\~ao do WASH \'e constitu\'{i}do por 54 tabelas (P.S.: uma revis\~ao recente do modelo levou a 65 tabelas).\relax }}{129}{table.caption.44}% 
+\contentsline {table}{\numberline {1}{\ignorespaces N\'{i}veis de abstra\c {c}\~oes\relax }}{75}{table.caption.20}%
+\contentsline {table}{\numberline {2}{\ignorespaces Exemplo de 3 conjuntos disjuntos dois a dois.\relax }}{77}{table.caption.22}%
+\contentsline {table}{\numberline {3}{\ignorespaces Exemplo de 3 conjuntos que n\~ao s\~ao disjuntos dois a dois.\relax }}{78}{table.caption.23}%
+\contentsline {table}{\numberline {4}{\ignorespaces Uso de exemplos em linguagem natural para representar a associa\c {c}\~ao P-TP-I.\relax }}{86}{table.caption.27}%
+\contentsline {table}{\numberline {5}{\ignorespaces Compara\c {c}\~ao do investimento por hora por aluno nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: Fundeb, DOU e Plataforma Campineira Melhor Escola. (Fonte: [[MAMMANA et al. (2020)]])\relax }}{91}{table.caption.28}%
+\contentsline {table}{\numberline {6}{\ignorespaces Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.\relax }}{95}{table.caption.29}%
+\contentsline {table}{\numberline {7}{\ignorespaces Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica\relax }}{96}{table.caption.30}%
+\contentsline {table}{\numberline {8}{\ignorespaces Tradu\c {c}\~ao livre das palavras chave SQL associadas ao comando SELECT.\relax }}{99}{table.caption.31}%
+\contentsline {table}{\numberline {9}{\ignorespaces Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.\relax }}{99}{table.caption.32}%
+\contentsline {table}{\numberline {10}{\ignorespaces Compara\c {c}\~ao das nomenclaturas usadas nos n\'{i}veis de abstra\c {c}\~ao descritivo e conceitual.\relax }}{109}{table.caption.33}%
+\contentsline {table}{\numberline {11}{\ignorespaces Lista de substantivos presentes no gloss\'ario da Portaria 178 (em ordem alfab\'etica).\relax }}{109}{table.caption.34}%
+\contentsline {table}{\numberline {12}{\ignorespaces Substantivos extra\'{i}dos do texto do anexo da portaria 178 para a modelagem MER. Trata-se de de subconjunto selecionado, dado que alguns substantivos que n\~ao s\~ao pertinentes foram descartados.\relax }}{122}{table.caption.35}%
+\contentsline {table}{\numberline {13}{\ignorespaces Exemplo de lista de pessoas pertencentes `a entidade Pessoas\relax }}{123}{table.caption.36}%
+\contentsline {table}{\numberline {14}{\ignorespaces Exemplo de lista de tipos de papeis pertencentes `a entidade Tipos de Papeis\relax }}{123}{table.caption.37}%
+\contentsline {table}{\numberline {15}{\ignorespaces Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.\relax }}{123}{table.caption.41}%
+\contentsline {table}{\numberline {16}{\ignorespaces Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros de institui\c {c}\~oes. Na presente reprodu\c {c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c {c}\~oes de tipos de institui\c {c}\~oes por motivos de espa\c {c}o.\relax }}{124}{table.caption.42}%
+\contentsline {table}{\numberline {17}{\ignorespaces Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos papeis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.\relax }}{124}{table.caption.43}%
+\contentsline {table}{\numberline {18}{\ignorespaces Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.\relax }}{124}{table.caption.44}%
+\contentsline {table}{\numberline {19}{\ignorespaces O bando de dados relacional subjacente `a Plataforma de Gest\~ao do WASH \'e constitu\'{i}do por 54 tabelas (P.S.: uma revis\~ao recente do modelo levou a 65 tabelas).\relax }}{125}{table.caption.45}%
+\contentsline {table}{\numberline {20}{\ignorespaces Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.\relax }}{211}{table.caption.59}%
+\contentsline {table}{\numberline {21}{\ignorespaces Tabela de cidades num banco de dados relacional.\relax }}{214}{table.caption.60}%
+\contentsline {table}{\numberline {22}{\ignorespaces Tabela para a representa\c {c}\~ao de pessoas num banco de dados relacional\relax }}{214}{table.caption.61}%

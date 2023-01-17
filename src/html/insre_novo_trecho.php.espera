@@ -10,7 +10,7 @@ if(isset($_GET["trecho"])){
 
 include "identifica.php.cripto";
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 

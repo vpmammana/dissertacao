@@ -11,7 +11,7 @@ $data=date("Y_m_d_H_i_s");
 $myfile = fopen("script_SQL_".$data.".sql", "w") or die("Não foi possível abrir o arquivo!");
 include "identifica.php.cripto";
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 

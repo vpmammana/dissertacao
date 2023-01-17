@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  13 JAN 2023 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  15 JAN 2023 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2317,79 +2317,79 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ])
 (./USPSC-modelo-IAU_RedarTex.toc
 Overfull \hbox (1.5877pt too wide) detected at line 45
- \T1/lmss/bx/n/12 103
+ \T1/lmss/bx/n/12 105
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 46
- \T1/lmss/bx/n/12 103
+ \T1/lmss/bx/n/12 105
  []
 
 [27
 
 ]
 Overfull \hbox (1.5877pt too wide) detected at line 49
- \T1/lmss/bx/n/12 109
+ \T1/lmss/bx/n/12 111
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 52
- \T1/lmss/bx/n/12 116
+ \T1/lmss/bx/n/12 118
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 56
- \T1/lmss/bx/n/12 129
+ \T1/lmss/bx/n/12 131
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 57
- \T1/lmss/bx/n/12 129
+ \T1/lmss/bx/n/12 131
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 62
- \T1/lmss/bx/n/12 157
+ \T1/lmss/bx/n/12 159
  []
 
 [28]
 Overfull \hbox (1.5877pt too wide) detected at line 89
- \T1/lmss/bx/n/12 177
+ \T1/lmss/bx/n/12 179
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 102
- \T1/lmss/bx/n/12 190
+ \T1/lmss/bx/n/12 192
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 104
- \T1/lmss/bx/n/12 193
+ \T1/lmss/bx/n/12 195
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 106
- \T1/lmss/bx/n/12 195
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 107
- \T1/lmss/bx/n/12 195
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 108
- \T1/lmss/bx/n/12 195
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 110
  \T1/lmss/bx/n/12 197
  []
 
 
+Overfull \hbox (1.5877pt too wide) detected at line 107
+ \T1/lmss/bx/n/12 197
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 108
+ \T1/lmss/bx/n/12 197
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 110
+ \T1/lmss/bx/n/12 199
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 112
- \T1/lmss/bx/n/12 207
+ \T1/lmss/bx/n/12 209
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2400,12 +2400,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 118.
 
 Overfull \hbox (1.5877pt too wide) detected at line 122
- \T1/lmss/bx/n/12 215
+ \T1/lmss/bx/n/12 217
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 126
- \T1/lmss/bx/n/12 217
+ \T1/lmss/bx/n/12 219
  []
 
 ) [29] [30
@@ -3313,26 +3313,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [72]
-Underfull \vbox (badness 6380) has occurred while \output is active []
-
- [73]
+[73]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 3655.
-
-[74]
+ [74]
 <../../imagens/niveis-abstracao.png, id=843, 1127.21124pt x 796.9775pt>
 File: ../../imagens/niveis-abstracao.png Graphic file (type png)
 <use ../../imagens/niveis-abstracao.png>
 Package pdftex.def Info: ../../imagens/niveis-abstracao.png  used on input line
  3748.
 (pdftex.def)             Requested size: 1127.2085pt x 796.97554pt.
-
-Underfull \vbox (badness 7256) has occurred while \output is active []
-
- [75]
-Underfull \vbox (badness 2088) has occurred while \output is active []
-
- [76 <../../imagens/niveis-abstracao.png>] [77]
+ [75] [76 <../../imagens/niveis-abstracao.png>] [77]
 <../../imagens/exemplo-de-taxonomia.jpg, id=858, 1622.06pt x 1911.14pt>
 File: ../../imagens/exemplo-de-taxonomia.jpg Graphic file (type jpg)
 <use ../../imagens/exemplo-de-taxonomia.jpg>
@@ -3346,10 +3337,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [81]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [82]
-[83]
+[82] [83]
 <../../imagens/MER-crop.png, id=890, 1081.03876pt x 360.34625pt>
 File: ../../imagens/MER-crop.png Graphic file (type png)
 <use ../../imagens/MER-crop.png>
@@ -3360,8 +3348,12 @@ File: ../../imagens/P-TP-I.png Graphic file (type png)
 <use ../../imagens/P-TP-I.png>
 Package pdftex.def Info: ../../imagens/P-TP-I.png  used on input line 4678.
 (pdftex.def)             Requested size: 1207.5083pt x 370.38283pt.
- [84 <../../imagens/MER-crop.png>] [85 <../../imagens/P-TP-I.png>] [86]
-[87] [88]
+ [84 <../../imagens/MER-crop.png>] [85 <../../imagens/P-TP-I.png>]
+[86]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
+[88]
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 5159
 .
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
@@ -3371,7 +3363,14 @@ Overfull \hbox (8.752pt too wide) in paragraph at lines 5256--5267
  [][] 
  []
 
-[90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101]
+
+Underfull \vbox (badness 1406) has occurred while \output is active []
+
+ [90]
+Underfull \vbox (badness 7576) has occurred while \output is active []
+
+ [91]
+[92] [93] [94] [95] [96] [97] [98] [99] [100] [101]
 Underfull \hbox (badness 3872) in paragraph at lines 6224--6224
 []\T1/lmr/m/it/10.95 (+20) SELECT nome_-par-ti-ci-pante FROM par-ti-ci-pan-tes2
  WHERE
@@ -5614,7 +5613,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `m' ignored and `p' used.
 
@@ -5625,7 +5624,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `a' ignored and `p' used.
 
@@ -5636,7 +5635,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -5647,7 +5646,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `s' ignored and `p' used.
 
@@ -5658,7 +5657,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -5669,7 +5668,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `z' ignored and `p' used.
 
@@ -5680,7 +5679,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -5691,7 +5690,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `=' ignored and `p' used.
 
@@ -5702,7 +5701,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -5713,7 +5712,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -5724,7 +5723,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -5735,7 +5734,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -5746,7 +5745,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `w' ignored and `p' used.
 
@@ -5757,7 +5756,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -5768,7 +5767,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `d' ignored and `p' used.
 
@@ -5779,7 +5778,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
@@ -5790,7 +5789,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `{' ignored and `p' used.
 
@@ -5801,7 +5800,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `\' ignored and `p' used.
 
@@ -5812,7 +5811,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -5823,7 +5822,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `x' ignored and `p' used.
 
@@ -5834,7 +5833,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `e' ignored and `p' used.
 
@@ -5845,7 +5844,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `i' ignored and `p' used.
 
@@ -5856,7 +5855,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `g' ignored and `p' used.
 
@@ -5867,14 +5866,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18946 ...re}[max size={\textwidth}{\textheight}]
+l.18947 ...re}[max size={\textwidth}{\textheight}]
                                                   
 Option `}' ignored and `p' used.
 
 <../../imagens/ranke.jpg, id=1718, 107.38997pt x 148.80312pt>
 File: ../../imagens/ranke.jpg Graphic file (type jpg)
 <use ../../imagens/ranke.jpg>
-Package pdftex.def Info: ../../imagens/ranke.jpg  used on input line 18953.
+Package pdftex.def Info: ../../imagens/ranke.jpg  used on input line 18954.
 (pdftex.def)             Requested size: 181.99722pt x 252.21494pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -5906,7 +5905,7 @@ LaTeX Warning: Citation `nbr14724' on page 217 undefined on input line 13.
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 20.
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=1767, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=1768, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
@@ -5937,20 +5936,20 @@ AED: lastpage setting LastPage
 \openout9 = `USPSC-modelo-IAU_RedarTex.toc'.
 
 
-! LaTeX Error: \begin{alineas} on input line 19294 ended by \end{document}.
+! LaTeX Error: \begin{alineas} on input line 19295 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19348 \end{document}
+l.19349 \end{document}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19348.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 19348.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19349.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 19349.
 (./USPSC-modelo-IAU_RedarTex.aux
 (./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.aux)
@@ -5961,9 +5960,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 19348.
 (./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19348.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19349.
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 19348.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 19349.
 
 
 LaTeX Warning: There were undefined references.
@@ -5971,17 +5970,17 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19348.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19349.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 19294 (\begingroup)
+### semi simple group (level 1) entered at line 19295 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 44120 strings out of 494468
- 840433 string characters out of 6175091
- 1119770 words of memory out of 5000000
- 46066 multiletter control sequences out of 15000+600000
+ 44121 strings out of 494468
+ 840509 string characters out of 6175091
+ 1118779 words of memory out of 5000000
+ 46067 multiletter control sequences out of 15000+600000
  649052 words of font info for 189 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  73i,18n,98p,1543b,851s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5996,7 +5995,7 @@ r8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (221 pages, 16211804 bytes).
+Output written on USPSC-modelo-IAU_RedarTex.pdf (221 pages, 16187828 bytes).
 PDF statistics:
  2306 PDF objects out of 2487 (max. 8388607)
  1972 compressed objects within 20 object streams

@@ -108,7 +108,7 @@ return "<div id='blank_".$key."' style='height: ".$altura_blank."px'></div>";
 }
 
 $arvore = "";
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 
@@ -120,7 +120,7 @@ $numero_registrados = $result->num_rows;
 $niveis = [];
 $pais = [];
 // echo "<table>";
-$velho_titulo = "Dissertacao";
+$velho_titulo = "Dissertacao sem Eixo 2";
 $top_folha = $top_arvore;
 
 $min_folha = 100000000; // o menor left de todas as folhas

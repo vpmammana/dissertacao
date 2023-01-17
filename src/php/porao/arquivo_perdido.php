@@ -32,7 +32,7 @@ $largura_pai= 250;
 $padding_nivel= 50;
 $padding_pai = 10;
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 

@@ -400,7 +400,7 @@ return "<div id='blank_".$key."' class='blank' style='height: ".$altura_blank."p
 }
 
 $arvore = "";
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 
@@ -417,7 +417,7 @@ $numero_registrados = $result->num_rows;
 $niveis = [];
 $pais = [];
 // echo "<table>";
-$velho_titulo = "Dissertacao";
+$velho_titulo = "Dissertacao sem Eixo 2";
 $velho_nome_tipo_secao = "raiz";
 $contagem_paragrafos=1;
 

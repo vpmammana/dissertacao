@@ -13,7 +13,7 @@ include "identifica.php.cripto";
 
 
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 
 $pdo = new PDO('mysql:dbname='.$database.';host=127.0.0.1', $username, $pass);

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		Dissertação UOXI-WASH
+		Dissertação UOXI-WASH sem EIXO 2
 	</title>
 
 		<link rel='stylesheet' href='../php/drop_menu.css'>	
@@ -340,7 +340,7 @@ ini_set('display_errors', 1);
 
 
 include "../php/identifica.php.cripto";
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 $numero_de_colunas_de_radio_button = 10;
 
 //echo "</table>";

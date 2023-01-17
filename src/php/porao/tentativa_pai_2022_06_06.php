@@ -68,7 +68,7 @@ return "<div id='blank_".$key."' style='height: ".$altura_blank."px'></div>";
 }
 
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 
@@ -78,7 +78,7 @@ $numero_registrados = $result->num_rows;
 $niveis = [];
 $pais = [];
 echo "<table>";
-$velho_titulo = "Dissertacao";
+$velho_titulo = "Dissertacao sem eixo 2";
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()){
 	$nivel             = $row["nivel"]; 

@@ -18,7 +18,7 @@ include "identifica.php.cripto";
 
 
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
  echo "call insere_abaixo_do_atual('".$nome_secao_pai."', '".$nome_tipo_secao."', '".$trecho."')";
 $pdo = new PDO('mysql:dbname='.$database.';host=127.0.0.1', $username, $pass);
 $data = $pdo->query("call  insere_abaixo_do_atual('".$nome_secao_pai."', '".$nome_tipo_secao."', '".$trecho."');")->fetchAll(PDO::FETCH_ASSOC);

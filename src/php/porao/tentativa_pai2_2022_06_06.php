@@ -52,7 +52,7 @@ $largura_pai= 250;
 $padding_nivel= 50;
 $padding_pai = 10;
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 
@@ -62,7 +62,7 @@ $numero_registrados = $result->num_rows;
 $niveis = [];
 $pais = [];
 echo "<table>";
-$velho_titulo = "Dissertacao";
+$velho_titulo = "Dissertacao sem eixo2";
 if ($result->num_rows>0) {
     while($row=$result->fetch_assoc()){
 	$nivel             = $row["nivel"]; 

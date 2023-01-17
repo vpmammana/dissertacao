@@ -8,7 +8,7 @@ if(isset($_GET["id_chave_secao"])){
 
 include "identifica.php.cripto";
 
-$database = "dissertacao";
+$database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 

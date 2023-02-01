@@ -1,0 +1,257 @@
+Script started on 2023-01-17 16:45:41-03:00 [<not executed on terminal>]
+total 36836
+drwxrwx---+ 4 www-data www-data    4096 Jan 17 16:45 .
+drwxrwx---+ 6 www-data www-data    4096 Jan 15 12:17 ..
+-rw-rw----+ 1 www-data www-data     922 Jan 15 12:17 auto_ler_tabela_campo.php
+-rw-rw----+ 1 www-data www-data 1390448 Jan 15 12:17 backup_dissertacao_2022_12_01.sql
+-rw-rw----+ 1 www-data www-data    1805 Jan 15 12:17 busca_str.php
+-rw-rw----+ 1 www-data www-data   10132 Jan 15 13:11 carrega_arvore_fixo.php
+-rw-rw----+ 1 www-data www-data   38987 Jan 15 13:03 carrega_arvore.php
+-rw-rw----+ 1 www-data www-data   22251 Jan 15 13:03 carrega_arvore.php~
+-rw-rw----+ 1 www-data www-data     501 Jan 15 13:03 carrega_instituicao.php
+-rw-rw----+ 1 www-data www-data      62 Jan 15 12:17 composer.json
+-rw-rw----+ 1 www-data www-data   47612 Jan 15 12:17 composer.lock
+-rw-rw----+ 1 www-data www-data    3043 Jan 15 13:08 devolve_divs_versoes.php
+-rw-rw----+ 1 www-data www-data   12288 Jan 15 12:17 .devolve_divs_versoes.php.swp
+drwxrwx---+ 2 www-data www-data    4096 Jan 15 12:17 docs_api
+-rw-rw----+ 1 www-data www-data     816 Jan 15 12:17 drop_menu.css
+-rw-rw----+ 1 www-data www-data   16605 Jan 15 12:17 drop_menu.js
+-rw-rw----+ 1 vitor    vitor      31816 Jan 17 16:45 gera_tex2_enfatiza_data.php
+-rw-rw----+ 1 vitor    vitor      31187 Jan 15 13:05 gera_tex2.php
+-rw-rw----+ 1 www-data www-data   23940 Jan 15 13:39 gera_tex2.php.espera
+-rw-rw----+ 1 www-data www-data   24166 Jan 15 13:41 gera_tex2.php.espera_2022_09_16
+-rw-rw----+ 1 www-data www-data   22191 Jan 15 12:17 governo_eletronico.sql
+-rw-rw----+ 1 www-data www-data    1721 Jan 15 12:17 grava_imagem.php
+-rw-rw----+ 1 www-data www-data    2570 Jan 15 13:04 grava_script_sql.php
+-rw-rw----+ 1 www-data www-data     159 Jan 15 12:17 grava_word.php
+-rw-rw----+ 1 vitor    vitor        192 Jan 17 16:45 identifica.php.cripto
+-rw-rw----+ 1 www-data www-data     632 Jan 15 12:17 input_para_subir_imagem.php
+-rw-rw----+ 1 www-data www-data    1239 Jan 15 12:17 input_para_subir_imagem.php.espera
+-rw-rw----+ 1 www-data www-data     895 Jan 15 13:08 insere_abaixo.php
+-rw-rw----+ 1 www-data www-data     808 Jan 15 13:01 insere_dir.php
+-rw-rw----+ 1 www-data www-data     781 Jan 15 13:04 insere_esq.php
+-rw-rw----+ 1 www-data www-data     722 Jan 15 13:01 insere_novo_trecho.php
+-rw-rw----+ 1 www-data www-data     695 Jan 15 13:41 insere_novo_trecho.php.espera
+-rw-rw----+ 1 www-data www-data       0 Jan 15 12:17 log_de_erros.log
+-rw-rw----+ 1 www-data www-data  692647 Jan 15 12:17 mudanca_para_de_fundamentos_para_metodos.sql
+-rw-rw----+ 1 www-data www-data  701200 Jan 15 12:17 mudanca_para_inclusao_social.sql
+drwxrwx---+ 2 www-data www-data    4096 Jan 15 13:40 porao
+-rw-rw----+ 1 www-data www-data      81 Jan 15 12:17 quem_sou.php
+-rw-rw----+ 1 www-data www-data    2505 Jan 15 12:17 quickstart.php
+-rw-rw----+ 1 www-data www-data  701299 Jan 15 12:17 recuperacao_de_governo_eletronico.sql
+-rw-rw----+ 1 www-data www-data   24576 Jan 15 12:17 recuperado.index.php
+-rw-rw----+ 1 www-data www-data     680 Jan 15 13:10 retorna_versao_pelo_id.php
+-rw-rw----+ 1 vitor    vitor     892946 Jan 15 12:26 script_apendice_A_2023_01_07.sql
+-rw-rw----+ 1 www-data www-data  687445 Jan 15 12:17 script_SQL_2022_11_21_16_28_53.sql
+-rw-rw----+ 1 www-data www-data  687445 Jan 15 12:17 script_SQL_2022_11_21_17_36_05.sql
+-rw-rw----+ 1 www-data www-data  687425 Jan 15 12:17 script_SQL_2022_11_21_18_06_39.sql
+-rw-rw----+ 1 www-data www-data  692525 Jan 15 12:17 script_SQL_2022_11_21_20_59_14.sql
+-rw-rw----+ 1 www-data www-data  692525 Jan 15 12:17 script_SQL_2022_11_21_21_41_27.sql
+-rw-rw----+ 1 www-data www-data  671146 Jan 15 12:17 script_SQL_2022_11_22_00_17_58.sql
+-rw-rw----+ 1 www-data www-data  679102 Jan 15 12:17 script_SQL_2022_11_22_14_46_56.sql
+-rw-rw----+ 1 www-data www-data  703286 Jan 15 12:17 script_SQL_2022_11_22_18_39_00.sql
+-rw-rw----+ 1 www-data www-data  703286 Jan 15 12:17 script_SQL_2022_11_22_18_45_18.sql
+-rw-rw----+ 1 www-data www-data  739335 Jan 15 12:17 script_SQL_2022_11_23_20_29_08.sql
+-rw-rw----+ 1 www-data www-data  746651 Jan 15 12:17 script_SQL_2022_11_23_22_25_03.sqlmysql -u vitor -p SenhaMyVi2021 - SOH QUE NAO! agora eh o cara que o spi gostava para caramba, que morreu tragicamente. Eh o nome dele seguido do numero dele... tudo minuscula... seguindo do numero dele sem espacos
+alias do diretorio de trabalho: observatorio
+Senha git push ->  GIT HUB:   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 (dez/2021)
+Senha git push -> GIT HUB:  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 (jan/2022)
+Senha de encriptacao do PrototipoAluizio -> aluizioaerofolio
+Senha de encriptacao Fev20222 -> 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
+Senha Agosto 2022 -> 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
+Senha Julho 2022 -> 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
+Senha Setembro 2022 ->  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
+Senha inicio outubro de 2022 ->    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
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ total 36836
+bash: total: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ drwxrwx---+ 4 www-data www-data    4096 Jan 17 16:45 .
+bash: drwxrwx---+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ drwxrwx---+ 6 www-data www-data    4096 Jan 15 12:17 ..
+bash: drwxrwx---+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     922 Jan 15 12:17 auto_ler_tabela_campo.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data 1390448 Jan 15 12:17 backup_dissertacao_2022_12_01.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data    1805 Jan 15 12:17 busca_str.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   10132 Jan 15 13:11 carrega_arvore_fixo.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   38987 Jan 15 13:03 carrega_arvore.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   22251 Jan 15 13:03 carrega_arvore.php~
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     501 Jan 15 13:03 carrega_instituicao.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data      62 Jan 15 12:17 composer.json
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   47612 Jan 15 12:17 composer.lock
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data    3043 Jan 15 13:08 devolve_divs_versoes.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   12288 Jan 15 12:17 .devolve_divs_versoes.php.swp
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ drwxrwx---+ 2 www-data www-data    4096 Jan 15 12:17 docs_api
+bash: drwxrwx---+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     816 Jan 15 12:17 drop_menu.css
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   16605 Jan 15 12:17 drop_menu.js
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor      31816 Jan 17 16:45 gera_tex2_enfatiza_data.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor      31187 Jan 15 13:05 gera_tex2.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   23940 Jan 15 13:39 gera_tex2.php.espera
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   24166 Jan 15 13:41 gera_tex2.php.espera_2022_09_16
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   22191 Jan 15 12:17 governo_eletronico.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data    1721 Jan 15 12:17 grava_imagem.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data    2570 Jan 15 13:04 grava_script_sql.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     159 Jan 15 12:17 grava_word.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor        192 Jan 17 16:45 identifica.php.cripto
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     632 Jan 15 12:17 input_para_subir_imagem.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data    1239 Jan 15 12:17 input_para_subir_imagem.php.espera
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     895 Jan 15 13:08 insere_abaixo.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     808 Jan 15 13:01 insere_dir.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     781 Jan 15 13:04 insere_esq.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     722 Jan 15 13:01 insere_novo_trecho.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     695 Jan 15 13:41 insere_novo_trecho.php.espera
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data       0 Jan 15 12:17 log_de_erros.log
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  692647 Jan 15 12:17 mudanca_para_de_fundamentos_para_metodos.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  701200 Jan 15 12:17 mudanca_para_inclusao_social.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ drwxrwx---+ 2 www-data www-data    4096 Jan 15 13:40 porao
+bash: drwxrwx---+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data      81 Jan 15 12:17 quem_sou.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data    2505 Jan 15 12:17 quickstart.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  701299 Jan 15 12:17 recuperacao_de_governo_eletronico.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   24576 Jan 15 12:17 recuperado.index.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     680 Jan 15 13:10 retorna_versao_pelo_id.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     892946 Jan 15 12:26 script_apendice_A_2023_01_07.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  687445 Jan 15 12:17 script_SQL_2022_11_21_16_28_53.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  687445 Jan 15 12:17 script_SQL_2022_11_21_17_36_05.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  687425 Jan 15 12:17 script_SQL_2022_11_21_18_06_39.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  692525 Jan 15 12:17 script_SQL_2022_11_21_20_59_14.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  692525 Jan 15 12:17 script_SQL_2022_11_21_21_41_27.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  671146 Jan 15 12:17 script_SQL_2022_11_22_00_17_58.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  679102 Jan 15 12:17 script_SQL_2022_11_22_14_46_56.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  703286 Jan 15 12:17 script_SQL_2022_11_22_18_39_00.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  703286 Jan 15 12:17 script_SQL_2022_11_22_18_45_18.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  739335 Jan 15 12:17 script_SQL_2022_11_23_20_29_08.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  746651 Jan 15 12:17 script_SQL_2022_11_23_22_25_03.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  754459 Jan 15 12:17 script_SQL_2022_11_24_04_09_54.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  767342 Jan 15 12:17 script_SQL_2022_11_28_15_32_33.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  767342 Jan 15 12:17 script_SQL_2022_11_28_21_22_48.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  767406 Jan 15 12:17 script_SQL_2022_11_28_21_41_16.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  767386 Jan 15 12:17 script_SQL_2022_11_28_21_57_20.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  767386 Jan 15 12:17 script_SQL_2022_11_28_22_00_31.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  865950 Jan 15 12:17 script_SQL_2022_12_01_17_28_46.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  865950 Jan 15 12:17 script_SQL_2022_12_01_17_32_33.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  865764 Jan 15 12:17 script_SQL_2022_12_01_17_38_26.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  866073 Jan 15 12:17 script_SQL_2022_12_01_18_14_18.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  866073 Jan 15 12:17 script_SQL_2022_12_01_18_16_35.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  875168 Jan 15 12:17 script_SQL_2022_12_05_12_30_13.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  880071 Jan 15 12:17 script_SQL_2022_12_07_18_55_13.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     882419 Jan 15 12:26 script_SQL_2022_12_17_14_09_41.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     883881 Jan 15 12:26 script_SQL_2023_01_06_12_53_47.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     886811 Jan 15 12:26 script_SQL_2023_01_06_18_42_58.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     890691 Jan 15 12:26 script_SQL_2023_01_06_21_49_04.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     893145 Jan 15 12:26 script_SQL_2023_01_07_03_30_17.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     892929 Jan 15 12:26 script_SQL_2023_01_07_03_44_51.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     892929 Jan 15 12:26 script_SQL_2023_01_07_03_53_52.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  900912 Jan 15 12:22 script_SQL_2023_01_15_12_22_00.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  900912 Jan 15 12:26 script_SQL_2023_01_15_12_26_32.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  900912 Jan 15 12:44 script_SQL_2023_01_15_12_44_29.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  903359 Jan 17 11:30 script_SQL_2023_01_17_11_30_16.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  902805 Jan 17 12:14 script_SQL_2023_01_17_12_14_36.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     909361 Jan 17 16:45 script_SQL_2023_01_17_16_22_10.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data  902805 Jan 17 16:24 script_SQL_2023_01_17_16_24_03.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     909361 Jan 17 16:45 script_SQL_2023_01_17_16_24_58.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   12288 Jan 15 12:17 .swp
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data       0 Jan 15 13:16 temporario.txt
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   28648 Jan 15 12:17 .tentativa_pai_opacidade.php.swp
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     550 Jan 15 13:10 teste_call_procedure.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     918 Jan 15 12:17 teste_leitura_arquivo.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data      84 Jan 15 12:17 test_hash.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor     902834 Jan 17 11:45 transferencia_BD_para_apendice.sql
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     630 Jan 15 13:05 transpoe_subarvore.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data     765 Jan 15 13:08 transpoe_subarvore.php.versao_msqli
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 vitor    vitor          0 Jan 17 16:45 typescript
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data    1123 Jan 15 12:17 USPSC-modelo-IAU_RedarTex.log
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data      21 Jan 15 12:17 versao.php
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ -rw-rw----+ 1 www-data www-data   23427 Jan 15 12:17 w3.css
+bash: -rw-rw----+: command not found
+]0;vitor@hpo3yjcd: /var/www/html/dev_vitor/tese_2023/src/php[01;32mvitor@hpo3yjcd[00m:[01;34m/var/www/html/dev_vitor/tese_2023/src/php[00m$ exit
+
+Script done on 2023-01-17 16:45:53-03:00 [COMMAND_EXIT_CODE="127"]

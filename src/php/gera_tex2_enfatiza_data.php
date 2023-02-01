@@ -13,7 +13,7 @@ if(isset($_GET["mantem_bibliografia"])){
 
 if(isset($_GET["enfatiza_data"])){
   $param_enfatiza_data= $_GET["enfatiza_data"];
-} else $param_enfatiza_data = "2023-01-15";
+} else $param_enfatiza_data = "2023-01-22";
 
 $id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura, para que posso haver substituicao depois
 
@@ -620,9 +620,12 @@ if ($result->num_rows>0) {
 
 		$texto_com_acentuacao_latex = converte_acento($titulo);
 		$texto_com_acentuacao_para_fileput = converte_acento_para_file_put($titulo);
-		if ($param_mode == "verbose_data"  && $param_enfatiza_data <= $data_versao_matriz[0] // && $data_versao_matriz[1] > "07"
+		if ($param_mode == "verbose_data" &&  $param_enfatiza_data <= $data_versao_matriz[0] // && $data_versao_matriz[1] > "07"
 		   ) {
-			$texto_com_acentuacao_para_fileput = "\\ul{".$texto_com_acentuacao_para_fileput."}";
+			if ($nome_tipo_secao=="paragrafo") {$texto_com_acentuacao_para_fileput = "\\ul{".$texto_com_acentuacao_para_fileput."}";}
+	//		else { 
+	//			if ($nome_tipo_secao!="topico") {$texto_com_acentuacao_para_fileput = "{\\ul{".$texto_com_acentuacao_para_fileput."}}";}
+	//			}
 			echo "(".$data_versao_matriz[0]." - ".$data_versao_matriz[1].") -> ".$texto_com_acentuacao_para_fileput."\n\n";
 		}; // else {echo "(".$data_versao_matriz[0]." - ".$data_versao_matriz[1].") ";}	
 		if ($nome_tipo_secao == 'item_lista_num') {$texto_com_acentuacao_para_fileput = "\\item ".$texto_com_acentuacao_para_fileput;}

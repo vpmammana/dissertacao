@@ -2793,7 +2793,7 @@ As planilhas eletr\^onicas s\~ao softwares que permitem guardar  dados e realiza
 
 
 
-A planilha eletr\^onica \'e um dos m\'etodos mais populares para armazenagem, opera\c{c}\~oes e an\'alise de dados porque tem uma curva de aprendizagem relativamente favor\'avel. Em outras palavras, com pouca capacita\c{c}\~ao \'e poss\'{\i}vel obter resultados rapidamente.
+A planilha eletr\^onica \'e um dos m\'etodos mais populares para armazenagem, opera\c{c}\~oes e an\'alise de dados porque tem uma curva de aprendizagem relativamente favor\'avel. Em outras palavras, com pouca capacita\c{c}\~ao \'e poss\'{\i}vel obter resultados rapidamente. Mas esta facilidade tem um pre\c{c}o, que normalmente impacta a confiabilidade desses dados, tema que passa a ser discutido a partir de agora.
 
 
 
@@ -3067,14 +3067,21 @@ Esta tecnologia se chama \textquotedbl Banco de Dados Relacional\textquotedbl , 
 
 
 \subsection[Bancos de Dados Relacionais]{Bancos de Dados Relacionais}\label{Bancos de Dados Relacionais}
-A teoria por tr\'as de Bancos de Dados Relacionais \'e bastante sofisticada envolvendo uma \'Algebra que escapa aos objetivos desta disserta\c{c}\~ao. Entretanto alguns elementos s\~ao f\'aceis de compreender e podem ser expostos aqui de uma forma simples o suficiente para atender ao objetivo de justificar as escolhas feitas ao longo deste trabalho. Isto pode ser feito sem preju\'{\i}zo para o rigor e erudi\c{c}\~ao cient\'{\i}ficos.
+A teoria por tr\'as de Bancos de Dados Relacionais (BDR) \'e bastante sofisticada envolvendo uma \'Algebra que escapa aos objetivos desta disserta\c{c}\~ao. Entretanto alguns elementos s\~ao f\'aceis de compreender e podem ser expostos aqui de uma forma simples o suficiente para atender ao objetivo de justificar as escolhas feitas ao longo deste trabalho. Isto pode ser feito sem preju\'{\i}zo para o rigor e erudi\c{c}\~ao cient\'{\i}ficos.
 
 
 
 
 
 
-O pioneiro na cria\c{c}\~ao dos conceitos de Bancos de Dados Relacionais foi Edgard Codd, um pesquisador da IBM que revolucionou a forma como o mundo passou a armazenar dados. Seu paper seminal foi  \textquotedbl A Relational Model of Data for Large Shared Data Banks\textquotedbl  (\textquotedbl Um modelo relacional de dados para grandes bancos de dados compartilhados\textquotedbl , em tradu\c{c}\~ao livre) de 1970, um marco na \'area (CODD, 1970). Ao longo de sua vida, Codd lutou contra uma resist\^encia para implanta\c{c}\~ao de suas ideias dentro da pr\'opria IBM, resist\^encia esta que tinha origem em interesses comerciais, uma vez que a IBM j\'a tinha sistemas implantados baseados em outras formas de representa\c{c}\~ao de dados, e n\~ao tinha interesse em uma nova solu\c{c}\~ao concorrente. O modelo de Codd, muito superior, passou a ser considerado pela IBM por conta da press\~ao de concorrentes e de seus clientes, que passaram a exigir uma solu\c{c}\~ao baseada nas ideias de Codd.
+O pioneiro na cria\c{c}\~ao dos conceitos de BDR foi Edgard Codd, um pesquisador da IBM que revolucionou a forma como o mundo passou a armazenar dados. Seu \textquotedbl paper\textquotedbl  seminal foi  \textquotedbl A Relational Model of Data for Large Shared Data Banks\textquotedbl  (\textquotedbl Um modelo relacional de dados para grandes bancos de dados compartilhados\textquotedbl , em tradu\c{c}\~ao livre) de 1970, um marco na \'area (CODD, 1970).
+
+
+
+
+
+
+Ao longo de sua vida, Codd lutou contra a resist\^encia para implanta\c{c}\~ao de suas ideias dentro da pr\'opria IBM, resist\^encia esta que tinha origem em interesses comerciais, uma vez que a IBM j\'a tinha sistemas implantados baseados em outras formas de representa\c{c}\~ao de dados, e n\~ao tinha interesse em uma nova solu\c{c}\~ao concorrente. O modelo de Codd, muito superior, passou a ser considerado pela IBM por conta da press\~ao de concorrentes e de seus clientes, que passaram a exigir uma solu\c{c}\~ao baseada nas ideias de Codd.
 
 
 
@@ -3591,29 +3598,21 @@ Para a realiza\c{c}\~ao do trabalho historiogr\'afico nos valemos dos seguintes 
 \end{alineas}
 
 \section[Caminho para a obten\c{c}\~ao dos indicadores (eixo 2)]{Caminho para a obten\c{c}\~ao dos indicadores (eixo 2)}\label{Caminho para a obten\c{c}\~ao dos indicadores (eixo 2)}
-\subsection[M\'etodo de Estrutura\c{c}\~ao e an\'alise dos dados]{M\'etodo de Estrutura\c{c}\~ao e an\'alise dos dados}\label{M\'etodo de Estrutura\c{c}\~ao e an\'alise dos dados}
-Vimos no cap\'{\i}tulo de Fundamenta\c{c}\~ao Te\'orica que os Bancos de Dados Relacionais oferecem uma melhor forma de representar dados complexos como os do WASH em rela\c{c}\~ao ao uso de planilhas eletr\^onicas ou outras formas menos estruturadas.
+Nesta se\c{c}\~ao apresentaremos os caminhos percorridos para chegar aos indicadores, no contexto do eixo 2.
 
 
 
 
 
 
-A compara\c{c}\~ao que fizemos com planilhas eletr\^onicas mostrou que estas ferramentas, ao contr\'ario do modelo relacional, s\~ao mais propensas aos erros de digita\c{c}\~ao, falta de uniformiza\c{c}\~ao no preenchimento de dados, falta de seguran\c{c}a e prote\c{c}\~ao da informa\c{c}\~ao, dentre outras desvantagens.
+De forma sum\'aria, podemos antecipar que os indicadores foram obtidos atrav\'es de consultas usando a linguagem SQL aplicada \`a base de dados da Plataforma Platu\'osh, ferramenta criada pela equipe do WASH para registrar os dados de execu\c{c}\~ao do programa. Essa plataforma come\c{c}ou a ser desenvolvida pelo coordenador do WASH em 2018, para a armazenagem de dados de eventos e a respectiva presen\c{c}a de participantes. Posteriormente a ferramenta foi sendo aprimorada para registrar o cadastro de participantes, institui\c{c}\~oes envolvidas, documentos gerados, localidades atendidas, bolsas concedidas, entre outros.
 
 
 
 
 
 
-A escolha do modelo relacional para representar os dados do WASH, em substitui\c{c}\~ao \`as planilhas eletr\^onicas, foi proposta pelo coordenador do Projeto, Victor Pellegrini Mammana, que passou a promover di\'alogos para identificar a melhor forma de representar os dados.
-
-
-
-
-
-
-Para implementar o modelo em um software-aplicativo, foi escolhida uma plataforma baseada nos seguintes softwares:
+Os indicadores gerados nesta disserta\c{c}\~ao se referem a dois recortes temporais:
 
 
 
@@ -3622,34 +3621,104 @@ Para implementar o modelo em um software-aplicativo, foi escolhida uma plataform
 
 
 \begin{alineas}
-\item Sistema Operacional do servidor: LINUX
+\item Recorte A: referente ao per\'{\i}odo de setembro de 2013 a agosto de 2022, quando os dados da \textquotedbl Platu\'osh\textquotedbl  foram copiados da base original e \textquotedbl congelados\textquotedbl  para a pesquisa. O dito  \textquotedbl congelamento\textquotedbl  dos dados foi necess\'ario para que ferramentas especiais de extra\c{c}\~ao de dados pudessem ser desenvolvidas. Essas ferramentas permitiram extrair o perfil et\'ario de participantes apresentado na forma de um histograma de idades, bem como a evolu\c{c}\~ao anual de participantes, de participa\c{c}\~oes e de m\'edias de participa\c{c}\~oes (ver Figs. XXX). Esse esfor\c{c}o foi conduzido com a colabora\c{c}\~ao de Victor Pellegrini Mammana,  respons\'avel por gerar as consultas em linguagem SQL para posterior produ\c{c}\~ao dos gr\'aficos (ver Figs. XXX).
+\item Recorte B: referente ao per\'{\i}odo de setembro de 2013 a janeiro de 2023, implementado com um sistema de consulta direta na base de dados da \textquotedbl Platu\'osh\textquotedbl , ou seja, alimentado em tempo real pelo aplicativo em produ\c{c}\~ao. As ferramentas de consulta no Recorte B visam a extra\c{c}\~ao de dados tais como: distribui\c{c}\~ao de bolsas, modalidades de bolsas, tipos de atividades realizadas nos eventos, evolu\c{c}\~ao anual da quantidade de eventos,  entre outros. Por ter um car\'ater geral, anonimizado, o Recorte B contribui para a gest\~ao do programa e foi disponibilizado publicamente  (WASH, 2023). Este esfor\c{c}o foi conduzido por Michel Alencar Morandi (ver Figs. XXX).
+\end{alineas}
+
+N\~ao obstante essa concentra\c{c}\~ao na consulta estruturada \`a plataforma Platu\'osh, outros m\'etodos complementares foram usados para gerar os indicadores, como montagem de planilhas de dados, consultas diretas ao acervo f\'{\i}sico e pesquisa em bases de dados p\'ublicas.
+
+
+
+
+
+
+\subsection[M\'etodo de busca estruturada na plataforma Platu\'osh]{M\'etodo de busca estruturada na plataforma Platu\'osh}\label{M\'etodo de busca estruturada na plataforma Platu\'osh}
+Vimos no cap\'{\i}tulo de Fundamenta\c{c}\~ao Te\'orica que os Bancos de Dados Relacionais (BDR) oferecem uma melhor forma de representar dados complexos como os do WASH, quando comparada com formas menos estruturadas, tais como as planilhas eletr\^onicas.
+
+
+
+
+
+
+Diferentemente do robusto m\'etodo BDR, as planilhas eletr\^onicas s\~ao mais propensas aos erros de digita\c{c}\~ao, falta de uniformiza\c{c}\~ao no preenchimento de dados, falta de confiabilidade, falta de prote\c{c}\~ao da informa\c{c}\~ao, dentre outras desvantagens. Por outro lado, t\^em uma r\'apida curva de aprendizado e ciclo de desenvolvimento de solu\c{c}\~oes, permitindo a verifica\c{c}\~ao r\'apida de dados sem a necessidade de mobiliza\c{c}\~ao de grandes equipes de desenvolvimento.
+
+
+
+
+
+
+A decis\~ao da coordena\c{c}\~ao do WASH de adotar o BDR, anterior ao in\'{\i}cio desta disserta\c{c}\~ao, foi resultado de um aprendizado de anos da equipe com a falta de confiabilidade em registrar presen\c{c}as individualizadas de participantes nas planilhas eletr\^onicas.
+
+
+
+
+
+
+Essa decis\~ao abriu a oportunidade para que, neste trabalho, us\'assemos como m\'etodo de pesquisa, para a gera\c{c}\~ao de indicadores, a busca estruturada em base de dados utilizando a Linguagem SQL. Em alguns casos pontuais n\~ao cr\'{\i}ticos, mantivemos o uso das planilhas eletr\^onicas como forma de verifica\c{c}\~ao \textquotedbl manual\textquotedbl  de dados. Mas, de forma geral, o m\'etodo BDR abriu um leque muito grande de alternativas de indicadores que, com as planilhas eletr\^onicas, seriam muito dif\'{\i}ceis de obter.
+
+
+
+
+
+
+Para implementar o m\'etodo BDR foi desenvolvida uma plataforma web constitu\'{\i}da de back-end e front-end. O backend \'e executado em um servidor que cont\'em uma infraestrutura baseada nos seguintes softwares:
+
+
+
+
+
+
+
+\begin{alineas}
+\item Sistema Operacional do servidor: GNU/LINUX
 \item Servidor de p\'aginas WEB: Apache
 \item Servidor de Banco de Dados: MySQL
 \item Linguagens de Programa\c{c}\~ao: PHP, Javascript e SQL
 \end{alineas}
 
-Os detalhes de implementa\c{c}\~ao dessas plataformas fogem ao escopo de forma\c{c}\~ao desta autora, raz\~ao pela qual nesta parte do trabalho nos concentraremos apenas na caracteriza\c{c}\~ao do modelo de banco de dados relacional que foi implementado no servidor MySQL.
+Este tipo de infraestrutura \'e conhecida como LAMP, um acr\^onimo formado pela inicial dos softwares listados acima.
 
 
 
 
 
 
-Este software-aplicativo foi denominado \textquotedbl Platu\'osh\textquotedbl  e contou com a participa\c{c}\~ao da presente autora em sua concep\c{c}\~ao  (MAMMANA et al., 2022). A coordena\c{c}\~ao do desenvolvimento dessa plataforma foi assumida por Michel Morandi, em meados de 2019, ap\'os a apresenta\c{c}\~ao de uma primeira vers\~ao do sistema por Victor Mammana.
+Os detalhes de implementa\c{c}\~ao dessa infraestrutura fogem ao escopo desta disserta\c{c}\~ao, exceto no que se refere ao MySQL onde est\~ao as tabelas da base de dados da plataforma. Essas tabelas ser\~ao tratadas na pr\'oxima se\c{c}\~ao.
 
 
 
 
 
 
-A contribui\c{c}\~ao para a concep\c{c}\~ao do software concentrou-se nos primeiros exerc\'{\i}cios de registro de presen\c{c}a e de realiza\c{c}\~ao de oficinas, realizado por n\'os utilizando meios f\'{\i}sicos. Propusemos um sistema de testemunhos documentais para comprovar a realiza\c{c}\~ao das oficinas, colecionando notas em Di\'arios de Bordo, fotografias, listas de presen\c{c}a e material de divulga\c{c}\~ao das oficinas.
+A plataforma de dados do WASH foi denominada \textquotedbl Platu\'osh\textquotedbl , uma contra\c{c}\~ao das palavras \textquotedbl plataforma\textquotedbl  e \textquotedbl WASH\textquotedbl .
 
 
 
 
 
 
-As figuras XXX mostram exemplos de registros de presen\c{c}as utilizados no WASH, ao passo que a figura XXX mostra a evolu\c{c}\~ao da forma de registro de presen\c{c}a ao longo dos anos.
+O desenvolvimento da \textquotedbl Platu\'osh\textquotedbl  contou com a participa\c{c}\~ao da presente autora em sua concep\c{c}\~ao  (MAMMANA et al., 2022), bem como de muitos outros colegas do WASH. A coordena\c{c}\~ao do desenvolvimento dessa plataforma foi assumida por Michel Alencar Morandi, em meados de 2019, ap\'os a apresenta\c{c}\~ao de uma primeira vers\~ao do sistema por Victor Pellegrini Mammana.
+
+
+
+
+
+
+Para compreender como o desenvolvimento da Platu\'osh se deu, \'e preciso rever como o m\'etodo de registro de dados do WASH evoluiu.
+
+
+
+
+
+
+Desde seu in\'{\i}cio o WASH buscou registrar presen\c{c}as individualizadas, porque observava-se duas tend\^encias concorrentes: uma alta rotatividade de participantes, simultaneamente a uma parcela bastante ass\'{\i}dua, que retornava para as oficinas toda semana. Essa volatilidade exigia do WASH um m\'etodo de registro din\^amico de cadastro, diferente da escola regular, por exemplo, cujo corpo discente  permanece est\'atico por v\'arios anos.
+
+
+
+
+
+
+As figuras XXX mostram exemplos de como as presen\c{c}as individualizadas eram registradas no WASH, em seu in\'{\i}cio.
 
 
 
@@ -3685,102 +3754,143 @@ As figuras XXX mostram exemplos de registros de presen\c{c}as utilizados no WASH
                 \label{b43907f0fa6b6fb935e7384ab03b508859ff0609}
 \end{minipage}%
 \hspace{0.5cm}
-\begin{minipage}[b]{0.4\linewidth}
-        \centering
-                \includegraphics[width=1.0\linewidth]{../../imagens/evolucao-da-documentacao.png}
-                \caption{Evolu\c{c}\~ao do m\'etodo de documenta\c{c}\~ao no \^ambito do WASH. (fonte:  [[WASHCNPq (2022)]])}
-                \label{d237f9364cfe04892cbdffff7fea732012fa5804}
-\end{minipage}
-\hspace{0.5cm}
 \end{figure}
 
 
 
-Do registro manuscrito caminhamos para o registro em planilhas eletr\^onicas, mas logo ficou evidente que o crescimento do Programa WASH exigiria um m\'etodo mais eficiente de armazenagem dos testemunhos de participa\c{c}\~ao, que permitisse tamb\'em individualizar a identidade dos participantes.
+A Fig. XXX sumariza a evolu\c{c}\~ao do registro de presen\c{c}as, que parte do manuscrito em folha de papel (2013), passando pelo registro em planilhas eletr\^onicas (2014) e chegando no uso pleno da plataforma Platu\'osh (2022).
 
 
 
 
 
 
-A import\^ancia de individualizar as presen\c{c}as come\c{c}ou a ficar evidente quando se percebeu que o WASH tinha uma alta rotatividade de participantes, mas que tamb\'em mantinha uma parcela fiel de \textquotedbl p\'ublico\textquotedbl . Portanto era preciso saber quando um participante voltava e isso s\'o era poss\'{\i}vel individualizando seu registro. Inicialmente foi usado o nome do participante, o nome do respons\'avel e a data de nascimento, como forma de identificar univocamente um participante.
 
 
+\captionsetup{format=plain}
+\begin{figure}[htb]
 
+	\begin{center}
 
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/evolucao-da-documentacao.png}
 
+	\end{center}
 
-Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma melhor no\c{c}\~ao do perfil et\'ario do p\'ublico atendido, bem como do interesse em participar novamente das atividades, entre tantos outros indicadores que ficar\~ao mais claros no cap\'{\i}tulo de Resultados e An\'alise. Outro aspecto favor\'avel da individualiza\c{c}\~ao era uma melhor organiza\c{c}\~ao dos documentos do projeto, tais como autoriza\c{c}\~oes para a participa\c{c}\~ao de menores, consentimento de uso de imagem, identifica\c{c}\~ao de respons\'aveis para casos de emerg\^encia, entre outros.
+	\caption{\label{d237f9364cfe04892cbdffff7fea732012fa5804}Evolu\c{c}\~ao do m\'etodo de documenta\c{c}\~ao no \^ambito do WASH. (fonte: [[WASHCNPq (2022)]])}
 
+\end{figure}
 
+Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma melhor no\c{c}\~ao do perfil et\'ario do p\'ublico atendido, bem como do interesse das pessoas em participar novamente das atividades, entre tantos outros indicadores que ficar\~ao mais claros no cap\'{\i}tulo de Resultados e An\'alise. Outro aspecto favor\'avel da individualiza\c{c}\~ao era uma melhor organiza\c{c}\~ao dos documentos do programa, tais como autoriza\c{c}\~oes para a participa\c{c}\~ao de menores, consentimento de uso de imagem, identifica\c{c}\~ao de respons\'aveis para casos de emerg\^encia, entre outros.
 
 
 
 
-A partir deste esfor\c{c}o inicial de coleta e organiza\c{c}\~ao de testemunhos e controle de presen\c{c}a em oficinas, realizado pela autora, foi elaborada uma primeira vers\~ao do Platu\'osh, que permitia registrar as oficinas realizadas, os participantes nominalmente e os testemunhos de realiza\c{c}\~ao. Essa primeira vers\~ao do software, que ficou pronta no in\'{\i}cio de 2019, passou a ser usada para gerar os indicadores do projeto, de forma rastre\'avel, provendo meios confi\'aveis de prestar contas aos \'org\~aos de fomento e de controle.
 
 
+A individualiza\c{c}\~ao das presen\c{c}as era obtida com o registro do nome do participante, o nome do respons\'avel e a data de nascimento. Dessa forma era diminu\'{\i}da a chance de confus\~ao entre hom\^onimos.
 
 
 
 
-A Platu\'osh foi sendo evolu\'{\i}da paulatinamente a partir do teste constante de suas funcionalidades, atividade da qual participamos intensamente, juntamente com outros membros do projeto. A cada teste eram identificados os problemas, com a subsequente propostas de alternativas, que eram implementadas pela equipe respons\'avel pela codifica\c{c}\~ao do programa.
 
 
+Assim, o desenvolvimento da \textquotedbl Platu\'osh\textquotedbl  nasceu com essa pr\'atica inicial de coleta e organiza\c{c}\~ao de testemunhos e controle de presen\c{c}a individualizado em oficinas, culminando com a disponibiliza\c{c}\~ao do sistema digital de registro.
 
 
 
 
-Uma atividade fundamental conduzida pela equipe de codifica\c{c}\~ao foi a modelagem de dados, visando estabelecer quais tabelas seriam necess\'arias para representar os dados do WASH. Esta modelagem tinha como base as informa\c{c}\~oes fornecidas pelos participantes do WASH envolvidos com sua opera\c{c}\~ao na ponta, equipe que era coordenada por n\'os.
 
 
+A primeira vers\~ao do Platu\'osh permitia registrar as oficinas realizadas, seus participantes e os testemunhos de realiza\c{c}\~ao, mas n\~ao dispunha de sistema de autentica\c{c}\~ao de usu\'ario. Por essa raz\~ao, requeria que os dados fossem registrados off-line. Mesmo com essa limita\c{c}\~ao, a primeira vers\~ao do software, que ficou pronta no in\'{\i}cio de 2019, passou a ser usada para gerar os indicadores do programa, de forma rastre\'avel, provendo meios confi\'aveis de prestar contas aos \'org\~aos de fomento e de controle, viabilizando melhores pr\'aticas de \textquotedbl compliance\textquotedbl .
 
 
 
 
-A Platu\'osh foi desenvolvida diretamente a partir do Modelo de Dados Relacional (MDR), sem passar pela etapa intermedi\'aria da Modelagem Entidade Relacionamento. Isso gerou uma s\'erie de defici\^encias no MDR da Platu\'osh, que ser\~ao discutidas posteriormente. Essas defici\^encias ficar\~ao mais evidentes quando o MDR da Platu\'osh for comparada com o Modelo H\'{\i}brido desenvolvido no \^ambito desta disserta\c{c}\~ao.
 
 
+A Platu\'osh foi sendo evolu\'{\i}da paulatinamente a partir do teste constante de suas funcionalidades, atividade da qual participamos intensamente, juntamente com outros membros do programa. A cada teste eram identificados os problemas, com a subsequente propostas de alternativas, que eram implementadas pela equipe respons\'avel pela codifica\c{c}\~ao do programa. Contribu\'{\i}ram substancialmente para essa fase de desenvolvimento as colegas Clotilde Maffra Diogo e Ana Carolina de Deus Soares.
 
 
 
 
-Para identificar o n\'umero de tabelas que seria necess\'ario foram feitas v\'arias considera\c{c}\~oes, a partir da contribui\c{c}\~ao de v\'arios membros do projeto. Infelizmente, a equipe de TI do WASH optou por n\~ao realizar um modelo MER anteriormente \`a modelagem MDR. Alguns defici\^encias decorrentes dessa escolha podem ser identificadas no modelo de dados do Programa.
 
 
+Com a entrada do desenvolvedor Michel Alencar Morandi, a \textquotedbl Platu\'osh\textquotedbl  passou a dispor de um sistema de autentica\c{c}\~ao e todos os participantes do WASH puderam obter suas \textquotedbl contas de usu\'arios do sistema\textquotedbl , descentralizando a entrada de dados.
 
 
 
 
-Como j\'a dito, uma das quest\~oes centrais no registro de dados do Programa WASH \'e saber quem s\~ao os seus participantes. No come\c{c}o da modelagem dos dados, havia uma d\'uvida sobre se dever\'{\i}amos criar uma tabela para alunos benefici\'arios (principalmente ensino fundamental), outra para os membros da equipe do WASH e mais outra para os bolsistas multiplicadores. Uma outra op\c{c}\~ao seria criar tabela \'unica para todos os participantes, independentemente de seu papel no projeto. No caso de se optar pela cria\c{c}\~ao de uma tabela \'unica, seria necess\'ario uma tabela auxiliar, que contivesse os \textquotedbl tipos de papeis\textquotedbl  pass\'{\i}veis de serem desempenhados por um participante.
 
 
+N\~ao obstante todos os esfor\c{c}os para criar uma ferramenta digital que facilitasse os registros de presen\c{c}a na plataforma, observaram-se muitas oficinas nas quais os registros fotogr\'aficos associados indicavam uma presen\c{c}a substancialmente maior do que estava registrado na lista de presen\c{c}a.
 
 
 
 
-A segunda op\c{c}\~ao foi a escolhida porque j\'a se antecipava que o WASH seria um projeto de longo prazo. Quando o sistema de registro come\c{c}ou a ser elaborado, o WASH j\'a tinha 6 anos e o crescimento anual indicava que haveria f\^olego para muitos anos mais de execu\c{c}\~ao. Assim, n\~ao fazia sentido separar os participantes em diversas tabelas, porque era razo\'avel esperar a mudan\c{c}a de papeis dos participantes, situa\c{c}\~ao que j\'a era observada em alguns casos.
 
 
 
+\noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{Portanto, os dados da Platu\~osh representam uma amostra do total de participantes no programa.}\normalsize}}}\end{center}
 
 
+Essa situa\c{c}\~ao ser\'a discutida no cap\'{\i}tulo de Resultados e An\'alise e est\'a, possivelmente, associada \`a falta de atribui\c{c}\~ao legal ao WASH para coletar dados de presen\c{c}a. Com essa limita\c{c}\~ao, o registro de presen\c{c}a \'e dependente da a\c{c}\~ao da entidade respons\'avel, introduzindo uma barreira para dinamizar a coleta de presen\c{c}as.
 
-De fato, observava-se que alunos do ensino fundamental, ao adentrar no ensino m\'edio, passavam a receber bolsas de inicia\c{c}\~ao cient\'{\i}fica, tornando-se bolsistas multiplicadores. Bolsistas multplicadores do ensino superior, ao se formarem em seus cursos, passavam a ser membros da equipe do WASH. Muitos casos de transi\c{c}\~ao de papeis puderam ser constatados e a ideia de ter m\'ultiplas tabelas para participantes implicaria em um complicado sistema de transi\c{c}\~ao do registro de uma tabela para outra, quando o participante mudasse de papel. Outro motivo para usar a tabela \'unica \'e que j\'a se observavam casos de papeis simult\^aneos, a exemplo de multiplicadores que tamb\'em eram servidores p\'ublicos.
 
 
 
 
 
+\subsection[Modelo relacional de dados do WASH]{Modelo relacional de dados do WASH}\label{Modelo relacional de dados do WASH}
+Uma atividade fundamental conduzida pela equipe de codifica\c{c}\~ao da \textquotedbl Platu\'osh\textquotedbl  foi a modelagem de dados, visando estabelecer as tabelas que seriam necess\'arias para representar os dados do WASH. Esta modelagem tinha como base as informa\c{c}\~oes fornecidas pelos(as) colaboradores do WASH envolvidos(as) com a opera\c{c}\~ao na ponta, entre eles(as), esta autora.
 
-Assim, decidiu-se por criar uma tabela \'unica de participantes que foi denominada \textquotedbl participantes2\textquotedbl , que est\'a em uso at\'e os dias de hoje. Esta tabela \'e complementada por duas outras: \textquotedbl cargos\textquotedbl , que cont\'em os tipos de vincula\c{c}\~ao com o WASH e \textquotedbl institui\c{c}\~oes\textquotedbl , que cont\'em as institui\c{c}\~oes a que um participante pode estar vinculado. Para ligar o participante a um cargo e a uma institui\c{c}\~ao, foi criada a tabela \textquotedbl afiliacoes\textquotedbl , que cont\'em o data de in\'{\i}cio e a data do fim daquela afialia\c{c}\~ao.
 
 
 
 
 
+Como j\'a dito, uma das quest\~oes centrais no registro de dados do Programa WASH \'e saber quem s\~ao os(as) seus(suas) participantes. O programa, por concep\c{c}\~ao, estimula participa\c{c}\~oes vol\'ateis, dado que as oficinas podem ser abertas e, como prev\^e o documento de refer\^encia do WASH, um novo participante consegue acompanhar uma oficina mesmo que n\~ao tenha vindo na anterior. Essa volatilidade \'e uma forma de estimular a inclus\~ao, uma vez que remove barreiras para a participa\c{c}\~ao. Ao mesmo tempo, cria desafios para como os dados v\~ao ser representados.
 
-Este conjunto de tabelas exemplifica a l\'ogica da modelagem que foi constru\'{\i}da para representar os dados do WASH e come\c{c}aremos mostrando o conte\'udo (parcial) da tabela de \textquotedbl cargos\textquotedbl :
+
+
+
+
+
+No come\c{c}o da modelagem dos dados, havia uma d\'uvida sobre se dever\'{\i}amos criar uma tabela de cadastro para educandos(as), outra para os membros da equipe do WASH e mais outra para os(as) bolsistas(as) multiplicadores(as). A segunda op\c{c}\~ao seria criar uma tabela \'unica para todos(as) os(as) participantes, independentemente de seu papel no programa. No caso da cria\c{c}\~ao de uma tabela \'unica, passam a ser necess\'arias tabela auxiliares, que, de forma coordenada, consigam representar os \textquotedbl tipos de papeis\textquotedbl   desempenhados pelos participantes no WASH.
+
+
+
+
+
+
+A segunda op\c{c}\~ao (tabela \'unica de participantes com tabelas auxiliares) foi a escolhida porque j\'a se antecipava que o WASH seria um programa de longo prazo. Quando o sistema de registro come\c{c}ou a ser elaborado, o WASH j\'a tinha 6 anos e o crescimento anual indicava que haveria f\^olego para muitos anos de execu\c{c}\~ao. Assim, n\~ao fazia sentido separar os participantes em diversas tabelas, porque era razo\'avel esperar a mudan\c{c}a de papeis dos participantes \`a medida que os anos passavam, situa\c{c}\~ao que j\'a era observada em alguns casos, como explicamos a seguir.
+
+
+
+
+
+
+De fato, observava-se que educandos do WASH, vinculados ao ensino fundamental, ao adentrar no ensino m\'edio, passavam a realizar sua inicia\c{c}\~ao cient\'{\i}fica, mudando de status para bolsistas multiplicadores do programa. Bolsistas multiplicadores do ensino superior, por sua vez, ao se formarem em seus cursos, mudavam de status, assumindo pap\'eis no  \textquotedbl staff\textquotedbl  do WASH, e assim por diante. Muitos casos de transi\c{c}\~ao de papeis (ou \textquotedbl status\textquotedbl ) puderam ser constatados e a ideia de ter m\'ultiplas tabelas para participantes implicaria em um complicado sistema de transi\c{c}\~ao do registro de uma tabela para outra, quando o participante mudasse de papel. Outro motivo para usar uma tabela \'unica para representar participantes \'e que j\'a se observavam casos de papeis simult\^aneos, a exemplo de multiplicadores que tamb\'em eram servidores p\'ublicos.
+
+
+
+
+
+
+A tabela \'unica de participantes foi denominada \textquotedbl participantes2\textquotedbl , sendo parte da  \textquotedbl Platu\'osh\textquotedbl . Esta tabela est\'a em uso at\'e os dias de hoje sendo complementada por tr\^es tabelas auxiliares que tamb\'em s\~ao partes integrantes da \textquotedbl Platu\'osh\textquotedbl . A primeira tabela auxiliar \'e \textquotedbl cargos\textquotedbl , que cont\'em os tipos de vincula\c{c}\~ao com o WASH. A segunda tabela auxiliar \'e \textquotedbl institui\c{c}\~oes\textquotedbl , que cont\'em as institui\c{c}\~oes a que um participante pode estar vinculado. Para relacionar o participante a um cargo e a uma institui\c{c}\~ao, foi criada a terceira tabela auxiliar denominada \textquotedbl afiliacoes\textquotedbl , que cont\'em a data de in\'{\i}cio e do fim daquela afialia\c{c}\~ao.
+
+
+
+
+
+
+Este conjunto de 4 tabelas exemplifica a aplica\c{c}\~ao do m\'etodo de modelagem que foi empregado para representar os dados do WASH.
+
+
+
+
+
+
+Come\c{c}aremos mostrando o conte\'udo (parcial) da tabela de \textquotedbl cargos\textquotedbl :
 
 
 
@@ -3793,7 +3903,7 @@ Este conjunto de tabelas exemplifica a l\'ogica da modelagem que foi constru\'{\
 
 \begin{table}[htb]
 \tiny
-\caption{\label{8da11be906e8c6597b09624b6ea24ac1ac2e1607}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
+\caption{\label{471c2ffdec00a12cab7b8ade7a5c86a4223d3c63}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
 
 \centering
 \begin{tabular}{|c|c|}
@@ -3818,8 +3928,7 @@ id\_chave\_cargo  &  nome\_cargo            \\
             31  &  Secretaria \\
             38  &  Prefeito              \\
             39  &  Pesquisador           \\
-            40  &  Secretaria Executiva  \\
-            41  &  Voluntario            \\
+            40  &  Secretaria Executiva             \\
             42  &  Estudante    \\
             43  &  Estagiario \\
             48  &  Bolsista EXP B \\
@@ -3847,7 +3956,7 @@ Na sequ\^encia mostramos uma vis\~ao parcial da tabela \textquotedbl Instituicoe
 
 \begin{table}[htb]
 \tiny
-\caption{\label{c00aa31debbd8e46e29d5e4041d1141591dbe97d}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
+\caption{\label{c51fa3974d4e9f7761c15281cff5d111963af87b}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
 
 \centering
 \begin{tabular}{|c|c|}
@@ -3882,7 +3991,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
                   127  &  IFPR - Campus Pitanga \\
                    62  &  PUC de Campinas \\
                    21  &  Prefeitura de S\~ao Paulo           \\
-                   48  &  Secreataria de Cultura de Londrina \\
+                   48  &  Bolsista EXP \\
                    49  &  Secretaria de Cultura de Londrina \\
                    85  &  Secretaria de Educa\c{c}\~ao de Jacare\'{\i}/SP \\
                   169  &  SENAC Minas  \\
@@ -3896,7 +4005,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
 \end{table}
 
 
-Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora selecionaremos um participante do projeto para extrair seu registro da tabela \textquotedbl participantes2\textquotedbl . Note que esta tabela tem 3312 registros mas decidimos usar como exemplo um \'unico participante, isolando a linha da tabela que se refere a este participante. Retiramos, tamb\'em, todos os dados pessoais do participante, para proteger sua privacidade, substituindo seu nome por \textquotedbl Nome de Participante omitido\textquotedbl :
+Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora selecionaremos um participante do programa para extrair seu registro da tabela \textquotedbl participantes2\textquotedbl . Note que esta tabela tem 3312 registros mas decidimos usar como exemplo um \'unico participante, isolando a linha da tabela que se refere a este participante. Retiramos, tamb\'em, todos os dados pessoais do participante, para proteger sua privacidade, substituindo-o por um nome fict\'{\i}cio.
 
 
 
@@ -3909,19 +4018,19 @@ Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora selecionaremos um partic
 
 \begin{table}[htb]
 \tiny
-\caption{\label{2c8d9dda4031f0ea459292d025586b4d3e57ed84}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos papeis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
+\caption{\label{96081f1bc28f7c738012f4beb3ef867b6b67107f}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos papeis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
 
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
 id\_chave\_participante  &  nome\_participante             &  data\_nascimento  \\
-                     2  &  Nome de Participante omitido  &  1994-06-15 \\
+                     2  &  Maria Pereira  &  1994-06-15 \\
 \hline
 \end{tabular}
 \end{table}
 
 
-\'E importante notar que, por escolha da \'area de TI do projeto, todas as datas no \^ambito dos registros do Programa WASH s\~ao invertidas, sempre come\c{c}ando pelo ano, passando pelo m\^es e terminando no dia. Isto \'e feito assim para garantir que a ordena\c{c}\~ao dos registros por data seja facilitada.
+\'E importante notar que, por escolha da \'area de TI do WASH, todas as datas no \^ambito dos registros do programa s\~ao invertidas, sempre come\c{c}ando pelo ano, passando pelo m\^es e terminando no dia. Isto \'e feito assim para garantir que a ordena\c{c}\~ao dos registros por data seja facilitada.
 
 
 
@@ -3958,14 +4067,14 @@ id\_participante  &  id\_instituicao  &  id\_cargo  &  nome\_documento  &  inici
 \end{table}
 
 
-O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado indica que o participante identificado pelo n\'umero 2 teve 2 afilia\c{c}\~oes durante o per\'{\i}odo em que esteve vinculado ao WASH: \`a universidade PUC de Campinas, que \'e identificada pelo n\'umero 62 e ao CNPq, que \'e identificado pelo n\'umero 57.
+O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado indica que a participante identificada pelo n\'umero 2 (Maria Pereira)  teve duas afilia\c{c}\~oes durante o per\'{\i}odo em que esteve vinculada ao WASH: \`a universidade PUC de Campinas, que \'e identificada pelo n\'umero 62 e ao CNPq, que \'e identificado pelo n\'umero 57.
 
 
 
 
 
 
-Al\'em disso, esse mesmo participante identificado pelo n\'umero 2 desempenhou 4 papeis no \^ambito do WASH: estudante, identificado pelo n\'umero 42, Bolsista EXP B, identificado pelo n\'umero 48 e Bolsista ITI A, identificado pelo n\'umero 26.
+Al\'em disso, essa mesma participante identificada pelo n\'umero 2 desempenhou 4 papeis no WASH: estudante, identificado pelo n\'umero 42, Bolsista EXP B, identificado pelo n\'umero 48 e Bolsista ITI A, identificado pelo n\'umero 26.
 
 
 
@@ -3979,7 +4088,7 @@ A tabela \textquotedbl afiliacoes\textquotedbl  tamb\'em permite conhecer o docu
 
 
 
-O exemplo mostrado at\'e agora permite compreender como funcionam os bancos de dados relacionais de uma forma pr\'atica, usando o caso do WASH como exemplo.
+O exemplo mostrado at\'e agora permite compreender o m\'etodo baseado em bancos de dados relacionais de uma forma pr\'atica.
 
 
 
@@ -3993,14 +4102,14 @@ O sistema de armazenamento de dados do WASH \'e integralmente baseado nessa l\'o
 
 
 
-A maior robustez do m\'etodo relacional vem justamente do fato de que a informa\c{c}\~ao est\'a segregada, de forma que em cada tabela exista apenas um registro para cada fato representado. Em outras palavras: note que na tabela \textquotedbl participantes2\textquotedbl  existir\'a apenas 1 registro para o participante que \'e identificado pelo n\'umero 2, ao passo que na tabela \textquotedbl cargos\textquotedbl  haver\'a apenas um registro identificado pelo n\'umero 48 (Bolsista EXP B), da mesma forma que na tabela \textquotedbl instituicoes\textquotedbl  haver\'a apenas um registro identificado pela n\'umero 57 (CNPq) e isso \'e verdade n\~ao importa quantas bolsas diferentes o participante identificado pelo n\'umero 2 tiver.
+A maior robustez do m\'etodo relacional vem justamente do fato de que a informa\c{c}\~ao est\'a segregada, de forma que em cada tabela exista apenas um registro para cada fato representado. Em outras palavras: note que na tabela \textquotedbl participantes2\textquotedbl  existir\'a apenas 1 registro para o participante que \'e identificado pelo n\'umero 2 (Maria Pereira), ao passo que na tabela \textquotedbl cargos\textquotedbl  haver\'a apenas um registro identificado pelo n\'umero 48 (Bolsista EXP B), da mesma forma que na tabela \textquotedbl instituicoes\textquotedbl  haver\'a apenas um registro identificado pela n\'umero 57 (CNPq).
 
 
 
 
 
 
-Vimos que o participante identificado pelo n\'umero \textquotedbl 2\textquotedbl  teve  pelo menos 6 diferentes tipos de v\'{\i}nculos com o WASH, em momentos diferentes de sua atua\c{c}\~ao, mas n\~ao foi preciso criar 6 registros na tabela \textquotedbl participantes2\textquotedbl . Se o WASH usasse planilhas eletr\^onicas para guardar seus dados seria necess\'ario repetir 6 vezes todas as informa\c{c}\~oes sobre o partipante, criando a oportunidade para falta de uniformiza\c{c}\~ao de dados e, portanto, perda de confiabilidade nos mesmos.
+Vimos que o participante identificado pelo n\'umero \textquotedbl 2\textquotedbl  teve  pelo menos 6 diferentes tipos de v\'{\i}nculos com o WASH, em momentos diferentes de sua atua\c{c}\~ao, mas n\~ao foi preciso criar 6 registros na tabela \textquotedbl participantes2\textquotedbl . Se o WASH usasse planilhas eletr\^onicas para guardar seus dados seria necess\'ario repetir 6 vezes todas as informa\c{c}\~oes sobre o participante, criando a oportunidade para falta de uniformiza\c{c}\~ao de dados e, portanto, perda de confiabilidade nos mesmos.
 
 
 
@@ -4020,7 +4129,7 @@ Para representar todos os seus dados de forma flex\'{\i}vel e adapt\'avel \`as s
 
 \begin{table}[htb]
 \tiny
-\caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O bando de dados relacional subjacente `a Plataforma de Gest\~ao do WASH \'e constitu\'{i}do por 54 tabelas (P.S.: uma revis\~ao recente do modelo levou a 65 tabelas).}
+\caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O banco de dados relacional da Platu\'osh \'e constitu\'{i}do por 54 tabelas}
 
 \centering
 \begin{tabular}{|c|c|}
@@ -4057,7 +4166,7 @@ afiliacoes                     &   local\_eventos \\
 \end{table}
 
 
-N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'osh por raz\~oes de espa\c{c}o, mas acreditamos que as informa\c{c}\~oes at\'e agora compartilhadas permitem ao leitor compreender o m\'etodo de registro de dados utilizado.
+N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'osh por raz\~oes de espa\c{c}o, mas acreditamos que as informa\c{c}\~oes at\'e agora compartilhadas permitem ao leitor compreender o m\'etodo de registro de dados utilizado nesta disserta\c{c}\~ao.
 
 
 
@@ -4065,14 +4174,14 @@ N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'osh
 
 
 \subsection[Consulta \`a base de dados atrav\'es da Linguagem SQL]{Consulta \`a base de dados atrav\'es da Linguagem SQL}\label{Consulta \`a base de dados atrav\'es da Linguagem SQL}
-Vimos no cap\'{\i}tulo de Fundamenta\c{c}\~ao Te\'orica um r\'apida descri\c{c}\`ao dos princ\'{\i}pios da Linguagem SQL.
+Vimos no cap\'{\i}tulo de Fundamenta\c{c}\~ao Te\'orica um r\'apida descri\c{c}\~Ao dos princ\'{\i}pios da Linguagem SQL.
 
 
 
 
 
 
-Essa linguagem foi extenasamente utilizada como m\'etodo para obter os indicadores deste projeto. Para isso, foi aplicada \`a base de dados relacional da plataforma Platu\'osh.
+Essa linguagem foi extenasamente utilizada como m\'etodo para obter os indicadores deste projeto. Para isso, foi aplicada \`a base de dados relacional da plataforma Platu\'osh descrita na se\c{c}\~ao anterior.
 
 
 
@@ -4087,105 +4196,81 @@ As consultas SQL foram elaboradas pela equipe de TI, com base nas especifica\c{c
 
 
 \subsection[M\'etodo de determina\c{c}\~ao do sexo dos participantes]{M\'etodo de determina\c{c}\~ao do sexo dos participantes}\label{M\'etodo de determina\c{c}\~ao do sexo dos participantes}
-A quest\~ao de armazenagem de dados de g\^enero no WASH ainda n\~ao est\'a devidamente equacionada e esta situa\c{c}\~ao tem a ver com a forma como os dados eram armazenados no in\'{\i}cio do projeto, assunto que passa a ser tratado a seguir.
+A maior preval\^encia de participa\c{c}\~ao masculina em atividades STEAM, em detrimento da feminina, \'e um fen\^omeno que, infelizmente, se reproduz mundialmente (Kijima et al., 2021). Cabe ao WASH verificar, da melhor forma poss\'{\i}vel, se essa situa\c{c}\~ao injusta est\'a sendo reproduzida dentro do pr\'oprio programa, com vistas a promover interven\c{c}\~oes que possam mitig\'a-la.
 
 
 
 
 
 
-\'E poss\'{\i}vel identificar v\'arios momentos na forma como o WASH armazenou seus dados ao longo de 9 anos. Como j\'a comentando na se\c{c}\~ao anterior, logo no in\'{\i}cio do projeto, os dados de participantes eram coletados por meio de listas de presen\c{c}a em papel, nas quais constavam inicialmente apenas o nome dos participantes e a data do evento. Posteriormente novos dados foram sendo coletados, como o ano do nascimento da crian\c{c}a, seu Registro Geral (RG) ou do respons\'avel.
+Com a finalidade de verificar essa situa\c{c}\~ao, decidimos incluir, entre os indicadores do programa, o percentual de mulheres e homens participantes. Isso exigiu um esfor\c{c}o de cria\c{c}\~ao de um m\'etodo especial, uma vez que antes de 2019 o WASH n\~ao armazenava dados de sexo ou g\^enero.
 
 
 
 
 
 
-Esse \textquotedbl crescendo\textquotedbl  na quantidade de dados coletados revela, por parte da coordena\c{c}\~ao do WASH, uma vis\~ao inicial minimalista no sentido dos dados que deveriam ser coletados. Essa forma de coletar dados pode ser atribu\'{\i}da ao fato do projeto ocorrer no contexto do servi\c{c}o p\'ublico, sem um mandato espec\'{\i}fico para registro de dados cadastrais mais detalhados.
+\'E poss\'{\i}vel identificar v\'arios est\'agios, ao longo da exist\^encia do WASH, referentes \`a forma de armazenar dados (Fig. XXX). Foi comentando na se\c{c}\~ao anterior que logo no in\'{\i}cio do projeto, por exemplo, os dados de participantes eram coletados por meio de listas de presen\c{c}a em papel (Fig. XXX). Estas listas registravam apenas o nome dos participantes e a data do evento, sem registro de sexo. Posteriormente novos dados foram sendo coletados, como o ano do nascimento da crian\c{c}a, seu Registro Geral (RG) ou do respons\'avel, mas ainda sem registrar o sexo.
 
 
 
 
 
 
-Assim, \'e poss\'{\i}vel compreender porque a coleta de dados sempre foi mantida no limite dos prop\'ositos do projeto, a saber: contabilizar o n\'umero de participantes, evitar a contagem duplicada de participantes, identificar os respons\'aveis, registrar autoriza\c{c}\~oes de uso de imagens, etc., prop\'ositos estes j\'a bastante mencionados at\'e este ponto.
+Esse crescimento gradativo na quantidade de dados coletados revela, por parte da coordena\c{c}\~ao do WASH, um cuidado de armazenar exclusivamente dados que estavam vinculados aos objetivos do projeto. Essa vis\~ao decorre do projeto n\~ao ter um mandato espec\'{\i}fico (atribui\c{c}\~ao legal) para registro de dados cadastrais mais detalhados. Na falta desse mandato, o registro sem prop\'osito desses dados pode ser considerado prejudicial \`a privacidade dos participantes, requerendo custosas medidas de prote\c{c}\~ao de dados adicionais.
 
 
 
 
 
 
-Consequentemente, por falta de prop\'osito, desde o in\'{\i}cio do projeto n\~ao havia a armazenagem do sexo de seus participantes.
+Assim, \'e poss\'{\i}vel compreender porque a coleta de dados sempre foi mantida no limite dos prop\'ositos do projeto, a saber: contabilizar o n\'umero de participantes, evitar a contagem duplicada de participantes, identificar os respons\'aveis para o caso de emerg\^encias, registrar autoriza\c{c}\~oes de uso de imagens, e assim por diante.
 
 
 
 
 
 
-Com o crescimento do projeto, come\c{c}ou a existir uma preocupa\c{c}\~ao sobre se o projeto era inclusivo, em termos de atendimento equ\^anime dos v\'arios perfis de g\^enero. Mas no momento em que essa defici\^encia de registro foi diagnosticada, o projeto j\'a contava com milhares de participa\c{c}\~oes. Isso exigiu a ado\c{c}\~ao de algum m\'etodo para tentar verificar se o atendimento era suficientemente equ\^anime, mesmo sem existirem registros cadastrais que indicassem o g\^enero dos participantes.
+Em outras palavras, por falta de conex\~ao com os objetivos iniciais do projeto, n\~ao havia armazenagem de dados de sexo de seus participantes.
 
 
 
 
 
 
-Criou-se um m\'etodo em que os indicadores de g\^enero do WASH s\~ao constru\'{\i}dos a partir de uma avalia\c{c}\~ao a posteriori dos primeiros nomes dos participantes, que s\~ao comparados com listas de nomes masculinos e de nomes femininos. Evidente que esta abordagem \'e imperfeita pela pr\'opria imprecis\~ao do conceito de \textquotedbl nomes masculinos\textquotedbl  e \textquotedbl nomes femininos\textquotedbl .
+Com o passar dos anos, percebeu-se que o projeto j\'a contava com milhares de cadastros incompletos, comprometendo a avalia\c{c}\~ao da  equanimidade do programa mencionada no come\c{c}o desta se\c{c}\~ao.
 
 
 
 
 
 
-Avaliar a posteriore era necess\'ario porque para muitos registros, principalmente para os anteriores a 2019, n\~ao era poss\'{\i}vel levar em conta a autodeclara\c{c}\~ao de g\^enero dos indiv\'{\i}duos participantes, simplesmente porque esta auto-declara\c{c}\~ao n\~ao havia sido solicitada.
+Para vencer essa defici\^encia de cadastro, decidiu-se por criar um m\'etodo em que os indicadores de sexo do WASH pudessem ser constru\'{\i}dos a partir de uma avalia\c{c}\~ao a posteriori (em rela\c{c}\~ao ao momento do cadastro) dos primeiros nomes dos participantes. Esse m\'etodo pode ser sumarizado como:
 
 
 
 
 
 
-A rigor, do ponto de vista do WASH, n\~ao h\'a interesse em rotular peremptoriamente as pessoas como desse ou daquele g\^enero. Como o nome dos participantes \'e auto-declarat\'orio e n\~ao s\~ao solicitados documentos de registro civil (RG ou certid\~ao de nascimento) para a participa\c{c}\~ao em oficinas, tudo o que se sabe sobre um participante, no que se refere a g\^enero, \'e o que o seu primeiro nome indica, exceto para os registros obtidos depois de 2019.
 
+\noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{O m\'etodo consiste em verificar se o primeiro nome de cada participante est\'a numa lista extensiva de nomes \textquotedbl considerados masculinos\textquotedbl , situa\c{c}\~ao em que, de forma anonimizada, um contador de participantes masculinos \'e incrementado. Caso o primeiro nome do participante esteja numa lista de nomes \textquotedbl considerados femininos\textquotedbl , o contador de participantes femininos \'e incrementado. Quando o nome n\~ao est\'a em nenhuma das listas, ou quando \'e um nome com g\^enero indefinido, o contador de \textquotedbl sexo desconhecido\textquotedbl  \'e incrementado.}\normalsize}}}\end{center}
 
 
+A rigor, do ponto de vista do WASH, n\~ao h\'a interesse em rotular peremptoriamente as pessoas com base no sexo identificado por esse m\'etodo. Por essa raz\~ao, o dado de sexo gerado n\~ao \'e vinculado ao cadastro do participante, ficando armazenado num contador anonimizado.
 
 
 
-Esta vis\~ao minimalista no coleta de dados \'e, indiretamente, uma forma de respeitar a imagem que o participante faz de si mesmo, porque sua declara\c{c}\~ao de nome nunca \'e questionada e nunca \'e verificada com rela\c{c}\~ao a algum documento civil. Assim, se um participante optar por se identificar com um nome social ao inv\'es de um nome civil, isso ser\'a respeitado.
 
 
 
+Dito isso, o fato \'e que o primeiro nome do participante n\~ao permite avaliar todas as identidades de g\^enero. Assim, a postura limitar a coleta de dados gerou uma reconhecida defici\^encia de registro associada \`a falta de coleta de dados auto-declarat\'orios de g\^enero antes de 2019.
 
 
 
-Dito isso, o fato \'e que o primeiro nome do participante n\~ao permite avaliar todas as identidades de g\^enero. Assim, a postura minimalista de coleta de dados gerou uma reconhecida defici\^encia de registro associada \`a falta de coleta de dados auto-declarat\'orios de g\^enero antes de 2019.
 
 
 
-
-
-
-Mesmo reconhecida esta defici\^encia decidiu-se por n\~ao renunciar \`a tentativa de avaliar a equidade de atendimento entre homens e mulheres.
-
-
-
-
-
-
-Sabe-se que a presen\c{c}a masculina em atividades STEAM \'e mundialmente mais oportunizada  (Kijima et al., 2021),  desprivilegiando a presen\c{c}a feminina. Portanto, cabe ao WASH verificar, da melhor forma poss\'{\i}vel, se essa situa\c{c}\~ao est\'a sendo reproduzida dentro do programa.
-
-
-
-
-
-
-Foi a partir dessa necessidade, que o problema foi resolvido parcialmente, pela op\c{c}\~ao de usar o primeiro nome, comparado com listas dos ditos nomes masculinos/femininos, para determinar o g\^enero dos participantes. Essa compara\c{c}\~ao tamb\'em empregou o m\'etodo de banco de dados relacional, por meio de consultas codificadas em PHP e SQL.
-
-
-
-
-
-
-Como se ver\'a no cap\'{\i}tulo de Resultados e An\'alise, os dados analisados segundo o m\'etodo de identifica\c{c}\~ao de primeiros nomes, pelo menos ao que se refere a masculino e feminino, mostram que estes v\'{\i}cios e tend\^encias n\~ao est\~ao presentes no Programa WASH, havendo um relativo equil\'{\i}brio entre o atendimento a homens e mulheres. Infelizmente, o m\'etodo utilizado n\~ao permite identificar a qualidade do atendimento do projeto junto \`a comunidade LGBTQI , porque, como j\'a dito, esses dados n\~ao foram coletados ao longo de sua hist\'oria.
+Mesmo reconhecida esta defici\^encia, os n\'umeros encontrados (ver Resultados e An\'alise) indicam que a estimativa produzida pelo m\'etodo \'e suficiente para suportar a avalia\c{c}\~ao das hip\'oteses desse trabalho.
 
 
 
@@ -4193,21 +4278,21 @@ Como se ver\'a no cap\'{\i}tulo de Resultados e An\'alise, os dados analisados s
 
 
 \chapter[RESULTADOS E AN\'ALISES]{RESULTADOS E AN\'ALISES}\label{RESULTADOS E AN\'ALISES}
-\'E neste ponto do texto que alcan\c{c}amos o final dos caminhos percorridos (m\'etodos) descritos no cap\'{\i}tulo anterior, criando as condi\c{c}\~oes para que os resultados obtidos sejam apresentados.
+Alcan\c{c}amos o final dos caminhos percorridos (m\'etodos) descritos no cap\'{\i}tulo anterior, criando as condi\c{c}\~oes para que os resultados obtidos sejam apresentados.
 
 
 
 
 
 
-Portanto, os resultados obtidos ser\~ao descritos e, concomitantemente, analisados para que a validade das hip\'oteses levantadas na Introdu\c{c}\~ao possa ser verificada.
+Portanto, os resultados obtidos ser\~ao descritos e, concomitantemente, analisados para que a validade das hip\'oteses levantadas possa ser verificada.
 
 
 
 
 
 
-Os resultados est\~ao organizados, inicialmente, em duas se\c{c}\~oes separadas, relacionadas aos eixos do Programa WASH em an\'alise neste texto:
+Os resultados est\~ao organizados, inicialmente, em duas se\c{c}\~oes separadas, relacionadas aos eixos do da presente pesquisa:
 
 
 
@@ -4220,7 +4305,7 @@ Os resultados est\~ao organizados, inicialmente, em duas se\c{c}\~oes separadas,
 \item indicadores (eixo 2)
 \end{alineas}
 
-Ser\'a apresentada uma terceira se\c{c}\~ao contendo uma s\'{\i}ntese que integrar\'a os achados dos 2 eixos indicados acima. Esta terceira se\c{c}\~ao analisar\'a cada hip\'otese separadamente, considerando os achados.
+Ser\'a apresentada uma terceira se\c{c}\~ao contendo uma s\'{\i}ntese que integrar\'a os achados dos 2 eixos indicados acima. Esta terceira se\c{c}\~ao analisar\'a cada hip\'otese separadamente.
 
 
 
@@ -5664,7 +5749,8 @@ Em termos pr\'aticos  (CNPq, 2020), o WASH vem buscando as seguinte caracter\'{\
 \item \textquotedbl cria\c{c}\~ao de uma  \textquotedbl liturgia pedag\'ogica\textquotedbl  a partir de viv\^encia, que permita sua reprodu\c{c}\~ao nas v\'arias localidades,sua adapta\c{c}\~ao \`as diferentes realidades em cada regi\~ao\textquotedbl 
 \item \textquotedbl ren\'uncia ao conceito de curso\textquotedbl 
 \item \textquotedbl ren\'uncia ao conteudismo, oferta de pelo menos 3  atividades motivacionais que podem ou n\~ao serem adotadas localmente\textquotedbl . Estas 3 etapas citadas em  CNPq (2020) referem-se \`as 3 oficinas de programa\c{c}\~ao mais comuns do WASH: \textquotedbl Labirinto I\textquotedbl , \textquotedbl Labirinto II\textquotedbl  e \textquotedbl Space Invaders\textquotedbl .
-\item \textquotedbl demonstra\c{c}\~ao de oficinas\textquotedbl  como meio de capacita\c{c}\~ao dos multiplicadores, sempre com foco na\r\nsimplicidade de reprodu\c{c}\~ao\textquotedbl 
+\item \textquotedbl demonstra\c{c}\~ao de oficinas\textquotedbl  como meio de capacita\c{c}\~ao dos multiplicadores, sempre com foco na
+simplicidade de reprodu\c{c}\~ao\textquotedbl 
 \item \textquotedbl defini\c{c}\~ao clara dos objetivos de cada viv\^encia, sem exig\^encia de pr\'e-requisitos para a participa\c{c}\~ao nas mesmas\textquotedbl 
 \item \textquotedbl est\'{\i}mulo para que as viv\^encias encapsulem todo o conhecimento necess\'ario para  atingir  seus objetivos, sempre que poss\'{\i}vel, de forma que o programa possa acolher todas as crian\c{c}as, mesmo aquelas que n\~ao tiveram oportunidade de participar das experi\^encias anteriores\textquotedbl 
 \end{alineas}
@@ -5893,7 +5979,8 @@ Duas iniciativas se estabeleceram imediamente:
 
 \begin{alineas}
 \item Oficinas remotas ass\'{\i}ncronas: o coordenador do Projeto WASH iniciou experimentos utilizando o WhatsApp. Para isso contou com a iniciativa da Profa. Daniele de Souza Silva de experimentar uma nova forma de trabalho. A Profa. Daniele era da rede municipal de Educa\c{c}\~ao da cidade de Jacare\'{\i}, onde se desenvolveram os primeiros pilotos. A escola escolhida tinha poucos recursos, sem possibilidade de fornecer qualquer tipo de equipamento de inform\'atica os estudantes, requerendo um modelo de oficina que pudesse ser realizado de forma ass\'{\i}ncrona, utilizando o celular dos respons\'aveis (pais, m\~aes, etc). A ideia era inverter a atividade de programa\c{c}\~ao de jogos, atribuindo aos alunos a especifica\c{c}\~ao do jogo, com a cria\c{c}\~ao dos personagens. A programa\c{c}\~ao dos jogos, seguindo a especifica\c{c}\~ao das crian\c{c}as, seria feita em seguida, pelos bolsistas do WASH, tamb\'em remotamente, uma vez que estes tinham mais acesso a computadores. A experi\^encia inicialmente limitada, resultou na produ\c{c}\~ao de um jogo e audiovisuais descrevendo o que estava sendo feito, com a participa\c{c}\~ao dos educandos. Essa iniciativa foi depois aprimorada pelos bolsistas Michel Alencar Morandi e Ana Carolina de Deus Soares, tendo sido reproduzida em outras escolas.
-\item \textquotedbl Ci\^encia e Cultura, Vamos Brincar?\textquotedbl   (TOZZI, 2021): \'e uma web-s\'erie que foi idealizada pela  presente autora e produzida com o Movimento N\'os Somos a Ci\^encia e a Companhia Cultural Bola de Meia. A web-s\'erie resguarda o m\'etodo cient\'{\i}fico e a cada epis\'odio produzido buscou-se alinhar as tem\'aticas cientificas \'as manifesta\c{c}\~oes  da cultura popular.  Foram criados e produzidos audiovisuais em n\'{\i}vel profissional com diversas express\~oes e linguagens culturais  com a perspectiva de preservar a cultura da inf\^ancia, e ao mesmo tempo,  cultivar pr\'aticas cientificas.  Os educandos que, juntamente com seus familiares, teriam a oportunidade usufruir de uma programa\c{c}\~ao cientifica cultural para um p\'ublico \r\ninter geracional. Neste trabalho foi poss\'{\i}vel dar visibilidade as pr\'aticas STEAM do WASH,  as entrevistas com cientistas renomados, conte\'udos tais como ci\^encia, m\'usica, conta\c{c}\~ao de hist\'orias, quadros do tipo \textquotedbl fa\c{c}a voc\^e mesmo\textquotedbl  e entrevistas para um p\'ublico intergeracional.  Essa programa\c{c}\~ao foi denominada \textquotedbl Ci\^encia e Cultura, Vamos Brincar?\textquotedbl  (CCVB), tendo sido disponibilizada por v\'arios meios (Youtube e TV Aberta). Foram 9 epis\'odios, os quais est\~ao listados na parte destinada ao eixo 2 deste cap\'{\i}tulo. Esta produ\c{c}\~ao contou com a participa\c{c}\~ao de uma ampla equipe coordenada pela a autora. Os trabalhos foram concomitantes com o per\'{\i}odo em que esta autora esteve matriculada no mestrado, podendo ser considerada como um dos produtos educacionais da presente disserta\c{c}\~ao, raz\~ao pela qual \'e detalhada no cap\'{\i}tulo de Produtos Educacionais.
+\item \textquotedbl Ci\^encia e Cultura, Vamos Brincar?\textquotedbl   (TOZZI, 2021): \'e uma web-s\'erie que foi idealizada pela  presente autora e produzida com o Movimento N\'os Somos a Ci\^encia e a Companhia Cultural Bola de Meia. A web-s\'erie resguarda o m\'etodo cient\'{\i}fico e a cada epis\'odio produzido buscou-se alinhar as tem\'aticas cientificas \'as manifesta\c{c}\~oes  da cultura popular.  Foram criados e produzidos audiovisuais em n\'{\i}vel profissional com diversas express\~oes e linguagens culturais  com a perspectiva de preservar a cultura da inf\^ancia, e ao mesmo tempo,  cultivar pr\'aticas cientificas.  Os educandos que, juntamente com seus familiares, teriam a oportunidade usufruir de uma programa\c{c}\~ao cientifica cultural para um p\'ublico 
+inter geracional. Neste trabalho foi poss\'{\i}vel dar visibilidade as pr\'aticas STEAM do WASH,  as entrevistas com cientistas renomados, conte\'udos tais como ci\^encia, m\'usica, conta\c{c}\~ao de hist\'orias, quadros do tipo \textquotedbl fa\c{c}a voc\^e mesmo\textquotedbl  e entrevistas para um p\'ublico intergeracional.  Essa programa\c{c}\~ao foi denominada \textquotedbl Ci\^encia e Cultura, Vamos Brincar?\textquotedbl  (CCVB), tendo sido disponibilizada por v\'arios meios (Youtube e TV Aberta). Foram 9 epis\'odios, os quais est\~ao listados na parte destinada ao eixo 2 deste cap\'{\i}tulo. Esta produ\c{c}\~ao contou com a participa\c{c}\~ao de uma ampla equipe coordenada pela a autora. Os trabalhos foram concomitantes com o per\'{\i}odo em que esta autora esteve matriculada no mestrado, podendo ser considerada como um dos produtos educacionais da presente disserta\c{c}\~ao, raz\~ao pela qual \'e detalhada no cap\'{\i}tulo de Produtos Educacionais.
 \end{alineas}
 
 A introdu\c{c}\~ao de atividades remotas no WASH, como resultado da experi\^encia da pandemia, \'e uma das justificativas para a revis\~ao do documento de refer\^encia.
@@ -5904,7 +5991,7 @@ A introdu\c{c}\~ao de atividades remotas no WASH, como resultado da experi\^enci
 
 
 \section[Caracteriza\c{c}\~ao dos Indicadores do WASH (eixo 2)]{Caracteriza\c{c}\~ao dos Indicadores do WASH (eixo 2)}\label{Caracteriza\c{c}\~ao dos Indicadores do WASH (eixo 2)}
-Na se\c{c}\~ao da Fundamenta\c{c}\~ao Te\'orica embasamos os conceitos de \textquotedbl dados\textquotedbl , \textquotedbl informa\c{c}\~oes\textquotedbl  e \textquotedbl conhecimento\textquotedbl   atrav\'es da refer\^encia  Setzer e Silva (2017). Tra\c{c}ando um paralelo com aqueles conceitos, podemos dizer que o objetivo da coleta e tratamento de dados pela Plataforma Platu\'osh \'e produzir informa\c{c}\~oes, na forma de indicadores, os quais, analisados e interpretados, levar\~ao \`a produ\c{c}\~ao dos conhecimentos sobre objeto de estudo. Estes conhecimentos permitir\~ao avaliar as Hip\'oteses 1, 2, 4, 5, 6, 7 e 8.
+Na se\c{c}\~ao da Fundamenta\c{c}\~ao Te\'orica embasamos os conceitos de \textquotedbl dados\textquotedbl , \textquotedbl informa\c{c}\~oes\textquotedbl  e \textquotedbl conhecimento\textquotedbl   atrav\'es da refer\^encia  Setzer e Silva (2017). Tra\c{c}ando um paralelo com aqueles conceitos, podemos dizer que o objetivo da realiza\c{c}\~ao de consultas estruturadas via Plataforma \textquotedbl Platu\'osh\textquotedbl  \'e produzir informa\c{c}\~oes, na forma de indicadores, os quais, analisados e interpretados, levar\~ao \`a produ\c{c}\~ao dos conhecimentos sobre objeto de estudo. Estes conhecimentos permitir\~ao avaliar as Hip\'oteses 1, 2, 4, 5, 6, 7 e 8.
 
 
 
@@ -5924,7 +6011,7 @@ S\~ao exemplos de indicadores a serem apresentados nesta se\c{c}\~ao:
 \item quantidade de termos de ades\~ao ao WASH
 \item estimativa do n\'umero de pessoas atendidas
 \item evolu\c{c}\~ao temporal do n\'umero de pessoas atendidas (participa\c{c}\~oes);
-\item participantes por sexo;
+\item participantes por sexo (indicador de equidade);
 \item n\'umero de bolsistas;
 \item temas nos planos de trabalho e relat\'orios das inicia\c{c}\~oes cient\'{\i}ficas;
 \item quantidade de oficinas realizadas;
@@ -5935,14 +6022,14 @@ S\~ao exemplos de indicadores a serem apresentados nesta se\c{c}\~ao:
 \item produ\c{c}\~ao audiovisual.
 \end{alineas}
 
-Importante registrar que os indicadores a seguir foram obtidos a partir da contribui\c{c}\~ao de v\'arios colaboradores do WASH, com nossa participa\c{c}\~ao ativa na especifica\c{c}\~ao dos sistemas de coleta de dados, a exemplo da Plataforma Platu\'osh, da qual a presente candidata \'e co-autora  (MAMMANA et al., 2022).
+Importante registrar que os indicadores foram obtidos a partir da contribui\c{c}\~ao de v\'arios colaboradores do WASH, que elaboraram os c\'odigos em SQL para as consultas estruturadas, a partir de nossa especifica\c{c}\~ao.
 
 
 
 
 
 
-Tr\^es fontes principais de dados foram utilizadas para gerar os indicadores:
+Entretanto, o trabalho de produ\c{c}\~ao de indicadores n\~ao se restringiu \`a \textquotedbl Platu\'osh\textquotedbl  e outras tr\^es fontes de dados foram utilizadas:
 
 
 
@@ -5951,14 +6038,33 @@ Tr\^es fontes principais de dados foram utilizadas para gerar os indicadores:
 
 
 \begin{alineas}
-\item Plataforma Platu\'osh: inicialmente  voltada para o registro da quantidade de eventos e n\'umero de participantes,armazenamento dos testemunhos documentais e fotogr\'aficos registrados. Posteriormente a Platu\'osh foi sendo adaptada para incluir dados gerenciais (vincula\c{c}\~oes e afilia\c{c}\~oes institucionais), bem como registro de acervo (documentos gerados ao longo do projeto). Como esta plataforma est\'a em plena opera\c{c}\~ao, com dados sendo adicionados diariamente, foi preciso escolher um recorte temporal para a presente an\'alise. Desta forma, os dados aqui presentes referem-se ao per\'{\i}odo de setembro de 2013 a 26 de agosto de 2022.
-\item Plataforma de Planejamento Financeiro do Programa WASH: instrumento para acompanhamento das concess\~oes de bolsas, seus prazos e validades, documentos de outorgas, planos de trabalho. Trata-se de uma ferramenta de compliance e presta\c{c}\~ao de contas do projeto, mas que tamb\'em pode ser usada para a caracteriza\c{c}\~ao do mesmo, pela abrang\^encia dos dados nela contida.
-\item Planilhas eletr\^onicas:constru\'{\i}das  manualmente para viabilizar a verifica\c{c}\~ao dos dados das demais plataformas, uma vez que foram identificadas algumas fragilidades nas demais fontes de informa\c{c}\~oes.
-\item acervo de documentos usados tamb\'em no \^ambito do eixo 1 (hist\'oria)
+\item Plataforma de Planejamento Financeiro do Programa WASH: instrumento para acompanhamento das concess\~oes de bolsas, seus prazos e validades, documentos de outorgas e planos de trabalho. Trata-se de uma ferramenta de compliance e presta\c{c}\~ao de contas de cada projeto, mas que tamb\'em pode ser usada para a caracteriza\c{c}\~ao dos mesmos, pela abrang\^encia dos dados nela contida.
+\item Planilhas eletr\^onicas: constru\'{\i}das  manualmente para viabilizar a verifica\c{c}\~ao dos dados das demais plataformas, uma vez que foram identificadas algumas fragilidades nas demais fontes de informa\c{c}\~oes.
+\item acervo de documentos usados tamb\'em no \^ambito do eixo 1 (hist\'oria), bem como plataformas de entidades p\'ublicas, a exemplo da Plataforma Carlos Chagas do CNPq  (CHAGAS, 2022).
+\end{alineas}
+
+Dois recortes temporais foram adotados, como j\'a explicitado em Materiais e M\'etodos:
+
+
+
+
+
+
+
+\begin{alineas}
+\item Recorte A, de setembro de 2013 a agosto de 2022,
+\item Recorte B, de setembro de 2013 a janeiro de 2023.
 \end{alineas}
 
 \subsection[Lista de Emendas Parlamentares concedidas]{Lista de Emendas Parlamentares concedidas}\label{Lista de Emendas Parlamentares concedidas}
-No eixo 1 identificamos que o WASH tem como fonte de financiamento principal as emendas parlamentares do legislativo federal. Nosso levantamento verificou as seguintes emendas concedidas ao WASH:
+No eixo 1 identificamos que o WASH tem como fonte de financiamento principal as emendas parlamentares do legislativo federal, mas a lista completa ainda n\~ao foi apresentada.
+
+
+
+
+
+
+Para levantar as lista, usamos como fonte a Plataforma Carlos Chagas do CNPq (CHAGAS, 2022), sendo poss\'{\i}vel constatar a exist\^encia das seguintes emendas concedidas ao WASH:
 
 
 
@@ -5972,7 +6078,9 @@ No eixo 1 identificamos que o WASH tem como fonte de financiamento principal as 
 \item \textquotedbl Forma\c{c}\~ao em Captura de Movimentos\textquotedbl , emenda concedida pelo Deputado Federal Alex Canziani.
 \item \textquotedbl Cinema de anima\c{c}\~ao 3D e desenvolvimento de jogos com a ferramenta Blender e o Programa WASH\textquotedbl , emenda concedida pelo Deputado Alex Canziani em 2018
 \item \textquotedbl Programa WASH no Paran\'a\textquotedbl , emenda concedida em 2020 pelo Deputado Alex Canziani
-\item \textquotedbl PROGRAMA WASH - STEAM NO ESTADO DE S\~AO PAULO: Promo\c{c}\~ao da Ci\^encia, \r\nTecnologia, Engenharia, Artes  e Matem\'atica na Rede P\'ublica de Ensino\textquotedbl , emenda concedida pelo Deputado Federal Ivan Valente em 2020\r\n
+\item \textquotedbl PROGRAMA WASH - STEAM NO ESTADO DE S\~AO PAULO: Promo\c{c}\~ao da Ci\^encia, 
+Tecnologia, Engenharia, Artes  e Matem\'atica na Rede P\'ublica de Ensino\textquotedbl , emenda concedida pelo Deputado Federal Ivan Valente em 2020
+
 \item \textquotedbl Regi\~oes Metropolitanas\textquotedbl , emenda parlamentar concedida pelo Deputado Federal Alexandre Padilha em 2020
 \item \textquotedbl Redes de Aprendizagem\textquotedbl , emenda concedida em 2020 pelo Deputado Federal Ivan Valente
 \item \textquotedbl Programa Wash - Lei Aldir Blanc\textquotedbl , emenda parlamentar concedida pelo Deputado Federal  Ivan Valente em 2020
@@ -5980,26 +6088,26 @@ No eixo 1 identificamos que o WASH tem como fonte de financiamento principal as 
 \item \textquotedbl Programa WASH no ABC\textquotedbl , emenda parlamentar concedida pelo Deputado Federal Vicentinho em 2022
 \item \textquotedbl WASH na USP\textquotedbl , emenda parlamentar concedida pelo Deputado Federal Orlando Silva em 2022
 \item \textquotedbl WASH na UFABC\textquotedbl , emenda parlamentar concedida pelo Deputado Federal Alexandre Padilha em 2022
-\item \textquotedbl WASH em S\~ao Bernardo do Campo\textquotedbl , emenda concedida pelo Deputado Federal Carlos Zaratini
+\item \textquotedbl WASH em S\~ao Bernardo do Campo\textquotedbl , emenda concedida pelo Deputado Federal Carlos Zaratini, 2022
 \item \textquotedbl Projeto Renato Archer\textquotedbl , emenda concedida pelo Deputado Federal Ivan Valente, em 2022.
 \end{alineas}
 
 \subsection[Lista de Termos de Ades\~ao ao Programa WASH]{Lista de Termos de Ades\~ao ao Programa WASH}\label{Lista de Termos de Ades\~ao ao Programa WASH}
-Como mencionado, o WASH decidiu por n\~ao estabelecer  o instrumento de Conv\^enios como meio de dissemina\c{c}\~ao do programa. A raz\~ao \'e o prazo para tramita\c{c}\~ao desse tipo de instrumento jur\'{\i}dico, que pode demorar v\'arios meses. Alternativamente, optou-se pela formaliza\c{c}\~ao  de instrumentos legais respeitando as caracter\'{\i}sticas de cada ente federado ou parceiro.
+O WASH decidiu-se por n\~ao estabelecer  o instrumento de Conv\^enio como meio de dissemina\c{c}\~ao do programa. Essa decis\~ao foi decorrente do prazo excessivo para tramita\c{c}\~ao desse tipo de instrumento jur\'{\i}dico, que pode demorar v\'arios meses. Alternativamente, concebeu-se um formato de mobiliza\c{c}\~ao de outras institui\c{c}\~oes baseado na ades\~ao por declara\c{c}\~oes  unilaterais, denominadas \textquotedbl ades\~oes\textquotedbl .
 
 
 
 
 
 
-Identificamos os seguintes tipos de documentos de ades\~ao:  edi\c{c}\~ao de portarias, termos de ades\~ao, boletins, oficios, atas deliberativas de reuni\~oes de conselhos de escolas, de sa\'ude, manifesta\c{c}\~oes por oficios, enfim   documentos editados pelas entidades interessadas no programa que se configuram como manifesta\c{c}\~ao de ades\~ao.
+Combinando a busca na \textquotedbl Platu\'osh\textquotedbl  com no acervo, identificamos os seguintes tipos de documentos de ades\~ao:  edi\c{c}\~ao de portarias, termos de ades\~ao, boletins, atas deliberativas de reuni\~oes de conselhos de escolas e de sa\'ude, manifesta\c{c}\~oes por of\'{\i}cios, enfim: documentos editados pelas entidades interessadas no programa que se configuram como atos de gest\~ao.
 
 
 
 
 
 
-Abaixo apresentamos as ades\~oes encontradas pela autora nos registros do WASH, classificadas por \textquotedbl tipos de institui\c{c}\~oes\textquotedbl .
+Abaixo apresentamos, organizadas por tipos de institui\c{c}\~oes, as ades\~oes encontradas pela autora nos registros do WASH.
 
 
 
@@ -6016,7 +6124,7 @@ No que se refere a \textquotedbl unidades de pesquisa\textquotedbl , identificam
 
 \begin{alineas}
 \item Centro de Tecnologia da Informa\c{c}\~ao Renato Archer - CTI - proponente inicial da metodologia por meio da Portaria CTI 178/2018, como j\'a amplamente mencionado ao longo do texto
-\item S\~AO JOS\'E DOS CAMPOS - CEMADEN - Portaria No. 144/2019/SEI-CEMADEN, de 02/12/2019 - Institui o Programa Cemaden Educa\c{c}\~ao, define sua estrutura e formas de implementa\c{c}\~ao, e d\'a outras provid\^encias. A portaria traz em seu Art 3o.: O Programa Cemaden Educa\c{c}\~ao adotar\'a como uma de suas formas de execu\c{c}\~ao o termo de refer\^encia do Programa WASH - Workshop Aficionados em Software e Hardware, conforme consta do Anexo I da Portaria n° 178/2018/SEI-CTI, de 12 de novembro de 2018, promovendo a integra\c{c}\~ao das tem\'aticas de ci\^encia, tecnologia, matem\'atica, arte e engenharia, inerentes a aquele Programa, com as demais caracter\'{\i}sticas e tem\'aticas do Cemaden Educa\c{c}\~ao, realizando adapta\c{c}\~oes did\'aticas quando couber, conforme previsto no Anexo I desta Portaria.
+\item CEMADEN - Portaria No. 144/2019/SEI-CEMADEN, de 02/12/2019 - Institui o Programa Cemaden Educa\c{c}\~ao, define sua estrutura e formas de implementa\c{c}\~ao, e d\'a outras provid\^encias. A portaria traz em seu Art 3o.: O Programa Cemaden Educa\c{c}\~ao adotar\'a como uma de suas formas de execu\c{c}\~ao o termo de refer\^encia do Programa WASH - Workshop Aficionados em Software e Hardware, conforme consta do Anexo I da Portaria n° 178/2018/SEI-CTI, de 12 de novembro de 2018, promovendo a integra\c{c}\~ao das tem\'aticas de ci\^encia, tecnologia, matem\'atica, arte e engenharia, inerentes a aquele Programa, com as demais caracter\'{\i}sticas e tem\'aticas do Cemaden Educa\c{c}\~ao, realizando adapta\c{c}\~oes did\'aticas quando couber, conforme previsto no Anexo I desta Portaria.
 \end{alineas}
 
 Na esfera municipal, identificamos  v\'arias formas de ades\~ao do poder executivo. Os casos mais emblem\'aticos s\~ao aqueles que se deram pela aprova\c{c}\~ao de leis municipais, como ocorreu nas cidades de Prado Ferreira e Dr. Camargo, no Estado do Paran\'a. Nestas duas iniciativas, independentes, identificamos o protagonismo de duas autoridades p\'ublicas com grande comprometimento com a educa\c{c}\~ao em suas cidades, o Prefeito Silvio Damasceno, de Prado Ferreira, e a vereadora Valdirene Maria dos Santos, de Dr. Camargo. Nas demais cidades observamos a utiliza\c{c}\~ao dos instrumentos de portaria, normalmente editada pela secretaria de educa\c{c}\~ao. A participa\c{c}\~ao de Campinas, que envolveu o observat\'orio municipal, foi o \'unico caso de utiliza\c{c}\~ao de conv\^enio, como se v\^e na lista a seguir:
@@ -6035,7 +6143,7 @@ Na esfera municipal, identificamos  v\'arias formas de ades\~ao do poder executi
 \item Secretaria Municipal de Santo In\'acio/ PR - Oficializa a ades\~ao ao Programa WASH em  20/12/2021
 \end{alineas}
 
-Foram identificadas ades\~oes das seguintes universidades federais/estaduais e Institutoes Federais:
+Foram identificadas ades\~oes das seguintes universidades federais/estaduais e Institutos Federais:
 
 
 
@@ -6047,7 +6155,6 @@ Foram identificadas ades\~oes das seguintes universidades federais/estaduais e I
 \item UNIVERSIDADE DE S\~AO PAULO - USP - Portaria GR 7669, de 8/07/2021- Estabelece as condi\c{c}\~oes para a execu\c{c}\~ao do Programa WASH na Universidade de S\~ao Paulo
 \item UNIVERSIDADE TECNOL\'OGICA FEDERAL DO PARAN\'A - Portaria DO DIRETOR-GERAL - No. 147, 05/11/2020- Adota a Portaria 178/2018/SEI/CTI, de 12/11/2018 como modelo de refer\^encia do Programa WASH, criando condi\c{c}\~oes para que a UTFPR, atue como entidade promotora.
 \item FUNDA\c{C}\~AO UNIVERSIDADE FEDERAL DO ABC - Portaria 915/2020, DE 27/08/2020- Adota o Programa WASH na UFABC, publicada no Boletim de Servi\c{c}o no. 977, em 28/08/2020.
-\item Universidade Est\'acio de S\'a - Campinas/SP
 \item IF CAMPUS JACARE\'I (SP) - Portaria JCR.0031/2019 -  abril de 2019 - Institui o Programa WASH no Campus Jacare\'{\i}.
 \item IF CAMPUS LONDRINA (PR) - Portaria 101, de 22/04/2019 - Adota a Portaria 178/2018/SEI/CTI, de 12/11/2018 como modelo de refer\^encia do Programa WASH, para que o IF-PR atue como entidade promotora.
 \item IF CAMPUS CAMPINAS (SP) - Portaria CMP 0043/2019, de 24/04/2019 - Institui o Programa WASH no Campus Campinas
@@ -6121,6 +6228,7 @@ Foram identificadas as ades\~oes das seguintes organiza\c{c}\~oes sociais e sind
 \item Sindicato dos Metal\'urgicos do ABC
 \item Instituto Socio Cultural Voz Ativa- Campinas/SP,  parceria com o Programa WASH, em 01/02/2019
 \item MSTL - Movimento Sem Terra de Luta - S\~ao Bernardo do Campo/SP
+\item FUNBOSQUE - Funda\c{c}\~ao Centro de Refer\^encia em Educa\c{c}\~ao Ambiental Escola Bosque Eidorfe Moreira, S\~ao Jo\~ao do Outeiro, Bel\'em do Par\'a
 \end{alineas}
 
 Foram identificadas as ades\~oes das seguintes a\c{c}\~oes na \'area de sa\'ude:
@@ -6137,7 +6245,7 @@ Foram identificadas as ades\~oes das seguintes a\c{c}\~oes na \'area de sa\'ude:
 \item Comunidades - S\~ao Paulo/SP
 \end{alineas}
 
-Os dados apresentados indicam a exist\^encia de documentos de ades\~ao editados por cerca de 65 institui\c{c}\~oes diferentes. Sabe-se que o n\'umero de institui\c{c}\~oes participantes \'e maior, dado que, ao longo de 10 anos, ocorreram muitos eventos em institui\c{c}\~oes e cidades sem que os interessados publicassem um documento de ades\~ao.
+Os dados apresentados indicam a exist\^encia de documentos de ades\~ao editados por cerca de 66 institui\c{c}\~oes diferentes. Sabe-se que o n\'umero acumulado de institui\c{c}\~oes participantes \'e maior, dado que, ao longo de 10 anos, ocorreram muitos eventos em institui\c{c}\~oes e cidades sem que os interessados publicassem um documento de ades\~ao.
 
 
 
@@ -6159,7 +6267,7 @@ Tal limita\c{c}\~ao, discutida no cap\'{\i}tulo de Materiais e M\'etodos, est\'a
 
 
 
-Identificamos, tamb\'em, um outro motivo que ocorreu mesmo quando as restri\c{c}\~oes de registro n\~ao estavam presentes. Observamos o n\~ao cumprimento das diretrizes do WASH especificadas no termo de ades\~ao, situa\c{c}\~ao que, em alguns casos, se deu por ina\c{c}\~ao dos pr\'oprios bolsistas do WASH, que deveriam relembrar o respons\'avel presente sobre a import\^ancia de elabora\c{c}\~ao da lista de presen\c{c}a com nome e data de nascimento.
+Identificamos, tamb\'em, um outro motivo que ocorreu mesmo quando as restri\c{c}\~oes de registro n\~ao estavam presentes. Observamos o n\~ao cumprimento das diretrizes do WASH especificadas no documento de refer\^encia - ver \textquotedbl descri\c{c}\~ao de uma ofina\textquotedbl  em  CTI (2018) - situa\c{c}\~ao que, em alguns casos, se deu por ina\c{c}\~ao dos pr\'oprios colaboradores do WASH, que deveriam relembrar o respons\'avel presente sobre a import\^ancia de elabora\c{c}\~ao da lista de presen\c{c}a com nome e data de nascimento.
 
 
 
@@ -6180,14 +6288,14 @@ A situa\c{c}\~ao se intensificou a partir da edi\c{c}\~ao da Lei Geral de Prote\
 
 
 
-Tais fatos s\~ao um dos pontos considerados na re-edi\c{c}\~ao do documento de refer\^encia do Programa WASH, apresentado como produto educacional desta disserta\c{c}\~ao.
+Tais fatos indicam que o registro de presen\c{c}a precisa ser mais enfatizado na re-edi\c{c}\~ao do documento de refer\^encia do Programa WASH, que tamb\'em precisa apresentar uma solu\c{c}\~ao melhor adaptada \`a nova realidade da LGPD.
 
 
 
 
 
 
-Em termos de recorte temporal, os indicadores aqui apresentados referem-se ao per\'{\i}odo de 2013 (quando o WASH foi criado) at\'e o dia 26 de agosto de 2022, quando foi feita o \textquotedbl congelamento\textquotedbl  da c\'opia da base de dados visando a an\'alise.
+Os indicadores aqui apresentados referem-se ao Recorte A, de setembro de 2013 a agosto de 2022.
 
 
 
@@ -6201,14 +6309,14 @@ Para conhecer o n\'umero de cadastros na base de dados, que representam a amostr
 
 
 
-O uso da linguagem SQL escapa ao escopo de interesse desta autora, raz\~ao pela qual ser\'a omitido aqui o comando espec\'{\i}fico utilizado.
+O uso da linguagem SQL escapa ao escopo imediato deste trabalho, raz\~ao pela qual ser\'a omitido aqui o comando espec\'{\i}fico utilizado.
 
 
 
 
 
 
-O resultado obtido com a consulta SQL, para os dados congelados em 26 de agosto de 2022, foi de 3.312 (tr\^es mil,trezentos e doze) participantes.
+O resultado obtido com a consulta SQL, para os dados congelados em 26 de agosto de 2022 (Recorte A), foi de 3.312 (tr\^es mil,trezentos e doze) participantes.
 
 
 
@@ -6229,7 +6337,7 @@ Felizmente, a linguagem SQL permite excluir os cadastros repetidos, tarefa que f
 
 
 
-O conjunto de 47 pessoas, que \'e a diferen\c{c}a entre o n\'umero com nomes incluindo as repeti\c{c}\~oes (3.312 participantes) e o n\'umero sem nomes repetidos (3.265 participantes) pode conter duas situa\c{c}\~oes:
+O conjunto de 47 pessoas representa a diferen\c{c}a entre 3.312 e 3.265 participantes, e pode conter duas situa\c{c}\~oes:
 
 
 
@@ -6242,7 +6350,7 @@ O conjunto de 47 pessoas, que \'e a diferen\c{c}a entre o n\'umero com nomes inc
 \item hom\^onimos
 \end{alineas}
 
-Aplicamos, com apoio da equipe de TI do WASH, algumas variantes das consultas SQL para identificar, caso a caso, qual das duas situa\c{c}\~oes estava presente. Com isso, pudemos concluir que os cadastros repetidos n\~ao se referiam a hom\^onimos, evid\^encia de que a op\c{c}\~ao (a) acima \'e a mais prov\'avel. Consequentemente, 3.265 participantes \'e o n\'umero que melhor representa o tamanho da amostra de cadastrados registrada na plataforma Platu\'osh, um erro de cerca de 1,4\% nos registros totais (47 repeti\c{c}\~oes). Este n\'umero de erros \'e relativamente pequeno para o universo de participantes.
+Aplicamos, com apoio da equipe de TI do WASH, algumas variantes das consultas SQL para identificar, caso a caso, qual das duas situa\c{c}\~oes estava presente. Com isso, pudemos concluir que os cadastros repetidos n\~ao se referiam a hom\^onimos, evid\^encia de que a op\c{c}\~ao (a) acima \'e a mais prov\'avel. Consequentemente, 3.265 participantes \'e o n\'umero que melhor representa o tamanho da amostra de cadastrados registrada na plataforma Platu\'osh, um erro de cerca de 1,4\% nos registros totais (47 repeti\c{c}\~oes). Este n\'umero de erros \'e relativamente pequeno para o universo de participantes. Os 47 registros repetidos foram exclu\'{\i}dos para a gera\c{c}\~ao dos demais indicadores no contexto do Recorte A.
 
 
 
@@ -6253,28 +6361,28 @@ Aplicamos, com apoio da equipe de TI do WASH, algumas variantes das consultas SQ
 \noindent\begin{center}\mbox{\centering\fbox{\centering\par\parbox{0.7\linewidth}{\small\textit{A amostra de participantes do WASH, registrada na plataforma Platu\'osh, \'e constitu\'{\i}da de 3.265 participantes.}\normalsize}}}\end{center}
 
 
-Um outro aspecto que precisa ser bastante enfatizado \'e que o n\'umero efetivo de participantes no WASH \'e provavelmente substancialmente maior do que a amostra de 3.265 cadastrados.
+Um outro aspecto que precisa ser bastante enfatizado \'e que o n\'umero efetivo de participantes no WASH deve ser substancialmente maior do que a amostra de 3.265 cadastrados.
 
 
 
 
 
 
-Para sustentar esta afirma\c{c}\~ao \'e poss\'{\i}vel considerar que muitas oficinas do programa, principalmente as que ocorreram em ambientes abertos, foram realizadas sem controle e registro de presen\c{c}a  de entrada, impedindo que o cadastro individualizado de participantes fosse feito.
+Para sustentar esta afirma\c{c}\~ao \'e poss\'{\i}vel considerar que muitas oficinas do programa, principalmente as que ocorreram em ambientes abertos, foram realizadas sem registro de presen\c{c}a  de entrada, impedindo que o cadastro individualizado de participantes fosse feito.
 
 
 
 
 
 
-Mas esta afirma\c{c}\~ao n\~ao teria validade se n\~ao fosse poss\'{\i}vel apresentar evid\^encias de eventos com essas caracter\'{\i}sticas, mostrando que o n\'umero de participantes, nos casos exemplificados, foi maior do que efetivamente cadastrado.
+Mas esta afirma\c{c}\~ao n\~ao teria validade se n\~ao fosse poss\'{\i}vel apresentar evid\^encias de que eventos ocorreram com as caracter\'{\i}sticas citadas acima. Ou seja, precisamos mostrar casos em que o n\'umero de participantes foi maior do que o efetivamente cadastrado.
 
 
 
 
 
 
-Desta forma, passamos a apresentar exemplos de eventos em que tal situa\c{c}\~ao ocorreu, complementando o m\'etodo de consulta SQL com a investiga\c{c}\~ao no acervo. Desta forma, verificamos, por evid\^encias fotogr\'aficas, que o n\'umero de registrados na plataforma n\~ao reflete o alcance real do programa. Para n\~ao nos estendermos muito, limitamos essa exposi\c{c}\~ao a 7 casos, como segue:
+Desta forma, passamos a apresentar exemplos de eventos em que tal situa\c{c}\~ao ocorreu, verificando, de forma n\~ao exaustiva, que existiram pelo menos 7 eventos de grande porte em que o n\'umero de registrados na plataforma n\~ao refletiu o que est\'a presente nos registros fotogr\'aficos. Parece-nos que a descri\c{c}\~ao de 7 eventos nessa situa\c{c}\~ao \'e suficiente para comprovar nossa afirma\c{c}\~ao:
 
 
 
@@ -6283,13 +6391,13 @@ Desta forma, passamos a apresentar exemplos de eventos em que tal situa\c{c}\~ao
 
 
 \begin{alineas}
-\item evento de grande porte realizado no CTI Renato Archer, ocorrido em 11 de abril de 2015, quando centenas de crian\c{c}as participaram do Ci\^encia em Show, trupe de artistas formados em f\'{\i}sica. Os registros oficiais indicam a presen\c{c}a de 5 pessoas, o que n\~ao se coaduna com os registros fotogr\'aficos, que indicam um p\'ublico pelo menos de 30 a 40 vezes maior (e.g. Fig. XXX).
+\item evento de grande porte realizado no CTI Renato Archer, ocorrido em 11 de abril de 2015, quando centenas de crian\c{c}as participaram da apresenta\c{c}\~ao do \textquotedbl Ci\^encia em Show\textquotedbl . Os registros oficiais indicam a presen\c{c}a de 5 pessoas, o que n\~ao se coaduna com os registros fotogr\'aficos, que indicam um p\'ublico entre 150 e 200 pessoas (e.g. Fig. XXX).
 \item comemora\c{c}\~ao do dia das crian\c{c}as realizada em 3 de outubro de 2015, no CTI Renato Archer com atividades musicais e culturais. Os registros da plataforma, neste dia, apontam para a participa\c{c}\~ao de 9 participantes, mas os registros fotogr\'aficos do evento apontam para uma presen\c{c}a muito superior (e.g. Fig. XXX).
 \item Evento de confraterniza\c{c}\~ao de Natal realizado no CTI Renato Archer, com palestras e outras atividades l\'udicas, realizado em 19 de dezembro de 2015, com registro de 8 participantes, mas os registros fotogr\'aficos indicam a participa\c{c}\~ao de substancialmente maior de crian\c{c}as (e.g. Fig. XXX).
-\item Evento Greenk, patrocinado pelo MCT, que aconteceu no Expo Center Anhembi, em S\~ao Paulo, na semana de 27 de maio de 2018. O porte do evento e n\'umero de dias de realiza\c{c}\~ao indicam uma quantidade substancialmente maior do que registrado 13 pessoas. Essa discrep\^ancia se deu porque o tipo de evento n\~ao permitia o cadastro de p\'ublico, ficando os registros restritos aos bolsistas multiplicadores, bem com aos demais respons\'aveis.
+\item Evento Greenk, patrocinado pelo MCT, que aconteceu no Expo Center Anhembi, em S\~ao Paulo, na semana de 27 de maio de 2018. O porte do evento e n\'umero de dias de realiza\c{c}\~ao indicam uma quantidade substancialmente maior do que registrado (13 pessoas). Essa discrep\^ancia se deu porque o tipo de evento n\~ao permitia o cadastro de p\'ublico, ficando os registros restritos aos bolsistas multiplicadores, bem com aos demais respons\'aveis.
 \item Em 23 de junho de 2018 o Programa WASH promoveu uma visita ao Museu Aberto de Astronomia- MAAS, em Campinas. Os registros oficiais n\~ao trazem o n\'umero de participantes, mas os registros fotogr\'aficos indicam a presen\c{c}a de v\'arias dezenas de crian\c{c}as (Fig. XXX).
-\item Evento em pra\c{c}a p\'ublica realizado na cidade de Prado Ferreira/PR, em 31 de maio de 2019. Foi poss\'{\i}vel estimar uma presen\c{c}a de v\'arias centenas de pessoas, com a pra\c{c}a tomada pelo p\'ublico. O evento de  lan\c{c}amento do Programa WASH na cidade, no \^ambito do Programa Profiss\~ao 4.0, criado em lei municipal, cuja proposi\c{c}\~ao e elabora\c{c}\~ao da Lei teve orienta\c{c}\~ao e colabora\c{c}\~ao ativa desta autora (ver se\c{c}\~ao com a lista de ades\~oes XXX).
-\item Evento Dia da Fam\'{\i}lia na Escola, realizado na EMEF Milton Pereira Costa, em Guarulhos, no dia 27 de novembro de 2021, com a presen\c{c}a de um dos membros do Ci\^encia em Show. O p\'ublico estimado est\'a em cerca de 3 centenas, mas n\~ao houve registro individualizado pelo aspecto amplo do evento.
+\item Evento em pra\c{c}a p\'ublica realizado na cidade de Prado Ferreira/PR, em 31 de maio de 2019, para o lan\c{c}amento do Programa WASH no \^ambito do Projeto Municipal Profiss\~ao 4.0. Foi poss\'{\i}vel estimar uma presen\c{c}a de centenas de pessoas, com a pra\c{c}a tomada pelo p\'ublico.
+\item Evento Dia da Fam\'{\i}lia na Escola, realizado na EMEF Milton Pereira Costa, em Guarulhos, no dia 27 de novembro de 2021. O p\'ublico estimado est\'a em cerca de 3 centenas de pessoas, mas n\~ao houve registro individualizado pelo aspecto amplo do evento.
 \end{alineas}
 
 
@@ -6379,7 +6487,7 @@ Com os exemplos de eventos at\'e aqui apresentados, lista n\~ao exaustiva, busca
 
 
 
-N\~ao obstante esse car\'ater amostral, ou seja, incompleto em termos de registros individuais dos participantes, sustentamos que essa amostra \'e adequada para extrair importantes informa\c{c}\~oes sobre o programa. Entre elas est\'a o seu crescimento org\^anico, o impacto da pandemia e o perfil et\'ario do p\'ublico alvo, por exemplo, o que pode ser verificado nas se\c{c}\~oes a seguir.
+N\~ao obstante esse car\'ater amostral, ou seja, incompleto em termos de registros individuais dos participantes, sustentamos que essa amostra \'e adequada para extrair importantes informa\c{c}\~oes sobre o programa. Entre elas est\'a o seu crescimento anual, o impacto da pandemia e o perfil et\'ario do p\'ublico alvo, por exemplo, o que pode ser verificado nas se\c{c}\~oes a seguir.
 
 
 
@@ -6387,20 +6495,6 @@ N\~ao obstante esse car\'ater amostral, ou seja, incompleto em termos de registr
 
 
 \subsection[Evolu\c{c}\~ao temporal do n\'umero de participa\c{c}\~oes]{Evolu\c{c}\~ao temporal do n\'umero de participa\c{c}\~oes}\label{Evolu\c{c}\~ao temporal do n\'umero de participa\c{c}\~oes}
-Na se\c{c}\~ao anterior foi mostrado que os dados registrados na Platu\'osh s\~ao uma amostra do total de participantes. Isso ocorreu porque houve eventos nos quais n\~ao foi poss\'{\i}vel cadastrar todos participantes, a exemplo dos eventos que ocorreram em ambientes abertos (pra\c{c}as p\'ublicas, exposi\c{c}\~oes, etc.), deixando o cadastro incompleto.
-
-
-
-
-
-
-Foi comentado, tamb\'em, o WASH tem dificuldade em coletar integralmente os dados de participantes por depender do registro e compartilhamento de dados pelass entidades respons\'aveis.
-
-
-
-
-
-
 Mesmo n\~ao representando o universo completo de participantes, os dados amostrais s\~ao importantes para identificar tend\^encias do programa, a exemplo da evolu\c{c}\~ao anual do n\'umero de participa\c{c}\~oes, mostrada na Fig. XXX.
 
 
@@ -6448,120 +6542,106 @@ Mesmo n\~ao representando o universo completo de participantes, os dados amostra
 
 
 
-N\'umero de participantes significa o n\'umero de indiv\'{\i}duos que partiparam de eventos naquele ano, contabilizados uma vez s\'o, mesmo que tenham participado em mais de um evento no mesmo ano.
+O n\'umero de participa\c{c}\~oes, mostrado na Fig. XXX, significa o n\'umero de vezes que participantes frequentaram eventos do WASH naquele ano, ainda que seja contabilizada a mesma pessoa duas ou mais vezes.
 
 
 
 
 
 
-N\'umero de participa\c{c}\~oes significa o n\'umero de vezes que participantes frequentaram eventos do WASH naquele ano, mesmo que seja contabilizada a mesma pessoa duas ou mais vezes.
+O n\'umero de participantes, mostrado na Fig. XXX, significa o n\'umero de indiv\'{\i}duos que partiparam de eventos naquele ano, contabilizados uma vez s\'o, ainda que tenham participado em mais de um evento no mesmo ano.
 
 
 
 
 
 
-Observada essa diferen\c{c}a, a Fig. XXX traz o n\'umero de participantes por ano.  Agora podemos calcular a m\'edia de participa\c{c}\~oes por participante, dividindo, um a um, os dados da evolu\c{c}\~ao anual das participa\c{c}\~oes pela evolu\c{c}\~ao anual dos participantes, como mostrado na Fig. XXX.
+A Fig. XXX mostra a m\'edia de participa\c{c}\~oes por participante, dividindo, um a um, os dados da evolu\c{c}\~ao anual das participa\c{c}\~oes pela evolu\c{c}\~ao anual dos participantes.
 
 
 
 
 
 
-Os gr\'aficos de evolu\c{c}\~ao anual de participantes, participa\c{c}\~oes e de m\'edia de participa\c{c}\~oes indicam um crescimento do Programa WASH, principalmente a partir de 2019, ano em que houve tamb\'em um crescimento no n\'umero de emendas parlamentares. Ao mesmo tempo, os gr\'aficos indicam que a pandemia teve impacto no atendimento de educandos por parte do WASH, uma vez que observou-se uma queda abrupta em 2020, tanto em termo de participa\c{c}\~oes como de participantes.
+Os gr\'aficos de evolu\c{c}\~ao anual de participantes (Fig. XXX), participa\c{c}\~oes (Fig. XXX) e de m\'edia de participa\c{c}\~oes (Fig. XXX) indicam um crescimento do Programa WASH, principalmente a partir de 2019, ano em que houve tamb\'em um crescimento no n\'umero de emendas parlamentares.
 
 
 
 
 
 
-N\~ao obstante a manuten\c{c}\~ao de parte das restri\c{c}\~oes de isolamento social no ano de 2021, os gr\'aficos das Figs. XXX mostram uma recupera\c{c}\~ao nos indicadores de participantes e participa\c{c}\~ao nesse ano. Atribu\'{\i}mos essa recupera\c{c}\~ao \`as medidas tomadas pelo WASH de desenvolver oficinas remotas, n\~ao obstante os des\'{\i}gneos iniciais do WASH indicarem que trata-se de um programa presencial. Essas medidas est\~ao descritas nas se\c{c}\~oes deste cap\'{\i}tulo destinadas \`a historiografia (eixo 1).
+Ao mesmo tempo, os gr\'aficos indicam que a pandemia teve impacto negativo no atendimento de educandos por parte do WASH, uma vez que observou-se uma queda abrupta em 2020, tanto em termos de participa\c{c}\~oes como de participantes.
 
 
 
 
 
 
-Esse aprendizado sobre como realizar oficinas remotas precisa se refletir na revis\~ao do documento de refer\^encia do WASH, que \'e o produto educacional principal deste mestrado.
+N\~ao obstante a manuten\c{c}\~ao de parte das restri\c{c}\~oes de isolamento social no ano de 2021, os gr\'aficos das Figs. XXX mostram uma recupera\c{c}\~ao nos indicadores de participantes e participa\c{c}\~oes naquele ano. Atribu\'{\i}mos essa recupera\c{c}\~ao \`as medidas tomadas pelo WASH de desenvolver oficinas remotas, n\~ao obstante o WASH ter sido concebido como programa presencial  (CTI, 2018). Essas medidas est\~ao descritas nas se\c{c}\~oes XXX deste cap\'{\i}tulo destinadas \`a historiografia (eixo 1).
 
 
 
 
 
 
-Os dados para 2022 est\~ao incompletos, uma vez que a presente an\'alise refere-se a um recorte temporal que se encerrou em agosto daquele ano.
+Esse aprendizado sobre como realizar oficinas remotas precisa se refletir na revis\~ao do documento de refer\^encia do WASH, uma vez que o anexo \`a Portaria CTI 178/2018 n\~ao traz qualquer refer\^encia a este m\'etodo.
 
 
 
 
 
 
-\subsection[Distribui\c{c}\~ao de partipantes por sexo]{Distribui\c{c}\~ao de partipantes por sexo}\label{Distribui\c{c}\~ao de partipantes por sexo}
-Sabe-se que as pessoas do sexo feminino s\~ao particularmente desprivilegiadas quando o tema \'e igualdade de acesso \`as disciplinas de Science, Technology, Engineering 
+Finalmente, \'e preciso enfatizar que os dados para 2022 s\~ao parciais, uma vez que a presente an\'alise refere-se a um Recorte A, cujo per\'{\i}odo se encerra em agosto daquele ano.
 
 
 
 
 
 
-Por esta raz\~ao, \'e de particular interesse para este trabalho analisar o equil\'{\i}brio no atendimento a participantes do sexo masculino e do sexo feminino.
+\subsection[Distribui\c{c}\~ao de partipantes por sexo (equidade)]{Distribui\c{c}\~ao de partipantes por sexo (equidade)}\label{Distribui\c{c}\~ao de partipantes por sexo (equidade)}
+As pessoas do sexo feminino s\~ao particularmente desprivilegiadas quando o tema \'e igualdade de acesso \`as disciplinas de Science, Technology, Engineering and Mathematics (Kijima et al., 2021).
 
 
 
 
 
 
-Mas esta an\'alise, como antecipado no cap\'{\i}tulo de Materiais e M\'etodos, n\~ao foi planejada no in\'{\i}cio do programa, uma vez que n\~ao havia, h\'a 10 anos atr\'as, a ambi\c{c}\~ao de crescimento que se alcan\c{c}ou.
+Por esta raz\~ao, \'e de muito interesse para este trabalho analisar o equil\'{\i}brio no atendimento a participantes do sexo masculino e do sexo feminino, com vistas a determinar sua equidade.
 
 
 
 
 
 
-Esta situa\c{c}\~ao impactou tamb\'em a capacidade do programa de fazer uma an\'alise mais inclusiva no sentido da identifica\c{c}\~ao de sexo dos participantes.
+Mas esta an\'alise, como antecipado no cap\'{\i}tulo de Materiais e M\'etodos, n\~ao foi planejada no in\'{\i}cio do programa.
 
 
 
 
 
 
-Portanto, na aus\^encia de informa\c{c}\~oes cadastrais mais detalhadas no que se refere \`a auto-declara\c{c}\~ao de sexo dos participantes nos primeiros 5 anos do projeto, bem como em face \`a recente resist\^encia de parceiros em fornecer dados, decorrente da LGPD, foi preciso desenvolver um m\'etodo de \textquotedbl estimativa\textquotedbl  do sexo dos participantes com base no primeiro nome dos mesmos.
+Portanto, identificamos a necessidade de desenvolver um m\'etodo para estimar o equil\'{\i}brio entre participantes femininos e masculinos, criando um indicador de equidade. Este m\'etodo \'e baseado na contagem dos registros cujo o primeiro nome do cadastrado est\'a presente numa lista de \textquotedbl nomes masculinos\textquotedbl , e na contagem, simult\^anea, dos registros cujo o primeiro nome da cadastrada est\'a presente numa lista de \textquotedbl nomes femininos\textquotedbl  (ver detalhes em Materiais e M\'etodos, se\c{c}\~ao XXX).
 
 
 
 
 
 
-Este m\'etodo n\~ao tem a finalidade de atribuir um sexo aos participantes. O m\'etodo \'e anonimizado de forma que a contabiliza\c{c}\~ao de um participante do sexo feminino e masculino se d\'a num contexto n\~ao personalizado.
+Este m\'etodo de \textquotedbl estimativa\textquotedbl  n\~ao tem a finalidade de atribuir, individualmente, o sexo a cada participante porque n\~ao se deseja estigmatizar os participantes que, por falha de cadastro do programa, n\~ao tiveram a oportunidade de fazer sua autodeclara\c{c}\~ao de sexo.
 
 
 
 
 
 
-De forma sum\'aria pode-se descrever o m\'etodo como uma verifica\c{c}\~ao se o primeiro nome do participante est\'a numa lista extensiva de nomes \textquotedbl considerados masculinos\textquotedbl , situa\c{c}\~ao em que, de forma anonimizada, um contador de participantes masculinos \'e incrementado. Caso o primeiro nome do participante esteja numa lista de nomes \textquotedbl considerados femininos\textquotedbl , o contador de participantes femininos \'e incrementado. Quando o nome n\~ao est\'a em nenhuma das listas, ou quando \'e um nome indefinido, o contador de \textquotedbl sexo desconhecido \'e incrementado\textquotedbl .
+Ali\'as, como recentemente, a partir de 2019, foi inclu\'{\i}do na plataforma Platu\'osh um campo autodeclarat\'orio sobre sexo do(a) participante, uma parte dos dados usada para gerar o indicador de equidade foi fornecida pelos(as) pr\'oprios(as) participantes.
 
 
 
 
 
 
-Como recentemente, a partir de 2019, foi inclu\'{\i}da na plataforma Platu\'osh a pergunta sobre sexo do participante de forma autodeclarat\'oria, uma parte dos dados \'e fornecida pelos pr\'oprios participantes.
-
-
-
-
-
-
-O gr\'afico abaixo mostra a distribui\c{c}\~ao de sexo masculinos, femininos, desconhecidos e outros no universo de participantes do WASH. Nota-se um equil\'{\i}brio entre os participantes, com 49.4\% de mulheres e 48.3\% de homens, havendo ainda 2.1\% de sexo desconhecido. Apenas 5 cadastros apontam sexo que n\~ao se encaixam nas demais concep\c{c}\~oes.
-
-
-
-
-
-
-A afirma\c{c}\~ao de que existe um equil\'{\i}brio \'e de car\'ater amostral e n\~ao absoluto, podendo haver situa\c{c}\~oes em que para determinada faixa et\'aria, o sexo prevale\c{c}a sobre o outro.
+O gr\'afico abaixo mostra a distribui\c{c}\~ao de sexo feminino, masculino, desconhecido e outros, no universo de participantes do WASH. Nota-se um equil\'{\i}brio entre o n\'umero de participantes, sendo 49.4\%  mulheres e 48.3\% homens, havendo ainda 2.1\% de sexo desconhecido. Apenas 5 cadastros apontam a identidade de g\^enero autodeclarada.
 
 
 
@@ -6588,14 +6668,14 @@ A afirma\c{c}\~ao de que existe um equil\'{\i}brio \'e de car\'ater amostral e n
 
 
 \subsection[N\'umero de Bolsistas]{N\'umero de Bolsistas}\label{N\'umero de Bolsistas}
-O m\'etodo do WASH, descrito na Portaria CTI 178/2018, pressup\~oe a atua\c{c}\~ao de bolsistas de inicia\c{c}\~ao cient\'{\i}fica (Bolsas de Fomento Tecnol\'ogico e Extens\~ao inovadora  do CNPq modalidades ITI A e ITI B) como multiplicadores do programa. Al\'em disso, o Programa conta com Bolsistas Extensionistas (Bolsa CNPq EXP), Bolsistas de Apoio T\'ecnico (Bolsa CNPq ATP).
+O m\'etodo do WASH, descrito na Portaria CTI 178/2018, pressup\~oe a atua\c{c}\~ao de bolsistas de inicia\c{c}\~ao cient\'{\i}fica, extens\~ao e apoio tecnol\'ogico nas seguintes modalidades: ITI A, ITI B, EXP, ATP e ADC, conforme pol\'{\i}tica de Bolsas do CNPq. Os bolsistas realizam suas pesquisas previstas em plano de trabalho, devendo atuar, tamb\'em, como multiplicadores do programa.
 
 
 
 
 
 
-Desta forma, o n\'umero de bolsistas atuantes no programa \'e um importante elemento de caracteriza\c{c}\~ao do mesmo para que se conhe\c{c}a:
+Para determinar o n\'umero de bolsistas atuantes no Projeto WASH, decidimos utilizar o Recorte B, aproveitando consultas estruturadas de car\'ater mais gen\'erico, aplicadas \`a Platu\'osh, desenvolvidas por Michel Alencar Morandi e publicadas em  WASH (2023). Estas consultas resultaram na produ\c{c}\~ao do gr\'afico da p\'ag. XXX.
 
 
 
@@ -6603,111 +6683,19 @@ Desta forma, o n\'umero de bolsistas atuantes no programa \'e um importante elem
 
 
 
-\begin{alineas}
-\item o balan\c{c}o entre o n\'umero de crian\c{c}as e adolescentes atendidos e n\'umero de  bolsistas atuantes no programa.
-\item a produ\c{c}\~ao de resultados cient\'{\i}ficos e de inova\c{c}\~ao, concretizado na forma dos relat\'orios  e entreg\'aveis produzidos pelos bolsistas
-\item a relev\^ancia do apoio \`a pesquisa e extens\~ao das entidades promotoras parceiras (Universidades e Centros de Pesquisa)
-\end{alineas}
 
-A an\'alise dos dados existentes na base de dados Platu\'osh indica a exist\^encia de 164 bolsistas no Programa WASH. Para obter este n\'umero foi preciso desconsiderar repeti\c{c}\~oes dos registros de afilia\c{c}\~oes (tabela \textquotedbl afiliacoes\textquotedbl  da base de dados).
+\captionsetup{format=plain}
+\begin{figure}[htb]
 
+	\begin{center}
 
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/quantidade-bolsistas-3.png}
 
+	\end{center}
 
+	\caption{\label{27e98d39e299354bc7619996ee91fe3d2cf0e56c}Distribui\c{c}\~ao de tipos de bolsas no programa WASH. (fonte: [[WASH (2023)]])}
 
-
-Mas a experi\^encia desta autora no apoio \`a implementa\c{c}\~ao de bolsas no \^ambito do Programa WASH indicava a percep\c{c}\~ao de um n\'umero muito maior de bolsistas.
-
-
-
-
-
-
-Esta observa\c{c}\~ao de que o n\'umero de bolsistas deveria ser muito maior do que o fornecido pela afilia\c{c}\~ao dos participantes registrada na Platu\'osh acendeu um sinal vermelho.
-
-
-
-
-
-
-Estava claro que o registro de afilia\c{c}\~oes da Platu\'osh n\~ao era a forma mais adequada de saber quantos bolsistas passaram pelo programa.
-
-
-
-
-
-
-
-
-
-
-
-
-
-A pondera\c{c}\~ao sobre os motivos desta inadequa\c{c}\~ao levaram ao seguinte conjunto de reflex\~oes:
-
-
-
-
-
-
-
-\begin{alineas}
-\item a plataforma Platu\'osh \'e uma ferramenta dispon\'{\i}vel apenas a partir de 2018, raz\~ao pela qual n\~ao cobre todo o per\'{\i}odo de exist\^encia do programa.
-\item a plataforma Platu\'osh foi originalmente concebida para registro de presen\c{c}a e testemunho de realiza\c{c}\~ao de eventos, para fins de presta\c{c}\~ao de contas aos \'org\~aos de fomento, n\~ao havendo, inicialmente, a inten\c{c}\~ao de registrar os bolsistas
-\item assim que a plataforma Platu\'osh foi adaptada para o registro de bolsistas, houve um esfor\c{c}o de recupera\c{c}\~ao de dados pregressos, mas este trabalho ficou naturalmente incompleto, pelo r\'apido crescimento do programa, havendo um persistente back-log de dados de bolsistas (ac\'umulo de trabalho atrasado).
-\item recentemente o preenchimento dos cadastros ficou a cargo dos pr\'oprios bolsistas, que ganharam \textquotedbl contas\textquotedbl  na plataforma. Este procedimento \'e naturalmente impreciso, porque muitos bolsistas n\~ao tem pr\'atica em seu preenchimento, apesar dos esfor\c{c}os de capacita\c{c}\~ao da Frente Multiplicadora do WASH
-\item existe uma complac\^encia por parte dos bolsistas, que n\~ao preenchem a plataforma como solicitado
-\end{alineas}
-
-Consultando a equipe de TI sobre estes problemas com o registro de bolsistas na Platu\'osh, fomos informados que uma tabela auxiliar de registro de bolsistas tinha sido integrada \`a base de dados original. Esta tabela foi denominada \textquotedbl bolsa-cnpq\textquotedbl .
-
-
-
-
-
-
-Uma consulta \`a base, utilizando o m\'etodo SQL, levou a um total de 235 registros na tabela \textquotedbl bolsa-cnpq\textquotedbl . Mas uma inspe\c{c}\~ao mais cuidadosa indicou que esta tabela continha todas as concess\~oes de bolsas, com a possibilidade de um bolsista ser contemplado por duas concess\~oes consecutivas, decorrentes da renova\c{c}\~ao de bolsas. Portanto, o n\'umero de 235 bolsistas estava claramente superestimado.
-
-
-
-
-
-
-O pr\'oximo passo foi excluir as repeti\c{c}\~oes, agrupando os resultados por bolsista. Com esse m\'etodo chegou-se ao n\'umero de 206 bolsistas.
-
-
-
-
-
-
-Esta variabilidade nos dados gerou-nos uma inseguran\c{c}a em rela\c{c}\~ao \`a plataforma Platu\'osh no que tange exclusivamente aos dados de bolsistas.
-
-
-
-
-
-
-Assim, sentimo-nos motivados a buscar uma solu\c{c}\~ao independente para o levantamento de dados de bolsas, uma vez que o v\'{\i}nculo dos bolsistas com o CNPq \'e formal e ocorre mediante Termo de Outorga, havendo meios de obter dados absolutos e n\~ao-amostrais.
-
-
-
-
-
-
-Contando com o apoio do Coordenador do Programa WASH, foi poss\'{\i}vel levantar a quantidade de bolsistas e a distribui\c{c}\~ao por tipo de bolsas usando a Plataforma Carlos Chagas. Os dados foram obtidos de forma anonimizada pelo coordenador.
-
-
-
-
-
-
-Para esse levantamento n\~ao foi utilizada a modelagem de banco de dados relacional, mas simplesmente a tabula\c{c}\~ao em planilhas eletr\^onicas, tecnologia mais acess\'{\i}vel a esta autora. Desta forma o trabalho pode ser conduzido independentemente do apoio da equipe de TI, podendo, posteriormente, ser utilizado como balizador para melhoria dos processos de coleta de dados de bolsistas no \^ambito do Programa WASH.
-
-
-
-
-
+\end{figure}
 
 \subsection[Caracteriza\c{c}\~ao dos Planos de Trabalhos e Relat\'orios]{Caracteriza\c{c}\~ao dos Planos de Trabalhos e Relat\'orios}\label{Caracteriza\c{c}\~ao dos Planos de Trabalhos e Relat\'orios}
 Ao receber o termo de outorga de uma bolsa pelo CNPq, o (a) bolsista assume o compromisso de realizar um projeto de pesquisa, al\'em das atividades de extens\~ao. Estas \'ultimas envolvem a participa\c{c}\~ao como multiplicadores das oficinas WASH em escolas de ensino fundamental.
@@ -6747,7 +6735,21 @@ Para a contabiliza\c{c}\~ao dos Planos de Trabalho e dos Relat\'orios produzidos
 \end{alineas}
 
 \subsection[N\'umero de oficinas realizadas]{N\'umero de oficinas realizadas}\label{N\'umero de oficinas realizadas}
-A evolu\c{c}\~ao do n\'umero de eventos realizados ao longo dos dez anos de exist\^encia do projeto pode ser verificada no gr\'afico abaixo.
+O n\'umero de oficinas realizadas anualmente \'e um importante indicador da evolu\c{c}\~ao do Programa WASH, indicando sua taxa de crescimento.
+
+
+
+
+
+
+Utilizamos dados obtidos dos Recortes A e B para gerar as Figs. XXX e XXX, respectivamente.
+
+
+
+
+
+
+A fig. XXX, referente ao Recorte A, traz a evolu\c{c}\~ao do n\'umero de eventos realizados ao longo dos dez anos de exist\^encia do projeto, ressalvando-se que os dados para o ano de 2022 s\~ao parciais, uma vez que esse recorte se encerra em agosto de 2022.
 
 
 
@@ -6765,7 +6767,29 @@ A evolu\c{c}\~ao do n\'umero de eventos realizados ao longo dos dez anos de exis
 
 	\end{center}
 
-	\caption{\label{8af5236ba8f91623157f8f95ae10366b416d6049}Evolu\c{c}\~ao anual do n\'umero de oficinas realizadas.}
+	\caption{\label{8af5236ba8f91623157f8f95ae10366b416d6049}Evolu\c{c}\~ao anual do n\'umero de oficinas realizadas obtida a partir do Recorte A.}
+
+\end{figure}
+
+A Fig. XXX \'e referente ao Recorte B e, portanto, s\~ao os dados de janeiro de 2023 que s\~ao parciais.
+
+
+
+
+
+
+
+
+\captionsetup{format=plain}
+\begin{figure}[htb]
+
+	\begin{center}
+
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/eventos-ano-recorte-B.png}
+
+	\end{center}
+
+	\caption{\label{06b38fbf8d96a7c692475ebb4c27e84923107c5a}Evolu\c{c}\~ao anual do n\'umero de oficinas com base no Recorte B. Os dados de janeiro de 2023 s\~ao parciais. (fonte:  [[WASH (2023)]])}
 
 \end{figure}
 
@@ -6858,12 +6882,56 @@ Primeiro par\'agrafo.
 
 
 \subsection[Cidades Atendidas]{Cidades Atendidas}\label{Cidades Atendidas}
-teste
+Com base no Recorte B foi poss\'{\i}vel levantar a lista de cidades alcan\c{c}adas pelo WASH, em v\'arios contextos. Este levantamento foi feito por meio de consultas estruturadas aplicadas \`a Platu\'osh. Cabe relembrar que os dados dessa plataforma \'e uma amostra do total de atividades efetivamente realizadas no \^ambito do WASH.
 
 
 
 
 
+
+Na Fig. XXX vemos o gr\'afico da distribui\c{c}\~ao dos bolsistas pelas cidades brasileiras onde est\~ao radicados. Por meio de legendas coloridas, o gr\'afico permite visualizar, simultaneamente, a distribui\c{c}\~oes de modalidades de bolsas por essas cidades. Note que n\~ao se tratam de cidades onde ocorreram eventos do WASH. As cidades est\~ao ordenadas em ordem alfab\'etica.
+
+
+
+
+
+
+
+
+\captionsetup{format=plain}
+\begin{figure}[htb]
+
+	\begin{center}
+
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/distribuicao-bolsistas-por-cidades.png}
+
+	\end{center}
+
+	\caption{\label{272b812569e747beabce0484704c884a06f72e19}Distribui\c{c}\~ao das localidades onde bolsistas do WASH est\~ao radicados. (fonte:  [[WASH (2023)]])}
+
+\end{figure}
+
+A Fig. XXX traz a distribui\c{c}\~ao de eventos do WASH por cidades brasileiras.
+
+
+
+
+
+
+
+
+\captionsetup{format=plain}
+\begin{figure}[htb]
+
+	\begin{center}
+
+		\includegraphics[max size={\textwidth}{\textheight}]{../../imagens/eventos-cidades.png}
+
+	\end{center}
+
+	\caption{\label{f08c4c52c76dddcb99c8ad9685858f3c5990432d}Distribui\c{c}\~ao de eventos do WASH pelas cidades brasileiras. (fonte:  [[WASH (2023)]])}
+
+\end{figure}
 
 \subsection[Epis\'odios do \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl ]{Epis\'odios do \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }\label{Epis\'odios do \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }
 Consta do acervo do WASH a edi\c{c}\~ao de 9 epis\'odios do programa audiovisual \textquotedbl Ci\^encia e Cultura, Vamos Brincar?\textquotedbl  (CCVB). Esse programa, como indicado na parte deste cap\'{\i}tulo dedicada ao eixo 1, foi criado como forma alternativa de promover a aprendizagem no contexto da pandemia, quando as oficinas presenciais n\~ao eram mais poss\'{\i}veis. O CCVB foi concebido por esta autora, que coordenou suas atividades.
@@ -9692,6 +9760,31 @@ O Caso da Pol\'{\i}cia Militar do Rio de Janeiro, Disserta\c{c}\~ao de Mestrado,
 \begin{flushleft}
 \begin{flushleft}
 [TOZZI, 2021a] Tozzi, E.S., Baumgratz, J., Pereira, D.V., Gon\c{c}alves,C.H., Namen, W., Proc\'opio, R., Soares, A.C.D., Morandi, M.A., Ara\'ujo, T.L, Rodrigues, A.P., Accorsi, F., Mammana, V.P., Alfabetiza\c{c}\~ao Cient\'{\i}fica no Brasil atrav\'es do Programa WASH, in Relatos e investiga\c{c}\~ao de pr\'aticas de ensino de Ci\^encias e Tecnologia Atas do Encontro internacional “A Voz dos Professores de C
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\end{flushleft}
+
+
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+\begin{flushleft}
+[WASH, 2023] Plataforma Metabase com consultas estruturadas \`a Platu\'osh, http://metabase.wash.net.br:3000/public/dashboard/29c7c658-d71b-4bc5-ab71-2c33f9082132
 \end{flushleft}
 
 

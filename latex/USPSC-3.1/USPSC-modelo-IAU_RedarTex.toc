@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {2.2.3}Registro de dados na escola p\'ublica}{78}{subsection.2.2.3}% 
 \contentsline {subsection}{\numberline {2.2.4}Investimento por educando: escola p\'ublica vs. privada}{81}{subsection.2.2.4}% 
 \contentsline {subsection}{\numberline {2.2.5}Planilhas eletr\^onicas para registro de dados}{81}{subsection.2.2.5}% 
-\contentsline {subsection}{\numberline {2.2.6}Bancos de Dados Relacionais}{86}{subsection.2.2.6}% 
+\contentsline {subsection}{\numberline {2.2.6}Bancos de Dados Relacionais}{87}{subsection.2.2.6}% 
 \contentsline {subsection}{\numberline {2.2.7}Linguagem SQL}{88}{subsection.2.2.7}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{91}{chapter.3}% 
@@ -42,56 +42,57 @@
 \contentsline {subsection}{\numberline {3.1.1}Fases da Pesquisa Hist\'orica}{95}{subsection.3.1.1}% 
 \contentsline {subsection}{\numberline {3.1.2}Acervos}{97}{subsection.3.1.2}% 
 \contentsline {section}{\numberline {3.2}Caminho para a obten\c {c}\~ao dos indicadores (eixo 2)}{98}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}M\'etodo de Estrutura\c {c}\~ao e an\'alise dos dados}{98}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Consulta \`a base de dados atrav\'es da Linguagem SQL}{104}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}M\'etodo de determina\c {c}\~ao do sexo dos participantes}{105}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.1}M\'etodo de busca estruturada na plataforma Platu\'osh}{99}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Modelo relacional de dados do WASH}{103}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Consulta \`a base de dados atrav\'es da Linguagem SQL}{107}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}M\'etodo de determina\c {c}\~ao do sexo dos participantes}{107}{subsection.3.2.4}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {RESULTADOS E AN\'ALISES}}{109}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{109}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}O GESAC e sua contribui\c {c}\~ao para a cultura digital no pa\'{\i }s}{109}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}A avalia\c {c}\~ao do OLPC pelo CTI como g\^enese do WASH}{123}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}A avalia\c {c}\~ao do PID pelo CTI como g\^enese do WASH}{133}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}Papert no Brasil pela \'otica de Afira Ripper}{135}{subsection.4.1.4}% 
-\contentsline {subsection}{\numberline {4.1.5}A hist\'oria, a pr\'atica, os valores e os conceitos do Programa WASH}{139}{subsection.4.1.5}% 
-\contentsline {subsection}{\numberline {4.1.6}WASH na pandemia}{150}{subsection.4.1.6}% 
-\contentsline {section}{\numberline {4.2}Caracteriza\c {c}\~ao dos Indicadores do WASH (eixo 2)}{152}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Lista de Emendas Parlamentares concedidas}{153}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Lista de Termos de Ades\~ao ao Programa WASH}{154}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Quantidade de registros na amostra do p\'ublico atendido}{159}{subsection.4.2.3}% 
-\contentsline {subsection}{\numberline {4.2.4}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{162}{subsection.4.2.4}% 
-\contentsline {subsection}{\numberline {4.2.5}Distribui\c {c}\~ao de partipantes por sexo}{165}{subsection.4.2.5}% 
-\contentsline {subsection}{\numberline {4.2.6}N\'umero de Bolsistas}{166}{subsection.4.2.6}% 
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {RESULTADOS E AN\'ALISES}}{111}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{111}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}O GESAC e sua contribui\c {c}\~ao para a cultura digital no pa\'{\i }s}{111}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}A avalia\c {c}\~ao do OLPC pelo CTI como g\^enese do WASH}{125}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}A avalia\c {c}\~ao do PID pelo CTI como g\^enese do WASH}{135}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Papert no Brasil pela \'otica de Afira Ripper}{137}{subsection.4.1.4}% 
+\contentsline {subsection}{\numberline {4.1.5}A hist\'oria, a pr\'atica, os valores e os conceitos do Programa WASH}{141}{subsection.4.1.5}% 
+\contentsline {subsection}{\numberline {4.1.6}WASH na pandemia}{152}{subsection.4.1.6}% 
+\contentsline {section}{\numberline {4.2}Caracteriza\c {c}\~ao dos Indicadores do WASH (eixo 2)}{154}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Lista de Emendas Parlamentares concedidas}{155}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Lista de Termos de Ades\~ao ao Programa WASH}{156}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Quantidade de registros na amostra do p\'ublico atendido}{161}{subsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.2.4}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{164}{subsection.4.2.4}% 
+\contentsline {subsection}{\numberline {4.2.5}Distribui\c {c}\~ao de partipantes por sexo (equidade)}{167}{subsection.4.2.5}% 
+\contentsline {subsection}{\numberline {4.2.6}N\'umero de Bolsistas}{168}{subsection.4.2.6}% 
 \contentsline {subsection}{\numberline {4.2.7}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{168}{subsection.4.2.7}% 
 \contentsline {subsection}{\numberline {4.2.8}N\'umero de oficinas realizadas}{169}{subsection.4.2.8}% 
-\contentsline {subsection}{\numberline {4.2.9}Distribui\c {c}\~ao et\'aria nas oficinas}{169}{subsection.4.2.9}% 
-\contentsline {subsection}{\numberline {4.2.10}Distribui\c {c}\~ao de temas nas oficinas}{169}{subsection.4.2.10}% 
-\contentsline {subsection}{\numberline {4.2.11}Tipos de Atividades realizadas nas oficinas}{169}{subsection.4.2.11}% 
-\contentsline {subsection}{\numberline {4.2.12}Cidades Atendidas}{169}{subsection.4.2.12}% 
+\contentsline {subsection}{\numberline {4.2.9}Distribui\c {c}\~ao et\'aria nas oficinas}{170}{subsection.4.2.9}% 
+\contentsline {subsection}{\numberline {4.2.10}Distribui\c {c}\~ao de temas nas oficinas}{170}{subsection.4.2.10}% 
+\contentsline {subsection}{\numberline {4.2.11}Tipos de Atividades realizadas nas oficinas}{170}{subsection.4.2.11}% 
+\contentsline {subsection}{\numberline {4.2.12}Cidades Atendidas}{170}{subsection.4.2.12}% 
 \contentsline {subsection}{\numberline {4.2.13}Epis\'odios do \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }{170}{subsection.4.2.13}% 
-\contentsline {section}{\numberline {4.3}S\'{\i }ntese anal\'{\i }tica dos 2 eixos}{170}{section.4.3}% 
+\contentsline {section}{\numberline {4.3}S\'{\i }ntese anal\'{\i }tica dos 2 eixos}{171}{section.4.3}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~OES}}{173}{chapter.5}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~OES}}{177}{chapter.5}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{175}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}V\'{\i }deo/Entrevista: Papert e Afira Ripper}{175}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Revis\~ao do documento de refer\^encia do Programa WASH}{175}{section.6.2}% 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{179}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}V\'{\i }deo/Entrevista: Papert e Afira Ripper}{179}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Revis\~ao do documento de refer\^encia do Programa WASH}{179}{section.6.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\^ENCIAS}}{177}{chapter.7}% 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\^ENCIAS}}{181}{chapter.7}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {AP\^ENDICE A: revis\~ao sobre historiografia}}{187}{chapter.8}% 
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {AP\^ENDICE A: revis\~ao sobre historiografia}}{191}{chapter.8}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {AP\^ENDICE B: revis\~ao sobre Bancos de Dados Relacionais}}{193}{chapter.9}% 
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {AP\^ENDICE B: revis\~ao sobre Bancos de Dados Relacionais}}{197}{chapter.9}% 
 \vspace {\cftbeforechapterskip }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{199}{section*.46}% 
+\contentsline {part}{\uppercase {ANEXOS}}{203}{section*.51}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{201}{appendix.anexochapback.1}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{205}{appendix.anexochapback.1}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{203}{appendix.anexochapback.2}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{207}{appendix.anexochapback.2}% 

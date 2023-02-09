@@ -16,26 +16,33 @@
 \contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{42}{subsection.1.3.1}% 
 \contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\'{\i }ficos}{42}{subsection.1.3.2}% 
 \contentsline {section}{\numberline {1.4}Hip\'oteses}{42}{section.1.4}% 
+\contentsline {subsection}{\numberline {1.4.1}Hip\'otese 1: Efici\^encia e Efic\'acia do WASH}{43}{subsection.1.4.1}% 
+\contentsline {subsection}{\numberline {1.4.2}Hip\'otese 2: Orienta\c {c}\~ao a Projetos}{43}{subsection.1.4.2}% 
+\contentsline {subsection}{\numberline {1.4.3}Hip\'otese 3: Origem do WASH}{43}{subsection.1.4.3}% 
+\contentsline {subsection}{\numberline {1.4.4}Hip\'otese 4: Pr\'atica Pedag\'ogica do WASH}{43}{subsection.1.4.4}% 
+\contentsline {subsection}{\numberline {1.4.5}Hip\'otese 5:WASH como proto-pol\'{\i }tica p\'ublica}{43}{subsection.1.4.5}% 
+\contentsline {subsection}{\numberline {1.4.6}Hip\'otese 6: WASH como organiza\c {c}\~ao heter\'arquica}{44}{subsection.1.4.6}% 
 \contentsline {section}{\numberline {1.5}Problema}{44}{section.1.5}% 
 \contentsline {section}{\numberline {1.6}Justificativa}{44}{section.1.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {FUNDAMENTA\c {C}\~AO TE\'ORICA }}{47}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Fundamenta\c {c}\~ao: hist\'oria (eixo 1)}{48}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Revis\~ao: historiografia}{52}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Hierarquia versus heterarquia}{52}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.2}Hierarquia versus heterarquia}{53}{subsection.2.1.2}% 
 \contentsline {subsection}{\numberline {2.1.3}Governo Eletr\^onico}{54}{subsection.2.1.3}% 
 \contentsline {subsection}{\numberline {2.1.4}Pol\'{\i }ticas P\'ublicas de Inclus\~ao e Cultura Digital}{57}{subsection.2.1.4}% 
-\contentsline {subsection}{\numberline {2.1.5}O pensamento de Papert}{60}{subsection.2.1.5}% 
+\contentsline {subsection}{\numberline {2.1.5}O pensamento de Papert}{61}{subsection.2.1.5}% 
 \contentsline {subsection}{\numberline {2.1.6}O LOGO e o SCRATCH}{67}{subsection.2.1.6}% 
-\contentsline {subsection}{\numberline {2.1.7}O que \'e STEM/STEAM?}{70}{subsection.2.1.7}% 
+\contentsline {subsection}{\numberline {2.1.7}O que \'e STEM/STEAM?}{71}{subsection.2.1.7}% 
 \contentsline {section}{\numberline {2.2}Fundamenta\c {c}\~ao: produ\c {c}\~ao de indicadores (eixo 2)}{76}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Indicadores}{76}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Informa\c {c}\~ao, dados e conhecimento}{77}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Registro de dados na escola p\'ublica}{78}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.3}Registro de dados na escola p\'ublica}{79}{subsection.2.2.3}% 
 \contentsline {subsection}{\numberline {2.2.4}Investimento por educando: escola p\'ublica vs. privada}{81}{subsection.2.2.4}% 
 \contentsline {subsection}{\numberline {2.2.5}Planilhas eletr\^onicas para registro de dados}{81}{subsection.2.2.5}% 
 \contentsline {subsection}{\numberline {2.2.6}Bancos de Dados Relacionais}{87}{subsection.2.2.6}% 
 \contentsline {subsection}{\numberline {2.2.7}Linguagem SQL}{88}{subsection.2.2.7}% 
+\contentsline {section}{\numberline {2.3}Conceitos Gerais}{89}{section.2.3}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {MATERIAIS E M\'ETODOS}}{91}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Caminhos para constru\c {c}\~ao da narrativa hist\'orica (eixo 1)}{91}{section.3.1}% 
@@ -45,7 +52,7 @@
 \contentsline {subsection}{\numberline {3.2.1}M\'etodo de busca estruturada na plataforma Platu\'osh}{99}{subsection.3.2.1}% 
 \contentsline {subsection}{\numberline {3.2.2}Modelo relacional de dados do WASH}{103}{subsection.3.2.2}% 
 \contentsline {subsection}{\numberline {3.2.3}Consulta \`a base de dados atrav\'es da Linguagem SQL}{107}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}M\'etodo de determina\c {c}\~ao do sexo dos participantes}{107}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.4}M\'etodo de determina\c {c}\~ao do sexo dos participantes}{108}{subsection.3.2.4}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {RESULTADOS E AN\'ALISES}}{111}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{111}{section.4.1}% 
@@ -55,44 +62,52 @@
 \contentsline {subsection}{\numberline {4.1.4}Papert no Brasil pela \'otica de Afira Ripper}{137}{subsection.4.1.4}% 
 \contentsline {subsection}{\numberline {4.1.5}A hist\'oria, a pr\'atica, os valores e os conceitos do Programa WASH}{141}{subsection.4.1.5}% 
 \contentsline {subsection}{\numberline {4.1.6}WASH na pandemia}{152}{subsection.4.1.6}% 
-\contentsline {section}{\numberline {4.2}Caracteriza\c {c}\~ao dos Indicadores do WASH (eixo 2)}{154}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Lista de Emendas Parlamentares concedidas}{155}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Lista de Termos de Ades\~ao ao Programa WASH}{156}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Quantidade de registros na amostra do p\'ublico atendido}{161}{subsection.4.2.3}% 
-\contentsline {subsection}{\numberline {4.2.4}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{164}{subsection.4.2.4}% 
-\contentsline {subsection}{\numberline {4.2.5}Distribui\c {c}\~ao de partipantes por sexo (equidade)}{167}{subsection.4.2.5}% 
-\contentsline {subsection}{\numberline {4.2.6}N\'umero de Bolsistas}{168}{subsection.4.2.6}% 
-\contentsline {subsection}{\numberline {4.2.7}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{168}{subsection.4.2.7}% 
-\contentsline {subsection}{\numberline {4.2.8}N\'umero de oficinas realizadas}{169}{subsection.4.2.8}% 
-\contentsline {subsection}{\numberline {4.2.9}Distribui\c {c}\~ao et\'aria nas oficinas}{170}{subsection.4.2.9}% 
-\contentsline {subsection}{\numberline {4.2.10}Distribui\c {c}\~ao de temas nas oficinas}{170}{subsection.4.2.10}% 
-\contentsline {subsection}{\numberline {4.2.11}Tipos de Atividades realizadas nas oficinas}{170}{subsection.4.2.11}% 
-\contentsline {subsection}{\numberline {4.2.12}Cidades Atendidas}{170}{subsection.4.2.12}% 
-\contentsline {subsection}{\numberline {4.2.13}Epis\'odios do \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }{170}{subsection.4.2.13}% 
-\contentsline {section}{\numberline {4.3}S\'{\i }ntese anal\'{\i }tica dos 2 eixos}{171}{section.4.3}% 
+\contentsline {section}{\numberline {4.2}Caracteriza\c {c}\~ao dos Indicadores do WASH (eixo 2)}{155}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Lista de Emendas Parlamentares concedidas}{156}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Lista de Termos de Ades\~ao ao Programa WASH}{157}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Quantidade e qualidade dos registros na amostra do p\'ublico atendido}{162}{subsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.2.4}Evolu\c {c}\~ao temporal do n\'umero de participa\c {c}\~oes}{166}{subsection.4.2.4}% 
+\contentsline {subsection}{\numberline {4.2.5}Distribui\c {c}\~ao de partipantes por sexo (equidade)}{168}{subsection.4.2.5}% 
+\contentsline {subsection}{\numberline {4.2.6}N\'umero de Bolsistas}{169}{subsection.4.2.6}% 
+\contentsline {subsection}{\numberline {4.2.7}Caracteriza\c {c}\~ao dos Planos de Trabalhos e Relat\'orios}{173}{subsection.4.2.7}% 
+\contentsline {subsection}{\numberline {4.2.8}N\'umero de eventos realizados}{175}{subsection.4.2.8}% 
+\contentsline {subsection}{\numberline {4.2.9}Distribui\c {c}\~ao et\'aria nos eventos}{177}{subsection.4.2.9}% 
+\contentsline {subsection}{\numberline {4.2.10}Distribui\c {c}\~ao de temas nos eventos}{178}{subsection.4.2.10}% 
+\contentsline {subsection}{\numberline {4.2.11}Distribui\c {c}\~ao de atividades realizadas nos eventos}{178}{subsection.4.2.11}% 
+\contentsline {subsection}{\numberline {4.2.12}Cidades Atendidas}{178}{subsection.4.2.12}% 
+\contentsline {subsection}{\numberline {4.2.13}Canal do WASH e a web-s\'erie \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }{179}{subsection.4.2.13}% 
+\contentsline {section}{\numberline {4.3}Valida\c {c}\~ao das hip\'oteses}{180}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Hip\'otese 1: Efici\^encia e Efic\'acia do WASH}{180}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Hip\'otese 2: Orienta\c {c}\~ao a Projetos}{182}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}Hip\'otese 3: Origem do WASH}{183}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}Hip\'otese 4: Pr\'atica Pedag\'ogica do WASH}{183}{subsection.4.3.4}% 
+\contentsline {subsection}{\numberline {4.3.5}Hip\'otese 5: WASH como proto-pol\'{\i }tica p\'ublica}{183}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}Hip\'otese 6: WASH como organiza\c {c}\~ao heter\'arquica}{183}{subsection.4.3.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~OES}}{177}{chapter.5}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~OES}}{187}{chapter.5}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {PRODUTOS TECNOL\'OGICOS}}{179}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}V\'{\i }deo/Entrevista: Papert e Afira Ripper}{179}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Revis\~ao do documento de refer\^encia do Programa WASH}{179}{section.6.2}% 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {PRODUTOS EDUCACIONAIS}}{189}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}V\'{\i }deo/Entrevista: Papert e Afira Ripper}{189}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Revis\~ao do documento de refer\^encia do Programa WASH}{189}{section.6.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\^ENCIAS}}{181}{chapter.7}% 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\^ENCIAS}}{191}{chapter.7}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {AP\^ENDICE A: revis\~ao sobre historiografia}}{191}{chapter.8}% 
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {AP\^ENDICE A: revis\~ao sobre historiografia}}{201}{chapter.8}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {AP\^ENDICE B: revis\~ao sobre Bancos de Dados Relacionais}}{197}{chapter.9}% 
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {AP\^ENDICE B: revis\~ao sobre Bancos de Dados Relacionais}}{207}{chapter.9}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {10}\MakeTextUppercase {AP\^ENDICE C: ficha t\'ecnica do \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }}{213}{chapter.10}% 
 \vspace {\cftbeforechapterskip }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {ANEXOS}}{203}{section*.51}% 
+\contentsline {part}{\uppercase {ANEXOS}}{215}{section*.57}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{205}{appendix.anexochapback.1}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{217}{appendix.anexochapback.1}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{207}{appendix.anexochapback.2}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\c {c}\~ao (modo texto - \LaTeX )}}{219}{appendix.anexochapback.2}% 

@@ -13,7 +13,7 @@ if(isset($_GET["mantem_bibliografia"])){
 
 if(isset($_GET["enfatiza_data"])){
   $param_enfatiza_data= $_GET["enfatiza_data"];
-} else $param_enfatiza_data = "2023-01-22";
+} else $param_enfatiza_data = "2023-02-07";
 
 $id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura, para que posso haver substituicao depois
 

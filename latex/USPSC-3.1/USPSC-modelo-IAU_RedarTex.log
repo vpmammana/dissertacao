@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  10 FEB 2023 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  10 FEB 2023 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2109,18 +2109,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Underfull \hbox (badness 6559) in paragraph at lines 270--270
-\T1/lmr/m/n/12 (+20) (PPGEN) da Universidade Tecnológica
+Underfull \hbox (badness 3838) in paragraph at lines 270--270
+\T1/lmr/m/n/12 (+20) Pós-Graduação em Ensino de Ciências
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 270--270
-\T1/lmr/m/n/12 (+20) Federal do Paraná - Campus Londrina,
- []
-
-
-Underfull \hbox (badness 5985) in paragraph at lines 270--270
-\T1/lmr/m/n/12 (+20) Humanas, Sociais e da Natureza, do
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
+\T1/lmr/m/n/12 (+20) Co-Orientador: Dr. Victor Pellegrini
  []
 
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 270.
@@ -6611,7 +6606,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18114.
 Here is how much of TeX's memory you used:
  44021 strings out of 494468
  837620 string characters out of 6175091
- 1098196 words of memory out of 5000000
+ 1097786 words of memory out of 5000000
  45865 multiletter control sequences out of 15000+600000
  656391 words of font info for 196 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
@@ -6628,7 +6623,7 @@ ts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (235 pages, 16657262 bytes).
+Output written on USPSC-modelo-IAU_RedarTex.pdf (235 pages, 16657236 bytes).
 PDF statistics:
  2481 PDF objects out of 2487 (max. 8388607)
  2102 compressed objects within 22 object streams

@@ -58,10 +58,15 @@ sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pell
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica_RedarTex.tex
+sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/.lista-abreviaturas-2_RedarTex.tex.swp
+sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Epigrafe_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex
+sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/abstract-especial_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Errata_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.tex
+sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas-2_RedarTex.tex
 sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex
+sed -i "s/@\[orientadorficha\]@/Camargo, Paulo S\\\'ergio e Mammana, Victor Pellegrini/g" ../../latex/lista-abreviaturas-2_RedarTex.tex

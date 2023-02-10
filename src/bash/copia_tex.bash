@@ -1,5 +1,7 @@
 \cp ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-marca.pdf ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-marca_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-grafico.pdf ../../latex/USPSC-3.1/USPSC-img/USPSC-modelo-img-grafico_RedarTex.pdf 
+\cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/termo-de-licenciamento.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/termo-de-licenciamento_RedarTex.pdf 
+\cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/termo-de-aprovacao.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/termo-de-aprovacao_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-PaginaEmBranco_RedarTex.pdf 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica_RedarTex.pdf 
@@ -61,20 +63,25 @@
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Abstract.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Epigrafe.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Epigrafe_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/abstract-especial.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/abstract-especial_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Errata.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Errata_RedarTex.tex 
+\cp ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas-2.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas-2_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-OUTROS_RedarTex.tex 
 \cp ../../latex/USPSC-3.1/USPSC-modelo-IFSCe.tex ../../latex/USPSC-3.1/USPSC-modelo-IFSCe_RedarTex.tex 
+\cp ../../latex/lista-abreviaturas-2.tex ../../latex/lista-abreviaturas-2_RedarTex.tex 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-classe\/USPSC1[}]/include{USPSC-classe\/USPSC1_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-classe\/USPSC[}]/include{USPSC-classe\/USPSC_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-classe\/USPSC1[}]/include{USPSC-classe\/USPSC1_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-classe\/USPSC[}]/include{USPSC-classe\/USPSC_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]..\/..\/latex\/lista-abreviaturas-2[}]/include{..\/..\/latex\/lista-abreviaturas-2_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]Pre_textual_UTFPR[}]/include{Pre_textual_UTFPR_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PosTextual\/USPSC-Anexos[}]/include{USPSC-TA-PosTextual\/USPSC-Anexos_RedarTex}/g' 
@@ -91,6 +98,9 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Simbolos[}]/include{USPSC-TA-PreTextual\/USPSC-Simbolos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-fichacatalografica[}]/include{USPSC-TA-PreTextual\/USPSC-fichacatalografica_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-folhadeaprovacao[}]/include{USPSC-TA-PreTextual\/USPSC-folhadeaprovacao_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/abstract-especial[}]/include{USPSC-TA-PreTextual\/abstract-especial_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/lista-abreviaturas-2[}]/include{USPSC-TA-PreTextual\/lista-abreviaturas-2_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/lista-abreviaturas[}]/include{USPSC-TA-PreTextual\/lista-abreviaturas_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-Textual\/USPSC-Cap1-Introducao[}]/include{USPSC-TA-Textual\/USPSC-Cap1-Introducao_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-Textual\/USPSC-Cap2-Desenvolvimento[}]/include{USPSC-TA-Textual\/USPSC-Cap2-Desenvolvimento_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]USPSC-TA-Textual\/USPSC-Cap3-Conclusao[}]/include{USPSC-TA-Textual\/USPSC-Cap3-Conclusao_RedarTex}/g' 
@@ -143,6 +153,7 @@ find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]di
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i 's/include[{]dissertacao_elaine_2022_10_10[}]/include{dissertacao_elaine_2022_10_10_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PreTextual\/USPSC-Errata_RedarTex[}]/d' 
 find ../../latex/. -type f -name '*_RedarTex.tex' | xargs sed -i '/include[{]USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex[}]/d' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]..\/..\/latex\/lista-abreviaturas-2[}]/include{..\/..\/latex\/lista-abreviaturas-2_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]Pre_textual_UTFPR[}]/include{Pre_textual_UTFPR_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-IndicesRemissivos[}]/include{USPSC-IndicesRemissivos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PosTextual\/USPSC-Anexos[}]/include{USPSC-TA-PosTextual\/USPSC-Anexos_RedarTex}/g' 
@@ -159,6 +170,9 @@ find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]US
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-Simbolos[}]/include{USPSC-TA-PreTextual\/USPSC-Simbolos_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-fichacatalografica[}]/include{USPSC-TA-PreTextual\/USPSC-fichacatalografica_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/USPSC-folhadeaprovacao[}]/include{USPSC-TA-PreTextual\/USPSC-folhadeaprovacao_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/abstract-especial[}]/include{USPSC-TA-PreTextual\/abstract-especial_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/lista-abreviaturas-2[}]/include{USPSC-TA-PreTextual\/lista-abreviaturas-2_RedarTex}/g' 
+find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-PreTextual\/lista-abreviaturas[}]/include{USPSC-TA-PreTextual\/lista-abreviaturas_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-Textual\/USPSC-Cap1-Introducao[}]/include{USPSC-TA-Textual\/USPSC-Cap1-Introducao_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-Textual\/USPSC-Cap2-Desenvolvimento[}]/include{USPSC-TA-Textual\/USPSC-Cap2-Desenvolvimento_RedarTex}/g' 
 find ../../latex/. -type f -name '*_RedarTex.cls' | xargs sed -i 's/include[{]USPSC-TA-Textual\/USPSC-Cap3-Conclusao[}]/include{USPSC-TA-Textual\/USPSC-Cap3-Conclusao_RedarTex}/g' 

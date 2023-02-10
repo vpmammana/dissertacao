@@ -1,0 +1,193 @@
+UTFPR - Universidade Tecnológica Federal do Paraná
+WASH - Workshop de Aficionados em Software e Hardware
+TIC – Tecnologia da informação e comunicação
+ARPANET-Advanced Research Projects Agency Network
+STEM- Science, Technology, Engineering and Mathematics
+PISA "Programme for International Student Assessment" 
+STEAM - Science, Technology, Engineering, Arts and Mathematics
+CRC - Congressional Research Service
+OLPC - One Laptop per Child 
+MIT - Massachuts - Massachusetts Institute of Technology 
+CTI - Centro de Tecnologia da Informação e Comunicação Renato Archer
+IFSP – Instituto Federal de Educação, Ciência e Tecnologia São Paulo Campus Campinas
+CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico
+PMI- Project Management Institute 
+GESAC- Governo Eletrônico de Serviço de Atendimento ao Cidadão 
+PDI - Programa de Inclusão Digital
+SECIS - Secretaria de Inclusão Social 
+IBM - International Business Machines
+"IT in Government - Tecnologia da Informação no Governo
+HTML – Linguagem de  Marcação de Hipertexto 
+TELESP- Telecomunicações de São Paulo
+SERPRO – Serviço Federal de Processamento de dados
+SLTI -  Secretaria de Logística e Tecnologia da Informação 
+FHC – Fernando Henrique Cardoso
+CAI – Computed Aid instruction
+PISA – Programa Internacional de avaliação de alunos
+OCDE – Organização para a cooperação e desenvolvimento
+FUNDEB- Fundo de Manutenção e Desenvolvimento da Educação Básica
+EF – Ensino Fundamental
+PS- Primeiras séries
+TN – Todos os níveis
+DOU – Diário Oficial da União
+BDR – Bancos de Dados Relacional
+SQL - Structured Query Language
+GNU/LINUX – Unix like Kernel linux
+MD – Modelagem de Dados
+DESID- Departamento de Inclusão Digital 
+REL – Relacionamento com as comunidades
+PPs – Pontos de Presença 
+ITI – Instituto Tecnologia :qda Informação
+SEPPIR - Secretaria Nacional de Promoção de Politicar de Igualdade racial
+UFABC - Universidade Federal do ABC 
+ABNT - Associação Brasileira de Normas Técnicas
+ADC - Apoio à Difusão do Conhecimento
+AGU - Advocacia Geral da União
+APAE - Associação de Pais e Amigos dos Excepcionais 
+ARPANET - Advanced Research Projects Agency Network
+ATP - Bolsa de Apoio Técnico em Extensão no País  
+BAOBAXIA - Baobá nas Galáxias
+BBC - British Broadcasting Corporation
+BBN - Bolt, Beranek and Newman Inc
+BDR - Banco de Dados Relacional	
+BPMN - Business Process Modelling Notation
+CBT - Cubatão
+CCVB - Ciência e Cultura, Vamos Brincar?
+CEGE - Comitê Executivo de Governo Eletrônico
+CEI - Centro de Educação Infantil
+CEMADEN - Centro Nacional de Monitoramento de Desastres Naturais
+CERTI - Centro de Referências em Tecnologias Inovadoras
+CGEE - Centro de Gestão e Estudos Estratégicos
+CIN - Centro Integrado de Nefrologia da Unicamp
+CJO - Campos do Jordão
+CMP - Campinas
+CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico
+CRS - Serviço de Pesquisa do Congresso Americano
+CTI - Centro de Tecnologia da Informação Renato Archer
+DF - Distrito Federal
+DOU - Diário Oficial da União
+DT - Bolsa de Desenvolvimento Tecnológico
+DTI -  Bolsa de Desenvolvimento Tecnológico e Industrial
+EBC - Empresa Brasileira de Comunicação
+EESC Escola de Engenharia de São Carlos
+EMEF - Escola Municipal de Ensino Fundamental
+EMEFI -  Escola Municipal de Ensino Fundamental e Infantil
+EMEI - Escola Municipal de Ensino Infantil
+EMEIF - Escola Municipal de Ensino Infantil e Fundamental
+ENAP - Escola Nacional de Administração Pública
+ENCTI - Estratégia Nacional de Ciência, Tecnologia e Inovação
+ESTEEM - Environment, Science, Technology Engineering, Expression and Mathematics
+ETEC - Escola Técnica Estadual
+EUA - Estados Unidos da América
+EXP - Bolsas de Fomento Tecnológico e Extensão Inovadora
+FAPESP - Fundação de Amparo à Pesquisa do Estado de São Paulo
+FUNBOSQUE - Fundação Escola do Bosque
+FUNDEB - Fundo de Manutenção e Desenvolvimento da Educação Básica
+GNU - GNU is not UNIX
+GPS - Global Positioning System
+IBGE - Instituto Brasileiro de Geografia e Estatística
+IC - Iniciação Científica
+ICANN - Internet Corporation for Assigned Names and Numbers
+ICMC - Instituto de Ciências Matemáticas e de Computação 
+IEEE - Instituto de Engenheiros Eletricistas e Eletrônicos
+IF - Instituto Federal
+IFPR - Instituto Federal do Paraná
+IFSC - Instituto Federal de Santa Catarina
+IFSP - Instituto Federal de São Paulo
+INPI - Instituto Nacional de Propriedade Industrial
+ISSN - Internacional Standard Serial Number
+IT - Information Technology
+ITA - Instituto de Tecnologia Aeronáutica
+ITI - Instituteo de Tecnologia da Informação
+JPG - Joint Photografhics Experts Groups
+LBL - Lawrence Berkeley Lab
+LGPD - Lei Geral de Proteção de Dados
+MA - Maranhão
+MAAS - Museu Aberto de Astronomia de Campinas
+MC - Ministério das Comunicações
+MCT - Ministério da Ciência e Tecnologia
+MCTI - Ministério da Ciência, Tecnologia e Inovações
+MD - Ministério da Defesa
+MDIC - Ministério do Desenvolvimento da Indústria e Comércio
+MEC - Ministério da Educação
+MER - Modelo Entidade Relacionamento
+METS - Sigla alternativa a STEM
+MINITEL - Serviço de VídeoTexto da França
+MIT - Massachusetts Institute of Technology
+MSTL -  Movimento Sem Terra de Luta
+MULTCAST - Protocolo que transmite pacotes eficientemente para múltiplos pontos distintos,
+NBR - Norma Brasileira
+NC - North Carolina
+NSF - National Science Foundation
+NVU - Web Authoring System for Linux Desktop, Microsoft Windows and Macintosh
+OCDE - Organização para a Cooperação e Desenvolvimento Econômico
+OLPC - One Laptop Per Child
+ONGS - Organizações não-governamentais
+ONU - Organização das Nações Unidas
+OSM - Organização, Sistemas e Métodos
+PB - Paraíba
+PC - Personal Computer
+PCI - Programa de Capacitação Institucional
+PDF - Portable Document Format
+PHP - Hypertext Preprocessor
+PI - Piauí
+PID ou PIDS - Programa de Inclusão Digital da SECIS do MCTI
+SECIS - Secretaria de Inclusão Social do MCTI
+PIX - Plataforma de pagamento eletrônico
+PLATAFORMAS
+PLDO - Projeto de Lei de Diretrizes Orçamentárias
+PLOA - Projeto de Lei Orçamentária Anual
+PMI - Project Management Institute
+PQ - Bolsa de Pesquisa
+PR - Paraná
+PROF - Professor
+PROINFO - Programa Nacional de Tecnologia Educacional
+PS - Pronto Socorro
+PUC - Pontifícia Universidade Católica
+RAU - Rede de Atendimento de urgência
+REL - Grupo de Relações do GESAC
+RG - Registro Geral
+RGB - Red, Green and Blue
+RN - Rio Grande do Norte
+SC - Santa Catarina
+SCRATCH - Linguagem de programação que sucedeu o LOGO
+SEI - Sistema de documentação digital do Governo Federal
+SENAC - Serviço Nacional do Comércio
+SENGEN -  Semana da Engenharia do Campus do Mucuri d
+SEPPIR - Secretaria Nacional de Políticas de Promoção da Igualdade
+SERPRO - Serviço Federal de Processamento de Dados
+SIDRA - Sistema IBGE de Recuperação Automática
+SJC - São José dos Campos
+SLT -  Secretaria de Logística e Transportes
+SLTI -  Secretaria de Logística e Tecnologia da Informação
+SMET - Equivalente a STEM
+CT - Centro de Treinamento
+SP - São Paulo
+SQL - Structured Query Language
+STEAM - Science, Technology, Engineering Arts and Mathematics
+STEM -  Science, Technology, Engineering and Mathematics
+TA - Tecnologia Assistiva
+TC - Antonio Carlos de Santos Silva
+TCC - Trabalho de conclusão de curso
+TI - Tecnologia da Informação
+TIC - Tecnologia de Informação e Comunicação
+TICS - Tecnologias de Informação e Comunicação
+TV - Televisão
+TVE - Televisão Educativa
+TVT - Televisão do Trabalhador
+UCA - Um Computador por Aluno
+UFABC - Universidade Federal do ABC
+UNB - Universidade de Brasília
+UNESCO - Organização das Nações Unidas para a Educação, a Ciência e a Cultura  
+UNESP - Univesidade Estadual Paulista
+UNICAMP - Universidade Estadual de Campinas
+UNIFESP - Universidade Federal de São Paulo
+URL - Uniform Resource Locator
+USA - United States of America
+USP - Universidade de São Paulo
+USS - United States Navy
+UTFPR - Universidade Tecnológica Federal do Paraná
+VOIP - Voz sobre IP
+VRT - Canal de TV interativa
+VSAT - Very Small Aperture Terminal
+WASH - Workshop de Aficionados em Software e Hardware

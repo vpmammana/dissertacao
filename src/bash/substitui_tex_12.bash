@@ -58,10 +58,15 @@ sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIAT
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica_RedarTex.tex
+sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/.lista-abreviaturas-2_RedarTex.tex.swp
+sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Epigrafe_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex
+sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/abstract-especial_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Resumo_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Errata_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.tex
+sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas-2_RedarTex.tex
 sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex
+sed -i "s/@\[cursomaiuscula\]@/CURSO DE P\\\'OS-GRADUA\\\c{C}\\\~AO EM LICENCIATURA/g" ../../latex/lista-abreviaturas-2_RedarTex.tex

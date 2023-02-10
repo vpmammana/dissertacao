@@ -107,7 +107,7 @@ find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{
 
 touch ../bash/substitui_tex_6.bash
 chmod u+x ../bash/substitui_tex_6.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[tituloabstract\]@/Characterization of the Hardware and Software for Geeks Program /g\" "$0}' > ../bash/substitui_tex_6.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[tituloabstract\]@/History and characterization of a decade of WASH: a heterarchical STEAM education program/g\" "$0}' > ../bash/substitui_tex_6.bash
 ../bash/substitui_tex_6.bash
 
 touch ../bash/substitui_tex_7.bash
@@ -192,6 +192,6 @@ find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{
 
 touch ../bash/substitui_tex_23.bash
 chmod u+x ../bash/substitui_tex_23.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2022/g\" "$0}' > ../bash/substitui_tex_23.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2023/g\" "$0}' > ../bash/substitui_tex_23.bash
 ../bash/substitui_tex_23.bash
 

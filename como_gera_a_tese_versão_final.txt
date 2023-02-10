@@ -1,0 +1,59 @@
+Alguns elementos ficaram de fora do sistema automático de geração da tese:
+
+1) lista de acrônimos (siglas)
+2) abstract em inglês
+3) capa corrigida com os dados de Londrina
+
+Então é preciso gerar a tese manualmente. 
+
+Para isso temos 3 arquivos importantes.
+
+O primeiro está no diretório USPSC-3.1 e se refere à capa. o nome dele é: Pre_textual_UTFPR.tex
+
+Este arquivo é complicado, porque além de ter coisas fixas, referetentes à UTFPR, tem também tags para inserção de campos no meio de texto. A tag complicada é: @[titulopos]@. Essa tag é onde vai entrar o título da pós específico de Londrina. Acontece que a cada vez que rodamos o RedarTex no browser, esse tag vai dobrando e eu ainda não sei porque... 
+
+Então a cada vez que roda, acrescentamos mais um @[titulopos]@, e isso precisa ser retirado manualmente no vim (por enquanto).
+
+Para retirar, antes de rodar o RedarTex no browser, abra o arquivo no vim com: vim Pre_textual_UTFPR.tex. Dentro do vim rode o comando 
+
+:%s/@\[titulopos\]@@\[titulopos\]@/@[titulopos]@/gc
+
+Esse comando vai tirar as duplicatas de @[titulopos]@. Devem estar em 5 linhas. 
+
+Depois que limpar, rode o RedarTex no Browser e espere. 
+Depois do RedarTex colocar o PDF na tela do Browser (passados muitos minutos), você vai percer que não houve a correção da Capa. Não importa, porque os arquivos necessários foram gerados.
+
+Será gerada uma versão desse arquivo, com o nome: Pre_textual_UTFPR_RedarTex.tex
+
+compie esse novo arquivo sobrepondo o arquivo: USPSC-pre-textual-IAU_RedarTex.tex
+
+Para sobrepor esse arquivo vc deve estar no diretório: /var/www/html/dev_vitor/tese_2023/latex/USPSC-3.1
+
+E aplicar o comando: 
+ cp Pre_textual_UTFPR_RedarTex.tex USPSC-pre-textual-IAU_RedarTex.tex
+
+ Agora precisamos cuidar da lista de acrônimos. Essa parte é mais fácil porque não temos que rodar o demorado RedarTex.
+
+ pasta entrar no diretório USPSC-TA-PreTextual com o comando cd:
+
+/var/www/html/dev_vitor/tese_2023/latex/USPSC-3.1/USPSC-TA-PreTextual
+
+Agora basta digitar:
+
+cp lista-abreviaturas-2.tex USPSC-AbreviaturasSiglas_RedarTex.tex
+
+e também:
+
+ cp abstract-especial.tex USPSC-Abstract_RedarTex.tex
+
+finalmente, ainda no diretório USPSC-TA-PreTextual, copie termo-de-licenciamento.pdf em cima de todos os PDFs do diretório.
+
+
+ feito isso, basta rodar:
+
+ pdflatex USPSC-modelo-IAU_RedarTex.tex
+
+
+ Tudo deve funcionar!!!
+
+Agora no prompt do servidor, no diretório: 

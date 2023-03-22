@@ -1,0 +1,5 @@
+Para ordenar as referências vc deve copiar para um arquivo auxiliar o trecho do script_SQL_XXXX.sql que tem as referências na forma de CALL insere_tal_tal. 
+
+Depois deve fazer o seguinte comando no arquivo auxiliar:
+
+cat referencias.sql | awk 'BEGIN{FS="\[|\]|,"}{print $4" #separa# "$0}' | sort | awk 'BEGIN{FS="#separa# "}{print $2}' > referencias_ordenadas.sql

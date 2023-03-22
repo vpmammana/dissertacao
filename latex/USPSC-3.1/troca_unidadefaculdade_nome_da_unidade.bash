@@ -101,6 +101,7 @@ sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/US
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-EESC.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
+sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-IAU.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/dissertacao_elaine_2022_10_10.tex
@@ -139,4 +140,5 @@ sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/US
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-OUTROS.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-modelo-IFSCe.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex
+sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./USPSC-3.1/versao_final_da_capa_pode_copiar_direto_em_cima_do_USPSC_pre_RedarTex.tex
 sed -i "s/Nome da Unidade USP/@[unidadefaculdade]@/g" ../../latex/./lista-abreviaturas-2.tex

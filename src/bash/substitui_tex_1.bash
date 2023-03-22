@@ -52,6 +52,7 @@ sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WAS
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IFSC_RedarTex.tex
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-IndicesRemissivos_RedarTex.tex
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-pre-textual-Tutorial_RedarTex.tex
+sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/.USPSC-modelo-IAU_RedarTex.tex.swp
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-IQSC_RedarTex.tex
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-CapaICMC_RedarTex.tex
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.tex
@@ -69,4 +70,5 @@ sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WAS
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Abstract_RedarTex.tex
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas-2_RedarTex.tex
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC_RedarTex.tex
+sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/USPSC-3.1/versao_final_da_capa_pode_copiar_direto_em_cima_do_USPSC_pre_RedarTex.tex
 sed -i "s/@\[titulo\]@/Hist\\\'oria e caracteriza\\\c{c}\\\~ao de 10 anos do WASH, um programa heter\\\'arquico de aprendizagem STEAM/g" ../../latex/lista-abreviaturas-2_RedarTex.tex

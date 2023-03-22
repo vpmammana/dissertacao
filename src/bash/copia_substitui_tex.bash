@@ -187,7 +187,7 @@ find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{
 
 touch ../bash/substitui_tex_22.bash
 chmod u+x ../bash/substitui_tex_22.bash
-find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[dedicatoria\]@/Dedico esta disserta\\\\\\c{c}\\\\\~ao aos meus pais./g\" "$0}' > ../bash/substitui_tex_22.bash
+find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[dedicatoria\]@/Dedico esta disserta\\\\\\c{c}\\\\\~ao aos meus genitores: Maria Imaculada de Oliveira Silva e Joaquim Roberto da Silva./g\" "$0}' > ../bash/substitui_tex_22.bash
 ../bash/substitui_tex_22.bash
 
 touch ../bash/substitui_tex_23.bash
@@ -195,3 +195,5 @@ chmod u+x ../bash/substitui_tex_23.bash
 find ../../latex/* | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2023/g\" "$0}' > ../bash/substitui_tex_23.bash
 ../bash/substitui_tex_23.bash
 
+echo "Talvez tenha dado certo..."
+pwd

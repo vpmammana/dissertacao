@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  10 FEB 2023 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  18 FEB 2023 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1927,13 +1927,13 @@ Package: chemformula 2017/03/23 v4.15e typeset chemical compounds and reactions
 ! Missing \endcsname inserted.
 <to be read again> 
                    \T1\textquotedbl 
-l.376 ...car?\textquotedbl }{subsection.4.2.12}{}}
+l.376 ...\textquotedbl \{\}}{subsection.4.2.12}{}}
                                                   
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \T1\textquotedbl 
-l.376 ...car?\textquotedbl }{subsection.4.2.12}{}}
+l.376 ...\textquotedbl \{\}}{subsection.4.2.12}{}}
                                                   
 ? 
 
@@ -1958,13 +1958,13 @@ LaTeX Warning: Label `Hip\'otese 6: WASH como organiza\c {c}\~ao heter\'arquica
 ! Missing \endcsname inserted.
 <to be read again> 
                    \T1\textquotedbl 
-l.447 ...os Brincar?\textquotedbl }{chapter.11}{}}
+l.465 ...rincar?\textquotedbl \{\}}{chapter.11}{}}
                                                   
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \T1\textquotedbl 
-l.447 ...os Brincar?\textquotedbl }{chapter.11}{}}
+l.465 ...rincar?\textquotedbl \{\}}{chapter.11}{}}
                                                   
 ? 
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
@@ -2109,13 +2109,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Underfull \hbox (badness 3838) in paragraph at lines 270--270
-\T1/lmr/m/n/12 (+20) Pós-Graduação em Ensino de Ciências
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\T1/lmr/m/n/12 (+20) Co-Orientador: Dr. Victor Pellegrini
+Underfull \hbox (badness 6559) in paragraph at lines 270--270
+\T1/lmr/m/n/12 (+20) (PPGEN) da Universidade Tecnológica
  []
 
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 270.
@@ -2293,6 +2288,11 @@ sed on input line 309.
 
 
 (./USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.tex
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 5.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7
@@ -2339,131 +2339,136 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17])
-[18] (./USPSC-modelo-IAU_RedarTex.lot) [19
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [20
+ [18])
+[19] [20
+
+] (./USPSC-modelo-IAU_RedarTex.lot) [21] [22
 
 ]
-(./USPSC-modelo-IAU_RedarTex.loq) [21] [22
+(./USPSC-modelo-IAU_RedarTex.loq) [23] [24
 
 ]
 \openout2 = `USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex [23
+(./USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas_RedarTex.tex [25
 
 
-] [24]
+] [26]
 ! Extra }, or forgotten \endgroup.
-l.63 \item[ICMC] @[unidadefaculdade]@}
+l.66 \item[ICMC] @[unidadefaculdade]@}
                                       \~ao
 ? 
-[25] [26] [27] [28] [29] [30
+[27] [28] [29] [30] [31] [32
 
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.aux'.
 
 
-(./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex [31
+(./USPSC-TA-PreTextual/USPSC-Simbolos_RedarTex.tex [33
 
 
 
-] [32
+] [34
 
 ])
-(./USPSC-modelo-IAU_RedarTex.toc [33
+(./USPSC-modelo-IAU_RedarTex.toc [35
 
 ]
 Overfull \hbox (1.5877pt too wide) detected at line 51
- \T1/lmss/bx/n/12 103
+ \T1/lmss/bx/n/12 105
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 57
- \T1/lmss/bx/n/12 117
+ \T1/lmss/bx/n/12 119
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 58
- \T1/lmss/bx/n/12 117
+ \T1/lmss/bx/n/12 119
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 65
- \T1/lmss/bx/n/12 160
+ \T1/lmss/bx/n/12 162
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 78
- \T1/lmss/bx/n/12 187
+ \T1/lmss/bx/n/12 189
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 86
- \T1/lmss/bx/n/12 195
+Overfull \hbox (1.5877pt too wide) detected at line 82
+ \T1/lmss/bx/n/12 191
  []
 
-
-Overfull \hbox (1.5877pt too wide) detected at line 88
+[36]
+Overfull \hbox (1.5877pt too wide) detected at line 90
  \T1/lmss/bx/n/12 199
  []
 
 
-Underfull \vbox (badness 4779) has occurred while \output is active []
-
- [34]
-Overfull \hbox (1.5877pt too wide) detected at line 90
- \T1/lmss/bx/n/12 201
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 91
- \T1/lmss/bx/n/12 201
- []
-
-
 Overfull \hbox (1.5877pt too wide) detected at line 92
- \T1/lmss/bx/n/12 201
- []
-
-
-Overfull \hbox (1.5877pt too wide) detected at line 94
  \T1/lmss/bx/n/12 203
  []
 
 
+Overfull \hbox (1.5877pt too wide) detected at line 94
+ \T1/lmss/bx/n/12 205
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 95
+ \T1/lmss/bx/n/12 205
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 96
- \T1/lmss/bx/n/12 215
+ \T1/lmss/bx/n/12 205
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 98
- \T1/lmss/bx/n/12 221
+ \T1/lmss/bx/n/12 207
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 100
- \T1/lmss/bx/n/12 227
+ \T1/lmss/bx/n/12 219
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 106.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 106.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 106.
 
-Overfull \hbox (1.5877pt too wide) detected at line 110
+Overfull \hbox (1.5877pt too wide) detected at line 102
+ \T1/lmss/bx/n/12 225
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 104
  \T1/lmss/bx/n/12 231
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 110.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 110.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 110.
 
 Overfull \hbox (1.5877pt too wide) detected at line 114
- \T1/lmss/bx/n/12 233
+ \T1/lmss/bx/n/12 235
  []
 
-) [35] [36
+
+Overfull \hbox (1.5877pt too wide) detected at line 118
+ \T1/lmss/bx/n/12 237
+ []
+
+) [37] [38
 
 ]
 
@@ -2706,21 +2711,15 @@ Type  H <return>  for immediate help.
 l.433 ...gure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/acesso-internet.png, id=655, 630.355pt x 289.08pt>
+<../../imagens/acesso-internet.png, id=678, 630.355pt x 289.08pt>
 File: ../../imagens/acesso-internet.png Graphic file (type png)
 <use ../../imagens/acesso-internet.png>
 Package pdftex.def Info: ../../imagens/acesso-internet.png  used on input line 
 440.
 (pdftex.def)             Requested size: 181.99722pt x 83.46494pt.
-[37
+[39
 
- <../../imagens/acesso-internet.png>] [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40]
+ <../../imagens/acesso-internet.png>] [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
@@ -2730,31 +2729,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
-<../../imagens/capa-portaria-178.png, id=689, 1847.90375pt x 1000.73875pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+<../../imagens/capa-portaria-178.png, id=712, 1847.90375pt x 1000.73875pt>
 File: ../../imagens/capa-portaria-178.png Graphic file (type png)
 <use ../../imagens/capa-portaria-178.png>
 Package pdftex.def Info: ../../imagens/capa-portaria-178.png  used on input lin
 e 968.
 (pdftex.def)             Requested size: 1847.89926pt x 1000.73633pt.
 
-[44 <../../imagens/capa-portaria-178.png>]
+[46 <../../imagens/capa-portaria-178.png>]
 Underfull \vbox (badness 4168) has occurred while \output is active []
 
- [45]
-[46] [47] [48] [49] [50] [51] [52
+ [47]
+[48] [49] [50] [51] [52] [53] [54
 
-] [53]
+] [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
-[55] [56] [57]
+ [56]
+[57] [58] [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
-[59] [60]
+ [60]
+[61] [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [63]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -2995,52 +3000,23 @@ Type  H <return>  for immediate help.
 l.2432 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/minitel.jpg, id=780, 734.745pt x 507.39563pt>
+<../../imagens/minitel.jpg, id=803, 734.745pt x 507.39563pt>
 File: ../../imagens/minitel.jpg Graphic file (type jpg)
 <use ../../imagens/minitel.jpg>
 Package pdftex.def Info: ../../imagens/minitel.jpg  used on input line 2439.
 (pdftex.def)             Requested size: 181.99722pt x 125.67952pt.
-[62 <../../imagens/minitel.jpg>]
+[64 <../../imagens/minitel.jpg>]
 Underfull \vbox (badness 1810) has occurred while \output is active []
 
- [63]
+ [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
-[65] [66] [67] [68] [69]
+ [66]
+[67] [68] [69] [70] [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
-[71]
-! Undefined control sequence.
-<argument> \nse 
-                
-l.3211 ...edbl voc\^e n\~ao consegue acertar\r\nse
-                                                   n\~ao errar primeiro\text...
-
-? 
-! Undefined control sequence.
-<argument> \nse 
-                
-l.3211 ...edbl voc\^e n\~ao consegue acertar\r\nse
-                                                   n\~ao errar primeiro\text...
-
-? 
-! Undefined control sequence.
-<argument> \nliberdade 
-                       
-l.3211 ...ender \'e preciso existir a\r\nliberdade
-                                                   para errar. As coisas imp...
-
-? 
-! Undefined control sequence.
-<argument> \nliberdade 
-                       
-l.3211 ...ender \'e preciso existir a\r\nliberdade
-                                                   para errar. As coisas imp...
-
-? 
-[72]
+ [72]
+[73] [74]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -3048,7 +3024,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3058,7 +3034,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3068,7 +3044,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3078,7 +3054,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3088,7 +3064,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3098,7 +3074,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3108,7 +3084,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3118,7 +3094,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3128,7 +3104,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3138,7 +3114,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3148,7 +3124,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3158,7 +3134,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3168,7 +3144,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3178,7 +3154,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3188,7 +3164,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3198,7 +3174,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3208,7 +3184,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3218,7 +3194,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3228,7 +3204,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3238,7 +3214,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3248,7 +3224,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3258,7 +3234,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3268,7 +3244,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3278,51 +3254,51 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3292 ...ure}[max size={\textwidth}{\textheight}]
+l.3295 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/criadores-logo.png, id=841, 311.1625pt x 256.96pt>
+<../../imagens/criadores-logo.png, id=865, 311.1625pt x 256.96pt>
 File: ../../imagens/criadores-logo.png Graphic file (type png)
 <use ../../imagens/criadores-logo.png>
 Package pdftex.def Info: ../../imagens/criadores-logo.png  used on input line 3
-299.
+302.
 (pdftex.def)             Requested size: 181.99722pt x 150.2955pt.
-<../../imagens/criancas-1968.png, id=843, 355.3275pt x 232.87pt>
+<../../imagens/criancas-1968.png, id=867, 355.3275pt x 232.87pt>
 File: ../../imagens/criancas-1968.png Graphic file (type png)
 <use ../../imagens/criancas-1968.png>
 Package pdftex.def Info: ../../imagens/criancas-1968.png  used on input line 33
-06.
+09.
 (pdftex.def)             Requested size: 181.99722pt x 119.27734pt.
-<../../imagens/Elmer-Elsie4.jpg, id=844, 351.3125pt x 239.89626pt>
+<../../imagens/Elmer-Elsie4.jpg, id=868, 351.3125pt x 239.89626pt>
 File: ../../imagens/Elmer-Elsie4.jpg Graphic file (type jpg)
 <use ../../imagens/Elmer-Elsie4.jpg>
 Package pdftex.def Info: ../../imagens/Elmer-Elsie4.jpg  used on input line 331
-3.
+6.
 (pdftex.def)             Requested size: 181.99722pt x 124.28188pt.
-<../../imagens/historia-logo-turtle-01.jpg, id=845, 401.5pt x 260.975pt>
+<../../imagens/historia-logo-turtle-01.jpg, id=869, 401.5pt x 260.975pt>
 File: ../../imagens/historia-logo-turtle-01.jpg Graphic file (type jpg)
 <use ../../imagens/historia-logo-turtle-01.jpg>
 Package pdftex.def Info: ../../imagens/historia-logo-turtle-01.jpg  used on inp
-ut line 3320.
+ut line 3323.
 (pdftex.def)             Requested size: 181.99722pt x 118.30179pt.
-<../../imagens/Papert-x640.jpg, id=846, 154.176pt x 209.3421pt>
+<../../imagens/Papert-x640.jpg, id=870, 154.176pt x 209.3421pt>
 File: ../../imagens/Papert-x640.jpg Graphic file (type jpg)
 <use ../../imagens/Papert-x640.jpg>
-Package pdftex.def Info: ../../imagens/Papert-x640.jpg  used on input line 3327
+Package pdftex.def Info: ../../imagens/Papert-x640.jpg  used on input line 3330
 .
 (pdftex.def)             Requested size: 181.99722pt x 247.12375pt.
-<../../imagens/logo-PDP11.png, id=847, 577.15625pt x 456.70625pt>
+<../../imagens/logo-PDP11.png, id=871, 577.15625pt x 456.70625pt>
 File: ../../imagens/logo-PDP11.png Graphic file (type png)
 <use ../../imagens/logo-PDP11.png>
-Package pdftex.def Info: ../../imagens/logo-PDP11.png  used on input line 3334.
+Package pdftex.def Info: ../../imagens/logo-PDP11.png  used on input line 3337.
 
 (pdftex.def)             Requested size: 181.99722pt x 144.01654pt.
-[73] [74 <../../imagens/criadores-logo.png> <../../imagens/criancas-1968.png> <
+[75] [76 <../../imagens/criadores-logo.png> <../../imagens/criancas-1968.png> <
 ../../imagens/Elmer-Elsie4.jpg> <../../imagens/historia-logo-turtle-01.jpg> <..
 /../imagens/Papert-x640.jpg> <../../imagens/logo-PDP11.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
+ [77]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -3330,7 +3306,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3340,7 +3316,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3350,7 +3326,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3360,7 +3336,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3370,7 +3346,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3380,7 +3356,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3390,7 +3366,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3400,7 +3376,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3410,7 +3386,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3420,7 +3396,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3430,7 +3406,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3440,7 +3416,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3450,7 +3426,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3460,7 +3436,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3470,7 +3446,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3480,7 +3456,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3490,7 +3466,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3500,7 +3476,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3510,7 +3486,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3520,7 +3496,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3530,7 +3506,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3540,7 +3516,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3550,7 +3526,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3560,82 +3536,63 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3474 ...ure}[max size={\textwidth}{\textheight}]
+l.3477 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/Scratch-Block.png, id=864, 853.1875pt x 770.88pt>
+<../../imagens/Scratch-Block.png, id=888, 853.1875pt x 770.88pt>
 File: ../../imagens/Scratch-Block.png Graphic file (type png)
 <use ../../imagens/Scratch-Block.png>
 Package pdftex.def Info: ../../imagens/Scratch-Block.png  used on input line 34
-81.
+84.
 (pdftex.def)             Requested size: 181.99722pt x 164.44208pt.
-! Undefined control sequence.
-<argument> \nSegundo 
-                     
-l.3515 ...c{c}\~oes ao longo dos anos. \r\nSegundo
-                                                   post de  JANKOSKI (2017),...
-
-? 
-! Undefined control sequence.
-<argument> \nSegundo 
-                     
-l.3515 ...c{c}\~oes ao longo dos anos. \r\nSegundo
-                                                   post de  JANKOSKI (2017),...
-
-? 
-[76 <../../imagens/Scratch-Block.png>] [77] [78]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [79]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [80]
+[78 <../../imagens/Scratch-Block.png>] [79] [80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [81]
-[82] [83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
-[85]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 4264
-.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [86]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 4374.
+ [82]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (8.752pt too wide) in paragraph at lines 4374--4385
+ [83]
+[84] [85]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
+[87] [88]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 4378.
+
+Overfull \hbox (8.752pt too wide) in paragraph at lines 4378--4389
  [][] 
  []
 
-[87] [88] [89] [90] [91] [92] [93] [94]
-Underfull \hbox (badness 3872) in paragraph at lines 5034--5034
+[89] [90] [91] [92] [93] [94] [95] [96]
+Underfull \hbox (badness 3872) in paragraph at lines 5038--5038
 []\T1/lmr/m/it/10.95 (+20) SELECT nome_-par-ti-ci-pante FROM par-ti-ci-pan-tes2
  WHERE
  []
 
-[95] [96]
+[97] [98]
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [97
+ [99
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98]
+ [100]
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [99]
-[100]
-Underfull \vbox (badness 1810) has occurred while \output is active []
 
  [101]
+[102]
+Underfull \vbox (badness 1810) has occurred while \output is active []
+
+ [103]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [102]
-[103] [104] [105]
+ [104]
+[105] [106] [107]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -3643,7 +3600,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3653,7 +3610,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3663,7 +3620,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3673,7 +3630,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3683,7 +3640,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3693,7 +3650,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3703,7 +3660,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3713,7 +3670,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3723,7 +3680,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3733,7 +3690,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3743,7 +3700,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3753,7 +3710,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3763,7 +3720,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3773,7 +3730,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3783,7 +3740,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3793,7 +3750,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3803,7 +3760,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3813,7 +3770,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3823,7 +3780,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3833,7 +3790,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3843,7 +3800,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3853,7 +3810,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3863,7 +3820,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3873,72 +3830,65 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5905 ...ure}[max size={\textwidth}{\textheight}]
+l.5909 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=1064, 193.9245pt x 
+<../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=1087, 193.9245pt x 
 308.352pt>
 File: ../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg Graphic file (type
  jpg)
 <use ../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg>
 Package pdftex.def Info: ../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg
-  used on input line 5912.
+  used on input line 5916.
 (pdftex.def)             Requested size: 181.99722pt x 289.38982pt.
-<../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=1065, 207.8967pt x 
+<../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=1088, 207.8967pt x 
 308.352pt>
 File: ../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg Graphic file (type
  jpg)
 <use ../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg>
 Package pdftex.def Info: ../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg
-  used on input line 5919.
+  used on input line 5923.
 (pdftex.def)             Requested size: 181.99722pt x 269.94377pt.
-<../../imagens/blurred-planilha2.png, id=1066, 922.94812pt x 337.26pt>
+<../../imagens/blurred-planilha2.png, id=1089, 922.94812pt x 337.26pt>
 File: ../../imagens/blurred-planilha2.png Graphic file (type png)
 <use ../../imagens/blurred-planilha2.png>
 Package pdftex.def Info: ../../imagens/blurred-planilha2.png  used on input lin
-e 5926.
+e 5930.
 (pdftex.def)             Requested size: 181.99722pt x 66.5039pt.
-<../../imagens/evolucao-da-documentacao.png, id=1067, 673.51625pt x 455.7025pt>
+<../../imagens/evolucao-da-documentacao.png, id=1090, 673.51625pt x 455.7025pt>
 
 File: ../../imagens/evolucao-da-documentacao.png Graphic file (type png)
 <use ../../imagens/evolucao-da-documentacao.png>
 Package pdftex.def Info: ../../imagens/evolucao-da-documentacao.png  used on in
-put line 5954.
+put line 5958.
 (pdftex.def)             Requested size: 673.5146pt x 455.70137pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
-[107 <../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg> <../../imagens/bl
+ [108]
+[109 <../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg> <../../imagens/bl
 urred-Presenca-Oficina-2014-09-06.jpeg> <../../imagens/blurred-planilha2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [108 <../../imagens/evolucao-da-documentacao.png>] [109]
+ [110 <../../imagens/evolucao-da-documentacao.png>] [111]
 Underfull \vbox (badness 5519) has occurred while \output is active []
 
- [110]
-[111] [112] [113] [114] [115] [116
+ [112]
+[113] [114] [115] [116] [117] [118
 
-] [117] [118]
-Underfull \vbox (badness 1147) has occurred while \output is active []
+] [119] [120]
+Underfull \vbox (badness 6978) has occurred while \output is active []
 
- [119]
-[120]
-<../../imagens/antenagesac.jpg, id=1144, 642.4pt x 481.8pt>
+ [121]
+[122]
+<../../imagens/antenagesac.jpg, id=1166, 642.4pt x 481.8pt>
 File: ../../imagens/antenagesac.jpg Graphic file (type jpg)
 <use ../../imagens/antenagesac.jpg>
-Package pdftex.def Info: ../../imagens/antenagesac.jpg  used on input line 6970
+Package pdftex.def Info: ../../imagens/antenagesac.jpg  used on input line 6974
 .
 (pdftex.def)             Requested size: 642.39844pt x 481.79881pt.
- [121 <../../imagens/antenagesac.jpg>] [122] [123] [124] [125] [126]
-[127]
-Underfull \vbox (badness 3449) has occurred while \output is active []
-
- [128]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [129]
-[130]
+ [123 <../../imagens/antenagesac.jpg>] [124] [125] [126] [127] [128]
+[129] [130] [131] [132]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -3946,7 +3896,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3956,7 +3906,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3966,7 +3916,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3976,7 +3926,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3986,7 +3936,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -3996,7 +3946,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4006,7 +3956,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4016,7 +3966,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4026,7 +3976,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4036,7 +3986,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4046,7 +3996,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4056,7 +4006,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4066,7 +4016,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4076,7 +4026,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4086,7 +4036,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4096,7 +4046,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4106,7 +4056,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4116,7 +4066,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4126,7 +4076,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4136,7 +4086,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4146,7 +4096,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4156,7 +4106,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4166,7 +4116,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4176,43 +4126,38 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7530 ...ure}[max size={\textwidth}{\textheight}]
+l.7534 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/bantorafa.JPG, id=1216, 2055.68pt x 1541.76pt>
+<../../imagens/bantorafa.JPG, id=1239, 2055.68pt x 1541.76pt>
 File: ../../imagens/bantorafa.JPG Graphic file (type jpg)
 <use ../../imagens/bantorafa.JPG>
-Package pdftex.def Info: ../../imagens/bantorafa.JPG  used on input line 7537.
+Package pdftex.def Info: ../../imagens/bantorafa.JPG  used on input line 7541.
 (pdftex.def)             Requested size: 181.99722pt x 136.49397pt.
-<../../imagens/oficinalac.JPG, id=1217, 2055.68pt x 1541.76pt>
+<../../imagens/oficinalac.JPG, id=1240, 2055.68pt x 1541.76pt>
 File: ../../imagens/oficinalac.JPG Graphic file (type jpg)
 <use ../../imagens/oficinalac.JPG>
-Package pdftex.def Info: ../../imagens/oficinalac.JPG  used on input line 7544.
+Package pdftex.def Info: ../../imagens/oficinalac.JPG  used on input line 7548.
 
 (pdftex.def)             Requested size: 181.99722pt x 136.49397pt.
-<../../imagens/jabber.JPG, id=1218, 2055.68pt x 1541.76pt>
+<../../imagens/jabber.JPG, id=1241, 2055.68pt x 1541.76pt>
 File: ../../imagens/jabber.JPG Graphic file (type jpg)
 <use ../../imagens/jabber.JPG>
-Package pdftex.def Info: ../../imagens/jabber.JPG  used on input line 7551.
+Package pdftex.def Info: ../../imagens/jabber.JPG  used on input line 7555.
 (pdftex.def)             Requested size: 181.99722pt x 136.49397pt.
-<../../imagens/lacelavince.JPG, id=1219, 2055.68pt x 1541.76pt>
+<../../imagens/lacelavince.JPG, id=1242, 2055.68pt x 1541.76pt>
 File: ../../imagens/lacelavince.JPG Graphic file (type jpg)
 <use ../../imagens/lacelavince.JPG>
-Package pdftex.def Info: ../../imagens/lacelavince.JPG  used on input line 7558
+Package pdftex.def Info: ../../imagens/lacelavince.JPG  used on input line 7562
 .
 (pdftex.def)             Requested size: 181.99722pt x 136.49397pt.
-<../../imagens/povo.JPG, id=1220, 2055.68pt x 1541.76pt>
+<../../imagens/povo.JPG, id=1243, 2055.68pt x 1541.76pt>
 File: ../../imagens/povo.JPG Graphic file (type jpg)
 <use ../../imagens/povo.JPG>
-Package pdftex.def Info: ../../imagens/povo.JPG  used on input line 7565.
+Package pdftex.def Info: ../../imagens/povo.JPG  used on input line 7569.
 (pdftex.def)             Requested size: 181.99722pt x 136.49397pt.
-[131] [132 <../../imagens/bantorafa.JPG> <../../imagens/oficinalac.JPG> <../../
+[133] [134 <../../imagens/bantorafa.JPG> <../../imagens/oficinalac.JPG> <../../
 imagens/jabber.JPG> <../../imagens/lacelavince.JPG> <../../imagens/povo.JPG>]
-Overfull \hbox (61.45802pt too wide) in paragraph at lines 7653--7654
-[]\T1/lmr/m/n/12 (-20) Como re-sul-tado des-sas tra-ta-ti-vas ini-ci-ais, o do-
-cu-mento en-ti-tu-lado "Bra-zil Plan"(NEGROPONTE,
- []
-
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -4220,7 +4165,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4230,7 +4175,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4240,7 +4185,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4250,7 +4195,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4260,7 +4205,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4270,7 +4215,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4280,7 +4225,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4290,7 +4235,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4300,7 +4245,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4310,7 +4255,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4320,7 +4265,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4330,7 +4275,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4340,7 +4285,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4350,7 +4295,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4360,7 +4305,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4370,7 +4315,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4380,7 +4325,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4390,7 +4335,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4400,7 +4345,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4410,7 +4355,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4420,7 +4365,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4430,7 +4375,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4440,7 +4385,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4450,109 +4395,89 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7680 ...ure}[max size={\textwidth}{\textheight}]
+l.7684 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/lula-papert.jpg, id=1232, 642.4pt x 427.5975pt>
+<../../imagens/lula-papert.jpg, id=1254, 642.4pt x 427.5975pt>
 File: ../../imagens/lula-papert.jpg Graphic file (type jpg)
 <use ../../imagens/lula-papert.jpg>
-Package pdftex.def Info: ../../imagens/lula-papert.jpg  used on input line 7687
+Package pdftex.def Info: ../../imagens/lula-papert.jpg  used on input line 7691
 .
 (pdftex.def)             Requested size: 181.99722pt x 121.14232pt.
-<../../imagens/Kofi-negroponte.png, id=1233, 577.15625pt x 434.62375pt>
+<../../imagens/Kofi-negroponte.png, id=1255, 577.15625pt x 434.62375pt>
 File: ../../imagens/Kofi-negroponte.png Graphic file (type png)
 <use ../../imagens/Kofi-negroponte.png>
 Package pdftex.def Info: ../../imagens/Kofi-negroponte.png  used on input line 
-7694.
+7698.
 (pdftex.def)             Requested size: 181.99722pt x 137.0531pt.
-<../../imagens/presidente-italia.jpg, id=1234, 550.30594pt x 376.40625pt>
+<../../imagens/presidente-italia.jpg, id=1256, 550.30594pt x 376.40625pt>
 File: ../../imagens/presidente-italia.jpg Graphic file (type jpg)
 <use ../../imagens/presidente-italia.jpg>
 Package pdftex.def Info: ../../imagens/presidente-italia.jpg  used on input lin
-e 7701.
+e 7705.
 (pdftex.def)             Requested size: 181.99722pt x 124.48438pt.
-<../../imagens/equipeOLPC.jpg, id=1235, 1199.48125pt x 899.36pt>
+<../../imagens/equipeOLPC.jpg, id=1257, 1199.48125pt x 899.36pt>
 File: ../../imagens/equipeOLPC.jpg Graphic file (type jpg)
 <use ../../imagens/equipeOLPC.jpg>
-Package pdftex.def Info: ../../imagens/equipeOLPC.jpg  used on input line 7708.
+Package pdftex.def Info: ../../imagens/equipeOLPC.jpg  used on input line 7712.
 
 (pdftex.def)             Requested size: 181.99722pt x 136.44888pt.
 
-Overfull \hbox (17.10124pt too wide) in paragraph at lines 7717--7718
-[]\T1/lmr/m/n/12 (-20) Nicholas Ne-gro-ponte, o lí-der da ini-ci-a-tiva do OLPC
-, era um des-ta-cado "gurú"tecnológico,
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [133]
+ [135]
 Underfull \vbox (badness 1152) has occurred while \output is active []
 
- [134 <../../imagens/lula-papert.jpg> <../../imagens/Kofi-negroponte.png> <../.
-./imagens/presidente-italia.jpg> <../../imagens/equipeOLPC.jpg>] [135] [136]
-<../../imagens/computer-room.png, id=1275, 757.83125pt x 404.51125pt>
+ [136 <../../imagens/lula-papert.jpg> <../../imagens/Kofi-negroponte.png> <../.
+./imagens/presidente-italia.jpg> <../../imagens/equipeOLPC.jpg>] [137] [138]
+<../../imagens/computer-room.png, id=1298, 757.83125pt x 404.51125pt>
 File: ../../imagens/computer-room.png Graphic file (type png)
 <use ../../imagens/computer-room.png>
 Package pdftex.def Info: ../../imagens/computer-room.png  used on input line 79
-90.
+94.
 (pdftex.def)             Requested size: 757.8294pt x 404.51025pt.
- [137] [138 <../../imagens/computer-room.png>] [139]
-<../../imagens/embaixo-mesa.png, id=1298, 1105.12875pt x 411.5375pt>
+ [139] [140 <../../imagens/computer-room.png>] [141]
+<../../imagens/embaixo-mesa.png, id=1320, 1105.12875pt x 411.5375pt>
 File: ../../imagens/embaixo-mesa.png Graphic file (type png)
 <use ../../imagens/embaixo-mesa.png>
 Package pdftex.def Info: ../../imagens/embaixo-mesa.png  used on input line 809
-3.
+7.
 (pdftex.def)             Requested size: 1105.12607pt x 411.5365pt.
- [140 <../../imagens/embaixo-mesa.png>]
-[141]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [142]
+ [142 <../../imagens/embaixo-mesa.png>]
 [143]
-Underfull \vbox (badness 4454) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [144]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [145]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[145]
+Underfull \vbox (badness 1810) has occurred while \output is active []
 
  [146]
-<../../imagens/primeiro-wash-corte.png, id=1337, 1259.70625pt x 630.355pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [147]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [148]
+<../../imagens/primeiro-wash-corte.png, id=1359, 1259.70625pt x 630.355pt>
 File: ../../imagens/primeiro-wash-corte.png Graphic file (type png)
 <use ../../imagens/primeiro-wash-corte.png>
 Package pdftex.def Info: ../../imagens/primeiro-wash-corte.png  used on input l
-ine 8598.
+ine 8602.
 (pdftex.def)             Requested size: 1259.70319pt x 630.35345pt.
 
-[147] [148 <../../imagens/primeiro-wash-corte.png>] [149] [150] [151] [152]
-<../../imagens/ponte-wash.png, id=1374, 1437.37pt x 1003.75pt>
+[149] [150 <../../imagens/primeiro-wash-corte.png>] [151] [152] [153] [154]
+<../../imagens/ponte-wash.png, id=1396, 1437.37pt x 1003.75pt>
 File: ../../imagens/ponte-wash.png Graphic file (type png)
 <use ../../imagens/ponte-wash.png>
-Package pdftex.def Info: ../../imagens/ponte-wash.png  used on input line 8996.
+Package pdftex.def Info: ../../imagens/ponte-wash.png  used on input line 9000.
 
 (pdftex.def)             Requested size: 1437.3665pt x 1003.74756pt.
 
-[153] [154 <../../imagens/ponte-wash.png>] [155] [156] [157]
+[155] [156 <../../imagens/ponte-wash.png>] [157] [158] [159]
 Underfull \vbox (badness 2351) has occurred while \output is active []
 
- [158]
-[159]
-! Undefined control sequence.
-<argument> \ninter 
-                   
-l.9252 ...ica cultural para um p\'ublico \r\ninter
-                                                   geracional. Neste trabalh...
-
-? 
-! Undefined control sequence.
-<argument> \ninter 
-                   
-l.9252 ...ica cultural para um p\'ublico \r\ninter
-                                                   geracional. Neste trabalh...
-
-? 
+ [160]
+[161]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -4560,7 +4485,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4570,7 +4495,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4580,7 +4505,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4590,7 +4515,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4600,7 +4525,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4610,7 +4535,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4620,7 +4545,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4630,7 +4555,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4640,7 +4565,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4650,7 +4575,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4660,7 +4585,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4670,7 +4595,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4680,7 +4605,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4690,7 +4615,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4700,7 +4625,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4710,7 +4635,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4720,7 +4645,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4730,7 +4655,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4740,7 +4665,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4750,7 +4675,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4760,7 +4685,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4770,7 +4695,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4780,7 +4705,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4790,21 +4715,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9258 ...ure}[max size={\textwidth}{\textheight}]
+l.9264 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/TVT.jpg, id=1417, 919.435pt x 1284.8pt>
+<../../imagens/TVT.jpg, id=1440, 919.435pt x 1284.8pt>
 File: ../../imagens/TVT.jpg Graphic file (type jpg)
 <use ../../imagens/TVT.jpg>
-Package pdftex.def Info: ../../imagens/TVT.jpg  used on input line 9265.
+Package pdftex.def Info: ../../imagens/TVT.jpg  used on input line 9271.
 (pdftex.def)             Requested size: 181.99722pt x 254.30885pt.
-[160] [161 <../../imagens/TVT.jpg>] [162] [163]
-Overfull \hbox (12.22485pt too wide) in paragraph at lines 9492--9493
-[]\T1/lmr/m/n/12 (-20) JACAREÍ - Se-cre-ta-ria Mu-ni-ci-pal de Edu-ca-ção - Por
--ta-ria 3865, de 20/02/2020Adota
+[162] [163 <../../imagens/TVT.jpg>] [164] [165] [166]
+Overfull \hbox (2.6237pt too wide) in paragraph at lines 9521--9522
+\T1/lmr/m/n/12 (-20) DIRETOR-GERAL - No. 147, 05/11/2020 - Adota a Por-ta-ria 1
+78/2018/SEI/CTI,
  []
 
-[164] [165] [166] [167] [168] [169] [170]
+[167] [168] [169] [170]
+Underfull \vbox (badness 3068) has occurred while \output is active []
+
+ [171]
+[172]
 
 ! LaTeX Error: Unknown float option `m'.
 
@@ -4812,7 +4741,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4822,7 +4751,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4832,7 +4761,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4842,7 +4771,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4852,7 +4781,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4862,7 +4791,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4872,7 +4801,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4882,7 +4811,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4892,7 +4821,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4902,7 +4831,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4912,7 +4841,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4922,7 +4851,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4932,7 +4861,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4942,7 +4871,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4952,7 +4881,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4962,7 +4891,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4972,7 +4901,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4982,7 +4911,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -4992,7 +4921,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5002,7 +4931,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5012,7 +4941,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5022,7 +4951,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5032,7 +4961,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5042,47 +4971,47 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9906 ...ure}[max size={\textwidth}{\textheight}]
+l.9913 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/Evento-Ciencia-Em-Show.jpg, id=1572, 622.325pt x 414.54875pt>
+<../../imagens/Evento-Ciencia-Em-Show.jpg, id=1594, 622.325pt x 414.54875pt>
 File: ../../imagens/Evento-Ciencia-Em-Show.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Ciencia-Em-Show.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Ciencia-Em-Show.jpg  used on inpu
-t line 9913.
+t line 9920.
 (pdftex.def)             Requested size: 181.99722pt x 121.23445pt.
-<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1573, 2007.5pt x 1337.
+<../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1595, 2007.5pt x 1337.
 99875pt>
 File: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type jp
 g)
 <use ../../imagens/dia-das-criancas-2022-10-03-menor.JPG>
 Package pdftex.def Info: ../../imagens/dia-das-criancas-2022-10-03-menor.JPG  u
-sed on input line 9920.
+sed on input line 9927.
 (pdftex.def)             Requested size: 181.99722pt x 121.29259pt.
-<../../imagens/confraternizacao-de-natal-menor.jpeg, id=1574, 2007.5pt x 1337.9
+<../../imagens/confraternizacao-de-natal-menor.jpeg, id=1596, 2007.5pt x 1337.9
 9875pt>
 File: ../../imagens/confraternizacao-de-natal-menor.jpeg Graphic file (type jpg
 )
 <use ../../imagens/confraternizacao-de-natal-menor.jpeg>
 Package pdftex.def Info: ../../imagens/confraternizacao-de-natal-menor.jpeg  us
-ed on input line 9927.
+ed on input line 9934.
 (pdftex.def)             Requested size: 181.99722pt x 121.29259pt.
-<../../imagens/Evento-Greenk-2018-05-27.jpg, id=1575, 1043.9pt x 782.925pt>
+<../../imagens/Evento-Greenk-2018-05-27.jpg, id=1597, 1043.9pt x 782.925pt>
 File: ../../imagens/Evento-Greenk-2018-05-27.jpg Graphic file (type jpg)
 <use ../../imagens/Evento-Greenk-2018-05-27.jpg>
 Package pdftex.def Info: ../../imagens/Evento-Greenk-2018-05-27.jpg  used on in
-put line 9934.
+put line 9941.
 (pdftex.def)             Requested size: 181.99722pt x 136.48828pt.
-<../../imagens/MAAS.jpg, id=1576, 1043.9pt x 782.925pt>
+<../../imagens/MAAS.jpg, id=1598, 1043.9pt x 782.925pt>
 File: ../../imagens/MAAS.jpg Graphic file (type jpg)
 <use ../../imagens/MAAS.jpg>
-Package pdftex.def Info: ../../imagens/MAAS.jpg  used on input line 9941.
+Package pdftex.def Info: ../../imagens/MAAS.jpg  used on input line 9948.
 (pdftex.def)             Requested size: 181.99722pt x 136.48828pt.
-<../../imagens/Ciencia-Prado-publico.jpeg, id=1577, 1284.8pt x 856.19875pt>
+<../../imagens/Ciencia-Prado-publico.jpeg, id=1599, 1284.8pt x 856.19875pt>
 File: ../../imagens/Ciencia-Prado-publico.jpeg Graphic file (type jpg)
 <use ../../imagens/Ciencia-Prado-publico.jpeg>
 Package pdftex.def Info: ../../imagens/Ciencia-Prado-publico.jpeg  used on inpu
-t line 9948.
+t line 9955.
 (pdftex.def)             Requested size: 181.99722pt x 121.27797pt.
 
 ! LaTeX Error: Unknown float option `m'.
@@ -5091,7 +5020,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5101,7 +5030,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5111,7 +5040,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5121,7 +5050,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5131,7 +5060,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5141,7 +5070,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5151,7 +5080,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5161,7 +5090,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5171,7 +5100,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5181,7 +5110,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5191,7 +5120,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5201,7 +5130,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5211,7 +5140,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5221,7 +5150,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5231,7 +5160,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5241,7 +5170,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5251,7 +5180,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5261,7 +5190,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5271,7 +5200,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5281,7 +5210,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5291,7 +5220,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5301,7 +5230,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5311,7 +5240,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5321,14 +5250,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9972 ...ure}[max size={\textwidth}{\textheight}]
+l.9979 ...ure}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/evento-sao-miguel.png, id=1578, 706.64pt x 686.565pt>
+<../../imagens/evento-sao-miguel.png, id=1600, 706.64pt x 686.565pt>
 File: ../../imagens/evento-sao-miguel.png Graphic file (type png)
 <use ../../imagens/evento-sao-miguel.png>
 Package pdftex.def Info: ../../imagens/evento-sao-miguel.png  used on input lin
-e 9979.
+e 9986.
 (pdftex.def)             Requested size: 181.99722pt x 176.8265pt.
 
 ! LaTeX Error: Unknown float option `m'.
@@ -5337,7 +5266,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5347,7 +5276,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5357,7 +5286,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5367,7 +5296,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5377,7 +5306,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5387,7 +5316,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5397,7 +5326,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5407,7 +5336,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5417,7 +5346,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5427,7 +5356,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5437,7 +5366,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5447,7 +5376,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5457,7 +5386,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5467,7 +5396,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5477,7 +5406,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5487,7 +5416,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5497,7 +5426,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5507,7 +5436,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5517,7 +5446,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5527,7 +5456,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5537,7 +5466,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5547,7 +5476,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5557,7 +5486,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5567,33 +5496,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10028 ...re}[max size={\textwidth}{\textheight}]
+l.10035 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/output-participantes.jpeg, id=1579, 2258.4375pt x 3011.25pt>
+<../../imagens/output-participantes.jpeg, id=1601, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-participantes.jpeg Graphic file (type jpg)
 <use ../../imagens/output-participantes.jpeg>
 Package pdftex.def Info: ../../imagens/output-participantes.jpeg  used on input
- line 10035.
+ line 10042.
 (pdftex.def)             Requested size: 181.99722pt x 242.65094pt.
-<../../imagens/output-participantes2.jpeg, id=1580, 2258.4375pt x 3011.25pt>
+<../../imagens/output-participantes2.jpeg, id=1602, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-participantes2.jpeg Graphic file (type jpg)
 <use ../../imagens/output-participantes2.jpeg>
 Package pdftex.def Info: ../../imagens/output-participantes2.jpeg  used on inpu
-t line 10042.
+t line 10049.
 (pdftex.def)             Requested size: 181.99722pt x 242.65094pt.
-<../../imagens/output-media-participacoes.jpeg, id=1581, 2258.4375pt x 3011.25p
+<../../imagens/output-media-participacoes.jpeg, id=1603, 2258.4375pt x 3011.25p
 t>
 File: ../../imagens/output-media-participacoes.jpeg Graphic file (type jpg)
 <use ../../imagens/output-media-participacoes.jpeg>
 Package pdftex.def Info: ../../imagens/output-media-participacoes.jpeg  used on
- input line 10049.
+ input line 10056.
 (pdftex.def)             Requested size: 181.99722pt x 242.65094pt.
-[171] [172 <../../imagens/Evento-Ciencia-Em-Show.jpg> <../../imagens/dia-das-cr
+[173] [174 <../../imagens/Evento-Ciencia-Em-Show.jpg> <../../imagens/dia-das-cr
 iancas-2022-10-03-menor.JPG> <../../imagens/confraternizacao-de-natal-menor.jpe
 g> <../../imagens/Evento-Greenk-2018-05-27.jpg> <../../imagens/MAAS.jpg> <../..
-/imagens/Ciencia-Prado-publico.jpeg>] [173 <../../imagens/evento-sao-miguel.png
->] [174 <../../imagens/output-participantes.jpeg> <../../imagens/output-partici
+/imagens/Ciencia-Prado-publico.jpeg>] [175 <../../imagens/evento-sao-miguel.png
+>] [176 <../../imagens/output-participantes.jpeg> <../../imagens/output-partici
 pantes2.jpeg> <../../imagens/output-media-participacoes.jpeg>]
 
 ! LaTeX Error: Unknown float option `m'.
@@ -5602,7 +5531,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5612,7 +5541,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5622,7 +5551,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5632,7 +5561,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5642,7 +5571,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5652,7 +5581,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5662,7 +5591,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5672,7 +5601,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5682,7 +5611,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5692,7 +5621,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5702,7 +5631,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5712,7 +5641,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5722,7 +5651,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5732,7 +5661,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5742,7 +5671,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5752,7 +5681,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5762,7 +5691,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5772,7 +5701,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5782,7 +5711,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5792,7 +5721,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5802,7 +5731,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5812,7 +5741,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5822,7 +5751,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5832,61 +5761,70 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10266 ...re}[max size={\textwidth}{\textheight}]
+l.10273 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/genero-todos-crop.jpeg, id=1602, 583.781pt x 504.284pt>
+<../../imagens/genero-todos-crop.jpeg, id=1624, 583.781pt x 504.284pt>
 File: ../../imagens/genero-todos-crop.jpeg Graphic file (type jpg)
 <use ../../imagens/genero-todos-crop.jpeg>
 Package pdftex.def Info: ../../imagens/genero-todos-crop.jpeg  used on input li
-ne 10273.
+ne 10280.
 (pdftex.def)             Requested size: 181.99722pt x 157.21132pt.
-<../../imagens/distribuicao-sexo-bolsistas.png, id=1603, 678.535pt x 415.5525pt
+<../../imagens/distribuicao-sexo-bolsistas.png, id=1625, 678.535pt x 415.5525pt
 >
 File: ../../imagens/distribuicao-sexo-bolsistas.png Graphic file (type png)
 <use ../../imagens/distribuicao-sexo-bolsistas.png>
 Package pdftex.def Info: ../../imagens/distribuicao-sexo-bolsistas.png  used on
- input line 10280.
+ input line 10287.
 (pdftex.def)             Requested size: 181.99722pt x 111.45879pt.
-[175]
-<../../imagens/bolsas-anualmente-recorte-b-crop.png, id=1608, 1010.77625pt x 39
+[177]
+<../../imagens/bolsas-anualmente-recorte-b-crop.png, id=1630, 1010.77625pt x 39
 5.4775pt>
 File: ../../imagens/bolsas-anualmente-recorte-b-crop.png Graphic file (type png
 )
 <use ../../imagens/bolsas-anualmente-recorte-b-crop.png>
 Package pdftex.def Info: ../../imagens/bolsas-anualmente-recorte-b-crop.png  us
-ed on input line 10333.
+ed on input line 10340.
 (pdftex.def)             Requested size: 1010.77377pt x 395.47653pt.
- [176 <../../imagens/genero-todos-crop.jpeg> <../../imagens/distribuicao-sexo-b
+ [178 <../../imagens/genero-todos-crop.jpeg> <../../imagens/distribuicao-sexo-b
 olsistas.png> <../../imagens/bolsas-anualmente-recorte-b-crop.png>]
-<../../imagens/quantidade-bolsistas-3.png, id=1615, 1097.09875pt x 416.55624pt>
+<../../imagens/quantidade-bolsistas-3.png, id=1637, 1097.09875pt x 416.55624pt>
 
 File: ../../imagens/quantidade-bolsistas-3.png Graphic file (type png)
 <use ../../imagens/quantidade-bolsistas-3.png>
 Package pdftex.def Info: ../../imagens/quantidade-bolsistas-3.png  used on inpu
-t line 10396.
+t line 10403.
 (pdftex.def)             Requested size: 1097.09608pt x 416.55522pt.
 
-[177 <../../imagens/quantidade-bolsistas-3.png>]
-<../../imagens/duracao-bolsas.png, id=1621, 644.4075pt x 622.325pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [179 <../../imagens/quantidade-bolsistas-3.png>]
+<../../imagens/duracao-bolsas.png, id=1644, 644.4075pt x 622.325pt>
 File: ../../imagens/duracao-bolsas.png Graphic file (type png)
 <use ../../imagens/duracao-bolsas.png>
 Package pdftex.def Info: ../../imagens/duracao-bolsas.png  used on input line 1
-0520.
+0527.
 (pdftex.def)             Requested size: 644.40593pt x 622.32347pt.
- [178] [179 <../../imagens/duracao-bolsas.png>] [180]
-<../../imagens/documentos-gerados.png, id=1636, 1270.7475pt x 462.72874pt>
+ [180]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [181 <../../imagens/duracao-bolsas.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [182]
+<../../imagens/documentos-gerados.png, id=1658, 1270.7475pt x 462.72874pt>
 File: ../../imagens/documentos-gerados.png Graphic file (type png)
 <use ../../imagens/documentos-gerados.png>
 Package pdftex.def Info: ../../imagens/documentos-gerados.png  used on input li
-ne 10700.
+ne 10707.
 (pdftex.def)             Requested size: 1270.7444pt x 462.72762pt.
- [181]
-<../../imagens/areas-conhecimento.png, id=1645, 902.37125pt x 597.23125pt>
+
+[183]
+<../../imagens/areas-conhecimento.png, id=1667, 902.37125pt x 597.23125pt>
 File: ../../imagens/areas-conhecimento.png Graphic file (type png)
 <use ../../imagens/areas-conhecimento.png>
 Package pdftex.def Info: ../../imagens/areas-conhecimento.png  used on input li
-ne 10751.
+ne 10758.
 (pdftex.def)             Requested size: 902.36905pt x 597.22978pt.
 
 
@@ -5896,7 +5834,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5906,7 +5844,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5916,7 +5854,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5926,7 +5864,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5936,7 +5874,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5946,7 +5884,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5956,7 +5894,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5966,7 +5904,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5976,7 +5914,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5986,7 +5924,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -5996,7 +5934,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6006,7 +5944,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6016,7 +5954,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6026,7 +5964,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6036,7 +5974,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6046,7 +5984,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6056,7 +5994,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6066,7 +6004,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6076,7 +6014,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6086,7 +6024,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6096,7 +6034,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6106,7 +6044,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6116,7 +6054,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6126,92 +6064,119 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10811 ...re}[max size={\textwidth}{\textheight}]
+l.10818 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/output-eventos.jpeg, id=1646, 2258.4375pt x 3011.25pt>
+<../../imagens/output-eventos.jpeg, id=1668, 2258.4375pt x 3011.25pt>
 File: ../../imagens/output-eventos.jpeg Graphic file (type jpg)
 <use ../../imagens/output-eventos.jpeg>
 Package pdftex.def Info: ../../imagens/output-eventos.jpeg  used on input line 
-10818.
+10825.
 (pdftex.def)             Requested size: 181.99722pt x 242.65094pt.
-<../../imagens/eventos-ano-recorte-B.png, id=1647, 1283.79625pt x 346.29375pt>
+[184 <../../imagens/documentos-gerados.png>]
+<../../imagens/eventos-ano-recorte-B.png, id=1674, 1283.79625pt x 346.29375pt>
 File: ../../imagens/eventos-ano-recorte-B.png Graphic file (type png)
 <use ../../imagens/eventos-ano-recorte-B.png>
 Package pdftex.def Info: ../../imagens/eventos-ano-recorte-B.png  used on input
- line 10846.
+ line 10853.
 (pdftex.def)             Requested size: 1283.79312pt x 346.2929pt.
-[182 <../../imagens/documentos-gerados.png>] [183 <../../imagens/areas-conhecim
-ento.png>] [184 <../../imagens/output-eventos.jpeg> <../../imagens/eventos-ano-
-recorte-B.png>]
-<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1663, 2007.5pt x 4
+ [185 <../../imagens/areas-conhecimento.png>] [186 <../../imagens/output-evento
+s.jpeg> <../../imagens/eventos-ano-recorte-B.png>]
+<../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1686, 2007.5pt x 4
 015.0pt>
 File: ../../imagens/histograma-de-idades-no-ano-do-evento.png Graphic file (typ
 e png)
 <use ../../imagens/histograma-de-idades-no-ano-do-evento.png>
 Package pdftex.def Info: ../../imagens/histograma-de-idades-no-ano-do-evento.pn
-g  used on input line 10986.
+g  used on input line 10993.
 (pdftex.def)             Requested size: 2007.49512pt x 4014.99026pt.
 
 
-LaTeX Warning: Float too large for page by 24.53262pt on input line 10992.
+LaTeX Warning: Float too large for page by 24.53262pt on input line 10999.
 
-[185]
-<../../imagens/distribuicao-bolsistas-por-cidades.png, id=1671, 1288.815pt x 54
+[187]
+<../../imagens/distribuicao-bolsistas-por-cidades.png, id=1694, 1288.815pt x 54
 0.0175pt>
 File: ../../imagens/distribuicao-bolsistas-por-cidades.png Graphic file (type p
 ng)
 <use ../../imagens/distribuicao-bolsistas-por-cidades.png>
 Package pdftex.def Info: ../../imagens/distribuicao-bolsistas-por-cidades.png  
-used on input line 11126.
+used on input line 11133.
 (pdftex.def)             Requested size: 1288.81187pt x 540.01617pt.
-<../../imagens/eventos-cidades.png, id=1672, 1279.78125pt x 351.3125pt>
+<../../imagens/eventos-cidades.png, id=1695, 1279.78125pt x 351.3125pt>
 File: ../../imagens/eventos-cidades.png Graphic file (type png)
 <use ../../imagens/eventos-cidades.png>
 Package pdftex.def Info: ../../imagens/eventos-cidades.png  used on input line 
-11153.
+11160.
 (pdftex.def)             Requested size: 1279.77814pt x 351.31163pt.
- [186] [187] [188]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [188] [189]
+<../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png, id=1716, 1445.4pt x 813.03
+75pt>
+File: ../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png Graphic file (type png
+)
+<use ../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png>
+Package pdftex.def Info: ../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png  us
+ed on input line 11318.
+(pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
 
- [189]
-[190] [191] [192] [193 <../../imagens/histograma-de-idades-no-ano-do-evento.png
->] [194 <../../imagens/distribuicao-bolsistas-por-cidades.png> <../../imagens/e
-ventos-cidades.png>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 11641.
- [195
 
-] [196] [197] [198] [199
+LaTeX Warning: File `../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-
+egov-2.png' not found on input line 11406.
+
+<../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png, id=1717,
+ 1445.4pt x 813.0375pt>
+File: ../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png Grap
+hic file (type png)
+<use ../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png>
+Package pdftex.def Info: ../../imagens/ Linha-do-Tempo-Politicas-Digitais Publi
+cas-egov-2.png  used on input line 11406.
+(pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
+[190]
+<../../imagens/Linha-do-Tempo-WASH-GERAL-4.png, id=1722, 1445.4pt x 813.0375pt>
+
+File: ../../imagens/Linha-do-Tempo-WASH-GERAL-4.png Graphic file (type png)
+<use ../../imagens/Linha-do-Tempo-WASH-GERAL-4.png>
+Package pdftex.def Info: ../../imagens/Linha-do-Tempo-WASH-GERAL-4.png  used on
+ input line 11458.
+(pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
+ [191] [192] [193] [194] [195] [196 <../../imagens/histograma-de-idades-no-ano-
+do-evento.png>] [197 <../../imagens/distribuicao-bolsistas-por-cidades.png> <..
+/../imagens/eventos-cidades.png> <../../imagens/Linha-do-Tempo-trajetoria-WASH-
+1.png>] [198 <../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.
+png> <../../imagens/Linha-do-Tempo-WASH-GERAL-4.png>] [199
+
+] [200] [201]
+[202] [203
 
 ]
-<../../imagens/bizagi.png, id=1772, 1296.845pt x 885.3075pt>
+<../../imagens/bizagi.png, id=1809, 1296.845pt x 885.3075pt>
 File: ../../imagens/bizagi.png Graphic file (type png)
 <use ../../imagens/bizagi.png>
-Package pdftex.def Info: ../../imagens/bizagi.png  used on input line 11798.
+Package pdftex.def Info: ../../imagens/bizagi.png  used on input line 11998.
 (pdftex.def)             Requested size: 1296.84184pt x 885.30533pt.
- [200 <../../imagens/bizagi.png>] [201
+ [204 <../../imagens/bizagi.png>] [205
 
-] [202
+] [206
 
-] [203] [204] [205] [206] [207] [208] [209]
+] [207] [208] [209]
+[210] [211]
 
-LaTeX Warning: Command \' invalid in math mode on input line 15724.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 15724.
+LaTeX Warning: Command \' invalid in math mode on input line 15112.
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 15724.
+LaTeX Warning: Command \' invalid in math mode on input line 15112.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 15724.
+LaTeX Warning: Command \` invalid in math mode on input line 15112.
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 15724.
+LaTeX Warning: Command \c invalid in math mode on input line 15112.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 15724.
+LaTeX Warning: Command \^ invalid in math mode on input line 15112.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 15112.
 
 
 ! LaTeX Error: Command \end{flushleft} invalid in math mode.
@@ -6220,16 +6185,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.15725 \end{flushleft}
+l.15113 \end{flushleft}
                        
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.15725 \end{flushleft}
+l.15113 \end{flushleft}
                        
 ? 
-[210] [211] [212] [213] [214
+[212] [213] [214] [215] [216] [217] [218
 
 ]
 
@@ -6239,7 +6204,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6249,7 +6214,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6259,7 +6224,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6269,7 +6234,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6279,7 +6244,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6289,7 +6254,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6299,7 +6264,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6309,7 +6274,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6319,7 +6284,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6329,7 +6294,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6339,7 +6304,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6349,7 +6314,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6359,7 +6324,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6369,7 +6334,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6379,7 +6344,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6389,7 +6354,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6399,7 +6364,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6409,7 +6374,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6419,7 +6384,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6429,7 +6394,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6439,7 +6404,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6449,7 +6414,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6459,7 +6424,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
 
@@ -6469,28 +6434,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17356 ...re}[max size={\textwidth}{\textheight}]
+l.17418 ...re}[max size={\textwidth}{\textheight}]
                                                   
 ? 
-<../../imagens/ranke.jpg, id=1848, 107.38997pt x 148.80312pt>
+<../../imagens/ranke.jpg, id=1884, 107.38997pt x 148.80312pt>
 File: ../../imagens/ranke.jpg Graphic file (type jpg)
 <use ../../imagens/ranke.jpg>
-Package pdftex.def Info: ../../imagens/ranke.jpg  used on input line 17363.
+Package pdftex.def Info: ../../imagens/ranke.jpg  used on input line 17425.
 (pdftex.def)             Requested size: 181.99722pt x 252.21494pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [215]
-[216 <../../imagens/ranke.jpg>] [217] [218] [219] [220] [221
+ [219]
+[220 <../../imagens/ranke.jpg>] [221] [222] [223] [224] [225
 
-] [222] [223]
-[224] [225] [226
+] [226] [227]
+[228] [229] [230
 
-] [227]
+] [231]
 \openout2 = `USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux'.
 
  (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.tex
-[228
+[232
 
 
 ]
@@ -6498,20 +6463,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[229
+[233
 
-] [230]
+] [234]
 
-LaTeX Warning: Citation `nbr14724' on page 231 undefined on input line 13.
+LaTeX Warning: Citation `nbr14724' on page 235 undefined on input line 13.
 
-[231
+[235
 
-] [232
+] [236
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 20.
-<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=1966, 225.84375pt x 353.06906pt>
+<USPSC-img/USPSC-AcentuacaoLaTeX.png, id=2002, 225.84375pt x 353.06906pt>
 File: USPSC-img/USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-img/USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-img/USPSC-AcentuacaoLaTeX.png  used on input lin
@@ -6519,9 +6484,9 @@ e 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
 
 
-LaTeX Warning: Citation `comandos' on page 233 undefined on input line 22.
+LaTeX Warning: Citation `comandos' on page 237 undefined on input line 22.
 
-) [233 <./USPSC-img/USPSC-AcentuacaoLaTeX.png>]
+) [237 <./USPSC-img/USPSC-AcentuacaoLaTeX.png>]
 \openout2 = `USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux'.
 
 
@@ -6542,17 +6507,17 @@ AED: lastpage setting LastPage
 \openout9 = `USPSC-modelo-IAU_RedarTex.toc'.
 
 
-! LaTeX Error: \begin{alineas} on input line 18046 ended by \end{document}.
+! LaTeX Error: \begin{alineas} on input line 18107 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18114 \end{document}
+l.18175 \end{document}
                       
 ? 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18114.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18114.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18175.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18175.
 (./USPSC-modelo-IAU_RedarTex.aux
 (./USPSC-TA-PreTextual/USPSC-Dedicatoria_RedarTex.aux)
 (./USPSC-TA-PreTextual/USPSC-Agradecimentos_RedarTex.aux)
@@ -6564,32 +6529,32 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 18114.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \T1\textquotedbl 
-l.376 ...car?\textquotedbl }{subsection.4.2.12}{}}
+l.376 ...r?\textquotedbl {}}{subsection.4.2.12}{}}
                                                   
 ? 
 ! Extra \endcsname.
 \@newl@bel ... \bbl@tempa \csname #1@#2\endcsname 
                                                   \def \bbl@tempb {#3}\@safe...
-l.376 ...car?\textquotedbl }{subsection.4.2.12}{}}
+l.376 ...r?\textquotedbl {}}{subsection.4.2.12}{}}
                                                   
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \T1\textquotedbl 
-l.447 ...os Brincar?\textquotedbl }{chapter.11}{}}
+l.465 ... Brincar?\textquotedbl {}}{chapter.11}{}}
                                                   
 ? 
 ! Extra \endcsname.
 \@newl@bel ... \bbl@tempa \csname #1@#2\endcsname 
                                                   \def \bbl@tempb {#3}\@safe...
-l.447 ...os Brincar?\textquotedbl }{chapter.11}{}}
+l.465 ... Brincar?\textquotedbl {}}{chapter.11}{}}
                                                   
 ? 
 (./USPSC-TA-PosTextual/USPSC-Anexos_RedarTex.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos_RedarTex.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18114.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18175.
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 18114.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 18175.
 
 
 LaTeX Warning: There were undefined references.
@@ -6597,36 +6562,41 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18114.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18175.
+
+Overfull \hbox (24.74115pt too wide) in paragraph at lines 376--18175
+[]\T1/lmr/m/n/12 (-20) "Ciência e Cul-tura Va-mos Brin-car?"                   
+                                                                      "Ci-
+ []
+
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 18046 (\begingroup)
+### semi simple group (level 1) entered at line 18107 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 44021 strings out of 494468
- 837620 string characters out of 6175091
- 1097786 words of memory out of 5000000
- 45865 multiletter control sequences out of 15000+600000
- 656391 words of font info for 196 fonts, out of 8000000 for 9000
+ 44043 strings out of 494468
+ 838614 string characters out of 6175091
+ 1097278 words of memory out of 5000000
+ 45872 multiletter control sequences out of 15000+600000
+ 649310 words of font info for 191 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 73i,18n,98p,2385b,853s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,18n,98p,2210b,853s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texm
-f/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.
-enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/
+f/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.
+enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/
 enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on USPSC-modelo-IAU_RedarTex.pdf (235 pages, 16657236 bytes).
+/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on USPSC-modelo-IAU_RedarTex.pdf (239 pages, 17736219 bytes).
 PDF statistics:
- 2481 PDF objects out of 2487 (max. 8388607)
- 2102 compressed objects within 22 object streams
- 788 named destinations out of 1000 (max. 500000)
- 33351 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 2528 PDF objects out of 2984 (max. 8388607)
+ 2140 compressed objects within 22 object streams
+ 799 named destinations out of 1000 (max. 500000)
+ 33398 words of extra memory for PDF output out of 35830 (max. 10000000)
 

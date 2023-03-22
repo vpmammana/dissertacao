@@ -444,6 +444,17 @@ chmod u+x ../../latex/USPSC-3.1/troca_cursomaiuscula.bash
 find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/CURSO [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[cursomaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_cursomaiuscula.bash
 ../../latex/USPSC-3.1/troca_cursomaiuscula.bash
 
+
+
+
+#Troca Tese (Doutorado) 
+touch ../../latex/USPSC-3.1/troca_tesedoutorado.bash
+chmod u+x ../../latex/USPSC-3.1/troca_tesedoutorado.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Tese (Doutorado)/Dissert. (Mestrado)/g\" "$0;}' >../../latex/USPSC-3.1/troca_tesedoutorado.bash
+../../latex/USPSC-3.1/troca_tesedoutorado.bash
+
+
+
 #Troca o mestreoudoutor - nao aparece TITULO em maiuscula, segundo o verificador.bash
 touch ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
 chmod u+x ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash

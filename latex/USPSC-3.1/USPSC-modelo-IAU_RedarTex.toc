@@ -58,7 +58,7 @@
 \contentsline {section}{\numberline {4.1}Narrativas contru\'{\i }das a partir do m\'etodo historiogr\'afico (eixo 1)}{119}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}O GESAC e sua contribui\c {c}\~ao para a cultura digital no pa\'{\i }s}{119}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}A avalia\c {c}\~ao do OLPC pelo CTI como g\^enese do WASH}{133}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}A avalia\c {c}\~ao do PID pelo CTI como g\^enese do WASH}{144}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.3}A avalia\c {c}\~ao do PID pelo CTI como g\^enese do WASH}{143}{subsection.4.1.3}% 
 \contentsline {subsection}{\numberline {4.1.4}Papert no Brasil pela \'otica de Afira Ripper}{146}{subsection.4.1.4}% 
 \contentsline {subsection}{\numberline {4.1.5}A hist\'oria, a pr\'atica, os valores e os conceitos do Programa WASH}{149}{subsection.4.1.5}% 
 \contentsline {subsection}{\numberline {4.1.6}WASH na pandemia}{161}{subsection.4.1.6}% 
@@ -74,7 +74,7 @@
 \contentsline {subsection}{\numberline {4.2.9}Distribui\c {c}\~ao et\'aria nos eventos}{186}{subsection.4.2.9}% 
 \contentsline {subsection}{\numberline {4.2.10}Distribui\c {c}\~ao de atividades realizadas nos eventos}{187}{subsection.4.2.10}% 
 \contentsline {subsection}{\numberline {4.2.11}Cidades Atendidas}{188}{subsection.4.2.11}% 
-\contentsline {subsection}{\numberline {4.2.12}Canal do WASH e a webs\'erie \textquotedbl {}Ci\^encia e Cultura Vamos Brincar?\textquotedbl {}}{188}{subsection.4.2.12}% 
+\contentsline {subsection}{\numberline {4.2.12}Canal do WASH e a webs\'erie \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }{188}{subsection.4.2.12}% 
 \contentsline {section}{\numberline {4.3}Linhas de Tempo}{189}{section.4.3}% 
 \contentsline {subsection}{\numberline {4.3.1}Trajet\'oria do Programa WASH}{190}{subsection.4.3.1}% 
 \contentsline {subsection}{\numberline {4.3.2}Trajet\'oria de Pol\'{\i }ticas P\'ublicas}{190}{subsection.4.3.2}% 
@@ -87,7 +87,7 @@
 \contentsline {subsection}{\numberline {4.4.5}Hip\'otese 5: WASH como proto-pol\'{\i }tica p\'ublica}{194}{subsection.4.4.5}% 
 \contentsline {subsection}{\numberline {4.4.6}Hip\'otese 6: WASH como organiza\c {c}\~ao heter\'arquica}{195}{subsection.4.4.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~OES}}{199}{chapter.5}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\~AO}}{199}{chapter.5}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {RECOMENDA\c {C}\~OES}}{203}{chapter.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -101,7 +101,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {10}\MakeTextUppercase {AP\^ENDICE B: revis\~ao sobre Bancos de Dados Relacionais}}{225}{chapter.10}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {11}\MakeTextUppercase {AP\^ENDICE C: ficha t\'ecnica do \textquotedbl {}Ci\^encia e Cultura Vamos Brincar?\textquotedbl {}}}{231}{chapter.11}% 
+\contentsline {chapter}{\chapternumberline {11}\MakeTextUppercase {AP\^ENDICE C: ficha t\'ecnica do \textquotedbl Ci\^encia e Cultura Vamos Brincar?\textquotedbl }}{231}{chapter.11}% 
 \vspace {\cftbeforechapterskip }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

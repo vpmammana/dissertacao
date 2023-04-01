@@ -4,6 +4,10 @@
 
 # ATENÇÃO -> o awk tem que ser o mawk. Não funciona com gawk (GNU)
 
+cp -f ../../latex/USPSC-3.1/USPSC-classe/classe-especial-dissertacao.cls ../../latex/USPSC-3.1/USPSC-classe/USPSC.cls 
+cp -f ../../latex/USPSC-3.1/USPSC-classe/classe-especial-dissertacao1.cls ../../latex/USPSC-3.1/USPSC-classe/USPSC1.cls 
+
+
 echo "Executando Inicializa "
 
 pwd
@@ -178,7 +182,10 @@ sed -i "s/orientadorcorpoficha[{]orientadora Elisa Gon\\\c[{]c[}]alves Rodrigues
 sed -i "s/orientadorficha[{]Rodrigues, Elisa Gon\\\c[{]c[}]alves, orient[}]/orientadorficha{@[orientadorficha]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex          
 sed -i "s/orientadorcorpoficha[{]orientadora Elisa Gon\\\c[{]c[}]alves Rodrigues ;  co-orientador Jo\\\~ao Alves Serqueira[}]/orientadorcorpoficha{orientador(a) @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex          
 sed -i "s/orientadorficha[{]Rodrigues, Elisa Gon\\\c[{]c[}]alves, orient. II. Serqueira, Jo\\\~ao Alves, co-orient[}]/orientadorficha{@[orientadorficha]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex          
-sed -i "s/orientador[{]Profa. Dra. Elisa Gon\\\c[{]c[}]alves Rodrigues[}]/orientador{Prof(a). Dr(a). @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex           
+
+#só mudei esse para dar menos trabalho
+sed -i "s/orientador[{]Profa. Dra. Elisa Gon\\\c[{]c[}]alves Rodrigues[}]/orientador{}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex           
+
 sed -i "s/orientadorcorpoficha[{]orientadora Elisa Gon\\\c[{]c[}]alves Rodrigues[}]/orientadorcorpoficha{orientador(a) @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex           
 sed -i "s/orientadorficha[{]Rodrigues, Elisa Gon\\\c[{]c[}]alves, orient[}]/orientadorficha{@[orientadorficha]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex           
 sed -i "s/orientadorcorpoficha[{]orientadora Elisa Gon\\\c[{]c[}]alves Rodrigues ;  co-orientador Jo\\\~ao Alves Serqueira[}]/orientadorcorpoficha{orientador(a) @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex           
@@ -251,7 +258,9 @@ sed -i "s/orientadoradic[{]Advisor: Profa. Dra. Elisa Gon\\\c[{]c[}]alves Rodrig
 sed -i "s/orientadoradic[{]Orientadora: Profa. Dra. Elisa Gon\\\c[{]c[}]alves Rodrigues[}]/orientadoradic{Orientador(a): Prof(a). Dr(a). @[orientador]@}/g" ../../latex/USPSC-3.1/USPSC-TCC-pre-textual-ICMC.tex                 
 
 sed -i "s/coorientador[{]Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientador{Prof(a). Dr(a). @[coorientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-EESC.tex                 
-sed -i "s/coorientador[{]Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientador{Prof(a). Dr(a). @[coorientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex                  
+
+#só mudei esse para ficar mais fácil
+sed -i "s/coorientador[{]Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientador{}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IAU.tex                  
 sed -i "s/coorientador[{]Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientador{Prof(a). Dr(a). @[coorientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-ICMC.tex                 
 sed -i "s/coorientador[{]Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientador{Prof(a). Dr(a). @[coorientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IFSC.tex                 
 sed -i "s/coorientador[{]Prof. Dr. Jo\\\~ao Alves Serqueira[}]/coorientador{Prof(a). Dr(a). @[coorientador]@}/g" ../../latex/USPSC-3.1/USPSC-pre-textual-IQSC.tex                 
@@ -300,9 +309,17 @@ find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{p
 #Troca o nome da Universidade
 touch ../../latex/USPSC-3.1/troca_universidade.bash
 chmod u+x ../../latex/USPSC-3.1/troca_universidade.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Universidade de S\\\\\~ao Paulo/@[universidade]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_universidade.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/, Universidade de S\\\\\~ao Paulo/ da @[universidade]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_universidade.bash
 # voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
 ../../latex/USPSC-3.1/troca_universidade.bash
+
+#Troca o nome da Universidade
+touch ../../latex/USPSC-3.1/troca_orientador_coorientador.bash
+chmod u+x ../../latex/USPSC-3.1/troca_orientador_coorientador.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Orientadora:/Orientador: @[orientador]@ Coorientador: @[coorientador]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_orientador_coorientador.bash
+# voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
+../../latex/USPSC-3.1/troca_orientador_coorientador.bash
+
 
 #Troca o nome da Universidade maiuscula
 touch ../../latex/USPSC-3.1/troca_universidade_m.bash
@@ -314,7 +331,7 @@ find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{p
 #Troca o nome da Universidade
 touch ../../latex/USPSC-3.1/troca_universidade2.bash
 chmod u+x ../../latex/USPSC-3.1/troca_universidade2.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v aspas="\"" '{print "sed -i \"s/Universidade Estadual Paulista .J\\\\\\"quote"ulio de Mesquita Filho./@[universidade]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_universidade2.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v aspas="\"" '{print "sed -i \"s/, Universidade Estadual Paulista .J\\\\\\"quote"ulio de Mesquita Filho./ da @[universidade]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_universidade2.bash
 # voce pode executar o bash abaixo manualmente, chamando no prompt, ou tirando a marca de comentario
 ../../latex/USPSC-3.1/troca_universidade2.bash
 #nao ha casos de UNESP maiuscula segundo o verificador
@@ -338,10 +355,10 @@ chmod u+x ../../latex/USPSC-3.1/troca_unidade_faculdade_escola.bash
 find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Escola de Engenharia de S\\\\\~ao Carlos/@[unidadefaculdade]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidade_faculdade_escola.bash
 ../../latex/USPSC-3.1/troca_unidade_faculdade_escola.bash
 
-#Troca o nome da unidadefaculdademaiuscula
+#Troca o nome da unidadefaculdademaiuscula - troquei em 2023 por nome do programa de pos em maiuscula para ficar no padrao da UTFPR
 touch ../../latex/USPSC-3.1/troca_unidade_faculdade_escola_maiuscula.bash
 chmod u+x ../../latex/USPSC-3.1/troca_unidade_faculdade_escola_maiuscula.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/ESCOLA DE ENGENHARIA DE S\\\\\~AO CARLOS/@[unidadefaculdademaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidade_faculdade_escola_maiuscula.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/ESCOLA DE ENGENHARIA DE S\\\\\~AO CARLOS/@[programaposmaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidade_faculdade_escola_maiuscula.bash
 ../../latex/USPSC-3.1/troca_unidade_faculdade_escola_maiuscula.bash
 
 #Troca o nome da unidadefaculdade mas respeita o chave no final
@@ -359,14 +376,14 @@ find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{p
 #Troca o nome da unidadefaculdademaiuscula respeita chave no final
 touch ../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
 chmod u+x ../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/FACULDADE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*[}]/@[unidadefaculdademaiuscula]@}/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/FACULDADE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*[}]/@[programaposmaiuscula]@}/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
 ../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_maiuscula2.bash
 
 
 #Troca o nome da unidadefaculdademaiuscula
 touch ../../latex/USPSC-3.1/troca_unidadefaculdademaiuscula2.bash
 chmod u+x ../../latex/USPSC-3.1/troca_unidadefaculdademaiuscula2.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/FACULDADE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdademaiuscula2.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/FACULDADE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(MANUFATURA)]*/@[programaposmaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdademaiuscula2.bash
 ../../latex/USPSC-3.1/troca_unidadefaculdademaiuscula2.bash
 
 #Troca o nome da unidadefaculdade respeita chave no final
@@ -385,14 +402,14 @@ find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{p
 #Troca o nome da unidadefaculdade respeita chave no final
 touch ../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_4.bash
 chmod u+x ../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_4.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/INSTITUTO DE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*[}]/@[unidadefaculdademaiuscula]@}/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_4.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/INSTITUTO DE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*[}]/@[programaposmaiuscula]@}/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_4.bash
 ../../latex/USPSC-3.1/troca_unidadefaculdade_respeita_chave_no_final_4.bash
 
 
 #Troca o nome da unidadefaculdade
 touch ../../latex/USPSC-3.1/troca_unidadefaculdade4.bash
 chmod u+x ../../latex/USPSC-3.1/troca_unidadefaculdade4.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/INSTITUTO DE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[unidadefaculdademaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdade4.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/INSTITUTO DE [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[programaposmaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_unidadefaculdade4.bash
 ../../latex/USPSC-3.1/troca_unidadefaculdade4.bash
 
 #Troca o nome da unidadefaculdade respeita chave no final
@@ -444,8 +461,24 @@ chmod u+x ../../latex/USPSC-3.1/troca_cursomaiuscula.bash
 find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/CURSO [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( DE )( E )(Manufatura)]*/@[cursomaiuscula]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_cursomaiuscula.bash
 ../../latex/USPSC-3.1/troca_cursomaiuscula.bash
 
+#Troca Tese (Doutorado) 
+touch ../../latex/USPSC-3.1/troca_area_concentracao.bash
+chmod u+x ../../latex/USPSC-3.1/troca_area_concentracao.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Arquitetura, Urbanismo e Tecnologia/Ensino/g\" "$0;}' >../../latex/USPSC-3.1/troca_area_concentracao.bash
+../../latex/USPSC-3.1/troca_area_concentracao.bash
 
 
+#Troca Tese (Doutorado) 
+touch ../../latex/USPSC-3.1/troca_tese_apresentada.bash
+chmod u+x ../../latex/USPSC-3.1/troca_tese_apresentada.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Tese apresentada/Disserta\\\\\\c{c}\\\\\\~ao apresentada/g\" "$0;}' >../../latex/USPSC-3.1/troca_tese_apresentada.bash
+../../latex/USPSC-3.1/troca_tese_apresentada.bash
+
+#Troca Thesis Doctor 
+touch ../../latex/USPSC-3.1/troca_thesis.bash
+chmod u+x ../../latex/USPSC-3.1/troca_thesis.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Thesis (Doctor)/Dissertation (Master)/g\" "$0;}' >../../latex/USPSC-3.1/troca_thesis.bash
+../../latex/USPSC-3.1/troca_thesis.bash
 
 #Troca Tese (Doutorado) 
 touch ../../latex/USPSC-3.1/troca_tesedoutorado.bash
@@ -453,43 +486,63 @@ chmod u+x ../../latex/USPSC-3.1/troca_tesedoutorado.bash
 find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/Tese (Doutorado)/Dissert. (Mestrado)/g\" "$0;}' >../../latex/USPSC-3.1/troca_tesedoutorado.bash
 ../../latex/USPSC-3.1/troca_tesedoutorado.bash
 
-
-
-#Troca o mestreoudoutor - nao aparece TITULO em maiuscula, segundo o verificador.bash
-touch ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-chmod u+x ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de Mestre[ ,;]/t\\\\\\"quote"itulo de @[mestreoudoutor]@ /g\" "$0;}' >../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-
-#Troca o mestreoudoutor
-touch ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-chmod u+x ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de Doutor[ ,;]/t\\\\\\"quote"itulo de @[mestreoudoutor]@ /g\" "$0;}' >../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-
-#Troca o mestreoudoutor
-touch ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-chmod u+x ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de Mestre.Doutor/t\\\\\\"quote"itulo de @[mestreoudoutor]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
-
-#Troca o titulo respeita chave no final
-touch ../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
-chmod u+x ../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*[}]/t\\\\\\"quote"itulo de @[titulopos]@}/g\" "$0;}' >../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
-../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
-
 #Troca o titulo
 touch ../../latex/USPSC-3.1/troca_titulo_pos.bash
 chmod u+x ../../latex/USPSC-3.1/troca_titulo_pos.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )( e )(Manufatura)]*/t\\\\\\"quote"itulo de @[titulopos]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_titulo_pos.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de Doutor em Arquitetura e Urbanismo/t\\\\\\"quote"itulo de @[titulopos]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_titulo_pos.bash
 ../../latex/USPSC-3.1/troca_titulo_pos.bash
+
+
+#Troca o mestreoudoutor - nao aparece TITULO em maiuscula, segundo o verificador.bash
+#touch ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#chmod u+x ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de Mestre[ ,;]/t\\\\\\"quote"itulo de @[mestreoudoutor]@ /g\" "$0;}' >../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+
+#Troca o mestreoudoutor
+#touch ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#chmod u+x ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de Doutor[ ,;]/t\\\\\\"quote"itulo de @[mestreoudoutor]@ /g\" "$0;}' >../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+
+#Troca o mestreoudoutor
+#touch ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#chmod u+x ../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de Mestre.Doutor/t\\\\\\"quote"itulo de @[mestreoudoutor]@/g\" "$0;}' >../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+#../../latex/USPSC-3.1/troca_mestreoudoutor_pos.bash
+
+#Troca o titulo respeita chave no final
+# touch ../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
+# chmod u+x ../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
+# find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/t\\\\\\"quote"itulo de [A-Za-z\\\\\\"quote"{}\\\\\~\\\\\^\\\\\\\"\\\\\`( de )]*[}]/t\\\\\\"quote"itulo de @[titulopos]@ teste}/g\" "$0;}' >../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
+# ../../latex/USPSC-3.1/troca_titulo_respeita_chave_no_final__pos.bash
+
 
 #Coloca um "para" entre os tags de programa_pos e unidadefaculdade, que eh uma forma forcada de resolver o problema 
 touch ../../latex/USPSC-3.1/afasta_programa_unidade.bash
 chmod u+x ../../latex/USPSC-3.1/afasta_programa_unidade.bash
-find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/@\[programapos\]@@\[unidadefaculdade\]@/@[programapos]@ vinculado a @[unidadefaculdade]@/g\" "$0;}' > ../../latex/USPSC-3.1/afasta_programa_unidade.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/@\[programapos\]@@\[unidadefaculdade\]@/@[programapos]@/g\" "$0;}' > ../../latex/USPSC-3.1/afasta_programa_unidade.bash
 ../../latex/USPSC-3.1/afasta_programa_unidade.bash
+
+
+#Coloca um "para" entre os tags de programa_pos e unidadefaculdade, que eh uma forma forcada de resolver o problema 
+touch ../../latex/USPSC-3.1/afasta_faculdade_universidade.bash
+chmod u+x ../../latex/USPSC-3.1/afasta_faculdade_universidade.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/@\[programapos\]@@\[universidade\]@/@[programapos]@ da @[universidade]@/g\" "$0;}' > ../../latex/USPSC-3.1/afasta_faculdade_universidade.bash
+../../latex/USPSC-3.1/afasta_faculdade_universidade.bash
+
+#Coloca um "para" entre os tags de programa_pos e unidadefaculdade, que eh uma forma forcada de resolver o problema 
+#touch ../../latex/USPSC-3.1/troca_keyword.bash
+#chmod u+x ../../latex/USPSC-3.1/troca_keyword.bash
+#find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/pdfkeywords=.abnt..latex..abntex..USPSC..trabalho acad\\\\\\^emico./pdfkeywords={STEM}{STEAM}{WASH}{Educa\\\\\\c{c}\\\\\\~ao}{Scratch}{Papert}{OLPC}{LOGO}{Audiovisual}/g\" "$0;}' > ../../latex/USPSC-3.1/troca_keyword.bash
+#../../latex/USPSC-3.1/troca_keyword.bash
+
+
+#Coloca um "para" entre os tags de programa_pos e unidadefaculdade, que eh uma forma forcada de resolver o problema 
+touch ../../latex/USPSC-3.1/afasta_programa_universidade.bash
+chmod u+x ../../latex/USPSC-3.1/afasta_programa_universidade.bash
+find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{print "sed -i \"s/@\[unidadefaculdade\]@@\[universidade\]@/@[unidadefaculdade]@ da @[universidade]@/g\" "$0;}' > ../../latex/USPSC-3.1/afasta_programa_universidade.bash
+../../latex/USPSC-3.1/afasta_programa_universidade.bash
 
 
 #á
@@ -655,7 +708,13 @@ find ../../latex/. | grep -i "\.tex" | grep -v "\/\.tex"  | awk -v quote="'" '{p
 ../../latex/USPSC-3.1/troca_acento_agudo_u_M.bash
 
 
+cp -f ../../latex/USPSC-3.1/USPSC-TA-PreTextual/lista-abreviaturas-2.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas.tex 
 
+cp -f ../../latex/USPSC-3.1/USPSC-TA-PreTextual/abstract-especial.tex ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-Abstract.tex
+
+
+cp -f ../../latex/USPSC-3.1/USPSC-TA-PreTextual/fichacatalografica.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf
+cp -f ../../latex/USPSC-3.1/USPSC-TA-PreTextual/termo-de-aprovacao.pdf ../../latex/USPSC-3.1/USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf
 
 
 

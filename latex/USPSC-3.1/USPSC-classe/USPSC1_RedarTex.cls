@@ -1290,7 +1290,13 @@
     \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
 
     \end{center}
-    \vfill
+    \vspace*{1cm}
+		\begin{center}
+    DISSERTA\c{C}\~AO DE MESTRADO
+    \end{center}
+
+
+	\vfill
     
     %\large\imprimirlocal
 		\imprimirlocal
@@ -1553,6 +1559,11 @@
 		\begin{center}
 			\ABNTEXchapterfont\bfseries\Large\imprimirtitulo
 		\end{center}
+    \vspace*{1cm}
+		\begin{center}
+    DISSERTA\c{C}\~AO DE MESTRADO
+    \end{center}
+
 			\vfill
 			\vfill
 		\begin{center}

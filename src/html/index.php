@@ -854,7 +854,7 @@ function gera_mostra_pdf_tese(){
 setTimeout(function () {popup_latex.style.visibility = "visible";}, 100); // settimeout para forçar visualização
 
 var resposta="";
-var url='../php/gera_tex2.php?mode=quiet';
+var url='../php/gera_tex2_USPSC.php?mode=quiet';
 var oReq=new XMLHttpRequest();
            oReq.open("GET", url, false);
            oReq.onload = function (e) {
@@ -869,6 +869,25 @@ var oReq=new XMLHttpRequest();
            oReq.send();
 }
 
+function gera_mostra_pdf_utfpr(){
+
+setTimeout(function () {popup_latex.style.visibility = "visible";}, 100); // settimeout para forçar visualização
+
+var resposta="";
+var url='../php/gera_tex2_utfpr.php?mode=quiet';
+var oReq=new XMLHttpRequest();
+           oReq.open("GET", url, false);
+           oReq.onload = function (e) {
+                     resposta=oReq.responseText;
+			popup_latex.style.visibility = "hidden";
+			alert(resposta); // atencao porque pode vir um erro de gera_tex2 na resposta. Mas isso depende de como o PHP estah configurado. No specchio vem erro, no pc local nao
+			window.open(resposta);
+		     //textarea.setAttribute("data-alterado","sem_gravar");
+		     //textarea.style.backgroundColor = cor_de_edicao; 
+
+	   }
+           oReq.send();
+}
 
 function insere_nova_secao_a_esq(nome_secao, id_tipo_secao, trecho_original){
 

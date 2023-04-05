@@ -15,7 +15,7 @@ if(isset($_GET["enfatiza_data"])){
 
 $id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura, para que posso haver substituicao depois
 
-$nome_base = "../../latex/utfpr/utfprct";
+$nome_base = "../../latex/utfpr/utfprct-tex/utfprct_RedarTex";
 $nome_do_tex = $nome_base.".tex";
 $nome_do_pdf = $nome_base.".pdf";
 $nome_do_cls = $nome_base.".cls";
@@ -167,7 +167,7 @@ if ($nome_tipo_secao == "imagem"){
 \\captionsetup{format=plain}
 \\begin{figure}[htb]\n
 	\\begin{center}\n
-		\\includegraphics[max size={\\textwidth}{\\textheight}]{../../imagens/".$texto."}\n
+		\\includegraphics[max size={\\textwidth}{\\textheight}]{../../../imagens/".$texto."}\n
 	\\end{center}\n
 	\\caption{\\label{".$id_arquivo."}@[caption-".$id_arquivo."]@}\n
 \\end{figure}\n";
@@ -176,7 +176,7 @@ if ($nome_tipo_secao == "imagem"){
 	{
         $texto_latex = "\\begin{minipage}[b]{0.4\\linewidth}
         \\centering
-                \\includegraphics[width=1.0\\linewidth]{../../imagens/".$texto."}
+                \\includegraphics[width=1.0\\linewidth]{../../../imagens/".$texto."}
                 \\caption{@[caption-".$id_arquivo."]@}
                 \\label{".$id_arquivo."}
 \\end{minipage}".impar($conta_mult_imagem[$nome_arquivo])."\n\\hspace{0.5cm}"; //.impar($conta_mult_imagem[$nome_arquivo]); // se tem porcento, não quebra a linha
@@ -230,7 +230,7 @@ $texto_latex = $texto_latex."\n\\end{tabular}
 if ($nome_tipo_secao == "multimagem"){ // note que o nome da secao chega aqui sem UNDERSCORE... isso é um risco de duplicidade de nomes... 
         $texto_latex="\n
 \\captionsetup{format=plain}
-\\begin{figure}[max size={\\textwidth}{\\textheight}]\n
+\\begin{figure}[htb]\n
 \\centering\n
 ";
         $conta_mult_imagem[$nome_arquivo] =1;
@@ -248,7 +248,7 @@ if ($nome_tipo_secao != "multimagem" && $nome_tipo_secao != "imagem" && $conta_m
 	//echo "Vai inserir secoes/paragrafos no arquivo: ".$nome_arquivo."\n";
 	file_put_contents($nome_arquivo, implode("",$file));
 
-}
+} // function insere
 
 function substitui_label_caption($nome_arquivo, $label_de_busca, $substituicao){
 
@@ -264,7 +264,7 @@ exec('sed -i "s/@\['.$label_de_busca.'\]@/'.$substituicao.'/g" '.$nome_arquivo, 
 }
 
 function converte_acento_para_exec($linha){
-
+return $linha;
 $linha = str_replace("á","\\\\\'a",$linha);
 $linha = str_replace("Á","\\\\\'A",$linha);
 $linha = str_replace("é","\\\\\'e",$linha);
@@ -298,7 +298,7 @@ return $linha;
 
 
 function converte_acento($linha){
-
+return $linha;
 $linha = str_replace("á","\\\\\\\\\\\\\"acute\"a",$linha);
 $linha = str_replace("Á","\\\\\\\\\\\\\"acute\"A",$linha);
 $linha = str_replace("é","\\\\\\\\\\\\\"acute\"e",$linha);
@@ -332,16 +332,21 @@ return $linha;
 function converte_acento_para_file_put($linha){
 //                        12345678
 
-
-$linha = str_replace("\"","\\textquotedbl ",$linha); // isso aqui não vai funcionar muito bem porque a segunda aspas ficara sem espaco com a proxima palavra. Melhor usar duplo backstick para abrir as aspas e duplo apostrofo para fechar
-$linha = str_replace("[[","",$linha);
-$linha = str_replace("]]","",$linha);
-
+$linha = str_replace("\\r","",$linha); // para tirar new line e carriage return. No caso de UTFPR está dando pau
+$linha = str_replace("\\n","",$linha);
 $linha = str_replace("_","\_",$linha);
 $linha = str_replace("}","\}",$linha); // se voce quiser usar comandos latex no box1 e box2, tem que tirar esta linha. Daí, todos o colchetes do texto precisam vir com \{
 $linha = str_replace("{","\{",$linha);
 $linha = str_replace("&","\&",$linha);
 $linha = str_replace("%","\%",$linha);
+// $linha = str_replace("?","\?",$linha);
+$linha = str_replace("{\"","{ \"",$linha); // isso aqui não vai funcionar muito bem porque a segunda aspas ficara sem espaco com a proxima palavra. Melhor usar duplo backstick para abrir as aspas e duplo apostrofo para fechar
+
+return $linha;
+
+$linha = str_replace("[[","",$linha);
+$linha = str_replace("]]","",$linha);
+
 $linha = str_replace("á","\'a",$linha);
 $linha = str_replace("Á","\'A",$linha);
 $linha = str_replace("é","\'e",$linha);
@@ -375,8 +380,11 @@ return $linha;
 
 
 function retorna_arquivos_que_tem_partes_textuais(){
+global $conta_mult_imagem;
 unset($retorno);
-exec("grep -HiRr \"^\\\\\\\\\\PosTexto\" ../../latex/utfpr/. | grep RedarTex | grep -v \.swp | awk 'BEGIN{FS=\":\"}{print $1}'",$retorno, $code );
+$retorno[] = "../../latex/utfpr/utfprct-tex/utfprct_RedarTex.tex"; 
+$conta_mult_imagem[$retorno[0]]=0;
+// exec("grep -HiRr \"^\\\\\\\\\\PosTexto\" ../../latex/utfpr/. | grep RedarTex | grep -v \.swp | awk 'BEGIN{FS=\":\"}{print $1}'",$retorno, $code );
 // if ($code) {error_log(print_r("CODIGO: grep >>>>".implode($retorno)."<<<<<<<<<<<<<\n", true));}
 return $retorno;
 } 
@@ -431,7 +439,7 @@ $database = "dissertacao_sem_eixo2";
 
 $conn= new mysqli("localhost", $username, $pass, $database);
 $myfile = fopen("../bash/copia_substitui_tex_utfpr.bash", "w") or die("Não foi possível abrir o arquivo!");
-$script_file = fopen("../../latex/utfpr/mimetiza_pdflatex_utfpr.bash","w") or die ("Não consegui abrir o arquivo de script");
+$script_file = fopen("../../latex/utfpr/utfprct-tex/mimetiza_pdflatex_utfpr.bash","w") or die ("Não consegui abrir o arquivo de script");
 
 fwrite($script_file, "/usr/bin/pdflatex -interaction=nonstopmode ".$nome_do_tex); // demorei um dia inteiro para perceber que tinha que usar /usr/bin - se usa no prompt nao e necessario - curioso
 fclose($script_file);
@@ -458,24 +466,24 @@ fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | gr
 ");
 
 
-fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\//,\"\",$0); gsub(/\//,\"\/\",$0); print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
+fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\/utfprct-tex\//,\"\",$0); gsub(/\//,\"\/\",$0); print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
 ");
 
-fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
+fwrite($myfile, "find ../../latex/* | grep -i \"\.cls\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.cls/,\"_RedarTex.cls\", $0); gsub(/\_RedarTex.cls/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\/utfprct-tex\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
 ");
 
 
 
-fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
+fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\/utfprct-tex\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
 ");
 
-//fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"/include[{]USPSC-TA-PreTextual\/USPSC-Errata_RedarTex[}]/d\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
+//fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\/utfprct-tex\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"/include[{]USPSC-TA-PreTextual\/USPSC-Errata_RedarTex[}]/d\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
 //");
 //
-//fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"/include[{]USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex[}]/d\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
+//fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\/utfprct-tex\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.tex\"quote\" | xargs sed -i \"quote\"/include[{]USPSC-TA-PosTextual\/USPSC-Apendices_RedarTex[}]/d\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
 //");
 
-//fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
+//fwrite($myfile, "find ../../latex/* | grep -i \"\.tex\" | grep -v \"USPSC\" | grep -v \"RedarTex\" | awk -v quote=\"'\" '{gsub(/\.tex/,\"_RedarTex.tex\", $0); gsub(/\_RedarTex.tex/,\"\", $0); gsub (/\.\.\/\.\.\/latex\/utfpr\/utfprct-tex\//,\"\",$0); gsub(/\//,\"\/\",$0);print \"find ../../latex/. -type f -name \"quote\"*_RedarTex.cls\"quote\" | xargs sed -i \"quote\"s/include[{]\"$0\"[}]/include{\"$0\"_RedarTex}/g\"quote\" \";}' | sort | uniq >> ../bash/copia_tex_utfpr.bash
 //");
 
 fwrite($myfile,"../bash/copia_tex_utfpr.bash\n\n");
@@ -559,10 +567,41 @@ if ($result->num_rows>0) {
 			if ($param_mode == "verbose") {echo "Vai gravar os comandos de substituicao no batch: ";}
 			fwrite($myfile,"touch ../bash/substitui_tex_utfpr_".$conta.".bash\n"); 
 			fwrite($myfile,"chmod u+x ../bash/substitui_tex_utfpr_".$conta.".bash\n");
-			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[".$nome_tipo_sem_underscore."\]@/".$texto_com_acentuacao_latex."/g\\\" \"$0}' > ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\|_RedarTex.cls\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[".$nome_tipo_sem_underscore."\]@/".$texto_com_acentuacao_latex."/g\\\" \"$0}' > ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+
+		if ($nome_tipo_sem_underscore == "autor") {
+		    unset($parts);
+			$parts = explode(" ", $texto_com_acentuacao_latex);
+			$lastname = array_pop($parts);
+			$firstname = implode(" ", $parts);
+		
+			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\|_RedarTex.cls\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[ultimonome\]@/".$lastname."/g\\\" \"$0}' >> ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\|_RedarTex.cls\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[primeirosnomes\]@/".$firstname."/g\\\" \"$0}' >> ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+		} // fim de autor
+
+		if ($nome_tipo_sem_underscore == "orientador") {
+		    unset($parts);
+			$parts = explode(" ", $texto_com_acentuacao_latex);
+			$lastname = array_pop($parts);
+			$firstname = implode(" ", $parts);
+		
+			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\|_RedarTex.cls\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[ultimonomeorientador\]@/".$lastname."/g\\\" \"$0}' >> ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\|_RedarTex.cls\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[primeirosnomesorientador\]@/".$firstname."/g\\\" \"$0}' >> ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+		} // fim de autor
+
+			
+		if ($nome_tipo_sem_underscore == "coorientador") {
+		    unset($parts);
+			$parts = explode(" ", $texto_com_acentuacao_latex);
+			$lastname = array_pop($parts);
+			$firstname = implode(" ", $parts);
+		
+			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\|_RedarTex.cls\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[ultimonomecoorientador\]@/".$lastname."/g\\\" \"$0}' >> ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+			fwrite($myfile,"find ../../latex/* | grep -v \"USPSC\" | grep -i \"\_RedarTex.tex\|_RedarTex.cls\" | awk -v acute=\"'\" -v tilde=\"~\" '{print \"sed -i \\\"s/@\[primeirosnomescoorientador\]@/".$firstname."/g\\\" \"$0}' >> ../bash/substitui_tex_utfpr_".$conta.".bash\n");
+		} // fim de autor
+
 			fwrite($myfile,"../bash/substitui_tex_utfpr_".$conta.".bash\n\n");
 		}
-			
 
 
 	}
@@ -643,6 +682,8 @@ if ($result->num_rows>0) {
 				$nome_tipo_secao == "item_lista_num"
 			   ) 
 			   {
+			   //var_dump($arquivos_textuais);
+			   //exit;
 		  		foreach ($arquivos_textuais as $value)
 				{
 					if ($nome_tipo_secao == 'paragrafo') {$texto_com_acentuacao_para_fileput = $texto_com_acentuacao_para_fileput."\n";}
@@ -670,7 +711,7 @@ if ($result->num_rows>0) {
 								$value, 
 								"% @[pontoinsercaotextoprincipal]@\n", 
 								$nome_tipo_sem_underscore, 	
-								"\n\\begin{alineas}", 
+								"\n\\begin{itemize}", 
 								$secao_sem_espaco_sem_underscore, 
 								$nivel
 							      ); 
@@ -682,7 +723,7 @@ if ($result->num_rows>0) {
 								$value, 
 								"% @[pontoinsercaotextoprincipal]@\n", 
 								$velho_tipo_sem_underscore, 
-								"\\end{alineas}\n", "", $nivel
+								"\\end{itemize}\n", "", $nivel
 							      );
 					
 						}
@@ -702,12 +743,12 @@ if ($result->num_rows>0) {
 				} // foreach
 			   }	
 			if ($nome_tipo_secao == "paragrafo_resumo") {
-					$conta_mult_imagem["../../latex/utfpr/PreTexto/resumo_RedarTex.tex"] = 0; // precisa atribuir para nao dar erro de falta de indice em insere
-					insere("../../latex/utfpr/PreTexto/resumo_RedarTex.tex", "% @[pontoinsercaoparagraforesumo]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
+					$conta_mult_imagem["../../latex/utfpr/utfprct-tex/PreTexto/resumo_RedarTex.tex"] = 0; // precisa atribuir para nao dar erro de falta de indice em insere
+					insere("../../latex/utfpr/utfprct-tex/PreTexto/resumo_RedarTex.tex", "% @[pontoinsercaoparagraforesumo]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
 				}
 			if ($nome_tipo_secao == "paragrafo_agradecimento") {
-					$conta_mult_imagem["../../latex/utfpr/PreTexto/agradecimentos_RedarTex.tex"] = 0;
-					insere("../../latex/utfpr/PreTexto/agradecimentos_RedarTex.tex", "% @[pontoinsercaoparagrafoagradecimento]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
+					$conta_mult_imagem["../../latex/utfpr/utfprct-tex/PreTexto/agradecimentos_RedarTex.tex"] = 0;
+					insere("../../latex/utfpr/utfprct-tex/PreTexto/agradecimentos_RedarTex.tex", "% @[pontoinsercaoparagrafoagradecimento]@\n", $nome_tipo_sem_underscore, $texto_com_acentuacao_para_fileput, $secao_sem_espaco_sem_underscore, $nivel);
 				}
 
 			$velho_nome_tipo_secao = $nome_tipo_secao;

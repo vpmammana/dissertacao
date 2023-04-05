@@ -1890,7 +1890,7 @@ Conteúdos elaborados por terceiros, citados e referenciados nesta obra não sã
 %% Lista de abreviaturas, siglas e acrônimos
 \newcommand{\incluirlistadeacronimos}[1]{%% Definição do comando para inclusão da lista de abreviaturas, siglas e acrônimos
   \ifthenelse{\equal{#1}{file}}{%% Lista de abreviaturas, siglas e acrônimos usando arquivo
-    \include{./PreTexto/file-acronimos}%% Impressão da lista de abreviaturas, siglas e acrônimos
+    \include{./PreTexto/file-acronimos_RedarTex}%% Impressão da lista de abreviaturas, siglas e acrônimos
     \cleardoublepage%% Página de verso
   }{%%
     \ifthenelse{\equal{#1}{glossaries}}{%% Lista de abreviaturas, siglas e acrônimos através do pacote glossaries

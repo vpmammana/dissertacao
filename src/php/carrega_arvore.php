@@ -148,10 +148,10 @@ teste
 <div style='float: right; display: table-row; padding-left: 10px'>
 <table>
 <tr>
-<td><input type='button' value='Cria PDF Dissertacao/Tese' onclick='gera_mostra_pdf_tese()'></td>
+<td><input type='button' value='Cria PDF USPSC' onclick='gera_mostra_pdf_tese()'></td>
 </tr>
 <tr>
-<td><input type='button' value='Cria PDF Relatório'></td>
+<td><input type='button' value='Cria PDF UTFPR' onclick='gera_mostra_pdf_utfpr()'></td>
 </tr>
 </table>
 </div>

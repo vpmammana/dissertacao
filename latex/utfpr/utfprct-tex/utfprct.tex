@@ -3,6 +3,8 @@
 %%
 %% Modified version of project 'utfprpgtex' maintained 
 %% by Luiz E. M. Lima
+%% 
+%% Modificado por Victor Pellegrini Mammana (MCTI) para permitir a automatização da geração do documento, através do projeto RedarTex
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -80,7 +82,7 @@
   %spanish,%% Idioma adicional para hifenização (suporte parcial)
   english,%% Idioma adicional para hifenização  (colocar em último para doc. em inglês)  
   brazil%% Idioma principal do documento (último da lista) 
-]{utfprct}%% Classe utfprct
+]{utfprct_RedarTex}%% Classe utfprct
 
 %%%%%%%%
 % Documento em Inglês: colocar o "english" como último idioma carregado no documentclass, sendo o último a língua principal do documento.
@@ -108,12 +110,39 @@
 %%   utfprct: abntex2cite, ae, algorithmic, amsmath, backref, breakurl, caption, subcaption, cmap, color, eepic, epic, epsfig, etoolbox, fancyhdr, fix-cm, fontenc, glossaries, graphics, graphicx, helvet, hyphenat, indentfirst, inputenc, lastpage, morewrites, nomencl, sfmath, sistyle, substr, times, xtab, pdfpages.
 
 %% Pacotes adicionais (\usepackage[options]{package})
+
+\usepackage[autostyle=false, style=english]{csquotes}
+\MakeOuterQuote{"}
 \usepackage{bigdelim, booktabs, colortbl, longtable, multirow}%% Ferramentas para tabelas
 \usepackage{amssymb, amstext, amsthm, icomma}%% Ferramentas para linguagem matemática
 \usepackage{pifont, textcomp, wasysym}%% Símbolos de texto
 
+%% inseridos por Victor Mammana
+\let\newfloat\undefined %% evita o erro de recarregar newfloat
+\usepackage{float}              % Fixa tabelas e figuras no local exato
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage[skip=2pt,font=scriptsize]{caption}
+\usepackage{subcaption}
+\usepackage{soul}
+
+
 % Refinamento tipográfico: diminui badboxes
 \usepackage{microtype}%
+\usepackage{chemfig,chemmacros} % Para escrever rea\c{c}\~oes qu\'{\i}micas
+\usepackage{tikz}               % Para escrever rea\c{c}\~oes qu\'{\i}micas e outros
+\usetikzlibrary{positioning}
+\usetikzlibrary{er}
+
+\usepackage{microtype}          % para melhorias de justifica\c{c}\~ao
+\usepackage{pdfpages}
+\usepackage{makeidx}            % para gerar \'{\i}ndice remissivo
+\usepackage{hyphenat}          % Pacote para retirar a hifenizacao do texto
+\usepackage[absolute]{textpos} % Pacote permite o posicionamento do texto
+\usepackage{eso-pic}           % Pacote para incluir imagem de fundo
+\usepackage{makebox}           % Pacote para criar caixa de texto
+
+
 
 %% Comandos personalizados (\newcommand{name}[num]{definition})
 \newcommand{\cpp}{\texttt{C$++$}}%% C++
@@ -158,7 +187,7 @@
 %%
 
 %% Arquivo de dados do modelo de documento LaTeX para produção de trabalhos acadêmicos da UTFPR
-\input{./utfprct-dados}%% Realize as modificações pertinentes no arquivo "utfprct-dados.tex"
+\input{./utfprct-dados_RedarTex}%% Realize as modificações pertinentes no arquivo "utfprct-dados.tex"
 
 %% Ferramenta para criação de índices
 \makeindex%% Não comente esta linha
@@ -167,10 +196,11 @@
 \makeglossaries%% Não comente esta linha
 
 %% Entradas da lista de abreviaturas, siglas e acrônimos
-\include{./PreTexto/entradas-acronimos}% Comente para remover este item
+
+%\include{./PreTexto/entradas-acronimos}% Comente para remover este item
 
 %% Entradas do glossário
-\include{./PosTexto/entradas-glossario}% Comente para remover este item
+%\include{./PosTexto/entradas-glossario}% Comente para remover este item
 
 %% Ferramenta para criação de nomenclaturas
 \makenomenclature%% Não comente esta linha
@@ -211,7 +241,7 @@
 %%
 %% Opções: CC-BY, CC-BY-SA, CC-BY-ND, CC-BY-NC, CC-BY-NC-SA, CC-BY-NC-ND, Nenhuma
 %%
-\Licenca{CC-BY}
+\Licenca{CC-BY-NC-SA}
 \incluirfolhaderosto*%% Com ficha catalográfica no verso 
 %\incluirfolhaderosto%% Sem ficha catalográfica no verso
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -233,7 +263,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Errata
-\include{./PreTexto/errata}%% Comente para remover este item
+%% \include{./PreTexto/errata}%% Comente para remover este item
 
 %% Folha ou Termo de aprovação (comente para remover este item)
 %% A folha de aprovação é entregue ao autor, quando aprovado, após
@@ -248,41 +278,41 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Dedicatória
 %%
-\include{./PreTexto/dedicatoria}%% Comente para remover este item
+\include{./PreTexto/dedicatoria_RedarTex}%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Agradecimentos
 %%
-\include{./PreTexto/agradecimentos}%% Comente para remover este item
+\include{./PreTexto/agradecimentos_RedarTex}%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Epígrafe
 %%
-\include{./PreTexto/epigrafe}%% Comente para remover este item
+\include{./PreTexto/epigrafe_RedarTex}%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Resumo
 %%
-\include{./PreTexto/resumo}%% Comente para remover este item
+\include{./PreTexto/resumo_RedarTex}%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Abstract
 %%
-\include{./PreTexto/abstract}%% Comente para remover este item
+\include{./PreTexto/abstract_RedarTex}%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Lista de algoritmos
 %%
-\incluirlistadealgoritmos%% Comente para remover este item
+%% \incluirlistadealgoritmos%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -317,7 +347,7 @@
 %%  2) Controle da ordem de apresentação das listas
 %%  3) Não é preciso referenciar no texto
 %%
-\incluirlistadeacronimos{glossaries}%% Opções: "glossaries" (pacote) ou "file" (arquivo) ou "none" (desabilita)
+\incluirlistadeacronimos{file}%% Opções: "glossaries" (pacote) ou "file" (arquivo) ou "none" (desabilita)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -333,7 +363,7 @@
 %%  2) Liberdade na organização das seções das listas
 %%  3) Controle da ordem de apresentação dentro das listas
 %%
-\incluirlistadesimbolos{nomencl}%% Opções: "nomencl" (pacote) ou "file" (arquivo) ou "none" (desabilita)
+\incluirlistadesimbolos{none}%% Opções: "nomencl" (pacote) ou "file" (arquivo) ou "none" (desabilita)
 
 %% Pretexto da lista de símbolos (opção pacote nomencl)
 %\renewcommand{\nompreamble}{Nomenclature...}
@@ -355,7 +385,7 @@
 %% Parte
 % \part{Introdução}%% Comente para remover este item
 
-@[pontoinsercaotextoprincipal]@
+% @[pontoinsercaotextoprincipal]@
 
 %% Capítulo
 %% \include{./Capitulo1/capitulo1}%% Comente para remover este item
@@ -396,8 +426,8 @@
 %% Arquivos de referências
 %%
 \arquivosdereferencias{%% Arquivos bibtex sem a extensão .bib e separados por vírgula - Não comente esta linha
-  ./PosTexto/exemplos-referencias,%% Arquivo de referências - Comente para remover este item (chktex 26 supress warn.)
-  ./PosTexto/referencias%% Arquivo de referências - Comente para remover este item (chktex 26 - supress warn.)
+%  ./PosTexto/exemplos-referencias,%% Arquivo de referências - Comente para remover este item (chktex 26 supress warn.)
+%  ./PosTexto/referencias%% Arquivo de referências - Comente para remover este item (chktex 26 - supress warn.)
 }%% Não comente esta linha
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -405,7 +435,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Glossário
 %%
-\incluirglossario%% Comente para remover este item
+%\incluirglossario%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -413,9 +443,9 @@
 %% Arquivos de apêndices
 %%
 \begin{arquivosdeapendices}%% Os arquivos de apêndices devem se incluídos neste ambiente - Não comente esta linha
-  \partapendices%% Página de início dos apêndices - Comente para remover este item
-  \include{./PosTexto/apendicea}%% Apêndice - Comente para remover este item
-  \include{./PosTexto/apendiceb}%% Apêndice - Comente para remover este item
+%  \partapendices%% Página de início dos apêndices - Comente para remover este item
+%  \include{./PosTexto/apendicea}%% Apêndice - Comente para remover este item
+%  \include{./PosTexto/apendiceb}%% Apêndice - Comente para remover este item
 \end{arquivosdeapendices}%% Não comente esta linha
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -424,9 +454,9 @@
 %% Arquivos de anexos
 %%
 \begin{arquivosdeanexos}%% Os arquivos de anexos devem se incluídos neste ambiente - Não comente esta linha  
-  \partanexos%% Página de início dos anexos - Comente para remover este item (ver Bug0001)
-  \include{./PosTexto/anexoa}%% Anexo - Comente para remover este item
-%  %\include{./PosTexto/anexob}%% Anexo - Comente para remover este item
+%  \partanexos%% Página de início dos anexos - Comente para remover este item (ver Bug0001)
+%  \include{./PosTexto/anexoa}%% Anexo - Comente para remover este item
+%%  %\include{./PosTexto/anexob}%% Anexo - Comente para remover este item
 \end{arquivosdeanexos}%% Não comente esta linha
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -434,9 +464,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Índice
 %%
-\incluirindice%% Comente para remover este item
+%\incluirindice%% Comente para remover este item
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Fim do documento
 \end{document}%% Não comente esta linha
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

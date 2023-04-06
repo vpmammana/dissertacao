@@ -880,7 +880,7 @@ var oReq=new XMLHttpRequest();
            oReq.onload = function (e) {
                      resposta=oReq.responseText;
 			popup_latex.style.visibility = "hidden";
-			alert(resposta); // atencao porque pode vir um erro de gera_tex2 na resposta. Mas isso depende de como o PHP estah configurado. No specchio vem erro, no pc local nao
+			// alert(resposta); // atencao porque pode vir um erro de gera_tex2 na resposta. Mas isso depende de como o PHP estah configurado. No specchio vem erro, no pc local nao
 			window.open(resposta);
 		     //textarea.setAttribute("data-alterado","sem_gravar");
 		     //textarea.style.backgroundColor = cor_de_edicao; 

@@ -82,7 +82,7 @@ sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-TCC-modelo-IQSC_RedarT
 sed -i "/Capítulo [1-5]/d" ../../latex/USPSC-3.1/./USPSC-modelo_RedarTex.tex
 touch ../bash/substitui_tex_1.bash
 chmod u+x ../bash/substitui_tex_1.bash
-find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/HIST\\\\\\"acute"ORIA E CARACTERIZA\\\\\\c{C}\\\\\~AO DE 10 ANOS DO WASH, UM PROGRAMA HETER\\\\\\"acute"ARQUICO DE APRENDIZAGEM STEAM - TESTE/g\" "$0}' > ../bash/substitui_tex_1.bash
+find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulo\]@/HIST\\\\\\"acute"ORIA E CARACTERIZA\\\\\\c{C}\\\\\~AO DE 10 ANOS DO WASH, UM PROGRAMA HETER\\\\\\"acute"ARQUICO DE APRENDIZAGEM STEAM/g\" "$0}' > ../bash/substitui_tex_1.bash
 ../bash/substitui_tex_1.bash
 
 touch ../bash/substitui_tex_2.bash
@@ -127,7 +127,7 @@ find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="
 
 touch ../bash/substitui_tex_10.bash
 chmod u+x ../bash/substitui_tex_10.bash
-find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[programapos\]@/PROGRAMA DE P\\\\\\"acute"OS-GRADUA\\\\\\c{C}\\\\\~AO EM ENSINO DE CI\\\\\^ENCIAS HUMANAS, SOCIAIS E DA NATUREZA - PPGEN/g\" "$0}' > ../bash/substitui_tex_10.bash
+find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[programapos\]@/Programa de P\\\\\\"acute"os-Gradua\\\\\\c{c}\\\\\~ao em Ensino de Ci\\\\\^encias Humanas, Sociais e da Natureza - PPGEN/g\" "$0}' > ../bash/substitui_tex_10.bash
 ../bash/substitui_tex_10.bash
 
 touch ../bash/substitui_tex_11.bash
@@ -142,17 +142,17 @@ find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="
 
 touch ../bash/substitui_tex_13.bash
 chmod u+x ../bash/substitui_tex_13.bash
-find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulopos\]@/Mestre em Ensino de Ci\\\\\^encias Humanas, Sociais e da Natureza/g\" "$0}' > ../bash/substitui_tex_13.bash
+find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[titulopos\]@/Ensino de Ci\\\\\^encias Humanas, Sociais e da Natureza/g\" "$0}' > ../bash/substitui_tex_13.bash
 ../bash/substitui_tex_13.bash
 
 touch ../bash/substitui_tex_14.bash
 chmod u+x ../bash/substitui_tex_14.bash
-find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[universidade\]@/UNIVERSIDADE TECNOL\\\\\\"acute"OGICA FEDERAL DO PARAN\\\\\\"acute"A/g\" "$0}' > ../bash/substitui_tex_14.bash
+find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[universidade\]@/Universidade Tecnol\\\\\\"acute"ogica Federal do Paran\\\\\\"acute"a/g\" "$0}' > ../bash/substitui_tex_14.bash
 ../bash/substitui_tex_14.bash
 
 touch ../bash/substitui_tex_15.bash
 chmod u+x ../bash/substitui_tex_15.bash
-find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[universidademaiuscula\]@/UNIVERSIDADE TECNOL\\\\\\"acute"OGICA FEDERAL DO PARAN\\\\\\"acute"A/g\" "$0}' > ../bash/substitui_tex_15.bash
+find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[universidademaiuscula\]@/UTFPR/g\" "$0}' > ../bash/substitui_tex_15.bash
 ../bash/substitui_tex_15.bash
 
 touch ../bash/substitui_tex_16.bash
@@ -167,7 +167,7 @@ find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="
 
 touch ../bash/substitui_tex_18.bash
 chmod u+x ../bash/substitui_tex_18.bash
-find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[localidade\]@/LONDRINA 2023/g\" "$0}' > ../bash/substitui_tex_18.bash
+find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[localidade\]@/LONDRINA/g\" "$0}' > ../bash/substitui_tex_18.bash
 ../bash/substitui_tex_18.bash
 
 touch ../bash/substitui_tex_19.bash
@@ -177,7 +177,7 @@ find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="
 
 touch ../bash/substitui_tex_20.bash
 chmod u+x ../bash/substitui_tex_20.bash
-find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[epigrafe\]@/"Brasil Mostra Tua Cara". Brasil Meu Brasil ande pra frente. Venha com a gente pra Avenida desfilar . \\\\\\"acute"E chegada a hora da verdade. N\\\\\~ao \\\\\\"acute"e preciso mais voc\\\\\^e se disfar\\\\\\c{c}ar. Levante os panos, mostra tua cara. E assuma essa cara que voc\\\\\^e tem. Brasil Terra dos Ianom\\\\\^amis. Essas matas s\\\\\~ao de Oxossi. Deixa na terra as riquezas de Oxum. Devolva pro povo o que \\\\\\"acute"e do povo. Bote os malditos pra fora. E vamos refazer essa na\\\\\\c{c}\\\\\~ao. Pois,o pa\\\\\\"acute"{\i}s que  \\\\\\"acute"e o olho d’\\\\\\"acute"agua do mundo n\\\\\~ao pode ver sofrer. N\\\\\~ao pode ver chorar um povo que trabalha, canta e \\\\\\"acute"e feliz. Chega de tanta injusti\\\\\\c{c}a, chega de corrup\\\\\\c{c}\\\\\~ao. Vamos arrumar a casa, vamos dividir o nosso ch\\\\\~ao. E chega de sofrer e chega de chorar. Oh p\\\\\\"acute"atria amada idolatrada. Salve-se Brasil! Antonio Carlos (TC) Santos Silva Alu\\\\\\"acute"{\i}zio Jeremias (Samba Enredo, 1988)/g\" "$0}' > ../bash/substitui_tex_20.bash
+find ../../latex/* | grep -v "utfpr" | grep -i "\_RedarTex.tex" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[epigrafe\]@/Brasil Mostra Tua Cara - Brasil... Meu Brasil ande pra frente. Venha com a gente pra Avenida desfilar . \\\\\\"acute"E chegada a hora da verdade. N\\\\\~ao \\\\\\"acute"e preciso mais voc\\\\\^e se disfar\\\\\\c{c}ar. Levante os panos, mostra tua cara. E assuma essa cara que voc\\\\\^e tem. Brasil Terra dos Ianom\\\\\^amis. Essas matas s\\\\\~ao de Oxossi. Deixa na terra as riquezas de Oxum. Devolva pro povo o que \\\\\\"acute"e do povo. Bote os malditos pra fora. E vamos refazer essa na\\\\\\c{c}\\\\\~ao. Pois, o pa\\\\\\"acute"{\i}s que  \\\\\\"acute"e o olho d’\\\\\\"acute"agua do mundo n\\\\\~ao pode ver sofrer. N\\\\\~ao pode ver chorar um povo que trabalha, canta e \\\\\\"acute"e feliz. Chega de tanta injusti\\\\\\c{c}a, chega de corrup\\\\\\c{c}\\\\\~ao. Vamos arrumar a casa, vamos dividir o nosso ch\\\\\~ao. E chega de sofrer e chega de chorar. Oh p\\\\\\"acute"atria amada idolatrada. Salve-se Brasil! Antonio Carlos (TC) Santos Silva e Alu\\\\\\"acute"{\i}zio Jeremias (Samba Enredo, 1988)/g\" "$0}' > ../bash/substitui_tex_20.bash
 ../bash/substitui_tex_20.bash
 
 touch ../bash/substitui_tex_21.bash

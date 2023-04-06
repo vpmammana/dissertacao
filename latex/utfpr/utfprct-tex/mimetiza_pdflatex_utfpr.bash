@@ -1,1 +1,1 @@
-/usr/bin/pdflatex -interaction=nonstopmode ../../latex/utfpr/utfprct-tex/utfprct_RedarTex.tex
+/usr/bin/pdflatex -interaction=nonstopmode utfprct_RedarTex.tex

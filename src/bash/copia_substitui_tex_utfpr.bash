@@ -124,5 +124,3 @@ chmod u+x ../bash/substitui_tex_utfpr_22.bash
 find ../../latex/* | grep -v "USPSC" | grep -i "\_RedarTex.tex\|_RedarTex.cls" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ano\]@/2023/g\" "$0}' > ../bash/substitui_tex_utfpr_22.bash
 ../bash/substitui_tex_utfpr_22.bash
 
-echo "Talvez tenha dado certo..."
-pwd

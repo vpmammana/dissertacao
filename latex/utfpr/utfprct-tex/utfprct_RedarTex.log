@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  4 APR 2023 22:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  6 APR 2023 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3047,21 +3047,154 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
  [42] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.786 ...ealidade" (PIERANTI, 2022)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.786 ...ealidade" (PIERANTI, 2022)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
 \openout4 = `utfprct_RedarTex.mw'.
 
- [43]
-(./utfprct_RedarTex.mw)
+[43] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
+
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.812 ..., 1995, tradução livre).}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.812 ..., 1995, tradução livre).}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.818 ...ed) em diferentes formas."}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.818 ...ed) em diferentes formas."}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [44] (./utfprct_RedarTex.mw)
+[44] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
+
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.832 ...izada." (Fonte: Wikipedia)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.832 ...izada." (Fonte: Wikipedia)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.838 ..." (Fonte:  (CASTILHO,2008)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.838 ..." (Fonte:  (CASTILHO,2008)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.844 ...os." (fonte: PAPERT, 1994)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.844 ...os." (fonte: PAPERT, 1994)}\normalsize}}}
+                                                  \end{center}
+Cannot close any quote. The current level is 0.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [45]
-(./utfprct_RedarTex.mw)
+[45] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
@@ -3097,53 +3230,319 @@ Package pdftex.def Info: ../../../imagens/minitel.jpg  used on input line 884.
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
+
+
+! Package csquotes Error: Unbalanced groups or invalid nesting.
+
+See the csquotes package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.934 \item a) política pública "
+                                   Governo Eletrônico de Serviços de Atend...
+
+I have detected a group level mismatch. Verify that all groups
+and all active quotes are properly balanced and nested. If you
+continue, I will write a summary of all previously opened groups
+to the transcript file.
+
+
+### semi simple group (level 2) entered at line 933 (\begingroup)
+### semi simple group (level 1) entered at line 922 (\begingroup)
+### bottom level
+
+! OK.
+\csq@err@glevel ...he transcript file}\showgroups 
+                                                  
+l.934 \item a) política pública "
+                                   Governo Eletrônico de Serviços de Atend...
+
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.936 \item b
+             ) Programa de Inclusão Digital da Secretaria de Inclusão Digi...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 936
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.937 \item c
+             ) o Projeto Um Computador por Aluno (UCA), resultado da "tropic...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 937
+[][]
+ []
+
+! Undefined control sequence.
+\enit@enditemize ->\enit@after 
+                               \endlist \ifx \enit@series \relax \else \ifnu...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@enditemize ...x \else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.938 \end{itemize}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.938 \end{itemize}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.938 \end{itemize}
+                   
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+\enit@enditemize ...ist \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.938 \end{itemize}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.938 \end{itemize}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.938 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.938 \end{itemize}
+                   
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.938 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.938 \end{itemize}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
 \openout4 = `utfprct_RedarTex.mw'.
 
- [51] (./utfprct_RedarTex.mw)
+[51] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [52]
+ [52] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [53]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [53] (./utfprct_RedarTex.mw)
+ [54] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [54]
+ [55]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [55] (./utfprct_RedarTex.mw)
+ [56] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [56]
+ [57]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [57] (./utfprct_RedarTex.mw)
+ [58] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [58]
+ [59]
 (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [59] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 <../../../imagens/criadores-logo.png, id=741, 311.1625pt x 256.96pt>
@@ -3184,13 +3583,13 @@ Package pdftex.def Info: ../../../imagens/logo-PDP11.png  used on input line 11
 (pdftex.def)             Requested size: 182.09486pt x 144.09319pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [60]
+ [60] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [61]
 (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [61] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 <../../../imagens/Scratch-Block.png, id=756, 853.1875pt x 770.88pt>
@@ -3201,68 +3600,68 @@ Package pdftex.def Info: ../../../imagens/Scratch-Block.png  used on input line
 (pdftex.def)             Requested size: 182.09486pt x 164.52441pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [62]
+ [62] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [63]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [63] (./utfprct_RedarTex.mw)
+ [64] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [64]
+ [65]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [65] (./utfprct_RedarTex.mw)
+ [66] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [66]
+ [67]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [67] (./utfprct_RedarTex.mw)
+ [68] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [68]
+ [69]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [69] (./utfprct_RedarTex.mw)
+ [70] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [70]
+ [71]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [71] (./utfprct_RedarTex.mw)
+ [72] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [72]
+ [73]
 (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [73] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 
@@ -3332,12 +3731,7 @@ Overfull \hbox (31.79211pt too wide) in paragraph at lines 1393--1404
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [85] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [86 <../../../imagens/criadores-logo.png> <../../../imagens/criancas-1968.png>
+ [85 <../../../imagens/criadores-logo.png> <../../../imagens/criancas-1968.png>
  <../../../imagens/Elmer-Elsie4.jpg> <../../../imagens/historia-logo-turtle-01.
 jpg> <../../../imagens/Papert-x640.jpg> <../../../imagens/logo-PDP11.png>] (./u
 tfprct_RedarTex.mw)
@@ -3345,15 +3739,19 @@ tfprct_RedarTex.mw)
 
 \openout4 = `utfprct_RedarTex.mw'.
 
-
-[87 <../../../imagens/Scratch-Block.png>] (./utfprct_RedarTex.mw)
+ [86 <../../../imagens/Scratch-Block.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [88
+ [87
 
-]
+] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [88]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
@@ -3401,12 +3799,7 @@ tfprct_RedarTex.mw)
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-\openout4 = `utfprct_RedarTex.mw'.
-
- [97] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-<../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=912, 193.9245pt 
+<../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=908, 193.9245pt 
 x 308.352pt>
 File: ../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg Graphic file (t
 ype jpg)
@@ -3414,7 +3807,7 @@ ype jpg)
 Package pdftex.def Info: ../../../imagens/blurred-Presenca-Oficina-2014-08-23.j
 peg  used on input line 1841.
 (pdftex.def)             Requested size: 182.09486pt x 289.54509pt.
-<../../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=913, 207.8967pt 
+<../../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=909, 207.8967pt 
 x 308.352pt>
 File: ../../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg Graphic file (t
 ype jpg)
@@ -3422,13 +3815,13 @@ ype jpg)
 Package pdftex.def Info: ../../../imagens/blurred-Presenca-Oficina-2014-09-06.j
 peg  used on input line 1848.
 (pdftex.def)             Requested size: 182.09486pt x 270.08963pt.
-<../../../imagens/blurred-planilha2.png, id=914, 922.94812pt x 337.26pt>
+<../../../imagens/blurred-planilha2.png, id=910, 922.94812pt x 337.26pt>
 File: ../../../imagens/blurred-planilha2.png Graphic file (type png)
 <use ../../../imagens/blurred-planilha2.png>
 Package pdftex.def Info: ../../../imagens/blurred-planilha2.png  used on input 
 line 1855.
 (pdftex.def)             Requested size: 182.09486pt x 66.53993pt.
-<../../../imagens/evolucao-da-documentacao.png, id=915, 673.51625pt x 455.7025p
+<../../../imagens/evolucao-da-documentacao.png, id=911, 673.51625pt x 455.7025p
 t>
 File: ../../../imagens/evolucao-da-documentacao.png Graphic file (type png)
 <use ../../../imagens/evolucao-da-documentacao.png>
@@ -3437,20 +3830,26 @@ Package pdftex.def Info: ../../../imagens/evolucao-da-documentacao.png  used on
 (pdftex.def)             Requested size: 673.5146pt x 455.70137pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [98]
+ [97] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [98 <../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg> <../../../imag
+ens/blurred-Presenca-Oficina-2014-09-06.jpeg> <../../../imagens/blurred-planilh
+a2.png>]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [99 <../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg> <../../../imag
-ens/blurred-Presenca-Oficina-2014-09-06.jpeg> <../../../imagens/blurred-planilh
-a2.png>] (./utfprct_RedarTex.mw)
+ [99 <../../../imagens/evolucao-da-documentacao.png>]
+(./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [100 <../../../imagens/evolucao-da-documentacao.png>] (./utfprct_RedarTex.mw)
+ [100] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
@@ -3494,14 +3893,14 @@ a2.png>] (./utfprct_RedarTex.mw)
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [108] (./utfprct_RedarTex.mw)
+ [108
+
+] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [109
-
-]
+ [109]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
@@ -3516,12 +3915,7 @@ a2.png>] (./utfprct_RedarTex.mw)
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-\openout4 = `utfprct_RedarTex.mw'.
-
- [112] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-<../../../imagens/antenagesac.jpg, id=981, 642.4pt x 481.8pt>
+<../../../imagens/antenagesac.jpg, id=977, 642.4pt x 481.8pt>
 File: ../../../imagens/antenagesac.jpg Graphic file (type jpg)
 <use ../../../imagens/antenagesac.jpg>
 Package pdftex.def Info: ../../../imagens/antenagesac.jpg  used on input line 2
@@ -3529,131 +3923,129 @@ Package pdftex.def Info: ../../../imagens/antenagesac.jpg  used on input line 2
 (pdftex.def)             Requested size: 642.39844pt x 481.79881pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [113]
+ [112] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [113 <../../../imagens/antenagesac.jpg>] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [114] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [115]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [114 <../../../imagens/antenagesac.jpg>]
+ [116] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [117]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [115] (./utfprct_RedarTex.mw)
+ [118] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [116]
+ [119]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [117] (./utfprct_RedarTex.mw)
+ [120] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [118]
+ [121]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [119] (./utfprct_RedarTex.mw)
+ [122] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [120]
+ [123]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-\openout4 = `utfprct_RedarTex.mw'.
-
- [121] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [122]
-(./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [123] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [124]
-(./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-<../../../imagens/bantorafa.JPG, id=1032, 2055.68pt x 1541.76pt>
+<../../../imagens/bantorafa.JPG, id=1028, 2055.68pt x 1541.76pt>
 File: ../../../imagens/bantorafa.JPG Graphic file (type jpg)
 <use ../../../imagens/bantorafa.JPG>
 Package pdftex.def Info: ../../../imagens/bantorafa.JPG  used on input line 245
 6.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/oficinalac.JPG, id=1033, 2055.68pt x 1541.76pt>
+<../../../imagens/oficinalac.JPG, id=1029, 2055.68pt x 1541.76pt>
 File: ../../../imagens/oficinalac.JPG Graphic file (type jpg)
 <use ../../../imagens/oficinalac.JPG>
 Package pdftex.def Info: ../../../imagens/oficinalac.JPG  used on input line 24
 63.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/jabber.JPG, id=1034, 2055.68pt x 1541.76pt>
+<../../../imagens/jabber.JPG, id=1030, 2055.68pt x 1541.76pt>
 File: ../../../imagens/jabber.JPG Graphic file (type jpg)
 <use ../../../imagens/jabber.JPG>
 Package pdftex.def Info: ../../../imagens/jabber.JPG  used on input line 2470.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/lacelavince.JPG, id=1035, 2055.68pt x 1541.76pt>
+<../../../imagens/lacelavince.JPG, id=1031, 2055.68pt x 1541.76pt>
 File: ../../../imagens/lacelavince.JPG Graphic file (type jpg)
 <use ../../../imagens/lacelavince.JPG>
 Package pdftex.def Info: ../../../imagens/lacelavince.JPG  used on input line 2
 477.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/povo.JPG, id=1036, 2055.68pt x 1541.76pt>
+<../../../imagens/povo.JPG, id=1032, 2055.68pt x 1541.76pt>
 File: ../../../imagens/povo.JPG Graphic file (type jpg)
 <use ../../../imagens/povo.JPG>
 Package pdftex.def Info: ../../../imagens/povo.JPG  used on input line 2484.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [125] (./utfprct_RedarTex.mw)
+ [124] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [126 <../../../imagens/bantorafa.JPG> <../../../imagens/oficinalac.JPG> <../..
+ [125 <../../../imagens/bantorafa.JPG> <../../../imagens/oficinalac.JPG> <../..
 /../imagens/jabber.JPG> <../../../imagens/lacelavince.JPG> <../../../imagens/po
 vo.JPG>]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/lula-papert.jpg, id=1046, 642.4pt x 427.5975pt>
+<../../../imagens/lula-papert.jpg, id=1041, 642.4pt x 427.5975pt>
 File: ../../../imagens/lula-papert.jpg Graphic file (type jpg)
 <use ../../../imagens/lula-papert.jpg>
 Package pdftex.def Info: ../../../imagens/lula-papert.jpg  used on input line 2
 526.
 (pdftex.def)             Requested size: 182.09486pt x 121.20757pt.
-<../../../imagens/Kofi-negroponte.png, id=1047, 577.15625pt x 434.62375pt>
+<../../../imagens/Kofi-negroponte.png, id=1042, 577.15625pt x 434.62375pt>
 File: ../../../imagens/Kofi-negroponte.png Graphic file (type png)
 <use ../../../imagens/Kofi-negroponte.png>
 Package pdftex.def Info: ../../../imagens/Kofi-negroponte.png  used on input li
 ne 2533.
 (pdftex.def)             Requested size: 182.09486pt x 137.12605pt.
-<../../../imagens/presidente-italia.jpg, id=1048, 550.30594pt x 376.40625pt>
+<../../../imagens/presidente-italia.jpg, id=1043, 550.30594pt x 376.40625pt>
 File: ../../../imagens/presidente-italia.jpg Graphic file (type jpg)
 <use ../../../imagens/presidente-italia.jpg>
 Package pdftex.def Info: ../../../imagens/presidente-italia.jpg  used on input 
 line 2540.
 (pdftex.def)             Requested size: 182.09486pt x 124.5533pt.
-<../../../imagens/equipeOLPC.jpg, id=1049, 1199.48125pt x 899.36pt>
+<../../../imagens/equipeOLPC.jpg, id=1044, 1199.48125pt x 899.36pt>
 File: ../../../imagens/equipeOLPC.jpg Graphic file (type jpg)
 <use ../../../imagens/equipeOLPC.jpg>
 Package pdftex.def Info: ../../../imagens/equipeOLPC.jpg  used on input line 25
@@ -3661,28 +4053,28 @@ Package pdftex.def Info: ../../../imagens/equipeOLPC.jpg  used on input line 25
 (pdftex.def)             Requested size: 182.09486pt x 136.53122pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [127 <../../../imagens/lula-papert.jpg> <../../../imagens/Kofi-negroponte.png>
+ [126 <../../../imagens/lula-papert.jpg> <../../../imagens/Kofi-negroponte.png>
  <../../../imagens/presidente-italia.jpg> <../../../imagens/equipeOLPC.jpg>] (.
 /utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [128] (./utfprct_RedarTex.mw)
+ [127] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
 
-[129] (./utfprct_RedarTex.mw)
+[128] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [130] (./utfprct_RedarTex.mw)
+ [129] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/computer-room.png, id=1067, 757.83125pt x 404.51125pt>
+<../../../imagens/computer-room.png, id=1063, 757.83125pt x 404.51125pt>
 File: ../../../imagens/computer-room.png Graphic file (type png)
 <use ../../../imagens/computer-room.png>
 Package pdftex.def Info: ../../../imagens/computer-room.png  used on input line
@@ -3690,28 +4082,28 @@ Package pdftex.def Info: ../../../imagens/computer-room.png  used on input line
 (pdftex.def)             Requested size: 757.8294pt x 404.51025pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [131]
+ [130]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [132 <../../../imagens/computer-room.png>]
+ [131 <../../../imagens/computer-room.png>]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [133] (./utfprct_RedarTex.mw)
+ [132] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [134]
+ [133]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/embaixo-mesa.png, id=1086, 1105.12875pt x 411.5375pt>
+<../../../imagens/embaixo-mesa.png, id=1082, 1105.12875pt x 411.5375pt>
 File: ../../../imagens/embaixo-mesa.png Graphic file (type png)
 <use ../../../imagens/embaixo-mesa.png>
 Package pdftex.def Info: ../../../imagens/embaixo-mesa.png  used on input line 
@@ -3719,49 +4111,49 @@ Package pdftex.def Info: ../../../imagens/embaixo-mesa.png  used on input line
 (pdftex.def)             Requested size: 1105.12607pt x 411.5365pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [135 <../../../imagens/embaixo-mesa.png>]
+ [134 <../../../imagens/embaixo-mesa.png>]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [136] (./utfprct_RedarTex.mw)
+ [135] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [137]
+ [136]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [138] (./utfprct_RedarTex.mw)
+ [137] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [139]
+ [138]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [140] (./utfprct_RedarTex.mw)
+ [139] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [141]
+ [140]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [142] (./utfprct_RedarTex.mw)
+ [141] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/primeiro-wash-corte.png, id=1122, 1259.70625pt x 630.355pt>
+<../../../imagens/primeiro-wash-corte.png, id=1118, 1259.70625pt x 630.355pt>
 File: ../../../imagens/primeiro-wash-corte.png Graphic file (type png)
 <use ../../../imagens/primeiro-wash-corte.png>
 Package pdftex.def Info: ../../../imagens/primeiro-wash-corte.png  used on inpu
@@ -3769,37 +4161,37 @@ t line 2807.
 (pdftex.def)             Requested size: 1259.70319pt x 630.35345pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [143 <../../../imagens/primeiro-wash-corte.png>] (./utfprct_RedarTex.mw)
+ [142 <../../../imagens/primeiro-wash-corte.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [144] (./utfprct_RedarTex.mw)
+ [143] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
 
-[145] (./utfprct_RedarTex.mw)
+[144] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [146] (./utfprct_RedarTex.mw)
+ [145] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [147]
+ [146]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [148] (./utfprct_RedarTex.mw)
+ [147] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/ponte-wash.png, id=1149, 1437.37pt x 1003.75pt>
+<../../../imagens/ponte-wash.png, id=1145, 1437.37pt x 1003.75pt>
 File: ../../../imagens/ponte-wash.png Graphic file (type png)
 <use ../../../imagens/ponte-wash.png>
 Package pdftex.def Info: ../../../imagens/ponte-wash.png  used on input line 29
@@ -3807,57 +4199,62 @@ Package pdftex.def Info: ../../../imagens/ponte-wash.png  used on input line 29
 (pdftex.def)             Requested size: 1437.3665pt x 1003.74756pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [149]
+ [148]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [150 <../../../imagens/ponte-wash.png>]
+ [149 <../../../imagens/ponte-wash.png>]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [151] (./utfprct_RedarTex.mw)
+ [150] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [152]
+ [151]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [153] (./utfprct_RedarTex.mw)
+ [152] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [154]
+ [153]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [155] (./utfprct_RedarTex.mw)
+ [154] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [156]
+ [155]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/TVT.jpg, id=1184, 919.435pt x 1284.8pt>
+<../../../imagens/TVT.jpg, id=1179, 919.435pt x 1284.8pt>
 File: ../../../imagens/TVT.jpg Graphic file (type jpg)
 <use ../../../imagens/TVT.jpg>
 Package pdftex.def Info: ../../../imagens/TVT.jpg  used on input line 3024.
 (pdftex.def)             Requested size: 182.09486pt x 254.44608pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [157 <../../../imagens/TVT.jpg>] (./utfprct_RedarTex.mw)
+ [156 <../../../imagens/TVT.jpg>] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [157] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
@@ -3867,67 +4264,62 @@ Package pdftex.def Info: ../../../imagens/TVT.jpg  used on input line 3024.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [159] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [160]
+ [159]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [161] (./utfprct_RedarTex.mw)
+ [160] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [162]
+ [161]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [163] (./utfprct_RedarTex.mw)
+ [162] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [164]
+ [163]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [165] (./utfprct_RedarTex.mw)
+ [164] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [166]
+ [165]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [167] (./utfprct_RedarTex.mw)
+ [166] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [168]
+ [167]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/Evento-Ciencia-Em-Show.jpg, id=1235, 622.325pt x 414.54875pt>
+<../../../imagens/Evento-Ciencia-Em-Show.jpg, id=1230, 622.325pt x 414.54875pt>
 
 File: ../../../imagens/Evento-Ciencia-Em-Show.jpg Graphic file (type jpg)
 <use ../../../imagens/Evento-Ciencia-Em-Show.jpg>
 Package pdftex.def Info: ../../../imagens/Evento-Ciencia-Em-Show.jpg  used on i
 nput line 3290.
 (pdftex.def)             Requested size: 182.09486pt x 121.29771pt.
-<../../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1236, 2007.5pt x 13
+<../../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1231, 2007.5pt x 13
 37.99875pt>
 File: ../../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type
  jpg)
@@ -3935,7 +4327,7 @@ File: ../../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type
 Package pdftex.def Info: ../../../imagens/dia-das-criancas-2022-10-03-menor.JPG
   used on input line 3297.
 (pdftex.def)             Requested size: 182.09486pt x 121.35384pt.
-<../../../imagens/confraternizacao-de-natal-menor.jpeg, id=1237, 2007.5pt x 133
+<../../../imagens/confraternizacao-de-natal-menor.jpeg, id=1232, 2007.5pt x 133
 7.99875pt>
 File: ../../../imagens/confraternizacao-de-natal-menor.jpeg Graphic file (type 
 jpg)
@@ -3943,18 +4335,18 @@ jpg)
 Package pdftex.def Info: ../../../imagens/confraternizacao-de-natal-menor.jpeg 
  used on input line 3304.
 (pdftex.def)             Requested size: 182.09486pt x 121.35384pt.
-<../../../imagens/Evento-Greenk-2018-05-27.jpg, id=1238, 1043.9pt x 782.925pt>
+<../../../imagens/Evento-Greenk-2018-05-27.jpg, id=1233, 1043.9pt x 782.925pt>
 File: ../../../imagens/Evento-Greenk-2018-05-27.jpg Graphic file (type jpg)
 <use ../../../imagens/Evento-Greenk-2018-05-27.jpg>
 Package pdftex.def Info: ../../../imagens/Evento-Greenk-2018-05-27.jpg  used on
  input line 3311.
 (pdftex.def)             Requested size: 182.09486pt x 136.5719pt.
-<../../../imagens/MAAS.jpg, id=1239, 1043.9pt x 782.925pt>
+<../../../imagens/MAAS.jpg, id=1234, 1043.9pt x 782.925pt>
 File: ../../../imagens/MAAS.jpg Graphic file (type jpg)
 <use ../../../imagens/MAAS.jpg>
 Package pdftex.def Info: ../../../imagens/MAAS.jpg  used on input line 3318.
 (pdftex.def)             Requested size: 182.09486pt x 136.5719pt.
-<../../../imagens/Ciencia-Prado-publico.jpeg, id=1240, 1284.8pt x 856.19875pt>
+<../../../imagens/Ciencia-Prado-publico.jpeg, id=1235, 1284.8pt x 856.19875pt>
 File: ../../../imagens/Ciencia-Prado-publico.jpeg Graphic file (type jpg)
 <use ../../../imagens/Ciencia-Prado-publico.jpeg>
 Package pdftex.def Info: ../../../imagens/Ciencia-Prado-publico.jpeg  used on i
@@ -3964,7 +4356,7 @@ nput line 3325.
 
 LaTeX Warning: Float too large for page by 11.42982pt on input line 3330.
 
-<../../../imagens/evento-sao-miguel.png, id=1241, 706.64pt x 686.565pt>
+<../../../imagens/evento-sao-miguel.png, id=1236, 706.64pt x 686.565pt>
 File: ../../../imagens/evento-sao-miguel.png Graphic file (type png)
 <use ../../../imagens/evento-sao-miguel.png>
 Package pdftex.def Info: ../../../imagens/evento-sao-miguel.png  used on input 
@@ -3972,23 +4364,23 @@ line 3346.
 (pdftex.def)             Requested size: 182.09486pt x 176.92079pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
-[169] (./utfprct_RedarTex.mw)
+[168] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/output-participantes.jpeg, id=1246, 2258.4375pt x 3011.25pt>
+<../../../imagens/output-participantes.jpeg, id=1242, 2258.4375pt x 3011.25pt>
 File: ../../../imagens/output-participantes.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-participantes.jpeg>
 Package pdftex.def Info: ../../../imagens/output-participantes.jpeg  used on in
 put line 3372.
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
-<../../../imagens/output-participantes2.jpeg, id=1247, 2258.4375pt x 3011.25pt>
+<../../../imagens/output-participantes2.jpeg, id=1243, 2258.4375pt x 3011.25pt>
 
 File: ../../../imagens/output-participantes2.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-participantes2.jpeg>
 Package pdftex.def Info: ../../../imagens/output-participantes2.jpeg  used on i
 nput line 3379.
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
-<../../../imagens/output-media-participacoes.jpeg, id=1248, 2258.4375pt x 3011.
+<../../../imagens/output-media-participacoes.jpeg, id=1244, 2258.4375pt x 3011.
 25pt>
 File: ../../../imagens/output-media-participacoes.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-media-participacoes.jpeg>
@@ -3997,29 +4389,29 @@ Package pdftex.def Info: ../../../imagens/output-media-participacoes.jpeg  used
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [170] (./utfprct_RedarTex.mw)
+ [169] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [171]
+ [170]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/genero-todos-crop.jpeg, id=1258, 583.781pt x 504.284pt>
+<../../../imagens/genero-todos-crop.jpeg, id=1254, 583.781pt x 504.284pt>
 File: ../../../imagens/genero-todos-crop.jpeg Graphic file (type jpg)
 <use ../../../imagens/genero-todos-crop.jpeg>
 Package pdftex.def Info: ../../../imagens/genero-todos-crop.jpeg  used on input
  line 3440.
 (pdftex.def)             Requested size: 182.09486pt x 157.29596pt.
-<../../../imagens/distribuicao-sexo-bolsistas.png, id=1259, 678.535pt x 415.552
+<../../../imagens/distribuicao-sexo-bolsistas.png, id=1255, 678.535pt x 415.552
 5pt>
 File: ../../../imagens/distribuicao-sexo-bolsistas.png Graphic file (type png)
 <use ../../../imagens/distribuicao-sexo-bolsistas.png>
 Package pdftex.def Info: ../../../imagens/distribuicao-sexo-bolsistas.png  used
  on input line 3447.
 (pdftex.def)             Requested size: 182.09486pt x 111.51585pt.
-<../../../imagens/bolsas-anualmente-recorte-b-crop.png, id=1260, 1010.77625pt x
+<../../../imagens/bolsas-anualmente-recorte-b-crop.png, id=1256, 1010.77625pt x
  395.4775pt>
 File: ../../../imagens/bolsas-anualmente-recorte-b-crop.png Graphic file (type 
 png)
@@ -4029,10 +4421,10 @@ Package pdftex.def Info: ../../../imagens/bolsas-anualmente-recorte-b-crop.png
 (pdftex.def)             Requested size: 1010.77377pt x 395.47653pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [172] (./utfprct_RedarTex.mw)
+ [171] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/quantidade-bolsistas-3.png, id=1265, 1097.09875pt x 416.55624
+<../../../imagens/quantidade-bolsistas-3.png, id=1261, 1097.09875pt x 416.55624
 pt>
 File: ../../../imagens/quantidade-bolsistas-3.png Graphic file (type png)
 <use ../../../imagens/quantidade-bolsistas-3.png>
@@ -4041,11 +4433,11 @@ nput line 3493.
 (pdftex.def)             Requested size: 1097.09608pt x 416.55522pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [173]
+ [172]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/duracao-bolsas.png, id=1270, 644.4075pt x 622.325pt>
+<../../../imagens/duracao-bolsas.png, id=1266, 644.4075pt x 622.325pt>
 File: ../../../imagens/duracao-bolsas.png Graphic file (type png)
 <use ../../../imagens/duracao-bolsas.png>
 Package pdftex.def Info: ../../../imagens/duracao-bolsas.png  used on input lin
@@ -4053,16 +4445,16 @@ e 3557.
 (pdftex.def)             Requested size: 644.40593pt x 622.32347pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [174] (./utfprct_RedarTex.mw)
+ [173] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [175]
+ [174]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/documentos-gerados.png, id=1280, 1270.7475pt x 462.72874pt>
+<../../../imagens/documentos-gerados.png, id=1276, 1270.7475pt x 462.72874pt>
 File: ../../../imagens/documentos-gerados.png Graphic file (type png)
 <use ../../../imagens/documentos-gerados.png>
 Package pdftex.def Info: ../../../imagens/documentos-gerados.png  used on input
@@ -4070,22 +4462,22 @@ Package pdftex.def Info: ../../../imagens/documentos-gerados.png  used on input
 (pdftex.def)             Requested size: 1270.7444pt x 462.72762pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [176] (./utfprct_RedarTex.mw)
+ [175] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/areas-conhecimento.png, id=1285, 902.37125pt x 597.23125pt>
+<../../../imagens/areas-conhecimento.png, id=1281, 902.37125pt x 597.23125pt>
 File: ../../../imagens/areas-conhecimento.png Graphic file (type png)
 <use ../../../imagens/areas-conhecimento.png>
 Package pdftex.def Info: ../../../imagens/areas-conhecimento.png  used on input
  line 3628.
 (pdftex.def)             Requested size: 902.36905pt x 597.22978pt.
-<../../../imagens/output-eventos.jpeg, id=1286, 2258.4375pt x 3011.25pt>
+<../../../imagens/output-eventos.jpeg, id=1282, 2258.4375pt x 3011.25pt>
 File: ../../../imagens/output-eventos.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-eventos.jpeg>
 Package pdftex.def Info: ../../../imagens/output-eventos.jpeg  used on input li
 ne 3655.
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
-<../../../imagens/eventos-ano-recorte-B.png, id=1287, 1283.79625pt x 346.29375p
+<../../../imagens/eventos-ano-recorte-B.png, id=1283, 1283.79625pt x 346.29375p
 t>
 File: ../../../imagens/eventos-ano-recorte-B.png Graphic file (type png)
 <use ../../../imagens/eventos-ano-recorte-B.png>
@@ -4094,16 +4486,16 @@ put line 3673.
 (pdftex.def)             Requested size: 1283.79312pt x 346.2929pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [177]
+ [176]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [178] (./utfprct_RedarTex.mw)
+ [177] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1296, 2007.5pt 
+<../../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1292, 2007.5pt 
 x 4015.0pt>
 File: ../../../imagens/histograma-de-idades-no-ano-do-evento.png Graphic file (
 type png)
@@ -4115,7 +4507,7 @@ Package pdftex.def Info: ../../../imagens/histograma-de-idades-no-ano-do-evento
 
 LaTeX Warning: Float too large for page by 27.54211pt on input line 3719.
 
-<../../../imagens/distribuicao-bolsistas-por-cidades.png, id=1297, 1288.815pt x
+<../../../imagens/distribuicao-bolsistas-por-cidades.png, id=1293, 1288.815pt x
  540.0175pt>
 File: ../../../imagens/distribuicao-bolsistas-por-cidades.png Graphic file (typ
 e png)
@@ -4125,10 +4517,10 @@ g  used on input line 3793.
 (pdftex.def)             Requested size: 1288.81187pt x 540.01617pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
-[179] (./utfprct_RedarTex.mw)
+[178] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/eventos-cidades.png, id=1302, 1279.78125pt x 351.3125pt>
+<../../../imagens/eventos-cidades.png, id=1298, 1279.78125pt x 351.3125pt>
 File: ../../../imagens/eventos-cidades.png Graphic file (type png)
 <use ../../../imagens/eventos-cidades.png>
 Package pdftex.def Info: ../../../imagens/eventos-cidades.png  used on input li
@@ -4136,16 +4528,16 @@ ne 3810.
 (pdftex.def)             Requested size: 1279.77814pt x 351.31163pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [180] (./utfprct_RedarTex.mw)
+ [179] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [181]
+ [180]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png, id=1312, 1445.4pt x 813
+<../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png, id=1308, 1445.4pt x 813
 .0375pt>
 File: ../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png Graphic file (type 
 png)
@@ -4155,7 +4547,7 @@ Package pdftex.def Info: ../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png
 (pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [182] (./utfprct_RedarTex.mw)
+ [181] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 
@@ -4164,14 +4556,14 @@ LaTeX Warning: File `../../../imagens/ Linha-do-Tempo-Politicas-Digitais Public
 as-egov-2.png' not found on input line 3896.
 
 <../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png, id=13
-17, 1445.4pt x 813.0375pt>
+13, 1445.4pt x 813.0375pt>
 File: ../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png G
 raphic file (type png)
 <use ../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png>
 Package pdftex.def Info: ../../../imagens/ Linha-do-Tempo-Politicas-Digitais Pu
 blicas-egov-2.png  used on input line 3896.
 (pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
-<../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png, id=1318, 1445.4pt x 813.0375
+<../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png, id=1314, 1445.4pt x 813.0375
 pt>
 File: ../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png Graphic file (type png)
 <use ../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png>
@@ -4180,39 +4572,39 @@ Package pdftex.def Info: ../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png  used
 (pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
-[183] (./utfprct_RedarTex.mw)
+[182] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [184] (./utfprct_RedarTex.mw)
+ [183] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [185]
+ [184]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [186] (./utfprct_RedarTex.mw)
+ [185] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [187]
+ [186]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [188] (./utfprct_RedarTex.mw)
+ [187] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [189 <../../../imagens/Evento-Ciencia-Em-Show.jpg> <../../../imagens/dia-das-c
+ [188 <../../../imagens/Evento-Ciencia-Em-Show.jpg> <../../../imagens/dia-das-c
 riancas-2022-10-03-menor.JPG> <../../../imagens/confraternizacao-de-natal-menor
 .jpeg> <../../../imagens/Evento-Greenk-2018-05-27.jpg> <../../../imagens/MAAS.j
 pg> <../../../imagens/Ciencia-Prado-publico.jpeg>] (./utfprct_RedarTex.mw)
@@ -4220,63 +4612,63 @@ pg> <../../../imagens/Ciencia-Prado-publico.jpeg>] (./utfprct_RedarTex.mw)
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [190 <../../../imagens/evento-sao-miguel.png>] (./utfprct_RedarTex.mw)
+ [189 <../../../imagens/evento-sao-miguel.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [191 <../../../imagens/output-participantes.jpeg> <../../../imagens/output-par
+ [190 <../../../imagens/output-participantes.jpeg> <../../../imagens/output-par
 ticipantes2.jpeg> <../../../imagens/output-media-participacoes.jpeg>] (./utfprc
 t_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [192 <../../../imagens/genero-todos-crop.jpeg> <../../../imagens/distribuicao-
+ [191 <../../../imagens/genero-todos-crop.jpeg> <../../../imagens/distribuicao-
 sexo-bolsistas.png> <../../../imagens/bolsas-anualmente-recorte-b-crop.png> <..
 /../../imagens/quantidade-bolsistas-3.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [193 <../../../imagens/duracao-bolsas.png>] (./utfprct_RedarTex.mw)
+ [192 <../../../imagens/duracao-bolsas.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [194 <../../../imagens/documentos-gerados.png> <../../../imagens/areas-conheci
+ [193 <../../../imagens/documentos-gerados.png> <../../../imagens/areas-conheci
 mento.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [195 <../../../imagens/output-eventos.jpeg> <../../../imagens/eventos-ano-reco
+ [194 <../../../imagens/output-eventos.jpeg> <../../../imagens/eventos-ano-reco
 rte-B.png>]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [196 <../../../imagens/histograma-de-idades-no-ano-do-evento.png>] (./utfprct_
+ [195 <../../../imagens/histograma-de-idades-no-ano-do-evento.png>] (./utfprct_
 RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [197 <../../../imagens/distribuicao-bolsistas-por-cidades.png> <../../../image
+ [196 <../../../imagens/distribuicao-bolsistas-por-cidades.png> <../../../image
 ns/eventos-cidades.png> <../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png>
 ] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [198 <../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png>
+ [197 <../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png>
  <../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [199
+ [198
 
 ]
 (./utfprct_RedarTex.mw)
@@ -4284,191 +4676,191 @@ ns/eventos-cidades.png> <../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png>
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [200] (./utfprct_RedarTex.mw)
+ [199] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [201]
+ [200]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [202] (./utfprct_RedarTex.mw)
+ [201] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [203
+ [202
 
 ]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/bizagi.png, id=1420, 1296.845pt x 885.3075pt>
+<../../../imagens/bizagi.png, id=1416, 1296.845pt x 885.3075pt>
 File: ../../../imagens/bizagi.png Graphic file (type png)
 <use ../../../imagens/bizagi.png>
 Package pdftex.def Info: ../../../imagens/bizagi.png  used on input line 4068.
 (pdftex.def)             Requested size: 1296.84184pt x 885.30533pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [204] (./utfprct_RedarTex.mw)
+ [203] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [205 <../../../imagens/bizagi.png>] (./utfprct_RedarTex.mw)
+ [204 <../../../imagens/bizagi.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [206
+ [205
 
 ] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [207]
+ [206]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [208
+ [207
 
 ] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [209]
+ [208]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [210] (./utfprct_RedarTex.mw)
+ [209] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [211]
+ [210]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [212] (./utfprct_RedarTex.mw)
+ [211] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [213]
+ [212]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [214] (./utfprct_RedarTex.mw)
+ [213] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [215]
+ [214]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [216] (./utfprct_RedarTex.mw)
+ [215] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [217]
+ [216]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [218] (./utfprct_RedarTex.mw)
+ [217] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [219
+ [218
 
 ]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/ranke.jpg, id=1489, 107.38997pt x 148.80312pt>
+<../../../imagens/ranke.jpg, id=1485, 107.38997pt x 148.80312pt>
 File: ../../../imagens/ranke.jpg Graphic file (type jpg)
 <use ../../../imagens/ranke.jpg>
 Package pdftex.def Info: ../../../imagens/ranke.jpg  used on input line 4715.
 (pdftex.def)             Requested size: 182.09486pt x 252.35117pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [220 <../../../imagens/ranke.jpg>]
+ [219 <../../../imagens/ranke.jpg>]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [221] (./utfprct_RedarTex.mw)
+ [220] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [222]
+ [221]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [223] (./utfprct_RedarTex.mw)
+ [222] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [224]
+ [223]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [225
+ [224
 
 ] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [226]
+ [225]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [227] (./utfprct_RedarTex.mw)
+ [226] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [228]
+ [227]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [229] (./utfprct_RedarTex.mw)
+ [228] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [230
+ [229
 
 ]
 (./utfprct_RedarTex.mw)
@@ -4480,7 +4872,7 @@ No file utfprct_RedarTex.bbl.
 AED: lastpage setting LastPage
 \openout4 = `utfprct_RedarTex.mw'.
 
-[231] (./utfprct_RedarTex.mw)
+[230] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 
@@ -5278,24 +5670,21 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5043.
 
  ) 
 Here is how much of TeX's memory you used:
- 52767 strings out of 494468
- 998245 string characters out of 6175091
- 1291502 words of memory out of 5000000
- 54201 multiletter control sequences out of 15000+600000
+ 52769 strings out of 494468
+ 998291 string characters out of 6175091
+ 1291469 words of memory out of 5000000
+ 54207 multiletter control sequences out of 15000+600000
  596297 words of font info for 300 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  75i,18n,106p,2122b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.234} has been referenced but does not exist,
- replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on utfprct_RedarTex.pdf (232 pages, 17495270 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on utfprct_RedarTex.pdf (231 pages, 17495112 bytes).
 PDF statistics:
- 1931 PDF objects out of 2073 (max. 8388607)
- 1565 compressed objects within 16 object streams
- 387 named destinations out of 1000 (max. 500000)
+ 1926 PDF objects out of 2073 (max. 8388607)
+ 1561 compressed objects within 16 object streams
+ 385 named destinations out of 1000 (max. 500000)
  35418 words of extra memory for PDF output out of 35830 (max. 10000000)
 

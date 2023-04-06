@@ -17,6 +17,8 @@ $id_arquivo = ""; // guarda o ultimo identificador de label e caption de figura,
 
 $nome_base = "../../latex/utfpr/utfprct-tex/utfprct_RedarTex";
 $nome_do_tex = $nome_base.".tex";
+$itz_explode = explode("/",$nome_do_tex);
+$nome_do_tex_sem_path = $itz_explode[sizeof($itz_explode) - 1];
 $nome_do_pdf = $nome_base.".pdf";
 $nome_do_cls = $nome_base.".cls";
 unset($conta_mult_imagem); // array de contadores relacionados a cada arquivo RedarTex que precisa ser alterado
@@ -441,7 +443,7 @@ $conn= new mysqli("localhost", $username, $pass, $database);
 $myfile = fopen("../bash/copia_substitui_tex_utfpr.bash", "w") or die("Não foi possível abrir o arquivo!");
 $script_file = fopen("../../latex/utfpr/utfprct-tex/mimetiza_pdflatex_utfpr.bash","w") or die ("Não consegui abrir o arquivo de script");
 
-fwrite($script_file, "/usr/bin/pdflatex -interaction=nonstopmode ".$nome_do_tex); // demorei um dia inteiro para perceber que tinha que usar /usr/bin - se usa no prompt nao e necessario - curioso
+fwrite($script_file, "/usr/bin/pdflatex -interaction=nonstopmode ".$nome_do_tex_sem_path); // demorei um dia inteiro para perceber que tinha que usar /usr/bin - se usa no prompt nao e necessario - curioso
 fclose($script_file);
 
 $temporario_corpo = fopen("temporario.txt", "w");
@@ -759,7 +761,10 @@ else {echo "Deu problema: ".$sql;}
 
 if ($param_mode == "verbose") {echo "\nVai executar pdflatex\n";}
 unset($retorno_pdflatex);
-exec("cd ../../latex/utfpr && ./mimetiza_pdflatex_utfpr.bash 2>&1",$retorno_pdflatex, $code);
+exec("cd ../../latex/utfpr/utfprct-tex && ./mimetiza_pdflatex_utfpr.bash 2>&1",$retorno_pdflatex, $code);
+exec("echo \"".implode("",$retorno_pdflatex)."\" > saida_erro_pdflatex.txt ");
+exec("echo \"".$code."\" >> saida_erro_pdflatex.txt ");
+
 //if ($code) {error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));}
 //error_log(print_r("CODIGO: pdflatex >>>>".implode($retorno_pdflatex)."<<<<<<<<<<<<<\n", true));
 do {

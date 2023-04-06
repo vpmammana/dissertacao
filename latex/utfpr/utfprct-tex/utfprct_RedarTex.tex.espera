@@ -48,7 +48,7 @@ O sistema de duas tabelas indicado \'e a forma para evitar a falta de uniformiza
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{559b867b37e81cc1a5e7621bf9c9ed9b847f27fc}Tabela para a representa\c{c}\~ao de pessoas num banco de dados relacional}
 
@@ -70,7 +70,7 @@ Pedro  & 13/02/2013  &  3 \\
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e4d91173469576e32f3571663aaeb94e34415b3e}Tabela de cidades num banco de dados relacional.}
 
@@ -121,7 +121,7 @@ Como se v\^e, uma tabela no sentido de banco de dados relacionais \'e exatamente
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f66c1ac239a347d2b455611f794c18300b1974b6}Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.}
 
@@ -439,7 +439,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Faculdade de Sa\'ude P\'ublica, 2006.
+[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, 2006.
 \end{flushleft}
 
 
@@ -639,7 +639,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de P\'os-Gradua\c{c}\~ao em Hist\'oria, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
+[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGEN, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
 \end{flushleft}
 
 
@@ -881,7 +881,7 @@ Esta pesquisa gerou v\'arios produtos educacionais que s\~ao descritos a seguir:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1031,7 +1031,7 @@ A partir da s\'{\i}ntese dos resultados  dos eixos 1 e 2 ser\'a realizada  a val
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1053,7 +1053,7 @@ A cria\c{c}\~ao do CNPq na d\'ecada de 50 \'e o grande marco para toda a \'area 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1081,7 +1081,7 @@ A cria\c{c}\~ao dos laborat\'orios de microeletr\^onica, tanto na USP como na Un
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1139,7 +1139,7 @@ O WASH disp\~oe de um canal na rede social Youtube para a dissemina\c{c}\~ao de 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1156,7 +1156,7 @@ A Fig. 51 traz a distribui\c{c}\~ao de eventos do WASH por cidades brasileiras.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1179,7 +1179,7 @@ A Tabela mostra uma preval\^encia das atividades fim (69\%) em rela\c{c}\~ao \`a
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{a5eaff3e0d7afe3bcccdccd277cae286bd506174}Distribui\c{c}\~ao dos tipos de atividades realizadas durante eventos do WASH. (fonte: WASH, 2023)}
 
@@ -1236,7 +1236,7 @@ Uma observa\c{c}\~ao cuidadosa dos histogramas da Fig. 49 permitir\'a concluir q
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1276,7 +1276,7 @@ Os gr\'aficos, independentemente do recorte escolhido, indicam um crescimento ac
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1321,7 +1321,7 @@ O n\'umero de eventos realizados anualmente \'e um importante indicador da evolu
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1342,7 +1342,7 @@ Os limites presentes no Recorte B quanto ao registro de documentos e bolsistas i
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1392,7 +1392,7 @@ O histograma da Fig. 44 indica que, para o per\'{\i}odo de 2020 a 2021, houve um
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1420,7 +1420,7 @@ Outro aspecto no Recorte B \'e a preval\^encia de bolsas de inicia\c{c}\~ao para
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{2422b7c7fe35ecc5010472438083776a7ed64d61}Distribui\c{c}\~ao de bolsas por modalidade no Recorte B da Platu\'oxe, ressalvando que, nesse recorte, h\'a apenas dados das bolsas concedidas a partir de 2020. (fonte:  [[WASH (2023)]], por demanda da autora).}
 
@@ -1456,7 +1456,7 @@ Os dados do gr\'afico da Fig. 43 podem ser vistos na Tabela 11.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -1479,7 +1479,7 @@ A Fig. 42, por n\~ao apresentar dados para anos anteriores a 2020, mostra que os
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -2025,7 +2025,7 @@ O diagrama da figura mostra que a dita \textquotedbl ponte\textquotedbl , uma me
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -2143,7 +2143,7 @@ O foco em \textquotedbl hackers\textquotedbl  (ou \textquotedbl geeks\textquoted
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -2188,7 +2188,7 @@ Cabe registrar que o papel de Ubiratan D Ambr\'osio \'e relatado, tamb\'em, por 
 
 Antes de prosseguir, \'e preciso abrir um par\^enteses sobre como a Profa. Afira Ripper optou pela Unicamp, em seu retorno ao Brasil.  MAMMANA (2018), ap\'os entrevista com Prof. Jos\'e Ellis Ripper Filho, esposo da Profa. Afira, traz um relato interessante sobre a decis\~ao dos pesquisadores brasileiros, expatriados nos Estados Unidos na d\'ecada de 60, de retornarem ao Brasil em plena ditadura. Em resumo, a escolha de Campinas foi decorrente da invas\~ao da UNB pelo Ex\'ercito em 1968. Bras\'{\i}lia era o destino preferido dos pesquisadores Brasileiros, por conta da proposta arrojada de Darcy Ribeiro para a UNB, mas ponderaram o risco de estarem pr\'oximos demais da \textquotedbl toca do le\~ao\textquotedbl   (MAMMANA, 2018), optando pela Unicamp. Essa decis\~ao dos pesquisadores foi determinante para a consolida\c{c}\~ao da UNICAMP e, consequentemente, para a voca\c{c}\~ao de Campinas em ci\^encia e tecnologia, que se observou nas d\'ecadas subsequentes.
 
-A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Instituto de Matem\'atica da Unicamp, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
+A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
 
 Inquieta e comprometida com sua carreira, n\~ao era seu perfil permanecer apenas como acompanhante do esposo e buscou uma atividade no seu campo de forma\c{c}\~ao. Foi assim que se engajou como aluna ouvinte no MIT, tendo sido estudante e, depois, tendo convivido profissionalmente com Papert, em 1973. A experi\^encia foi bastante marcante para ela, tendo impacto tamb\'em na sua vida pessoal, dado que seu filho foi a primeira crian\c{c}a brasileira a experimentar a linguagem LOGO, quando estava sendo instalado o Media Lab, no MIT.
 
@@ -2268,7 +2268,7 @@ Sobre essa situa\c{c}\~ao, (MAMMANA, 2006) alertava:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -2311,7 +2311,7 @@ A avalia\c{c}\~ao do Governo Brasileiro j\'a percebia que o OLPC exagerava o pap
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -2701,7 +2701,7 @@ Tinha-se a compreens\~ao que somente a disponibiliza\c{c}\~ao de equipamentos te
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -2832,7 +2832,7 @@ N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'oxe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O banco de dados relacional da Platu\'oxe \'e constitu\'{i}do por 54 tabelas}
 
@@ -2891,7 +2891,7 @@ O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado na tabela 9 
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e6120545268b93238330297571c4756e7c97df1a}Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.}
 
@@ -2918,7 +2918,7 @@ Agora, vamos extrair da tabela \textquotedbl afiliacoes\textquotedbl , (ver Tabe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{96081f1bc28f7c738012f4beb3ef867b6b67107f}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos pap\'eis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
 
@@ -2938,7 +2938,7 @@ Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora isolaremos um participan
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{89e4a4c81cad3904f1348ca629486a33cc2c9bb6}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros, de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
 
@@ -2968,7 +2968,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
                   128  &  Escola Estadual MAJOR MIGUEL NAKED \\
                   111  &  ETEC Carapicu\'{\i}ba \\
                    47  &  Ex\'ercito Brasileiro \\
-                  156  &  Faculdade Zumbi dos Palmares \\
+                  156  &  Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE
                    53  &  FAPESP \\
                   119  &  Funda\c{c}\~ao Arauc\'aria \\
                    35  &  Governo do Estado de S\~ao Paulo \\
@@ -2995,7 +2995,7 @@ Na sequ\^encia, mostramos uma vis\~ao parcial da tabela \textquotedbl Instituico
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{4d91d8ebc21ea7f9f54231ce125fae7980e789a3}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
 
@@ -3077,7 +3077,7 @@ Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma m
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -3303,7 +3303,7 @@ Pelo que pudemos apurar na literatura, este assunto poderia ser aprofundado tant
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{fe3cd6334e1b9072eda70730e1734e26869d9c57}Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.}
 
@@ -3349,7 +3349,7 @@ Assim, com essas palavras chave, podemos, por exemplo, consultar na tabela \text
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{0faf6421bd5dff6b3cb8bedd3f0b4212f1150970}Tradu\c{c}\~ao livre das palavras chave SQL associadas ao comando SELECT.}
 
@@ -3411,7 +3411,7 @@ Este tipo de erro \'e muito comum em  planilhas, porque essa ferramenta n\~ao ve
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f6feaa39313aa0691b7fdadc84175a203e68bf77}Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica}
 
@@ -3446,7 +3446,7 @@ Na tabela 2 vemos um tipo de erro de preenchimento muito comum em planilhas elet
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{ddd7a335bbc10f88eaaf4abda266d151f0ba0e6f}Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.}
 
@@ -3552,7 +3552,7 @@ Para o c\'alculo de investimento por hora, por aluno, (CNPq, 2020) considerou qu
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{489af209007e651b007535a7733d5ca117c5b310}Compara\c{c}\~ao do investimento por hora, por aluno, nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: FUNDEB, DOU - Di\'ario Oficial da Uni\~ao e Plataforma Campineira Melhor Escola. (Fonte: (CNPq (2020)}
 
@@ -4437,7 +4437,7 @@ Por curioso, n\~ao obstante os criadores do WASH tenham se inspirado nos conceit
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -4617,7 +4617,7 @@ O sistema de duas tabelas indicado \'e a forma para evitar a falta de uniformiza
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{559b867b37e81cc1a5e7621bf9c9ed9b847f27fc}Tabela para a representa\c{c}\~ao de pessoas num banco de dados relacional}
 
@@ -4639,7 +4639,7 @@ Pedro  & 13/02/2013  &  3 \\
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e4d91173469576e32f3571663aaeb94e34415b3e}Tabela de cidades num banco de dados relacional.}
 
@@ -4690,7 +4690,7 @@ Como se v\^e, uma tabela no sentido de banco de dados relacionais \'e exatamente
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f66c1ac239a347d2b455611f794c18300b1974b6}Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.}
 
@@ -5008,7 +5008,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Faculdade de Sa\'ude P\'ublica, 2006.
+[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, 2006.
 \end{flushleft}
 
 
@@ -5208,7 +5208,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de P\'os-Gradua\c{c}\~ao em Hist\'oria, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
+[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGEN, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
 \end{flushleft}
 
 
@@ -5450,7 +5450,7 @@ Esta pesquisa gerou v\'arios produtos educacionais que s\~ao descritos a seguir:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5600,7 +5600,7 @@ A partir da s\'{\i}ntese dos resultados  dos eixos 1 e 2 ser\'a realizada  a val
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5622,7 +5622,7 @@ A cria\c{c}\~ao do CNPq na d\'ecada de 50 \'e o grande marco para toda a \'area 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5650,7 +5650,7 @@ A cria\c{c}\~ao dos laborat\'orios de microeletr\^onica, tanto na USP como na Un
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5708,7 +5708,7 @@ O WASH disp\~oe de um canal na rede social Youtube para a dissemina\c{c}\~ao de 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5725,7 +5725,7 @@ A Fig. 51 traz a distribui\c{c}\~ao de eventos do WASH por cidades brasileiras.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5748,7 +5748,7 @@ A Tabela mostra uma preval\^encia das atividades fim (69\%) em rela\c{c}\~ao \`a
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{a5eaff3e0d7afe3bcccdccd277cae286bd506174}Distribui\c{c}\~ao dos tipos de atividades realizadas durante eventos do WASH. (fonte: WASH, 2023)}
 
@@ -5805,7 +5805,7 @@ Uma observa\c{c}\~ao cuidadosa dos histogramas da Fig. 49 permitir\'a concluir q
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5845,7 +5845,7 @@ Os gr\'aficos, independentemente do recorte escolhido, indicam um crescimento ac
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5890,7 +5890,7 @@ O n\'umero de eventos realizados anualmente \'e um importante indicador da evolu
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5911,7 +5911,7 @@ Os limites presentes no Recorte B quanto ao registro de documentos e bolsistas i
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5961,7 +5961,7 @@ O histograma da Fig. 44 indica que, para o per\'{\i}odo de 2020 a 2021, houve um
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -5989,7 +5989,7 @@ Outro aspecto no Recorte B \'e a preval\^encia de bolsas de inicia\c{c}\~ao para
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{2422b7c7fe35ecc5010472438083776a7ed64d61}Distribui\c{c}\~ao de bolsas por modalidade no Recorte B da Platu\'oxe, ressalvando que, nesse recorte, h\'a apenas dados das bolsas concedidas a partir de 2020. (fonte:  [[WASH (2023)]], por demanda da autora).}
 
@@ -6025,7 +6025,7 @@ Os dados do gr\'afico da Fig. 43 podem ser vistos na Tabela 11.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -6048,7 +6048,7 @@ A Fig. 42, por n\~ao apresentar dados para anos anteriores a 2020, mostra que os
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -6594,7 +6594,7 @@ O diagrama da figura mostra que a dita \textquotedbl ponte\textquotedbl , uma me
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -6712,7 +6712,7 @@ O foco em \textquotedbl hackers\textquotedbl  (ou \textquotedbl geeks\textquoted
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -6757,7 +6757,7 @@ Cabe registrar que o papel de Ubiratan D Ambr\'osio \'e relatado, tamb\'em, por 
 
 Antes de prosseguir, \'e preciso abrir um par\^enteses sobre como a Profa. Afira Ripper optou pela Unicamp, em seu retorno ao Brasil.  MAMMANA (2018), ap\'os entrevista com Prof. Jos\'e Ellis Ripper Filho, esposo da Profa. Afira, traz um relato interessante sobre a decis\~ao dos pesquisadores brasileiros, expatriados nos Estados Unidos na d\'ecada de 60, de retornarem ao Brasil em plena ditadura. Em resumo, a escolha de Campinas foi decorrente da invas\~ao da UNB pelo Ex\'ercito em 1968. Bras\'{\i}lia era o destino preferido dos pesquisadores Brasileiros, por conta da proposta arrojada de Darcy Ribeiro para a UNB, mas ponderaram o risco de estarem pr\'oximos demais da \textquotedbl toca do le\~ao\textquotedbl   (MAMMANA, 2018), optando pela Unicamp. Essa decis\~ao dos pesquisadores foi determinante para a consolida\c{c}\~ao da UNICAMP e, consequentemente, para a voca\c{c}\~ao de Campinas em ci\^encia e tecnologia, que se observou nas d\'ecadas subsequentes.
 
-A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Instituto de Matem\'atica da Unicamp, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
+A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
 
 Inquieta e comprometida com sua carreira, n\~ao era seu perfil permanecer apenas como acompanhante do esposo e buscou uma atividade no seu campo de forma\c{c}\~ao. Foi assim que se engajou como aluna ouvinte no MIT, tendo sido estudante e, depois, tendo convivido profissionalmente com Papert, em 1973. A experi\^encia foi bastante marcante para ela, tendo impacto tamb\'em na sua vida pessoal, dado que seu filho foi a primeira crian\c{c}a brasileira a experimentar a linguagem LOGO, quando estava sendo instalado o Media Lab, no MIT.
 
@@ -6837,7 +6837,7 @@ Sobre essa situa\c{c}\~ao, (MAMMANA, 2006) alertava:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -6880,7 +6880,7 @@ A avalia\c{c}\~ao do Governo Brasileiro j\'a percebia que o OLPC exagerava o pap
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -7270,7 +7270,7 @@ Tinha-se a compreens\~ao que somente a disponibiliza\c{c}\~ao de equipamentos te
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -7401,7 +7401,7 @@ N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'oxe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O banco de dados relacional da Platu\'oxe \'e constitu\'{i}do por 54 tabelas}
 
@@ -7460,7 +7460,7 @@ O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado na tabela 9 
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e6120545268b93238330297571c4756e7c97df1a}Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.}
 
@@ -7487,7 +7487,7 @@ Agora, vamos extrair da tabela \textquotedbl afiliacoes\textquotedbl , (ver Tabe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{96081f1bc28f7c738012f4beb3ef867b6b67107f}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos pap\'eis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
 
@@ -7507,7 +7507,7 @@ Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora isolaremos um participan
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{89e4a4c81cad3904f1348ca629486a33cc2c9bb6}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros, de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
 
@@ -7537,7 +7537,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
                   128  &  Escola Estadual MAJOR MIGUEL NAKED \\
                   111  &  ETEC Carapicu\'{\i}ba \\
                    47  &  Ex\'ercito Brasileiro \\
-                  156  &  Faculdade Zumbi dos Palmares \\
+                  156  &  Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE
                    53  &  FAPESP \\
                   119  &  Funda\c{c}\~ao Arauc\'aria \\
                    35  &  Governo do Estado de S\~ao Paulo \\
@@ -7564,7 +7564,7 @@ Na sequ\^encia, mostramos uma vis\~ao parcial da tabela \textquotedbl Instituico
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{4d91d8ebc21ea7f9f54231ce125fae7980e789a3}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
 
@@ -7646,7 +7646,7 @@ Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma m
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -7872,7 +7872,7 @@ Pelo que pudemos apurar na literatura, este assunto poderia ser aprofundado tant
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{fe3cd6334e1b9072eda70730e1734e26869d9c57}Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.}
 
@@ -7918,7 +7918,7 @@ Assim, com essas palavras chave, podemos, por exemplo, consultar na tabela \text
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{0faf6421bd5dff6b3cb8bedd3f0b4212f1150970}Tradu\c{c}\~ao livre das palavras chave SQL associadas ao comando SELECT.}
 
@@ -7980,7 +7980,7 @@ Este tipo de erro \'e muito comum em  planilhas, porque essa ferramenta n\~ao ve
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f6feaa39313aa0691b7fdadc84175a203e68bf77}Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica}
 
@@ -8015,7 +8015,7 @@ Na tabela 2 vemos um tipo de erro de preenchimento muito comum em planilhas elet
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{ddd7a335bbc10f88eaaf4abda266d151f0ba0e6f}Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.}
 
@@ -8121,7 +8121,7 @@ Para o c\'alculo de investimento por hora, por aluno, (CNPq, 2020) considerou qu
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{489af209007e651b007535a7733d5ca117c5b310}Compara\c{c}\~ao do investimento por hora, por aluno, nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: FUNDEB, DOU - Di\'ario Oficial da Uni\~ao e Plataforma Campineira Melhor Escola. (Fonte: (CNPq (2020)}
 
@@ -9006,7 +9006,7 @@ Por curioso, n\~ao obstante os criadores do WASH tenham se inspirado nos conceit
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -9186,7 +9186,7 @@ O sistema de duas tabelas indicado \'e a forma para evitar a falta de uniformiza
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{559b867b37e81cc1a5e7621bf9c9ed9b847f27fc}Tabela para a representa\c{c}\~ao de pessoas num banco de dados relacional}
 
@@ -9208,7 +9208,7 @@ Pedro  & 13/02/2013  &  3 \\
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e4d91173469576e32f3571663aaeb94e34415b3e}Tabela de cidades num banco de dados relacional.}
 
@@ -9259,7 +9259,7 @@ Como se v\^e, uma tabela no sentido de banco de dados relacionais \'e exatamente
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f66c1ac239a347d2b455611f794c18300b1974b6}Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.}
 
@@ -9577,7 +9577,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Faculdade de Sa\'ude P\'ublica, 2006.
+[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, 2006.
 \end{flushleft}
 
 
@@ -9777,7 +9777,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de P\'os-Gradua\c{c}\~ao em Hist\'oria, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
+[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGEN, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
 \end{flushleft}
 
 
@@ -10019,7 +10019,7 @@ Esta pesquisa gerou v\'arios produtos educacionais que s\~ao descritos a seguir:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10169,7 +10169,7 @@ A partir da s\'{\i}ntese dos resultados  dos eixos 1 e 2 ser\'a realizada  a val
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10191,7 +10191,7 @@ A cria\c{c}\~ao do CNPq na d\'ecada de 50 \'e o grande marco para toda a \'area 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10219,7 +10219,7 @@ A cria\c{c}\~ao dos laborat\'orios de microeletr\^onica, tanto na USP como na Un
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10277,7 +10277,7 @@ O WASH disp\~oe de um canal na rede social Youtube para a dissemina\c{c}\~ao de 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10294,7 +10294,7 @@ A Fig. 51 traz a distribui\c{c}\~ao de eventos do WASH por cidades brasileiras.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10317,7 +10317,7 @@ A Tabela mostra uma preval\^encia das atividades fim (69\%) em rela\c{c}\~ao \`a
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{a5eaff3e0d7afe3bcccdccd277cae286bd506174}Distribui\c{c}\~ao dos tipos de atividades realizadas durante eventos do WASH. (fonte: WASH, 2023)}
 
@@ -10374,7 +10374,7 @@ Uma observa\c{c}\~ao cuidadosa dos histogramas da Fig. 49 permitir\'a concluir q
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10414,7 +10414,7 @@ Os gr\'aficos, independentemente do recorte escolhido, indicam um crescimento ac
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10459,7 +10459,7 @@ O n\'umero de eventos realizados anualmente \'e um importante indicador da evolu
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10480,7 +10480,7 @@ Os limites presentes no Recorte B quanto ao registro de documentos e bolsistas i
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10530,7 +10530,7 @@ O histograma da Fig. 44 indica que, para o per\'{\i}odo de 2020 a 2021, houve um
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10558,7 +10558,7 @@ Outro aspecto no Recorte B \'e a preval\^encia de bolsas de inicia\c{c}\~ao para
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{2422b7c7fe35ecc5010472438083776a7ed64d61}Distribui\c{c}\~ao de bolsas por modalidade no Recorte B da Platu\'oxe, ressalvando que, nesse recorte, h\'a apenas dados das bolsas concedidas a partir de 2020. (fonte:  [[WASH (2023)]], por demanda da autora).}
 
@@ -10594,7 +10594,7 @@ Os dados do gr\'afico da Fig. 43 podem ser vistos na Tabela 11.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -10617,7 +10617,7 @@ A Fig. 42, por n\~ao apresentar dados para anos anteriores a 2020, mostra que os
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -11163,7 +11163,7 @@ O diagrama da figura mostra que a dita \textquotedbl ponte\textquotedbl , uma me
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -11281,7 +11281,7 @@ O foco em \textquotedbl hackers\textquotedbl  (ou \textquotedbl geeks\textquoted
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -11326,7 +11326,7 @@ Cabe registrar que o papel de Ubiratan D Ambr\'osio \'e relatado, tamb\'em, por 
 
 Antes de prosseguir, \'e preciso abrir um par\^enteses sobre como a Profa. Afira Ripper optou pela Unicamp, em seu retorno ao Brasil.  MAMMANA (2018), ap\'os entrevista com Prof. Jos\'e Ellis Ripper Filho, esposo da Profa. Afira, traz um relato interessante sobre a decis\~ao dos pesquisadores brasileiros, expatriados nos Estados Unidos na d\'ecada de 60, de retornarem ao Brasil em plena ditadura. Em resumo, a escolha de Campinas foi decorrente da invas\~ao da UNB pelo Ex\'ercito em 1968. Bras\'{\i}lia era o destino preferido dos pesquisadores Brasileiros, por conta da proposta arrojada de Darcy Ribeiro para a UNB, mas ponderaram o risco de estarem pr\'oximos demais da \textquotedbl toca do le\~ao\textquotedbl   (MAMMANA, 2018), optando pela Unicamp. Essa decis\~ao dos pesquisadores foi determinante para a consolida\c{c}\~ao da UNICAMP e, consequentemente, para a voca\c{c}\~ao de Campinas em ci\^encia e tecnologia, que se observou nas d\'ecadas subsequentes.
 
-A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Instituto de Matem\'atica da Unicamp, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
+A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
 
 Inquieta e comprometida com sua carreira, n\~ao era seu perfil permanecer apenas como acompanhante do esposo e buscou uma atividade no seu campo de forma\c{c}\~ao. Foi assim que se engajou como aluna ouvinte no MIT, tendo sido estudante e, depois, tendo convivido profissionalmente com Papert, em 1973. A experi\^encia foi bastante marcante para ela, tendo impacto tamb\'em na sua vida pessoal, dado que seu filho foi a primeira crian\c{c}a brasileira a experimentar a linguagem LOGO, quando estava sendo instalado o Media Lab, no MIT.
 
@@ -11406,7 +11406,7 @@ Sobre essa situa\c{c}\~ao, (MAMMANA, 2006) alertava:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -11449,7 +11449,7 @@ A avalia\c{c}\~ao do Governo Brasileiro j\'a percebia que o OLPC exagerava o pap
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -11839,7 +11839,7 @@ Tinha-se a compreens\~ao que somente a disponibiliza\c{c}\~ao de equipamentos te
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -11970,7 +11970,7 @@ N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'oxe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O banco de dados relacional da Platu\'oxe \'e constitu\'{i}do por 54 tabelas}
 
@@ -12029,7 +12029,7 @@ O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado na tabela 9 
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e6120545268b93238330297571c4756e7c97df1a}Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.}
 
@@ -12056,7 +12056,7 @@ Agora, vamos extrair da tabela \textquotedbl afiliacoes\textquotedbl , (ver Tabe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{96081f1bc28f7c738012f4beb3ef867b6b67107f}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos pap\'eis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
 
@@ -12076,7 +12076,7 @@ Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora isolaremos um participan
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{89e4a4c81cad3904f1348ca629486a33cc2c9bb6}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros, de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
 
@@ -12106,7 +12106,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
                   128  &  Escola Estadual MAJOR MIGUEL NAKED \\
                   111  &  ETEC Carapicu\'{\i}ba \\
                    47  &  Ex\'ercito Brasileiro \\
-                  156  &  Faculdade Zumbi dos Palmares \\
+                  156  &  Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE
                    53  &  FAPESP \\
                   119  &  Funda\c{c}\~ao Arauc\'aria \\
                    35  &  Governo do Estado de S\~ao Paulo \\
@@ -12133,7 +12133,7 @@ Na sequ\^encia, mostramos uma vis\~ao parcial da tabela \textquotedbl Instituico
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{4d91d8ebc21ea7f9f54231ce125fae7980e789a3}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
 
@@ -12215,7 +12215,7 @@ Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma m
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -12441,7 +12441,7 @@ Pelo que pudemos apurar na literatura, este assunto poderia ser aprofundado tant
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{fe3cd6334e1b9072eda70730e1734e26869d9c57}Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.}
 
@@ -12487,7 +12487,7 @@ Assim, com essas palavras chave, podemos, por exemplo, consultar na tabela \text
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{0faf6421bd5dff6b3cb8bedd3f0b4212f1150970}Tradu\c{c}\~ao livre das palavras chave SQL associadas ao comando SELECT.}
 
@@ -12549,7 +12549,7 @@ Este tipo de erro \'e muito comum em  planilhas, porque essa ferramenta n\~ao ve
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f6feaa39313aa0691b7fdadc84175a203e68bf77}Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica}
 
@@ -12584,7 +12584,7 @@ Na tabela 2 vemos um tipo de erro de preenchimento muito comum em planilhas elet
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{ddd7a335bbc10f88eaaf4abda266d151f0ba0e6f}Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.}
 
@@ -12690,7 +12690,7 @@ Para o c\'alculo de investimento por hora, por aluno, (CNPq, 2020) considerou qu
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{489af209007e651b007535a7733d5ca117c5b310}Compara\c{c}\~ao do investimento por hora, por aluno, nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: FUNDEB, DOU - Di\'ario Oficial da Uni\~ao e Plataforma Campineira Melhor Escola. (Fonte: (CNPq (2020)}
 
@@ -13575,7 +13575,7 @@ Por curioso, n\~ao obstante os criadores do WASH tenham se inspirado nos conceit
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -13755,7 +13755,7 @@ O sistema de duas tabelas indicado \'e a forma para evitar a falta de uniformiza
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{559b867b37e81cc1a5e7621bf9c9ed9b847f27fc}Tabela para a representa\c{c}\~ao de pessoas num banco de dados relacional}
 
@@ -13777,7 +13777,7 @@ Pedro  & 13/02/2013  &  3 \\
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e4d91173469576e32f3571663aaeb94e34415b3e}Tabela de cidades num banco de dados relacional.}
 
@@ -13828,7 +13828,7 @@ Como se v\^e, uma tabela no sentido de banco de dados relacionais \'e exatamente
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f66c1ac239a347d2b455611f794c18300b1974b6}Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.}
 
@@ -14146,7 +14146,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Faculdade de Sa\'ude P\'ublica, 2006.
+[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, 2006.
 \end{flushleft}
 
 
@@ -14346,7 +14346,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de P\'os-Gradua\c{c}\~ao em Hist\'oria, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
+[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGEN, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
 \end{flushleft}
 
 
@@ -14588,7 +14588,7 @@ Esta pesquisa gerou v\'arios produtos educacionais que s\~ao descritos a seguir:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -14738,7 +14738,7 @@ A partir da s\'{\i}ntese dos resultados  dos eixos 1 e 2 ser\'a realizada  a val
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -14760,7 +14760,7 @@ A cria\c{c}\~ao do CNPq na d\'ecada de 50 \'e o grande marco para toda a \'area 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -14788,7 +14788,7 @@ A cria\c{c}\~ao dos laborat\'orios de microeletr\^onica, tanto na USP como na Un
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -14846,7 +14846,7 @@ O WASH disp\~oe de um canal na rede social Youtube para a dissemina\c{c}\~ao de 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -14863,7 +14863,7 @@ A Fig. 51 traz a distribui\c{c}\~ao de eventos do WASH por cidades brasileiras.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -14886,7 +14886,7 @@ A Tabela mostra uma preval\^encia das atividades fim (69\%) em rela\c{c}\~ao \`a
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{a5eaff3e0d7afe3bcccdccd277cae286bd506174}Distribui\c{c}\~ao dos tipos de atividades realizadas durante eventos do WASH. (fonte: WASH, 2023)}
 
@@ -14943,7 +14943,7 @@ Uma observa\c{c}\~ao cuidadosa dos histogramas da Fig. 49 permitir\'a concluir q
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -14983,7 +14983,7 @@ Os gr\'aficos, independentemente do recorte escolhido, indicam um crescimento ac
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15028,7 +15028,7 @@ O n\'umero de eventos realizados anualmente \'e um importante indicador da evolu
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15049,7 +15049,7 @@ Os limites presentes no Recorte B quanto ao registro de documentos e bolsistas i
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15099,7 +15099,7 @@ O histograma da Fig. 44 indica que, para o per\'{\i}odo de 2020 a 2021, houve um
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15127,7 +15127,7 @@ Outro aspecto no Recorte B \'e a preval\^encia de bolsas de inicia\c{c}\~ao para
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{2422b7c7fe35ecc5010472438083776a7ed64d61}Distribui\c{c}\~ao de bolsas por modalidade no Recorte B da Platu\'oxe, ressalvando que, nesse recorte, h\'a apenas dados das bolsas concedidas a partir de 2020. (fonte:  [[WASH (2023)]], por demanda da autora).}
 
@@ -15163,7 +15163,7 @@ Os dados do gr\'afico da Fig. 43 podem ser vistos na Tabela 11.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15186,7 +15186,7 @@ A Fig. 42, por n\~ao apresentar dados para anos anteriores a 2020, mostra que os
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15732,7 +15732,7 @@ O diagrama da figura mostra que a dita \textquotedbl ponte\textquotedbl , uma me
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15850,7 +15850,7 @@ O foco em \textquotedbl hackers\textquotedbl  (ou \textquotedbl geeks\textquoted
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -15895,7 +15895,7 @@ Cabe registrar que o papel de Ubiratan D Ambr\'osio \'e relatado, tamb\'em, por 
 
 Antes de prosseguir, \'e preciso abrir um par\^enteses sobre como a Profa. Afira Ripper optou pela Unicamp, em seu retorno ao Brasil.  MAMMANA (2018), ap\'os entrevista com Prof. Jos\'e Ellis Ripper Filho, esposo da Profa. Afira, traz um relato interessante sobre a decis\~ao dos pesquisadores brasileiros, expatriados nos Estados Unidos na d\'ecada de 60, de retornarem ao Brasil em plena ditadura. Em resumo, a escolha de Campinas foi decorrente da invas\~ao da UNB pelo Ex\'ercito em 1968. Bras\'{\i}lia era o destino preferido dos pesquisadores Brasileiros, por conta da proposta arrojada de Darcy Ribeiro para a UNB, mas ponderaram o risco de estarem pr\'oximos demais da \textquotedbl toca do le\~ao\textquotedbl   (MAMMANA, 2018), optando pela Unicamp. Essa decis\~ao dos pesquisadores foi determinante para a consolida\c{c}\~ao da UNICAMP e, consequentemente, para a voca\c{c}\~ao de Campinas em ci\^encia e tecnologia, que se observou nas d\'ecadas subsequentes.
 
-A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Instituto de Matem\'atica da Unicamp, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
+A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
 
 Inquieta e comprometida com sua carreira, n\~ao era seu perfil permanecer apenas como acompanhante do esposo e buscou uma atividade no seu campo de forma\c{c}\~ao. Foi assim que se engajou como aluna ouvinte no MIT, tendo sido estudante e, depois, tendo convivido profissionalmente com Papert, em 1973. A experi\^encia foi bastante marcante para ela, tendo impacto tamb\'em na sua vida pessoal, dado que seu filho foi a primeira crian\c{c}a brasileira a experimentar a linguagem LOGO, quando estava sendo instalado o Media Lab, no MIT.
 
@@ -15975,7 +15975,7 @@ Sobre essa situa\c{c}\~ao, (MAMMANA, 2006) alertava:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -16018,7 +16018,7 @@ A avalia\c{c}\~ao do Governo Brasileiro j\'a percebia que o OLPC exagerava o pap
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -16408,7 +16408,7 @@ Tinha-se a compreens\~ao que somente a disponibiliza\c{c}\~ao de equipamentos te
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -16539,7 +16539,7 @@ N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'oxe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O banco de dados relacional da Platu\'oxe \'e constitu\'{i}do por 54 tabelas}
 
@@ -16598,7 +16598,7 @@ O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado na tabela 9 
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e6120545268b93238330297571c4756e7c97df1a}Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.}
 
@@ -16625,7 +16625,7 @@ Agora, vamos extrair da tabela \textquotedbl afiliacoes\textquotedbl , (ver Tabe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{96081f1bc28f7c738012f4beb3ef867b6b67107f}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos pap\'eis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
 
@@ -16645,7 +16645,7 @@ Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora isolaremos um participan
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{89e4a4c81cad3904f1348ca629486a33cc2c9bb6}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros, de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
 
@@ -16675,7 +16675,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
                   128  &  Escola Estadual MAJOR MIGUEL NAKED \\
                   111  &  ETEC Carapicu\'{\i}ba \\
                    47  &  Ex\'ercito Brasileiro \\
-                  156  &  Faculdade Zumbi dos Palmares \\
+                  156  &  Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE
                    53  &  FAPESP \\
                   119  &  Funda\c{c}\~ao Arauc\'aria \\
                    35  &  Governo do Estado de S\~ao Paulo \\
@@ -16702,7 +16702,7 @@ Na sequ\^encia, mostramos uma vis\~ao parcial da tabela \textquotedbl Instituico
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{4d91d8ebc21ea7f9f54231ce125fae7980e789a3}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
 
@@ -16784,7 +16784,7 @@ Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma m
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -17010,7 +17010,7 @@ Pelo que pudemos apurar na literatura, este assunto poderia ser aprofundado tant
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{fe3cd6334e1b9072eda70730e1734e26869d9c57}Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.}
 
@@ -17056,7 +17056,7 @@ Assim, com essas palavras chave, podemos, por exemplo, consultar na tabela \text
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{0faf6421bd5dff6b3cb8bedd3f0b4212f1150970}Tradu\c{c}\~ao livre das palavras chave SQL associadas ao comando SELECT.}
 
@@ -17118,7 +17118,7 @@ Este tipo de erro \'e muito comum em  planilhas, porque essa ferramenta n\~ao ve
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f6feaa39313aa0691b7fdadc84175a203e68bf77}Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica}
 
@@ -17153,7 +17153,7 @@ Na tabela 2 vemos um tipo de erro de preenchimento muito comum em planilhas elet
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{ddd7a335bbc10f88eaaf4abda266d151f0ba0e6f}Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.}
 
@@ -17259,7 +17259,7 @@ Para o c\'alculo de investimento por hora, por aluno, (CNPq, 2020) considerou qu
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{489af209007e651b007535a7733d5ca117c5b310}Compara\c{c}\~ao do investimento por hora, por aluno, nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: FUNDEB, DOU - Di\'ario Oficial da Uni\~ao e Plataforma Campineira Melhor Escola. (Fonte: (CNPq (2020)}
 
@@ -18144,7 +18144,7 @@ Por curioso, n\~ao obstante os criadores do WASH tenham se inspirado nos conceit
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -18324,7 +18324,7 @@ O sistema de duas tabelas indicado \'e a forma para evitar a falta de uniformiza
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{559b867b37e81cc1a5e7621bf9c9ed9b847f27fc}Tabela para a representa\c{c}\~ao de pessoas num banco de dados relacional}
 
@@ -18346,7 +18346,7 @@ Pedro  & 13/02/2013  &  3 \\
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e4d91173469576e32f3571663aaeb94e34415b3e}Tabela de cidades num banco de dados relacional.}
 
@@ -18397,7 +18397,7 @@ Como se v\^e, uma tabela no sentido de banco de dados relacionais \'e exatamente
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f66c1ac239a347d2b455611f794c18300b1974b6}Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.}
 
@@ -18715,7 +18715,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Faculdade de Sa\'ude P\'ublica, 2006.
+[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, 2006.
 \end{flushleft}
 
 
@@ -18915,7 +18915,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de P\'os-Gradua\c{c}\~ao em Hist\'oria, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
+[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGEN, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
 \end{flushleft}
 
 
@@ -19157,7 +19157,7 @@ Esta pesquisa gerou v\'arios produtos educacionais que s\~ao descritos a seguir:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19307,7 +19307,7 @@ A partir da s\'{\i}ntese dos resultados  dos eixos 1 e 2 ser\'a realizada  a val
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19329,7 +19329,7 @@ A cria\c{c}\~ao do CNPq na d\'ecada de 50 \'e o grande marco para toda a \'area 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19357,7 +19357,7 @@ A cria\c{c}\~ao dos laborat\'orios de microeletr\^onica, tanto na USP como na Un
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19415,7 +19415,7 @@ O WASH disp\~oe de um canal na rede social Youtube para a dissemina\c{c}\~ao de 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19432,7 +19432,7 @@ A Fig. 51 traz a distribui\c{c}\~ao de eventos do WASH por cidades brasileiras.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19455,7 +19455,7 @@ A Tabela mostra uma preval\^encia das atividades fim (69\%) em rela\c{c}\~ao \`a
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{a5eaff3e0d7afe3bcccdccd277cae286bd506174}Distribui\c{c}\~ao dos tipos de atividades realizadas durante eventos do WASH. (fonte: WASH, 2023)}
 
@@ -19512,7 +19512,7 @@ Uma observa\c{c}\~ao cuidadosa dos histogramas da Fig. 49 permitir\'a concluir q
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19552,7 +19552,7 @@ Os gr\'aficos, independentemente do recorte escolhido, indicam um crescimento ac
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19597,7 +19597,7 @@ O n\'umero de eventos realizados anualmente \'e um importante indicador da evolu
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19618,7 +19618,7 @@ Os limites presentes no Recorte B quanto ao registro de documentos e bolsistas i
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19668,7 +19668,7 @@ O histograma da Fig. 44 indica que, para o per\'{\i}odo de 2020 a 2021, houve um
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19696,7 +19696,7 @@ Outro aspecto no Recorte B \'e a preval\^encia de bolsas de inicia\c{c}\~ao para
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{2422b7c7fe35ecc5010472438083776a7ed64d61}Distribui\c{c}\~ao de bolsas por modalidade no Recorte B da Platu\'oxe, ressalvando que, nesse recorte, h\'a apenas dados das bolsas concedidas a partir de 2020. (fonte:  [[WASH (2023)]], por demanda da autora).}
 
@@ -19732,7 +19732,7 @@ Os dados do gr\'afico da Fig. 43 podem ser vistos na Tabela 11.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -19755,7 +19755,7 @@ A Fig. 42, por n\~ao apresentar dados para anos anteriores a 2020, mostra que os
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -20301,7 +20301,7 @@ O diagrama da figura mostra que a dita \textquotedbl ponte\textquotedbl , uma me
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -20419,7 +20419,7 @@ O foco em \textquotedbl hackers\textquotedbl  (ou \textquotedbl geeks\textquoted
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -20464,7 +20464,7 @@ Cabe registrar que o papel de Ubiratan D Ambr\'osio \'e relatado, tamb\'em, por 
 
 Antes de prosseguir, \'e preciso abrir um par\^enteses sobre como a Profa. Afira Ripper optou pela Unicamp, em seu retorno ao Brasil.  MAMMANA (2018), ap\'os entrevista com Prof. Jos\'e Ellis Ripper Filho, esposo da Profa. Afira, traz um relato interessante sobre a decis\~ao dos pesquisadores brasileiros, expatriados nos Estados Unidos na d\'ecada de 60, de retornarem ao Brasil em plena ditadura. Em resumo, a escolha de Campinas foi decorrente da invas\~ao da UNB pelo Ex\'ercito em 1968. Bras\'{\i}lia era o destino preferido dos pesquisadores Brasileiros, por conta da proposta arrojada de Darcy Ribeiro para a UNB, mas ponderaram o risco de estarem pr\'oximos demais da \textquotedbl toca do le\~ao\textquotedbl   (MAMMANA, 2018), optando pela Unicamp. Essa decis\~ao dos pesquisadores foi determinante para a consolida\c{c}\~ao da UNICAMP e, consequentemente, para a voca\c{c}\~ao de Campinas em ci\^encia e tecnologia, que se observou nas d\'ecadas subsequentes.
 
-A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Instituto de Matem\'atica da Unicamp, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
+A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
 
 Inquieta e comprometida com sua carreira, n\~ao era seu perfil permanecer apenas como acompanhante do esposo e buscou uma atividade no seu campo de forma\c{c}\~ao. Foi assim que se engajou como aluna ouvinte no MIT, tendo sido estudante e, depois, tendo convivido profissionalmente com Papert, em 1973. A experi\^encia foi bastante marcante para ela, tendo impacto tamb\'em na sua vida pessoal, dado que seu filho foi a primeira crian\c{c}a brasileira a experimentar a linguagem LOGO, quando estava sendo instalado o Media Lab, no MIT.
 
@@ -20544,7 +20544,7 @@ Sobre essa situa\c{c}\~ao, (MAMMANA, 2006) alertava:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -20587,7 +20587,7 @@ A avalia\c{c}\~ao do Governo Brasileiro j\'a percebia que o OLPC exagerava o pap
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -20977,7 +20977,7 @@ Tinha-se a compreens\~ao que somente a disponibiliza\c{c}\~ao de equipamentos te
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -21108,7 +21108,7 @@ N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'oxe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O banco de dados relacional da Platu\'oxe \'e constitu\'{i}do por 54 tabelas}
 
@@ -21167,7 +21167,7 @@ O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado na tabela 9 
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e6120545268b93238330297571c4756e7c97df1a}Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.}
 
@@ -21194,7 +21194,7 @@ Agora, vamos extrair da tabela \textquotedbl afiliacoes\textquotedbl , (ver Tabe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{96081f1bc28f7c738012f4beb3ef867b6b67107f}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos pap\'eis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
 
@@ -21214,7 +21214,7 @@ Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora isolaremos um participan
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{89e4a4c81cad3904f1348ca629486a33cc2c9bb6}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros, de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
 
@@ -21244,7 +21244,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
                   128  &  Escola Estadual MAJOR MIGUEL NAKED \\
                   111  &  ETEC Carapicu\'{\i}ba \\
                    47  &  Ex\'ercito Brasileiro \\
-                  156  &  Faculdade Zumbi dos Palmares \\
+                  156  &  Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE
                    53  &  FAPESP \\
                   119  &  Funda\c{c}\~ao Arauc\'aria \\
                    35  &  Governo do Estado de S\~ao Paulo \\
@@ -21271,7 +21271,7 @@ Na sequ\^encia, mostramos uma vis\~ao parcial da tabela \textquotedbl Instituico
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{4d91d8ebc21ea7f9f54231ce125fae7980e789a3}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
 
@@ -21353,7 +21353,7 @@ Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma m
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -21579,7 +21579,7 @@ Pelo que pudemos apurar na literatura, este assunto poderia ser aprofundado tant
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{fe3cd6334e1b9072eda70730e1734e26869d9c57}Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.}
 
@@ -21625,7 +21625,7 @@ Assim, com essas palavras chave, podemos, por exemplo, consultar na tabela \text
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{0faf6421bd5dff6b3cb8bedd3f0b4212f1150970}Tradu\c{c}\~ao livre das palavras chave SQL associadas ao comando SELECT.}
 
@@ -21687,7 +21687,7 @@ Este tipo de erro \'e muito comum em  planilhas, porque essa ferramenta n\~ao ve
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f6feaa39313aa0691b7fdadc84175a203e68bf77}Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica}
 
@@ -21722,7 +21722,7 @@ Na tabela 2 vemos um tipo de erro de preenchimento muito comum em planilhas elet
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{ddd7a335bbc10f88eaaf4abda266d151f0ba0e6f}Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.}
 
@@ -21828,7 +21828,7 @@ Para o c\'alculo de investimento por hora, por aluno, (CNPq, 2020) considerou qu
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{489af209007e651b007535a7733d5ca117c5b310}Compara\c{c}\~ao do investimento por hora, por aluno, nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: FUNDEB, DOU - Di\'ario Oficial da Uni\~ao e Plataforma Campineira Melhor Escola. (Fonte: (CNPq (2020)}
 
@@ -22713,7 +22713,7 @@ Por curioso, n\~ao obstante os criadores do WASH tenham se inspirado nos conceit
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -22893,7 +22893,7 @@ O sistema de duas tabelas indicado \'e a forma para evitar a falta de uniformiza
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{559b867b37e81cc1a5e7621bf9c9ed9b847f27fc}Tabela para a representa\c{c}\~ao de pessoas num banco de dados relacional}
 
@@ -22915,7 +22915,7 @@ Pedro  & 13/02/2013  &  3 \\
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e4d91173469576e32f3571663aaeb94e34415b3e}Tabela de cidades num banco de dados relacional.}
 
@@ -22966,7 +22966,7 @@ Como se v\^e, uma tabela no sentido de banco de dados relacionais \'e exatamente
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f66c1ac239a347d2b455611f794c18300b1974b6}Exemplo de tabela de um banco de dados relacional: cadastro de pessoas.}
 
@@ -23284,7 +23284,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Faculdade de Sa\'ude P\'ublica, 2006.
+[MEADOWS, 2006] Meadows, D. apud: Indicators and information Systems for sustainable development. The Sustainability Institute, 1998, In: WORKSHOP INTERNACIONAL PESQUISA EM INDICADORES DE SUSTENTABILIDADE. S\~ao Paulo, Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, 2006.
 \end{flushleft}
 
 
@@ -23484,7 +23484,7 @@ Para que o registro hist\'orico de interesse para este texto se d\^e no contexto
 
 
 \begin{flushleft}
-[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de P\'os-Gradua\c{c}\~ao em Hist\'oria, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
+[DOSSE, 2012] Dosse, F. Hist\'oria do tempo presente e historiografia, Tempo e Argumento, Revista do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGEN, Florion\'opolis, v. 4, n. 1, p. 5-22, jan/jun 2022
 \end{flushleft}
 
 
@@ -23726,7 +23726,7 @@ Esta pesquisa gerou v\'arios produtos educacionais que s\~ao descritos a seguir:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -23876,7 +23876,7 @@ A partir da s\'{\i}ntese dos resultados  dos eixos 1 e 2 ser\'a realizada  a val
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -23898,7 +23898,7 @@ A cria\c{c}\~ao do CNPq na d\'ecada de 50 \'e o grande marco para toda a \'area 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -23926,7 +23926,7 @@ A cria\c{c}\~ao dos laborat\'orios de microeletr\^onica, tanto na USP como na Un
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -23984,7 +23984,7 @@ O WASH disp\~oe de um canal na rede social Youtube para a dissemina\c{c}\~ao de 
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24001,7 +24001,7 @@ A Fig. 51 traz a distribui\c{c}\~ao de eventos do WASH por cidades brasileiras.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24024,7 +24024,7 @@ A Tabela mostra uma preval\^encia das atividades fim (69\%) em rela\c{c}\~ao \`a
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{a5eaff3e0d7afe3bcccdccd277cae286bd506174}Distribui\c{c}\~ao dos tipos de atividades realizadas durante eventos do WASH. (fonte: WASH, 2023)}
 
@@ -24081,7 +24081,7 @@ Uma observa\c{c}\~ao cuidadosa dos histogramas da Fig. 49 permitir\'a concluir q
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24121,7 +24121,7 @@ Os gr\'aficos, independentemente do recorte escolhido, indicam um crescimento ac
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24166,7 +24166,7 @@ O n\'umero de eventos realizados anualmente \'e um importante indicador da evolu
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24187,7 +24187,7 @@ Os limites presentes no Recorte B quanto ao registro de documentos e bolsistas i
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24237,7 +24237,7 @@ O histograma da Fig. 44 indica que, para o per\'{\i}odo de 2020 a 2021, houve um
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24265,7 +24265,7 @@ Outro aspecto no Recorte B \'e a preval\^encia de bolsas de inicia\c{c}\~ao para
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{2422b7c7fe35ecc5010472438083776a7ed64d61}Distribui\c{c}\~ao de bolsas por modalidade no Recorte B da Platu\'oxe, ressalvando que, nesse recorte, h\'a apenas dados das bolsas concedidas a partir de 2020. (fonte:  [[WASH (2023)]], por demanda da autora).}
 
@@ -24301,7 +24301,7 @@ Os dados do gr\'afico da Fig. 43 podem ser vistos na Tabela 11.
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24324,7 +24324,7 @@ A Fig. 42, por n\~ao apresentar dados para anos anteriores a 2020, mostra que os
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24870,7 +24870,7 @@ O diagrama da figura mostra que a dita \textquotedbl ponte\textquotedbl , uma me
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -24988,7 +24988,7 @@ O foco em \textquotedbl hackers\textquotedbl  (ou \textquotedbl geeks\textquoted
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -25033,7 +25033,7 @@ Cabe registrar que o papel de Ubiratan D Ambr\'osio \'e relatado, tamb\'em, por 
 
 Antes de prosseguir, \'e preciso abrir um par\^enteses sobre como a Profa. Afira Ripper optou pela Unicamp, em seu retorno ao Brasil.  MAMMANA (2018), ap\'os entrevista com Prof. Jos\'e Ellis Ripper Filho, esposo da Profa. Afira, traz um relato interessante sobre a decis\~ao dos pesquisadores brasileiros, expatriados nos Estados Unidos na d\'ecada de 60, de retornarem ao Brasil em plena ditadura. Em resumo, a escolha de Campinas foi decorrente da invas\~ao da UNB pelo Ex\'ercito em 1968. Bras\'{\i}lia era o destino preferido dos pesquisadores Brasileiros, por conta da proposta arrojada de Darcy Ribeiro para a UNB, mas ponderaram o risco de estarem pr\'oximos demais da \textquotedbl toca do le\~ao\textquotedbl   (MAMMANA, 2018), optando pela Unicamp. Essa decis\~ao dos pesquisadores foi determinante para a consolida\c{c}\~ao da UNICAMP e, consequentemente, para a voca\c{c}\~ao de Campinas em ci\^encia e tecnologia, que se observou nas d\'ecadas subsequentes.
 
-A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Instituto de Matem\'atica da Unicamp, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
+A professora Afira retornou ao Brasil e foi trabalhar num projeto de matem\'atica junto com o professor Ubiratan D’ambr\'osio, diretor do Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE, IMEC, no come\c{c}o da d\'ecada de 70. A experi\^encia anterior de Afira no grupo de Papert oportunizou o convite, pela Unicamp, para que Seymour Papert, da \'area de educa\c{c}\~ao, e Marvin Minsky, da \'area de intelig\^encia artificial, viessem ao Brasil.
 
 Inquieta e comprometida com sua carreira, n\~ao era seu perfil permanecer apenas como acompanhante do esposo e buscou uma atividade no seu campo de forma\c{c}\~ao. Foi assim que se engajou como aluna ouvinte no MIT, tendo sido estudante e, depois, tendo convivido profissionalmente com Papert, em 1973. A experi\^encia foi bastante marcante para ela, tendo impacto tamb\'em na sua vida pessoal, dado que seu filho foi a primeira crian\c{c}a brasileira a experimentar a linguagem LOGO, quando estava sendo instalado o Media Lab, no MIT.
 
@@ -25113,7 +25113,7 @@ Sobre essa situa\c{c}\~ao, (MAMMANA, 2006) alertava:
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -25156,7 +25156,7 @@ A avalia\c{c}\~ao do Governo Brasileiro j\'a percebia que o OLPC exagerava o pap
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -25546,7 +25546,7 @@ Tinha-se a compreens\~ao que somente a disponibiliza\c{c}\~ao de equipamentos te
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -25677,7 +25677,7 @@ N\~ao aprofundaremos mais na descri\c{c}\~ao da modelagem de dados do Platu\'oxe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{5b2e4ba8f3836249e7dd88b37344da7bfa3669c5}O banco de dados relacional da Platu\'oxe \'e constitu\'{i}do por 54 tabelas}
 
@@ -25736,7 +25736,7 @@ O excerto da tabela \textquotedbl afiliacoes\textquotedbl  mostrado na tabela 9 
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{e6120545268b93238330297571c4756e7c97df1a}Subconjunto de registro da tabela afiliacoes, onde foram selecionados apenas os dados do participante que tem identificador 2 na tabela participantes2.}
 
@@ -25763,7 +25763,7 @@ Agora, vamos extrair da tabela \textquotedbl afiliacoes\textquotedbl , (ver Tabe
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{96081f1bc28f7c738012f4beb3ef867b6b67107f}Exemplo de linha da tabela participantes2, selecionada para que se possa entender como o registro dos pap\'eis desempenhados por cada participante \'e feito no \^ambito do WASH. A tabela participantes2 tem 3312 registros de participantes.}
 
@@ -25783,7 +25783,7 @@ Para dar prosseguimento \`a exemplifica\c{c}\~ao, agora isolaremos um participan
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{89e4a4c81cad3904f1348ca629486a33cc2c9bb6}Vis\~ao parcial da tabela instituicoes da base de dados do WASH. A tabela completa tem 150 linhas com registros, de institui\c{c}\~oes. Na presente reprodu\c{c}\~ao foram selecionados registros que mostram a pluralidade do atendimento do WASH, tendo sido retirados as repeti\c{c}\~oes de tipos de institui\c{c}\~oes por motivos de espa\c{c}o.}
 
@@ -25813,7 +25813,7 @@ id\_chave\_instituicao  &  nome\_instituicao \\
                   128  &  Escola Estadual MAJOR MIGUEL NAKED \\
                   111  &  ETEC Carapicu\'{\i}ba \\
                    47  &  Ex\'ercito Brasileiro \\
-                  156  &  Faculdade Zumbi dos Palmares \\
+                  156  &  Programa de Pós-Graduação em Ensino de Ciências Humanas, Sociais e da Natureza - PPGE
                    53  &  FAPESP \\
                   119  &  Funda\c{c}\~ao Arauc\'aria \\
                    35  &  Governo do Estado de S\~ao Paulo \\
@@ -25840,7 +25840,7 @@ Na sequ\^encia, mostramos uma vis\~ao parcial da tabela \textquotedbl Instituico
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{4d91d8ebc21ea7f9f54231ce125fae7980e789a3}Vis\~ao parcial da tabela cargos da base de dados do WASH. A tabela completa tem 42 linhas com registros de cargos.}
 
@@ -25922,7 +25922,7 @@ Esse cuidado em individualizar os participantes permitia, por exemplo, ter uma m
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 
@@ -26148,7 +26148,7 @@ Pelo que pudemos apurar na literatura, este assunto poderia ser aprofundado tant
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{fe3cd6334e1b9072eda70730e1734e26869d9c57}Lista de resultados (nomes fict\'{i}cios) para a consulta SQL de todos os participantes cujo primeiro nome \'e Paulo.}
 
@@ -26194,7 +26194,7 @@ Assim, com essas palavras chave, podemos, por exemplo, consultar na tabela \text
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{0faf6421bd5dff6b3cb8bedd3f0b4212f1150970}Tradu\c{c}\~ao livre das palavras chave SQL associadas ao comando SELECT.}
 
@@ -26256,7 +26256,7 @@ Este tipo de erro \'e muito comum em  planilhas, porque essa ferramenta n\~ao ve
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{f6feaa39313aa0691b7fdadc84175a203e68bf77}Deslocamento para esquerda de um conjunto de c\'elulas de uma planilha eletr\^onica}
 
@@ -26291,7 +26291,7 @@ Na tabela 2 vemos um tipo de erro de preenchimento muito comum em planilhas elet
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{ddd7a335bbc10f88eaaf4abda266d151f0ba0e6f}Exemplo de cadastro de estudantes armazenado em planilha eletr\^onica.}
 
@@ -26397,7 +26397,7 @@ Para o c\'alculo de investimento por hora, por aluno, (CNPq, 2020) considerou qu
 
 
 
-\begin{table}[htb]
+\begin{table}[Htb]
 \tiny
 \caption{\label{489af209007e651b007535a7733d5ca117c5b310}Compara\c{c}\~ao do investimento por hora, por aluno, nas escolas privadas e p\'ublicas. Os dados t\^em origem em v\'arias fontes regionais: FUNDEB, DOU - Di\'ario Oficial da Uni\~ao e Plataforma Campineira Melhor Escola. (Fonte: (CNPq (2020)}
 
@@ -27282,7 +27282,7 @@ Por curioso, n\~ao obstante os criadores do WASH tenham se inspirado nos conceit
 
 
 \captionsetup{format=plain}
-\begin{figure}[htb]
+\begin{figure}[Htb]
 
 	\begin{center}
 

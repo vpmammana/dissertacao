@@ -54,9 +54,9 @@ find ../../latex/* | grep -v "USPSC" | grep -i "\_RedarTex.tex\|_RedarTex.cls" |
 
 touch ../bash/substitui_tex_utfpr_9.bash
 chmod u+x ../bash/substitui_tex_utfpr_9.bash
-find ../../latex/* | grep -v "USPSC" | grep -i "\_RedarTex.tex\|_RedarTex.cls" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[coorientador\]@/Dr. Victor Pellegrini Mammana/g\" "$0}' > ../bash/substitui_tex_utfpr_9.bash
+find ../../latex/* | grep -v "USPSC" | grep -i "\_RedarTex.tex\|_RedarTex.cls" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[coorientador\]@/Victor Pellegrini Mammana/g\" "$0}' > ../bash/substitui_tex_utfpr_9.bash
 find ../../latex/* | grep -v "USPSC" | grep -i "\_RedarTex.tex\|_RedarTex.cls" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[ultimonomecoorientador\]@/Mammana/g\" "$0}' >> ../bash/substitui_tex_utfpr_9.bash
-find ../../latex/* | grep -v "USPSC" | grep -i "\_RedarTex.tex\|_RedarTex.cls" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[primeirosnomescoorientador\]@/Dr. Victor Pellegrini/g\" "$0}' >> ../bash/substitui_tex_utfpr_9.bash
+find ../../latex/* | grep -v "USPSC" | grep -i "\_RedarTex.tex\|_RedarTex.cls" | awk -v acute="'" -v tilde="~" '{print "sed -i \"s/@\[primeirosnomescoorientador\]@/Victor Pellegrini/g\" "$0}' >> ../bash/substitui_tex_utfpr_9.bash
 ../bash/substitui_tex_utfpr_9.bash
 
 touch ../bash/substitui_tex_utfpr_10.bash

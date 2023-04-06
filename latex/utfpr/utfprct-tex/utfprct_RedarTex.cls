@@ -599,7 +599,7 @@
 \newcommand{\TituloDoCoorientador}[1]{\renewcommand{\imprimirtitulodocoorientador}{#1}}
 
 %% Nome completo do(a) coorientador(a)
-\providecommand{\imprimirnomedocoorientador}{Dr. Victor Pellegrini Mammana}
+\providecommand{\imprimirnomedocoorientador}{Victor Pellegrini Mammana}
 \newcommand{\NomeDoCoorientador}[1]{\renewcommand{\imprimirnomedocoorientador}{#1}}
 
 %% Sobrenome do(a) coorientador(a)

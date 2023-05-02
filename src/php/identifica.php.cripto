@@ -1,6 +1,0 @@
-<?php
-$username="victor";
-$pass="aerofolio";
-// cuidado com o ponto de interrogacao abaixo, porque coloca um line break antes do echo quando este arquivo eh incluido em outro com include
-?>
-

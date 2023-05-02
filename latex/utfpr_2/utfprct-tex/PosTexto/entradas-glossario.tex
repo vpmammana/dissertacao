@@ -1,0 +1,74 @@
+%%%% GLOSS\'ARIO
+%%
+%% Rela\c{c}\~ao de palavras ou express\~oes t\'ecnicas de uso restrito ou de sentido obscuro, utilizadas no texto, acompanhadas das
+%% respectivas defini\c{c}\~oes.
+
+%% Entradas do gloss\'ario: \newglossaryentry{r\'otulo}{informa\c{c}\~oes da entrada}
+
+\newglossaryentry{pai}{%% Informa\c{c}\~oes da entrada
+  name        = {pai},
+  plural      = {pais},
+  description = {um exemplo de entrada pai que possui subentradas (entradas filhas)}
+}
+
+\newglossaryentry{componente}{%% Informa\c{c}\~oes da entrada
+  name        = {componente},
+  plural      = {componentes},
+  parent      = {pai},
+  description = {um exemplo de uma entrada componente, subentrada da entrada chamada \gls{pai}}
+}
+
+\newglossaryentry{filho}{%% Informa\c{c}\~oes da entrada
+  name        = {filho},
+  plural      = {filhos},
+  parent      = {pai},
+  description = {um exemplo de uma entrada filha (subentrada) da entrada chamada \gls{pai}. Trata-se de uma entrada irm\~a da entrada chamada \gls{componente}}
+}
+
+\newglossaryentry{equilibrio}{%% Informa\c{c}\~oes da entrada
+  name        = {equil\'{\i}brio da configura\c{c}\~ao},
+  see         = [veja tamb\'em]{componente},
+  description = {uma consist\^encia entre os \glspl{componente}}
+}
+
+\newglossaryentry{tex}{%% Informa\c{c}\~oes da entrada
+  name        = {\TeX},
+  sort        = {TeX},
+  description = {\'e um sistema de tipografia criado por Donald E. Knuth}
+}
+
+\newglossaryentry{latex}{%% Informa\c{c}\~oes da entrada
+  name        = {\latex},
+  sort        = {LaTeX},
+  description = {um conjunto de macros para o processador de textos \gls{tex}, utilizado amplamente para a produ\c{c}\~ao de textos matem\'aticos e cient\'{\i}ficos devido \`a sua alta qualidade tipogr\'afica}
+}
+
+\newglossaryentry{bibtex}{%% Informa\c{c}\~oes da entrada
+  name        = {Bib\TeX},
+  sort        = {BibTeX},
+  parent      = {latex},
+  description = {um software de gerenciamento de refer\^encias para a formata\c{c}\~ao de listas de refer\^encias. A ferramenta Bib\TeX\ \'e normalmente usada em conjunto com o sistema de prepara\c{c}\~ao de documentos do \gls{latex}}
+}
+
+\newglossaryentry{abntex2}{%% Informa\c{c}\~oes da entrada
+  name        = {\abnTeX},
+  sort        = {abnTeX2},
+  see         = {latex},
+  description = {uma su\'{\i}te para \gls{latex} que atende os requisitos das normas da Associa\c{c}\~ao Brasileira de Normas T\'ecnicas (ABNT) para elabora\c{c}\~ao de documentos t\'ecnicos e cient\'{\i}ficos brasileiros, como artigos cient\'{\i}ficos, relat\'orios t\'ecnicos, trabalhos acad\^emicos como teses, disserta\c{c}\~oes, projetos de pesquisa e outros documentos do g\^enero}
+}
+
+\newglossaryentry{utfprpgtex}{%% Informa\c{c}\~oes da entrada
+  name        = {\utfprpgtex},
+  sort        = {UTFPRPGTeX},
+  see         = {latex},
+  parent      = {abntex2},
+  description = {uma su\'{\i}te para \gls{latex}, baseada na su\'{\i}te \gls{abntex2}, que atende os requisitos das normas definidas pela Universidade Tecnol\'ogica Federal do Paran\'a (UTFPR), c\^ampus Ponta Grossa, para elabora\c{c}\~ao de trabalhos acad\^emicos}
+}
+
+\newglossaryentry{utfprcttex}{%% Informa\c{c}\~oes da entrada
+  name        = {\utfprcttex},
+  sort        = {UTFPRCTTeX},
+  see         = {latex},
+  parent      = {abntex2},
+  description = {uma su\'{\i}te para \gls{latex}, baseada na su\'{\i}te \gls{abntex2}, que atende os requisitos das normas definidas pela Universidade Tecnol\'ogica Federal do Paran\'a (UTFPR), c\^ampus Curitiba, para elabora\c{c}\~ao de trabalhos acad\^emicos}
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  6 APR 2023 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.7.10)  10 APR 2023 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2837,18 +2837,25 @@ Package pdftex.def Info: ./PreTexto/folha_de_aprovacao_exemplo.pdf , page1 used
 [11] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-) (./utfprct_RedarTex.lop) (./utfprct_RedarTex.loh) (./utfprct_RedarTex.lod)
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 42.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+(./utfprct_RedarTex.lop) (./utfprct_RedarTex.loh) (./utfprct_RedarTex.lod)
 \openout4 = `utfprct_RedarTex.mw'.
 
- [12] (./utfprct_RedarTex.mw)
+
+[12] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
  (./utfprct_RedarTex.lot)
 \openout4 = `utfprct_RedarTex.mw'.
 
-[13
+ [13
 
-] (./utfprct_RedarTex.mw)
+]
+(./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout2 = `./PreTexto/file-acronimos_RedarTex.aux'.
@@ -2908,7 +2915,7 @@ Package pdftex.def Info: ./PreTexto/folha_de_aprovacao_exemplo.pdf , page1 used
  [21] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/acesso-internet.png, id=575, 630.355pt x 289.08pt>
+<../../../imagens/acesso-internet.png, id=572, 630.355pt x 289.08pt>
 File: ../../../imagens/acesso-internet.png Graphic file (type png)
 <use ../../../imagens/acesso-internet.png>
 Package pdftex.def Info: ../../../imagens/acesso-internet.png  used on input li
@@ -2957,7 +2964,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/capa-portaria-178.png, id=607, 1847.90375pt x 1000.73875pt>
+<../../../imagens/capa-portaria-178.png, id=604, 1847.90375pt x 1000.73875pt>
 File: ../../../imagens/capa-portaria-178.png Graphic file (type png)
 <use ../../../imagens/capa-portaria-178.png>
 Package pdftex.def Info: ../../../imagens/capa-portaria-178.png  used on input 
@@ -2973,117 +2980,109 @@ line 513.
  [30 <../../../imagens/capa-portaria-178.png>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 539.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
 \openout4 = `utfprct_RedarTex.mw'.
 
- [31]
+ [31] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+
+[32] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [33] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [34]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [32] (./utfprct_RedarTex.mw)
+ [35] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [33]
+ [36]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [34] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [35]
-(./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [36] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [37]
-(./utfprct_RedarTex.mw)
+ [37] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
  [38
 
-] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [39]
+]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [40] (./utfprct_RedarTex.mw)
+ [39] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [41]
+ [40]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [42] (./utfprct_RedarTex.mw)
+ [41] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [43]
+ [42]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [44] (./utfprct_RedarTex.mw)
+ [43] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [45]
+ [44]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [46] (./utfprct_RedarTex.mw)
+ [45] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
- [47]
+ [46]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/minitel.jpg, id=688, 734.745pt x 507.39563pt>
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [47] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+<../../../imagens/minitel.jpg, id=685, 734.745pt x 507.39563pt>
 File: ../../../imagens/minitel.jpg Graphic file (type jpg)
 <use ../../../imagens/minitel.jpg>
 Package pdftex.def Info: ../../../imagens/minitel.jpg  used on input line 886.
 (pdftex.def)             Requested size: 182.09486pt x 125.74919pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [48 <../../../imagens/minitel.jpg>]
-(./utfprct_RedarTex.mw)
+ [48 <../../../imagens/minitel.jpg>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
@@ -3146,37 +3145,37 @@ Package pdftex.def Info: ../../../imagens/minitel.jpg  used on input line 886.
  [59] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/criadores-logo.png, id=740, 311.1625pt x 256.96pt>
+<../../../imagens/criadores-logo.png, id=737, 311.1625pt x 256.96pt>
 File: ../../../imagens/criadores-logo.png Graphic file (type png)
 <use ../../../imagens/criadores-logo.png>
 Package pdftex.def Info: ../../../imagens/criadores-logo.png  used on input lin
 e 1089.
 (pdftex.def)             Requested size: 182.09486pt x 150.37392pt.
-<../../../imagens/criancas-1968.png, id=741, 355.3275pt x 232.87pt>
+<../../../imagens/criancas-1968.png, id=738, 355.3275pt x 232.87pt>
 File: ../../../imagens/criancas-1968.png Graphic file (type png)
 <use ../../../imagens/criancas-1968.png>
 Package pdftex.def Info: ../../../imagens/criancas-1968.png  used on input line
  1096.
 (pdftex.def)             Requested size: 182.09486pt x 119.34131pt.
-<../../../imagens/Elmer-Elsie4.jpg, id=742, 351.3125pt x 239.89626pt>
+<../../../imagens/Elmer-Elsie4.jpg, id=739, 351.3125pt x 239.89626pt>
 File: ../../../imagens/Elmer-Elsie4.jpg Graphic file (type jpg)
 <use ../../../imagens/Elmer-Elsie4.jpg>
 Package pdftex.def Info: ../../../imagens/Elmer-Elsie4.jpg  used on input line 
 1103.
 (pdftex.def)             Requested size: 182.09486pt x 124.34776pt.
-<../../../imagens/historia-logo-turtle-01.jpg, id=743, 401.5pt x 260.975pt>
+<../../../imagens/historia-logo-turtle-01.jpg, id=740, 401.5pt x 260.975pt>
 File: ../../../imagens/historia-logo-turtle-01.jpg Graphic file (type jpg)
 <use ../../../imagens/historia-logo-turtle-01.jpg>
 Package pdftex.def Info: ../../../imagens/historia-logo-turtle-01.jpg  used on 
 input line 1110.
 (pdftex.def)             Requested size: 182.09486pt x 118.36551pt.
-<../../../imagens/Papert-x640.jpg, id=744, 154.176pt x 209.3421pt>
+<../../../imagens/Papert-x640.jpg, id=741, 154.176pt x 209.3421pt>
 File: ../../../imagens/Papert-x640.jpg Graphic file (type jpg)
 <use ../../../imagens/Papert-x640.jpg>
 Package pdftex.def Info: ../../../imagens/Papert-x640.jpg  used on input line 1
 117.
 (pdftex.def)             Requested size: 182.09486pt x 247.25471pt.
-<../../../imagens/logo-PDP11.png, id=745, 577.15625pt x 456.70625pt>
+<../../../imagens/logo-PDP11.png, id=742, 577.15625pt x 456.70625pt>
 File: ../../../imagens/logo-PDP11.png Graphic file (type png)
 <use ../../../imagens/logo-PDP11.png>
 Package pdftex.def Info: ../../../imagens/logo-PDP11.png  used on input line 11
@@ -3193,7 +3192,7 @@ Package pdftex.def Info: ../../../imagens/logo-PDP11.png  used on input line 11
  [61] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/Scratch-Block.png, id=755, 853.1875pt x 770.88pt>
+<../../../imagens/Scratch-Block.png, id=752, 853.1875pt x 770.88pt>
 File: ../../../imagens/Scratch-Block.png Graphic file (type png)
 <use ../../../imagens/Scratch-Block.png>
 Package pdftex.def Info: ../../../imagens/Scratch-Block.png  used on input line
@@ -3406,7 +3405,7 @@ tfprct_RedarTex.mw)
  [97] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=911, 193.9245pt 
+<../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg, id=908, 193.9245pt 
 x 308.352pt>
 File: ../../../imagens/blurred-Presenca-Oficina-2014-08-23.jpeg Graphic file (t
 ype jpg)
@@ -3414,7 +3413,7 @@ ype jpg)
 Package pdftex.def Info: ../../../imagens/blurred-Presenca-Oficina-2014-08-23.j
 peg  used on input line 1843.
 (pdftex.def)             Requested size: 182.09486pt x 289.54509pt.
-<../../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=912, 207.8967pt 
+<../../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg, id=909, 207.8967pt 
 x 308.352pt>
 File: ../../../imagens/blurred-Presenca-Oficina-2014-09-06.jpeg Graphic file (t
 ype jpg)
@@ -3422,13 +3421,13 @@ ype jpg)
 Package pdftex.def Info: ../../../imagens/blurred-Presenca-Oficina-2014-09-06.j
 peg  used on input line 1850.
 (pdftex.def)             Requested size: 182.09486pt x 270.08963pt.
-<../../../imagens/blurred-planilha2.png, id=913, 922.94812pt x 337.26pt>
+<../../../imagens/blurred-planilha2.png, id=910, 922.94812pt x 337.26pt>
 File: ../../../imagens/blurred-planilha2.png Graphic file (type png)
 <use ../../../imagens/blurred-planilha2.png>
 Package pdftex.def Info: ../../../imagens/blurred-planilha2.png  used on input 
 line 1857.
 (pdftex.def)             Requested size: 182.09486pt x 66.53993pt.
-<../../../imagens/evolucao-da-documentacao.png, id=914, 673.51625pt x 455.7025p
+<../../../imagens/evolucao-da-documentacao.png, id=911, 673.51625pt x 455.7025p
 t>
 File: ../../../imagens/evolucao-da-documentacao.png Graphic file (type png)
 <use ../../../imagens/evolucao-da-documentacao.png>
@@ -3521,7 +3520,7 @@ a2.png>] (./utfprct_RedarTex.mw)
  [112] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/antenagesac.jpg, id=980, 642.4pt x 481.8pt>
+<../../../imagens/antenagesac.jpg, id=977, 642.4pt x 481.8pt>
 File: ../../../imagens/antenagesac.jpg Graphic file (type jpg)
 <use ../../../imagens/antenagesac.jpg>
 Package pdftex.def Info: ../../../imagens/antenagesac.jpg  used on input line 2
@@ -3594,66 +3593,75 @@ Package pdftex.def Info: ../../../imagens/antenagesac.jpg  used on input line 2
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/bantorafa.JPG, id=1031, 2055.68pt x 1541.76pt>
+<../../../imagens/bantorafa.JPG, id=1028, 2055.68pt x 1541.76pt>
 File: ../../../imagens/bantorafa.JPG Graphic file (type jpg)
 <use ../../../imagens/bantorafa.JPG>
 Package pdftex.def Info: ../../../imagens/bantorafa.JPG  used on input line 245
 8.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/oficinalac.JPG, id=1032, 2055.68pt x 1541.76pt>
+<../../../imagens/oficinalac.JPG, id=1029, 2055.68pt x 1541.76pt>
 File: ../../../imagens/oficinalac.JPG Graphic file (type jpg)
 <use ../../../imagens/oficinalac.JPG>
 Package pdftex.def Info: ../../../imagens/oficinalac.JPG  used on input line 24
 65.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/jabber.JPG, id=1033, 2055.68pt x 1541.76pt>
+<../../../imagens/jabber.JPG, id=1030, 2055.68pt x 1541.76pt>
 File: ../../../imagens/jabber.JPG Graphic file (type jpg)
 <use ../../../imagens/jabber.JPG>
 Package pdftex.def Info: ../../../imagens/jabber.JPG  used on input line 2472.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/lacelavince.JPG, id=1034, 2055.68pt x 1541.76pt>
+<../../../imagens/lacelavince.JPG, id=1031, 2055.68pt x 1541.76pt>
 File: ../../../imagens/lacelavince.JPG Graphic file (type jpg)
 <use ../../../imagens/lacelavince.JPG>
 Package pdftex.def Info: ../../../imagens/lacelavince.JPG  used on input line 2
 479.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
-<../../../imagens/povo.JPG, id=1035, 2055.68pt x 1541.76pt>
+<../../../imagens/povo.JPG, id=1032, 2055.68pt x 1541.76pt>
 File: ../../../imagens/povo.JPG Graphic file (type jpg)
 <use ../../../imagens/povo.JPG>
 Package pdftex.def Info: ../../../imagens/povo.JPG  used on input line 2486.
 (pdftex.def)             Requested size: 182.09486pt x 136.56454pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2487--2487
+[]\T1/ptm/b/n/10 Figura 20 \T1/ptm/m/n/9 ^^U |\T1/ptm/b/n/10 @[caption-
+ []
+
+
+Overfull \hbox (26.07396pt too wide) in paragraph at lines 2487--2487
+\T1/ptm/b/n/10 50c13a4f82feece9e41db915d8e5bc4c5d5094dd]@| 
+ []
+
 \openout4 = `utfprct_RedarTex.mw'.
 
- [125] (./utfprct_RedarTex.mw)
+[125] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
 
  [126 <../../../imagens/bantorafa.JPG> <../../../imagens/oficinalac.JPG> <../..
 /../imagens/jabber.JPG> <../../../imagens/lacelavince.JPG> <../../../imagens/po
-vo.JPG>]
-(./utfprct_RedarTex.mw)
+vo.JPG>] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/lula-papert.jpg, id=1045, 642.4pt x 427.5975pt>
+<../../../imagens/lula-papert.jpg, id=1042, 642.4pt x 427.5975pt>
 File: ../../../imagens/lula-papert.jpg Graphic file (type jpg)
 <use ../../../imagens/lula-papert.jpg>
 Package pdftex.def Info: ../../../imagens/lula-papert.jpg  used on input line 2
 528.
 (pdftex.def)             Requested size: 182.09486pt x 121.20757pt.
-<../../../imagens/Kofi-negroponte.png, id=1046, 577.15625pt x 434.62375pt>
+<../../../imagens/Kofi-negroponte.png, id=1043, 577.15625pt x 434.62375pt>
 File: ../../../imagens/Kofi-negroponte.png Graphic file (type png)
 <use ../../../imagens/Kofi-negroponte.png>
 Package pdftex.def Info: ../../../imagens/Kofi-negroponte.png  used on input li
 ne 2535.
 (pdftex.def)             Requested size: 182.09486pt x 137.12605pt.
-<../../../imagens/presidente-italia.jpg, id=1047, 550.30594pt x 376.40625pt>
+<../../../imagens/presidente-italia.jpg, id=1044, 550.30594pt x 376.40625pt>
 File: ../../../imagens/presidente-italia.jpg Graphic file (type jpg)
 <use ../../../imagens/presidente-italia.jpg>
 Package pdftex.def Info: ../../../imagens/presidente-italia.jpg  used on input 
 line 2542.
 (pdftex.def)             Requested size: 182.09486pt x 124.5533pt.
-<../../../imagens/equipeOLPC.jpg, id=1048, 1199.48125pt x 899.36pt>
+<../../../imagens/equipeOLPC.jpg, id=1045, 1199.48125pt x 899.36pt>
 File: ../../../imagens/equipeOLPC.jpg Graphic file (type jpg)
 <use ../../../imagens/equipeOLPC.jpg>
 Package pdftex.def Info: ../../../imagens/equipeOLPC.jpg  used on input line 25
@@ -3662,8 +3670,8 @@ Package pdftex.def Info: ../../../imagens/equipeOLPC.jpg  used on input line 25
 \openout4 = `utfprct_RedarTex.mw'.
 
  [127 <../../../imagens/lula-papert.jpg> <../../../imagens/Kofi-negroponte.png>
- <../../../imagens/presidente-italia.jpg> <../../../imagens/equipeOLPC.jpg>] (.
-/utfprct_RedarTex.mw)
+ <../../../imagens/presidente-italia.jpg> <../../../imagens/equipeOLPC.jpg>]
+(./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
@@ -3673,8 +3681,8 @@ Package pdftex.def Info: ../../../imagens/equipeOLPC.jpg  used on input line 25
 
 \openout4 = `utfprct_RedarTex.mw'.
 
-
-[129] (./utfprct_RedarTex.mw)
+ [129]
+(./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
 \openout4 = `utfprct_RedarTex.mw'.
@@ -3682,7 +3690,7 @@ Package pdftex.def Info: ../../../imagens/equipeOLPC.jpg  used on input line 25
  [130] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/computer-room.png, id=1066, 757.83125pt x 404.51125pt>
+<../../../imagens/computer-room.png, id=1063, 757.83125pt x 404.51125pt>
 File: ../../../imagens/computer-room.png Graphic file (type png)
 <use ../../../imagens/computer-room.png>
 Package pdftex.def Info: ../../../imagens/computer-room.png  used on input line
@@ -3711,7 +3719,7 @@ Package pdftex.def Info: ../../../imagens/computer-room.png  used on input line
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/embaixo-mesa.png, id=1085, 1105.12875pt x 411.5375pt>
+<../../../imagens/embaixo-mesa.png, id=1082, 1105.12875pt x 411.5375pt>
 File: ../../../imagens/embaixo-mesa.png Graphic file (type png)
 <use ../../../imagens/embaixo-mesa.png>
 Package pdftex.def Info: ../../../imagens/embaixo-mesa.png  used on input line 
@@ -3761,7 +3769,7 @@ Package pdftex.def Info: ../../../imagens/embaixo-mesa.png  used on input line
  [142] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/primeiro-wash-corte.png, id=1121, 1259.70625pt x 630.355pt>
+<../../../imagens/primeiro-wash-corte.png, id=1118, 1259.70625pt x 630.355pt>
 File: ../../../imagens/primeiro-wash-corte.png Graphic file (type png)
 <use ../../../imagens/primeiro-wash-corte.png>
 Package pdftex.def Info: ../../../imagens/primeiro-wash-corte.png  used on inpu
@@ -3799,7 +3807,7 @@ t line 2809.
  [148] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/ponte-wash.png, id=1148, 1437.37pt x 1003.75pt>
+<../../../imagens/ponte-wash.png, id=1145, 1437.37pt x 1003.75pt>
 File: ../../../imagens/ponte-wash.png Graphic file (type png)
 <use ../../../imagens/ponte-wash.png>
 Package pdftex.def Info: ../../../imagens/ponte-wash.png  used on input line 29
@@ -3850,7 +3858,7 @@ Package pdftex.def Info: ../../../imagens/ponte-wash.png  used on input line 29
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/TVT.jpg, id=1183, 919.435pt x 1284.8pt>
+<../../../imagens/TVT.jpg, id=1180, 919.435pt x 1284.8pt>
 File: ../../../imagens/TVT.jpg Graphic file (type jpg)
 <use ../../../imagens/TVT.jpg>
 Package pdftex.def Info: ../../../imagens/TVT.jpg  used on input line 3027.
@@ -3920,14 +3928,14 @@ Package pdftex.def Info: ../../../imagens/TVT.jpg  used on input line 3027.
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/Evento-Ciencia-Em-Show.jpg, id=1234, 622.325pt x 414.54875pt>
+<../../../imagens/Evento-Ciencia-Em-Show.jpg, id=1231, 622.325pt x 414.54875pt>
 
 File: ../../../imagens/Evento-Ciencia-Em-Show.jpg Graphic file (type jpg)
 <use ../../../imagens/Evento-Ciencia-Em-Show.jpg>
 Package pdftex.def Info: ../../../imagens/Evento-Ciencia-Em-Show.jpg  used on i
 nput line 3295.
 (pdftex.def)             Requested size: 182.09486pt x 121.29771pt.
-<../../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1235, 2007.5pt x 13
+<../../../imagens/dia-das-criancas-2022-10-03-menor.JPG, id=1232, 2007.5pt x 13
 37.99875pt>
 File: ../../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type
  jpg)
@@ -3935,7 +3943,7 @@ File: ../../../imagens/dia-das-criancas-2022-10-03-menor.JPG Graphic file (type
 Package pdftex.def Info: ../../../imagens/dia-das-criancas-2022-10-03-menor.JPG
   used on input line 3302.
 (pdftex.def)             Requested size: 182.09486pt x 121.35384pt.
-<../../../imagens/confraternizacao-de-natal-menor.jpeg, id=1236, 2007.5pt x 133
+<../../../imagens/confraternizacao-de-natal-menor.jpeg, id=1233, 2007.5pt x 133
 7.99875pt>
 File: ../../../imagens/confraternizacao-de-natal-menor.jpeg Graphic file (type 
 jpg)
@@ -3943,28 +3951,24 @@ jpg)
 Package pdftex.def Info: ../../../imagens/confraternizacao-de-natal-menor.jpeg 
  used on input line 3309.
 (pdftex.def)             Requested size: 182.09486pt x 121.35384pt.
-<../../../imagens/Evento-Greenk-2018-05-27.jpg, id=1237, 1043.9pt x 782.925pt>
+<../../../imagens/Evento-Greenk-2018-05-27.jpg, id=1234, 1043.9pt x 782.925pt>
 File: ../../../imagens/Evento-Greenk-2018-05-27.jpg Graphic file (type jpg)
 <use ../../../imagens/Evento-Greenk-2018-05-27.jpg>
 Package pdftex.def Info: ../../../imagens/Evento-Greenk-2018-05-27.jpg  used on
  input line 3316.
 (pdftex.def)             Requested size: 182.09486pt x 136.5719pt.
-<../../../imagens/MAAS.jpg, id=1238, 1043.9pt x 782.925pt>
+<../../../imagens/MAAS.jpg, id=1235, 1043.9pt x 782.925pt>
 File: ../../../imagens/MAAS.jpg Graphic file (type jpg)
 <use ../../../imagens/MAAS.jpg>
 Package pdftex.def Info: ../../../imagens/MAAS.jpg  used on input line 3323.
 (pdftex.def)             Requested size: 182.09486pt x 136.5719pt.
-<../../../imagens/Ciencia-Prado-publico.jpeg, id=1239, 1284.8pt x 856.19875pt>
+<../../../imagens/Ciencia-Prado-publico.jpeg, id=1236, 1284.8pt x 856.19875pt>
 File: ../../../imagens/Ciencia-Prado-publico.jpeg Graphic file (type jpg)
 <use ../../../imagens/Ciencia-Prado-publico.jpeg>
 Package pdftex.def Info: ../../../imagens/Ciencia-Prado-publico.jpeg  used on i
 nput line 3330.
 (pdftex.def)             Requested size: 182.09486pt x 121.34329pt.
-
-
-LaTeX Warning: Float too large for page by 11.42982pt on input line 3335.
-
-<../../../imagens/evento-sao-miguel.png, id=1240, 706.64pt x 686.565pt>
+<../../../imagens/evento-sao-miguel.png, id=1237, 706.64pt x 686.565pt>
 File: ../../../imagens/evento-sao-miguel.png Graphic file (type png)
 <use ../../../imagens/evento-sao-miguel.png>
 Package pdftex.def Info: ../../../imagens/evento-sao-miguel.png  used on input 
@@ -3972,23 +3976,23 @@ line 3351.
 (pdftex.def)             Requested size: 182.09486pt x 176.92079pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
-[169] (./utfprct_RedarTex.mw)
+ [169] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/output-participantes.jpeg, id=1245, 2258.4375pt x 3011.25pt>
+<../../../imagens/output-participantes.jpeg, id=1242, 2258.4375pt x 3011.25pt>
 File: ../../../imagens/output-participantes.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-participantes.jpeg>
 Package pdftex.def Info: ../../../imagens/output-participantes.jpeg  used on in
 put line 3377.
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
-<../../../imagens/output-participantes2.jpeg, id=1246, 2258.4375pt x 3011.25pt>
+<../../../imagens/output-participantes2.jpeg, id=1243, 2258.4375pt x 3011.25pt>
 
 File: ../../../imagens/output-participantes2.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-participantes2.jpeg>
 Package pdftex.def Info: ../../../imagens/output-participantes2.jpeg  used on i
 nput line 3384.
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
-<../../../imagens/output-media-participacoes.jpeg, id=1247, 2258.4375pt x 3011.
+<../../../imagens/output-media-participacoes.jpeg, id=1244, 2258.4375pt x 3011.
 25pt>
 File: ../../../imagens/output-media-participacoes.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-media-participacoes.jpeg>
@@ -3997,29 +4001,31 @@ Package pdftex.def Info: ../../../imagens/output-media-participacoes.jpeg  used
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [170] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [171]
+ [170]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/genero-todos-crop.jpeg, id=1257, 583.781pt x 504.284pt>
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [171] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+<../../../imagens/genero-todos-crop.jpeg, id=1254, 583.781pt x 504.284pt>
 File: ../../../imagens/genero-todos-crop.jpeg Graphic file (type jpg)
 <use ../../../imagens/genero-todos-crop.jpeg>
 Package pdftex.def Info: ../../../imagens/genero-todos-crop.jpeg  used on input
  line 3445.
 (pdftex.def)             Requested size: 182.09486pt x 157.29596pt.
-<../../../imagens/distribuicao-sexo-bolsistas.png, id=1258, 678.535pt x 415.552
+<../../../imagens/distribuicao-sexo-bolsistas.png, id=1255, 678.535pt x 415.552
 5pt>
 File: ../../../imagens/distribuicao-sexo-bolsistas.png Graphic file (type png)
 <use ../../../imagens/distribuicao-sexo-bolsistas.png>
 Package pdftex.def Info: ../../../imagens/distribuicao-sexo-bolsistas.png  used
  on input line 3452.
 (pdftex.def)             Requested size: 182.09486pt x 111.51585pt.
-<../../../imagens/bolsas-anualmente-recorte-b-crop.png, id=1259, 1010.77625pt x
+LaTeX Font Info:    Font shape `TS1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `TS1/ptm/b/n' tried instead on input line 3453.
+<../../../imagens/bolsas-anualmente-recorte-b-crop.png, id=1256, 1010.77625pt x
  395.4775pt>
 File: ../../../imagens/bolsas-anualmente-recorte-b-crop.png Graphic file (type 
 png)
@@ -4029,10 +4035,11 @@ Package pdftex.def Info: ../../../imagens/bolsas-anualmente-recorte-b-crop.png
 (pdftex.def)             Requested size: 1010.77377pt x 395.47653pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [172] (./utfprct_RedarTex.mw)
+ [172]
+(./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/quantidade-bolsistas-3.png, id=1264, 1097.09875pt x 416.55624
+<../../../imagens/quantidade-bolsistas-3.png, id=1261, 1097.09875pt x 416.55624
 pt>
 File: ../../../imagens/quantidade-bolsistas-3.png Graphic file (type png)
 <use ../../../imagens/quantidade-bolsistas-3.png>
@@ -4041,11 +4048,10 @@ nput line 3498.
 (pdftex.def)             Requested size: 1097.09608pt x 416.55522pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [173]
-(./utfprct_RedarTex.mw)
+ [173] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/duracao-bolsas.png, id=1269, 644.4075pt x 622.325pt>
+<../../../imagens/duracao-bolsas.png, id=1266, 644.4075pt x 622.325pt>
 File: ../../../imagens/duracao-bolsas.png Graphic file (type png)
 <use ../../../imagens/duracao-bolsas.png>
 Package pdftex.def Info: ../../../imagens/duracao-bolsas.png  used on input lin
@@ -4053,16 +4059,16 @@ e 3562.
 (pdftex.def)             Requested size: 644.40593pt x 622.32347pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [174] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-\openout4 = `utfprct_RedarTex.mw'.
-
- [175]
+ [174]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/documentos-gerados.png, id=1279, 1270.7475pt x 462.72874pt>
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [175] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+<../../../imagens/documentos-gerados.png, id=1276, 1270.7475pt x 462.72874pt>
 File: ../../../imagens/documentos-gerados.png Graphic file (type png)
 <use ../../../imagens/documentos-gerados.png>
 Package pdftex.def Info: ../../../imagens/documentos-gerados.png  used on input
@@ -4070,22 +4076,23 @@ Package pdftex.def Info: ../../../imagens/documentos-gerados.png  used on input
 (pdftex.def)             Requested size: 1270.7444pt x 462.72762pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [176] (./utfprct_RedarTex.mw)
+ [176]
+(./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/areas-conhecimento.png, id=1284, 902.37125pt x 597.23125pt>
+<../../../imagens/areas-conhecimento.png, id=1281, 902.37125pt x 597.23125pt>
 File: ../../../imagens/areas-conhecimento.png Graphic file (type png)
 <use ../../../imagens/areas-conhecimento.png>
 Package pdftex.def Info: ../../../imagens/areas-conhecimento.png  used on input
  line 3633.
 (pdftex.def)             Requested size: 902.36905pt x 597.22978pt.
-<../../../imagens/output-eventos.jpeg, id=1285, 2258.4375pt x 3011.25pt>
+<../../../imagens/output-eventos.jpeg, id=1282, 2258.4375pt x 3011.25pt>
 File: ../../../imagens/output-eventos.jpeg Graphic file (type jpg)
 <use ../../../imagens/output-eventos.jpeg>
 Package pdftex.def Info: ../../../imagens/output-eventos.jpeg  used on input li
 ne 3660.
 (pdftex.def)             Requested size: 182.09486pt x 242.78879pt.
-<../../../imagens/eventos-ano-recorte-B.png, id=1286, 1283.79625pt x 346.29375p
+<../../../imagens/eventos-ano-recorte-B.png, id=1283, 1283.79625pt x 346.29375p
 t>
 File: ../../../imagens/eventos-ano-recorte-B.png Graphic file (type png)
 <use ../../../imagens/eventos-ano-recorte-B.png>
@@ -4094,16 +4101,16 @@ put line 3678.
 (pdftex.def)             Requested size: 1283.79312pt x 346.2929pt.
 \openout4 = `utfprct_RedarTex.mw'.
 
- [177]
+ [177] (./utfprct_RedarTex.mw)
+\openout4 = `utfprct_RedarTex.mw'.
+
+\openout4 = `utfprct_RedarTex.mw'.
+
+ [178]
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-\openout4 = `utfprct_RedarTex.mw'.
-
- [178] (./utfprct_RedarTex.mw)
-\openout4 = `utfprct_RedarTex.mw'.
-
-<../../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1295, 2007.5pt 
+<../../../imagens/histograma-de-idades-no-ano-do-evento.png, id=1292, 2007.5pt 
 x 4015.0pt>
 File: ../../../imagens/histograma-de-idades-no-ano-do-evento.png Graphic file (
 type png)
@@ -4115,7 +4122,7 @@ Package pdftex.def Info: ../../../imagens/histograma-de-idades-no-ano-do-evento
 
 LaTeX Warning: Float too large for page by 27.54211pt on input line 3724.
 
-<../../../imagens/distribuicao-bolsistas-por-cidades.png, id=1296, 1288.815pt x
+<../../../imagens/distribuicao-bolsistas-por-cidades.png, id=1293, 1288.815pt x
  540.0175pt>
 File: ../../../imagens/distribuicao-bolsistas-por-cidades.png Graphic file (typ
 e png)
@@ -4128,7 +4135,7 @@ g  used on input line 3798.
 [179] (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/eventos-cidades.png, id=1301, 1279.78125pt x 351.3125pt>
+<../../../imagens/eventos-cidades.png, id=1298, 1279.78125pt x 351.3125pt>
 File: ../../../imagens/eventos-cidades.png Graphic file (type png)
 <use ../../../imagens/eventos-cidades.png>
 Package pdftex.def Info: ../../../imagens/eventos-cidades.png  used on input li
@@ -4145,7 +4152,7 @@ ne 3815.
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png, id=1311, 1445.4pt x 813
+<../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png, id=1308, 1445.4pt x 813
 .0375pt>
 File: ../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png Graphic file (type 
 png)
@@ -4164,14 +4171,14 @@ LaTeX Warning: File `../../../imagens/ Linha-do-Tempo-Politicas-Digitais Public
 as-egov-2.png' not found on input line 3901.
 
 <../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png, id=13
-16, 1445.4pt x 813.0375pt>
+13, 1445.4pt x 813.0375pt>
 File: ../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png G
 raphic file (type png)
 <use ../../../imagens/ Linha-do-Tempo-Politicas-Digitais Publicas-egov-2.png>
 Package pdftex.def Info: ../../../imagens/ Linha-do-Tempo-Politicas-Digitais Pu
 blicas-egov-2.png  used on input line 3901.
 (pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
-<../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png, id=1317, 1445.4pt x 813.0375
+<../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png, id=1314, 1445.4pt x 813.0375
 pt>
 File: ../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png Graphic file (type png)
 <use ../../../imagens/Linha-do-Tempo-WASH-GERAL-4.png>
@@ -4306,7 +4313,7 @@ ns/eventos-cidades.png> <../../../imagens/Linha-do-Tempo-trajetoria-WASH-1.png>
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/bizagi.png, id=1419, 1296.845pt x 885.3075pt>
+<../../../imagens/bizagi.png, id=1416, 1296.845pt x 885.3075pt>
 File: ../../../imagens/bizagi.png Graphic file (type png)
 <use ../../../imagens/bizagi.png>
 Package pdftex.def Info: ../../../imagens/bizagi.png  used on input line 4073.
@@ -4404,7 +4411,7 @@ Package pdftex.def Info: ../../../imagens/bizagi.png  used on input line 4073.
 (./utfprct_RedarTex.mw)
 \openout4 = `utfprct_RedarTex.mw'.
 
-<../../../imagens/ranke.jpg, id=1488, 107.38997pt x 148.80312pt>
+<../../../imagens/ranke.jpg, id=1485, 107.38997pt x 148.80312pt>
 File: ../../../imagens/ranke.jpg Graphic file (type jpg)
 <use ../../../imagens/ranke.jpg>
 Package pdftex.def Info: ../../../imagens/ranke.jpg  used on input line 4720.
@@ -5278,21 +5285,21 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5048.
 
  ) 
 Here is how much of TeX's memory you used:
- 52766 strings out of 494468
- 998237 string characters out of 6175091
- 1291241 words of memory out of 5000000
- 54201 multiletter control sequences out of 15000+600000
- 596297 words of font info for 300 fonts, out of 8000000 for 9000
+ 52771 strings out of 494468
+ 998338 string characters out of 6175091
+ 1289068 words of memory out of 5000000
+ 54205 multiletter control sequences out of 15000+600000
+ 596608 words of font info for 301 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  75i,18n,106p,2122b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on utfprct_RedarTex.pdf (232 pages, 17495249 bytes).
+Output written on utfprct_RedarTex.pdf (232 pages, 17495673 bytes).
 PDF statistics:
- 1929 PDF objects out of 2073 (max. 8388607)
- 1563 compressed objects within 16 object streams
+ 1926 PDF objects out of 2073 (max. 8388607)
+ 1560 compressed objects within 16 object streams
  386 named destinations out of 1000 (max. 500000)
- 35418 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 35930 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,0 +1,399 @@
+%% UTFPRCT-TEX, v1.0.6 wmeira on 2021/10/11
+%% Copyright (C) 2020- by William H. T. Meira
+%%
+%% Modified version of project 'utfprpgtex' maintained 
+%% by Luiz E. M. Lima
+%%
+%% Alterado por Victor Mammana
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainer of this work is William H. T. Meira.
+%%
+%% This project consists mainly of files: 'utfprct.cls', 'utfprct.tex', 
+%% 'utfprct-dados.tex' 
+%% 
+%% The 'abntex2-alf.bst' and 'abntex2-num.bst' files are slightly
+%% modified versions of the bibtex styles from abntex2 (v.1.9.7)
+%% package to suit NBR6023/2018 (not yet implemented there). 
+%% Complementary, 'abntex2-alf-en.bst' and 'abntex2-num-en.bst' are
+%% english versions of the respective bibtex styles.
+%%
+%% Contribute to improve this project (github repo):
+%% https://github.com/wmeira/utfprct-tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Tutorial do Documento de Dados 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% O 'utfprct-dados.tex' cont\'em todos as informa\c{c}\~oes do documento, 
+%% metadados e outros valores importantes para o preenchimento dos 
+%% elementos pr\'e-textuais: capa, folha de rosto, resumo, abstract.
+%% 
+%% N\~ao \'e necess\'ario preencher todos os campos, existem campos mais
+%% espec\'{\i}ficos para o tipo de documento sendo elaborado. Quando TCC,
+%% por exemplo, n\~ao \'e necess\'ario definir dados do programa de 
+%% p\'os-gradua\c{c}\~ao. Todos os dados inseridos estar\~ao dispon\'{\i}veis para
+%% inser\c{c}\~ao no tex usando o padr\~ao '\imprimir + nomedodadominusculo'. 
+%% Por exemplo, para imprimir o tipo do documento ('\TipoDeDocumento'),
+%% usar '\imprimirtipodedocumento'.
+%%
+%% \'E poss\'{\i}vel customizar a descri\c{c}\~ao do documento na folha de rosto. 
+%% Exemplos de descri\c{c}\~ao s\~ao fornecidos para guiar a escrita do texto,
+%% em que pode-se utilizar os dados j\'a definidos com o padr\~ao descrito.
+%%
+%% Existe a possibilidade de inserir dados de uma institui\c{c}\~ao de 
+%% cotutela quando se aplicar. 
+%%
+%% Os dados da ficha catalogr\'afica s\~ao fornecidos pela biblioteca
+%% e, na maioria das vezes, apenas anexa-se a folha digitalizada
+%% na regi\~ao definida dos elementos pr\'e-textuais.
+%%
+%% A folha de aprova\c{c}\~ao \'e, na maioria das vezes, fornecido 
+%% digitalmente pelo departamento ou pelo orientador ap\'os a defesa e 
+%% dever\'a ser anexada ao documento na regi\~ao definida dos elementos 
+%% pr\'e-textuais. Recomenda-se apenas anexar a folha de aprova\c{c}\~ao sem
+%% precisar alterar os dados espec\'{\i}ficos aqui presentes, pois foram
+%% criados originalmente para o template da folha de aprova\c{c}\~ao da
+%% UTFPR-PG, presente no projeto base, e foram apenas mantidos.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Informa\c{c}\~oes do Documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Tipo de documento (op\c{c}\~oes: "Tese", "Disserta\c{c}\~ao", "Trabalho de Conclus\~ao de Curso"
+\TipoDeDocumento{Disserta\c{c}\~ao}%copiar exatamente uma das op\c{c}\~oes 
+
+%% [abstract] Document type: "Thesis", "Dissertation", "Bachelor Thesis"
+\DocumentType{Dissertation}%
+
+%% N\'{\i}vel de forma\c{c}\~ao: "Doutorado", "Mestrado", "Bacharelado"
+\NivelDeFormacao{Mestrado}%
+
+%% [abstract] Formation level: "Doctorate", "PhD", "Master's Degree", "Bachelor's Degree"
+\FormationLevel{Msc.}%
+
+%% T\'{\i}tulo ou grau pretendido: "Doutor", "Mestre" ou "Bacharel"
+\TituloPretendido{@[mestreoudoutor]@}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Por padr\~ao, o t\'{\i}tulo principal ser\'a o \TituloDoDocumento (portugu\^es)
+%% Se a l\'{\i}ngua do documento for definida como ingl\^es, ser\'a o \DocumentTitle
+
+%% T\'{\i}tulo do documento em PORTUGU\^ES (resumo)
+\TituloDoDocumento{%%
+@[titulo]@ %% : @[subtitulo]@ coloque se tiver subtitulo
+}%
+
+%% T\'{\i}tulo do trabalho em INGL\^ES (abstract)
+\DocumentTitle{%%
+@[tituloabstract]@
+}%
+
+%% T\'{\i}tulo em m\'ultiplas linhas na capa, folha de rosto e termo de aprova\c{c}\~ao
+%% Use o comando \par para indicar a quebra de linha
+%%
+%% A CAPA apresentar\'a o t\'{\i}tulo no formato de m\'ultiplas linhas
+%% para a respectiva l\'{\i}ngua do documento definida.
+%%
+%% Na folha de rosto, caso a l\'{\i}ngua do documento n\~ao seja portugu\^es, aparecer\'a o
+%% \TituloEmMultiplasLinhasIngles seguido pela tradu\c{c}\~ao \TituloEmMultiplasLinhas
+%%
+\TituloEmMultiplasLinhas{%%
+@[titulo]@ %%\par coloque se tiver subtitulo
+%% @[subtitulo]@ coloque se tiver subtitulo
+}%
+
+\TituloEmMultiplasLinhasIngles{%%
+@[tituloabstract]@ %% \par coloque se tiver subtitulo
+%%subtitle of this academic work
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Data da defesa
+\Dia{10}%% Dia (opcional: usado na ficha catalogr\'afica apenas)
+\MesPorExtenso{mar\c{c}o}%% m\^es por extenso (opcional: usado na ficha catalogr\'afica apenas)
+\Ano{@[ano]@}%% Ano
+
+%% Palavras-chave e keywords (m\'aximo 5)
+\NumeroDePalavrasChave{5}%% N\'umero de palavras-chave 
+\PalavraChaveA{Papert}%% Palavra-chave A
+\PalavraChaveB{STEAM}%% Palavra-chave B
+\PalavraChaveC{STEM}%% Palavra-chave C
+\PalavraChaveD{WASH}%% Palavra-chave D
+\PalavraChaveE{Educa\c{c}\~ao}%% Palavra-chave E
+
+\NumeroDeKeywords{\imprimirnumerodepalavraschave}%% N\'umero de keywords (mesmo que palavras-chave)
+\KeywordA{Papert}%% Keyword A
+\KeywordB{STEAM}%% Keyword B
+\KeywordC{STEM}%% Keyword C
+\KeywordD{WASH}%% Keyword D
+\KeywordE{Education}%% Keyword E
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Informa\c{c}\~ao do Autor(a) ou Autores(as) (TCC)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Autor(a)
+%% Usado para cita\c{c}\~ao: "\SobrenomeDoAutor, PrenomeDoAutor" (ex: "Doe, John" ou "Doe, J.")
+\NomeDoAutor{@[autor]@}%% Nome completo do(a) autor(a)
+\SobrenomeDoAutor{@[ultimonome]@}%% \'Ultimo nome do(a) autor(a)
+\PrenomeDoAutor{@[primeirosnomes]@}%% Nome do(a) autor(a) sem \'ultimo nome
+
+%%% Autor(a) 2 (opcional)
+%% *Considera apenas se "\TipoDeDocumento" == "Trabalho de Conclus\~ao de Curso"
+\AtribuiAutorDois{false}%% Insere ou remove autor(a) 2: "true" ou "false"
+\NomeDoAutorDois{Nome do(a) Autor(a) 2}%% Nome completo do(a) autor(a) 2
+\SobrenomeDoAutorDois{\'Ultimo Nome}%% \'Ultimo nome do(a) autor(a) 2
+\PrenomeDoAutorDois{Nome do(a) Autor(a) 2 Sem \'Ultimo}%% Nome do(a) autor(a) 2 sem \'ultimo nome
+
+%%% Autor(a) 3 (opcional)
+%% *Considera apenas se "\TipoDeDocumento" == "Trabalho de Conclus\~ao de Curso"
+\AtribuiAutorTres{false}%% Insere ou remove autor(a) 3: "true" ou "false"
+\NomeDoAutorTres{Nome do(a) Autor(a) 3}%% Nome completo do(a) autor(a) 3
+\SobrenomeDoAutorTres{\'Ultimo Nome}%% \'Ultimo nome do(a) autor(a) 3
+\PrenomeDoAutorTres{Nome do(a) Autor(a) 3 Sem \'Ultimo}%% Nome do(a) autor(a) 3 sem \'ultimo nome
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Informa\c{c}\~oes do Orientador(a) e Coorientador(a)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Orientador(a)
+%% Usado para cita\c{c}\~ao: "\SobrenomeDoOrientador, PrenomeDoOrientador" (ex: "Doe, John" ou "Doe, J.")
+\AtribuicaoOrientador{Orientador}%% Atribui\c{c}\~ao "Orientador(a)"
+\TituloDoOrientador{Prof. Dr.}%% T\'{\i}tulo do(a) orientador(a)
+\NomeDoOrientador{@[orientador]@}%% Nome completo do(a) orientador(a)
+\SobrenomeDoOrienador{@[ultimonomeorientador]@}%% \'Ultimo nome do(a) orientador(a)
+\PrenomeDoOrientador{@[primeirosnomesorientador]@}%% Nome do(a) orientador(a) sem \'ultimo nome
+
+%% Coorientador(a) (opcional)
+%% Usado para cita\c{c}\~ao: "\SobrenomeDoCoorientador, PrenomeDoCoorientador" (ex: "Doe, John" ou "Doe, J.")
+\AtribuiCoorientador{true}%% Insere ou remove o(a) coorientador(a): "true" ou "false"
+\AtribuicaoCoorientador{Coorientador}%% Atribui\c{c}\~ao "Coorientador(a)"
+\TituloDoCoorientador{Prof. Dr.}%% T\'{\i}tulo do(a) coorientador(a)
+\NomeDoCoorientador{@[coorientador]@}%% Nome completo do(a) coorientador(a)
+\SobrenomeDoCoorienador{@[ultimonomecoorientador]@}%% \'Ultimo nome do(a) coorientador(a)
+\PrenomeDoCoorientador{@[primeirosnomescoorientador]@}%% Nome do(a) coorientador(a) sem \'ultimo nome
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Informa\c{c}\~oes da Institui\c{c}\~ao
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Nome da institui\c{c}\~ao
+\Instituicao{@[universidade]@}
+
+%% [abstract] Institution name (*nome sem traduzir \'e o recomendado para docs. da UTFPR)
+\Institution{@[universidade]@}
+
+%% Sigla da Institui\c{c}\~ao
+\SiglaInstituicao{@[universidademaiuscula]@}
+
+%% Nome da cidade (c\^ampus)
+\Cidade{@[localidade]@}
+
+%% Diretoria: "Gradua\c{c}\~ao e Educa\c{c}\~ao Profissional" ou "Pesquisa e P\'os-Gradua\c{c}\~ao" (opcional)
+\Diretoria{Pesquisa e P\'os-Gradua\c{c}\~ao}
+
+%% Nome do departamento ou da coordena\c{c}\~ao (opcional: mais comum no Bacharelado: Departamento de Inform\'atica)
+\Departamento{@[programapos]@}
+
+%% Sigla do departamento (opcional, ex: DAINF, DAMEC, DAMAT...)
+\SiglaDepartamento{PPGEN}
+
+%% Nome do curso bachalerado ou p\'os-gradua\c{c}\~ao (PPG) (ex: "Engenharia de Computa\c{c}\~ao",  "Engenharia El{\'e}trica e Inform{\'a}tica Industrial") 
+\Curso{@[titulopos]@}
+
+%% [abstract] Course name
+\Course{Teaching Social, Human and Natural Sciences}
+
+%% Programa ou nome do curso completo (capa)
+%% "Bachalerado em Engenharia de Computa\c{c}\~ao"
+%% "@[programapos]@
+\Programa{@[programapos]@}
+
+%% Sigla do programa de p\'os-gradua\c{c}\~ao (opcional, ex: CPGEI, PPGCA)
+\SiglaDoPPG{PPGEN}
+
+%% Nome da \'area de concentra\c{c}\~ao
+\AreaDeConcentracao{Educa\c{c}\~ao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Informa\c{c}\~oes de Cotutela (Duplo Grau) (opcional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Insere dados de cotutela: "true" ou "false"
+\AtribuiCotutela{false}
+
+%% Nome da institui\c{c}\~ao de cotutela
+\InstituicaoCotutela{Universidade Da Cotutela}
+
+%% [abstract] Institution name
+\InstitutionCotutela{Double Degree University}
+
+%% Sigla da institui\c{c}\~ao de cotutela
+\SiglaInstituicaoCotutela{UC}
+
+%% Nome do departamento ou da coordena\c{c}\~ao da inst. de cotutela (mais comum no Bacharelado: Departamento de Inform\'atica)
+\DepartamentoCotutela{Nome do Departamento ou da Coordena\c{c}\~ao}
+
+%% Sigla do departamento da inst. cotutela (ex: DAINF, DAMEC, DAMAT...)
+\SiglaDepartamentoCotutela{DPT-EXT}
+
+%% Nome do curso bachalerado ou p\'os-gradua\c{c}\~ao (PPG) na institui\c{c}\~ao de cotutela (ex: "Engenharia de Computa\c{c}\~ao",  "Engenharia El{\'e}trica e Inform{\'a}tica Industrial")
+\CursoCotutela{Nome do @[curso]@}
+
+%% [abstract] Course name 
+\CourseCotutela{Second Degree Course}
+
+%% Programa ou nome do curso completo na inst. cotutela (capa)
+%% "Bachalerado em Engenharia de Computa\c{c}\~ao"
+%% "@[programapos]@
+\ProgramaCotutela{Programa de Doutoral em \imprimircursocotutela}
+
+%% Sigla do programa externo de p\'os-gradua\c{c}\~ao
+\SiglaDoPPGCotutela{PPG-EXT}
+
+%% Nome da \'area de concentra\c{c}\~ao na institui\c{c}\~ao de cotutela
+\AreaDeConcentracaoCotutela{Nome da \'Area de Concentra\c{c}\~ao}
+
+%% N\'{\i}vel de forma\c{c}\~ao que ser\'a fornecido na refer\^encia do doc.
+\NivelDeFormacaoResumo{Duplo doutorado}
+\FormationLevelAbstract{Double PhD}
+
+%% Informacoes do orientador(a) na institui\c{c}\~ao de cotutela
+
+%% Orientador(a) da institui\c{c}\~ao de cotutela
+%% Usado para cita\c{c}\~ao: "\SobrenomeDoOrientador, PrenomeDoOrientador" (ex: "Doe, John" ou "Doe, J.")
+\AtribuicaoOrientadorCotutela{Orientador(a)}%% Atribui\c{c}\~ao "Orientador(a)"
+\TituloDoOrientadorCotutela{Prof(a). Dr(a).}%% T\'{\i}tulo do(a) orientador(a)
+\NomeDoOrientadorCotutela{Nome Completo do(a) Orientador(a)}%% Nome completo do(a) orientador(a)
+\SobrenomeDoOrienadorCotutela{\'Ultimo Nome}%% \'Ultimo nome do(a) orientador(a)
+\PrenomeDoOrientadorCotutela{Nome do(a) Orientador(a) Sem \'Ultimo}%% Nome do(a) orientador(a) sem \'ultimo nome
+
+%% Coorientador(a) da institui\c{c}\~ao de cotutela
+%% Usado para cita\c{c}\~ao: "\SobrenomeDoCoorientador, PrenomeDoCoorientador" (ex: "Doe, John" ou "Doe, J.")
+\AtribuiCoorientadorCotutela{false}%% Insere ou remove o(a) coorientador(a) da cotutela: "true" ou "false"
+\AtribuicaoCoorientadorCotutela{Coorientador(a)}%% Atribui\c{c}\~ao "Coorientador(a)"
+\TituloDoCoorientadorCotutela{Prof(a). Dr(a).}%% T\'{\i}tulo do(a) coorientador(a)
+\NomeDoCoorientadorCotutela{Nome Completo do(a) Coorientador(a)}%% Nome completo do(a) coorientador(a)
+\SobrenomeDoCoorienadorCotutela{\'Ultimo Nome}%% \'Ultimo nome do(a) coorientador(a)
+\PrenomeDoCoorientadorCotutela{Nome do(a) Coorientador(a) Sem \'Ultimo}%% Nome do(a) coorientador(a) sem \'ultimo nome
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Folha de Rosto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Se desejar usar os dados inseridos, eles est\~ao dispon\'{\i}ves
+%% usando o padr\~ao '\imprimir + nomedodadominusculo'. Por exemplo,
+%% para imprimir o tipo do documento ('\TipoDeDocumento'), usar
+%% '\imprimirtipodedocumento'
+
+%% Descri\c{c}\~ao do documento na folha de rosto (exemplos)
+\DescricaoDoDocumento{
+\imprimirtipodedocumento\ apresentada como requisito para obten\c{c}\~ao do t\'{\i}tulo de \imprimirtitulopretendido\ em \imprimircurso, do \imprimirppgoudepartamento, da \imprimirinstituicao\ (\imprimirsiglainstituicao).
+}
+
+% Exemplo: Mestrado
+%\DescricaoDoDocumento{
+%\imprimirtipodedocumento\ apresentada como requisito para obten\c{c}\~ao do grau de \imprimirtitulopretendido\ em \imprimircurso\ da \imprimirinstituicao\ (\imprimirsiglainstituicao).
+%}
+
+% Exemplo: Doutorado
+%\DescricaoDoDocumento{
+%\imprimirtipodedocumento\ apresentada como requisito para obten\c{c}\~ao do t\'{\i}tulo de \imprimirtitulopretendido\ em \imprimircurso\ da \imprimirinstituicao\ (\imprimirsiglainstituicao).
+%}
+
+
+%% Insere ou remove descri\c{c}\~ao da cotutela (extra) na folha de rosto: "true" ou "false". 
+%% Se "true", a descri\c{c}\~ao do documento ser\'a colocada na folha de rosto, logo abaixo do orientador(a) e coorientador(a) da primeira inst. e depois o orientador(a) e coorientador(a) da inst. de cotutela. 
+%% Se "false", os nomes do orientador(a) e coorientador(a) aparecer\~ao logo abaixo do orientador(a) da primeira institui\c{c}\~ao, sem uma descri\c{c}\~ao extra. Neste caso, recomenda-se revisar a "\DescricaoDoDocumento" para contemplar ambas as institui\c{c}\~oes.   
+\AtribuiDescricaoCotutela{false}
+
+%% Segunda Descricao da Inst. de Cotutela na folha de rosto (exemplos)
+\DescricaoDoDocumentoCotutela{
+\imprimirtipodedocumento\ apresentado(a) como requisito \`a obten\c{c}\~ao do t\'{\i}tulo de \imprimirtitulopretendido\ em \imprimircursocotutela, do \imprimirppgoudepartamentocotutela, da \imprimirinstituicaocotutela.  
+%\imprimirtipodedocumento\ apresentada \`a Comiss\~ao de Acompanhamento de Tese do Programa Doutoral em \imprimircursocotutela\ do \imprimirinstituicaocotutela\ (\imprimirsiglainstituicaocotutela) como requisito \`a obten\c{c}\~ao de grau de \imprimirtitulopretendido\ na \'area de concentra\c{c}\~ao \imprimirareadeconcentracaocotutela.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ficha Catalogr\'afica* (opcional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% *Pode ser usado como placeholder, por\'em para entrega deve-se inserir a ficha catologr\'afica digitalizado (PDF) pela biblioteca da UTFPR.
+
+\NumeroDaPublicacao{00/\imprimirano}%% N\'umero da publica\c{c}\~ao - Fornecido pela biblioteca
+\CDDOuCDU{CDD 000.00}%% Classifica\c{c}\~ao Decimal Dewey (CDD) ou Classifica\c{c}\~ao Decimal Universal (CDU) - Fornecida pela biblioteca
+
+\TituloDaFichaCatalografica{%% T\'{\i}tulo da ficha catalogr\'afica
+  Ficha catalogr\'afica elaborada pelo Departamento de Biblioteca da \par \imprimirinstituicao, C\^ampus \imprimircidade \par n.
+  \imprimirnumerodapublicacao
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Folha de aprova\c{c}\~ao (Formato UTFPR-PG)* (opcional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% *Pode ser usado como placeholder, por\'em para entrega final prefere-se a folha (termo) de aprova\c{c}\~ao digitalizado (PDF) fornecido pelo departamento ou orientador.
+
+\NumeroDaTeseOuDissertacao{00/\imprimirano}%% N\'umero da Tese ou Disserta\c{c}\~ao - Fornecido pelo programa de p\'os-gradua\c{c}\~ao
+\NumeroDaFichaCatalografica{A000}%% N\'umero da ficha catalogr\'afica - Fornecido pela biblioteca
+
+\TituloDoResponsavelTCC{Prof(a). Dr(a).}%% T\'{\i}tulo do(a) respons\'avel pelos TCC
+\NomeDoResponsavelTCC{Nome do(a) Respons\'avel}%% Nome completo do(a) respons\'avel pelos TCC
+\AtribuicaoCoordenador{Coordenador(a)}%% Atribui\c{c}\~ao "Coordenador(a)" do curso
+\TituloDoCoordenador{Prof(a). Dr(a).}%% T\'{\i}tulo do(a) coordenador(a) do curso
+\NomeDoCoordenador{Nome do(a) Coordenador(a)}%% Nome completo do(a) coordenador(a) do curso
+
+\TextoDeAprovacao{%% Texto de aprova\c{c}\~ao
+  %% Exemplo de texto de aprova\c{c}\~ao para Tese ou Disserta\c{c}\~ao (descomente a pr\'oxima linha para utiliz\'a-lo):
+  Esta \imprimirtipodedocumento\ foi apresentada \`as 00:00 de \imprimirdia\ de \imprimirmesporextenso\ de \imprimirano\ como requisito parcial para a obten\c{c}\~ao do t\'{\i}tulo de \imprimirtitulopretendido\ em \imprimircurso, na \'area de concentra\c{c}\~ao em \imprimirareadeconcentracao\ e na linha de pesquisa em (Nome da Linha de Pesquisa), do @[programapos]@. O(A) candidato(a) foi arguido(a) pela Banca Examinadora composta pelos professores abaixo citados. Ap\'os delibera\c{c}\~ao, a Banca Examinadora considerou o trabalho aprovado.
+  %% Exemplo de texto de aprova\c{c}\~ao para Trabalho de Conclus\~ao de @[curso]@\'oxima linha para utiliz\'a-lo):
+  % Este \imprimirtipodedocumento\ foi apresentado em \imprimirdia\ de \imprimirmesporextenso\ de \imprimirano\ como requisito parcial para a obten\c{c}\~ao do t\'{\i}tulo de \imprimirtitulopretendido\ em \imprimircurso. O(A) candidato(a) foi arguido(a) pela Banca Examinadora composta pelos professores abaixo assinados. Ap\'os delibera\c{c}\~ao, a Banca Examinadora considerou o trabalho aprovado.
+}
+
+\AvisoDeAprovacao{%% Aviso de aprova\c{c}\~ao
+  %% Exemplo de aviso de aprova\c{c}\~ao para Tese ou Disserta\c{c}\~ao (descomente a pr\'oxima linha para utiliz\'a-lo):
+  A Folha de Aprova\c{c}\~ao assinada encontra-se no \par Departamento de Registros Acad\^emicos da UTFPR -- C\^ampus \imprimircidade
+  %% Exemplo de aviso de aprova\c{c}\~ao para Trabalho de Conclus\~ao de @[curso]@\'oxima linha para utiliz\'a-lo):
+  % -- O Termo de Aprova\c{c}\~ao assinado encontra-se na Coordena\c{c}\~ao do @[curso]@--
+}
+
+%% Banca examinadora: 3 membros (Trabalho de Conclus\~ao de @[curso]@\c{c}\~ao); 5 a 7 membros (Tese)
+\MembroAIgualOrientador{true}%% Insere ou remove o membro A igual ao(\`a) orientador(a): "true" ou "false"
+\MembroA{Nome do Membro A}%% Nome completo do membro A - Presidente (autom\'atico se orientador(a))
+\TituloDoMembroA{Prof(a). Dr(a).}%% T\'{\i}tulo do membro A - Presidente (autom\'atico se orientador(a))
+\InstituicaoDoMembroA{Institui\c{c}\~ao do Membro A}%% Nome da institui\c{c}\~ao do membro A - Presidente (autom\'atico se orientador(a))
+\MembroB{Nome do Membro B}%% Nome completo do membro B
+\TituloDoMembroB{Prof(a). Dr(a).}%% T\'{\i}tulo do membro B
+\InstituicaoDoMembroB{Institui\c{c}\~ao do Membro B}%% Nome da institui\c{c}\~ao do membro B
+\MembroC{Nome do Membro C}%% Nome completo do membro C
+\TituloDoMembroC{Prof(a). Dr(a).}%% T\'{\i}tulo do membro C
+\InstituicaoDoMembroC{Institui\c{c}\~ao do Membro C}%% Nome da institui\c{c}\~ao do membro C
+\MembroD{Nome do Membro D}%% Nome completo do membro D
+\TituloDoMembroD{Prof(a). Dr(a).}%% T\'{\i}tulo do membro D
+\InstituicaoDoMembroD{Institui\c{c}\~ao do Membro D}%% Nome da institui\c{c}\~ao do membro D
+\MembroE{Nome do Membro E}%% Nome completo do membro E
+\TituloDoMembroE{Prof(a). Dr(a).}%% T\'{\i}tulo do membro E
+\InstituicaoDoMembroE{Institui\c{c}\~ao do Membro E}%% Nome da institui\c{c}\~ao do membro E
+\AtribuiMembroF{false}%% Insere ou remove o Membro F: "true" ou "false"
+\MembroF{Nome do Membro F}%% Nome completo do membro F
+\TituloDoMembroF{Prof(a). Dr(a).}%% T\'{\i}tulo do membro F
+\InstituicaoDoMembroF{Institui\c{c}\~ao do Membro F}%% Nome da institui\c{c}\~ao do membro F
+\AtribuiMembroG{false}%% Insere ou remove o Membro G: "true" ou "false"
+\MembroG{Nome do Membro G}%% Nome completo do membro G
+\TituloDoMembroG{Prof(a). Dr(a).}%% T\'{\i}tulo do membro G
+\InstituicaoDoMembroG{Institui\c{c}\~ao do Membro G}%% Nome da institui\c{c}\~ao do membro G

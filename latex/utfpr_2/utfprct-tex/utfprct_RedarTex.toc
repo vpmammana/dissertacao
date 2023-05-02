@@ -1,0 +1,109 @@
+\changetocdepth {4}
+\changetocdepth {50}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{21}{chapter.1}%
+\contentsline {section}{\numberline {1.1}WASH: projeto, programa, sistema, organiza\IeC {\c c}\IeC {\~a}o ou pol\IeC {\'\i }tica p\IeC {\'u}blica?}{30}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objeto}{33}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objetivos}{33}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{33}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{33}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Hip\IeC {\'o}teses}{34}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Hip\IeC {\'o}tese 1: Efici\IeC {\^e}ncia e Efic\IeC {\'a}cia do WASH}{34}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Hip\IeC {\'o}tese 2: Orienta\IeC {\c c}\IeC {\~a}o a Projetos}{34}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Hip\IeC {\'o}tese 3: Origem do WASH}{35}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Hip\IeC {\'o}tese 4: Pr\IeC {\'a}tica Pedag\IeC {\'o}gica do WASH}{35}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Hip\IeC {\'o}tese 5:WASH como proto-pol\IeC {\'\i }tica p\IeC {\'u}blica}{35}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Hip\IeC {\'o}tese 6: WASH como organiza\IeC {\c c}\IeC {\~a}o heter\IeC {\'a}rquica}{35}{subsection.1.4.6}%
+\contentsline {section}{\numberline {1.5}Problema}{35}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Justificativa}{36}{section.1.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {FUNDAMENTA\IeC {\c C}\IeC {\~A}O TE\IeC {\'O}RICA}}{37}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Fundamenta\IeC {\c c}\IeC {\~a}o: hist\IeC {\'o}ria (eixo 1)}{38}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Revis\IeC {\~a}o: historiografia}{43}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Hierarquia versus heterarquia}{43}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Governo Eletr\IeC {\^o}nico}{45}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Pol\IeC {\'\i }ticas P\IeC {\'u}blicas de Inclus\IeC {\~a}o e Cultura Digital}{48}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}O pensamento de Papert}{52}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}O LOGO e o SCRATCH}{59}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}O que \IeC {\'e} STEM/STEAM?}{62}{subsection.2.1.7}%
+\contentsline {section}{\numberline {2.2}Fundamenta\IeC {\c c}\IeC {\~a}o: produ\IeC {\c c}\IeC {\~a}o de indicadores (eixo 2)}{67}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Indicadores}{68}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Informa\IeC {\c c}\IeC {\~a}o, dados e conhecimento}{69}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Registro de dados na escola p\IeC {\'u}blica}{71}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Investimento por educando: escola p\IeC {\'u}blica vs. privada}{73}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Planilhas eletr\IeC {\^o}nicas para registro de dados}{74}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Bancos de Dados Relacionais}{80}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Linguagem SQL}{81}{subsection.2.2.7}%
+\contentsline {section}{\numberline {2.3}Conceitos Gerais}{83}{section.2.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {MATERIAIS E M\IeC {\'E}TODOS}}{87}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Caminhos para constru\IeC {\c c}\IeC {\~a}o da narrativa hist\IeC {\'o}rica (eixo 1)}{88}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Fases da Pesquisa Hist\IeC {\'o}rica}{91}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Acervos}{94}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Caminho para a obten\IeC {\c c}\IeC {\~a}o dos indicadores (eixo 2)}{95}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}M\IeC {\'e}todo de busca estruturada na plataforma Platu\IeC {\'o}xe}{97}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Modelo relacional de dados do WASH}{101}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Consulta \IeC {\`a} base de dados atrav\IeC {\'e}s da Linguagem SQL}{106}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}M\IeC {\'e}todo de determina\IeC {\c c}\IeC {\~a}o do sexo dos participantes}{107}{subsection.3.2.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {RESULTADOS E AN\IeC {\'A}LISES}}{109}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Narrativas contru\IeC {\'\i }das a partir do m\IeC {\'e}todo historiogr\IeC {\'a}fico (eixo 1)}{109}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}O GESAC e sua contribui\IeC {\c c}\IeC {\~a}o para a cultura digital no pa\IeC {\'\i }s}{110}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}A avalia\IeC {\c c}\IeC {\~a}o do OLPC pelo CTI como g\IeC {\^e}nese do WASH}{124}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}A avalia\IeC {\c c}\IeC {\~a}o do PID pelo CTI como g\IeC {\^e}nese do WASH}{135}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Papert no Brasil pela \IeC {\'o}tica de Afira Ripper}{137}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}A hist\IeC {\'o}ria, a pr\IeC {\'a}tica, os valores e os conceitos do Programa WASH}{141}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}WASH na pandemia}{154}{subsection.4.1.6}%
+\contentsline {section}{\numberline {4.2}Caracteriza\IeC {\c c}\IeC {\~a}o dos Indicadores do WASH (eixo 2)}{156}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Lista de Emendas Parlamentares concedidas}{158}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Lista de Termos de Ades\IeC {\~a}o ao Programa WASH}{159}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Quantidade e qualidade dos registros na amostra do p\IeC {\'u}blico atendido}{165}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Evolu\IeC {\c c}\IeC {\~a}o temporal do n\IeC {\'u}mero de participa\IeC {\c c}\IeC {\~o}es}{169}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Distribui\IeC {\c c}\IeC {\~a}o de partipantes por sexo (equidade)}{170}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}N\IeC {\'u}mero de Bolsistas}{171}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Caracteriza\IeC {\c c}\IeC {\~a}o dos Planos de Trabalhos e Relat\IeC {\'o}rios}{175}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}N\IeC {\'u}mero de eventos realizados}{176}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.9}Distribui\IeC {\c c}\IeC {\~a}o et\IeC {\'a}ria nos eventos}{178}{subsection.4.2.9}%
+\contentsline {subsection}{\numberline {4.2.10}Distribui\IeC {\c c}\IeC {\~a}o de atividades realizadas nos eventos}{179}{subsection.4.2.10}%
+\contentsline {subsection}{\numberline {4.2.11}Cidades Atendidas}{180}{subsection.4.2.11}%
+\contentsline {subsection}{\numberline {4.2.12}Canal do WASH e a webs\IeC {\'e}rie \csqQQ {34}Ci\IeC {\^e}ncia e Cultura Vamos Brincar?\csqQQ {34}}{180}{subsection.4.2.12}%
+\contentsline {section}{\numberline {4.3}Linhas de Tempo}{181}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Trajet\IeC {\'o}ria do Programa WASH}{182}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Trajet\IeC {\'o}ria de Pol\IeC {\'\i }ticas P\IeC {\'u}blicas}{183}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Consolida\IeC {\c c}\IeC {\~a}o das linhas de tempo}{183}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Valida\IeC {\c c}\IeC {\~a}o das hip\IeC {\'o}teses}{183}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Hip\IeC {\'o}tese 1: Efici\IeC {\^e}ncia e Efic\IeC {\'a}cia do WASH}{183}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Hip\IeC {\'o}tese 2: Orienta\IeC {\c c}\IeC {\~a}o a Projetos}{186}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Hip\IeC {\'o}tese 3: Origem do WASH}{187}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Hip\IeC {\'o}tese 4: Pr\IeC {\'a}tica Pedag\IeC {\'o}gica do WASH}{187}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Hip\IeC {\'o}tese 5: WASH como proto-pol\IeC {\'\i }tica p\IeC {\'u}blica}{187}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Hip\IeC {\'o}tese 6: WASH como organiza\IeC {\c c}\IeC {\~a}o heter\IeC {\'a}rquica}{188}{subsection.4.4.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {CONCLUS\IeC {\~A}O}}{199}{chapter.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {RECOMENDA\IeC {\c C}\IeC {\~O}ES}}{203}{chapter.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {PRODUTOS EDUCACIONAIS}}{206}{chapter.7}%
+\contentsline {section}{\numberline {7.1}V\IeC {\'\i }deo/Entrevista: Papert e Afira Ripper}{206}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Revis\IeC {\~a}o do Documento de Refer\IeC {\^e}ncia do Programa WASH}{206}{section.7.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {REFER\IeC {\^E}NCIAS}}{208}{chapter.8}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {AP\IeC {\^E}NDICE A: revis\IeC {\~a}o sobre historiografia}}{216}{chapter.9}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {10}\MakeTextUppercase {AP\IeC {\^E}NDICE B: revis\IeC {\~a}o sobre Bancos de Dados Relacionais}}{222}{chapter.10}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {11}\MakeTextUppercase {AP\IeC {\^E}NDICE C: ficha t\IeC {\'e}cnica do \csqQQ {34}Ci\IeC {\^e}ncia e Cultura Vamos Brincar?\csqQQ {34}}}{228}{chapter.11}%
+\vspace {\cftbeforechapterskip }
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }

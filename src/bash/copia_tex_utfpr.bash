@@ -22,6 +22,7 @@
 \cp ../../latex/utfpr/utfprct-tex/CapituloExemplo/quadro2.pdf ../../latex/utfpr/utfprct-tex/CapituloExemplo/quadro2_RedarTex.pdf 
 \cp ../../latex/utfpr/utfprct-tex/CapituloExemplo/foto2.pdf ../../latex/utfpr/utfprct-tex/CapituloExemplo/foto2_RedarTex.pdf 
 \cp ../../latex/utfpr/utfprct-tex/CapituloExemplo/quadro1.pdf ../../latex/utfpr/utfprct-tex/CapituloExemplo/quadro1_RedarTex.pdf 
+\cp ../../latex/utfpr/utfprct-tex/utfprct.pdf ../../latex/utfpr/utfprct-tex/utfprct_RedarTex.pdf 
 \cp ../../latex/utfpr/utfprct-tex/utfprct.cls ../../latex/utfpr/utfprct-tex/utfprct_RedarTex.cls 
 \cp ../../latex/lista-abreviaturas-2.tex ../../latex/lista-abreviaturas-2_RedarTex.tex 
 \cp ../../latex/utfpr/utfprct.tex ../../latex/utfpr/utfprct_RedarTex.tex 
